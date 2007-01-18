@@ -1,0 +1,6 @@
+
+font: "fonts/Vera.ttf" "Edje-Vera";
+font: "fonts/VeraBd.ttf" "Edje-Vera-Bold";
+font: "fonts/VeraMono.ttf" "Edje-Vera-Mono";
+font: "fonts/VeraMoBd.ttf" "Edje-Vera-Mono-Bold";
+

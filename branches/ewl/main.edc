@@ -1,0 +1,48 @@
+#define r1 rel1
+#define r2 rel2
+
+#include "macros/button-macro.edc"
+
+fonts {
+#include "fonts.edc"
+#include "fonts/bitstream.COPYING"
+}
+
+images {
+#include "images.edc"
+}
+
+collections {
+#include "bits/border.edc"
+#include "bits/button.edc"
+//#include "bits/entry.edc"
+#include "bits/label.edc"
+//#include "bits/menu.edc"
+//#include "bits/scrollbar.edc"
+#include "bits/scrollpane.edc"
+#include "bits/separator.edc"
+//#include "bits/slider.edc"
+#include "bits/tree.edc"
+#include "bits/window.edc"
+}
+
+data {
+	item: "/border/group" "/widget/border";
+	item: "/button/group" "/widget/button";
+	item: "/check/group" "/widget/button/check";
+	item: "/checkbutton/group" "/widget/button/checkbutton";
+	item: "/hseparator/group" "/widget/hseparator";
+	item: "/label/group" "/widget/label";
+	item: "/label/textpart" "text";
+	item: "/node/check/group" "/widget/tree/node";
+	item: "/radio/group" "/widget/button/radio";
+	item: "/radiobutton/group" "/widget/button/checkbutton";
+	item: "/row/group" "/widget/tree/row";
+	item: "/scrollpane/group" "/widget/scrollpane";
+	item: "/text/color/a" "255";
+	item: "/text/font" "Vera";
+	item: "/text/font_size" "12";
+	item: "/text/style" "none";
+	item: "/vseparator/group" "/widget/vseparator";
+	item: "/window/group" "/widget/window";
+} 
