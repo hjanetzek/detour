@@ -1,0 +1,93 @@
+program {
+	name: "mouse,down";
+	signal: "mouse,down,1";
+	source: "button_enabled";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.2;
+	target: "button_enabled";
+	//target: "button_enabled_over";
+}
+
+program {
+	name: "mouse,up";
+	signal: "mouse,up,1";
+	source: "button_enabled";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.2;
+	target: "button_enabled";
+	//target: "button_enabled_over";
+}
+
+program {
+	name: "button_pressed";
+	signal: "mouse,down";
+	source: "button_image";
+	action: SIGNAL_EMIT "pressed" ""; in: 0.5 0.0;
+}
+
+program {
+	name: "button_released";
+	signal: "mouse,up";
+	source: "button_enabled";
+	action: SIGNAL_EMIT "released" ""; in: 0.5 0.0;
+}
+
+program {
+	name: "focused";
+	signal: "focus";
+	source: "";
+	action: STATE_SET "focused" 0.0;
+	transition: DECELERATE 0.2;
+	target: "focus";
+	target: "focus2";
+}
+
+program {
+	name: "unfocus";
+	signal: "unfocus";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: ACCELERATE 0.5;
+	target: "focus";
+	target: "focus2";
+}
+program {
+	name: "button_focus";
+	signal: "load";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.35;
+	target: "focus_clip";
+	after: "button_unfocus";
+}
+
+program {
+	name: "button_unfocus";
+	signal: "";
+	source: "";
+	action: STATE_SET "not_visible" 0.0;
+	transition: DECELERATE 0.5;
+	target: "focus_clip";
+	after: "button_focus";
+}
+
+program {
+	name: "drag_enter";
+	signal: "drag_enter";
+	source: "";
+	DRAG_ENTER_ACTION
+}
+
+program {
+	name: "drag_leave";
+	signal: "drag_leave";
+	source: "";
+	DRAG_LEAVE_ACTION
+}
+
+program {
+	name: "drag_drop";
+	signal: "drag_drop";
+	source: "";
+	DRAG_LEAVE_ACTION
+}

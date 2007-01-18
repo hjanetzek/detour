@@ -1,0 +1,107 @@
+
+group {
+	name: "statusbar";
+	min: 0 21;
+
+parts {
+
+	part {
+		name: "bar";
+		mouse_events: 0;
+		type: RECT;
+
+		description {
+			state: "default" 0.0;
+			color: 0 0 0 0;
+
+		r1 { relative: 0.0 1.0; offset: 0 -21; }
+		r2 { relative: 1.0 1.0; offset: -1 -1; }
+
+/*
+		image {
+			normal: "status_bar.png";
+			border: 0 0 3 2;
+		}
+
+		fill {
+			smooth: 0;
+		}
+*/
+	}
+}
+
+	part {
+		name: "resize_grip";
+	
+		description {
+			state: "default" 0.0;
+			visible: 1;
+
+		r1 { relative: 1.0 1.0; offset: -18 -18; }
+		r2 { relative: 1.0 1.0; offset: -2 -2; }
+
+		image {
+			normal: "status_resize.png";
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+
+		description {
+			state: "hidden" 0.0;
+			inherit: "default" 0.0;
+			visible: 0;
+
+		r1 { relative: 1.0 1.0; offset: -2 -18; }
+	}
+}
+
+	part {
+		name: "message";
+		type: TEXT;
+		mouse_events: 0;
+
+		description {
+			state: "default" 0.0;
+			color: 0 0 0 255;
+
+		r1 { to: "bar"; relative: 0.0 0.0; offset: 5 4; }
+
+		r2 { 
+			to_x: "resize_grip";
+			to_y: "bar";
+			relative: 0.0 1.0;
+			offset: -1 -1;
+		}
+
+		text {
+			text: "Message";
+			font: "Vera";
+			size:  10;
+			align: 0.0 0.5;
+		}
+	  }
+     }
+}
+
+programs {
+
+	program {
+		name: "show_resize_grip";
+		signal: "show_resize_grip";
+		source: "";
+		action: STATE_SET "default" 0.0;
+		target: "resize_grip";
+	}
+
+	program {
+		name: "hide_resize_grip";
+		signal: "hide_resize_grip";
+		source: "";
+		action: STATE_SET "hidden" 0.0;
+		target: "resize_grip";
+	}
+    }
+}

@@ -1,0 +1,182 @@
+
+// new images alberto@cored.org
+image: "menu_separator.png" COMP;
+
+   image: "border.png" COMP;
+//   image: "background.png" COMP;
+   image: "focus_glow.png" COMP;
+   image: "drag_glow.png" COMP;
+
+   image: "checkbox_off.png" COMP;
+   image: "checkbox_on.png" COMP;
+   image: "checkbox_down.png" COMP;
+   image: "radio_off.png" COMP;
+   image: "radio_on.png" COMP;
+
+   image: "text_view_bg.png" COMP;
+   image: "text_view_over.png" COMP;
+   image: "dialog_logo.png" COMP;
+
+   image: "spinner_button_up1.png" COMP;
+   image: "spinner_button_up2.png" COMP;   
+   image: "spinner_button_down1.png" COMP;
+   image: "spinner_button_down2.png" COMP;   
+   image: "tree.png" COMP;
+   image: "tree_header_inactive.png" COMP;
+   image: "tree_header_active.png" COMP;
+   image: "tree_expander_fold.png" COMP;
+   image: "tree_expander_unfold.png" COMP;
+   image: "tree_row_selected.png" COMP;
+   image: "hseparator.png" COMP;
+   image: "vseparator.png" COMP;
+   image: "glow_arrow_left.png" COMP;
+   image: "glow_arrow_right.png" COMP;
+   image: "glow_arrow_down.png" COMP;
+   image: "glow_arrow_up.png" COMP;
+   image: "hpaned_handle.png" COMP;
+   image: "vpaned_handle.png" COMP;
+   image: "frame_outline.png" COMP;
+   image: "frame_label_over.png" COMP;
+   image: "frame_label_under.png" COMP;
+   image: "menu_bar.png" COMP;
+   image: "menu_arrow.png" COMP;
+   image: "menu_bevel.png" COMP;
+   image: "menu_bg.png" COMP;
+   image: "status_bar.png" COMP;
+   image: "status_resize.png" COMP;
+   image: "tab.png" COMP;
+   image: "tab_shadow.png" COMP;
+   image: "notebook_frame.png" COMP;
+   
+   // for menu
+   image: "check_border.png" COMP;
+   image: "check_widget-blank.png" COMP;
+   image: "check_widget-light.png" COMP;
+   image: "check_widget-dark.png" COMP;
+   image: "radio_border.png" COMP;
+   image: "radio_dark.png" COMP;
+   image: "radio_light.png" COMP;
+   image: "radio_trans.png" COMP;
+   image: "arrow_dark.png" COMP;
+   image: "arrow_light.png" COMP;
+   
+	// background
+	image: "dialog_bg.png" COMP;
+
+	// entry
+	image: "entry.png" COMP;
+	image: "entry_focus.png" COMP;
+
+	// button
+	image: "button.png" COMP;
+	image: "button_clicked.png" COMP;
+	image: "button_clicked2.png" COMP;
+	image: "button_disabled.png" COMP;
+	image: "button_disabled.png" COMP;
+	image: "button_outline.png" COMP;
+	image: "button_focus_bottom.png" COMP;
+	image: "button_focus_top.png" COMP;
+
+	// check widget
+	image: "check0.png" COMP;
+	image: "check1.png" COMP;
+	image: "check2.png" COMP;
+
+	// radio widget
+	image: "radio1.png" COMP;
+	image: "radio2.png" COMP;
+
+	// focus and dnd
+	image: "focus.png" COMP;
+	image: "focus_drag.png" COMP;
+	image: "focus_glow.png" COMP;
+	image: "drag_glow.png" COMP;
+    image: "focus_rect.png" COMP;
+
+	// frame
+	image: "frame_outline.png" COMP;
+	//image: "frame_bevel.png" COMP;
+	image: "frame_separator.png" COMP;
+
+	// slider
+	image: "slider_0.png" COMP;
+	image: "slider_1.png" COMP;
+	image: "slider_vert0.png" COMP;
+	image: "slider_vert1.png" COMP;
+	image: "slider_bt_hactive.png" COMP;
+	image: "slider_bt_vactive.png" COMP;
+	image: "sb_runnerh.png" COMP;
+	image: "sb_runnerv.png" COMP;
+	image: "sb_runnerh_left.png" COMP;
+	image: "sb_runnerh_right.png" COMP;
+	image: "sb_runnerv_top.png" COMP;
+	image: "sb_runnerv_bot.png" COMP;
+    image: "slider_focus_h_top.png" COMP;
+    image: "slider_focus_v_top.png" COMP;
+    image: "slider_focus_h_bottom.png" COMP;
+    image: "slider_focus_v_bottom.png" COMP;
+	
+	// progressbar
+	image: "pbar_border.png" COMP;
+	image: "pbar_bg.png" COMP;
+	image: "pbar_01.png" COMP;
+	image: "pbar_02.png" COMP;
+	image: "pbar_03.png" COMP;
+	image: "pbar_04.png" COMP;
+	image: "pbar_05.png" COMP;
+	image: "pbar_06.png" COMP;
+	image: "pbar_07.png" COMP;
+
+	// tooltip
+	image: "tooltip.png" COMP;
+	image: "tooltip_border.png" COMP;
+
+	// combobox
+	image: "combo_arrow.png" COMP;
+	image: "menu_selected.png" COMP;
+    
+    // toolbar
+    image: "toolbar.png" COMP;
+    image: "toolbar_button.png" COMP;
+    image: "toolbar_button_pressed.png" COMP;
+    image: "toolbar_button_active.png" COMP;
+    image: "toolbar_button_overlay.png" COMP;
+    
+    //iconbox
+    image: "iconbox_label_bg.png" COMP;
+    image: "iconbox_selection.png" COMP;
+    image: "iconbox_bg.png" COMP;
+    image: "iconbox_scrollbar_bg.png" COMP;
+    
+    // scrollframe 
+	image: "sb_btu1.png" COMP;
+	image: "sb_btu2.png" COMP;
+	image: "sb_btd1.png" COMP;
+	image: "sb_btd2.png" COMP;
+	image: "sb_btud1.png" COMP;
+	image: "sb_btud2.png" COMP;
+	image: "sb_btdu1.png" COMP;
+	image: "sb_btdu2.png" COMP;
+	image: "sb_btl1.png" COMP;
+	image: "sb_btl2.png" COMP;
+	image: "sb_btr1.png" COMP;
+	image: "sb_btr2.png" COMP;
+	image: "sb_btld1.png" COMP;
+	image: "sb_btld2.png" COMP;
+	image: "sb_btru1.png" COMP;
+	image: "sb_btru2.png" COMP;
+	image: "sf_runnerv.png" COMP;
+	image: "sf_runnerh.png" COMP;
+	image: "sf_barv1.png" COMP;
+	image: "sf_barh1.png" COMP;
+	image: "sb_hdrag_thumb.png" COMP;
+	image: "sb_vdrag_thumb.png" COMP;
+	image: "inset_border.png" COMP;
+    
+    // colorpicker   
+	image: "colorpicker_preview.png" COMP;
+	image: "colorpicker_slider_drag.png" COMP;
+	image: "colorpicker_slider_trough.png" COMP;
+	image: "colorpicker_square.png" COMP;
+	image: "colorpicker_vertical.png" COMP;
+	

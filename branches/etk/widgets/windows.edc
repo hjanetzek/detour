@@ -1,0 +1,52 @@
+
+group {
+	name: "window";
+
+	data {
+		item: "inset" "5 5 0 0";
+	}
+
+	parts {
+		part {
+			name: "background";
+			mouse_events: 1;
+			type: IMAGE;
+	
+			description {
+				state: "default" 0.0;
+	
+				image {
+					normal: "dialog_bg.png";
+					border: 2 2 2 2;
+				}
+				fill.smooth: 0; 
+			}
+		}
+	}
+}
+
+group {
+	name: "dialog";
+
+	data {
+		item: "inset" "1 1 1 1";
+	}
+
+	parts {
+		part {
+			name: "background";
+			mouse_events: 1;
+			type: IMAGE;
+	
+			description {
+				state: "default" 0.0;
+	
+				image {
+					normal: "dialog_bg.png";
+					border: 2 2 2 2;
+				}
+				fill.smooth: 0; 
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+group {
+	name: "toggle_button";
+	min: 34 34;
+
+	data {
+		item: "inset" "8 8 8 8";
+	}
+
+	parts {
+		#include "button_common.edc"
+	}
+	
+	programs {
+	    #include "button_programs_common.edc"
+	    
+	    program {
+	        name: "toggle_button_activate";
+	        signal: "activate";
+	        source: "";
+	        script {
+	            activate();
+	        }
+	    }
+	    program {
+	        name: "toggle_button_deactivate";
+	        signal: "deactivate";
+	        source: "";
+	        script {
+	            deactivate();
+	       }
+	    }
+	 }
+    
+    script {
+		public activated = 0;
+
+        /* TODO check if it possible to decelerate this or
+		 * to start a programs instead */
+	   	public activate()
+		{   
+			activated = 1;
+			set_state(PART:"button_enabled", "clicked", 0.0);
+		}
+	
+		public deactivate()
+		{
+			activated = 0;
+			set_state(PART:"button_enabled", "default", 0.0);
+		}
+	
+		public up()
+		{
+			if (activated)
+				activate();
+			else
+				deactivate();
+		}
+    }
+}

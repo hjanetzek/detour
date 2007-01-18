@@ -1,0 +1,83 @@
+
+group {
+	name: "entry";
+	min: 120 28;
+
+	data {
+		// left and right values seem to have no effect on the 
+		// entry widget
+		//item: "inset" "8 4 8 8";
+	}
+
+parts {
+
+part {
+	name: "entry";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { relative: 0.0 0.5; offset: 6 -14; }
+	r2 { relative: 1.0 0.5; offset: -7 12; }
+
+	image {
+		normal: "entry.png";
+		border: 8 8 8 8;
+	}
+    }
+}
+
+part {
+	name: "text_area";
+	type: SWALLOW;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "entry"; relative: 0.0 0.0; offset: 5 9; }
+	r2 { to: "entry"; relative: 1.0 1.0; offset: -6 -5; }
+	}
+}
+
+	FOCUS_GLOW(0.0, 0.0, -1, 0, "entry", 1.0, 1.0, 0, -1, "entry")
+	DRAG_GLOW(0.0, 0.0, -1, -1, "entry", 1.0, 1.0, 0, 0, "entry")
+}
+
+programs {
+
+	program {
+		name: "entry_focus";
+		signal: "focus";
+		source: "";
+		FOCUS_GLOW_ACTION
+	}
+
+	program {
+		name: "entry_unfocus";
+		signal: "unfocus";
+		source: "";
+		UNFOCUS_GLOW_ACTION
+	}
+
+	program {
+		name: "drag_enter";
+		signal: "drag_enter";
+		source: "";
+		DRAG_ENTER_ACTION
+	}
+
+	program {
+		name: "drag_leave";
+		signal: "drag_leave";
+		source: "";
+		DRAG_LEAVE_ACTION
+	}
+
+	program {
+		name: "drag_drop";
+		signal: "drag_drop";
+		source: "";
+		DRAG_LEAVE_ACTION
+	}
+    }
+}

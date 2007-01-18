@@ -1,0 +1,21 @@
+#define TEXT_STYLE "DEFAULT='font=Vera font_size=10 align=left color=#000000 wrap=word style=shadow shadow_color=#ffffff80' \
+center='+ align=center' \
+/center='- \n' \
+right='+ align=right' \
+/right='- \\n' \
+h1='+ font_size=20' \
+b='+font=Vera-Bold' \
+i='+font=Vera-Italic' \
+glow='+ style=glow color=#fff glow2_color=#fe87 glow_color=#fa14' \
+link='+ underline=on underline_color=#0000aa color=#0000aa' \
+red='+ color=#ff0000' \
+br='\n' \
+tab='\t'"
+
+
+group {
+	name: "label";
+	data{
+		item: "text_style" TEXT_STYLE;
+	}
+}

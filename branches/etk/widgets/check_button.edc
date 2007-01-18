@@ -1,0 +1,152 @@
+group {
+	name: "check_button";
+	min: 20 18;
+
+	data {
+		item: "inset" "25 0 0 0";
+		item: "text_style" TEXT_STYLE_BUTTON_SMALL;
+	}
+
+parts {
+
+	part {
+		name: "bg";
+		type: RECT;
+
+		description {
+			state: "default" 0.0;
+			visible: 1;
+			color: 255 255 255 0;
+
+		r1 { relative: 0.0 0.0; offset: 0 -1; }
+		r2 { relative: 1.0 1.0; offset: -1 0; }
+		}
+
+		description {
+			state: "over" 0.0;
+			inherit: "default" 0.0;
+			color: 255 255 255 255;
+		}
+	}
+
+	part {
+		name: "checkbox";
+
+		description {
+			state: "default" 0.0;
+			min: 20 18;
+			max: 20 18;
+			align: 0.0 0.5;
+			fixed: 1 1;
+
+		r1 { relative: 0.0 0.0; offset: 2 2; }
+		r2 { relative: 0.0 1.0; offset: 2 -3; }
+
+		image {
+			normal: "check1.png";
+		}
+	}
+
+		description {
+			state: "on" 0.0;
+			inherit: "default" 0.0;
+
+		image {
+			normal: "check2.png";
+		}
+    	}
+}
+
+      part {
+		name: "checkbox_down";
+
+ 		description {
+			state: "default" 0.0;
+			min: 20 18;
+			max: 20 18;
+			align: 0.0 0.5;
+			fixed: 1 1;
+			visible: 0;
+
+		r1 { relative: 0.0 0.0; offset: 2 2; }
+		r2 { relative: 0.0 1.0; offset: 2 -3; }
+
+		image {
+			normal: "check0.png";
+		}
+	}
+
+		description {
+			state: "down" 0.0;
+			inherit: "default" 0.0;
+			visible: 1;
+		}
+	}
+      FOCUS_GLOW(0.0, 0.0, 0, 0, "bg", 1.0, 1.0, -1, -1, "bg")
+}
+
+programs {
+
+	program {
+		name: "check_button_activated";
+		signal: "activate";
+		source: "";
+		action: STATE_SET "on" 0.0;
+		target: "checkbox";
+	}
+
+	program {
+		name: "check_button_desactivated";
+		signal: "deactivate";
+		source: "";
+		action: STATE_SET "default" 0.0;
+		target: "checkbox";
+	}
+
+	program {
+		name: "check_button_down";
+		signal: "pressed";
+		source: "";
+		action: STATE_SET "down" 0.0;
+		target: "checkbox_down";
+	}
+
+	program {
+		name: "check_button_up";
+		signal: "released";
+		source: "";
+		action: STATE_SET "default" 0.0;
+		target: "checkbox_down";
+	}
+
+	program {
+		name: "check_button_focus";
+		signal: "focus";
+		source: "";
+		FOCUS_GLOW_ACTION
+	}
+
+	program {
+		name: "check_button_unfocus";
+		signal: "unfocus";
+		source: "";
+		UNFOCUS_GLOW_ACTION
+	}
+    // TODO make something better looking 
+	/*program {
+		name: "check_button_enter";
+		signal: "enter";
+		source: "";
+		action: STATE_SET "over" 0.0;
+		target: "bg";
+	}
+
+	program {
+		name: "check_button_leave";
+		signal: "leave";
+		source: "";
+		action: STATE_SET "default" 0.0;
+		target: "bg";
+	}*/
+    }
+}

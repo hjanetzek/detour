@@ -1,0 +1,21 @@
+group {
+	name: "button";
+// ------------------------ TODO ----------------------------- //
+// 
+	min: 34 34;
+	//min: 60 26;
+// ------------------------ TODO ----------------------------- //
+
+	data {
+		item: "inset" "8 8 8 8";
+		item: "text_style" TEXT_STYLE_BUTTON;
+	}
+
+	parts {
+		#include "button_common.edc"
+	}
+	
+	programs {
+	    #include "button_programs_common.edc"
+	}
+}

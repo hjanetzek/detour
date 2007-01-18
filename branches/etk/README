@@ -1,0 +1,11 @@
+to make the project type: 
+
+make
+
+
+
+if etk is installed in /usr install the theme with
+
+cp etk_detour-pre1.edj /usr/share/etk/themes/default.edj
+
+WARNING: make a backup first, this overwrites the default theme! =)
