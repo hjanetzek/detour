@@ -1,8 +1,0 @@
-
-group {
-	name: "e/widgets/border/default/resize";
-
-	parts {
-		#include "resize_main.edc"
-	}
-}

@@ -1,8 +1,0 @@
-
-group {
-	name: "e/widgets/label";
-
-	parts {
-		#include "label_main.edc"
-	}
-}

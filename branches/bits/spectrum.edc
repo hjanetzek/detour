@@ -1,8 +1,0 @@
-
-group {
-	name: "e/widgets/spectrum";
-
-	parts {
-		#include "spectrum_main.edc"
-	}
-}

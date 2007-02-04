@@ -1,8 +1,0 @@
-
-group {
-	name: "e/widgets/border/default/move";
-
-	parts {
-		#include "move_main.edc"
-	}
-}
