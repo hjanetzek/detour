@@ -1,0 +1,92 @@
+
+program {
+	name: "go_active_content";
+	signal: "e,state,selected";
+	source: "e";
+	action: STATE_SET "active" 0.0;
+	transition: DECELERATE 0.25; in: 0.25 0.0;
+	target: "clip";
+	target: "overlay";
+}
+
+program {
+	name: "go_passive";
+	signal: "e,state,unselected";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 1.0;
+	target: "clip";
+	target: "overlay";
+}
+
+program {
+	name: "set_active";
+	signal: "e,state,selected";
+	source: "e";
+	script {
+		set_int(active, 1);
+	}
+}
+
+program {
+	name: "drag_in";
+	signal: "e,action,drag,in";
+	source: "e";
+	script {
+		if (get_int(drag) == 0) {
+			set_state(PART:"clip", "drag", 0.0);
+			set_int(drag, 1);
+	}
+    }
+}
+
+program {
+	name: "drag_out";
+	signal: "e,action,drag,out";
+	source: "e";
+ 	script {
+		if (get_int(drag) == 1) {
+			if (get_int(active) == 1)
+			set_state(PART:"clip", "active", 0.0);
+		else
+			set_state(PART:"clip", "default", 0.0);
+			set_int(drag, 0);
+		}
+	}
+}
+
+program {
+	name: "init";
+	signal: "load";
+	source: "";
+	script {
+		set_int(active, 0);
+		set_int(drag, 0);
+	}
+}
+
+program {
+	name: "activate.1";
+	signal: "e,state,selected";
+	source: "e";
+	action: STATE_SET "active" 0.0;
+	transition: DECELERATE 0.25; in: 0.25 0.0;
+	target: "lid.tl";
+	target: "lid.tr";
+	target: "lid.bl";
+	target: "lid.br";
+	target: "focus";
+}
+
+program {
+	name: "deactivate.1";
+	signal: "e,state,unselected";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.25; in: 0.25 0.0;
+	target: "lid.tl";
+	target: "lid.tr";
+	target: "lid.bl";
+	target: "lid.br";
+	target: "focus";
+}

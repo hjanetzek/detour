@@ -1,0 +1,8 @@
+
+group {
+	name: "e/widgets/frame";
+
+	parts {
+		#include "frame_main.edc"
+	}
+}

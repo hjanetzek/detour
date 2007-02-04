@@ -1,0 +1,18 @@
+
+program {
+	name: "toggle_on"; 
+	signal: "e,state,on"; 
+	source: "e";
+	action: STATE_SET "active" 0.0;
+	transition: LINEAR 0.25;
+	target: "item1";
+} 
+
+program {
+	name: "toggle_off";
+	signal: "e,state,off";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.25;
+	target: "item1";
+}

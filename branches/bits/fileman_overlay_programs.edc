@@ -1,0 +1,48 @@
+      program {
+	 name: "go1";
+	 signal: "e,state,busy,start";
+	 source: "e";
+	 action: STATE_SET "active" 0.0;
+	 transition: SINUSOIDAL 1.0;
+	 target:  "busy_clip";
+      }
+      program {
+	 name: "go2";
+	 signal: "e,state,busy,start";
+	 source: "e";
+	 action: STATE_SET "default" 0.0;
+	 transition: LINEAR 0.5;
+	 target: "busy";
+	 after:  "go2";
+      }
+      program {
+	 name: "stop1";
+	 signal: "e,state,busy,stop";
+	 source: "e";
+	 action: STATE_SET "default" 0.0;
+	 transition: SINUSOIDAL 1.0;
+	 target: "busy_clip";
+	 after: "stop2";
+      }
+      program {
+	 name: "stop2";
+	 action: ACTION_STOP;
+	 target: "go2";
+      }
+      program {
+	 name: "gob1";
+	 signal: "e,state,typebuf,start";
+	 source: "e";
+	 action: STATE_SET "active" 0.0;
+	 transition: SINUSOIDAL 0.25;
+	 target:  "typebuf_clip";
+      }
+      program {
+	 name: "stopb1";
+	 signal: "e,state,typebuf,stop";
+	 source: "e";
+	 action: STATE_SET "default" 0.0;
+	 transition: SINUSOIDAL 1.0;
+	 target: "typebuf_clip";
+	 after: "stop2";
+      }

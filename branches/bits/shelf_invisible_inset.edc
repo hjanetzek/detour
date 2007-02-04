@@ -1,0 +1,503 @@
+
+part {
+	name: "background";
+	mouse_events: 0;
+	
+	description {
+		state: "default" 0.0; // top
+
+	r1 { to: "overlay"; offset: 5 5; }
+	r2 { to: "overlay"; offset: -6 -1; }
+
+	image {
+		normal: "shelf_detroit_inset_bg.png";
+		border: 6 6 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "left" 0.0;
+
+	r1 { offset: 0 5; }
+	r2 { offset: -6 -6; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_left.png";
+		border: 7 7 8 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "left_top" 0.0;
+
+	r1 { offset: 0 5; }
+	r2 { offset: -6 -6; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_left.png";
+		border: 7 7 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "left_bottom" 0.0;
+
+	r1 { offset: 0 5; }
+	r2 { offset: -6 -6; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_left.png";
+		border: 7 7 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "right" 0.0;
+
+	r1 { offset: 5 5; }
+	r2 { offset: -1 -6; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_right.png";
+		border: 7 7 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "right_top" 0.0;
+
+	r1 { offset: 5 5; }
+	r2 { offset: -1 -6; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_right.png";
+		border: 7 7 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "right_bottom" 0.0;
+
+	r1 { offset: 5 5; }
+	r2 { offset: -1 -6; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_right.png";
+		border: 7 7 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "top_left" 0.0;
+
+	r1 { offset: -1 1; }
+	r2 { offset: -1 -1; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_top.png";
+		border: 7 7 8 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "top_right" 0.0;
+
+	r1 { offset: -1 1; }
+	r2 { offset: -1 -1; }
+
+	image {
+		normal: "shelf_detroit_inset_bg_top.png";
+		border: 7 7 8 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "bottom" 0.0;
+
+	r1 { to: "overlay"; offset: 5 5; }
+	r2 { to: "overlay"; offset: -6 -1; }
+
+	image {
+		normal: "shelf_detroit_inset_bg.png";
+		border: 6 6 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "bottom_left" 0.0;
+
+	r1 { to: "overlay"; offset: 5 5; }
+	r2 { to: "overlay"; offset: -6 -1; }
+
+	image {
+		normal: "shelf_detroit_inset_bg.png";
+		border: 6 6 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "bottom_right" 0.0;
+
+	r1 { to: "overlay"; offset: 5 5; }
+	r2 { to: "overlay"; offset: -6 -1; }
+
+	image {
+		normal: "shelf_detroit_inset_bg.png";
+		border: 6 6 6 6;
+	}
+
+	fill {
+		smooth: 0;
+	}
+    }
+}
+
+
+part {
+	name: "items_clip";
+	type: RECT;
+	mouse_events:  0;
+
+	description {
+		state: "default" 0.0; // top
+
+	r1 { to: "background"; offset: 0  0; }
+	r2 { to: "background"; offset: -1 -1; }
+
+	color: 255 255 255 255;
+	}
+
+	description {
+		state: "left" 0.0;
+
+	r1 { to: "background"; offset: 2 2; }
+	r2 { to: "background"; offset: -3 -3; }
+
+	color: 255 255 255 255;
+	}
+
+	description {
+		state: "left_top" 0.0;
+
+	r1 { to: "background"; offset: 2 2; }
+	r2 { to: "background"; offset: -3 -3; }
+
+	color: 255 255 255 255;
+}
+
+	description {
+		state: "left_bottom" 0.0;
+
+	r1 { to: "background"; offset: 2 2; }
+	r2 { to: "background"; offset: -3 -3; }
+
+	color: 255 255 255 255;
+}
+
+	description {
+		state: "right" 0.0;
+
+	r1 { to: "background"; offset: 2 1; }
+	r2 { to: "background"; offset: -2 -2; }
+
+	color: 255 255 255 255;
+}
+
+	description {
+		state: "right_top" 0.0;
+
+	r1 { to: "background"; offset: 2 1; }
+	r2 { to: "background"; offset: -2 -2; }
+
+	color: 255 255 255 255;
+}
+
+	description {
+		state: "right_bottom" 0.0;
+
+	r1 { to: "background"; offset: 2 1; }
+	r2 { to: "background"; offset: -2 -2; }
+
+	color: 255 255 255 255;
+}
+
+	description {
+		state: "bottom" 0.0;
+
+	r1 { to: "background"; offset: 0  0; }
+	r2 { to: "background"; offset: -1 -1; }
+
+	color: 255 255 255 255;
+	}
+
+	description {
+		state: "bottom_left" 0.0;
+
+	r1 { to: "background"; offset: 0  0; }
+	r2 { to: "background"; offset: -1 -1; }
+
+	color: 255 255 255 255;
+	}
+
+	description {
+		state: "bottom_right" 0.0;
+
+	r1 { to: "background"; offset: 0  0; }
+	r2 { to: "background"; offset: -1 -1; }
+
+	color: 255 255 255 255;
+	}
+
+	description {
+		state: "top_left" 0.0;
+
+	r1 { to: "background"; offset: 0  0; }
+	r2 { to: "background"; offset: -1 -1; }
+
+	color: 255 255 255 255;
+	}
+
+	description {
+		state: "top_right" 0.0;
+
+	r1 { to: "background"; offset: 0  0; }
+	r2 { to: "background"; offset: -1 -1; }
+
+	color: 255 255 255 255;
+	}
+}
+
+
+part {
+	name: "e.swallow.content";
+	type: SWALLOW;
+	mouse_events: 0;
+	clip_to: "items_clip";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "items_clip"; }
+	r2 { to: "items_clip"; }
+
+	color: 255 0 0 0;
+	}
+}
+
+part {
+	name: "overlay";
+	mouse_events: 0;
+	
+	description {
+		state: "default" 0.0; // bottom
+
+	image {
+		normal: "shelf_detroit_inset_overlay.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "left" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_left.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "left_top" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_left.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "left_right" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_left.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "right" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_right.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "right_top" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_right.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "right_bottom" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_right.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "top_right" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_top.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "top_left" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_top.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "top" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay_top.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "bottom_left" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+}
+
+	description {
+		state: "bottom_right" 0.0;
+
+	image {
+		normal: "shelf_detroit_inset_overlay.png";
+		border: 13 13 13 13;
+		middle: 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+    }
+}
+

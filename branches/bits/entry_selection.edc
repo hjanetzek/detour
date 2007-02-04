@@ -1,0 +1,10 @@
+
+part {
+	name: "selection";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 100 169 252 128;
+	}
+}

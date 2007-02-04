@@ -1,0 +1,46 @@
+
+group {
+	name: "e/widgets/entry";
+	min: 22 22;
+
+	parts {
+		#include "entry_main.edc"
+	}
+
+	programs {
+		#include "entry_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/entry/text";
+
+	parts {
+		#include "entry_text.edc"
+	}
+}
+
+group {
+	name: "e/widgets/entry/cursor";
+	min: 1 0;
+
+	parts {
+		#include "entry_cursor.edc"
+	}
+
+	programs {
+		#include "entry_cursor_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/entry/selection";
+
+	data {
+		item: "on_foreground" "1";
+	}
+
+	parts {
+		#include "entry_selection.edc"
+	}
+}

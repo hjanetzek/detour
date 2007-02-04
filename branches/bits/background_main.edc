@@ -1,0 +1,31 @@
+
+#if BG_TYPE == 0
+part {
+	name: "background_image";
+	type: GRADIENT;
+	mouse_events: 0; 
+
+	description {
+		state: "default" 0.0;
+		gradient.spectrum: "gradient";
+		gradient.type: "radial";
+		fill.origin.relative: 0.5 0.5;
+	}
+}
+#else
+#if BG_TYPE == 1
+part { 
+	name: "background_image";
+	type: GRADIENT;
+	
+	description { 
+		state: "default" 0.0; 
+
+	gradient {
+		spectrum: "background";
+	}
+    }
+}
+#endif
+#endif
+version()

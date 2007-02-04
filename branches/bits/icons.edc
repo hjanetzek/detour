@@ -1,0 +1,155 @@
+
+# ifdef ICON
+#  undef ICON
+# endif
+
+#define ICON(GROUP_NAME,IMAGE) \
+group { \
+	name: GROUP_NAME; \
+	max: 64 64; \
+	parts { \
+		part { \
+			name: "icon"; \
+			mouse_events: 0; \
+		description { \
+			state: "default" 0.0; \
+			aspect: 1.0 1.0; \
+			aspect_preference: BOTH; \
+			max: 64 64; \
+		image { \
+			normal: IMAGE; \
+		} \
+	    } \
+   	} \
+    } \
+}
+
+ICON("e/icons/enlightenment/startup", "system-shutdown.png")
+ICON("e/icons/enlightenment/performance", "preferences-system.png")
+ICON("e/icons/enlightenment/focus", "window-new.png")
+ICON("e/icons/enlightenment/screen_resolution", "view-fullscreen.png")
+ICON("e/icons/enlightenment/e", "dialog-information.png")
+ICON("e/icons/enlightenment/menus", "start-here.png")
+ICON("e/icons/enlightenment/applications", "applications-office.png")
+ICON("e/icons/enlightenment/directories", "system-search.png")
+ICON("e/icons/enlightenment/system", "preferences-system-session.png")
+ICON("e/icons/enlightenment/reset", "gnome-session-reboot.png")
+ICON("e/icons/enlightenment/exit", "gnome-session-logout.png")
+ICON("e/icons/enlightenment/logout", "gnome-session-logout.png")
+ICON("e/icons/enlightenment/halt", "gnome-session-halt.png")
+ICON("e/icons/enlightenment/reboot", "gnome-session-reboot.png")
+ICON("e/icons/enlightenment/suspend", "gnome-session-suspend.png")
+ICON("e/icons/enlightenment/hibernate", "gnome-session-hibernate.png")
+ICON("e/icons/enlightenment/transitions", "preferences-desktop-screensaver.png")
+ICON("e/icons/enlightenment/window_manipulation", "wmtweaks.png")
+ICON("e/icons/enlightenment/winlist", "preferences-windows-list.png")
+ICON("e/icons/enlightenment/themes", "preferences-desktop-theme.png")
+ICON("e/icons/enlightenment/windows", "preferences-system-windows.png")
+ICON("e/icons/enlightenment/lost_windows", "gnome-lost-window-menu.png")
+ICON("e/icons/enlightenment/modules", "applications-other.png")
+ICON("e/icons/enlightenment/favorites", "emblem-favorite.png")
+ICON("e/icons/enlightenment/desktops", "workspace-switcher.png")
+ICON("e/icons/enlightenment/intl", "preferences-desktop-locale.png")
+ICON("e/icons/enlightenment/colors", "view-colors.png")
+ICON("e/icons/enlightenment/configuration", "preferences-desktop.png")
+ICON("e/icons/enlightenment/run", "applications-system.png")
+ICON("e/icons/enlightenment/fileman", "system-file-manager.png")
+ICON("e/icons/enlightenment/unknown", "gnome-lost-window-menu.png")
+ICON("e/icons/enlightenment/mouse", "input-mouse.png")
+ICON("e/icons/enlightenment/keys", "preferences-desktop-keyboard-shortcuts.png")
+ICON("e/icons/enlightenment/shelf", "gnome-panel-window-list.png")
+ICON("e/icons/enlightenment/fonts", "preferences-desktop-font.png")
+ICON("e/icons/enlightenment/background", "preferences-desktop-wallpaper.png")
+ICON("e/icons/enlightenment/icon_theme", "applications-accessories.png")
+ICON("e/icons/enlightenment/regenerate_menus", "view-refresh.png")
+ICON("e/icons/enlightenment/mouse_clean", "gnome-dev-mouse-optical.png")
+ICON("e/icons/enlightenment/screen_setup", "video-display.png")
+ICON("e/icons/enlightenment/desklock_menu", "system-lock-screen.png")
+ICON("e/icons/enlightenment/desklock", "system-lock-screen.png")
+ICON("e/icons/enlightenment/appearance", "applications-graphics.png")
+ICON("e/icons/enlightenment/behavior", "gnome-dev-keyboard.png")
+ICON("e/icons/enlightenment/advanced", "gnome-run.png")
+ICON("e/icons/enlightenment/extensions", "application-x-executable.png")
+ICON("e/icons/enlightenment/file_icons", "text-x-generic.png")
+ICON("e/icons/enlightenment/imc", "preferences-desktop-peripherals.png")
+ICON("e/icons/enlightenment/menu_settings", "alacarte.png")
+
+# ifdef ICON
+#  undef ICON
+# endif
+
+#define ICON(GROUP_NAME,IMAGE) \
+group { \
+	name: GROUP_NAME; \
+	max: 24 24; \
+	parts { \
+		part { \
+			name: "icon"; \
+			mouse_events: 0; \
+		description { \
+			state: "default" 0.0; \
+			aspect: 1.0 1.0; \
+			aspect_preference: BOTH; \
+			max: 24 24; \
+		image { \
+			normal: IMAGE; \
+		} \
+	    } \
+   	} \
+    } \
+}
+
+ICON("e/icons/enlightenment/shelf_position_bottom", "icon_shelf_bottom.png")
+ICON("e/icons/enlightenment/shelf_position_bottom_left", "icon_shelf_bottom_left.png")
+ICON("e/icons/enlightenment/shelf_position_bottom_right", "icon_shelf_bottom_right.png")
+ICON("e/icons/enlightenment/shelf_position_top", "icon_shelf_top.png")
+ICON("e/icons/enlightenment/shelf_position_top_left", "icon_shelf_top_left.png")
+ICON("e/icons/enlightenment/shelf_position_top_right", "icon_shelf_top_right.png")
+ICON("e/icons/enlightenment/shelf_position_left", "icon_shelf_left.png")
+ICON("e/icons/enlightenment/shelf_position_left_top", "icon_shelf_left_top.png")
+ICON("e/icons/enlightenment/shelf_position_left_bottom", "icon_shelf_left_bottom.png")
+ICON("e/icons/enlightenment/shelf_position_right", "icon_shelf_right.png")
+ICON("e/icons/enlightenment/shelf_position_right_top", "icon_shelf_right_top.png")
+ICON("e/icons/enlightenment/shelf_position_right_bottom", "icon_shelf_right_bottom.png")
+ICON("e/icons/enlightenment/shelf_bottom_desk", "icon_shelf_bottom_desk.png")
+
+ICON("e/icons/enlightenment/shelf_custom", "icon_shelf_custom.png")
+ICON("e/icons/enlightenment/shelf_dock", "icon_shelf_dock.png")
+ICON("e/icons/enlightenment/shelf_menu_bar", "icon_shelf_menu_bar.png")
+ICON("e/icons/enlightenment/shelf_panel", "icon_shelf_panel.png")
+ICON("e/icons/enlightenment/shelf_top_desk", "icon_shelf_top_desk.png")
+ICON("e/icons/enlightenment/screen_around", "screen_around.png")
+ICON("e/icons/enlightenment/screen_left", "screen_left.png")
+ICON("e/icons/enlightenment/screen_right", "screen_right.png")
+ICON("e/icons/enlightenment/screen_vflip", "screen_vflip.png")
+ICON("e/icons/enlightenment/screen_hflip", "screen_hflip.png")
+ICON("e/icons/enlightenment/screen_normal", "screen_normal.png")
+
+
+# ifdef ICON
+#  undef ICON
+# endif
+
+#define ICON(GROUP_NAME,SIZE,IMAGE) \
+group { \
+	name: GROUP_NAME; \
+	parts { \
+		part { \
+			name: "icon"; \
+			mouse_events: 0; \
+		description { \
+			state: "default" 0.0; \
+			aspect: 1.0 1.0; \
+			aspect_preference: BOTH; \
+			max:  SIZE; \
+		image { \
+			normal: IMAGE; \
+		} \
+	    } \
+   	} \
+    } \
+}
+
+ICON("e/icons/widget/new_dialog", 32 32, "go-next.png")
+ICON("e/icons/widget/up_arrow", 32 32, "go-up.png")
+ICON("e/icons/widget/down_arrow", 32 32, "go-down.png")

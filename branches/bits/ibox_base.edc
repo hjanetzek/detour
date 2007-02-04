@@ -1,0 +1,51 @@
+
+part {
+	name: "item_clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+	}
+
+	description {
+		state: "faded" 0.0;
+		color: 255 255 255 64;
+	}
+}
+
+part {
+	name: "e.swallow.content";
+	type: SWALLOW;
+	mouse_events:  0;
+	clip_to: "item_clip";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { relative: 0.0 0.0; offset: 2 2; }
+	r2 { relative: 1.0 1.0; offset: -3 -3; }
+
+	color: 0 0 0 0;
+	}
+
+	description {
+		state: "bigger" 0.0;
+		inherit:  "default" 0.0;
+
+	r1 { relative: 0.0 0.0; offset: 0 0; }
+	r2 { relative: 1.0 1.0; offset: -1 -1; }
+	}
+}
+
+part {
+	name: "over";
+	type: RECT;
+	repeat_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+	}
+}

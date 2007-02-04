@@ -1,0 +1,8 @@
+
+group {
+	name: "e/widgets/preview";
+
+	parts {
+		#include "preview_main.edc"
+	}
+}

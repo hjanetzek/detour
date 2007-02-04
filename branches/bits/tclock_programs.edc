@@ -1,0 +1,32 @@
+
+program  {
+	name: "time_hidden";
+	signal: "time_hidden";
+	source: "";
+	action: STATE_SET "hidden" 0.0;
+	target: "tclock_time";
+}
+
+program  {
+	name: "time_visible";
+	signal: "time_visible";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	target: "tclock_time";
+}
+
+program {
+	name: "date_hidden";
+	signal: "date_hidden";
+	source: "";
+	action: STATE_SET "hidden" 0.0;
+	target: "tclock_date";
+}
+
+program {
+	name: "date_visible";
+	signal: "date_visible";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	target: "tclock_date";
+}	     

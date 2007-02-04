@@ -1,0 +1,45 @@
+
+program {
+	name: "exec_start";
+	signal: "e,action,start";
+	source: "e";
+	action: STATE_SET "faded" 0.0;
+	transition: LINEAR 0.5;
+	target: "item_clip";
+}
+
+program {
+	name: "exec_exec";
+	signal: "e,action,exec";
+	source: "e";
+	action: STATE_SET "faded" 0.0;
+	transition: LINEAR 0.5;
+	target: "item_clip";
+	after: "exec_stop";
+}
+
+program {
+	name: "exec_stop";
+	signal: "e,action,stop";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "item_clip";
+}
+
+program {
+	name:    "hover_in";
+	signal:  "mouse,in";
+	source:  "over";
+	action:  STATE_SET "bigger" 0.0;
+	transition: LINEAR 0.1;
+	target:  "e.swallow.content";
+}
+
+program {
+	name:    "hover_out";
+	signal:  "mouse,out";
+	source:  "over";
+	action:  STATE_SET "default" 0.0;
+	transition: LINEAR 0.2;
+	target:  "e.swallow.content";
+}
