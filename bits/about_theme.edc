@@ -1,0 +1,16 @@
+
+group {
+	name: "e/theme/about";
+	min: 299 341;
+	max: 299 341;
+
+	parts {
+		#include "about_theme_bg.edc"
+		#include "about_theme_widget.edc"
+		#include "about_theme_text.edc"
+	}
+
+	programs {
+		#include "about_theme_programs.edc"
+	}
+}

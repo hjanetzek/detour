@@ -1,0 +1,95 @@
+
+/* scrolling textblock */
+
+program {
+	name: "go";
+	signal: "load";
+	source: "";
+	action: STATE_SET "default" 0.1;
+	transition: DECELERATE 0.5; 
+	in: 10.0 0.0;
+	target: "entry_clip";
+	after: "go2";
+}
+
+program {
+	name: "go2";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.2;
+	transition: DECELERATE 0.5; 
+	in: 10.0 0.0;
+	target: "entry_clip";
+	after: "go3";
+}
+
+program {
+	name: "go3";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.3;
+	transition: DECELERATE 0.5; 
+	in: 10.0 0.0;
+	target: "entry_clip";
+	after: "return";
+}
+
+program {
+	name: "return"; /* to the first state */
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5; 
+	in: 10.0 0.0;
+	target: "entry_clip";
+	after: "go"; 
+}
+
+/**/
+
+program {
+	name: "button_click";
+	signal: "mouse,down,1";
+	source: "button_enabled";
+	action: STATE_SET "clicked" 0.0;
+	target: "button_enabled";
+	target: "button_clip";
+	target: "button_text";
+}
+
+program {
+	name: "button_unclick";
+	signal: "mouse,up,1";
+	source: "button_enabled";
+	action: STATE_SET "default" 0.0;
+	target: "button_enabled";
+	target: "button_clip";
+	target: "button_text";
+}
+
+program {
+	name: "emit.signal";
+	signal: "mouse,clicked,1";
+	source: "button_enabled";
+	action: SIGNAL_EMIT "e,action,close" "";
+}
+
+/**/
+
+program {
+	name: "mouse.in";
+	signal: "mouse,in";
+	source: "button_enabled";
+	action: STATE_SET "visible" 0.0;
+	transition: DECELERATE 1.0;
+	target: "focus_clip";;
+}
+
+program {
+	name: "mouse.out";
+	signal: "mouse,out";
+	source: "button_enabled";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "focus_clip";
+}

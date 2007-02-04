@@ -1,0 +1,24 @@
+
+part {
+	name: "e.text.label";
+	type: TEXT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { relative: 0.0 0.0; offset: 2 4; }
+	r2 { relative: 1.0 1.0; offset: -3 -5; }
+
+	color: 7 7 7 255;
+
+	text {
+		text: "Label";
+		font: "Edje-Vera";
+		size: 10;
+		min: 1 1;
+		align: 0.0 0.5;
+		text_class: "label";
+	}
+    }
+}

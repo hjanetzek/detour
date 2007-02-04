@@ -1,0 +1,12 @@
+
+group {
+	name: "e/widgets/cslider";
+	
+	parts {
+		#include "cslider_main.edc"
+	}
+
+	programs {
+		#include "cslider_programs.edc"
+	}
+}

@@ -1,0 +1,24 @@
+
+group {
+	name: "e/widgets/slider_vertical";
+
+	parts {
+		#include "slider_v_main.edc"
+	}
+
+	programs {	 
+		#include "slider_v_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/slider_horizontal";
+
+	parts {
+		#include "slider_h_main.edc"
+	}
+
+	programs {
+		#include "slider_h_programs.edc"
+	}
+}

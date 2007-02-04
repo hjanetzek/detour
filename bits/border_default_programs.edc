@@ -1,0 +1,147 @@
+
+program {
+	name, "active"; 
+	signal, "e,state,focused"; 
+	source, "e";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "clip.color";
+} 
+
+program {
+	name, "inactive"; 
+	signal, "e,state,unfocused"; 
+	source, "e";
+	action: STATE_SET "default" 0.1;
+	transition: DECELERATE 0.5;
+	target: "clip.color";
+}
+
+program {
+	name, "active.text"; 
+	signal, "e,state,focused"; 
+	source, "e";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "e.text.title";
+} 
+
+program {
+	name, "inactive.text"; 
+	signal, "e,state,unfocused"; 
+	source, "e";
+	action: STATE_SET "default" 0.1;
+	transition: DECELERATE 0.5;
+	target: "e.text.title";
+} 
+
+program {
+	name: "close_click";
+	signal: "mouse,down,1";
+	source: "button-close";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "close-clip";
+}
+
+program {
+	name: "close_unclick";
+	signal: "mouse,up,1";
+	source: "button-close";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "close-clip";
+}
+
+program {
+	name: "close_in";
+	signal: "mouse,in";
+	source: "button-close";
+	action: STATE_SET "hilited" 0.0;
+	transition: DECELERATE 0.15;
+	target: "button-close";
+	after: "close_out";
+}
+
+program {
+	name: "close_out";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.15;
+	target: "button-close";
+}
+
+program {
+	name: "max_click";
+	signal: "mouse,down,1";
+	source: "button-max";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "max-clip";
+}
+
+program {
+	name: "max_unclick";
+	signal: "mouse,up,1";
+	source: "button-max";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "max-clip";
+}
+
+program {
+	name: "max_in";
+	signal: "mouse,in";
+	source: "button-max";
+	action: STATE_SET "hilited" 0.0;
+	transition: DECELERATE 0.15;
+	target: "button-max";
+	after: "max_out";
+}
+
+program {
+	name: "max_out";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.15;
+	target: "button-max";
+}
+
+program {
+	name: "min_click";
+	signal: "mouse,down,1";
+	source: "button-min";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "min-clip";
+}
+
+program {
+	name: "min_unclick";
+	signal: "mouse,up,1";
+	source: "button-min";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "min-clip";
+}
+
+program {
+	name: "min_in";
+	signal: "mouse,in";
+	source: "button-min";
+	action: STATE_SET "hilited" 0.0;
+	transition: DECELERATE 0.15;
+	target: "button-min";
+	after: "min_out";
+}
+
+program {
+	name: "min_out";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.15;
+	target: "button-min";
+}

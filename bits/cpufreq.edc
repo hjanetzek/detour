@@ -1,0 +1,18 @@
+
+group {
+	name: "e/modules/cpufreq/main";
+	min: 4 4;
+	max: 128 128;
+   
+	script {
+		#include "cpufreq_script.edc"
+	}
+   
+	parts {
+		#include "cpufreq_main.edc"  
+	}
+   
+	programs {
+		#include "cpufreq_programs.edc"
+	}
+}

@@ -1,0 +1,200 @@
+
+/* logical tasks we want to complete:
+ * button transition for button clicked, stop focus
+ * button transition for button released, reset focus
+ * button hilite only visible for focused buttons
+ * set the state of the border last */
+
+/**/
+
+program {
+	name: "icon_visible";
+	signal: "e,action,show,icon";
+	source: "e";
+	action: STATE_SET "visible" 0.0;
+	target: "e.swallow.icon";
+}
+
+/**/
+
+program {
+	name: "button_unclick";
+	signal: "mouse,up,1";
+	source: "button_enabled";
+	script {
+		set_state(PART:"button_enabled", "default", 0.0);
+		set_state(PART:"e.text.label", "default", 0.0);
+	}
+}
+
+program {
+	name: "button_clicked";
+	signal: "mouse,clicked,1";
+	source: "button_enabled";
+	action: SIGNAL_EMIT "e,action,click" "";
+}
+
+/* Logic says we should loop the focus animation 
+ * make it transparent to the user */
+
+program {
+	name: "focus";
+	signal: "";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	transition: DECELERATE 1.0;
+	target: "focus_clip";
+	after: "focus_loop";
+}
+
+program {
+	name: "focus_loop";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "focus_clip";
+	after: "focus";
+}
+
+/* emit a speficic signal for focused and unfocused objects
+ * set focus variable */
+
+program {
+	name: "focus_in";
+	signal: "e,state,focused";
+	source: "e";
+	action: SIGNAL_EMIT "focus_visible" "";
+}
+
+program {
+	name: "focus_out";
+	signal: "e,state,unfocused";
+	source: "e";
+	action: SIGNAL_EMIT "focus_switch" "";
+}
+
+/*
+program {
+	name: "set_focus_variable";
+	signal: "e,state,focused";
+	source: "e";
+	script {
+		set_int(focus_activated, 1);
+	}
+}
+
+program {
+	name: "unset_focus_variable";
+	signal: "e,state,unfocused";
+	source: "e";
+	script {
+		set_int(focus_activated, 0);
+	}
+}
+*/
+
+/* execute a program based on the signal emitted */
+
+program {      
+	name: "set_focus";
+	signal: "focus_visible";
+	source: "";
+	script {
+		run_program(PROGRAM:"focus");
+	}
+}
+
+program {      
+	name: "switch_focus";
+	signal: "focus_switch";
+	source: "";
+	script {
+		run_program(PROGRAM:"focus_stop");
+	}
+}
+
+/* when focus switches we must stop the previous instance
+ * and reset the focus, while giving focus to the new object */
+
+program {
+	name: "focus_stop";
+	signal: "";
+	source: "";
+	action: ACTION_STOP;
+	target: "focus";
+	target: "focus_loop";
+}
+
+program {      
+	name: "reset_focus";
+	signal: "focus_switch";
+	source: "";
+	script {
+		set_state(PART:"focus_clip", "default", 0.0);
+	}
+}
+
+/* check if button has focus */
+
+/*
+program {
+	name: "button_in";
+	signal: "mouse,in";
+	source: "button_enabled";
+	script {
+		if (get_int(focus_activated) == 1) {
+		set_state(PART:"button_enabled", "hilited", 0.0);
+		set_state(PART:"e.text.label", "hilited", 0.0);
+	}
+    }
+}
+
+program {
+	name: "button_out";
+	signal: "mouse,out";
+	source: "button_enabled";
+	script {
+		if (get_int(focus_activated) == 1) {
+		set_state(PART:"button_enabled", "default", 0.0);
+		set_state(PART:"e.text.label", "default", 0.0);
+		}
+	}
+}
+ */
+
+/* set the state of our object */
+
+program {
+	name: "enable";
+	signal: "e,state,enabled";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "button_enabled";
+	target: "button_disabled"; 
+	target: "e.text.label"; 
+	target: "button_image"; 
+}
+
+program {
+	name: "disable";
+	signal: "e,state,disabled";
+	source: "e";
+	action: STATE_SET "disabled" 0.0;
+	target: "button_enabled";
+	target: "button_disabled";
+	target: "e.text.label"; 
+	target: "button_image"; 
+}
+
+/**/
+
+program {
+	name: "button_click";
+	signal: "mouse,down,1";
+	source: "button_enabled";
+	script {
+		set_state(PART:"button_enabled", "clicked", 0.0);
+		set_state(PART:"e.text.label", "clicked", 0.0);
+	}
+}

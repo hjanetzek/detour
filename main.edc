@@ -1,0 +1,86 @@
+
+/* by cored.org et al
+ * detour (seek) version 0.5.1 for Enlightenment 0.16.999.037 or later
+ * */
+
+#define X_COMPOSITE 0
+
+// Use Tango Icon set or the default set
+#define USE_TANGO_ICONS 1
+
+// Main menu title is visible or not
+#define SHOW_MENU_TITLE 0
+
+// Wallpaper
+#define BG_TYPE 1
+
+// Do not modify anything below unless you know what you are doing
+#define r1 rel1
+#define r2 rel2
+
+fonts {
+#include "fonts.edc"
+#include "fonts/bitstream.COPYING"
+}
+
+spectra {
+#include "bits/gradients.edc"
+}
+
+images {
+#include "images.edc"
+#include "icons.edc"
+#include "icons/tango.COPYING"
+}
+
+collections {
+#include "bits/background.edc"
+#include "bits/border.edc"
+#include "bits/ibar.edc"
+#include "bits/menu.edc"
+#include "bits/resize.edc"
+#include "bits/move.edc"
+#include "bits/dialog.edc"
+#include "bits/configure.edc"
+#if USE_TANGO_ICONS == 0
+#else
+#if USE_TANGO_ICONS == 1
+#include "bits/icons.edc"
+#endif
+#endif
+#include "bits/pointer.edc"
+#include "bits/entry.edc"
+#include "bits/check.edc"
+#include "bits/radio.edc"
+#include "bits/frame.edc"
+#include "bits/button.edc"
+#include "bits/label.edc"
+#include "bits/slider.edc"
+#include "bits/desklock.edc"
+#include "bits/textblock.edc"
+#include "bits/shelf.edc"
+#include "bits/preview.edc"
+#include "bits/error.edc"
+#include "bits/pager.edc"
+#include "bits/about_theme.edc"
+#include "bits/tclock.edc"
+#include "bits/ibox.edc"
+#include "bits/scrollframe.edc"
+#include "bits/ilist.edc"
+#include "bits/tlist.edc"
+#include "bits/winlist.edc"
+#include "bits/about.edc"
+#include "bits/fileman.edc"
+#include "bits/color_well.edc"
+#include "bits/cslider.edc"
+#include "bits/spectrum.edc"
+#include "bits/exebuf.edc"
+#include "bits/deskpreview.edc"
+#include "bits/sys.edc"
+//#include "bits/transitions.edc"
+//#include "bits/cpufreq.edc"
+//#include "bits/battery.edc"
+//#include "bits/clock.edc"
+//#include "bits/temperature.edc"
+//#include "gadman.edc" 
+}
