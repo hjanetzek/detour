@@ -1,0 +1,24 @@
+
+group  {
+	name: "e/desklock/background";
+
+	parts {
+		#include "background_main.edc"
+	}
+
+	programs {
+	}
+}
+
+group {
+	name: "e/desklock/login_box";
+
+	parts {
+		#include "desklock_main.edc"
+	}
+
+	programs {
+		#include "desklock_main_programs.edc"
+	}
+}
+

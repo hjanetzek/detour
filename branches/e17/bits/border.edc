@@ -1,0 +1,220 @@
+
+#define CC_CLIP() \
+part { \
+	name: "clip.color"; \
+	type: RECT; \
+	description { \
+		state: "default" 0.0; \
+		color: 255 255 255 255; \
+	r1 { relative: 0.0 0.0; offset: 0 0; } \
+	r2 { relative: 1.0 1.0; offset: -1 -1; } \
+} \
+	description { \
+		state: "default" 0.1; \
+		inherit: "default" 0.0; \
+		color: 234 234 234 255; \
+	} \
+}
+
+#include "border_menu.edc"
+
+group {
+	name: "e/widgets/border/container/border";
+
+	data {
+		item: "shaped" "1";
+	}
+
+	parts {
+		CC_CLIP()
+		#include "border_container.edc"
+	}
+
+	programs {
+		#include "border_container_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/default/border";
+
+	data {
+		//item: "shaped" "0";
+	}
+
+	parts {
+		CC_CLIP()
+		#include "border_default.edc"
+	}
+
+	programs {
+		#include "border_default_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/dialog/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_dialog.edc"
+	}
+
+	programs {
+		#include "border_dialog_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/modal/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_modal.edc"
+	}
+}
+
+/*
+ * make e internal windows (config panel, dialogs, config windows etc.) 
+ * use special border styles by default
+ */
+
+group {
+	name: "e/widgets/border/noresize_dialog/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_dialog.edc"
+	}
+
+	programs {
+		#include "border_dialog_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/pixel/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_pixel.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/shaped/border";
+
+	data {
+		item: "shaped" "1";
+	}
+
+	parts {
+		CC_CLIP()
+		#include "border_shaped.edc"
+	}
+
+	programs {
+		#include "border_shaped_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/squared/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		CC_CLIP()
+		#include "border_squared.edc"
+	}
+
+	programs { 
+		#include "border_squared_programs.edc"
+	}
+}
+
+/*
+ * make e internal windows (config panel, dialogs, config windows etc.) 
+ * use special border styles by default
+ */
+
+group {
+	name: "e/widgets/border/squared_container/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_sq_container.edc"
+	}
+
+	programs {
+		#include "border_dialog_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/terminal/border";
+
+	data {
+		item: "shaped" "1";
+	}
+
+	parts {
+		CC_CLIP()
+		#include "border_terminal.edc"
+	}
+
+	programs {
+		#include "border_shaped_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/urgent/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_urgent.edc"
+	}
+
+	programs {
+		#include "border_urgent_programs.edc"
+	}
+}
+
+FULL_SIZE_BORDER_BUTTON("close")
+FULL_SIZE_BORDER_BUTTON("minimize")
+FULL_SIZE_BORDER_BUTTON("maximize")
+FULL_SIZE_BORDER_BUTTON("shade")
+FULL_SIZE_BORDER_BUTTON("stick")
+FULL_SIZE_BORDER_BUTTON("kill")
+FULL_SIZE_BORDER_BUTTON("locks")
+FULL_SIZE_BORDER_BUTTON("borderless")
+FULL_SIZE_BORDER_BUTTON("fullscreen")
+FULL_SIZE_BORDER_BUTTON("remember")
+FULL_SIZE_BORDER_BUTTON("skip_winlist")
+FULL_SIZE_BORDER_BUTTON("sendto")
+FULL_SIZE_BORDER_BUTTON("stacking")
+FULL_SIZE_BORDER_BUTTON("stack_on_top")
+FULL_SIZE_BORDER_BUTTON("stack_normal")
+FULL_SIZE_BORDER_BUTTON("stack_below")
+FULL_SIZE_BORDER_BUTTON("properties")

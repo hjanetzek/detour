@@ -1,0 +1,70 @@
+      public available_frequencies;
+      public available_governors;
+      
+      public message(Msg_Type:type, id, ...) {
+	 if ((type == MSG_INT_SET) && (id == 1)) {
+	    while (count(available_frequencies) > 0) {
+	       remove(available_frequencies, 0);
+	    }
+	    for (new i = 2; i < numargs(); i++) {
+	       append_int(available_frequencies, getarg(i));
+	    }
+	 } else if ((type == MSG_STRING_SET) && (id == 2)) {
+	    new text[100];
+	    
+	    while (count(available_governors) > 0) {
+	       remove(available_governors, 0);
+	    }
+	    
+	    for (new i = 2; i < numargs(); i++) {
+	       snprintf(text, 100, "%s", getarg(i));
+	       append_str(available_governors, text);
+	    }
+	 } else if ((type == MSG_INT_SET) && (id == 3)) {
+	    new f = getarg(2);
+	    new use_buttons = getarg(3);
+	    new Float:freq, Float:min_freq, Float:max_freq;
+	    new text[100];
+	    
+	    freq = f;
+	    min_freq = fetch_int(available_frequencies, 0);
+	    max_freq = fetch_int(available_frequencies, 
+				 count(available_frequencies) - 1);
+	    
+	    freq = (freq - min_freq) / (max_freq - min_freq);
+	    set_state(PART:"meter", "default", freq);
+	    
+	    if (f < 1000000) {
+	       snprintf(text, 100, "%i", f / 1000);
+	    } else {
+	       snprintf(text, 100, "%i.%i", f / 1000000,
+			(f % 1000000) / 100000);
+	    }
+	    set_text(PART:"readout", text);
+	    
+	    if (use_buttons == 0) {
+	      // set_state(PART:"increase_button", "inactive", 0.0);
+	     //  set_state(PART:"decrease_button", "inactive", 0.0);
+	     //  set_state(PART:"increase", "inactive", 0.0);
+	     //  set_state(PART:"decrease", "inactive", 0.0);
+	    } else {
+	      // set_state(PART:"increase_button", "default", 0.0);
+	      // set_state(PART:"decrease_button", "default", 0.0);
+	     //  set_state(PART:"increase", "default", 0.0);
+	     //  set_state(PART:"decrease", "default", 0.0);
+	    }
+	 } else if((type == MSG_STRING) && (id == 4)) {
+	    new text[100];
+	    snprintf(text, 100, "%s", getarg(2));
+/*	    
+	    if (!strcmp(text, "performance") || !strcmp(text, "powersave") ||
+		!strcmp(text, "userspace") || !strcmp(text, "ondemand")) {
+	       set_state(PART:"governor", text, 0.0);
+	       set_state(PART:"governorbackground", text, 0.0);
+	    } else {
+	       set_state(PART:"governor", "default", 0.0);
+	       set_state(PART:"governorbackground", "default", 0.0);
+	    }
+ */
+	 }
+      }

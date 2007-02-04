@@ -1,0 +1,20 @@
+
+program {
+	name: "cursor.blink";
+	signal: "load";
+	source: "";
+	action: STATE_SET "default" 0.1;
+	transition: DECELERATE 0.5;
+	target: "cursor";
+	after: "cursor.unblink";
+}
+
+program {
+	name: "cursor.unblink";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "cursor";
+	after: "cursor.blink";
+}

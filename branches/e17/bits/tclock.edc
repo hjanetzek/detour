@@ -1,0 +1,18 @@
+
+group {
+	name: "modules/tclock/main";
+
+/*
+ * TODO
+ * Date and time could be repositioned
+ * when either one is not visible
+ */
+
+	parts {
+		#include "tclock_main.edc"
+	}
+
+	programs {
+		#include "tclock_programs.edc" 
+	}
+}

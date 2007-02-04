@@ -1,0 +1,152 @@
+
+group {
+	name: "e/modules/ibox/icon";
+
+	data {
+		item: "raise_on_hilight" "0"; // 1 boolean
+		//	 item: "item_list" "item item2 item3";
+	}
+
+	script {
+		public urgent;
+	}
+
+	parts {
+		#include "ibox_base.edc"
+	}
+
+	programs {
+		#include "ibox_base_programs.edc"
+	}
+}
+
+group {
+	name: "e/modules/ibox/icon_overlay";
+
+	data {
+		// item: "item_list", "item item2 item3";
+	}
+
+	script {
+		public urgent;
+	}
+
+	parts {
+		#include "ibar_icon_overlay.edc"
+	}
+	
+	programs {
+		#include "ibar_icon_overlay_programs.edc"
+
+		program {
+			name: "set_passive";
+			signal: "e,state,unfocused";
+			source: "e";
+			script {
+				if (get_int(urgent) == 1) {
+				run_program(PROGRAM:"go_urgent");
+			}
+		    }
+		}
+
+		program {
+			name: "init";
+			signal: "load";
+			source: "";
+			script {
+				set_int(urgent, 0);
+			}
+		}
+
+		program {
+			name: "set_urgent";
+			signal: "e,state,urgent";
+			source: "e";
+			script {
+				set_int(urgent, 1);
+			}
+		}
+
+		program {
+			name: "go_urgent";
+			signal: "e,state,urgent";
+			source: "e";
+			action: STATE_SET "huge" 0.0;
+			transition: LINEAR 0.1;
+			target: "background";
+			after: "go_urgent2";
+		}
+
+		program {
+			name: "show_title";
+			signal: "e,state,urgent";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.1;
+			target: "label.clip";
+			//after: "hide_title";
+		}
+
+		program {
+			name: "hide_title";
+			signal: "e,state,not_urgent";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.1;
+			target: "label.clip";
+		}
+
+		program {
+			name: "go_urgent2";
+			action: STATE_SET "hidden" 0.0;
+			transition: LINEAR 0.1;
+			target: "background";
+			after: "go_urgent";
+		}
+
+		program {
+			name: "unset_urgent";
+			signal: "e,state,not_urgent";
+			source: "e";
+			script {
+				set_int(urgent, 0);
+			}
+		}
+
+		program {
+			name: "go_unurgent";
+			signal: "e,state,not_urgent";
+			source: "e";
+			action: ACTION_STOP;
+			target: "go_urgent";
+			target: "go_urgent2";
+			after:  "go_unurgent2";
+		}
+ 
+		program {
+			name: "go_unurgent2";
+			action: STATE_SET "default" 0.0;
+			transition: SINUSOIDAL 0.1;
+			target: "background";
+		}
+	}
+}
+
+group {
+	name: "e/modules/ibox/drop";
+
+	parts {
+		#include "ibar_drop.edc"
+	}
+
+	programs {
+		#include "ibar_drop_programs.edc"
+	}
+}
+
+group {
+	name: "e/modules/ibox/drop_overlay";
+
+	parts {
+	}
+}

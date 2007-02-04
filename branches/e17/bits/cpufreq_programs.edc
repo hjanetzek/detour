@@ -1,0 +1,76 @@
+/*
+      program {
+	 name: "next_governor";
+	 signal: "mouse,down,1";
+	 source: "cpu";
+	 action: SIGNAL_EMIT "e,action,governor,next" "";
+      }
+      program {
+	 name: "next_governor2";
+	 signal: "mouse,down,1";
+	 source: "cpu";
+	 action: STATE_SET "clicked" 0.0;
+	 target: "cpu";
+      }
+      program {
+	 name: "next_governor3";
+	 signal: "mouse,up,1";
+	 source: "cpu";
+	 action: STATE_SET "default" 0.0;
+	 target: "cpu";
+      }
+      program {
+	 name: "increase_frequency";
+	 signal: "mouse,down,1";
+	 source: "increase";
+	 action: SIGNAL_EMIT "e,action,frequency,increase" "";
+      }
+      program {
+	 name: "increase_frequency2";
+	 signal: "mouse,down,1";
+	 source: "increase";
+	 action: STATE_SET "clicked" 0.0;
+	 target: "increase_button";
+      }
+      program {
+	 name: "increase_frequency3";
+	 signal: "mouse,up,1";
+	 source: "increase";
+	 action: STATE_SET "default" 0.0;
+	 target: "increase_button";
+      }
+      program {
+	 name: "decrease_frequency";
+	 signal: "mouse,down,1";
+	 source: "decrease";
+	 action: SIGNAL_EMIT "e,action,frequency,decrease" "";
+      }
+      program {
+	 name: "decrease_frequency2";
+	 signal: "mouse,down,1";
+	 source: "decrease";
+	 action: STATE_SET "clicked" 0.0;
+	 target: "decrease_button";
+      }
+      program {
+	 name: "decrease_frequency3";
+	 signal: "mouse,up,1";
+	 source: "decrease";
+	 action: STATE_SET "default" 0.0;
+	 target: "decrease_button";
+      }
+*/
+      program {
+	 name: "enabled";
+	 signal: "e,state,enabled";
+	 source: "e";
+	 action: STATE_SET "default" 0.0;
+	 target: "fade_clip";
+      }
+      program {
+	 name: "disabled";
+	 signal: "e,state,disabled";
+	 source: "e";
+	 action: STATE_SET "faded" 0.0;
+	 target: "fade_clip";
+      }

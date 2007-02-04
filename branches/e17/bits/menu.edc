@@ -1,0 +1,164 @@
+
+# ifdef ITEM_SEL
+#  undef ITEM_SEL
+# endif
+
+#define ITEM_SEL(NAME,SIGNAL,STATE_NAME,INDEX,TRANSITION,TRANS_INDEX,TARGET) \
+program { \
+	name: NAME; \
+	signal: SIGNAL; \
+	source: "e"; \
+	action: STATE_SET STATE_NAME INDEX; \
+	transition: TRANSITION TRANS_INDEX; \
+	target: TARGET; \
+}
+
+#define sel() \
+	ITEM_SEL("go_passive", "e,state,unselected", "default", 0.0, DECELERATE, 0.0, "content") \
+	ITEM_SEL("go_active", "e,state,selected", "active", 0.0, DECELERATE, 0.0, "content")
+
+group {
+	name: "e/widgets/menu/default/background";
+
+	parts {
+		#include "menu_background.edc"
+	}
+
+	programs {
+#if SHOW_MENU_TITLE == 0
+#else
+#if SHOW_MENU_TITLE == 1
+		program {
+			name: "on";
+			signal: "e,action,show,title";
+			source: "e";
+			action: STATE_SET "active" 0.0;
+			target: "e.text.title";
+		}
+
+		program {
+			name: "off";
+			signal: "e,action,hide,title";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "e.text.title";
+		}
+#endif
+#endif
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/item_bg";
+
+	parts {
+		#include "menu_item_bg.edc"
+	}
+
+	programs {
+		sel()
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/separator";
+
+	parts {
+		#include "menu_separator.edc"
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/submenu_bg";
+
+	parts {
+		#include "menu_submenu_bg.edc"
+	}
+
+	programs {
+		sel()
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/check";
+
+	parts {
+		#include "menu_check.edc"
+	}
+
+	programs {
+		#include "menu_check_signals.edc"
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/radio";
+
+	parts {
+		#include "menu_radio.edc"
+	}
+
+	programs {
+		#include "menu_radio_signals.edc"
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/icon";
+
+	parts {
+		#include "menu_icon.edc"
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/label";
+
+	parts {
+		#include "menu_label.edc"
+	}
+
+	programs {
+		ITEM_SEL("go_passive", "e,state,unselected", "default", 0.0, LINEAR, 0.0, "e.text.label")
+		ITEM_SEL("go_active", "e,state,selected", "active", 0.0, LINEAR, 0.0, "e.text.label")
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/submenu";
+
+	parts {
+		#include "menu_submenu.edc"
+	}
+
+	programs {
+		program {
+			name: "go_active";
+			signal: "e,state,selected";
+			source: "e";
+			action: STATE_SET "active" 0.0;
+			transition: DECELERATE 0.5;
+			target: "arrow";
+			after: "go_inactive";
+		}
+
+		program {
+			name: "go_inactive";
+			signal: "";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "arrow";
+			after: "go_active";
+		}
+
+		program {
+			name: "go_passive";
+			signal: "e,state,unselected";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "arrow";
+		}
+	}
+}

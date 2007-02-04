@@ -1,0 +1,293 @@
+
+part {
+	name: "base";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		min: 299 341;
+		color: 255 255 255 255;
+	}
+}
+
+part {
+	name: "item";
+	type: SWALLOW;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "base"; relative: 0.0 0.0; offset: 10 10; }
+	r2 { to: "button.area"; relative: 1.0 0.0; offset: -12 -25; }
+	}
+}
+
+part {
+	name: "separator";
+	mouse_events:  0;
+	clip_to: "base";
+
+	description {
+		state: "default" 0.0;
+		max: 608 12;
+
+	r1 { to: "button.area"; relative: 0.0 0.0; offset: 0 -18; }
+	r2 { to: "button.area"; relative: 1.0 0.0; offset: 0 0; }
+
+	image {
+		normal: "separator.png";
+		border: 0 0 3 0;
+	}
+
+	fill {
+		smooth: 0;
+	}
+    }
+}
+
+part {
+	name: "button.area";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		min: 200 30;
+
+	r1 { to: "base"; relative: 0.0 1.0; offset: 0 0; }
+	r2 { to: "base"; relative: 1.0 1.0; offset: 0 -41; }
+
+	color: 255 255 255 255;
+	}
+}
+
+part {
+	name: "button_image";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "button.area";
+
+	description {
+		state: "default" 0.0;
+		min: 98 26;
+		max: 98 26;
+		fixed: 1 1;
+
+	r1 { to: "button.area"; relative: 0.5 0.5; }
+	r2 { to: "button.area"; relative: 0.5 0.5; }	
+
+	image.normal: "button_outline.png";
+	image.border: 7 7 7 7;
+	}
+
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		visible: 0;
+	}
+}
+
+part {
+	name: "button_clip";
+	type: RECT;
+	mouse_events: 0;
+	clip_to: "button.area";
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+	r1 { to: "button_image"; relative: 0.0 0.0; offset: 3 1; }
+	r2 { to: "button_image"; relative: 1.0 1.0; offset: -4 -2; }
+	}
+
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+		visible: 0;
+	}
+}
+
+part {
+	name: "focus_clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 0;
+
+	r1 { to: "button_enabled"; }
+	r2 { to: "button_enabled"; }
+	}
+
+	description {
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+}
+
+part {
+	name: "focus1";
+	mouse_events: 0;
+	clip_to: "focus_clip";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "button_enabled"; }
+	r2 { to: "button_enabled"; }
+	
+	image.normal: "button_focus_bottom.png";
+	image.border: 7 7 7 7;
+	
+	fill {
+		smooth: 1;
+	}
+    }
+}
+
+part {
+	name: "button_enabled";
+	type: IMAGE;
+	mouse_events: 1;
+	clip_to: "button_clip";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "button_clip"; relative: 0.0 0.0; offset: 0 0; }
+	r2 { to: "button_clip"; relative: 1.0 1.0; offset: -1 -1; }
+
+	image.normal: "button.png";
+	image.border: 7 7 7 7;
+	}
+
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
+
+	image.normal: "button_clicked.png";
+	image.border: 7 7 7 7;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		visible: 0;
+	}
+}
+
+part {
+	name: "focus2";
+	mouse_events: 0;
+	clip_to: "focus_clip";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "button_enabled"; }
+	r2 { to: "button_enabled"; }
+	
+	image.normal: "button_focus_top.png";
+	image.border: 7 7 7 7;
+	
+	fill {
+		smooth: 1;
+	}
+     }
+}
+
+part {
+	name: "button_text";
+	type: TEXT;
+	effect: SHADOW;
+	mouse_events: 0;
+	clip_to: "button.area";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { 
+		to_x: "icon_swallow";
+		to_y: "button_enabled";
+		relative: 1.0 0.0; offset: 6 0;
+	}
+
+	r2 {
+		to: "button_image";
+		relative: 1.0 1.0;
+		offset: -16 0;
+	}
+
+	color: 7 7 7 255;
+	color3: 170 168 169 255;
+
+		text {
+			text: "Exit";
+			font: "Edje-Vera-Bold";
+			size: 10;
+			min: 1 1;
+			align: 0.5 0.5;
+			text_class: "button";
+			}
+		}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 96 96 96 255;
+		color3: 170 168 169 255;
+	}
+
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+		color3: 0 0 0 128;
+	}
+}
+
+part {
+	name: "icon_swallow";
+	type: SWALLOW;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		align: 0.0 0.5;
+/*
+ * TODO
+ * icon_swallow seems fixed ?
+ */
+		//fixed: 1 1;
+
+	r1 { to: "button_enabled"; relative: 0.0 0.0; offset: 4 5; }
+	r2 { to: "button_enabled"; relative: 0.0 1.0; offset: 3 -6.5; }
+}
+
+	description {
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		aspect: 1.0 1.0;
+		aspect_preference: VERTICAL;
+		align: 0.0 0.5;	
+
+	r1 { to: "button_enabled"; relative: 0.0 0.0; offset: 12 5; }
+	r2 { to: "button_enabled"; relative: 0.0 1.0; offset: 3 -6.5; }
+	//color: 255 0 0 128;
+	}
+}

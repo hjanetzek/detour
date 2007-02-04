@@ -1,0 +1,52 @@
+
+# ifdef PROG
+#  undef PROG
+# endif
+
+#define PROG(NAME,SIGNAL,STATE) \
+program { \
+	name: NAME; \
+	signal: SIGNAL; \
+	source: "e"; \
+	action: STATE_SET STATE 0.0; \
+	target: "base"; \
+	target: "e.text.label"; \
+} 
+
+styles {
+	style {
+		name: "tlist_style";
+		base: "font=Edje-Vera font_size=10 align=left color=#000 style=shadow shadow_color=#ffffff80 wrap=word";
+
+		tag:  "br" "\n";
+		tag:  "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14";
+		tag:  "title" "+ font_size=12 font=Edje-Vera-Bold style=soft_shadow color=#fff shadow_color=#00000020";
+		tag:  "/title" "- \n \n";
+	}
+}
+
+group {
+	name: "e/widgets/tlist";
+	
+	parts {
+		#include "tlist_main.edc"
+	}
+
+	programs {
+		PROG("active", "e,state,selected", "active")
+		PROG("deactivate", "e,state,unselected", "default")
+	}
+}
+
+group {
+	name: "e/widgets/tlist_odd";
+
+	parts {
+		#include "tlist_odd.edc"
+}
+
+	programs {
+		PROG("active", "e,state,selected", "active")
+		PROG("deactivate", "e,state,unselected", "default")
+	}
+}

@@ -1,0 +1,333 @@
+
+# ifdef BORDER
+#  undef BORDER
+# endif
+
+#define BORDER(NAME,INDEX1,MIN,MAX,REL1,OFF1,REL2,OFF2,IMG1,INDEX2,IMG2) \
+part { \
+	name: NAME; \
+	mouse_events: 0; \
+	description { \
+		state: "default" INDEX1; \
+		min: MIN; \
+		max: MAX; \
+	r1 { relative: REL1; offset: OFF1; } \
+	r2 { relative: REL2; offset: OFF2; } \
+	image { \
+		normal: IMG1; \
+	} \
+} \
+	description { \
+		state: "default" INDEX2; \
+		inherit: "default" 0.0; \
+	image { \
+		normal: IMG2; \
+	} \
+    } \
+}
+
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "tl-dialog.png", 0.1, "tl-dialog.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr-dialog.png", 0.1, "tr-dialog.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl-dialog.png", 0.1, "bl-dialog.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br-dialog.png", 0.1, "br-dialog.png")
+
+# ifdef BORDER
+#  undef BORDER
+# endif
+
+#define BORDER(NAME,INDEX1,MIN,MAX,TO1,REL1,OFF1,TO2,REL2,OFF2,IMG1,INDEX2,IMG2) \
+part { \
+	name: NAME; \
+	mouse_events: 0; \
+	description { \
+		state: "default" INDEX1; \
+		min: MIN; \
+		max: MAX; \
+	r1 { to, TO1; relative: REL1; offset: OFF1; } \
+	r2 { to, TO2; relative: REL2; offset: OFF2; } \
+	image { \
+		normal: IMG1; \
+	} \
+} \
+	description { \
+		state: "default" INDEX2; \
+		inherit: "default" 0.0; \
+	image { \
+		normal: IMG2; \
+	} \
+    } \
+}
+
+BORDER("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb-dialog.png", 0.1, "tb-dialog.png")
+BORDER("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb-dialog.png", 0.1, "bb-dialog.png")
+
+# ifdef BORDER
+#  undef BORDER
+# endif
+
+#define BORDER(NAME,TO1,REL1,OFF1,TO2,REL2,OFF2)\
+part { \
+	name: NAME; \
+	type: RECT; \
+	description { \
+		state: "default" 0.0; \
+		min: 1 1; \
+		max: 1 9999; \
+	r1 { to: TO1; relative: REL1; offset: OFF1; } \
+	r2 { to: TO2; relative: REL2; offset: OFF2; } \
+	color: 104 108 111 255; \
+	} \
+}
+
+BORDER("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+BORDER("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+
+part { 
+	name: "e.swallow.client"; 
+	type: SWALLOW;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to_y: "top-left"; relative: 0.0 1.0; offset: 1 0; }
+	r2 { to_x: "bottom-right"; relative: 0.0 1.0; offset: 4 -7; }
+
+	color: 0 0 0 255;
+	}
+}
+
+/**/
+
+part { 
+	name: "title.area.clip"; 
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		min: 1 19; 
+		state: "default" 0.0;
+
+	r1 { to: "top-left"; relative: 0.0 0.5; offset: 5 0; }
+	r2 { to: "button-close"; relative: 0.0 0.5; offset: -5 0; }
+	
+	color: 255 255 255 255;
+	}
+}
+
+part { 
+	name: "e.swallow.icon"; 
+	type: SWALLOW;
+	clip_to: "title.area.clip";
+
+	description {
+		state: "default" 0.0;
+		min: 18 18; 
+
+	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 18 2; }
+	r2 { to: "title.area.clip"; relative: 0.0 0.5; offset: 0 0; }
+	}
+}
+
+part { 
+	name: "e.text.title"; 
+	type: TEXT;
+	effect: SHADOW;
+	mouse_events: 0;
+	clip_to: "title.area.clip";
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 22 5; }
+	r2 { to: "title.area.clip"; relative: 1.0 0.5; offset: -5 0; }
+
+	color: 7 7 7 255;
+	color3: 170 168 169 128;
+
+	text {
+		text: "";
+		font: "Edje-Vera-Bold";
+		size: 10;
+		min: 0 1;
+		align: 0.0 0.5;
+		text_class: "title_bar";
+	}
+    }
+
+	description {
+		state: "default" 0.1;
+		inherit: "default" 0.0;
+		color: 95 95 93 255;
+		color3: 170 168 169 128;
+	}
+}
+
+/**/
+
+part { 
+	name: "move-window"; 
+	type: RECT; 
+	mouse_events: 0;
+	
+	description { 
+		state: "default" 0.0;
+		min: 1 22; 
+		max: 9999 22; 
+
+	r1 { to, "top-left"; relative: 0.0 0.0; offset: 5 2; }
+	r2 { to, "top-right"; relative: 1.0 1.0; offset: -7 -1; }
+
+	color: 0 0 0 0;
+	}
+}
+
+/**/
+
+#define PART_EVENT_MAP(NAME,REPEAT,PART_NAME) \
+	part { \
+		name: NAME; \
+		type: RECT; \
+		repeat_events: REPEAT; \
+		description { \
+			state: "default" 0.0; \
+			color: 0 0 0 0; \
+		rel1.to: PART_NAME; \
+		rel2.to: PART_NAME; \
+		} \
+	}
+
+PART_EVENT_MAP("e.event.resize.t", 1, "resize_t")
+PART_EVENT_MAP("e.event.titlebar", 1, "move-window")
+PART_EVENT_MAP("e.event.resize.r", 1, "right-border")
+PART_EVENT_MAP("e.event.resize.l", 1, "left-border")
+PART_EVENT_MAP("e.event.resize.br", 1, "bottom-right")
+PART_EVENT_MAP("e.event.resize.bl", 1, "bottom-left")
+PART_EVENT_MAP("e.event.resize.b", 1, "bottom-center")
+
+PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
+PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
+
+/**/
+
+part { 
+	name: "e.event.icon"; 
+	type: RECT;
+	clip_to: "title.area.clip";
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "e.swallow.icon"; }
+	r2 { to: "e.swallow.icon"; }
+
+	color: 255 255 255 0;
+	}
+}
+
+/**/
+
+# ifdef CLIPS
+#  undef CLIPS
+# endif
+
+#define CLIPS(NAME,MIN,MAX,TO,REL1,OFF1,REL2,OFF2) \
+part { \
+	name: NAME; \
+	type: RECT; \
+	mouse_events: 0; \
+	description { \
+		state: "default" 0.0; \
+		min: MIN; \
+		max: MAX; \
+		color: 255 255 255 255; \
+	r1 { to: TO; relative: REL1; offset: OFF1; } \
+	r2 { to: TO; relative: REL2; offset: OFF2; } \
+} \
+	description { \
+		state: "clicked" 0.0; \
+		inherit: "default" 0.0; \
+		color: 215 215 215 255; \
+	} \
+}
+
+CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
+
+# ifdef HOLDER
+#  undef HOLDER
+# endif
+
+#define HOLDER(NAME,SIZE,TO,IMG) \
+part { \
+	name: NAME; \
+	description { \
+		state: "default" 0.0; \
+		min: SIZE; \
+		max: SIZE; \
+	r1 { to: TO; } \
+	r2 { to: TO; } \
+	image { \
+		normal: IMG; \
+	} \
+} \
+	description { \
+		state: "default" 0.1; \
+		inherit: "default" 0.0; \
+    } \
+}
+
+HOLDER("_close", 20 18, "close-clip", "bt.png")
+
+# ifdef BUTTONS
+#  undef BUTTONS
+# endif
+
+#define BUTTONS(NAME,CLIP,SIZE,TO,IMG,IMG2)\
+part {\
+	name: NAME; \
+	type: IMAGE; \
+	mouse_events: 1; \
+	clip_to: CLIP; \
+	description { \
+		state: "default" 0.0; \
+		min: SIZE; \
+		max: SIZE; \
+	r1 { to: TO; } \
+	r2 { to: TO; } \
+	image { \
+		normal: IMG; \
+	} \
+} \
+	description { \
+		state: "hilited" 0.0; \
+		inherit: "default" 0.0; \
+	image { \
+		normal: IMG2; \
+	} \
+    } \
+}
+
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "bt-close.png", "bt-close_h.png")
+
+PART_EVENT_MAP("e.event.close", 1, "button-close")
+
+/**/
+
+part { 
+	name: "resize_t"; 
+	type: RECT; 
+	mouse_events: 0;
+	
+	description { 
+		state: "default" 0.0;
+		min, 1 2; 
+		max, 9999 2; 
+
+	r1 { to, "top-left"; relative: 0.0 0.0; offset: 0 0; }
+	r2 { to, "top-right"; relative: 0.0 0.0; offset: -1 0; }
+
+	color: 255 0 0 0;
+	}
+}
+
+/**/
