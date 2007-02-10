@@ -27,7 +27,9 @@ program {
 	signal: "e,state,focused";
 	source: "e";
 	script {
-		set_state(PART:"select", "active", 0.0);
+		set_state(PART:"focus", "active", 0.0);
+		set_state(PART:"focus_rect", "active", 0.0);
+		set_state(PART:"e.text.label", "active", 0.0);
 	}
 }
 
@@ -36,7 +38,9 @@ program {
 	signal: "e,state,unfocused";
 	source: "e";
 	script {
-		set_state(PART:"select", "default", 0.0);
+		set_state(PART:"focus", "default", 0.0);
+		set_state(PART:"focus_rect", "default", 0.0);
+		set_state(PART:"e.text.label", "default", 0.0);
 	}
 }
 
@@ -48,6 +52,7 @@ program {
 	target: "outline";
 	target: "event";
 	target: "e.text.label";
+	target: "item1";
 }
 
 program {
@@ -58,4 +63,5 @@ program {
 	target: "outline";
 	target: "event";
 	target: "e.text.label";
+	target: "item1";
 }

@@ -12,7 +12,7 @@
 #define SHOW_MENU_TITLE 0
 
 // Wallpaper
-#define BG_TYPE 1
+#define BG_TYPE 0
 
 // Do not modify anything below unless you know what you are doing
 #define r1 rel1
