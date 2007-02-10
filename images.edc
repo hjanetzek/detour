@@ -17,14 +17,23 @@ image: "button_clicked.png" COMP;
 // slider
 image: "slider_0.png" COMP;
 image: "slider_1.png" COMP;
+image: "slider_2.png" COMP;
 image: "slider_vert0.png" COMP;
 image: "slider_vert1.png" COMP;
+image: "slider_vert2.png" COMP;
 image: "sb_runnerh.png" COMP;
+image: "sb_runnerh_disabled.png" COMP;
 image: "sb_runnerv.png" COMP;
 image: "sb_runnerh_left.png" COMP;
 image: "sb_runnerh_right.png" COMP;
 image: "sb_runnerv_top.png" COMP;
 image: "sb_runnerv_bot.png" COMP;
+image: "sb_runnerv_top_disabled.png" COMP;
+image: "sb_runnerv_bot_disabled.png" COMP;
+image: "sb_runnerv_disabled.png" COMP;
+image: "sb_runnerh_left_disabled.png" COMP;
+image: "sb_runnerh_right_disabled.png" COMP;
+
 
 // border default
 image: "tl.png" COMP;

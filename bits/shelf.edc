@@ -43,7 +43,7 @@ group {
 	}
 }
 
-/* TODO
+/* testing */
 group {
 	name: "e/shelf/invisible/inset";
 
@@ -54,7 +54,7 @@ group {
 	programs {
 	}
 }
-*/
+/* testing */
 
 group {
 	name: "e/shelf/invisible/plain";

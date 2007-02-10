@@ -56,6 +56,10 @@ program {
 	action: STATE_SET "disabled" 0.0;
 	target: "clip";
 	target: "catch";
+	target: "runner_left";
+	target: "runner_right";
+	target: "slider_runner";
+	target: "slider_image";
 }
 
 program {
@@ -65,14 +69,19 @@ program {
 	action: STATE_SET "default" 0.0;
 	target: "clip";
 	target: "catch";
+	target: "runner_left";
+	target: "runner_right";
+	target: "slider_runner";
+	target: "slider_image";
 }
 
 program {
 	name: "focused";
 	signal: "e,state,focused";
 	source: "e";
-	action: STATE_SET "active" 0.0;
-	target: "select";
+	action: STATE_SET "focused" 0.0;
+	transition: DECELERATE 0.25;
+	target: "focus_clip";
 }
 
 program {
@@ -80,5 +89,6 @@ program {
 	signal: "e,state,unfocused";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	target: "select";
+	transition: ACCELERATE 0.5;
+	target: "focus_clip";
 }
