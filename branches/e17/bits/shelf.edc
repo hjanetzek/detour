@@ -43,15 +43,16 @@ group {
 	}
 }
 
-/* testing */
+/* testing
+ * in order to use this style set:
+ * enlightenment_remote -use-composite-set 0
+ */
+
 group {
 	name: "e/shelf/invisible/inset";
 
 	parts {
 		#include "shelf_invisible_inset.edc"
-	}
-
-	programs {
 	}
 }
 /* testing */
@@ -63,3 +64,37 @@ group {
 		#include "shelf_invisible_plain.edc"
 	}
 }
+
+/*
+group {
+	name: "e/shelf/gold/base";
+
+	data {
+		//item: "shaped" "0";
+	}
+
+	parts {
+		#include "shelf_base.edc"
+	}
+
+	programs {
+		#include "shelf_base_programs.edc"
+	}
+}
+
+group {
+	name: "e/shelf/gold/inset";
+
+	parts {
+		#include "shelf_invisible_inset.edc"
+	}
+}
+
+group {
+	name: "e/shelf/gold/plain";
+
+	parts {
+		#include "shelf_invisible_plain.edc"
+	}
+}
+*/
