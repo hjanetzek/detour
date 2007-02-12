@@ -110,7 +110,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 66 145 253 128;
+		color: 166 191 218 32;
 
 	r1 { to: "bg"; }
 	r2 { to: "bg"; offset: 0 1; }

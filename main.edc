@@ -9,7 +9,7 @@
 #define USE_TANGO_ICONS 1
 
 // Main menu title is visible or not
-#define SHOW_MENU_TITLE 0
+#define SHOW_MENU_TITLE 1
 
 // Wallpaper
 #define BG_TYPE 0

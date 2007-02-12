@@ -92,18 +92,8 @@ group {
 	//	item: "shaped" "0";
 	}
 
-/*
 	parts {
 		#include "border_dialog.edc"
-	}
-
-	programs {
-		#include "border_dialog_programs.edc"
-	}
-*/
-
-	parts {
-		#include "border_sq_container.edc"
 	}
 
 	programs {
@@ -162,7 +152,6 @@ group {
  * use special border styles by default
  */
 
-/*
 group {
 	name: "e/widgets/border/squared_container/border";
 
@@ -178,7 +167,6 @@ group {
 		#include "border_dialog_programs.edc"
 	}
 }
-*/
 
 group {
 	name: "e/widgets/border/terminal/border";
