@@ -126,9 +126,7 @@ image: "radio0.png" COMP;
 image: "radio1.png" COMP;
 image: "radio2.png" COMP;
 image: "radio_select.png" COMP;
-image: "focus_rect_over.png" COMP;
 image: "focus_rect.png" COMP;
-image: "focus_rect_over2.png" COMP;
 
 // preview
 image: "preview_bg_over.png" COMP;
