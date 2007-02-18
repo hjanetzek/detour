@@ -24,7 +24,7 @@ group {
    name: "etk/tree";
    data {
       item: "tree_contains_headers" "1";
-      item: "separator_color" "204 204 204 140";
+      item: "separator_color" "180 180 180 140";
    }
 }
 

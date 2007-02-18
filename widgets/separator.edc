@@ -9,7 +9,7 @@
  * --------
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
  */
- group {
+group {
    name: "etk/hseparator";
    min: 2 2;
    parts {

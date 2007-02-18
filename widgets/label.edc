@@ -11,7 +11,7 @@
  * --------
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
  */
- group {
+group {
    name: "etk/label";
    parts {
       part {

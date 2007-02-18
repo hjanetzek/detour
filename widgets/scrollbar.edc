@@ -22,7 +22,7 @@
  * - "scroll_stop": should be emitted when the content should stop being
  *      scrolled (i.e. when the pressed arrow is released)
  */
- group {
+group {
    name: "etk/hscrollbar";
    alias: "etk/scrolled_view/hscrollbar";
    alias: "etk/tree/scrolled_view/hscrollbar";
