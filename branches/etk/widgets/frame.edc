@@ -14,7 +14,7 @@
  * - "etk,action,hide,label": emitted when the label is unset
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
  */
- group {
+group {
    name: "etk/frame";
    min: 60 30;
    data {

@@ -11,7 +11,7 @@
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
  *      "etk,state,focused", "etk,state,unfocused", "etk,state,enabled", "etk,state,disabled"
  */
- group {
+group {
    name: "etk/button";
    data {
       item: "inset" "15 15 5 5";
