@@ -53,7 +53,8 @@ part {
 	r2 { to_y: "error-icon"; relative: 1.0 1.0; offset: -17 -1; }
 
 	color: 7 7 7 255;
-	color3: 170 168 169 128;
+	//color3: 170 168 169 128;
+	color3: 170 168 169 0;
 
 	text {
 		text: "Title";

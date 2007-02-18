@@ -1,6 +1,6 @@
 
 part {
-	name: "focus";
+	name: "focus_grid";
 	type: IMAGE;
 
 	description {
@@ -10,7 +10,7 @@ part {
 	r1 { to: "focus_rect"; relative: 0.0 0.0; offset: -1 -1; }
 	r2 { to: "focus_rect"; relative: 1.0 1.0; offset: 0 0; }
 
-	image.normal: "focus_rect.png";
+	image.normal: "focus_grid.png";
 	image.border: 1 1 1 1;
 
 	fill { 
@@ -33,7 +33,6 @@ part {
 part {
 	name: "focus_rect";
 	type: RECT;
-//	clip_to: "select";
 
 	description {
 		state: "default" 0.0;

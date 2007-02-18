@@ -27,7 +27,13 @@ part {
 		state: "active" 0.0;
 
 	color: 255 255 255 255;
+#if LABEL_TEXT_SHADOW == 0
+	color3: 0 0 0 0;
+#else
+#if LABEL_TEXT_SHADOW == 1
 	color3: 0 0 0 128;
+#endif
+#endif
 
 	r1 { relative: 0.0 0.0; offset: 5 4; }
 	r2 { relative: 1.0 1.0; offset: -3 -2; }

@@ -29,7 +29,10 @@ styles {
 
 	style {
 		name: "dialog_style";
-		base: "font=Edje-Vera-Bold font_size=10 text_class=tb_plain align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word";
+/*
+base: "font=Edje-Vera-Bold font_size=10 text_class=tb_plain align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word"
+*/
+		base: "font=Edje-Vera-Bold font_size=10 text_class=tb_plain align=center color=#070707 wrap=word";
 
 	tag:  "br" "\n";
 	}

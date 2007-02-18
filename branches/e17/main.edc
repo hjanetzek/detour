@@ -3,13 +3,17 @@
  * detour (seek) version 0.5.1 for Enlightenment 0.16.999.037 or later
  * */
 
-#define X_COMPOSITE 0
-
 // Use Tango Icon set or the default set
 #define USE_TANGO_ICONS 1
 
 // Main menu title is visible or not
-#define SHOW_MENU_TITLE 0
+#define SHOW_MENU_TITLE 1
+
+// Use drop shadow for labels
+#define LABEL_TEXT_SHADOW 0
+
+// Use drop shadow for button_text
+#define BUTTON_TEXT_SHADOW 0
 
 // Wallpaper
 #define BG_TYPE 0
@@ -17,6 +21,8 @@
 // Do not modify anything below unless you know what you are doing
 #define r1 rel1
 #define r2 rel2
+
+#define X_COMPOSITE 0
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";
@@ -32,6 +38,9 @@ spectra {
 images {
 #include "images.edc"
 #include "icons.edc"
+}
+
+data {
 }
 
 collections {

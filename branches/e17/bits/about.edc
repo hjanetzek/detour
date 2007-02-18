@@ -6,7 +6,7 @@ styles {
       
 		tag:  "br" "\n";
 		tag:  "hilight" "+ font=Edje-Vera-Bold text_class=tb_light";
-		tag:  "title" "+ font_size=11 font=Edje-Vera-Bold text_class=tb_big style=shadow color=#070707 shadow_color=#aaa8a950";
+		tag:  "title" "+ font_size=11 font=Edje-Vera-Bold text_class=tb_big color=#070707";
 		tag:  "/title" "- \n \n";
 	}
 }
