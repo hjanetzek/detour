@@ -29,7 +29,7 @@ collections {
    //~ #include "widgets/slider.edc"
    //~ #include "widgets/spinner.edc"
    #include "widgets/scrollbar.edc"
-   //~ #include "widgets/tree.edc"
+   #include "widgets/tree.edc"
    #include "widgets/separator.edc"
    //~ #include "widgets/paned.edc"
    #include "widgets/frame.edc"
