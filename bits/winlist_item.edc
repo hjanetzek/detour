@@ -80,7 +80,13 @@ part {
 		inherit: "default" 0.0;
 
 	color: 255 255 255 255;
+#if LABEL_TEXT_SHADOW == 0
+	color3: 0 0 0 0;
+#else
+#if LABEL_TEXT_SHADOW == 1
 	color3: 0 0 0 128;
+#endif
+#endif
 	}
 }
 

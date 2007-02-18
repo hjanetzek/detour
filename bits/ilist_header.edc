@@ -37,7 +37,13 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 255;
-		color3: 0 0 0 128;
+#if LABEL_TEXT_SHADOW == 0
+	color3: 0 0 0 0;
+#else
+#if LABEL_TEXT_SHADOW == 1
+	color3: 0 0 0 128;
+#endif
+#endif
 		min: 16 16;
 
 	r1 { to_x: "e.swallow.icon"; relative: 0.0 0.0; offset: 5 5; }

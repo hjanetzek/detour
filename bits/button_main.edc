@@ -151,7 +151,6 @@ part {
 	r1 { to: "button_enabled"; }
 	r2 { to: "button_enabled"; }
 
-
 /* (16:46:15) boykot tokyo: if you ask me, it looks like a rather lazy solution
  * (16:47:44) robertrenling: yeah i agree
  * (16:47:57) robertrenling: we need to think out a new one
@@ -257,7 +256,13 @@ part {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-		color3: 0 0 0 128;
+#if BUTTON_TEXT_SHADOW == 0
+	color3: 0 0 0 0;
+#else
+#if BUTTON_TEXT_SHADOW == 1
+	color3: 0 0 0 128;
+#endif
+#endif
 	}
 
 	description {

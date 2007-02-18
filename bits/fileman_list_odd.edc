@@ -7,21 +7,11 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 243 243 243 255;
-
-	//image {
-	//	normal: "ilist_odd2.png";
-	//	border: 3 3 3 3;
-	//}
 }
 
 	description {
 		state: "active" 0.0;
 		color: 166 191 218 255;
-
-	//image {
-	//	normal: "ilist_odd1.png";
-	//	border: 3 3 3 3;
-	//}
     }
 }
 
@@ -207,7 +197,13 @@ part {
 	description {
 		state: "active" 0.0;
 		color: 255 255 255 255;
-		color3: 0 0 0 128;
+#if LABEL_TEXT_SHADOW == 0
+	color3: 0 0 0 0;
+#else
+#if LABEL_TEXT_SHADOW == 1
+	color3: 0 0 0 128;
+#endif
+#endif
 
 	r1 { to_x: "icon0"; relative: 1.0 0.0; offset: 8 4; }
 /* this is not a real fix */

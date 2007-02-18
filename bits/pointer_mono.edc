@@ -8,7 +8,7 @@ part {
 		state: "default" 0.0;
 
 	image {
-		normal: "pointer_mono.png";
+		normal: "cursor_mono.png";
 	}
     }
 }
