@@ -1,0 +1,30 @@
+/**
+ * group "etk/label"
+ * -----------------------
+ * This group corresponds to the default look of a label widget
+ *
+ * Special parts:
+ * --------------
+ * - "etk.text.label": the text part used to display the button's text
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+ group {
+   name: "etk/label";
+   parts {
+      part {
+         name: "etk.text.label";
+         type: TEXTBLOCK;
+         description {
+            state: "default" 0.0;
+            align: 0.0 0.5;
+            text {
+               style: "Default";
+               min: 1 1;
+            }
+         }
+      }
+   }
+}
