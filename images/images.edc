@@ -1,0 +1,22 @@
+images {
+   image: "button.png" COMP;
+   image: "button_clicked.png" COMP;
+   image: "button_disabled.png" COMP;
+   image: "button_focus_bottom.png" COMP;
+   image: "button_focus_top.png" COMP;
+   image: "button_outline.png" COMP;
+   image: "check_base.png" COMP;
+   image: "check_blank.png" COMP;
+   image: "check_mark.png" COMP;
+   image: "dialog_bg.png" COMP;
+   image: "dialog_separator.png" COMP;
+   image: "entry.png" COMP;
+   image: "entry_focus.png" COMP;
+   image: "focus_rect.png" COMP;
+   image: "frame_outline.png" COMP;
+   image: "radio_disabled.png" COMP;
+   image: "radio_off.png" COMP;
+   image: "radio_on.png" COMP;
+   image: "separator_h.png" COMP;
+   image: "separator_v.png" COMP;
+}
