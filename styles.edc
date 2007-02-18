@@ -41,4 +41,16 @@ styles
       "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
       "color=#60606080", /* Normal style */
       "", "", "", "") /* Other styles */
+      
+   /** Default style for the text of a tree's row */
+   STYLE("Row Default",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
+      "color=#070707FF", /* Normal style */
+      "", "", "", "") /* Other styles */
+      
+   /** Style for the text of a selected tree's row */
+   STYLE("Row Selected",
+      "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
+      "color=#FFFFFFFF", /* Normal style */
+      "", "", "", "") /* Other styles */
 }

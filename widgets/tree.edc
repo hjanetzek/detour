@@ -1,0 +1,314 @@
+/**
+ * group "etk/tree"
+ * ----------------
+ * This group corresponds to the background object of the tree, which is stacked
+ * below the headers-bar and the scrolled-view. Most of the time, it is only used
+ * to defined the values of the different settings
+ *
+ * Different settings:
+ * -------------------
+ * - "tree_contains_headers": a boolean indicating whether the headers-bar should
+ *      be contained by the tree itself (the headers-bar is then above the
+ *      scrolled-view) or contained by the scrolled-view (the headers-bar is then
+ *      inside the scrolled-view). The default value is "1": the headers-bar is
+ *      contained directly by the tree. Set it to "0" otherwise
+ * - "separator_color": the rgba color of the vertical lines separating the
+ *      columns of the tree. Default value is "255 255 255 0"
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave",
+ *      "etk,state,focused", "etk,state,unfocused", "etk,state,shown"
+ */
+group {
+   name: "etk/tree";
+   data {
+      item: "tree_contains_headers" "1";
+      item: "separator_color" "204 204 204 140";
+   }
+}
+
+
+/**
+ * group "etk/tree/header"
+ *       "etk/tree/header_unique"
+ *       "etk/tree/header_first"
+ *       "etk/tree/header_last"
+ * -----------------------
+ * These groups correspond to the header-objects of the tree's columns.
+ * - Only "etk/tree/header" has to be necessarily implemented. It is the generic
+ *      group for the column headers.
+ * - "etk/tree/header_first" is used for the header of the first visible column,
+ *      when several columns can be seen. If this group doesn't exist,
+ *      "etk/tree/header" is used
+ * - "etk/tree/header_last" is used for the header of the last visible column,
+ *      when several columns can be seen. If this group doesn't exist,
+ *      "etk/tree/header" is used
+ * - "etk/tree/header_last" is used for the header of the column when only one
+ *      column is visible seen. If this group doesn't exist, "etk/tree/header"
+ *      is used
+ *
+ * Signals:
+ * --------
+ * - "etk,state,pressed": emitted when the header is pressed
+ * - "etk,state,released": emitted when the header is released
+ * - "etk,state,clicked": emitted when the header is clicked
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+
+/* TODO: implement... */
+
+
+/**
+ * group "etk/tree/scrolled_view"
+ * -----------------------
+ * This group corresponds to the scrolled-view of the tree. The scrolled-view contains
+ * the tree-grid (see group "etk/tree/grid") which contains the rows of the tree.
+ * It may also contain the headers if the setting "tree_contains_headers" of the
+ * "etk/tree" group is set to "0"
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave",
+ *      "etk,state,focused", "etk,state,unfocused", "etk,state,shown"
+ */
+group {
+   name: "etk/tree/scrolled_view";
+   parts {
+      part {
+         name: "background";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -1 3;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -3;
+            }
+            image {
+               normal: "tree_bg.png";
+               border: 7 7 7 7;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.swallow.content";
+         type: SWALLOW;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 1 1;
+               to: "over";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -2;
+               to: "over";
+            }
+         }
+      }
+      part {
+         name: "over";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 120;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 4;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -4;
+            }
+            image {
+               normal: "tree_over.png";
+               border: 5 5 5 6;
+               middle: 0;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "focus";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -2 3;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: 0 -3;
+            }
+            image {
+               normal: "tree_focus.png";
+               border: 7 7 7 7;
+               middle: 0;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "focused" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 255;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "tree_focus";
+         signal: "etk,state,focused";
+         source: "etk";
+         action: STATE_SET "focused" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus";
+      }
+      program {
+         name: "tree_unfocus";
+         signal: "etk,state,unfocused";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus";
+      }
+   }
+}
+
+
+/**
+ * group "etk/tree/row"
+ * -----------------------
+ * This group is used by all the visible rows of the tree
+ *
+ * Signals:
+ * --------
+ * - "etk,state,odd": emitted when the group corresponds to a row whose number is odd
+ * - "etk,state,even": emitted when the group corresponds to a row whose number is even
+ * - "etk,state,selected": emitted when the row is selected
+ * - "etk,state,unselected": emitted when the row is unselected
+ *
+ * Note that this group doesn't have the common signals of a widget ("etk,state,enter", "etk,state,leave", ...)
+ * since a row is not a widget. You can though still use the signals automatically emitted by Edje such as
+ * "mouse,in", "mouse,out", "mouse,down,1", ...
+ */
+group {
+   name: "etk/tree/row";
+   parts {
+      part {
+         name: "row";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 225 232 239 255;
+         }
+         description {
+            state: "even" 0.0;
+            inherit: "default" 0.0;
+            color: 243 243 243 255;
+         }
+      }
+      part {
+         name: "select";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 166 191 218 255;
+            visible: 0;
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+         }
+      }
+   }
+   programs {
+      program {
+         name: "row_even";
+         signal: "etk,state,even";
+         source: "etk";
+         action: STATE_SET "even" 0.0;
+         target: "row";
+      }
+      program {
+         name: "row_odd";
+         signal: "etk,state,odd";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "row";
+      }
+      program {
+         name: "row_select";
+         signal: "etk,state,selected";
+         source: "etk";
+         action: STATE_SET "selected" 0.0;
+         target: "select";
+      }
+      program {
+         name: "row_unselect";
+         signal: "etk,state,unselected";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "select";
+      }
+   }
+}
+
+/**
+ * group "etk/tree/text"
+ * -----------------------
+ * This group is used for the text of a row of a tree. It receives the same signals as "etk/tree/row"
+ *
+ * Special parts:
+ * --------------
+ * - "etk.text.label": the text part used to display the button's text
+ *
+ * Signals:
+ * --------
+ * - "etk,state,odd": emitted when the group corresponds to a row whose number is odd
+ * - "etk,state,even": emitted when the group corresponds to a row whose number is even
+ * - "etk,state,selected": emitted when the row is selected
+ * - "etk,state,unselected": emitted when the row is unselected
+ *
+ * Note that this group doesn't have the common signals of a widget ("etk,state,enter", "etk,state,leave", ...)
+ * since a row's text is not a widget. You can though still use the signals automatically emitted by Edje such as
+ * "mouse,in", "mouse,out", "mouse,down,1", ...
+ */
+group {
+   name: "etk/tree/text";
+   parts {
+      part {
+         name: "etk.text.label";
+         type: TEXTBLOCK;
+         description {
+            state: "default" 0.0;
+            align: 0.0 0.5;
+            text {
+               style: "Row Default";
+               min: 1 1;
+            }
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            text {
+               style: "Row Selected";
+            }
+         }
+      }
+   }
+}
