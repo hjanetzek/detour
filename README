@@ -1,11 +1,15 @@
-detour-e17 (seek) for Enlightenment 0.16.999.037 or later
-==========================================
+detour 0.5.1
 
-This is a theme for the Enlightenment 0.17.0 Window Manager currently
-in development. (http://enlightenment.org)
+Detour is is a graphical themed interface for the upcoming Enlightenment-DR17 desktop shell. Detour has been in the works since March of 2005, it began as a port of the Enlightenment-DR16 detroit theme. So many changes have occurred since, that it was no longer a port, rather it became a detour. 
 
-This project has a website located at: http://cored.org/prototype/
+--------------------------------------------------------------------------
+
+This is an edje for the Enlightenment 0.17.0 Window Manager 
+currently in development. (http://enlightenment.org)
+
+This project's website is: http://cored.org/prototype/detour/
 
 NOTES:
 
-OSX ?
+Textclasses for the titlebar and the menu labels have been disabled.
+For more information visit http://cored.org/communicate/

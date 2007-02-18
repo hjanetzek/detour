@@ -162,40 +162,6 @@ part {
 	}
 }
 
-part { 
-	name: "e.text.title"; 
-	type: TEXT;
-	effect: SHADOW;
-	mouse_events: 0;
-	clip_to: "title.area.clip";
-
-	description {
-		state: "default" 0.0;
-
-	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 22 5; }
-	r2 { to: "title.area.clip"; relative: 1.0 0.5; offset: -5 0; }
-
-	color: 7 7 7 255;
-	color3: 170 168 169 128;
-
-	text {
-		text: "";
-		font: "Edje-Vera-Bold";
-		size: 10;
-		min: 0 1;
-		align: 0.0 0.5;
-		text_class: "title_bar";
-	}
-    }
-
-	description {
-		state: "default" 0.1;
-		inherit: "default" 0.0;
-		color: 95 95 93 255;
-		color3: 170 168 169 128;
-	}
-}
-
 /**/
 
 part { 

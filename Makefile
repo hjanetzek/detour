@@ -3,10 +3,10 @@
 fonts 	= fonts
 images 	= images
 icons	= icons
-CC	= edje_cc
-SRC	= main.edc
-OUT	= detour-e17.edj
-COMPILE = $(CC) $(EDJE_CC_FLAGS)
+CC		= edje_cc
+SRC		= main.edc
+OUT		= detour-e17.edj
+COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
 
 EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/ -id $(icons)
 
@@ -37,9 +37,13 @@ install: detour-e17.edj
 	@echo --------------------------------------------------
 	@echo
 
-# composite:
-#	@echo Note: If you are running a Composite Manager
-#	@echo set main.edc:6 to 1
-#	@echo
-
-# todo add uninstall
+uninstall: detour-e17.edj
+	@echo ""
+	@echo "Removing detour-e17.edj"
+	rm $(HOME)/.e/e/themes/$(OUT)
+	@echo
+	@echo --------------------------------------------------
+	@echo $(OUT) was removed from your
+	@echo $(HOME)/e/e/themes/ directory.
+	@echo --------------------------------------------------
+	@echo
