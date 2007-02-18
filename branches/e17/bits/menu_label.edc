@@ -19,7 +19,7 @@ part {
 		size: 10;
 		min: 1 1;
 		align: 0.0 0.5;
-		text_class: "menu_item";
+		// text_class: "menu_item";
 	}
 }
 
@@ -38,7 +38,7 @@ part {
 		size: 10;
 		min: 1 1;
 		align: 0.0 0.5;
-		text_class: "menu_item";
+		// text_class: "menu_item";
 	}
     }
 }

@@ -9,7 +9,7 @@
 #define USE_TANGO_ICONS 1
 
 // Main menu title is visible or not
-#define SHOW_MENU_TITLE 1
+#define SHOW_MENU_TITLE 0
 
 // Wallpaper
 #define BG_TYPE 0
@@ -19,8 +19,10 @@
 #define r2 rel2
 
 fonts {
-#include "fonts.edc"
-#include "fonts/bitstream.COPYING"
+font: "fonts/Vera.ttf" "Edje-Vera";
+font: "fonts/VeraBd.ttf" "Edje-Vera-Bold";
+font: "fonts/VeraMono.ttf" "Edje-Vera-Mono";
+font: "fonts/VeraMoBd.ttf" "Edje-Vera-Mono-Bold";
 }
 
 spectra {
@@ -30,7 +32,6 @@ spectra {
 images {
 #include "images.edc"
 #include "icons.edc"
-#include "icons/tango.COPYING"
 }
 
 collections {

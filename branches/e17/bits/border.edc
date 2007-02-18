@@ -16,6 +16,37 @@ part { \
 	} \
 }
 
+/* text_class: "title_bar"; */
+
+#define TB_TEXT() \
+part { \
+	name: "e.text.title"; \
+	type: TEXT; \
+	effect: SHADOW; \
+	mouse_events: 0; \
+	clip_to: "title.area.clip"; \
+	description { \
+		state: "default" 0.0; \
+	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 22 5; } \
+	r2 { to: "title.area.clip"; relative: 1.0 0.5; offset: -5 0; } \
+	color: 7 7 7 255; \
+	color3: 170 168 169 128; \
+	text { \
+		text: ""; \
+		font: "Edje-Vera-Bold"; \
+		size: 10; \
+		min: 0 1; \
+		align: 0.0 0.5; \
+	} \
+    } \
+	description { \
+		state: "default" 0.1; \
+		inherit: "default" 0.0; \
+		color: 95 95 93 255; \
+		color3: 170 168 169 128; \
+	} \
+}
+
 #include "border_menu.edc"
 
 group {
@@ -28,6 +59,7 @@ group {
 	parts {
 		CC_CLIP()
 		#include "border_container.edc"
+		TB_TEXT()
 	}
 
 	programs {
@@ -45,6 +77,7 @@ group {
 	parts {
 		CC_CLIP()
 		#include "border_default.edc"
+		TB_TEXT()
 	}
 
 	programs {
@@ -61,6 +94,7 @@ group {
 
 	parts {
 		#include "border_dialog.edc"
+		TB_TEXT()
 	}
 
 	programs {
@@ -77,6 +111,7 @@ group {
 
 	parts {
 		#include "border_modal.edc"
+		TB_TEXT()
 	}
 }
 
@@ -85,6 +120,7 @@ group {
  * use special border styles by default
  */
 
+/*
 group {
 	name: "e/widgets/border/noresize_dialog/border";
 
@@ -94,12 +130,33 @@ group {
 
 	parts {
 		#include "border_dialog.edc"
+		TB_TEXT()
 	}
 
 	programs {
 		#include "border_dialog_programs.edc"
 	}
 }
+*/
+
+group {
+	name: "e/widgets/border/noresize_dialog/border";
+
+	data {
+	//	item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_sq_container.edc"
+		TB_TEXT()
+	}
+
+	programs {
+		#include "border_dialog_programs.edc"
+	}
+}
+
+/****************************************************/
 
 group {
 	name: "e/widgets/border/pixel/border";
@@ -123,6 +180,7 @@ group {
 	parts {
 		CC_CLIP()
 		#include "border_shaped.edc"
+		TB_TEXT()
 	}
 
 	programs {
@@ -140,6 +198,7 @@ group {
 	parts {
 		CC_CLIP()
 		#include "border_squared.edc"
+		TB_TEXT()
 	}
 
 	programs { 
@@ -152,6 +211,7 @@ group {
  * use special border styles by default
  */
 
+/*
 group {
 	name: "e/widgets/border/squared_container/border";
 
@@ -161,12 +221,14 @@ group {
 
 	parts {
 		#include "border_sq_container.edc"
+		TB_TEXT()
 	}
 
 	programs {
 		#include "border_dialog_programs.edc"
 	}
 }
+*/
 
 group {
 	name: "e/widgets/border/terminal/border";
@@ -178,6 +240,7 @@ group {
 	parts {
 		CC_CLIP()
 		#include "border_terminal.edc"
+		TB_TEXT()
 	}
 
 	programs {
@@ -194,6 +257,7 @@ group {
 
 	parts {
 		#include "border_urgent.edc"
+		TB_TEXT()
 	}
 
 	programs {
