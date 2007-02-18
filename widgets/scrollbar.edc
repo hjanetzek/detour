@@ -1,6 +1,32 @@
-group {
+/**
+ * group "etk/hscrollbar"
+ * -----------------------
+ * This group corresponds to the default look for an horizontal scrollbar. Since an horizontal scrollbar is
+ * mostly never used alone (it's almost always used with a scrolled view), this group is almost never used.
+ * The groups "etk/scrolled_view/hscrollbar" or "etk/tree/scrolled_view/hscrollbar" are more often used.
+ *
+ * Special parts:
+ * --------------
+ * - "etk.dragable.bar": the dragable part used to scroll the content of the scrolled-view
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ *
+ * Signals to emit:
+ * ----------------
+ * - "scroll_left_start": should be emitted when the content should be
+ *      scrolled to the left (i.e. when the left arrow is pressed)
+ * - "scroll_right_start": should be emitted when the content should be
+ *      scrolled to the right (i.e. when the right arrow is pressed)
+ * - "scroll_stop": should be emitted when the content should stop being
+ *      scrolled (i.e. when the pressed arrow is released)
+ */
+ group {
    name: "etk/hscrollbar";
    alias: "etk/scrolled_view/hscrollbar";
+   alias: "etk/tree/scrolled_view/hscrollbar";
+   alias: "etk/iconbox/scrolled_view/hscrollbar";
    min: 68 17;
    parts {
       part {
@@ -258,10 +284,35 @@ group {
    }
 }
 
-
+/**
+ * group "etk/vscrollbar"
+ * -----------------------
+ * This group corresponds to the default look for a vertical scrollbar. Since a vertical scrollbar is
+ * mostly never used alone (it's almost always used with a scrolled view), this group is almost never used.
+ * The groups "etk/scrolled_view/hscrollbar" or "etk/tree/scrolled_view/hscrollbar" are more often used.
+ *
+ * Special parts:
+ * --------------
+ * - "etk.dragable.bar": the dragable part used to scroll the content of the scrolled-view
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ *
+ * Signals to emit:
+ * ----------------
+ * - "scroll_left_start": should be emitted when the content should be
+ *      scrolled to the left (i.e. when the left arrow is pressed)
+ * - "scroll_right_start": should be emitted when the content should be
+ *      scrolled to the right (i.e. when the right arrow is pressed)
+ * - "scroll_stop": should be emitted when the content should stop being
+ *      scrolled (i.e. when the pressed arrow is released)
+ */
 group {
    name: "etk/vscrollbar";
    alias: "etk/scrolled_view/vscrollbar";
+   alias: "etk/tree/scrolled_view/vscrollbar";
+   alias: "etk/iconbox/scrolled_view/vscrollbar";
    min: 17 68;
    parts {
       part {
