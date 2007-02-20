@@ -235,6 +235,29 @@ group {
             visible: 1;
          }
       }
+      part {
+         name: "select_separator";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 1.0;
+               offset: 0 -1;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            color: 149 171 195 255;
+            visible: 0;
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+         }
+      }
    }
    programs {
       program {
@@ -257,6 +280,7 @@ group {
          source: "etk";
          action: STATE_SET "selected" 0.0;
          target: "select";
+         target: "select_separator";
       }
       program {
          name: "row_unselect";
@@ -264,6 +288,7 @@ group {
          source: "etk";
          action: STATE_SET "default" 0.0;
          target: "select";
+         target: "select_separator";
       }
    }
 }
@@ -309,6 +334,22 @@ group {
                style: "Row Selected";
             }
          }
+      }
+   }
+   programs {
+      program {
+         name: "row_select";
+         signal: "etk,state,selected";
+         source: "etk";
+         action: STATE_SET "selected" 0.0;
+         target: "etk.text.label";
+      }
+      program {
+         name: "row_unselect";
+         signal: "etk,state,unselected";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.label";
       }
    }
 }

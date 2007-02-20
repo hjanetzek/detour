@@ -50,7 +50,7 @@ styles
       
    /** Style for the text of a selected tree's row */
    STYLE("Row Selected",
-      "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
+      "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
       "color=#FFFFFFFF", /* Normal style */
       "", "", "", "") /* Other styles */
 }
