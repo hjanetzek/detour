@@ -1,4 +1,25 @@
-group {
+/**
+ * group "etk/progress_bar"
+ * -----------------------
+ * This group corresponds to the progress-bar widget
+ *
+ * Different settings:
+ * -------------------
+ * - "filler_pulse_width": a float indicating the width of the filler part when the progress-bar is in pulse-mode
+ *      (in this mode, the filler is bounding inside the progress-bar. It is used when we can't know how long the
+ *      operation will take)
+ *
+ * Special parts:
+ * --------------
+ * - "etk.dragable.filler": the dragable part used to display the progress of the progress-bar.
+ *      This part should be insensitive to mouse-events (you don't want to be able to drag the filler of a progress-bar...)
+ * - "etk.text.text": the text part used to display a text about the progress of the progress-bar
+ *
+ * Signals:
+ * --------
+ * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
+ */
+ group {
    name: "etk/progress_bar";
    min: 120 18;
    data {
