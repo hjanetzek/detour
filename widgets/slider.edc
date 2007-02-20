@@ -6,42 +6,45 @@
  * Special parts:
  * --------------
  * - "etk.dragable.slider": the dragable part used to change the value of the slider
+ * - "etk.text.label": the text part that displays the label of the slider. Should be hidden by default
  *
  * Signals:
  * --------
+ * - "etk,action,show,label": emitted when the label of the slider should be visible
+ * - "etk,action,hide,label": emitted when the label of the slider should be hidden
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
  *      "etk,state,focused", "etk,state,unfocused", "etk,state,enabled", "etk,state,disabled"
  */
 group {
    name: "etk/hslider";
-   min: 32 24;
+   min: 64 24;
    parts {
       part {
          name: "focus_rect";
          type: RECT;
          description {
             state: "default" 0.0;
-            color: 141 181 235 255;
-            visible: 0;
+            color: 141 181 235 0;
             rel1 {
                relative: 0.0 0.0;
-               offset: 0 -3;
-               to_y: "trough_left";
+               offset: -3 -3;
+               to: "trough_left";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -1 2;
-               to_y: "trough_right";
+               offset: 3 2;
+               to: "trough_right";
             }
          }
          description {
             state: "focused" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            color: 141 181 235 255;
          }
       }
       part {
          name: "trough_left";
+         mouse_events: 0;
          description {
             state: "default" 0.0;
             rel1 {
@@ -59,15 +62,18 @@ group {
       }
       part {
          name: "trough_right";
+         mouse_events: 0;
          description {
             state: "default" 0.0;
             rel1 {
-               relative: 1.0 0.5;
+               relative: 0.0 0.5;
                offset: -9 -5;
+               to_x: "label_clip";
             }
             rel2 {
-               relative: 1.0 0.5;
+               relative: 0.0 0.5;
                offset: -4 5;
+               to_x: "label_clip";
             }
             image {
                normal: "slider_h_trough_right.png";
@@ -76,6 +82,7 @@ group {
       }
       part {
          name: "trough";
+         mouse_events: 0;
          description {
             state: "default" 0.0;
             rel1 {
@@ -142,8 +149,105 @@ group {
             }
          }
       }
+      part {
+         name: "label_clip";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: -1 0;
+               to_y: "label_under";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -1;
+               to_y: "label_under";
+            }
+         }
+         description {
+            state: "visible" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+               to: "label_under";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+               to: "label_under";
+            }
+         }
+      }
+      part {
+         name: "label_under";
+         clip_to: "label_clip";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            align: 1.0 0.5;
+            min: 30 0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -6 -5;
+               to: "etk.text.label";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: 4 2;
+               to: "etk.text.label";
+            }
+            image {
+               normal: "slider_label_bg.png";
+               border: 10 10 8 8;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.text.label";
+         type: TEXT;
+         clip_to: "label_clip";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 7 7 7 255;
+            align: 1.0 0.5;
+            rel1 {
+               relative: 1.0 0.5;
+               offset: -1 1;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -1 1;
+            }
+            text {
+               text: "0.0";
+               font: "Vera";
+               size: 10;
+               min: 1 1;
+            }
+         }
+      }
    }
    programs {
+      program {
+         name: "slider_show_label";
+         signal: "etk,action,show,label";
+         source: "etk";
+         action: STATE_SET "visible" 0.0;
+         target: "label_clip";
+      }
+      program {
+         name: "slider_hide_label";
+         signal: "etk,action,hide,label";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "label_clip";
+      }
       program {
          name: "slider_button_pressed";
          signal: "mouse,down,1*";
@@ -192,34 +296,34 @@ group {
  */
 group {
    name: "etk/vslider";
-   min: 24 32;
+   min: 24 64;
    parts {
       part {
          name: "focus_rect";
          type: RECT;
          description {
             state: "default" 0.0;
-            color: 141 181 235 255;
-            visible: 0;
+            color: 141 181 235 0;
             rel1 {
                relative: 0.0 0.0;
-               offset: -3 0;
-               to_x: "trough_up";
+               offset: -3 -3;
+               to: "trough_up";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: 2 -1;
-               to_x: "trough_down";
+               offset: 2 2;
+               to: "trough_down";
             }
          }
          description {
             state: "focused" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            color: 141 181 235 255;
          }
       }
       part {
          name: "trough_up";
+         mouse_events: 0;
          description {
             state: "default" 0.0;
             rel1 {
@@ -237,15 +341,18 @@ group {
       }
       part {
          name: "trough_down";
+         mouse_events: 0;
          description {
             state: "default" 0.0;
             rel1 {
-               relative: 0.5 1.0;
+               relative: 0.5 0.0;
                offset: -5 -9;
+               to_y: "label_clip";
             }
             rel2 {
-               relative: 0.5 1.0;
+               relative: 0.5 0.0;
                offset: 5 -4;
+               to_y: "label_clip";
             }
             image {
                normal: "slider_v_trough_down.png";
@@ -254,6 +361,7 @@ group {
       }
       part {
          name: "trough";
+         mouse_events: 0;
          description {
             state: "default" 0.0;
             rel1 {
@@ -320,8 +428,105 @@ group {
             }
          }
       }
+      part {
+         name: "label_clip";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 -1;
+               to_x: "label_under";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -2;
+               to_x: "label_under";
+            }
+         }
+         description {
+            state: "visible" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+               to: "label_under";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+               to: "label_under";
+            }
+         }
+      }
+      part {
+         name: "label_under";
+         clip_to: "label_clip";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            align: 0.5 1.0;
+            min: 30 0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: -6 -5;
+               to: "etk.text.label";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: 4 2;
+               to: "etk.text.label";
+            }
+            image {
+               normal: "slider_label_bg.png";
+               border: 10 10 8 8;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.text.label";
+         type: TEXT;
+         clip_to: "label_clip";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 7 7 7 255;
+            align: 0.5 1.0;
+            rel1 {
+               relative: 0.5 1.0;
+               offset: 1 -1;
+            }
+            rel2 {
+               relative: 0.5 1.0;
+               offset: 1 -1;
+            }
+            text {
+               text: "0.0";
+               font: "Vera";
+               size: 10;
+               min: 1 1;
+            }
+         }
+      }
    }
    programs {
+      program {
+         name: "slider_show_label";
+         signal: "etk,action,show,label";
+         source: "etk";
+         action: STATE_SET "visible" 0.0;
+         target: "label_clip";
+      }
+      program {
+         name: "slider_hide_label";
+         signal: "etk,action,hide,label";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "label_clip";
+      }
       program {
          name: "slider_button_pressed";
          signal: "mouse,down,1*";

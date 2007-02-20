@@ -7,12 +7,13 @@
  * -------------------
  * - "filler_pulse_width": a float indicating the width of the filler part when the progress-bar is in pulse-mode
  *      (in this mode, the filler is bounding inside the progress-bar. It is used when we can't know how long the
- *      operation will take)
+ *      operation will take). Value from 0.1 to 0.9. Default value: 0.3
  *
  * Special parts:
  * --------------
  * - "etk.dragable.filler": the dragable part used to display the progress of the progress-bar.
- *      This part should be insensitive to mouse-events (you don't want to be able to drag the filler of a progress-bar...)
+ *      This part should be insensitive to mouse-events (you don't want to be able to drag the filler of a
+ *      progress-bar...)
  * - "etk.text.text": the text part used to display a text about the progress of the progress-bar
  *
  * Signals:
