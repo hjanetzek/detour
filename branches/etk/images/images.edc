@@ -8,6 +8,11 @@ images {
    image: "check_base.png" COMP;
    image: "check_blank.png" COMP;
    image: "check_mark.png" COMP;
+   image: "cp_bg.png" COMP;
+   image: "cp_slider_drag.png" COMP;
+   image: "cp_slider_trough.png" COMP;
+   image: "cp_slider_trough_left.png" COMP;
+   image: "cp_slider_trough_right.png" COMP;
    image: "dialog_bg.png" COMP;
    image: "dialog_separator.png" COMP;
    image: "entry.png" COMP;

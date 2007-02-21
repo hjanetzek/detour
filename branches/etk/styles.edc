@@ -4,7 +4,10 @@ styles
    STYLE("Default",
       "Vera", "Vera-Bold", "Vera-Italic", "Vera-Bold-Italic", "Vera-Mono", "10",
       "color=#070707FF", /* Normal style */
-      "", "", "", "") /* Other styles */
+      "color=#ffffff style=soft_shadow shadow_color=#07070720 font=Vera-Bold font_size=16", /* Title */
+      "color=#ffffff style=soft_shadow shadow_color=#07070720 font=Vera-Bold font_size=12", /* Subtitle */
+      "color=#ffffff style=glow glow2_color=#fe87 glow_color=#fa14", /* Glow */
+      "color=#111111 font=Vera-Italic") /* Description */
    
    /** Default style for the label of a button */
    STYLE("Button Default",
