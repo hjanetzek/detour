@@ -12,6 +12,10 @@
  * --------
  * - "etk,action,show,label": emitted when the label of the slider should be visible
  * - "etk,action,hide,label": emitted when the label of the slider should be hidden
+ * - "etk,state,inverted": emitted when the slider gets inverted. The left end now corresponds
+ *      to the maximum value of the slider
+ * - "etk,state,normal": emitted when the slider goes from being inverted to being normal. The right
+ *      end of the slider then corresponds to the max value
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
  *      "etk,state,focused", "etk,state,unfocused", "etk,state,enabled", "etk,state,disabled"
  */
@@ -32,7 +36,7 @@ group {
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: 3 2;
+               offset: 2 2;
                to: "trough_right";
             }
          }
@@ -183,10 +187,10 @@ group {
       part {
          name: "label_under";
          clip_to: "label_clip";
-         mouse_events: 0;
          description {
             state: "default" 0.0;
             align: 1.0 0.5;
+            fixed: 1 1;
             min: 30 0;
             rel1 {
                relative: 0.0 0.0;
@@ -216,13 +220,14 @@ group {
             state: "default" 0.0;
             color: 7 7 7 255;
             align: 1.0 0.5;
+            fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
-               offset: -1 1;
+               offset: -5 1;
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -1 1;
+               offset: -5 1;
             }
             text {
                text: "0.0";
@@ -288,9 +293,16 @@ group {
  * Special parts:
  * --------------
  * - "etk.dragable.slider": the dragable part used to change the value of the slider
+ * - "etk.text.label": the text part that displays the label of the slider. Should be hidden by default
  *
  * Signals:
  * --------
+ * - "etk,action,show,label": emitted when the label of the slider should be visible
+ * - "etk,action,hide,label": emitted when the label of the slider should be hidden
+ * - "etk,state,inverted": emitted when the slider gets inverted. The bottom end now corresponds
+ *      to the maximum value of the slider
+ * - "etk,state,normal": emitted when the slider goes from being inverted to being normal. The top
+ *      end of the slider then corresponds to the maximum value
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown",
  *      "etk,state,focused", "etk,state,unfocused", "etk,state,enabled", "etk,state,disabled"
  */
@@ -311,7 +323,7 @@ group {
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: 2 2;
+               offset: 3 1;
                to: "trough_down";
             }
          }
@@ -435,7 +447,7 @@ group {
          description {
             state: "default" 0.0;
             rel1 {
-               relative: 0.0 0.0;
+               relative: 0.0 1.0;
                offset: 0 -1;
                to_x: "label_under";
             }
@@ -462,10 +474,10 @@ group {
       part {
          name: "label_under";
          clip_to: "label_clip";
-         mouse_events: 0;
          description {
             state: "default" 0.0;
             align: 0.5 1.0;
+            fixed: 1 1;
             min: 30 0;
             rel1 {
                relative: 0.0 0.0;
@@ -495,13 +507,14 @@ group {
             state: "default" 0.0;
             color: 7 7 7 255;
             align: 0.5 1.0;
+            fixed: 1 1;
             rel1 {
                relative: 0.5 1.0;
-               offset: 1 -1;
+               offset: 1 -3;
             }
             rel2 {
                relative: 0.5 1.0;
-               offset: 1 -1;
+               offset: 1 -3;
             }
             text {
                text: "0.0";
