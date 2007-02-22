@@ -20,6 +20,9 @@ group {
          description {
             state: "default" 0.0;
             align: 0.0 0.5;
+            rel1 {
+               offset: 5 0;
+            }
             text {
                style: "Default";
                min: 1 1;
