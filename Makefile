@@ -1,18 +1,42 @@
-fonts = fonts
-images = images
-CC = edje_cc
+fonts 	= fonts
+images 	= images
+CC		= edje_cc
+SRC		= main.edc
+OUT		= detour-etk.edj
+COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
+
 EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/
-COMPILE = $(CC) $(EDJE_CC_FLAGS)
 
 .SILENT :
 
-all: clean build
-
-build: main.edc
-	$(COMPILE) main.edc -o detour-etk.edj
+all: clean build install
 
 clean:
-	rm -f *.edj
+	@echo ""
+	@echo "make clean"
+	if [ -e $(OUT) ]; then rm $(OUT); fi
 
-install:
-	cp detour-etk.edj $(HOME)/.etk/themes/
+build: main.edc
+	@echo "make"
+	$(COMPILE) $(SRC) -o $(OUT)
+
+install: detour-etk.edj
+	@echo "make install"
+	if [ -e $(OUT) ]; then cp $? $(HOME)/.e/etk/themes/; fi
+	@echo ""
+	@echo --------------------------------------------------
+	@echo $(OUT) was installed in your
+	@echo $(HOME)/.e/etk/themes/ directory.
+	@echo --------------------------------------------------
+	@echo ""
+
+uninstall: detour-etk.edj
+	@echo
+	@echo Removing $(OUT)
+	if [ -e $(HOME)/.e/etk/themes/$(OUT) ]; then rm $(HOME)/.e/etk/themes/$(OUT); fi
+	@echo ""
+	@echo --------------------------------------------------
+	@echo $(OUT) was removed from your
+	@echo $(HOME)/e/etk/themes/ directory.
+	@echo --------------------------------------------------
+	@echo ""
