@@ -18,7 +18,7 @@ styles
    /** Style for the label of a pressed button */
    STYLE("Button Pressed",
       "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
-      "color=#FFFFFFFF style=shadow shadow_color=#00000080", /* Normal style */
+      "color=#FFFFFFFF", /* Normal style */
       "", "", "", "") /* Other styles */
    
    /** Style for the label of a disabled button */
