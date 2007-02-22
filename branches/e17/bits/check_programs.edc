@@ -27,7 +27,6 @@ program {
 	signal: "e,state,focused";
 	source: "e";
 	script {
-		set_state(PART:"focus_grid", "active", 0.0);
 		set_state(PART:"focus_rect", "active", 0.0);
 		set_state(PART:"e.text.label", "active", 0.0);
 	}
@@ -38,7 +37,6 @@ program {
 	signal: "e,state,unfocused";
 	source: "e";
 	script {
-		set_state(PART:"focus_grid", "default", 0.0);
 		set_state(PART:"focus_rect", "default", 0.0);
 		set_state(PART:"e.text.label", "default", 0.0);
 	}

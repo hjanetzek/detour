@@ -1,5 +1,4 @@
 
-
 # ifdef PROG
 #  undef PROG
 # endif
@@ -82,7 +81,6 @@ program {
 	source: "e";
 	action: STATE_SET "focused" 0.0;
 	script {
-		set_state(PART:"focus_grid", "active", 0.0);
 		set_state(PART:"focus_rect", "active", 0.0);
 	}
 }
@@ -93,7 +91,6 @@ program {
 	source: "e";
 	action: STATE_SET "default" 0.0;
 	script {
-		set_state(PART:"focus_grid", "default", 0.0);
 		set_state(PART:"focus_rect", "default", 0.0);
 	}
 }
