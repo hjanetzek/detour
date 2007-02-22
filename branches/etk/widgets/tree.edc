@@ -108,7 +108,7 @@ group {
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -2 -2;
+               offset: -1 -3;
                to: "over";
             }
          }
