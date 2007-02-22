@@ -60,6 +60,8 @@ images {
    image: "slider_v_trough.png" COMP;
    image: "slider_v_trough_up.png" COMP;
    image: "slider_v_trough_down.png" COMP;
+   image: "spinner.png" COMP;
+   image: "spinner_focus.png" COMP;
    image: "tree_bg.png" COMP;
    image: "tree_focus.png" COMP;
    image: "tree_over.png" COMP;

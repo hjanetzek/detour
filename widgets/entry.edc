@@ -117,6 +117,7 @@ group {
  */
 group {
    name: "etk/entry/text";
+   alias: "etk/spinner/text";
    parts {
       part {
          name: "etk.text.text";
@@ -150,6 +151,7 @@ group {
  */
 group {
    name: "etk/entry/cursor";
+   alias: "etk/spinner/cursor";
    min: 1 0;
    parts {
       part {
@@ -218,6 +220,7 @@ group {
  */
 group {
    name: "etk/entry/selection";
+   alias: "etk/spinner/selection";
    data {
       item: "on_foreground" "1";
    }
