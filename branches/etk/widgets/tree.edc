@@ -118,7 +118,6 @@ group {
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            color: 255 255 255 120;
             rel1 {
                relative: 0.0 0.0;
                offset: 0 4;
@@ -247,7 +246,7 @@ group {
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -1 -1;
+               offset: -1 -2;
             }
             color: 149 171 195 255;
             visible: 0;

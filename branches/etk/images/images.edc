@@ -63,4 +63,5 @@ images {
    image: "tree_bg.png" COMP;
    image: "tree_focus.png" COMP;
    image: "tree_over.png" COMP;
+   image: "cp_box.png" COMP;
 }
