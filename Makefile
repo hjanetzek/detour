@@ -33,7 +33,7 @@ install: detour-e17.edj
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was installed in your
-	@echo $(HOME)/e/e/themes/ directory.
+	@echo $(HOME)/.e/e/themes/ directory.
 	@echo --------------------------------------------------
 	@echo
 

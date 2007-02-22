@@ -53,8 +53,8 @@ part {
 		state: "default" 0.0;
 
 	image {
-	       normal: "cs_box.png";
-	       border: 2 2 3 3;
+		normal: "cs_box.png";
+		border: 2 2 3 3;
 		middle: 0;
 	}
 
