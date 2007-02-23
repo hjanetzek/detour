@@ -8,7 +8,6 @@ images {
    image: "check_base.png" COMP;
    image: "check_blank.png" COMP;
    image: "check_mark.png" COMP;
-   image: "cp_bg.png" COMP;
    image: "cp_slider_drag.png" COMP;
    image: "cp_slider_trough.png" COMP;
    image: "cp_slider_trough_left.png" COMP;
@@ -62,6 +61,8 @@ images {
    image: "slider_v_trough_down.png" COMP;
    image: "spinner.png" COMP;
    image: "spinner_focus.png" COMP;
+   image: "spinner_up_pressed.png" COMP;
+   image: "spinner_down_pressed.png" COMP;
    image: "tree_bg.png" COMP;
    image: "tree_focus.png" COMP;
    image: "tree_over.png" COMP;

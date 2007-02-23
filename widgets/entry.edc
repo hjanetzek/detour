@@ -1,7 +1,7 @@
 /**
  * group "etk/entry"
  * -----------------------
- * This group is used for the entry widgets. It uses several other groups:
+ * This group is used for the entry widget. It uses several other groups:
  * - "etk/entry/text": for the text inside the entry
  * - "etk/entry/cursor": for the cursor of the entry
  * - "etk/entry/selection" for the selection of the entry
@@ -142,7 +142,7 @@ group {
 /**
  * group "etk/entry/cursor"
  * -----------------------
- * This group corresponds to the cursor of the entry
+ * This group corresponds to the text-cursor of the entry
  *
  * Signals:
  * --------
