@@ -69,7 +69,7 @@ group {
          }
       }
       part {
-         name: "square_picker";
+         name: "etk.swallow.square_picker";
          type: SWALLOW;
          description {
             state: "default" 0.0;
@@ -86,7 +86,7 @@ group {
          }
       }
       part {
-         name: "vertical_picker";
+         name: "etk.swallow.vertical_picker";
          type: SWALLOW;
          description {
             max: 10 9999;
@@ -208,7 +208,7 @@ group {
          }
       }
       part {
-         name: "slider_image";
+         name: "etk.swallow.image";
          type: SWALLOW;
          description {
 	color: 153 174 55 255;
@@ -357,7 +357,7 @@ group {
          }
       }
       part {
-         name: "preview_rect";
+         name: "etk.swallow.preview";
          type: SWALLOW;
          description {
             state: "default" 0.0;
