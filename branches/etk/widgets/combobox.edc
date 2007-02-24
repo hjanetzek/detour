@@ -1,0 +1,243 @@
+group {
+   name: "etk/combobox";
+   data {
+      item: "item_height" "24";
+      /* The following items have no effect since they have their default value */
+      item: "popup_offset_x" "0";
+      item: "popup_offset_y" "0";
+      item: "popup_extra_width" "0";
+   }
+}
+group {
+   name: "etk/combobox/button";
+   min: 0 30;
+   parts {
+      part {
+         name: "base";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 0 26;
+            image {
+               normal: "button_outline.png";
+               border: 7 7 7 7;
+            }
+         }
+      }
+      part {
+         name: "combo_button_clip";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            visible: 1;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 3 1;
+               to: "base";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -4 -3;
+               to: "base";
+            }
+         }
+      }
+      part {
+         name: "combo_button";
+         clip_to: "combo_button_clip";
+         description {
+            state: "default" 0.0;
+            min: 0 24;
+            rel1 {
+               to: "combo_button_clip";
+            }
+            rel2 {
+               to: "combo_button_clip";
+            }
+            image {
+               normal: "combobox_button.png";
+               border: 7 23 7 7;
+            }
+         }
+         description {
+            state: "on" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "combobox_button_clicked.png";
+            }
+         }
+      }
+      part {
+         name: "combo_arrow";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+	    min: 9 5;
+	    max: 9 5; 
+            fixed: 1 1;
+            rel1 {
+               relative: 1 0.5;
+               offset: -22 -9;
+            }
+            rel2 {
+               relative: 1.0 0.5;
+               offset: -9 9;
+            }
+            image {
+               normal: "combo_arrow.png";
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+	 description {
+            state: "on" 0.0;
+	    inherit: "default" 0.0;
+            image {
+               normal: "combo_arrow2.png";
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+      part {
+         name: "etk.swallow.content";
+         type: SWALLOW;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 11 7;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -28 -8;
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "combo_button_activate";
+         signal: "etk,state,on";
+         source: "etk";
+         action: STATE_SET "on" 0.0;
+         target: "combo_button";
+      }
+      program {
+         name: "combo_button_deactivate";
+         signal: "etk,state,off";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "combo_button";
+      }
+      program {
+         name: "combo_button_pressed";
+         signal: "etk,state,pressed";
+         source: "etk";
+         action: STATE_SET "on" 0.0;
+         target: "combo_button";
+         target: "combo_arrow";
+      }
+      program {
+         name: "combo_button_released";
+         signal: "etk,state,released";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "combo_button";
+         target: "combo_arrow";
+      }
+   }
+}
+
+group {
+   name: "etk/combobox/window";
+   data {
+      item: "inset" "3 3 3 3";
+   }
+   parts {
+     part {
+         name: "window_bg_border";
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 104 108 111 255;
+         }
+      }
+      part {
+         name: "window_bg1";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 1 1;
+	       to: "window_bg_border";
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -2 -2;
+	       to: "window_bg_border";
+            }
+            image {
+               normal: "menu_bg.png";
+               border: 2 2 4 4;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+}
+
+group {
+   name: "etk/combobox/item";
+   data {
+      item: "inset" "4 4 4 4";
+   }
+   parts {
+     part {
+	 name: "item_bg";
+         mouse_events: 1;
+         description {
+            state: "default" 0.0;
+            visible: 1;
+            color: 0 0 0 0;
+	    rel1.offset: 1 0;
+	    rel2.offset: -2 0;
+            image {
+               normal: "menu_item_select.png";
+               border: 5 5 5 5;
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "selected" 0.0;
+            inherit: "default" 0.0;
+            visible: 1;
+            color: 255 255 255 255;
+         }
+      }
+}
+   programs {
+      program {
+         name: "combo_item_select";
+         signal: "etk,state,selected";
+         source: "etk";
+         action: STATE_SET "selected" 0.0;
+         target: "item_bg";
+      }
+      program {
+         name: "combo_item_unselect";
+         signal: "etk,state,unselected";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "item_bg";
+      }
+   }
+}

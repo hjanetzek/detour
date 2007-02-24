@@ -72,4 +72,8 @@ images {
    image: "tree_focus.png" COMP;
    image: "tree_over.png" COMP;
    image: "cp_box.png" COMP;
+   image: "combobox_button.png" COMP;
+   image: "combobox_button_clicked.png" COMP;
+   image: "combo_arrow.png" COMP;
+   image: "combo_arrow2.png" COMP;
 }
