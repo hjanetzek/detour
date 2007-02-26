@@ -24,12 +24,15 @@
  */
 group {
    name: "etk/spinner";
-   min: 50 22;
+   min: 50 27;
    parts {
       part {
          name: "spinner";
          description {
             state: "default" 0.0;
+            min: 25 27;
+	    max: 999 27;
+            fixed: 1 1;
             rel1 {
                relative: 0.0 0.5;
                offset: 0 -10;
@@ -40,7 +43,7 @@ group {
             }
             image {
                normal: "spinner.png";
-               border: 5 15 7 7;
+               border: 2 17 7 7;
             }
          }
       }
@@ -48,14 +51,17 @@ group {
          name: "up_arrow";
          description {
             state: "default" 0.0;
-            color: 255 255 255 0;
+            color: 215 215 215 0;
+	    min: 17 14;
+            max: 17 14;
+            fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
-               offset: -11 -7;
+               offset: -16 -11;
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -3 -1;
+               offset: -1 -1;
             }
             image {
                normal: "spinner_up_pressed.png";
@@ -64,21 +70,24 @@ group {
          description {
             state: "down" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 255;
+            color: 215 215 215 164;
          }
       }
       part {
          name: "down_arrow";
          description {
             state: "default" 0.0;
-            color: 255 255 255 0;
+            color: 215 215 215 0;
+	    min: 17 14;
+            max: 17 14;
+            fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
-               offset: -11 0;
+               offset: -16 0;
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -3 7;
+               offset: -1 13;
             }
             image {
                normal: "spinner_down_pressed.png";
@@ -87,7 +96,7 @@ group {
          description {
             state: "down" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 255;
+            color: 215 215 215 164;
          }
       }
       part {
@@ -98,15 +107,18 @@ group {
             color: 255 255 255 0;
             visible: 0;
             rel1 {
+               relative: 0.0 0.0;
+               offset: 0 5;
                to: "spinner";
             }
             rel2 {
-               offset: 0 -1;
+               relative: 1.0 1.0;
+               offset: -16 -6;
                to: "spinner";
             }
             image {
                normal: "spinner_focus.png";
-               border: 7 7 6 6;
+	       border: 1 1 1 1;
             }
          }
          description {
@@ -123,12 +135,12 @@ group {
             state: "default" 0.0;
             rel1 {
                relative: 0.0 0.0;
-               offset: 4 1;
+               offset: 3 2;
                to: "spinner";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -15 -1;
+               offset: -21 -1;
                to: "spinner";
             }
          }
