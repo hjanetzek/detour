@@ -8,6 +8,11 @@ images {
    image: "check_base.png" COMP;
    image: "check_blank.png" COMP;
    image: "check_mark.png" COMP;
+   image: "combobox_button.png" COMP;
+   image: "combobox_button_clicked.png" COMP;
+   image: "combo_arrow.png" COMP;
+   image: "combo_arrow2.png" COMP;
+   image: "cp_box.png" COMP;
    image: "cp_slider_drag.png" COMP;
    image: "cp_slider_trough.png" COMP;
    image: "cp_slider_trough_left.png" COMP;
@@ -71,9 +76,4 @@ images {
    image: "tree_bg.png" COMP;
    image: "tree_focus.png" COMP;
    image: "tree_over.png" COMP;
-   image: "cp_box.png" COMP;
-   image: "combobox_button.png" COMP;
-   image: "combobox_button_clicked.png" COMP;
-   image: "combo_arrow.png" COMP;
-   image: "combo_arrow2.png" COMP;
 }
