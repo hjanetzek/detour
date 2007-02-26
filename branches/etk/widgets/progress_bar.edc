@@ -156,7 +156,7 @@
                smooth: 0;
                size {
                   relative: 0.0 0.0;
-                  offset: 15 15;
+                  offset: 17 15;
                }
             }
          }
@@ -187,8 +187,8 @@
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            color: 255 255 255 255;
-            color3: 7 7 7 128;
+            color: 7 7 7 255;
+            color3:  205 204 204 128;
             rel1 {
                to: "text_clip";
             }
