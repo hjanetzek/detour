@@ -7,7 +7,7 @@ SRC             = main.edc
 OUT             = detour-ewl.edj
 COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
 
-EDJE_CC_FLAGS 	= -fd $(fonts)/ -id $(images)/ -v
+EDJE_CC_FLAGS 	= -fd $(fonts)/ -id $(images)/
 
 .SILENT :
 
