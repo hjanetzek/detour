@@ -153,7 +153,7 @@ group {
          signal: "etk,state,focused";
          source: "etk";
          action: STATE_SET "focused" 0.0;
-         transition: DECELERATE 0.2;
+         transition: DECELERATE 0.25;
          target: "spinner_focus";
       }
       program {
@@ -161,10 +161,9 @@ group {
          signal: "etk,state,unfocused";
          source: "etk";
          action: STATE_SET "default" 0.0;
-         transition: DECELERATE 0.2;
+         transition: DECELERATE 0.25;
          target: "spinner_focus";
       }
-      
       program {
          name: "spinner_button_up_pressed";
          signal: "mouse,down,1*";
