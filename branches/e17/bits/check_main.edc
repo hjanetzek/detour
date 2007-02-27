@@ -9,7 +9,7 @@ part {
 		min: 18 0;
 
 	r1 { offset: 1 0; }
-	r2 { to_x: "e.text.label"; offset: 1 -1; }
+	r2 { to_x: "e.text.label"; offset: 0 -1; }
 
 	color: 141 181 235 0;
 	} 
