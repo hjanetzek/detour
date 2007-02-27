@@ -1,48 +1,68 @@
-#define r1 rel1
-#define r2 rel2
-
-#include "macros/button-macro.edc"
-
-fonts {
-#include "fonts.edc"
-#include "fonts/bitstream.COPYING"
-}
 
 images {
 #include "images.edc"
 }
 
-collections {
-#include "bits/border.edc"
+fonts
+{
+        font, "fonts/Vera.ttf" "ewl/default";
+        font, "fonts/VeraBd.ttf" "ewl/default/bold";
+        font, "fonts/VeraMono.ttf" "ewl/monospace";
+        font, "fonts/VeraMoBd.ttf" "ewl/monospace/bold";
+}
+
+
+collections
+{
+#include "bits/border.edc
 #include "bits/button.edc"
-//#include "bits/entry.edc"
+#include "bits/combo.edc"
+#include "bits/entry.edc"
 #include "bits/label.edc"
-//#include "bits/menu.edc"
-//#include "bits/scrollbar.edc"
+#include "bits/scrollbar.edc"
 #include "bits/scrollpane.edc"
 #include "bits/separator.edc"
-//#include "bits/slider.edc"
+#include "bits/shadow.edc"
+#include "bits/spacer.edc"
 #include "bits/tree.edc"
 #include "bits/window.edc"
 }
 
-data {
-	item: "/border/group" "/widget/border";
-	item: "/button/group" "/widget/button";
-	item: "/check/group" "/widget/button/check";
-	item: "/checkbutton/group" "/widget/button/checkbutton";
-	item: "/hseparator/group" "/widget/hseparator";
-	item: "/label/group" "/widget/label";
-	item: "/label/textpart" "text";
-	item: "/node/check/group" "/widget/tree/node";
-	item: "/radio/group" "/widget/button/radio";
-	item: "/radiobutton/group" "/widget/button/checkbutton";
-	item: "/row/group" "/widget/tree/row";
-	item: "/scrollpane/group" "/widget/scrollpane";
-	item: "/text/color/a" "255";
-	item: "/text/font" "Vera";
-	item: "/text/font_size" "12";
-	item: "/text/style" "none";
-	item: "/vseparator/group" "/widget/vseparator";
-	item: "/window/group" "/widget/window";
-} 
+data
+{
+	item: "/border/group" "/ewl/border";
+	item: "/button/group" "/ewl/button";
+	item: "/combo/group" "/ewl/combo";
+	item: "/combo/button/group" "/ewl/combo/button";
+	item: "/combo/cell/group" "/ewl/combo/contents";
+	item: "/combo/popup/group" "/ewl/combo/popup";
+	item: "/combo/popup/vbox/cell/group" "/ewl/select/highlight";
+	item: "/entry/group" "/ewl/entry";
+	item: "/entry/cursor/group" "/ewl/entry/cursor";
+	item: "/freebox/auto/padding" 16;
+	item: "/hscrollbar/decrement/group" "/ewl/hscrollbar/decrement";
+	item: "/hscrollbar/increment/group" "/ewl/hscrollbar/increment";
+	item: "/hscrollbar/hseeker/group" "/ewl/hrunner";
+	item: "/hscrollbar/hseeker/hbutton/group" "/ewl/hscrollbar";
+	item: "/hseparator/group" "/ewl/hseparator";
+	item: "/label/group" "/ewl/label";
+	item: "/label/textpart" "/ewl/label/text";
+	item: "/row/group" "/ewl/row";
+	item: "/scrollpane/group" "/ewl/scrollpane";
+        item: "/shadow/group" "/ewl/shadow";
+	item: "/spacer/group" "/ewl/spacer";
+	item: "/text/color/a" 255;
+        item: "/text/font" "ewl/default";
+        item: "/text/font_size" 10;
+        item: "/text/style" "none";
+	item: "/tooltip/delay" ".2";
+	item: "/tooltip/group" "/ewl/window";
+	item: "/tooltip/hoffset" "5";
+	item: "/tooltip/voffset" "5";
+	item: "/vscrollbar/decrement/group" "/ewl/vscrollbar/decrement";
+	item: "/vscrollbar/increment/group" "/ewl/vscrollbar/increment";
+	item: "/vscrollbar/vseeker/group" "/ewl/vrunner";
+	item: "/vscrollbar/vseeker/vbutton/group" "/ewl/vscrollbar";
+	item: "/vseparator/group" "/ewl/vseparator";
+	item: "/window/group" "/ewl/window";
+}
