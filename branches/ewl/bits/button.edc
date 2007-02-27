@@ -1,7 +1,13 @@
 group
 {
 	name: "/ewl/button";
-	min: 60 26;
+	data
+	{
+		item: "inset/top" "5";
+		item: "inset/bottom" "5";
+		item: "inset/left" "15";
+		item: "inset/right" "15";
+	}
 	parts
 	{
 		part
@@ -11,16 +17,16 @@ group
 			description
 			{
 				state: "default" 0.0;
-				min: 60 26;
+				min: 0 26;
 				rel1
 				{
 					relative: 0.0 0.0;
-					offset: 0 0;
+					offset: 3 4;
 				}
 				rel2
 				{
 					relative: 1.0 1.0;
-					offset: -1 -1;
+					offset: -4 -5;
 				}
 				image
 				{
@@ -29,25 +35,43 @@ group
 				}
 			}
 		}
+                part
+                {
+                        name: "button_clip";
+                        type: RECT;
+                        mouse_events: 0;
+                        description
+                        {
+                                state: "default" 0.0;
+                                color: 255 255 255 255;
+                                rel1 {
+                                        relative: 0.0 0.0;
+                                        offset: 3 1;
+                                        to: "button_outline";
+                                }
+                                rel2 {
+                                        relative: 1.0 1.0;
+                                        offset: -4 -2;
+                                        to: "button_outline";
+                                }
+                        }
+                }
 		part
 		{
 			name: "button";
 			mouse_events: 1;
+			clip_to: "button_clip";
 			description
 			{
 				state: "default" 0.0;
-				min: 58 25;
+				min: 0 24;
 				rel1
 				{
-					to: "button_outline";
-					relative: 0.0 0.0;
-					offset: 3 4;
+					to: "button_clip";
 				}
 				rel2
 				{
-					to: "button_outline";
-					relative: 1.0 1.0;
-					offset: -4 -5;
+					to: "button_clip";
 				}
 				image
 				{
