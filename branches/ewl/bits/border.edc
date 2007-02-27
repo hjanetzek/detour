@@ -1,5 +1,5 @@
 group {
-	name: "/widget/border";
+	name: "/ewl/border";
 	data {
 		item: "inset/top" "8";
 		item: "inset/bottom" "8";

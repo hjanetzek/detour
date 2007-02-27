@@ -1,38 +1,80 @@
-group {
-	name: "/widget/hseparator";
-	min: 6 6;
-	max: 10000 6;
-	parts {
-		part {
+group
+{
+	name: "/ewl/hseparator";
+	min: 6 2;
+	max: 10000 2;
+
+	parts
+	{
+		part
+		{
 			name: "separator";
 			mouse_events: 0;
-			description {
+			description
+			{
 				state: "default" 0.0;
 				min: 20 2;
-				r1 { relative: 0.0 0.0; offset: 2 2; }
-				r2 { relative: 1.0 1.0; offset: -3 -3; }
-				image.normal: "menu_separator.png";
-				image.border: 3 3 0 0;
+				rel1
+				{
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+				rel2
+				{
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+				image
+				{
+					normal: "hseparator.png";
+					border: 1 1 1 1;
+				}
+				fill
+				{
+					smooth: 0;
+				}
 			}
 		}
 	}
 }
-group {
-	name: "/widget/vseparator";
-	min: 6 6;
-	max: 6 10000;
-	parts {
-		part {
+
+group
+{
+	name: "/ewl/vseparator";
+	min: 2 6;
+	max: 2 10000;
+
+	parts
+	{
+		part
+		{
 			name: "separator";
 			mouse_events: 0;
-			description {
+			description
+			{
 				state: "default" 0.0;
 				min: 2 20;
-				r1 { relative: 0.0 0.0; offset: 2 2; }
-				r2 { relative: 1.0 1.0; offset: -3 -3; }
-				image.normal: "menu_separator_vert.png";
-				image.border: 0 0 3 3;
+				rel1
+				{
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+				rel2
+				{
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+				image
+				{
+					normal: "vseparator.png";
+					border: 1 1 1 1;
+				}
+				fill
+				{
+					smooth: 0;
+				}
 			}
 		}
 	}
 }
+
