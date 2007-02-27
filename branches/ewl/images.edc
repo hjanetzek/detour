@@ -1,99 +1,36 @@
-// Border
-image: "frame_outline.png" COMP;
-
-// Button (Normal)
-image: "button.png" COMP;
-image: "button_focus_top.png" COMP;
-image: "button_focus_bottom.png" COMP;
-image: "button_disabled.png" COMP;
-image: "button_outline.png" COMP;
-image: "button_clicked.png" COMP;
-
-// Button (Check)
-image: "check0.png" COMP;
-image: "check1.png" COMP;
-image: "check2.png" COMP;
-
-// Button (Radio)
-image: "radio0.png" COMP;
-image: "radio1.png" COMP;
-image: "radio2.png" COMP;
-
-// Entry
-image: "entry.png" COMP;
-image: "entry_focus.png" COMP;
-
-// Menu
-image: "arrow_light.png" COMP;
-image: "arrow_dark.png" COMP;
-image: "menu_bg.png" COMP;
-image: "menu_separator.png" COMP;
-image: "menu_separator_vert.png" COMP;
-image: "menu_select.png" COMP;
-
-// Scrollpane
-image: "arrow_dark_down.png" COMP;
-image: "scrollframe_inset.png" COMP;
-image: "scrollframe_focus.png" COMP;
-image: "sf_vb_runner.png" COMP;
-image: "sf_btu1.png" COMP;
-image: "sf_btd1.png" COMP;
-image: "sf_barv1.png" COMP;
-image: "sf_hb_runner.png" COMP;
-image: "sf_bl1.png" COMP;
-image: "sf_br1.png" COMP;
-image: "sf_barh1.png" COMP;
-image: "scrollframe_focus.png" COMP;
-image: "sb_vdrag.png" COMP;
-image: "sb_hdrag.png" COMP;
-image: "scrollframe_bg.png" COMP;
-image: "sf_barv_thumb.png" COMP;
-image: "sf_barh_thumb.png" COMP;
-image: "sf_btu1_over.png" COMP;
-image: "sf_btd1_over.png" COMP;
-image: "sf_bl1_over.png" COMP;
-image: "sf_br1_over.png" COMP;
-image: "scrollframe_inset.png" COMP;
-image: "scrollframe_focus.png" COMP;
-image: "sf_vb_runner.png" COMP;
-image: "sf_btu1.png" COMP;
-image: "sf_btd1.png" COMP;
-image: "sf_barv1.png" COMP;
-image: "sf_hb_runner.png" COMP;
-image: "sf_bl1.png" COMP;
-image: "sf_br1.png" COMP;
-image: "sf_barh1.png" COMP;
-image: "scrollframe_focus.png" COMP;
-image: "sb_vdrag.png" COMP;
-image: "sb_hdrag.png" COMP;
-image: "scrollframe_bg.png" COMP;
-image: "sf_barv_thumb.png" COMP;
-image: "sf_barh_thumb.png" COMP;
-image: "sf_btu1_over.png" COMP;
-image: "sf_btd1_over.png" COMP;
-image: "sf_bl1_over.png" COMP;
-image: "sf_br1_over.png" COMP;
-
-// Separator
-image: "separator.png" COMP;
-//image: "hseparator.png" COMP;
-
-// Slider
-image: "slider_0.png" COMP;
-image: "slider_1.png" COMP;
-image: "slider_vert0.png" COMP;
-image: "slider_vert1.png" COMP;
-image: "sb_runnerh.png" COMP;
-image: "sb_runnerv.png" COMP;
-image: "sb_runnerh_left.png" COMP;
-image: "sb_runnerh_right.png" COMP;
-image: "sb_runnerv_top.png" COMP;
-image: "sb_runnerv_bot.png" COMP;
-
-// Widgets
-image: "widget_focus.png" COMP;
-
-// Window
-image: "dialog_bg.png" COMP;
-
-
+images
+{
+	image: "button.png" COMP;
+	image: "button_clicked.png" COMP;
+	image: "button_focus_bottom.png" COMP;
+	image: "button_focus_top.png" COMP;
+	image: "button_outline.png" COMP;
+	image: "combo_arrows.png" COMP;
+	image: "dialog_bg.png" COMP;
+	image: "entry.png" COMP;
+	image: "entry_focus.png" COMP;
+	image: "frame_outline.png" COMP;
+	image: "hseparator.png" COMP;
+	image: "scrollframe_bg.png" COMP;
+	image: "scrollframe_inset.png" COMP;
+	image: "sf_barh1.png" COMP;
+	image: "sf_barh1_h.png" COMP;
+	image: "sf_barh_thumb.png" COMP;
+	image: "sf_barh_thumb_h.png" COMP;
+	image: "sf_bl1.png" COMP;
+	image: "sf_bl1_over.png" COMP;
+	image: "sf_br1.png" COMP;
+	image: "sf_br1_over.png" COMP;
+	image: "sf_hb_runner.png" COMP;
+	image: "sf_barv1.png" COMP;
+	image: "sf_barv1_h.png" COMP;
+	image: "sf_barv_thumb.png" COMP;
+	image: "sf_barv_thumb_h.png" COMP;
+	image: "sf_btd1.png" COMP;
+	image: "sf_btd1_over.png" COMP;
+	image: "sf_btu1.png" COMP;
+	image: "sf_btu1_over.png" COMP;
+	image: "sf_vb_runner.png" COMP;
+	image: "shadow.png" COMP;
+	image: "vseparator.png" COMP;
+}
