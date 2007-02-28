@@ -1,3 +1,4 @@
+#include "macros/button-macro.edc"
 #include "images.edc"
 
 fonts
@@ -7,7 +8,6 @@ fonts
         font, "fonts/VeraMono.ttf" "ewl/monospace";
         font, "fonts/VeraMoBd.ttf" "ewl/monospace/bold";
 }
-
 
 collections
 {
@@ -33,11 +33,16 @@ data
 	item: "/button/group" "/ewl/button";
 	item: "/button/body/label/group" "/ewl/label/bold";
 	item: "/button/body/label/textpart" "/ewl/label/text/bold";
+	item: "/checkbutton/group" "/ewl/checkbutton";
+	item: "/check/group" "/ewl/check";
 	item: "/combo/group" "/ewl/combo";
 	item: "/combo/button/group" "/ewl/combo/button";
 	item: "/combo/cell/group" "/ewl/combo/contents";
 	item: "/combo/popup/group" "/ewl/combo/popup";
 	item: "/combo/popup/vbox/cell/group" "/ewl/select/highlight";
+	item: "/entry/color/a" 255;
+        item: "/entry/font" "ewl/default";
+        item: "/entry/font_size" 10;
 	item: "/entry/group" "/ewl/entry";
 	item: "/entry/cursor/group" "/ewl/entry/cursor";
 	item: "/freebox/auto/padding" 16;
@@ -48,6 +53,8 @@ data
 	item: "/hseparator/group" "/ewl/hseparator";
 	item: "/label/group" "/ewl/label";
 	item: "/label/textpart" "/ewl/label/text";
+	item: "/radiobutton/group" "/ewl/checkbutton";
+	item: "/radio/group" "/ewl/radio";
 	item: "/row/group" "/ewl/row";
 	item: "/scrollpane/group" "/ewl/scrollpane";
         item: "/shadow/group" "/ewl/shadow";
