@@ -1,4 +1,4 @@
-#define BUTTON_IM(IMAGE1, IMAGE2) \
+#define BUTTON_IM(IMAGE1, IMAGE2, IMAGE3) \
 	parts { \
 		part { \
 			name: "outline"; \
@@ -9,10 +9,17 @@
 				max: 20 18; \
 				align: 0.0 0.5; \
 				fixed: 1 1; \
-				r1 { relative: 0.0 0.0; offset: 2 2; } \
-				r2 { relative: 0.0 1.0; offset: 2 -3; } \
+				rel1 { relative: 0.0 0.0; offset: 2 2; } \
+				rel2 { relative: 0.0 1.0; offset: 2 -3; } \
 				image { \
 					normal: IMAGE1; \
+				} \
+			} \
+			description { \
+				state: "disabled" 0.0; \
+				inherit: "default" 0.0; \
+				image { \
+					normal: IMAGE3; \
 				} \
 			} \
 		} \
@@ -22,8 +29,8 @@
 			description { \
 				state: "default" 0.0; \
 				visible: 0; \
-				r1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; } \
-				r2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; } \
+				rel1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; } \
+				rel2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; } \
 				image { \
 					normal: IMAGE2; \
 				} \
@@ -51,4 +58,18 @@
 			action: STATE_SET "default" 0.0; \
 			target: "item"; \
 		} \
+                program { \
+                        name: "disabled"; \
+                        signal: "disabled"; \
+                        source: "EWL"; \
+                        action: STATE_SET "disabled" 0.0; \
+                        target: "outline"; \
+                } \
+                program { \
+                        name: "enabled"; \
+                        signal: "enabled"; \
+                        source: "EWL"; \
+                        action: STATE_SET "default" 0.0; \
+                        target: "outline"; \
+                } \
 	}

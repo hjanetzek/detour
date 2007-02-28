@@ -1,13 +1,11 @@
 group
 {
 	name: "/ewl/entry";
-	min: 18 18;
+	min: 22 22;
 	data
 	{
+		item: "inset" 4;
 		item: "inset/left" 6;
-		item: "inset/right" 2;
-		item: "inset/top" 2;
-		item: "inset/bottom" 2;
 	}
 	parts
 	{
@@ -93,7 +91,7 @@ group
                         description
                         {
                                 state: "default" 0.0;
-                                color: 0 0 0 255;
+                                color: 7 7 7 255;
                                 visible: 0;
                         }
                         description
