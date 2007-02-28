@@ -28,7 +28,11 @@ collections
 data
 {
 	item: "/border/group" "/ewl/border";
+	item: "/border/label/group" "/ewl/label/bold";
+	item: "/border/label/textpart" "/ewl/label/text/bold";
 	item: "/button/group" "/ewl/button";
+	item: "/button/body/label/group" "/ewl/label/bold";
+	item: "/button/body/label/textpart" "/ewl/label/text/bold";
 	item: "/combo/group" "/ewl/combo";
 	item: "/combo/button/group" "/ewl/combo/button";
 	item: "/combo/cell/group" "/ewl/combo/contents";
