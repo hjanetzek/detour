@@ -14,12 +14,12 @@ group
 			description
 			{
 				state: "even" 0.0;
-				color: 238 238 238 255;
+				color: 225 232 239 255;
 			}
 			description
 			{
 				state: "odd" 0.0;
-				color: 255 255 255 255;
+				color: 243 243 243 255;
 			}
 		}
 	}

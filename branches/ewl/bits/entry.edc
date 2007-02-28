@@ -4,8 +4,9 @@ group
 	min: 22 22;
 	data
 	{
-		item: "inset" 4;
-		item: "inset/left" 6;
+		item: "inset/top" 3;
+		item: "inset/left" 4;
+		item: "inset/right" 2;
 	}
 	parts
 	{
