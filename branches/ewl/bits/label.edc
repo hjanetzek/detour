@@ -16,11 +16,6 @@ group
 				state: "default" 0.0;
 				color: 0 0 0 0;
 			}
-			description
-			{
-				state: "colored" 0.0;
-				color: 71 135 195 255;
-			}
 		}
 		part
 		{
@@ -47,13 +42,68 @@ group
 				{
 					text: "text";
 					font: "ewl/default";
-					size: 11;
+					size: 10;
 					min: 1 1;
 					align: 0.5 0.5;
 				}
-				color: 0 0 0 255;
+				color: 7 7 7 255;
 			}
 		}
+	}
+}
+
+group
+{
+	name: "/ewl/label/bold";
+        data
+        {
+                item: "pad" 2;
+        }
+        parts
+        {
+                part
+                {
+                        name: "background";
+                        type: RECT;
+                        description
+                        {
+                                state: "default" 0.0;
+                                color: 0 0 0 0;
+                        }
+                }
+
+                part
+                {
+                        name: "/ewl/label/text/bold";
+                        type: TEXT;
+                        effect: SHADOW;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 0.5;
+
+                                rel1
+                                {
+                                        relative: 0.0 0.0;
+                                        offset: 0 0;
+                                }
+                                rel2
+                                {
+                                        relative: 1.0 1.0;
+                                        offset: -1 -1;
+                                }
+                                text
+                                {
+                                        text: "text";
+                                        font: "ewl/default/bold";
+                                        size: 10;
+                                        min: 1 1;
+                                        align: 0.5 0.5;
+                                }
+                                color: 7 7 7 255;
+				color3: 170 168 169 128;
+                        }
+                }
 	}
 }
 
