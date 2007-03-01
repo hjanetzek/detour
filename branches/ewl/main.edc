@@ -40,6 +40,7 @@ data
 	item: "/combo/cell/group" "/ewl/combo/contents";
 	item: "/combo/popup/group" "/ewl/combo/popup";
 	item: "/combo/popup/vbox/cell/group" "/ewl/select/highlight";
+	item: "/dialog/group" "ewl/window";
 	item: "/entry/color/a" 255;
         item: "/entry/font" "ewl/default";
         item: "/entry/font_size" 10;
