@@ -1,0 +1,553 @@
+group
+{
+	name: "/ewl/vrunner";
+	min: 17 17;
+	max: 17 99999;
+	parts
+	{
+		part
+		{
+			name: "runner";
+			description
+			{
+				state: "default" 0.0;
+				image
+				{
+					normal: "sf_vb_runner.png";
+					border: 8 8 6 6;
+				}
+				fill
+				{
+					smooth: 0;
+				}
+			}
+		}
+	}
+}
+
+group
+{
+	name: "/ewl/vscrollbar";
+	min: 17 36;
+	max: 17 99999;
+	parts
+	{
+		part
+		{
+			name: "scrollbar_base";
+			type: RECT;
+			mouse_events: 0;
+			description
+			{
+				state: "default" 0.0;
+				rel1
+				{
+                                        relative: 0.0 0.0;
+                                        offset: 0 0;
+                                }
+                                rel2
+                                {
+                                        relative: 1.0 1.0;
+                                        offset: -1 -1;
+                                }
+				color: 255 255 255 0;
+			}
+		}
+		part
+		{
+			name: "scrollbar";
+			description
+			{
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				fixed: 1 1;
+				min: 13 17;
+				max: 13 99999;
+				rel1
+				{
+					to: "scrollbar_base";
+				}
+				rel2
+				{
+					to: "scrollbar_base";
+				}
+				image
+				{
+					normal: "sf_barv1.png";
+					border: 6 6 6 6;
+				}
+				fill
+				{
+					smooth: 0;
+				}
+			}
+			description
+			{
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+				color: 215 215 215 255;
+			}
+		}
+		part
+		{
+			name: "thumb";
+			description
+			{
+				state: "default" 0.0;
+				min: 7 11;
+				max: 7 11;
+				fixed: 1 1;
+				rel1
+				{
+					relative: 0.5 0.5;
+					offset: 0 0;
+				}
+				rel2
+				{
+					relative: 0.5 0.5;
+					offset: 0 0;
+				}
+				image
+				{
+					normal: "sf_barv_thumb.png";
+					border: 2 2 2 2;
+				}
+			}
+			description
+			{
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+				color: 215 215 215 255;
+			}	
+		}
+	}
+	programs
+	{
+		program
+		{
+			name: "clicked";
+			signal: "mouse,down,*";
+			source: "EWL";
+			action: STATE_SET "clicked" 0.0;
+			target: "scrollbar";
+			target: "thumb";
+		}
+                program
+                {
+                        name: "default";
+			signal: "mouse,up,*";
+                        source: "EWL";
+                        action: STATE_SET "default" 0.0;
+                        target: "scrollbar";
+			target: "thumb";
+                }
+        }
+}
+
+group
+{
+        name: "/ewl/vscrollbar/decrement";
+        min: 17 13;
+        max: 17 13;
+        parts
+        {
+                part
+                {
+                        name: "arrow";
+                        mouse_events: 1;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 1.0;
+                                aspect: 1.0 1.0;
+		                aspect_preference: HORIZONTAL;
+		                min: 17 13;
+				max: 17 13;
+				fixed: 1 1;
+				rel1
+                                {
+                                        relative: 0.0 0.0;
+                                        offset: 0 0;
+                                }
+                                rel2
+                                {
+                                        relative: 1.0 1.0;
+                                        offset: -1 -1;
+                                }
+                                image
+                                {
+                                        normal: "sf_btd1.png";
+                                }
+                        }
+		}
+		part
+		{
+			name: "arrow_over";
+			mouse_events: 0;
+			description
+			{
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				aspect: 1.0 1.0;
+				aspect_preference: HORIZONTAL;
+				min: 17 13;
+				max: 17 13;
+				fixed: 1 1;
+				rel1
+				{
+					to: "arrow";
+				}
+				rel2
+				{
+					to: "arrow";
+				}
+                                image
+                                {
+                                        normal: "sf_btd1_over.png";
+                                }
+                        }
+                }
+        }
+}
+
+group
+{
+        name: "/ewl/vscrollbar/increment";
+        min: 17 13;
+        max: 17 13;
+        parts
+        {
+                part
+                {
+                        name: "arrow";
+                        mouse_events: 1;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 1.0;
+                                aspect: 1.0 1.0;
+		                aspect_preference: HORIZONTAL;
+                                min: 17 13;
+				max: 17 13;
+				fixed: 1 1;
+				rel1
+                                {
+                                        relative: 0.0 0.0;
+                                        offset: 0 0;
+                                }
+                                rel2
+                                {
+                                        relative: 1.0 1.0;
+                                        offset: -1 -1;
+                                }
+                                image
+                                {
+                                        normal: "sf_btu1.png";
+                                }
+                        }
+                }
+		part
+                {
+                        name: "arrow_over";
+                        mouse_events: 0;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 0.5;
+                                aspect: 1.0 1.0;
+                                aspect_preference: HORIZONTAL;
+                                min: 17 13;
+                                max: 17 13;
+                                fixed: 1 1;
+                                rel1
+                                {
+                                        to: "arrow";
+                                }
+                                rel2
+                                {
+                                        to: "arrow";
+                                }
+                                image
+                                {
+                                        normal: "sf_btu1_over.png";
+                                }
+                        }
+                }
+        }
+}
+
+group
+{
+	name: "/ewl/hrunner";
+	min: 17 17;
+	max: 99999 17;
+	parts
+	{
+		part
+		{
+			name: "runner";
+			description
+			{
+				state: "default" 0.0;
+				image
+				{
+					normal: "sf_hb_runner.png";
+					border: 6 6 8 8;
+				}
+				fill
+				{
+					smooth: 0;
+				}
+			}
+		}
+	}
+}
+
+group
+{
+	name: "/ewl/hscrollbar";
+	min: 36 17;
+	max: 99999 17;
+	parts
+	{
+		part
+		{
+			name: "scrollbar_base";
+			type: RECT;
+			mouse_events: 0;
+			description
+			{
+				state: "default" 0.0;
+				rel1
+				{
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+				rel2
+				{
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+				color: 255 255 255 0;
+			}
+		}
+		part
+		{
+			name: "scrollbar";
+			description
+			{
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				fixed: 1 1;
+				min: 17 13;
+				max: 99999 13;
+				rel1
+				{
+					to: "scrollbar_base";
+				}
+				rel2
+				{
+					to: "scrollbar_base";
+				}
+				image
+				{
+					normal: "sf_barh1.png";
+					border: 6 6 6 6;
+				}
+				fill
+				{
+					smooth: 0;
+				}
+			}
+			description
+			{
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+				color: 215 215 215 255;
+			}
+		}
+		part
+		{
+			name: "thumb";
+			description
+			{
+				min: 11 7;
+				max: 11 7;
+				fixed: 1 1;
+				rel1
+				{
+					relative: 0.5 0.5;
+					offset: 0 0;
+				}
+				rel2
+				{
+					relative: 0.5 0.5;
+					offset: 0 0;
+				}
+				image
+				{
+					normal: "sf_barh_thumb.png";
+					border: 2 2 2 2;
+				}
+			}
+			description
+			{
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+				color: 215 215 215 255;
+			}
+		}
+	}
+	programs
+	{
+		program
+		{
+                        name: "clicked";
+                        signal: "mouse,down,*";
+                        source: "EWL";
+                        action: STATE_SET "clicked" 0.0;
+                        target: "scrollbar";
+			target: "thumb";
+                }
+                program
+                {
+                        name: "default";
+                        signal: "mouse,up,*";
+                        source: "*";
+                        action: STATE_SET "default" 0.0;
+                        target: "scrollbar";
+			target: "thumb";
+                }
+        }
+}
+group
+{
+        name: "/ewl/hscrollbar/decrement";
+        min: 13 17;
+        max: 13 17;
+        parts
+        {
+                part
+                {
+                        name: "arrow";
+                        mouse_events: 1;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 1.0;
+                                aspect: 1.0 1.0;
+			        aspect_preference: VERTICAL;
+                                min: 13 17;
+				max: 13 17;
+				fixed: 1 1;
+				rel1
+                                {
+                                        relative: 0.0 0.0;
+                                        offset: 0 0;
+                                }
+                                rel2
+                                {
+                                        relative: 1.0 1.0;
+                                        offset: -1 -1;
+                                }
+                                image
+                                {
+                                        normal: "sf_bl1.png";
+                                }
+                        }
+		}
+		part
+		{
+			name: "arrow_over";
+			mouse_events: 0;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 0.5;
+                                aspect: 1.0 1.0;
+                                aspect_preference: VERTICAL;
+                                min: 17 13;
+                                max: 17 13;
+                                fixed: 1 1;
+                                rel1
+                                {
+                                        to: "arrow";
+                                }
+                                rel2
+                                {
+                                        to: "arrow";
+                                }
+                                image
+                                {
+                                        normal: "sf_bl1_over.png";
+                                }
+                        }
+                }
+        }
+}
+
+group
+{
+        name: "/ewl/hscrollbar/increment";
+        min: 13 17;
+        max: 13 17;
+        parts
+        {
+                part
+                {
+                        name: "arrow";
+                        mouse_events: 1;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 1.0;
+                                aspect: 1.0 1.0;
+				aspect_preference: VERTICAL;
+                                min: 13 17;
+				max: 13 17;
+				fixed: 1 1;
+				rel1
+                                {
+                                        relative: 0.0 0.0;
+                                        offset: 0 0;
+                                }
+                                rel2
+                                {
+                                        relative: 1.0 1.0;
+                                        offset: -1 -1;
+                                }
+                                image
+                                {
+                                        normal: "sf_br1.png";
+                                }
+                        }
+		}
+		part
+		{
+			name: "arrow_over";
+                        mouse_events: 0;
+                        description
+                        {
+                                state: "default" 0.0;
+                                align: 0.5 0.5;
+                                aspect: 1.0 1.0;
+                                aspect_preference: VERTICAL;
+                                min: 17 13;
+                                max: 17 13;
+                                fixed: 1 1;
+                                rel1
+                                {
+                                        to: "arrow";
+                                }
+                                rel2
+                                {
+                                        to: "arrow";
+                                }
+                                image
+                                {
+                                        normal: "sf_br1_over.png";
+                                }
+                        }
+                }
+        }
+}
