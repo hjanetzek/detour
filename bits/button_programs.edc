@@ -198,3 +198,13 @@ program {
 		set_state(PART:"e.text.label", "clicked", 0.0);
 	}
 }
+
+// Support e,action,icon,hide for the button widget.
+
+program {
+	name: "icon_invisible";
+	signal: "e,action,hide,icon";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "e.swallow.icon";
+}
