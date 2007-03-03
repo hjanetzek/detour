@@ -1,6 +1,7 @@
 
 part {
 	name: "window_shadow";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
