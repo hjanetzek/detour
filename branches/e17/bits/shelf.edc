@@ -31,6 +31,7 @@ group {
 	}
 }
 
+/*
 group {
 	name: "e/shelf/invisible/base";
 	
@@ -43,11 +44,6 @@ group {
 	}
 }
 
-/* testing
- * in order to use this style set:
- * enlightenment_remote -use-composite-set 0
- */
-
 group {
 	name: "e/shelf/invisible/inset";
 
@@ -55,7 +51,7 @@ group {
 		#include "shelf_invisible_inset.edc"
 	}
 }
-/* testing */
+
 
 group {
 	name: "e/shelf/invisible/plain";
@@ -65,7 +61,6 @@ group {
 	}
 }
 
-/*
 group {
 	name: "e/shelf/gold/base";
 

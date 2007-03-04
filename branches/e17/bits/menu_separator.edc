@@ -1,5 +1,4 @@
 
-#if X_COMPOSITE == 0
 part {
 	name: "separator";
 	mouse_events:  0;
@@ -17,24 +16,3 @@ part {
 	}
     }
 }
-#else
-#if X_COMPOSITE == 1
-part {
-	name: "separator";
-	mouse_events:  0;
-
-	description {
-		state: "default" 0.0;
-		min: 20 2;
-
-	r1 { relative: 0.0 0.0; offset: -3 3; }
-	r2 { relative: 1.0 1.0; offset: 2 -2; }
-
-	image {
-		normal: "menu_separator.png";
-		border: 1 1 1 1;
-	}
-    }
-}
-#endif
-#endif
