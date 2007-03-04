@@ -197,16 +197,6 @@ part {
 		inherit: "default" 0.0;
 		color: 215 215 215 255;
 	}
-
-	description {
-		state: "hilited" 0.0;
-		inherit: "default" 0.0;
-
-	image {
-		normal: "sf_barv1_h.png";
-		border: 6 6 6 6;
-	}
-    }
 }
 
 part {
@@ -235,16 +225,6 @@ part {
 		inherit: "default" 0.0;
 		color: 215 215 215 255;
 	}
-
-	description {
-		state: "hilited" 0.0;
-		inherit: "default" 0.0;
-
-	image {
-		normal: "sf_barv_thumb_h.png";
-		border: 2 2 2 2;
-	}
-    }
 }
 
 part {      

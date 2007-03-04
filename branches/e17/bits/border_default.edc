@@ -27,19 +27,10 @@ part { \
     } \
 }
 
-#if X_COMPOSITE == 0
 BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "tl.png", 0.1, "tl.png")
 BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr.png", 0.1, "tr.png")
 BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl.png", 0.1, "bl.png")
 BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br.png", 0.1, "br.png")
-#else
-#if X_COMPOSITE == 1
-BORDER("top-left", 0.0, 4 23, 4 23, 0.0 0.0, 2 21, 0.0 0.0, 0 0, "tl-xcm.png", 0.1, "tl-xcm.png")
-BORDER("top-right", 0.0, 4 23, 4 23, 1.0 0.0, 0 23, 1.0 0.0, -4 0, "tr-xcm.png", 0.1, "tr-xcm.png")
-BORDER("bottom-left", 0.0, 5 5, 5 5, 0.0 1.0, 5 -5, 0.0 1.0, 0 0, "bl-xcm.png", 0.1, "bl-xcm.png")
-BORDER("bottom-right", 0.0, 5 5, 5 5, 1.0 1.0, 0 -5, 1.0 1.0, -5 0, "br-xcm.png", 0.1, "br-xcm.png")
-#endif
-#endif
 
 # ifdef BORDER
 #  undef BORDER
@@ -69,15 +60,8 @@ part { \
     } \
 }
 
-#if X_COMPOSITE == 0
 BORDER("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
 BORDER("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
-#else
-#if X_COMPOSITE == 1
-BORDER("top-center", 0.0, 5 23, 9999 23, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb-xcm.png", 0.1, "tb-xcm.png")
-BORDER("bottom-center", 0.0, 5 5, 9999 5, "bottom-left", 1.0 1.0, 0 -5, "bottom-right", 0.0 1.0, -1 0, "bb-xcm.png", 0.1, "bb-xcm.png")
-#endif
-#endif
 
 # ifdef BORDER
 #  undef BORDER
@@ -108,16 +92,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-#if X_COMPOSITE == 0
 	r1 { to_y, "top-left"; relative: 0.0 1.0; offset: 1 0; }
 	r2 { to_x, "bottom-right"; relative: 0.0 1.0; offset: 4 -7; }
-#else
-#if X_COMPOSITE == 1
-	r1 { to_y, "top-left"; relative: 0.0 1.0; offset: 0 0; }
-	r2 { to_x, "bottom-right"; relative: 0.0 1.0; offset: 4 -6; }
-#endif
-#endif
-
 	color: 0 0 0 255;
 	}
 }
@@ -133,16 +109,8 @@ part {
 		min: 1 19; 
 		state: "default" 0.0;
 
-#if X_COMPOSITE == 0
 	r1 { to: "top-left"; relative: 0.0 0.5; offset: 5 0; }
 	r2 { to: "button-min"; relative: 0.0 0.5; offset: -5 0; }
-#else
-#if X_COMPOSITE == 1
-	r1 { to: "top-left"; relative: 0.0 0.5; offset: 5 0; }
-	r2 { to: "button-min"; relative: 0.0 0.5; offset: -5 -1; }
-#endif
-#endif
-	
 	color: 255 255 255 255;
 	}
 }
@@ -251,17 +219,9 @@ part { \
 	} \
 }
 
-#if X_COMPOSITE == 0
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-#else
-#if X_COMPOSITE == 1
-CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 -1)
-CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 -1)
-CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 -1)
-#endif
-#endif
 
 # ifdef HOLDER
 #  undef HOLDER

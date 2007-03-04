@@ -22,8 +22,6 @@
 #define r1 rel1
 #define r2 rel2
 
-#define X_COMPOSITE 0
-
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";
 font: "fonts/VeraBd.ttf" "Edje-Vera-Bold";
