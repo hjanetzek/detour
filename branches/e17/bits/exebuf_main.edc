@@ -225,7 +225,7 @@ part {
 }
 
 part {      
-	name: "icon_bg";
+	name: "icon";
 	mouse_events:  1;
 
 	description {
@@ -235,8 +235,8 @@ part {
 	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
 
 	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
+		normal: "entry_focus.png";
+		border: 8 8 8 8;
 	}
     }
 }

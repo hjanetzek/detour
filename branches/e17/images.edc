@@ -93,6 +93,7 @@ image: "cursor_mono.png" COMP;
 // menu
 image: "arrow_light.png" COMP;
 image: "arrow_dark.png" COMP;
+image: "arrow_blank.png" COMP;
 image: "menu_bg.png" COMP;
 image: "menu_separator.png" COMP;
 image: "menu_select.png" COMP;

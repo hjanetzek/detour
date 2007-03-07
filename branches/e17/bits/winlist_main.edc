@@ -52,7 +52,7 @@ part {
 }
 
 part {
-	name: "list_bg";
+	name: "list";
 	type: IMAGE;
 
 	description {
@@ -62,8 +62,8 @@ part {
 	r2 { relative: 1.0 1.0; offset: -6 4; to_y: "e.swallow.list"; }
 
 	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
+		normal: "entry_focus.png";
+		border: 8 8 8 8;
 	}
     }
 }
@@ -148,7 +148,7 @@ part {
 		state:  "default" 0.0;
 		max: 600 12;
 
-	rel1 { relative: 0.0 1.0; offset: 0 -10; to_y: "e.text.label"; }
+	rel1 { relative: 0.0 1.0; offset: 0 -16; to_y: "e.text.label"; }
 	rel2 { relative: 1.0 1.0; offset: 0 0; }
 
 	image {
@@ -175,8 +175,8 @@ part {
 	rel2 { relative: 1.0 1.0; offset: -6 3; to_y: "e.text.label"; }
 
 	image {
-		normal: "entry_focus.png";
-		border: 7 7 6 6;
+		normal: "entry.png";
+		border: 5 5 8 6;
 	}
 
 	fill {
@@ -227,26 +227,4 @@ part {
 	r1 { relative: 0.0 0.0; offset: 1 -12; to_y: "title_overlay";  }
 	r2 { relative: 1.0 0.0; offset: -2 -12; to_y: "title_overlay";}
 	}
-}
-
-part {
-	name: "top_separator";
-	mouse_events:  0;
-
-	description {
-		state:  "default" 0.0;
-		max: 600 12;
-
-	r1 { relative: 0.0 0.0;  offset: 0 -5; }
-	r2 { relative: 1.0 0.0; offset: -1 12; }
-
-	image {
-		normal: "separator.png";
-		border: 0 0 4 0;
-	}
-
-	fill {
-		smooth: 0;
-	}
-    }
 }
