@@ -20,4 +20,11 @@ part {
 
         image.normal: "arrow_light.png";
 	}
+
+	description {
+        	state: "hidden" 0.0;
+		inherit: "default" 0.0;
+
+	image.normal: "arrow_blank.png";
+	}
 } 

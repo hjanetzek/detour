@@ -6,12 +6,12 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { offset: 2 2; }
-	r2 { offset: -2 -3; }
+	r1 { offset: 1 1; }
+	r2 { offset: 0 -1; }
 
 	image {
-		normal: "pager_desk.png";
-		border: 4 4 7 5;
+		normal: "entry.png";
+		border: 5 5 8 6;
 		middle: 1;
 	}
 
@@ -23,7 +23,6 @@ part {
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 255;
 	}
 }
 
@@ -196,7 +195,7 @@ part {
 
 	image {
 		normal: "pager_focus.png";
-		border: 6 6 6 6;
+		border: 8 8 8 8;
 	}
 }
 

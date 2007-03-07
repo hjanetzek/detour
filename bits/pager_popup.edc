@@ -192,25 +192,3 @@ part {
 	}
     }
 }
-
-part {
-	name: "top_separator";
-	mouse_events:  0;
-
-	description {
-		state:  "default" 0.0;
-		max: 600 12;
-
-	r1 { relative: 0.0 0.0;  offset: 0 -5; }
-	r2 { relative: 1.0 0.0; offset: -1 12; }
-
-	image {
-		normal: "separator.png";
-		border: 0 0 4 0;
-	}
-
-	fill {
-		smooth: 0;
-	}
-    }
-}

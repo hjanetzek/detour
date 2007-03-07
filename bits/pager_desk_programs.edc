@@ -68,7 +68,7 @@ program {
 	signal: "e,state,selected";
 	source: "e";
 	action: STATE_SET "active" 0.0;
-	transition: DECELERATE 0.25;
+	transition: DECELERATE 0.5;
 	target: "lid.tl";
 	target: "lid.tr";
 	target: "lid.bl";
@@ -81,7 +81,7 @@ program {
 	signal: "e,state,unselected";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.25;
+	transition: DECELERATE 0.5;
 	target: "lid.tl";
 	target: "lid.tr";
 	target: "lid.bl";

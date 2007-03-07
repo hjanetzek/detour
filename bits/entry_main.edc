@@ -22,7 +22,7 @@ part {
 
 	image {
 		normal: "entry_focus.png";
-		border: 7 7 6 6;
+		border: 8 8 8 8;
 		middle: 0;
 	}
 	
@@ -47,7 +47,7 @@ part {
 		state: "default" 0.0;
 
 	r1 { to: "entry"; relative: 0.0 0.0; offset: 6 6; }
-	r2 { to: "entry"; relative: 1.0 1.0; offset: -7 -5; }
+	r2 { to: "entry"; relative: 1.0 1.0; offset: -7 -6; }
 	}
 }
    
