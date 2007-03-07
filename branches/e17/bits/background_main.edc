@@ -11,7 +11,7 @@ part {
 		//gradient.spectrum: "gradient";
 		//gradient.type: "radial";
 		//fill.origin.relative: 0.5 0.5;
-		color: 162 163 162 255;
+		color: 164 149 123 255;
 	}
 }
 #else
