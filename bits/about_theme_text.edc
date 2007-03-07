@@ -39,7 +39,7 @@ part {
 	color: 7 7 7 255;
 
 	text {
-		text: "version 0.5.1";
+		text: "version 0.5.2";
 		font: "Edje-Vera";
 		size: 10;
 		min:  1 1;
