@@ -9,12 +9,6 @@
 // Main menu title is visible or not
 #define SHOW_MENU_TITLE 1
 
-// Use drop shadow for labels
-#define LABEL_TEXT_SHADOW 0
-
-// Use drop shadow for button_text
-#define BUTTON_TEXT_SHADOW 0
-
 // Wallpaper
 #define BG_TYPE 0
 

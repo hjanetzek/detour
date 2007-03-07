@@ -147,7 +147,7 @@ group {
 			name: "go_inactive";
 			signal: "";
 			source: "";
-			action: STATE_SET "default" 0.0;
+			action: STATE_SET "hidden" 0.0;
 			transition: DECELERATE 0.5;
 			target: "arrow";
 			after: "go_active";

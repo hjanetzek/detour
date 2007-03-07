@@ -257,13 +257,7 @@ part {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-#if BUTTON_TEXT_SHADOW == 0
-	color3: 0 0 0 0;
-#else
-#if BUTTON_TEXT_SHADOW == 1
-	color3: 0 0 0 128;
-#endif
-#endif
+		color3: 0 0 0 0;
 	}
 }
 
