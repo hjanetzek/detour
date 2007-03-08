@@ -5,7 +5,7 @@ group
 	{
 		item: "inset/left" 3;
 		item: "inset/right" 3;
-		item: "inset/top" 6;
+		item: "inset/top" 7;
 		item: "inset/bottom" 6;
 	}
 	parts
