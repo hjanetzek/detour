@@ -74,12 +74,12 @@ group {
             state: "default" 0.0;
             rel1 {
                relative: 0.0 0.0;
-               offset: 4 3;
+               offset: 4 4;
                to: "entry";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -5 -4;
+               offset: -5 -3;
                to: "entry";
             }
          }

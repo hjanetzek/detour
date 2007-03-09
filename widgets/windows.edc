@@ -81,7 +81,7 @@ group {
 }
 
 /**
- * group "etk/dialog/separator"
+ * group "etk/dialog/hseparator"
  * ----------------
  * This group corresponds to the horizontal separator that may be packed between
  * the upper area and the action area. The separator is always stacked below the
@@ -92,7 +92,7 @@ group {
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
  */
 group {
-   name: "etk/dialog/separator";
+   name: "etk/dialog/hseparator";
    min: 0 12;
    parts {
       part {
