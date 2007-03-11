@@ -21,6 +21,7 @@ group {
    name: "etk/entry";
    min: 120 22;
    data {
+      item: "inset" "4 4 4 4";
       item: "icon_highlight_color" "138 171 225 210";
    }
    parts {
@@ -28,14 +29,13 @@ group {
          name: "entry";
          description {
             state: "default" 0.0;
-            /* TODO: the height of the entry should be calculated by Etk, not defined by the theme... */
             rel1 {
-               relative: 0.0 0.5;
-               offset: 0 -11;
+               relative: 0.0 0.0;
+               offset: 0 0;
             }
             rel2 {
-               relative: 1.0 0.5;
-               offset: -1 10;
+               relative: 1.0 1.0;
+               offset: -1 -1;
             }
             image {
                normal: "entry.png";
@@ -65,23 +65,6 @@ group {
             inherit: "default" 0.0;
             color: 255 255 255 255;
             visible: 1;
-         }
-      }
-      part {
-         name: "etk.swallow.content";
-         type: SWALLOW;
-         description {
-            state: "default" 0.0;
-            rel1 {
-               relative: 0.0 0.0;
-               offset: 4 4;
-               to: "entry";
-            }
-            rel2 {
-               relative: 1.0 1.0;
-               offset: -5 -3;
-               to: "entry";
-            }
          }
       }
    }
