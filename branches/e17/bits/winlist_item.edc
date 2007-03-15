@@ -62,7 +62,7 @@ part {
 	r1 { relative: 1.0 0.0; offset: 9 6; to_x: "e.swallow.icon"; } 
 	r2 { relative: 0.0 1.0; offset: -8 -6; to_x: "type"; }
 
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 	color3: 0 0 0 0;
 
 	text {
@@ -105,8 +105,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "type"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "type"; relative: 1.0 1.0; offset: 0 0; }
+	r1 { to: "type"; relative: 0.0 0.0; offset: 0 1; }
+	r2 { to: "type"; relative: 1.0 1.0; offset: 0 -1; }
 
 	image {
 		normal: "pager_window_ds.png";
@@ -126,10 +126,10 @@ part {
 		aspect_preference: VERTICAL;
 
 	rel1 { relative: 1.0 0.0; offset: -1  1; }
-	rel2 { relative: 1.0 1.0; offset: -1  5; to_y: "title2"; }
+	rel2 { relative: 1.0 1.0; offset: 0  6; to_y: "title2"; }
 
 	image {
-		normal: "pager_window.png";
+		normal: "pager_window_winlist.png";
 		border: 6 13 7 5;
 	}
 }

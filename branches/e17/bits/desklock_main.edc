@@ -66,7 +66,7 @@ part {
 	r1 { to: "logo"; relative: 1.0 0.0; offset: 6 8; }
 	r2 { to: "logo"; relative: 1.0 0.3; offset: 0 0; }
 
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 	color3: 170 168 169 128;
 
 	text {
@@ -108,7 +108,7 @@ part {
 	rel1 { to: "entry_clip"; relative: 0.0 0.0; offset: 0 2; }
 	rel2 { to: "entry_clip"; relative: 0.0 1.0; offset: 0 0; }
 		  
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 
 	text {
 		text: "****";
@@ -140,7 +140,7 @@ part {
 	description {
 		state: "default" 0.1;
 		inherit: "default" 0.0;
-		color: 7 7 7 255;
+		color: 60 60 60 255;
 	}
 }
 

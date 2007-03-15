@@ -5,6 +5,9 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 100 169 252 128;
+		color: 138 171 225 229;
+
+	r1 { offset: 0 0; }
+	r2 { offset: 0 -2; }
 	}
 }

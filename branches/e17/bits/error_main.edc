@@ -52,8 +52,7 @@ part {
 	r1 { to: "error-icon"; relative: 1.0 0.0; offset: 16 0; }
 	r2 { to_y: "error-icon"; relative: 1.0 1.0; offset: -17 -1; }
 
-	color: 7 7 7 255;
-	//color3: 170 168 169 128;
+	color: 60 60 60 255;
 	color3: 170 168 169 0;
 
 	text {
@@ -69,6 +68,7 @@ part {
 
 part {
 	name: "entry";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
@@ -240,7 +240,7 @@ part {
 	r1 { to: "button_image"; offset: 6 1; }
 	r2 { to: "button_image"; offset: -7 0; }
 
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 	color3: 170 168 169 128;
 
 	text {
