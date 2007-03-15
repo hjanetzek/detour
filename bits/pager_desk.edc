@@ -98,7 +98,7 @@ part {
 	r2 { to: "clip"; relative: 0.5 0.5; offset: 0 0; }
 
 	image.normal: "pager_lid_tl.png";
-	image.border: 1 1 2 1;
+	image.border: 2 1 2 2;
 	}
 
 	description {

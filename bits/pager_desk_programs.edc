@@ -34,8 +34,8 @@ program {
 		if (get_int(drag) == 0) {
 			set_state(PART:"clip", "drag", 0.0);
 			set_int(drag, 1);
+		}
 	}
-    }
 }
 
 program {
@@ -68,7 +68,7 @@ program {
 	signal: "e,state,selected";
 	source: "e";
 	action: STATE_SET "active" 0.0;
-	transition: DECELERATE 0.5;
+	transition: ACCELERATE 0.5;
 	target: "lid.tl";
 	target: "lid.tr";
 	target: "lid.bl";

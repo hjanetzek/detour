@@ -1,20 +1,17 @@
 
 /* by cored.org et al
- * detour (seek) version 0.5.2 for Enlightenment 0.16.999.037 or later
+ * detour (seek) version 0.5.3 for Enlightenment 0.16.999.037 or later
  * */
 
-// Use Tango Icon set or the default set
+#define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
+#define USE_CONTEXT_TITLE 0
 
-// Main menu title is visible or not
-#define SHOW_MENU_TITLE 1
-
-// Wallpaper
-#define BG_TYPE 0
-
-// Do not modify anything below unless you know what you are doing
+/* Do not modify anything below unless you know what you are doing */
 #define r1 rel1
 #define r2 rel2
+
+#define BG_TYPE 0
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";

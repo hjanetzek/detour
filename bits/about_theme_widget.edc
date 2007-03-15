@@ -233,8 +233,8 @@ part {
 		offset: -16 0;
 	}
 
-	color: 7 7 7 255;
-	color3: 170 168 169 255;
+	color: 60 60 60 255;
+	color3: 170 168 169 128;
 
 		text {
 			text: "Exit";

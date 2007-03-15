@@ -1,5 +1,11 @@
 
 spectrum {
+	name: "dialog";
+	color: 238 238 239 0 1; 
+	color: 209 210 210 0 1;
+}	
+
+spectrum {
 	name: "gradient";
 	color: 82 146 174 255 1; 
 	color: 42 108 158 255 1;

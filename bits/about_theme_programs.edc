@@ -6,7 +6,7 @@ program {
 	signal: "load";
 	source: "";
 	action: STATE_SET "default" 0.1;
-	transition: DECELERATE 0.5; 
+	transition: DECELERATE 1.0; 
 	in: 10.0 0.0;
 	target: "entry_clip";
 	after: "go2";
@@ -17,18 +17,7 @@ program {
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.2;
-	transition: DECELERATE 0.5; 
-	in: 10.0 0.0;
-	target: "entry_clip";
-	after: "go3";
-}
-
-program {
-	name: "go3";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.3;
-	transition: DECELERATE 0.5; 
+	transition: DECELERATE 0.75; 
 	in: 10.0 0.0;
 	target: "entry_clip";
 	after: "return";
@@ -39,7 +28,7 @@ program {
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.5; 
+	transition: DECELERATE 0.70; 
 	in: 10.0 0.0;
 	target: "entry_clip";
 	after: "go"; 

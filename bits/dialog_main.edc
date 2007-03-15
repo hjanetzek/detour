@@ -50,27 +50,40 @@ part {
 	}
 }
 
+/*
 part {
-	name: "separator";
+	name: "dialog_button_box_separator";
 	mouse_events: 0;
+	type: GRADIENT;
 
 	description {
 		state: "default" 0.0;
-		max: 608 12;
 
-	r1 { to: "e.swallow.buttons"; relative: 0.0 0.0; offset: 0 -14; }
-	r2 { to: "e.swallow.buttons"; relative: 1.0 0.0; offset: 0 4; }
-
-	image {
-		normal: "separator.png";
-		border: 0 0 3 0;
+	gradient {
+		spectrum: "dialog";
 	}
 
-	fill {
-		smooth: 0;
+	r1 { to: "separator"; relative: 0.0 0.0; offset: 0 3; }
+	r2 { to: "base"; relative: 1.0 1.0; offset: -1 -1; }
 	}
-    }
 }
+*/
+
+part {
+	name: "separator";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		max: 99 1;
+		color: 255 0 0 0;
+
+	r1 { to: "e.swallow.buttons"; relative: 0.0 0.0; offset: 0 -6; }
+	r2 { to: "e.swallow.buttons"; relative: 1.0 0.0; offset: -1 4; }
+	}
+}
+
 
 part {
 	name: "e.swallow.buttons";
@@ -82,7 +95,7 @@ part {
 		fixed: 0 1;
 
 	r1 { to: "base"; relative: 0.0 1.0; offset: 0 -1; }
-	r2 { to: "base"; relative: 1.0 1.0; offset: 0 -4; }
+	r2 { to: "base"; relative: 1.0 1.0; offset: -1 -4; }
 
 	color: 0 0 0 0;
 	}
