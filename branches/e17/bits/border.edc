@@ -29,7 +29,7 @@ part { \
 		state: "default" 0.0; \
 	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 22 5; } \
 	r2 { to: "title.area.clip"; relative: 1.0 0.5; offset: -5 0; } \
-	color: 7 7 7 255; \
+	color: 60 60 60 255; \
 	color3: 170 168 169 128; \
 	text { \
 		text: ""; \

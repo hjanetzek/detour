@@ -1,7 +1,7 @@
 
 part {
-	name: "focus_rect";
-	type: RECT;
+	name: "focus";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
@@ -11,14 +11,18 @@ part {
 	r1 { offset: 1 0; }
 	r2 { to_x: "e.text.label"; offset: 1 -1; }
 
-	color: 141 181 235 0;
+	image.normal: "menu_select.png";
+	image.border: 5 5 5 5;
 	} 
 
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		visible: 1;
-		color: 141 181 235 255;
+		color: 255 255 255 229;
+
+	image.normal: "menu_select.png";
+	image.border: 5 5 5 5;
 	}
 }
 
@@ -152,7 +156,7 @@ part {
 	r1 { to_x: "outline"; relative: 1.0 1.0; offset: 2 0; }
 	r2 { relative: 1.0 1.0; offset: -2 -1; }
 
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 
 	text {
 		text: "";

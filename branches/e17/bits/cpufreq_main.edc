@@ -193,7 +193,7 @@ part {
 	r1 { relative: 0.5 0.7; offset: 0 0; }
 	r2 { relative: 0.5 0.7; offset: 0 0; }
 
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 	color3: 170 168 169 128;
 
 	text {

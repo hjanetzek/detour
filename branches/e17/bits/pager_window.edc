@@ -7,7 +7,7 @@ part {
 		state: "default" 0.0;
 
 	r1 { to: "overlay"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "overlay"; relative: 1.0 1.0; offset: 0 0; }
+	r2 { to: "overlay"; relative: 1.0 1.0; offset: 0 -1; }
 
 	image {
 		normal: "pager_window_ds.png";
@@ -67,8 +67,8 @@ part {
 	//r1 { to: "overlay"; relative: 0.0 0.0; offset: 5 5; }
 	//r2 { to: "overlay"; relative: 1.0 1.0; offset: -5 -5; }
 
-	r1 { to: "overlay"; offset: 1 5; }
-	r2 { to: "overlay"; offset: -2 -2; }
+	r1 { to: "overlay"; offset: 1 6; }
+	r2 { to: "overlay"; offset: -3 -3; }
 
 	color: 0 0 0 0;
 	}

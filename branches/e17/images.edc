@@ -5,6 +5,7 @@ image, "dot.png" COMP;
 
 // frame
 image: "frame_outline.png" COMP;
+image: "frame_outline2.png" COMP;
 
 // button
 image: "button.png" COMP;
@@ -33,6 +34,7 @@ image: "sb_runnerv_bot_disabled.png" COMP;
 image: "sb_runnerv_disabled.png" COMP;
 image: "sb_runnerh_left_disabled.png" COMP;
 image: "sb_runnerh_right_disabled.png" COMP;
+image: "slider_focus.png" COMP;
 
 // border default
 image: "tl.png" COMP;
@@ -88,6 +90,7 @@ image: "resize-dialog_bg.png" COMP;
 
 // pointer
 image: "cursor.png" COMP;
+image: "cursor2.png" COMP;
 image: "cursor_mono.png" COMP;
 
 // menu
@@ -178,6 +181,7 @@ image: "pager_lid_bl.png" COMP;
 image: "pager_lid_br.png" COMP;
 image: "pager_window.png" COMP;
 image: "pager_window_ds.png" COMP;
+image: "pager_window_winlist.png" COMP;
 
 // about_theme
 image: "tree_route.png" COMP;
@@ -189,9 +193,6 @@ image: "tree_route.png" COMP;
 // move
 
 // ibox
-
-// focus stuff
-image: "widget_focus.png" COMP;
 
 // winlist
 image: "pager_window_shaded.png" COMP;

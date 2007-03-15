@@ -274,7 +274,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 400 12;
+		min: 498 12;
 		max: 608 12;
 		fixed: 1 1;
 
@@ -532,7 +532,7 @@ part {
 		to: "button_image";
 	}
 
-	color: 7 7 7 255;
+	color: 60 60 60 255;
 	color3: 170 168 169 128;
 
 		text {
