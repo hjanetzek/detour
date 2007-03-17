@@ -112,7 +112,7 @@ group {
             text {
                text: "Entry";
                font: "Vera";
-               size: 10;
+               size: 11;
                min: 1 1;
                align: 0.0 0.5;
             }
@@ -205,7 +205,7 @@ group {
    name: "etk/entry/selection";
    alias: "etk/spinner/selection";
    data {
-      item: "on_foreground" "1";
+      item: "on_foreground" "0";
    }
    parts {
       part {
@@ -213,7 +213,7 @@ group {
          type: RECT;
          description {
             state: "default" 0.0;
-            color: 100 169 252 128;
+	    color: 138 171 225 229;
          }
       }
    }
