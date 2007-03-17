@@ -218,7 +218,7 @@ group {
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            color: 7 7 7 255;
+            color: 60 60 60 255;
             align: 1.0 0.5;
             fixed: 1 1;
             rel1 {
@@ -505,7 +505,7 @@ group {
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            color: 7 7 7 255;
+            color: 60 60 60 255;
             align: 0.5 1.0;
             fixed: 1 1;
             rel1 {
