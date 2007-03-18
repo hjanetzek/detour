@@ -27,11 +27,30 @@ group {
    min: 50 27;
    parts {
       part {
+         name: "button_base";
+         description {
+            state: "default" 0.0;
+	    min: 21 27;
+            max: 21 27;
+            fixed: 1 1;
+            rel1 {
+               relative: 1.0 0.0;
+               offset: 0 1;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -18 0;
+            }
+            image {
+               normal: "spinner_base.png";
+            }
+         }
+      }
+      part {
          name: "spinner";
          description {
             state: "default" 0.0;
-            min: 25 18;
-	    max: 999 18;
+            min: 25 22;
             fixed: 1 1;
             rel1 {
                relative: 0.0 0.5;
@@ -39,43 +58,22 @@ group {
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -15 12;
+               offset: -11 12;
 	       to_x: "up_button";
             }
             image {
-               normal: "spinner_textbox.png";
-               border: 2 2 2 3;
-            }
-         }
-      }
-      part {
-         name: "spinner_focus";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            color: 255 255 255 0;
-            visible: 0;
-            rel1 {
-               relative: 0.0 0.0;
-               offset: 0 0;
-               to: "spinner";
-            }
-            rel2 {
-               relative: 1.0 1.0;
-               offset: -1 -2;
-               to: "spinner";
-            }
-            image {
-               normal: "spinner_focus.png";
-	       border: 1 1 1 1;
+               normal: "entry.png";
+               border: 5 5 8 6;
             }
          }
          description {
             state: "focused" 0.0;
-            inherit: "default" 0.0;
-            color: 255 255 255 255;
-            visible: 1;
-         }
+	    inherit: "default" 0.0;
+            image {
+               normal: "entry_focus.png";
+               border: 7 7 6 6;
+            }
+	 }
       }
       part {
          name: "up_button";
@@ -87,7 +85,7 @@ group {
             fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
-               offset: -16 -11;
+               offset: -16 -10;
             }
             rel2 {
                relative: 1.0 0.5;
@@ -117,7 +115,7 @@ group {
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -1 14;
+               offset: -1 15;
             }
             image {
                normal: "spinner_down.png";
@@ -136,12 +134,12 @@ group {
             state: "default" 0.0;
             rel1 {
                relative: 0.0 0.0;
-               offset: 0 2;
+               offset: 0 0;
                to: "spinner";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -4 -1;
+               offset: -1 -1;
                to: "spinner";
             }
          }
@@ -154,7 +152,7 @@ group {
          source: "etk";
          action: STATE_SET "focused" 0.0;
          transition: DECELERATE 0.25;
-         target: "spinner_focus";
+         target: "spinner";
       }
       program {
          name: "spinner_unfocus";
@@ -162,7 +160,7 @@ group {
          source: "etk";
          action: STATE_SET "default" 0.0;
          transition: DECELERATE 0.25;
-         target: "spinner_focus";
+         target: "spinner";
       }
       program {
          name: "spinner_button_up_pressed";

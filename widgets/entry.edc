@@ -116,7 +116,11 @@ group {
                min: 1 1;
                align: 0.0 0.5;
             }
-         }
+         } 
+/* 
+ * simon: there should probably be a second state for selected text, 
+ * ie: text becomes white for text selection
+ */	
       }
    }
 }
