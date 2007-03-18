@@ -213,6 +213,12 @@ group {
          description {
             state: "default" 0.0;
             color: 225 232 239 255;
+            rel1 {
+               offset: 0 0;
+            }
+            rel2 {
+               offset: -2 -1;
+            }
          }
          description {
             state: "even" 0.0;
