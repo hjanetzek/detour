@@ -21,7 +21,7 @@ group {
    name: "etk/entry";
    min: 120 22;
    data {
-      item: "inset" "4 4 4 4";
+      item: "inset" "5 5 3 4";
       item: "icon_highlight_color" "138 171 225 210";
    }
    parts {
