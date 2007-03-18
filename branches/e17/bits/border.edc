@@ -1,5 +1,5 @@
 
-#define CC_CLIP() \
+#define COLOR_CLIP() \
 part { \
 	name: "clip.color"; \
 	type: RECT; \
@@ -13,6 +13,21 @@ part { \
 		state: "default" 0.1; \
 		inherit: "default" 0.0; \
 		color: 234 234 234 255; \
+	} \
+}
+
+#define ICON() \
+part { \
+	name: "e.swallow.icon"; \
+	type: SWALLOW; \
+	clip_to: "title.area.clip"; \
+	description { \
+		state: "default" 0.0; \
+		min: 18 18; \
+		max: 18 18; \
+		fixed: 1 1; \
+	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 18 2; } \
+	r2 { to: "title.area.clip"; relative: 0.0 0.5; offset: 0 -1; } \
 	} \
 }
 
@@ -50,6 +65,24 @@ part { \
 #include "border_menu.edc"
 
 group {
+	name: "e/widgets/border/classic/border";
+
+	data {
+		//item: "shaped" "0";
+	}
+
+	parts {
+		COLOR_CLIP()
+		#include "border_squared.edc"
+		TB_TEXT()
+	}
+
+	programs { 
+		#include "border_squared_programs.edc"
+	}
+}
+
+group {
 	name: "e/widgets/border/container/border";
 
 	data {
@@ -57,7 +90,7 @@ group {
 	}
 
 	parts {
-		CC_CLIP()
+		COLOR_CLIP()
 		#include "border_container.edc"
 		TB_TEXT()
 	}
@@ -75,7 +108,7 @@ group {
 	}
 
 	parts {
-		CC_CLIP()
+		COLOR_CLIP()
 		#include "border_default.edc"
 		TB_TEXT()
 	}
@@ -89,7 +122,7 @@ group {
 	name: "e/widgets/border/dialog/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {
@@ -106,7 +139,7 @@ group {
 	name: "e/widgets/border/modal/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {
@@ -125,7 +158,7 @@ group {
 	name: "e/widgets/border/noresize_dialog/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {
@@ -143,7 +176,7 @@ group {
 	name: "e/widgets/border/noresize_dialog/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {
@@ -162,7 +195,7 @@ group {
 	name: "e/widgets/border/pixel/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {
@@ -178,31 +211,13 @@ group {
 	}
 
 	parts {
-		CC_CLIP()
+		COLOR_CLIP()
 		#include "border_shaped.edc"
 		TB_TEXT()
 	}
 
 	programs {
 		#include "border_shaped_programs.edc"
-	}
-}
-
-group {
-	name: "e/widgets/border/squared/border";
-
-	data {
-	//	item: "shaped" "0";
-	}
-
-	parts {
-		CC_CLIP()
-		#include "border_squared.edc"
-		TB_TEXT()
-	}
-
-	programs { 
-		#include "border_squared_programs.edc"
 	}
 }
 
@@ -216,7 +231,7 @@ group {
 	name: "e/widgets/border/squared_container/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {
@@ -238,7 +253,7 @@ group {
 	}
 
 	parts {
-		CC_CLIP()
+		COLOR_CLIP()
 		#include "border_terminal.edc"
 		TB_TEXT()
 	}
@@ -252,7 +267,7 @@ group {
 	name: "e/widgets/border/urgent/border";
 
 	data {
-	//	item: "shaped" "0";
+		//item: "shaped" "0";
 	}
 
 	parts {

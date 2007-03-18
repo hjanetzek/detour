@@ -35,7 +35,7 @@ part {
 
 	image {
 		normal: "sb_runnerv.png";
-		border: 6 5 1 1;
+		border: 2 2 1 1;
 	}
 
 	fill {

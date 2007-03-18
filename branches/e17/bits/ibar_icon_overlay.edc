@@ -83,8 +83,8 @@ part {
 		state: "default" 0.0;
 		align: 0.5 0.5;
 		
-	r1 { relative: 0.0 0.0; offset: 0 0; }
-	r2 { relative: 1.0 1.0; offset: 0 0; }
+	r1 { relative: 0.0 0.0; offset: 0 2; }
+	r2 { relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 7 7 7 255;
 	color3: 170 168 169 128;
@@ -108,9 +108,9 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.5;
-		
-	r1 { to: "e.text.label"; relative: 0.0 0.0; offset: -10 -1; }
-	r2 { to: "e.text.label"; relative: 1.0 1.0; offset: 6 -1; }
+
+	r1 { to: "e.text.label"; relative: 0.0 0.0; offset: 0 0; }
+	r2 { to: "e.text.label"; relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 255 255 255 0;
 }

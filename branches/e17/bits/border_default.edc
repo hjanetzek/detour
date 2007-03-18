@@ -115,19 +115,7 @@ part {
 	}
 }
 
-part { 
-	name: "e.swallow.icon"; 
-	type: SWALLOW;
-	clip_to: "title.area.clip";
-
-	description {
-		state: "default" 0.0;
-		min: 18 18; 
-
-	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 18 2; }
-	r2 { to: "title.area.clip"; relative: 0.0 0.5; offset: 0 0; }
-	}
-}
+ICON()
 
 /**/
 
