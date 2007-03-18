@@ -56,6 +56,7 @@ images {
    image: "scrollbar_v_trough_up.png" COMP;
    image: "separator_h.png" COMP;
    image: "separator_v.png" COMP;
+   image: "slider_focus.png" COMP;
    image: "slider_label_bg.png" COMP;
    image: "slider_h_btn_up.png" COMP;
    image: "slider_h_btn_down.png" COMP;
@@ -69,8 +70,7 @@ images {
    image: "slider_v_trough.png" COMP;
    image: "slider_v_trough_up.png" COMP;
    image: "slider_v_trough_down.png" COMP;
-   image: "spinner_textbox.png" COMP;
-   image: "spinner_focus.png" COMP;
+   image: "spinner_base.png" COMP;
    image: "spinner_up.png" COMP;
    image: "spinner_down.png" COMP;
    image: "tree_bg.png" COMP;
