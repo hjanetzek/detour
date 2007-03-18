@@ -25,7 +25,7 @@ collections {
    #include "widgets/check_button.edc"
    #include "widgets/radio_button.edc"
    #include "widgets/entry.edc"
-   //~ #include "widgets/text_view.edc"
+   #include "widgets/text_view.edc"
    #include "widgets/slider.edc"
    #include "widgets/spinner.edc"
    #include "widgets/scrollbar.edc"
