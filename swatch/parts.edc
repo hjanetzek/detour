@@ -1,0 +1,45 @@
+
+part {
+	name: "border";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		max: 12 12;
+
+	r1 { relative: 0.0 0.0; offset: 0 1; }
+	r2 { relative: 1.0 1.0; offset: -1 -1; }
+/*
+		image {
+			normal: "swatch_shadow.png";
+			border: 2 2 2 2;
+		}
+*/
+	}
+}
+
+part {
+	name: "swatch";
+	type: SWALLOW;
+	mouse_events, 0;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "border"; offset: 0 0; }
+	r2 { to: "border"; offset: -2 -2; }
+	}
+}
+
+part {
+	name: "grabber";
+	type: RECT;
+	/* mouse_events: 1; */
+	repeat_events: 1;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+	}
+}

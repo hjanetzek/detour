@@ -1,0 +1,39 @@
+
+program {
+	name, "capture-on";
+        signal, "mouse,down,1";
+        source, "target";
+        action, SIGNAL_EMIT "elicit,shoot,start" "";
+}
+
+program {
+	name, "capture-off";
+        signal, "mouse,up,1";
+        source, "target";
+        action, SIGNAL_EMIT "elicit,shoot,stop" "";;
+}
+
+program {
+	name, "active"; 
+	signal, "elicit,shoot,stop"; 
+	source, "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "target";
+}
+
+program {
+	name, "inactive"; 
+	signal, "elicit,shoot,start"; 
+	source, "";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.5;
+	target: "target";
+}
+
+program {
+	name: "send.to.the.gimp";
+	signal: "mouse,down,2*";
+	source: "target";
+	action: SIGNAL_EMIT "elicit,shot,edit" "";
+}

@@ -1,0 +1,64 @@
+
+program {
+	name: "zoom+";
+	signal: "mouse,down,1";
+	source: "spinner_up";
+	action: SIGNAL_EMIT "elicit,zoom,up,start" "";
+	after: "zoom_in";
+}
+
+program {
+	name: "zoom-";
+	signal: "mouse,down,1";
+	source: "spinner_down";
+	action: SIGNAL_EMIT "elicit,zoom,down,start" "";
+	after: "zoom_out";
+}
+
+program {
+	name: "zoom_in"; 
+	signal: ""; 
+	source: "";
+	action: STATE_SET "down" 0.0;
+	target: "spinner_up";
+}
+
+program {
+	name: "zoom_out"; 
+	signal: ""; 
+	source: "";
+	action: STATE_SET "down" 0.0;
+	target: "spinner_down";
+}
+
+program {
+	name, "zoom+stop";
+       	signal, "mouse,up,1";
+       	source, "spinner_up";
+       	action, SIGNAL_EMIT "elicit,zoom,up,stop" "";
+	after: "zoom_up_release";
+}
+
+program {
+	name, "zoom-stop";
+	signal, "mouse,up,1";
+	source, "spinner_down";
+	action, SIGNAL_EMIT "elicit,zoom,down,stop" "";
+	after: "zoom_down_release";
+}
+
+program {
+	name: "zoom_up_release"; 
+	signal: ""; 
+	source: "";
+	action: STATE_SET "default" 0.0;
+	target: "spinner_up";
+}
+
+program {
+	name: "zoom_down_release"; 
+	signal: ""; 
+	source: "";
+	action: STATE_SET "default" 0.0;
+	target: "spinner_down";
+}

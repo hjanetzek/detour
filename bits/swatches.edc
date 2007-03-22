@@ -1,0 +1,83 @@
+
+part {
+	name, "closer_rect";
+	type: RECT;
+
+	description {
+		state, "default" 0.0;
+		min: 128 18;
+		max: 9999 18;
+		color: 255 0 0 0;
+
+	r1 { to: "main_bg"; relative, 0.0 1.0; offset: 4 0; }
+	r2 { to: "main_bg"; relative, 1.0 1.0; offset, -6 -23; }
+	}
+}
+
+part {
+	name: "swatch.color.box";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 128 18;
+		max: 9999 18;
+
+	r1 { to: "closer_rect"; relative: 0.0 0.0; offset: 0 0; }
+	r2 { to: "closer_rect"; relative: 1.0 1.0; offset: -1 -1; }
+
+		image {
+			normal: "swatches_box.png";
+			border: 2 2 4 3;
+		}
+	}
+}
+
+part {
+	name: "swatch-clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 128 18;
+		max: 9999 18;
+		color: 255 255 255 255;
+
+	r1 { to: "swatch.container"; }
+	r2 { to: "swatch.container"; }
+	}
+}
+
+part {
+	name, "swatch.container";
+	type: SWALLOW;
+	clip_to: "swatch-clip";
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+		min: 126 14;
+		max: 9999 14;
+
+	r1 { to: "swatch.color.box"; relative: 0.0 0.0; offset: 2 0; }
+	r2 { to: "swatch.color.box"; relative: 1.0 1.0; offset: -3 -1; }
+	}
+}
+
+
+part {
+	name: "swatch.grabber";
+	repeat_events: 1;
+	type: RECT;
+	clip_to: "swatch-clip";
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+
+	r1 { to, "swatch.container"; relative, 0.0 0.0; offset, 3 4; }
+	r2 { to, "swatch.container"; relative, 1.0 1.0; offset, -4 -5; }
+	}
+}

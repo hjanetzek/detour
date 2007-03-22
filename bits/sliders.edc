@@ -1,0 +1,272 @@
+ 
+part {
+	name: "red";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+		max: 128 19;
+		max: 9999 19;
+
+	r1 { to: "swatch.bg"; relative: 1.0 0.0; offset: 0 -37; }
+	r2 { to: "body.rect"; relative: 1.0 1.0; offset: -1 -1; }
+	}
+}
+
+part {
+	name: "green";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 0 0 0;
+		max: 128 19;
+		max: 9999 19;
+
+	r1 { to: "swatch.bg"; relative: 1.0 0.0; offset: 0 1; }
+	r2 { to: "body.rect"; relative: 1.0 1.0; offset: -1 -1; }
+	}
+}
+
+part {
+	name: "blue";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+		max: 128 19;
+		max: 9999 19;
+
+	r1 { to: "swatch.bg"; relative: 1.0 0.0; offset: 0 38; }
+	r2 { to: "body.rect"; relative: 1.0 1.0; offset: -1 -1; }
+	}
+}
+
+#define SLIDER(RGB) \
+part { \
+	name: RGB"-trough_left"; \
+	type: IMAGE; \
+	description { \
+		state: "default" 0.0; \
+		min: 8 16; \
+		max: 8 16; \
+		fixed: 1 1; \
+	r1 { to: RGB; relative: 0.0 0.5; offset: 3 -8; } \
+	r2 { to: RGB; relative: 0.0 0.5; offset: 11 8; } \
+	image { \
+		normal: "cp_slider_trough_left.png"; \
+		border: 6 0 7 7; \
+	} \
+	fill { \
+		smooth: 0; \
+	} \
+    } \
+} \
+part { \
+	name: RGB"-trough_right"; \
+	description { \
+		state: "default" 0.0; \
+		min: 8 16; \
+		max: 8 16; \
+		fixed: 1 1; \
+	r1 { to: RGB"-entry"; relative: 0.0 0.5; offset: -5 -8; } \
+	r2 { to: RGB"-entry"; relative: 0.0 0.5; offset: -5 8; } \
+		image { \
+			normal: "cp_slider_trough_right.png"; \
+			border: 0 6 7 7; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+      part { \
+         name: RGB"-trough"; \
+         description { \
+            state: "default" 0.0; \
+            rel1 { \
+               relative: 1.0 0.0; \
+               offset: 0 0; \
+               to: RGB"-trough_left"; \
+            } \
+            rel2 { \
+               relative: 0.0 1.0; \
+               offset: -1 -1; \
+               to: RGB"-trough_right"; \
+            } \
+            image { \
+               normal: "cp_slider_trough.png"; \
+               border: 1 1 2 2; \
+            } \
+            fill { \
+               smooth: 0; \
+            } \
+         } \
+      } \
+      part { \
+         name: RGB"-confine"; \
+         type: RECT; \
+         description { \
+            state: "default" 0.0; \
+            color: 255 0 0 128; \
+            visible: 0; \
+            rel1 { \
+               relative: 0.0 0.0; \
+               offset: -5 1; \
+               to: RGB"-trough"; \
+            } \
+            rel2 { \
+               relative: 1.0 1.0; \
+               offset: 4 -2; \
+               to: RGB"-trough"; \
+            } \
+         } \
+      } \
+      part { \
+         name: RGB"-entry"; \
+         description { \
+            state: "default" 0.0; \
+            align: 1.0 0.5; \
+		min: 39 20; \
+		max: 39 20; \
+		fixed: 1 1; \
+            rel1 { \
+               relative: 0.0 0.0; \
+               offset: -6 -5; \
+               to: RGB"-val"; \
+            } \
+            rel2 { \
+               relative: 1.0 1.0; \
+               offset: 4 2; \
+               to: RGB"-val"; \
+            } \
+            image { \
+               normal: "entry.png"; \
+               border: 10 10 8 8; \
+            } \
+            fill { \
+               smooth: 0; \
+            } \
+         } \
+      } \
+      part { \
+         name: RGB"-val"; \
+         type: TEXT; \
+         mouse_events: 0; \
+         description { \
+            state: "default" 0.0; \
+            color: 60 60 60 255; \
+            align: 1.0 0.5; \
+            fixed: 1 1; \
+	r1 { to: RGB; relative: 1.0 0.5; offset: -5 1; } \
+	r2 { to: RGB; relative: 1.0 0.5; offset: -5 1; } \
+            text { \
+               text: "0"; \
+               font: "Edje-Vera"; \
+               size: 11; \
+               min: 1 1; \
+            } \
+         } \
+      }
+
+part { 
+	name: "red-spectrum";
+	type: SWALLOW; 
+
+	description { 
+		state: "default" 0.0; 
+
+	r1 { to: "red-trough"; relative: 0.0 0.0; offset: 0 5; } 
+	r2 { to: "red-trough"; relative: 1.0 1.0; offset: -1 -6; } 
+	} 
+} 
+
+part { 
+	name: "green-spectrum";
+	type: SWALLOW; 
+
+	description { 
+		state: "default" 0.0; 
+
+	r1 { to: "green-trough"; relative: 0.0 0.0; offset: 0 5; } 
+	r2 { to: "green-trough"; relative: 1.0 1.0; offset: -1 -6; } 
+	} 
+} 
+
+part { 
+	name: "blue-spectrum";
+	type: SWALLOW; 
+
+	description { 
+		state: "default" 0.0; 
+
+	r1 { to: "blue-trough"; relative: 0.0 0.0; offset: 0 5; } 
+	r2 { to: "blue-trough"; relative: 1.0 1.0; offset: -1 -6; } 
+	} 
+} 
+
+SLIDER("red")
+SLIDER("green")
+SLIDER("blue")
+
+part {
+	name: "red-slider";
+
+	dragable {
+		confine: "red-confine";
+		x: 1 1 1;
+		y: 0 0 0;
+	}
+
+	description {
+		state: "default" 0.0;
+		min: 11 19;
+		max: 11 19;
+
+		image {
+			normal: "cp_slider_drag.png";
+		}
+	}
+}
+
+part {
+	name: "green-slider";
+
+	dragable {
+		confine: "green-confine";
+		x: 1 1 1;
+		y: 0 0 0;
+	}
+
+	description {
+		state: "default" 0.0;
+		min: 11 19;
+		max: 11 19;
+
+		image {
+			normal: "cp_slider_drag.png";
+		}
+	}
+}
+
+part {
+	name: "blue-slider";
+
+	dragable {
+		confine: "blue-confine";
+		x: 1 1 1;
+		y: 0 0 0;
+	}
+
+	description {
+		state: "default" 0.0;
+		min: 11 19;
+		max: 11 19;
+
+		image {
+			normal: "cp_slider_drag.png";
+		}
+	}
+}
