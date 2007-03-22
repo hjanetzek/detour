@@ -1,0 +1,68 @@
+
+part {
+	name: "grid_rect";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 50 20;
+		max: 50 20;
+
+	r1 { to: "shot.bg"; relative: 0.0 1.0; offset: 50 27; }
+	r2 { to: "shot.bg"; relative: 0.0 1.0; offset: -1 -1; }
+
+	color: 255 0 0 0;
+	}
+}
+
+part {
+	name: "grid.check.button";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+
+	r1 { to: "grid_rect"; relative: 0.0 0.0; offset: 24 4; }
+	r2 { to: "grid_rect"; relative: 0.0 1.0; offset: -1 -1; }
+
+		image {
+			normal: "check1.png";
+		}
+	}
+
+	description {
+		state: "enabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "check2.png";
+		}
+    	}
+}
+
+part {
+	name: "grid.text";
+	type: TEXT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 47 12;
+		max: 47 12;
+
+	r1 { to: "grid.check.button"; relative, 1.0 0.0; offset: 28 4; }
+	r2 { to: "grid.check.button"; relative, 1.0 1.0; offset: -1 -1; }
+
+	color, 60 60 60 255;
+
+		text {
+			text: "Grid";
+			font: "Edje-VeraBd";
+			size: 10;
+		}
+	}
+}

@@ -1,0 +1,95 @@
+
+part {
+	name: "shot.bg";
+	type: IMAGE;
+
+	description {
+		state, "default" 0.0;
+		min: 192 122;
+
+	r1 { to: "main_bg"; relative, 0.0 0.0; offset, 2 3; }
+
+	r2 {  
+		to_x: "main_bg";
+		relative: 1.0 1.0;
+		offset: -3 -110;
+	}
+
+		image {
+		       normal: "scrollframe_bg.png";
+		       border: 7 7 7 7;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}
+
+part {
+	name: "shot";
+	type: SWALLOW;
+
+	description {
+		state, "default" 0.0;
+
+	r1 { to: "shot.bg"; offset: 3 3; }
+	r2 { to: "shot.bg"; offset: -4 -4; }
+
+	color: 0 0 0 0;
+	}
+}
+	
+part {
+	name: "shot.overlay";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state, "default" 0.0;
+
+	r1 { to: "shot.bg"; offset: 2 1;}
+	r2 { to: "shot.bg"; offset: -3 -2;}
+
+	image {
+		normal, "scrollframe_inset.png";
+		border: 5 5 5 6;
+	}
+    }
+
+	description {
+		state, "focused" 0.0;
+		inherit: "default" 0.0;
+
+	image {
+		normal, "scrollframe_focus.png";
+		border: 5 5 5 6;
+	}
+    }
+}
+
+part {
+	name: "target";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		min: 15 15;
+		max: 15 15;
+		color: 255 255 255 255;
+
+	r1 { to: "shot.overlay"; relative: 0.5 0.5; offset: 0 0; }
+	r2 { to: "shot.overlay"; relative: 0.5 0.5; offset: 0 0; }
+
+	image {
+		normal: "shot.png";
+	}
+}
+
+	description {
+		state, "clicked" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
