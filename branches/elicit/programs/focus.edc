@@ -1,0 +1,79 @@
+
+program {
+	name: "set_shot_focus"; 
+	signal: "elicit,shoot,start"; 
+	source: "";
+	script {
+		set_int(shot_focus, 1);
+		set_int(swatch_focus, 0);
+	}
+	after: "emit.focus";
+}
+
+program {
+	name: "set_swatch_focus"; 
+	signal: "elicit,pick,start"; 
+	source: "";
+	script {
+		set_int(swatch_focus, 1);
+		set_int(shot_focus, 0);
+	}
+	after: "emit.focus";
+}
+
+program {
+	name: "emit.focus";
+	signal: "";
+	source: "";
+	script {
+		if(get_int(shot_focus) == 1)
+			set_state(PART:"shot.overlay", "focused", 0.0);
+		if(get_int(swatch_focus) == 1)
+			set_state(PART:"swatch.overlay", "focused", 0.0);
+		if(get_int(shot_focus) == 0)
+			set_state(PART:"shot.overlay", "default", 0.0);
+		if(get_int(swatch_focus) == 0)
+			set_state(PART:"swatch.overlay", "default", 0.0);
+	}
+}
+
+program {
+	name: "set_spinner_up_focus"; 
+	signal: "elicit,zoom,up,start"; 
+	source: "";
+	script {
+		set_int(spinner_focus, 1);
+		set_state(PART:"entry", "focused", 0.0);
+	}
+}
+
+program {
+	name: "unset_spinner_up_focus"; 
+	signal: "elicit,zoom,up,stop"; 
+	source: "";
+	script {
+		set_int(spinner_focus, 0);
+		set_state(PART:"entry", "default", 0.0);
+	}
+}
+
+program {
+	name: "set_spinner_down_focus"; 
+	signal: "elicit,zoom,down,start"; 
+	source: "";
+	script {
+		set_int(spinner_focus, 1);
+		set_state(PART:"entry", "focused", 0.0);
+	}
+}
+
+program {
+	name: "unset_spinner_down_focus"; 
+	signal: "elicit,zoom,down,stop"; 
+	source: "";
+	script {
+		set_int(spinner_focus, 0);
+		set_state(PART:"entry", "default", 0.0);
+	}
+}
+

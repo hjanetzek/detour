@@ -1,0 +1,27 @@
+
+#define PRG(NAME,SIG,STATE,TARGET) \
+program { \
+	name: NAME; \
+	signal: SIG; \
+	source: "grabber"; \
+	action: STATE_SET STATE 0.0; \
+	target: TARGET; \
+}
+
+PRG("over", "mouse,in", "over", "border")
+PRG("out", "mouse,out", "default", "border")
+PRG("down", "mouse,downn,1", "down", "border")
+
+program {
+	name: "del";
+	signal: "mouse,clicked,3";
+	source: "grabber";
+	action: SIGNAL_EMIT "elicit,swatch,del" "";
+}
+
+program {
+	signal: "mouse,clicked,1";
+	source: "grabber";
+	name: "load";
+	action: SIGNAL_EMIT "elicit,swatch,load" "";
+}
