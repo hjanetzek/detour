@@ -39,10 +39,10 @@ part {
 	description {
 		state, "default" 0.0;
 
-	r1 { to: "swatch.bg"; offset: 3 3; }
-	r2 { to: "swatch.bg"; offset: -4 -4; }
+	r1 { to: "swatch.bg"; offset: 1 1; }
+	r2 { to: "swatch.bg"; offset: -2 -2; }
 
-	color: 255 255 255 255;
+	color: 255 0 0 255;
 	}
 }
 
