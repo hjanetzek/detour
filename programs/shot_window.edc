@@ -14,18 +14,18 @@ program {
 }
 
 program {
-	name, "active"; 
-	signal, "elicit,shoot,stop"; 
-	source, "";
+	name: "active"; 
+	signal: "elicit,shoot,stop"; 
+	source: "";
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
 	target: "target";
 }
 
 program {
-	name, "inactive"; 
-	signal, "elicit,shoot,start"; 
-	source, "";
+	name: "inactive"; 
+	signal: "elicit,shoot,start"; 
+	source: "";
 	action: STATE_SET "clicked" 0.0;
 	transition: DECELERATE 0.5;
 	target: "target";

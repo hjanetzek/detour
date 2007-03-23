@@ -32,18 +32,18 @@ program {
 }
 
 program {
-	name, "zoom+stop";
-       	signal, "mouse,up,1";
-       	source, "spinner_up";
-       	action, SIGNAL_EMIT "elicit,zoom,up,stop" "";
+	name: "zoom+stop";
+       	signal: "mouse,up,1";
+       	source: "spinner_up";
+       	action: SIGNAL_EMIT "elicit,zoom,up,stop" "";
 	after: "zoom_up_release";
 }
 
 program {
-	name, "zoom-stop";
-	signal, "mouse,up,1";
-	source, "spinner_down";
-	action, SIGNAL_EMIT "elicit,zoom,down,stop" "";
+	name: "zoom-stop";
+	signal: "mouse,up,1";
+	source: "spinner_down";
+	action: SIGNAL_EMIT "elicit,zoom,down,stop" "";
 	after: "zoom_down_release";
 }
 
