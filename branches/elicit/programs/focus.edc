@@ -76,4 +76,3 @@ program {
 		set_state(PART:"entry", "default", 0.0);
 	}
 }
-
