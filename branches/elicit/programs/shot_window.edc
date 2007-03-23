@@ -32,8 +32,10 @@ program {
 }
 
 program {
-	name: "send.to.the.gimp";
-	signal: "mouse,down,2*";
-	source: "target";
-	action: SIGNAL_EMIT "elicit,shot,edit" "";
+	name: "shot.window.has.been.clicked"; 
+	signal: "mouse,down,1"; 
+	source: "shot.overlay";
+	action: STATE_SET "focused" 0.0;
+	target: "shot.overlay";
+	after: "set.shot.focus";
 }
