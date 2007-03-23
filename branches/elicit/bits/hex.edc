@@ -9,8 +9,8 @@ part {
 		min: 60 20;
 		max: 9999 20;
 
-	r1 { to: "body.rect"; relative, 0.5 0.0; offset: -49 0; }
-	r2 { to: "entry"; relative, 0.0 1.0; offset: -2 -26; }
+	r1 { to: "grid.rect"; relative, 1.0 0.0; offset: -2 3; }
+	r2 { to: "entry"; relative, 0.0 1.0; offset: 0 -1; }
 
 		image {
 			normal, "entry.png";

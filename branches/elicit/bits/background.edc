@@ -43,7 +43,7 @@ part {
 		min: 192 56;
 		color: 255 0 0 0;
 
-	r1 { to: "grid_rect"; relative, 0.0 1.0; offset, 2 15; }
+	r1 { to: "grid.rect"; relative, 0.0 1.0; offset, 2 15; }
 	r2 {  to_x: "main_bg"; relative: 1.0 1.0; offset: -5 -30; }
 	}
 }

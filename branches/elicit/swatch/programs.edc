@@ -13,15 +13,15 @@ PRG("out", "mouse,out", "default", "border")
 PRG("down", "mouse,downn,1", "down", "border")
 
 program {
-	name: "del";
-	signal: "mouse,clicked,3";
-	source: "grabber";
-	action: SIGNAL_EMIT "elicit,swatch,del" "";
-}
-
-program {
 	signal: "mouse,clicked,1";
 	source: "grabber";
 	name: "load";
 	action: SIGNAL_EMIT "elicit,swatch,load" "";
+}
+
+program {
+	name: "del";
+	signal: "mouse,clicked,3";
+	source: "grabber";
+	action: SIGNAL_EMIT "elicit,swatch,del" "";
 }

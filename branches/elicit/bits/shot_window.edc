@@ -39,14 +39,71 @@ part {
 	color: 0 0 0 0;
 	}
 }
+
+part {
+	name: "wipe.clip.container";
+	type: RECT;
+
+	description {
+		state, "default" 0.0;
+
+	r1 { to: "shot.bg"; offset: 3 3; }
+	r2 { to: "shot.bg"; offset: -4 -4; }
+
+	color: 255 255 255 255;
+	}
+}
+
+part {
+	name: "wipe.clip";
+	type: RECT;
+	mouse_events: 0;
+	clip_to: "wipe.clip.container";
+
+	description {
+	    state: "default" 0.0;
+
+	r1 { to: "shot.overlay"; relative: 0.0 0.0; offset: 0 -31; }
+	r2 { to: "shot.overlay"; relative: 1.0 1.0; offset: -1 -1; }
+	}
+
+	description {
+		state: "wipe" 0.0;
+		inherit: "default" 0.0;
+
+	r1 { to: "shot.overlay"; relative: 0.0 1.0; offset: 0 0; }
+	r2 { to: "shot.overlay"; relative: 1.0 1.0; offset: -1 31; }
+	}
+}
+
+part {
+	name: "swipe_gap";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "wipe.clip";
+
+	description {
+		state: "default" 0.0;
+		min: 192 16;
+		max: 99999 16;
+		fixed: 1 1;
+
+	r1 { to: "wipe.clip"; relative: 0.0 0.0; offset: 0 32; }
+	r2 { to: "wipe.clip"; relative: 1.0 0.0; offset: -1 -1; }
+
+		image {
+			normal: "vswipe.png";
+		}
+	}
+}
 	
 part {
 	name: "shot.overlay";
 	type: IMAGE;
-	mouse_events: 0;
+	mouse_events: 1;
 
 	description {
-		state, "default" 0.0;
+		state: "default" 0.0;
 
 	r1 { to: "shot.bg"; offset: 2 1;}
 	r2 { to: "shot.bg"; offset: -3 -2;}
@@ -75,8 +132,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 15 15;
-		max: 15 15;
+		min: 16 16;
+		max: 16 16;
 		color: 255 255 255 255;
 
 	r1 { to: "shot.overlay"; relative: 0.5 0.5; offset: 0 0; }
