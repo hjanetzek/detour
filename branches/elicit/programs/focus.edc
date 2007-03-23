@@ -1,6 +1,6 @@
 
 program {
-	name: "set_shot_focus"; 
+	name: "set.shot.focus"; 
 	signal: "elicit,shoot,start"; 
 	source: "";
 	script {
@@ -11,7 +11,7 @@ program {
 }
 
 program {
-	name: "set_swatch_focus"; 
+	name: "set.swatch.focus"; 
 	signal: "elicit,pick,start"; 
 	source: "";
 	script {

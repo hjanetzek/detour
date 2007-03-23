@@ -30,3 +30,12 @@ program {
 	transition: DECELERATE 0.5;
 	target: "picker";
 }
+
+program {
+	name: "swatch.window.has.been.clicked"; 
+	signal: "mouse,down,1"; 
+	source: "swatch.overlay";
+	action: STATE_SET "focused" 0.0;
+	target: "swatch.overlay";
+	after: "set.swatch.focus";
+}
