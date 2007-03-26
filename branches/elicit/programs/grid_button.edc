@@ -1,27 +1,16 @@
 
-/**
-  * [13:16]<rephorm> tokyo: actually, update again, and make that
-  *                 elicit,grid,shown and elicit,grid,hidden
-  *
-  * (with source "Elicit")
-  */
-
 program {
 	name: "grid,shown"; 
 	signal: "elicit,grid,shown"; 
 	source: "Elicit";
-	script {
-		set_int(grid_state, 1);
-	}
+	after: "button.check";
 }
 
 program {
 	name: "grid,hidden"; 
 	signal: "elicit,grid,hidden"; 
 	source: "Elicit";
-	script {
-		set_int(grid_state, 0);
-	}
+	after: "button.uncheck";
 }
 
 program {
@@ -29,25 +18,6 @@ program {
 	signal: "mouse,down,1"; 
 	source: "grid.check.button";
 	action: SIGNAL_EMIT "elicit,grid,toggle" "";
-	after: "bridge";
-}
-
-program {
-	name: "bridge";
-	signal: "";
-	source: "";
-	script {
-		if(get_int(grid_state) == 1)
-			{
-				emit("check,button", ""); 
-				set_int(grid_state, 1);
-			}
-
-		else {
-			emit("uncheck,button", ""); 
-			set_int(grid_state, 0);
-		}
-	}
 }
 
 program {
