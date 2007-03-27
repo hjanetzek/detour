@@ -15,13 +15,13 @@ group {
 			signal: "load";
 			source: "";
 			action: STATE_SET "default" 0.0;
-			target: "pointer"; in: 5.0 0.0;
-			after: "go_active2";
+			target: "pointer"; 
+			after: "go_active2"; in: 5.0 0.0;
 		}
 
 		program {
 			name: "go_active2";
-			signal: "load";
+			signal: "";
 			source: "";
 			action: STATE_SET "pulsate" 0.0;
 			transition: LINEAR 0.5;

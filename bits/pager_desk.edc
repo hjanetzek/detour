@@ -76,7 +76,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 64;
+		color: 255 255 255 32;
 
 	rel1.to: "overlay";
 	rel1.offset: 1 2;

@@ -26,10 +26,10 @@ part {
 	image.normal: "frame_outline.png";
 	image.border: 9 8 8 8;
 
-	fill {
-		smooth: 1;
+		fill {
+			smooth: 1;
+		}
 	}
-    }
 }
 
 part {

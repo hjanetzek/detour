@@ -42,6 +42,7 @@ part {
 	}
     }
 }
+
 		#include "about_theme_widget.edc"
 		#include "about_theme_text.edc"
 	}

@@ -224,9 +224,10 @@ part {
 	}
 }
 
+
 part {      
 	name: "icon";
-	mouse_events:  1;
+	mouse_events: 1;
 
 	description {
 		state: "default" 0.0;
@@ -234,11 +235,43 @@ part {
 	r1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -8 -8; }
 	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
 
-	image {
-		normal: "entry_focus.png";
-		border: 8 8 8 8;
+		image {
+		       normal: "scrollframe_bg.png";
+		       border: 7 7 7 7;
+		}
 	}
-    }
+}
+
+part {      
+	name: "icon_inset";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -6 -7; }
+	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 5 7; }
+
+		image {
+			normal: "scrollframe_inset.png";
+			border: 5 5 5 6;
+		}
+	}
+}
+
+part {      
+	name: "icon_overlay";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+	r1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -8 -8; }
+	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
+
+	image.normal: "scrollframe_focus.png";
+	image.border: 7 7 7 7;
+	}
 }
 
 part {

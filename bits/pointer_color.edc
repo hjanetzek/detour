@@ -44,7 +44,7 @@ part {
 	r2 { to: "base"; }
 
 	image {
-		normal: "cursor2.png";
+		normal: "cursor.png";
 	}
     }
 
@@ -57,7 +57,7 @@ part {
 	r2 { to: "base"; relative: 1.5 1.5; }
 
 	image {
-		normal: "cursor.png";
+		normal: "cursor2.png";
 	}
     }
 }
