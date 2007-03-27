@@ -12,6 +12,9 @@ EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/
 
 all: checkdir clean build install
 
+checkdir:
+	if [ ! -d $(PATH_INSTALL) ]; then mkdir -p $(PATH_INSTALL); fi
+
 clean:
 	@echo ""
 	@echo "make clean"
@@ -41,6 +44,3 @@ uninstall: detour-etk.edj
 	@echo $(HOME)/e/etk/themes/ directory.
 	@echo --------------------------------------------------
 	@echo ""
-
-checkdir:
-	if [ ! -d $(PATH_INSTALL) ]; then mkdir -p $(PATH_INSTALL); fi
