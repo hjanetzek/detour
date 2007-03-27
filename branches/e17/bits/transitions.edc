@@ -179,6 +179,7 @@ group {
 	    state: "default" 0.0;
 	 }
       }
+
       part {
 	 name:          "e.swallow.bg.new";
 	 type:          SWALLOW;
@@ -188,34 +189,28 @@ group {
 	    state: "default" 0.0;
 	 }
       }
-      part {
-	 name:          "bg_prev_clip";
-	 type:          RECT;
-	 mouse_events:  0;
-	 description {
-	    rel1 {
-	       relative: 0.0  0.0;
-	       offset:   0    -32;
-	    }
-	    rel2 {
-	       relative: 1.0  1.0;
-	       offset:   -1   31;
-	    }
+
+part {
+	name: "bg_prev_clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
 	    state: "default" 0.0;
-	 }
-	 description {
-	    state: "done" 0.0;
-	    inherit: "default" 0.0;
-	    rel1 {
-	       relative: 0.0  1.0;
-	       offset:   0    31;
-	    }
-	    rel2 {
-	       relative: 1.0  1.0;
-	       offset:   -1   31;
-	    }
-	 }
-      }
+
+	r1 { relative: 0.0  0.0; offset: 0 -32; }
+	r2 { relative: 1.0  1.0; offset: -1 31; }
+	}
+
+	description {
+		state: "done" 0.0;
+		inherit: "default" 0.0;
+
+	r1 { relative: 0.0 1.0; offset: 0 31; }
+	r2 { relative: 1.0 1.0; offset: -1 31; }
+	}
+}
+
       part {
 	 name:          "bg_new_clip";
 	 type:          RECT;
@@ -244,30 +239,27 @@ group {
 	    }
 	 }
       }
-      part {
-	 name: "swipe_gap";
-	 mouse_events: 0;
-	 description {
-	    state: "default" 0.0;
-	    min: 0 64;
-	    max: 99999 64;
-	    rel1 {
-	       to: "bg_prev_clip";
-	       relative: 0.0  0.0;
-	       offset:   0    0;
-	    }
-	    rel2 {
-	       to: "bg_prev_clip";
-	       relative: 1.0  0.0;
-	       offset:   -1   0;
-	    }
-	    image {
-	       normal: "transition_vswipe.png";
-	    }
-	 }
-      }
+
+part {
+	name: "swipe_gap";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 0 64;
+		max: 99999 64;
+
+	r1 { to: "bg_prev_clip"; relative: 0.0 0.0; offset: 0 0; }
+	r2 { to: "bg_prev_clip"; relative: 1.0 0.0; offset: -1 0; }
+
+		image {
+			normal: "transition_vswipe.png";
+		}
+	}
+}
    }
-   programs {
+
+programs {
       program {
 	 name:    "go";
 	 signal:  "e,action,start";

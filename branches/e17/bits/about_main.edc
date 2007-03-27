@@ -370,46 +370,6 @@ part {
 }
 
 part {
-	name: "focus_clip";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 0;
-
-	r1 { to: "button_enabled"; }
-	r2 { to: "button_enabled"; }
-	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
-}
-
-part {
-	name: "focus1";
-	mouse_events: 0;
-	clip_to: "focus_clip";
-
-	description {
-		state: "default" 0.0;
-
-	r1 { to: "button_enabled"; }
-	r2 { to: "button_enabled"; }
-	
-	image.normal: "button_focus_bottom.png";
-	image.border: 7 7 7 7;
-	
-	fill {
-		smooth: 1;
-	}
-    }
-}
-
-part {
 	name: "button_enabled";
 	type: IMAGE;
 	mouse_events: 1;
@@ -438,26 +398,6 @@ part {
 		inherit: "default" 0.0;
 		visible: 0;
 	}
-}
-
-part {
-	name: "focus2";
-	mouse_events: 0;
-	clip_to: "focus_clip";
-
-	description {
-		state: "default" 0.0;
-
-	r1 { to: "button_enabled"; }
-	r2 { to: "button_enabled"; }
-	
-	image.normal: "button_focus_top.png";
-	image.border: 7 7 7 7;
-	
-	fill {
-		smooth: 1;
-	}
-     }
 }
 
 part {

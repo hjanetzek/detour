@@ -16,6 +16,11 @@ part { \
 	} \
 }
 
+/* 
+ * for the 1.0 1.0 aspect ratio to really work the e.swallow.icon 
+ * should really be 19x19, but it doesn't fit on all borders 
+ */
+
 #define ICON() \
 part { \
 	name: "e.swallow.icon"; \
@@ -26,8 +31,9 @@ part { \
 		min: 18 18; \
 		max: 18 18; \
 		fixed: 1 1; \
-	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 18 2; } \
-	r2 { to: "title.area.clip"; relative: 0.0 0.5; offset: 0 -1; } \
+		aspect: 1.0 1.0; \
+	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 18 1; } \
+	r2 { to: "title.area.clip"; relative: 0.0 0.5; offset: 0 0; } \
 	} \
 }
 
