@@ -4,7 +4,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 9999 21;
+		max: 9999 20;
 		visible: 0;
 
 	r1 { relative: 0.0 0.0; offset: 0 -1; }
