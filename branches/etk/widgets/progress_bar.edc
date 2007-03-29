@@ -22,7 +22,7 @@
  */
  group {
    name: "etk/progress_bar";
-   min: 120 18;
+   min: 120 20;
    data {
       item: "filler_pulse_width" "0.3";
    }
@@ -33,11 +33,11 @@
             state: "default" 0.0;
             rel1 {
                relative: 0.0 0.5;
-               offset: 0 -9;
+               offset: 0 -10;
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -1 8;
+               offset: -1 9;
             }
             image {
                normal: "progress_trough.png";
@@ -78,8 +78,8 @@
          }
          description {
             state: "default" 0.0;
-            min: 0 15;
-            max: 9999 15;
+            min: 0 17;
+            max: 9999 17;
          }
       }
       part {
@@ -156,7 +156,7 @@
                smooth: 0;
                size {
                   relative: 0.0 0.0;
-                  offset: 17 15;
+                  offset: 32 17;
                }
             }
          }
@@ -204,5 +204,7 @@
             }
          }
       }
+   }
+   programs {
    }
 }
