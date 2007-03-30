@@ -150,16 +150,47 @@
                to: "filler_right";
             }
             image {
-               normal: "progress_bar.png";
+               normal: "progress_bar_fill_0.png";
+               tween: "progress_bar_fill_1.png";
+               tween: "progress_bar_fill_2.png";
+               tween: "progress_bar_fill_3.png";
+               tween: "progress_bar_fill_4.png";
+               tween: "progress_bar_fill_5.png";
+               tween: "progress_bar_fill_6.png";
+               tween: "progress_bar_fill_7.png";
+               tween: "progress_bar_fill_8.png";
+               tween: "progress_bar_fill_9.png";
+               tween: "progress_bar_fill_10.png";
+               tween: "progress_bar_fill_11.png";
+               tween: "progress_bar_fill_12.png";
+               tween: "progress_bar_fill_13.png";
+               tween: "progress_bar_fill_14.png";
+               tween: "progress_bar_fill_15.png";
+               tween: "progress_bar_fill_16.png";
+               tween: "progress_bar_fill_17.png";
+               tween: "progress_bar_fill_18.png";
+               tween: "progress_bar_fill_19.png";
+               tween: "progress_bar_fill_20.png";
+               tween: "progress_bar_fill_21.png";
+               tween: "progress_bar_fill_22.png";
+               tween: "progress_bar_fill_23.png";
+               tween: "progress_bar_fill_24.png";
+               tween: "progress_bar_fill_25.png";
+               tween: "progress_bar_fill_26.png";
+               tween: "progress_bar_fill_27.png";
+               tween: "progress_bar_fill_28.png";
+               tween: "progress_bar_fill_29.png";
+               tween: "progress_bar_fill_30.png";
+               tween: "progress_bar_fill_31.png";
             }
             fill {
                smooth: 0;
                size {
                   relative: 0.0 0.0;
-                  offset: 32 17;
+                  offset: 28 17;
                }
             }
-         }
+	 }
       }
       part {
          name: "text_clip";
@@ -167,6 +198,7 @@
          mouse_events: 0;
          description {
             state: "default" 0.0;
+	    color: 255 255 255 255;
             rel1 {
                relative: 0.0 0.0;
                offset: 2 2;
@@ -206,5 +238,14 @@
       }
    }
    programs {
+      program {
+         name: "go_active";
+         signal: "load";
+         source: "";
+         action: STATE_SET "default" 0.0;
+	 transition: LINEAR 1.0;
+         target: "filler_middle";
+	 after: "go_active";
+      }
    }
 }
