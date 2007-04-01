@@ -21,7 +21,7 @@ fonts {
 collections {
    #include "widgets/windows.edc"
    #include "widgets/button.edc"
-   //~ #include "widgets/toggle_button.edc"
+   #include "widgets/toggle_button.edc"
    #include "widgets/check_button.edc"
    #include "widgets/radio_button.edc"
    #include "widgets/entry.edc"

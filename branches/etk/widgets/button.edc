@@ -37,10 +37,6 @@ group {
                border: 7 7 7 7;
             }
          }
-         description {
-            state: "disabled" 0.0;
-            inherit: "default" 0.0;
-         }
       }
       part {
          name: "button_clip";
@@ -177,7 +173,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 255;
+            color: 255 255 255 224;
             visible: 1;
          }
       }
@@ -239,7 +235,6 @@ group {
          action: STATE_SET "default" 0.0;
          target: "button_enabled";
          target: "button_disabled";
-         target: "button_image"; 
       }
       program {
          name: "button_disable";
@@ -248,7 +243,6 @@ group {
          action: STATE_SET "disabled" 0.0;
          target: "button_enabled";
          target: "button_disabled";
-         target: "button_image"; 
       }
    }
 }
@@ -273,8 +267,6 @@ group {
  */
 group {
    name: "etk/button/label";
-   alias: "etk/toggle_button/label";
-   alias: "etk/combobox/button/label";
    parts {
       part {
          name: "etk.text.label";

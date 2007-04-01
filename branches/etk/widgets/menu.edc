@@ -242,7 +242,7 @@ group {
       }
       program {
          name: "item_unselect";
-         signal: "etk,state,deselected";
+         signal: "etk,state,unselected";
          source: "etk";
          action: STATE_SET "default" 0.0;
          target: "highlight";

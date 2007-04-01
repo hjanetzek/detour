@@ -5,6 +5,8 @@ images {
    image: "button_focus_bottom.png" COMP;
    image: "button_focus_top.png" COMP;
    image: "button_outline.png" COMP;
+   image: "button_on.png" COMP;
+   image: "button_on_disabled.png" COMP;
    image: "check_base.png" COMP;
    image: "check_blank.png" COMP;
    image: "check_mark.png" COMP;
