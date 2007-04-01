@@ -315,7 +315,7 @@ group {
             state: "disabled-toggled" 0.0;
             inherit: "default" 0.0;
             text {
-               style: "Button Disabled";
+               style: "Button Disabled Toggled";
             }
          }
       }
