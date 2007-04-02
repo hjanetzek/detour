@@ -4,8 +4,9 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 21 27;
-		max: 21 27;
+		color: 255 255 255 229;
+		min: 19 28;
+		max: 19 28;
 		fixed: 1 1;
 
 	r1 { to: "shot.bg"; relative: 1.0 1.0; offset: 0 30; }
@@ -27,7 +28,7 @@ part {
 		fixed: 1 1;
 
 	r1 { to: "spinner_up"; relative: 0.0 0.0; offset: -41 2; }
-	r2 { to: "spinner_up"; relative: 1.0 1.0; offset: -1 14; }
+	r2 { to: "spinner_up"; relative: 1.0 1.0; offset: -15 14; }
 
 		image {
 			normal: "entry.png";
