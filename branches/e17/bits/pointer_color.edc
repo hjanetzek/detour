@@ -73,7 +73,7 @@ part {
 		state: "default" 0.0;
 		visible: 0;
 
-	r1 { relative: 0.0 0.0; offset: 20 16; }
+	r1 { relative: 0.0 0.0; offset: 20 14; }
 	r2 { relative: 0.0 0.0; offset: 1 2; }
 
 	color: 0 0 0 0;

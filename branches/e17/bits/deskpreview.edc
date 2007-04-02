@@ -3,6 +3,6 @@ group {
 	name: "e/widgets/deskpreview/desk";
 
 	parts {
-		#include "deskpreview_desk.edc"
+		#include "deskpreview_main.edc"
 	}
 }
