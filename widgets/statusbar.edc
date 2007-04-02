@@ -59,7 +59,7 @@ group {
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            color: 0 0 0 255;
+            color: 60 60 60 255;
             rel1 {
                relative: 0.0 0.0;
                offset: 5 5;

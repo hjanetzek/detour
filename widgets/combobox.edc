@@ -10,14 +10,14 @@ group {
 }
 group {
    name: "etk/combobox/button";
-   min: 0 30;
+   min: 0 28;
    parts {
       part {
          name: "base";
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            min: 0 26;
+            min: 0 24;
             image {
                normal: "button_outline.png";
                border: 7 7 7 7;
@@ -47,7 +47,7 @@ group {
          clip_to: "combo_button_clip";
          description {
             state: "default" 0.0;
-            min: 0 24;
+            min: 0 22;
             rel1 {
                to: "combo_button_clip";
             }
@@ -119,37 +119,68 @@ group {
       }
    }
    programs {
-      program {
-         name: "combo_button_activate";
-         signal: "etk,state,on";
-         source: "etk";
-         action: STATE_SET "on" 0.0;
-         target: "combo_button";
-      }
-      program {
-         name: "combo_button_deactivate";
-         signal: "etk,state,off";
-         source: "etk";
-         action: STATE_SET "default" 0.0;
-         target: "combo_button";
+      script {
+          public combo = 0;
       }
       program {
          name: "combo_button_pressed";
          signal: "etk,state,pressed";
          source: "etk";
-         action: STATE_SET "on" 0.0;
-         target: "combo_button";
-         target: "combo_arrow";
+	 script {
+	 /* lets set the variable to 1 when the button is pressed */
+	 /* but first check the value of the variable, since will be */
+	 /* calling it everytime we press the combo box widget */
+		if(get_int(combo) == 0)
+	     	    set_int(combo, 1);
+	 /* lets set the state of the button to "on" */
+		    set_state(PART:"combo_button", "on", 0.0);
+		    set_state(PART:"combo_arrow", "on", 0.0);
+	     }
+      }
+      program {
+	 name: "combo_button_activate";
+	 signal: "etk,state,on";
+	 source: "etk";
+	 script {
+	 /* button is active so let the variable remain on */
+	 /* remember ON = 1, but lets check it just in case */
+		if(get_int(combo) == 0)
+	     	    set_int(combo, 1);
+	     }
       }
       program {
          name: "combo_button_released";
          signal: "etk,state,released";
          source: "etk";
-         action: STATE_SET "default" 0.0;
-         target: "combo_button";
-         target: "combo_arrow";
+	 script {
+	 /* we release the button, both button and the variable should remain ON */
+		    set_state(PART:"combo_button", "on", 0.0);
+		    set_state(PART:"combo_arrow", "on", 0.0);
+		if(get_int(combo) == 0)
+	     	    set_int(combo, 1);
+	 /* on the other hand if the variable = 0 set the state to default */
+		if(get_int(combo) == 0)
+		    set_state(PART:"combo_button", "default", 0.0);
+		    set_state(PART:"combo_arrow", "default", 0.0);
+	 /* set it so there are no discrepencies */
+	     	    set_int(combo, 0);
+	     }
       }
-   }
+      program {
+         name: "combo_button_deactivate";
+         signal: "etk,state,off";
+         source: "etk";
+	 script {
+	 /* deactivating button so lets set the variable 0 */
+	 /* first check the value of the variable */
+		if(get_int(combo) == 1)
+	 /* set the value */
+		    set_int(combo, 0);
+		    set_state(PART:"combo_button", "default", 0.0);
+		    set_state(PART:"combo_arrow", "default", 0.0);
+         }
+      }
+    }
 }
 
 group {
