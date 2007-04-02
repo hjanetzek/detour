@@ -138,7 +138,6 @@ group {
 			signal: "e,state,selected";
 			source: "e";
 			action: STATE_SET "active" 0.0;
-			transition: DECELERATE 0.5;
 			target: "arrow";
 			after: "go_inactive";
 		}
@@ -148,7 +147,7 @@ group {
 			signal: "";
 			source: "";
 			action: STATE_SET "hidden" 0.0;
-			transition: DECELERATE 0.5;
+			transition: DECELERATE 1.0;
 			target: "arrow";
 			after: "go_active";
 		}
