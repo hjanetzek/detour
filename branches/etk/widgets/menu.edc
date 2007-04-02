@@ -196,6 +196,13 @@ group {
             image {
                normal: "menu_item_arrow_light.png";
             }
+	 }
+         description {
+            state: "blank" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "menu_item_arrow_blank.png";
+            }
          }
       }
       part {
@@ -204,7 +211,7 @@ group {
          mouse_events: 0;
          description {
             state: "default" 0.0;
-            color: 0 0 0 255;
+            color: 60 60 60 255;
             rel1 {
                relative: 1.0 0.0;
                offset: 5 6;

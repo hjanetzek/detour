@@ -24,22 +24,23 @@
  */
 group {
    name: "etk/spinner";
-   min: 50 27;
+   min: 50 28;
    parts {
       part {
          name: "button_base";
          description {
             state: "default" 0.0;
-	    min: 21 27;
-            max: 21 27;
+	    color: 255 255 255 229;
+	    min: 19 28;
+            max: 19 28;
             fixed: 1 1;
             rel1 {
                relative: 1.0 0.0;
-               offset: 0 1;
+               offset: 0 4;
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -18 0;
+               offset: -1 0;
             }
             image {
                normal: "spinner_base.png";
@@ -57,8 +58,8 @@ group {
                offset: 0 -10;
             }
             rel2 {
-               relative: 1.0 0.5;
-               offset: -11 12;
+               relative: 0.0 0.5;
+               offset: -1 12;
 	       to_x: "up_button";
             }
             image {
@@ -85,7 +86,7 @@ group {
             fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
-               offset: -16 -10;
+               offset: -1 -10;
             }
             rel2 {
                relative: 1.0 0.5;
@@ -111,7 +112,7 @@ group {
             fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
-               offset: -16 0;
+               offset: -1 0;
             }
             rel2 {
                relative: 1.0 0.5;
