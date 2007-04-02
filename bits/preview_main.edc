@@ -50,7 +50,7 @@ part {
 }
 
 part {
-	name: "conf_over";
+	name: "bg_inset";
 	mouse_events: 0;
 
 	description {
