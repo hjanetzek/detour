@@ -57,12 +57,12 @@
             visible: 0;
             rel1 {
                relative: 0.0 0.0;
-               offset: 1 0;
+               offset: 1 1;
                to: "trough";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: -2 -1;
+               offset: -2 -3;
                to: "trough";
             }
          }
@@ -150,7 +150,7 @@
                to: "filler_right";
             }
             image {
-               normal: "progress_bar_fill_0.png";
+               tween: "progress_bar_fill_0.png";
                tween: "progress_bar_fill_1.png";
                tween: "progress_bar_fill_2.png";
                tween: "progress_bar_fill_3.png";
@@ -181,10 +181,10 @@
                tween: "progress_bar_fill_28.png";
                tween: "progress_bar_fill_29.png";
                tween: "progress_bar_fill_30.png";
-               tween: "progress_bar_fill_31.png";
+               normal: "progress_bar_fill_31.png";
             }
             fill {
-               smooth: 0;
+               smooth: 1;
                size {
                   relative: 0.0 0.0;
                   offset: 28 17;
