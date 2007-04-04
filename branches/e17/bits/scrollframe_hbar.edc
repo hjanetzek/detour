@@ -56,8 +56,8 @@ part {
  * TODO
  * rephorm says this is a work around for the fill { angle: 90; }
  */
-	//	rel1.relative: 0.0 0.5;
-	//	rel2.relative: 1.0 0.5;
+	//	r1.relative: 0.0 0.5;
+	//	r2.relative: 1.0 0.5;
 	//}
 
 	r1 {  to: "sb_hbar_a1"; relative: 1.0 0.0; offset: 0 5; }
@@ -83,8 +83,8 @@ part {
  * TODO
  * rephorm says this is a work around for the fill { angle: 90; }
  */
-	//	rel1.relative: 0.0 0.5;
-	//	rel2.relative: 1.0 0.5;
+	//	r1.relative: 0.0 0.5;
+	//	r2.relative: 1.0 0.5;
 	//}
 
 	r1 { to: "e.dragable.hbar"; relative: 1.0 0.0; offset: -3 3; }

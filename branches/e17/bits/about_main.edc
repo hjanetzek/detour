@@ -113,8 +113,8 @@ part {
 		min: 200 0;
 		max: 200 1000;
 
-	rel1 { to_y: "e.text.version"; relative: 0.0 1.0; offset: 16 8; }
-	rel2 { to_y: "middle"; to_x: "logo"; relative: 0.0 0.4; offset: -9 -9; }
+	r1 { to_y: "e.text.version"; relative: 0.0 1.0; offset: 16 8; }
+	r2 { to_y: "middle"; to_x: "logo"; relative: 0.0 0.4; offset: -9 -9; }
 
 	text {
 		style: "about_style";

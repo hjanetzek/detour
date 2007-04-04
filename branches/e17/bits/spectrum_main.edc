@@ -77,12 +77,12 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 {
+	r1 {
 		to_x: "e.dragable.cursor";
 		to_y: "e.swallow.content";
 	}
 
-	rel2 {
+	r2 {
 		to_x: "e.dragable.cursor";
 		to_y: "e.swallow.content";
 	}

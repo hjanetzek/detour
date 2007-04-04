@@ -7,11 +7,11 @@
 	 description {
 	    state: "default" 0.0;
 	    align: 0.5 0.5;
-	    rel1 {
+	    r1 {
 	       relative: 0.0 0.0;
 	       offset:   4 4;
 	    }
-	    rel2 {
+	    r2 {
 	       relative: 1.0 1.0;
 	       offset:   -5 -5;
 	    }
@@ -38,11 +38,11 @@
 	    aspect: 1.0 1.0;
 	    align: 1.0 1.0;
 	    aspect_preference: BOTH;
-	    rel1 {
+	    r1 {
 	       relative: 0.0 0.0;
 	       offset:   8 8;
 	    }
-	    rel2 {
+	    r2 {
 	       relative: 1.0 1.0;
 	       offset:   -9 -9;
 	    }
@@ -68,12 +68,12 @@
 	 description {
 	    state: "default" 0.0;
 	    align: 1.0 0.5;
-	    rel1 {
+	    r1 {
 	       to: "busy";
 	       relative: 0.0 0.0;
 	       offset:   -1 0;
 	    }
-	    rel2 {
+	    r2 {
 	       to: "busy";
 	       relative: 0.0 1.0;
 	       offset:   -1 -1;

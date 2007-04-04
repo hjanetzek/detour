@@ -32,7 +32,6 @@ part {
 part {
 	name: "e.swallow.content";
 	type: SWALLOW;
-	mouse_events:  0;
 	clip_to: "content_clip";
 
 	description {
