@@ -83,8 +83,8 @@ part { \
 	description { \
 		state: "default" 0.0; \
 		color: 0 0 0 0; \
-	rel1.to: NAME; \
-	rel2.to: NAME; \
+	r1.to: NAME; \
+	r2.to: NAME; \
 	} \
 } \
 

@@ -105,8 +105,8 @@ part {
 		fixed: 0 1;
 		align: 0.0 0.5;
 		  
-	rel1 { to: "entry_clip"; relative: 0.0 0.0; offset: 0 2; }
-	rel2 { to: "entry_clip"; relative: 0.0 1.0; offset: 0 0; }
+	r1 { to: "entry_clip"; relative: 0.0 0.0; offset: 0 2; }
+	r2 { to: "entry_clip"; relative: 0.0 1.0; offset: 0 0; }
 		  
 	color: 60 60 60 255;
 

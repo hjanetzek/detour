@@ -125,8 +125,8 @@ part {
 		align: 1.0 0.5;
 		aspect_preference: VERTICAL;
 
-	rel1 { relative: 1.0 0.0; offset: 1 1; }
-	rel2 { to_y: "title2"; relative: 1.0 1.0; offset: -1 4; }
+	r1 { relative: 1.0 0.0; offset: 1 1; }
+	r2 { to_y: "title2"; relative: 1.0 1.0; offset: -1 4; }
 
 	image {
 		normal: "pager_window_winlist.png";

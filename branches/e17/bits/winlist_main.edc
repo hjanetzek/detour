@@ -181,8 +181,8 @@ part {
 		state:  "default" 0.0;
 		max: 600 12;
 
-	rel1 { relative: 0.0 1.0; offset: 0 -16; to_y: "e.text.label"; }
-	rel2 { relative: 1.0 1.0; offset: 0 0; }
+	r1 { relative: 0.0 1.0; offset: 0 -16; to_y: "e.text.label"; }
+	r2 { relative: 1.0 1.0; offset: 0 0; }
 
 	image {
 		normal: "separator.png";
@@ -204,8 +204,8 @@ part {
 		align: 0.5 1.0;
 		min: 22 22;
 
-	rel1 { relative: 0.0 0.0; offset: 5 -3; to_y: "e.text.label"; }
-	rel2 { relative: 1.0 1.0; offset: -6 3; to_y: "e.text.label"; }
+	r1 { relative: 0.0 0.0; offset: 5 -3; to_y: "e.text.label"; }
+	r2 { relative: 1.0 1.0; offset: -6 3; to_y: "e.text.label"; }
 
 	image {
 		normal: "entry.png";

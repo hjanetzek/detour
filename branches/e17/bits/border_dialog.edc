@@ -145,8 +145,8 @@ part {
 		description { \
 			state: "default" 0.0; \
 			color: 0 0 0 0; \
-		rel1.to: PART_NAME; \
-		rel2.to: PART_NAME; \
+		r1.to: PART_NAME; \
+		r2.to: PART_NAME; \
 		} \
 	}
 
