@@ -143,7 +143,6 @@ part {
 part {
 	name: "pager";
 	type: SWALLOW;
-	mouse_events:  0;
 	clip_to: "items_clip";
 
 	description {

@@ -9,16 +9,16 @@ part {
 	r1 { offset: 1 1; }
 	r2 { offset: 0 -1; }
 
-	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
-		middle: 1;
-	}
+		image {
+			normal: "entry.png";
+			border: 5 5 8 6;
+			middle: 1;
+		}
 
-	fill {
-		smooth: 0;
+		fill {
+			smooth: 0;
+		}
 	}
-}
 
 	description {
 		state: "active" 0.0;
@@ -28,7 +28,6 @@ part {
 
 part {
 	name: "items";
-	mouse_events: 0;
 	type: SWALLOW;
 	clip_to: "clip";
 
@@ -64,7 +63,6 @@ part {
 	description {
 		state: "drag" 0.0;
 		inherit: "default" 0.0;
-		//color: 101 170 253 28;
 		color: 255 255 255 64;
 	}
 }
@@ -78,11 +76,11 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 32;
 
-	rel1.to: "overlay";
-	rel1.offset: 1 2;
+	r1.to: "overlay";
+	r1.offset: 1 2;
  
-	rel2.to: "overlay";
-	rel2.offset: -2 -3;
+	r2.to: "overlay";
+	r2.offset: -2 -3;
 	}
 }
 
