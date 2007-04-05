@@ -1,5 +1,31 @@
 
 part {
+	name: "clip";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 128;
+
+	r1 { offset: 3 4; }
+	r2 { offset: -3 -5; }
+	}
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+
+	description {
+		state: "drag" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 64;
+	}
+}
+
+part {
 	name: "overlay";
 	mouse_events: 1;
 
@@ -38,32 +64,6 @@ part {
 	r2 { offset: -7 -9; }
 	
 	color: 0 0 0 0;
-	}
-}
-
-part {
-	name: "clip";
-	mouse_events: 0;
-	type: RECT;
-
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 128;
-
-	r1 { offset: 3 4; }
-	r2 { offset: -3 -5; }
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
-
-	description {
-		state: "drag" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 64;
 	}
 }
 
