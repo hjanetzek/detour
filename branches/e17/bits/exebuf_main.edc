@@ -1,14 +1,14 @@
 
 part {
 	name: "base3";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 0.0 0.0;  offset: 0 0; }
-	r2 { relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { relative: 0.0 0.0; offset: 0 0; }
+	rel2 { relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 104 108 111 255;
 	}
@@ -22,8 +22,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to_y: "base"; relative: 0.0 1.0; offset: 1 0; }
-	r2 { relative: 1.0  1.0; offset: -2 -2; }
+	rel1 { to_y: "base"; relative: 0.0 1.0; offset: 1 0; }
+	rel2 { relative: 1.0  1.0; offset: -2 -2; }
 
 	color: 104 108 111 255;
 	}
@@ -37,14 +37,14 @@ part {
 		state: "default" 0.0;
 		align: 0.5 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 1 1; }
-	r2 { relative: 1.0 1.0; offset: -2 -2; }
+	rel1 { relative: 0.0 0.0; offset: 1 1; }
+	rel2 { relative: 1.0 1.0; offset: -2 -2; }
 
-	image {
-		normal: "menu_bg.png";
-		border: 2 2 2 2;
+		image {
+			normal: "menu_bg.png";
+			border: 2 2 2 2;
+		}
 	}
-    }
 }
 
 part {
@@ -54,14 +54,14 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 8 0; to_y: "e.swallow.eap_list"; }
-	r2 { relative: 1.0 1.0; offset: -9 -1; to_y: "e.swallow.eap_list"; }
+	rel1 { to_y: "e.swallow.eap_list"; relative: 0.0 0.0; offset: 8 0; }
+	rel2 { to_y: "e.swallow.eap_list"; relative: 1.0 1.0; offset: -9 -1;}
 
-	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
+		image {
+			normal: "entry.png";
+			border: 5 5 8 6;
+		}
 	}
-    }
 }
 
 part {
@@ -72,8 +72,8 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	r1 { relative: 0.0 0.0; offset: 12 4; to_y: "e.swallow.eap_list"; }
-	r2 { relative: 1.0 1.0; offset: -13 -4; to_y: "e.swallow.eap_list"; }
+	rel1 { to_y: "e.swallow.eap_list"; relative: 0.0 0.0; offset: 12 4; }
+	rel2 { to_y: "e.swallow.eap_list"; relative: 1.0 1.0; offset: -13 -4; }
 	}
 }
 
@@ -87,8 +87,8 @@ part {
 		min: 32 64;
 		align: 0.5 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 16 6; }
-	r2 { relative: 1.0  0.0; offset: -17 -17; to_y: "e.text.label"; }
+	rel1 { relative: 0.0 0.0; offset: 16 6; }
+	rel2 { to_y: "e.text.label"; relative: 1.0  0.0; offset: -17 -17; }
 
 	color: 0 0 0 0;
 	}
@@ -102,14 +102,14 @@ part {
 		state: "default" 0.0;
 		max: 608 12;
 
-	r1 { relative: 0.0 1.0;  offset: 1 -16; to_y: "e.swallow.exe_list"; }
-	r2 { relative: 1.0 1.0; offset: -2 0; }
+	rel1 { to_y: "e.swallow.exe_list"; relative: 0.0 1.0; offset: 1 -16; }
+	rel2 { relative: 1.0 1.0; offset: -2 0; }
 
-	image {
-		normal: "separator.png";
-		border: 0 0 3 0;
+		image {
+			normal: "separator.png";
+			border: 0 0 3 0;
+		}
 	}
-    }
 }
 
 part {
@@ -119,14 +119,14 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 8 2; to_y: "e.swallow.exe_list"; }
-	r2 { relative: 1.0 1.0; offset: -9 -1; to_y: "e.swallow.exe_list"; }
+	rel1 { to_y: "e.swallow.exe_list"; relative: 0.0 0.0; offset: 8 2; }
+	rel2 { to_y: "e.swallow.exe_list"; relative: 1.0 1.0; offset: -9 -1; }
 
-	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
+		image {
+			normal: "entry.png";
+			border: 5 5 8 6;
+		}
 	}
-    }
 }
 
 part {
@@ -137,8 +137,8 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	r1 { relative: 0.0 0.0; offset: 12 6; to_y: "e.swallow.exe_list"; }
-	r2 { relative: 1.0 1.0; offset: -13 -4; to_y: "e.swallow.exe_list"; }
+	rel1 { to_y: "e.swallow.exe_list"; relative: 0.0 0.0; offset: 12 6; }
+	rel2 { to_y: "e.swallow.exe_list"; relative: 1.0 1.0; offset: -13 -4; }
 	}
 }
 
@@ -152,8 +152,8 @@ part {
 		min: 32 64;
 		align: 0.5 1.0;
 
-	r1 { relative: 0.0 1.0; offset: 16 16; to_y: "e.text.label"; }
-	r2 { relative: 1.0 1.0; offset: -17 -17; }
+	rel1 { to_y: "e.text.label"; relative: 0.0 1.0; offset: 16 16; }
+	rel2 { relative: 1.0 1.0; offset: -17 -17; }
 
 	color: 0 0 0 0;
 	}
@@ -166,8 +166,14 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 {  to_y: "eap_list_clip"; to_x: "e.swallow.icons"; relative: 1.0 1.0; offset: 11 4; }
-	r2 {  to_y: "exe_list_clip"; relative: 1.0 0.0; offset: -9 -6; }
+	rel1 {  
+		to_y: "eap_list_clip"; 
+		to_x: "e.swallow.icons"; 
+		relative: 1.0 1.0; 
+		offset: 11 4; 
+	}
+
+	rel2 { to_y: "exe_list_clip"; relative: 1.0 0.0; offset: -9 -6; }
 
 	color: 0 0 0 0;
 	}
@@ -176,28 +182,26 @@ part {
 part {
 	name: "e.text.label";
 	type: TEXT;
-	effect: NONE;
 	
 	description {
 		state: "default" 0.0;
-		color: 60 60 60 255;
 		fixed: 0 1;
 		align: 0.0 0.5;
 
-	r1 { relative: 1.0 0.5; offset: 20 0; to_x: "e.swallow.icons"; }
-	r2 { relative: 1.0 0.5; offset: 20 0; to_x: "e.swallow.icons"; }
+	rel1 { to_x: "e.swallow.icons"; relative: 1.0 0.5; offset: 20 0; }
+	rel2 { to_x: "e.swallow.icons"; relative: 1.0 0.5; offset: 20 0; }
 
-	color: 60 60 60 255;
+	color: 7 7 7 255;
 
-	text {
-		text: "COMMAND";
-		font: "Edje-Vera";
-		align: 0.0 0.5;
-		size: 12;
-		min: 1 1;
-		text_class: "exebuf_command";
+		text {
+			text: "COMMAND";
+			font: "Edje-Vera";
+			align: 0.0 1.0;
+			size: 12;
+			min: 1 1;
+			text_class: "exebuf_command";
+		}
 	}
-    }
 }
 
 part {
@@ -211,10 +215,11 @@ part {
 		max: 1 12;
 		align: 0.0 0.9;
 		fixed: 1 1;
-		color: 7 7 7 0;
 
-	r1 { relative: 1.0 0.0; offset: 2 0; to: "e.text.label"; }
-	r2 { relative: 1.0 1.0; offset: 0 -1; to: "e.text.label"; }
+	rel1 { relative: 1.0 0.0; offset: 2 0; to: "e.text.label"; }
+	rel2 { relative: 1.0 1.0; offset: 0 -1; to: "e.text.label"; }
+
+	color: 7 7 7 0;
 	}
 
 	description {
@@ -232,8 +237,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -8 -8; }
-	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
+	rel1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -8 -8; }
+	rel2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
 
 		image {
 		       normal: "scrollframe_bg.png";
@@ -249,8 +254,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -6 -7; }
-	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 5 7; }
+	rel1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -6 -7; }
+	rel2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 5 7; }
 
 		image {
 			normal: "scrollframe_inset.png";
@@ -266,8 +271,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -8 -8; }
-	r2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
+	rel1 { to: "e.swallow.icons"; relative: 0.0 0.0; offset: -8 -8; }
+	rel2 { to: "e.swallow.icons"; relative: 1.0 1.0; offset: 7 7; }
 
 	image.normal: "scrollframe_focus.png";
 	image.border: 7 7 7 7;
@@ -280,12 +285,12 @@ part {
 	
 	description {
 		state: "default" 0.0;
+		aspect_preference: VERTICAL;
 		aspect: 1.0 1.0;
 		align: 0.0 0.5;
-		aspect_preference: VERTICAL;
 
-	r1 { relative: 0.0 0.0; offset: 16 -7; to_y: "e.text.label"; }
-	r2 { relative: 1.0 1.0; offset: 16 8; to_y: "e.text.label"; }
+	rel1 { to_y: "e.text.label"; relative: 0.0 0.0; offset: 16 -7; }
+	rel2 { to_y: "e.text.label"; relative: 1.0 1.0; offset: 16 8; }
 
 	color: 0 0 0 0;
 	}

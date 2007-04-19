@@ -1,14 +1,14 @@
 # Makefile for Seek
 
-fonts 		= fonts
-images 		= images
-icons		= icons
-CC		= edje_cc
-SRC		= main.edc
-OUT		= detour-e17.edj
-COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
+fonts 	= fonts
+images 	= images
+icons	= icons
+CC 	= edje_cc
+SRC	= main.edc
+OUT	= detour-e17.edj
+COMPILE = $(CC) $(EDJE_CC_FLAGS)
 
-EDJE_CC_FLAGS 	= -fd $(fonts)/ -id $(images)/ -id $(icons)
+EDJE_CC_FLAGS  = -fd $(fonts)/ -id $(images)/ -id $(icons)
 
 .SILENT :
 

@@ -1,0 +1,23 @@
+
+group {
+	name: "e/modules/temperature/main";
+	max: 13 68;
+
+		script {
+			public message(Msg_Type:type, id, ...) {
+			if ((type == MSG_FLOAT) && (id == 1)) {
+			new Float:val;
+			val = getfarg(2);
+			set_drag(PART:"temperature", 0.0, val);
+			}
+		}
+	}
+
+	parts {
+		#include "temperature_main.edc"
+	}
+
+	programs {
+		#include "temperature_programs.edc"
+	}
+}

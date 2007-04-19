@@ -19,38 +19,38 @@ part {
 		state: "default" 0.0; 
 		visible: 0;
 
-	r1 { to: "base"; }
-	r2 { to: "base"; }
+	rel1 { to: "base"; }
+	rel2 { to: "base"; }
 
 	color: 255 255 255 0;
-}
+	}
 	
 	description {
 		state: "visible" 0.0;
 		visible: 1;
 
-	r1 { to: "base"; }
-	r2 { to: "base"; }
+	rel1 { to: "base"; }
+	rel2 { to: "base"; }
 
 	color: 255 255 255 255;
-}
+	}
 
 	description {
 		state: "hidden" 0.0;
 		visible: 1;
 
-	r1 { to: "base"; relative: -0.5 -0.5; }
-	r2 { to: "base"; relative: 1.5 1.5; }
+	rel1 { to: "base"; relative: -0.5 -0.5; }
+	rel2 { to: "base"; relative: 1.5 1.5; }
 
 	color: 255 255 255 0;
-}
+	}
 
 	description {
 		state: "huge" 0.0;
 		visible: 1;
 
-	r1 { to: "base"; relative: -2.0 -2.0; }
-	r2 { to: "base"; relative: 3.0 3.0; }
+	rel1 { to: "base"; relative: -2.0 -2.0; }
+	rel2 { to: "base"; relative: 3.0 3.0; }
 
 	color: 255 255 255 0;
 	}
@@ -64,8 +64,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "background"; }
-	r2 { to: "background"; }
+	rel1 { to: "background"; }
+	rel2 { to: "background"; }
 
 	color: 0 0 0 0;
 	}
@@ -82,21 +82,21 @@ part {
 		state: "default" 0.0;
 		align: 0.5 0.5;
 		
-	r1 { relative: 0.0 0.0; offset: 0 2; }
-	r2 { relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { relative: 0.0 0.0; offset: 0 2; }
+	rel2 { relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 7 7 7 255;
 	color3: 170 168 169 128;
 
-	text {
-		text: "";
-		font: "Edje-Vera-Bold";
-		size: 10;
-		min: 1 1;
-		align: 0.5 0.5;
-		text_class: "module_normal";
+		text {
+			text: "";
+			font: "Edje-Vera-Bold";
+			size: 10;
+			min: 1 1;
+			align: 0.5 0.5;
+			text_class: "module_normal";
+		}
 	}
-    }
 }
 
 part {      
@@ -108,11 +108,11 @@ part {
 		state: "default" 0.0;
 		align: 0.5 0.5;
 
-	r1 { to: "e.text.label"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "e.text.label"; relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { to: "e.text.label"; relative: 0.0 0.0; offset: 0 0; }
+	rel2 { to: "e.text.label"; relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 255 255 255 0;
-}
+	}
 
 	description {
 		state: "visible" 0.0;

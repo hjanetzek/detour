@@ -18,13 +18,13 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "base"; }
-	r2 { to: "base"; }
+	rel1 { to: "base"; }
+	rel2 { to: "base"; }
 
-	image {
-		normal: "cursor.png";
+		image {
+			normal: "cursor.png";
+		}
 	}
-    }
 }
 
 #if USE_ANIMATED_CURSOR == 0
@@ -37,29 +37,27 @@ part {
 
 	description {
 		state: "default" 0.0;
-		visible: 1;
 		color: 255 255 255 255;
 
-	r1 { to: "base"; }
-	r2 { to: "base"; }
+	rel1 { to: "base"; }
+	rel2 { to: "base"; }
 
-	image {
-		normal: "cursor.png";
+		image {
+			normal: "cursor.png";
+		}
 	}
-    }
 
 	description {
 		state: "pulsate" 0.0;
-		visible: 1;
 		color: 255 255 255 0;
 
-	r1 { to: "base"; relative: -0.5 -0.5; }
-	r2 { to: "base"; relative: 1.5 1.5; }
+	rel1 { to: "base"; relative: -0.5 -0.5; }
+	rel2 { to: "base"; relative: 1.5 1.5; }
 
-	image {
-		normal: "cursor2.png";
+		image {
+			normal: "cursor2.png";
+		}
 	}
-    }
 }
 #endif
 #endif
@@ -72,8 +70,8 @@ part {
 		state: "default" 0.0;
 		visible: 0;
 
-	r1 { relative: 0.0 0.0; offset: 20 14; }
-	r2 { relative: 0.0 0.0; offset: 1 2; }
+	rel1 { relative: 0.0 0.0; offset: 20 14; }
+	rel2 { relative: 0.0 0.0; offset: 1 2; }
 
 	color: 0 0 0 0;
 	}

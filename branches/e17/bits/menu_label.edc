@@ -7,37 +7,37 @@ part {
 	description {
         	state: "default" 0.0;
         
-	r1 { relative: 0.0 0.0; offset: 5 4; }
-	r2 { relative: 1.0 1.0; offset: -3 -2; }
+	rel1 { relative: 0.0 0.0; offset: 5 4; }
+	rel2 { relative: 1.0 1.0; offset: -3 -2; }
 
 	color: 60 60 60 255;
 	color3: 0 0 0 0;
 
-	text {
-		text: "Item Label";
-		font: "Edje-Vera-Bold";
-		size: 10;
-		min: 1 1;
-		align: 0.0 0.5;
-		// text_class: "menu_item";
+		text {
+			text: "Item Label";
+			font: "Edje-Vera-Bold";
+			size: 10;
+			min: 1 1;
+			align: 0.0 0.5;
+			// text_class: "menu_item";
+		}
 	}
-}
 
 	description {
 		state: "active" 0.0;
 		color: 255 255 255 255;
 		color3: 0 0 0 0;
 
-	r1 { relative: 0.0 0.0; offset: 5 4; }
-	r2 { relative: 1.0 1.0; offset: -3 -2; }
+	rel1 { relative: 0.0 0.0; offset: 5 4; }
+	rel2 { relative: 1.0 1.0; offset: -3 -2; }
 
-	text {
-		text: "Item Label";
-		font: "Edje-Vera-Bold";
-		size: 10;
-		min: 1 1;
-		align: 0.0 0.5;
-		// text_class: "menu_item";
+		text {
+			text: "Item Label";
+			font: "Edje-Vera-Bold";
+			size: 10;
+			min: 1 1;
+			align: 0.0 0.5;
+			// text_class: "menu_item";
+		}
 	}
-    }
 }

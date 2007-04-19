@@ -8,10 +8,11 @@ part {
 		state: "default" 0.0;
 		min: 50 50;
 		aspect: 1 1;
-		color: 255 255 255 255;
 
-	r1 { to: "overlay"; }
-	r2 { to: "overlay"; }
+	rel1 { to: "overlay"; }
+	rel2 { to: "overlay"; }
+
+	color: 255 255 255 255;
  	}
 }
 
@@ -24,8 +25,8 @@ part {
 		state: "default" 0.0;
 		aspect: 1 1;
 
-	r1 { to: "background"; offset: 0 2; }
-	r2 { to: "background"; offset: -2 -3; }
+	rel1 { to: "background"; offset: 0 2; }
+	rel2 { to: "background"; offset: -2 -3; }
 
 	color: 255 255 255 255;
 	}
@@ -34,15 +35,14 @@ part {
 part {
 	name: "e.swallow.content";
 	type: SWALLOW;
-	mouse_events: 0;
 	clip_to: "content_clip";
 
 	description {
 		state: "default" 0.0;
 		aspect: 1 1;
 
-	r1 { offset: 0 2; }
-	r2 { offset: -2 -3; }
+	rel1 { offset: 0 2; }
+	rel2 { offset: -2 -3; }
 
 	color: 0 0 0 0;
 	}
@@ -53,9 +53,9 @@ part {
 	type: RECT;
 
 	dragable {
-		confine: "e.swallow.content";
 		x: 1 1 0;
 		y: 1 1 0;
+		confine: "e.swallow.content";
 	}
 
 	description {
@@ -65,8 +65,8 @@ part {
 		fixed: 1 1;
 		visible: 0;
 
-	r1 { to: "e.swallow.content"; relative: 0.5 0.5; offset: 0 0; }
-	r2 { to: "e.swallow.content"; relative: 0.5 0.5; offset: 0 0; }
+	rel1 { to: "e.swallow.content"; relative: 0.5 0.5; offset: 0 0; }
+	rel2 { to: "e.swallow.content"; relative: 0.5 0.5; offset: 0 0; }
 	}
 }
 
@@ -77,16 +77,9 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 {
-		to_x: "e.dragable.cursor";
-		to_y: "e.swallow.content";
+	rel1 { to_x: "e.dragable.cursor"; to_y: "e.swallow.content"; }
+	rel2 { to_x: "e.dragable.cursor"; to_y: "e.swallow.content"; }
 	}
-
-	r2 {
-		to_x: "e.dragable.cursor";
-		to_y: "e.swallow.content";
-	}
-    }
 }
 
 part {
@@ -96,16 +89,9 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 {
-		to_x: "e.swallow.content";
-		to_y: "e.dragable.cursor"; 
+	rel1 { to_x: "e.swallow.content"; to_y: "e.dragable.cursor"; }
+	rel2 { to_x: "e.swallow.content"; to_y: "e.dragable.cursor"; }
 	}
-
-	r2 {
-		to_x: "e.swallow.content";
-		to_y: "e.dragable.cursor";
-	}
-    }
 }
 
 part {
@@ -116,14 +102,14 @@ part {
 		state: "default" 0.0;
 		aspect: 1 1;
 
-	image {
-	       normal: "cs_box.png";
-	       border: 2 2 3 3;
-		middle: 0;
-	}
+		image {
+		       normal: "cs_box.png";
+		       border: 2 2 3 3;
+			middle: 0;
+		}
 
-	fill {
-		smooth: 0;
+		fill {
+			smooth: 0;
+		}
 	}
-    }
 }

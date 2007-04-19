@@ -14,7 +14,6 @@ group {
 	script {
 		public active;
 		public drag;
-		public urgent;
 	}
 
 	parts {
@@ -35,51 +34,36 @@ group {
 	}
 
 	programs {
-
-
-// urgent implementation by urandom
-
-
 		program {
-			name: "go_urgent_pre";
+			name: "go";
 			signal: "e,state,urgent";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			transition: DECELERATE 0.5;
 			target: "overlay";
-			after: "go_urgent";
+			after: "go2";
 		}
 
 		program {
-			name: "go_urgent";
+			name: "go2";
 			action: STATE_SET "urgent" 0.0;
-			transition: DECELERATE 0.5;
+			transition: LINEAR 1.0;
 			target: "overlay";
-			after: "go_urgent2";
+			after: "go";
 		}
 
 		program {
-			name: "go_urgent2";
-			action: STATE_SET "urgent2" 0.0;
-			transition: DECELERATE 0.5;
-			target: "overlay";
-			after: "go_urgent";
+			name: "stop";
+			signal:  "e,state,not_urgent";
+			source:  "e";
+			action:  ACTION_STOP;
+			target:  "go";
+			target:  "go2";
+			after: "stop2";
 		}
 
 		program {
-			name: "go_unurgent";
-			signal: "e,state,not_urgent";
-			source: "e";
-			action: ACTION_STOP;
-			target: "go_urgent";
-			target: "go_urgent2";
-			after: "go_unurgent2";
-		 } 
-
-		program {
-			name: "go_unurgent2";
+			name: "stop2";
 			action: STATE_SET "default" 0.0;
-			transition: DECELERATE 0.5;
 			target: "overlay";
 		}
 	}

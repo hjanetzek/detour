@@ -7,8 +7,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { offset: 0 0; }
-	r2 { offset: -1 -1; }
+	rel1 { offset: 0 0; }
+	rel2 { offset: -1 -1; }
 
 	color: 255 255 255 255;
 	}
@@ -22,8 +22,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { offset: 0 0; }
-	r2 { offset: -1 -1; }
+	rel1 { offset: 0 0; }
+	rel2 { offset: -1 -1; }
 
 	color: 0 0 0 0;
 	}

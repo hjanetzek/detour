@@ -1,86 +1,16 @@
 
-#define COLOR_CLIP() \
-part { \
-	name: "clip.color"; \
-	type: RECT; \
-	description { \
-		state: "default" 0.0; \
-		color: 255 255 255 255; \
-	r1 { relative: 0.0 0.0; offset: 0 0; } \
-	r2 { relative: 1.0 1.0; offset: -1 -1; } \
-} \
-	description { \
-		state: "default" 0.1; \
-		inherit: "default" 0.0; \
-		color: 234 234 234 255; \
-	} \
-}
-
-/* 
- * for the 1.0 1.0 aspect ratio to really work the e.swallow.icon 
- * should really be 19x19, but it doesn't fit on all borders 
- */
-
-#define ICON() \
-part { \
-	name: "e.swallow.icon"; \
-	type: SWALLOW; \
-	clip_to: "title.area.clip"; \
-	description { \
-		state: "default" 0.0; \
-		min: 18 18; \
-		max: 18 18; \
-		fixed: 1 1; \
-		aspect: 1.0 1.0; \
-	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 18 1; } \
-	r2 { to: "title.area.clip"; relative: 0.0 0.5; offset: 0 0; } \
-	} \
-}
-
-/* text_class: "title_bar"; */
-
-#define TB_TEXT() \
-part { \
-	name: "e.text.title"; \
-	type: TEXT; \
-	effect: SHADOW; \
-	mouse_events: 0; \
-	clip_to: "title.area.clip"; \
-	description { \
-		state: "default" 0.0; \
-	r1 { to: "title.area.clip"; relative: 0.0 0.5; offset: 22 5; } \
-	r2 { to: "title.area.clip"; relative: 1.0 0.5; offset: -5 0; } \
-	color: 60 60 60 255; \
-	color3: 170 168 169 128; \
-	text { \
-		text: ""; \
-		font: "Edje-Vera-Bold"; \
-		size: 10; \
-		min: 0 1; \
-		align: 0.0 0.5; \
-	} \
-    } \
-	description { \
-		state: "default" 0.1; \
-		inherit: "default" 0.0; \
-		color: 95 95 93 255; \
-		color3: 170 168 169 128; \
-	} \
-}
-
+#include "border_macros.edc"
 #include "border_menu.edc"
 
 group {
 	name: "e/widgets/border/classic/border";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
 	}
 
 	parts {
-		COLOR_CLIP()
 		#include "border_squared.edc"
-		TB_TEXT()
 	}
 
 	programs { 
@@ -89,34 +19,14 @@ group {
 }
 
 group {
-	name: "e/widgets/border/container/border";
-
-	data {
-		item: "shaped" "1";
-	}
-
-	parts {
-		COLOR_CLIP()
-		#include "border_container.edc"
-		TB_TEXT()
-	}
-
-	programs {
-		#include "border_container_programs.edc"
-	}
-}
-
-group {
 	name: "e/widgets/border/default/border";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
 	}
 
 	parts {
-		COLOR_CLIP()
 		#include "border_default.edc"
-		TB_TEXT()
 	}
 
 	programs {
@@ -128,12 +38,11 @@ group {
 	name: "e/widgets/border/dialog/border";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
 	}
 
 	parts {
 		#include "border_dialog.edc"
-		TB_TEXT()
 	}
 
 	programs {
@@ -145,12 +54,11 @@ group {
 	name: "e/widgets/border/modal/border";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
 	}
 
 	parts {
 		#include "border_modal.edc"
-		TB_TEXT()
 	}
 }
 
@@ -159,50 +67,24 @@ group {
  * use special border styles by default
  */
 
-/*
 group {
 	name: "e/widgets/border/noresize_dialog/border";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
 	}
 
 	parts {
-		#include "border_dialog.edc"
-		TB_TEXT()
+		#include "border_noresize_dialog.edc"
 	}
 
 	programs {
 		#include "border_dialog_programs.edc"
 	}
 }
-*/
-
-group {
-	name: "e/widgets/border/noresize_dialog/border";
-
-	data {
-		//item: "shaped" "0";
-	}
-
-	parts {
-		#include "border_sq_container.edc"
-		TB_TEXT()
-	}
-
-	programs {
-		#include "border_dialog_programs.edc"
-	}
-}
-
-/****************************************************/
 
 group {
 	name: "e/widgets/border/pixel/border";
-
-	data {
-		//item: "shaped" "0";
-	}
 
 	parts {
 		#include "border_pixel.edc"
@@ -217,55 +99,27 @@ group {
 	}
 
 	parts {
-		COLOR_CLIP()
 		#include "border_shaped.edc"
-		TB_TEXT()
 	}
 
 	programs {
 		#include "border_shaped_programs.edc"
 	}
 }
-
-/*
- * make e internal windows (config panel, dialogs, config windows etc.) 
- * use special border styles by default
- */
-
-/*
-group {
-	name: "e/widgets/border/squared_container/border";
-
-	data {
-		//item: "shaped" "0";
-	}
-
-	parts {
-		#include "border_sq_container.edc"
-		TB_TEXT()
-	}
-
-	programs {
-		#include "border_dialog_programs.edc"
-	}
-}
-*/
 
 group {
 	name: "e/widgets/border/terminal/border";
 
 	data {
-		item: "shaped" "1";
+		// item: "shaped" "0";
 	}
 
 	parts {
-		COLOR_CLIP()
 		#include "border_terminal.edc"
-		TB_TEXT()
 	}
 
 	programs {
-		#include "border_shaped_programs.edc"
+		#include "border_default_programs.edc"
 	}
 }
 
@@ -273,16 +127,38 @@ group {
 	name: "e/widgets/border/urgent/border";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
 	}
 
 	parts {
-		#include "border_urgent.edc"
-		TB_TEXT()
+		#include "border_dialog.edc"
 	}
 
 	programs {
-		#include "border_urgent_programs.edc"
+		#include "border_dialog_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/window_blend/border";
+
+	data {
+		item: "shaped" "0";
+	}
+
+	parts {
+
+/* i'm disabling this border style because in order to use it the dialog background
+ * image would required to be updated 
+
+		#include "border_blend.edc"
+ */
+
+		#include "border_noresizefull_dialog.edc"
+	}
+
+	programs {
+		#include "border_default_programs.edc"
 	}
 }
 

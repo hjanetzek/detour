@@ -63,14 +63,14 @@ group {
 		description {
 			state:  "default" 0.0;
 
-		r1 { offset: 4 4; }
-		r2 { offset: -5 -5; }
+		rel1 { offset: 4 4; }
+		rel2 { offset: -5 -5; }
 
-		text {
-			style:  "textblock_style";
-			min: 1 1;
+				text {
+					style:  "textblock_style";
+					min: 1 1;
+				}
+	    		}
 		}
-	    }
 	}
-    }
 }

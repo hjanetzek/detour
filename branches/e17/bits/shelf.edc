@@ -1,9 +1,16 @@
 
+/*
+ * TODO
+ * Do something with e,state,hidden|visible
+ */
+
 group {
 	name: "e/shelf/default/base";
 
 	data {
-		//item: "shaped" "0";
+		// item: "shaped" "0";
+		item: "hidden_state_size" "9";
+		// item: "instant_delay" "60.0";
 	}
 
 	parts {
@@ -31,12 +38,51 @@ group {
 	}
 }
 
-/*
+/**/
+
+group {
+	name: "e/shelf/alternate/base";
+
+	data {
+		item: "shaped" "1";
+		item: "hidden_state_size" "9";
+		// item: "instant_delay" "60.0";
+	}
+
+	parts {
+		#include "shelf_alternate_style.edc"
+	}
+
+	programs {
+		#include "shelf_alternate_programs.edc"
+	}
+}
+
+group {
+	name: "e/shelf/alternate/inset";
+
+	parts {
+		#include "shelf_alternate_inset.edc"
+	}
+}
+
+group {
+	name: "e/shelf/alternate/plain";
+
+	parts {
+		#include "shelf_default_plain.edc"
+	}
+}
+
+/**/
+
 group {
 	name: "e/shelf/invisible/base";
 	
 	data {
 		item: "shaped" "1";
+		item: "hidden_state_size" "9";
+		// item: "instant_delay" "60.0";
 	}
 
 	parts {
@@ -60,36 +106,3 @@ group {
 		#include "shelf_invisible_plain.edc"
 	}
 }
-
-group {
-	name: "e/shelf/gold/base";
-
-	data {
-		//item: "shaped" "0";
-	}
-
-	parts {
-		#include "shelf_base.edc"
-	}
-
-	programs {
-		#include "shelf_base_programs.edc"
-	}
-}
-
-group {
-	name: "e/shelf/gold/inset";
-
-	parts {
-		#include "shelf_invisible_inset.edc"
-	}
-}
-
-group {
-	name: "e/shelf/gold/plain";
-
-	parts {
-		#include "shelf_invisible_plain.edc"
-	}
-}
-*/

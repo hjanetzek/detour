@@ -27,19 +27,19 @@ program {
 }
 
 program {
-	name:    "hover_in";
-	signal:  "mouse,in";
-	source:  "over";
-	action:  STATE_SET "bigger" 0.0;
+	name: "hover_in";
+	signal: "mouse,in";
+	source: "over";
+	action: STATE_SET "bigger" 0.0;
 	transition: LINEAR 0.1;
-	target:  "e.swallow.content";
+	target: "e.swallow.content";
 }
 
 program {
-	name:    "hover_out";
-	signal:  "mouse,out";
-	source:  "over";
-	action:  STATE_SET "default" 0.0;
+	name: "hover_out";
+	signal: "mouse,out";
+	source: "over";
+	action: STATE_SET "default" 0.0;
 	transition: LINEAR 0.2;
-	target:  "e.swallow.content";
+	target: "e.swallow.content";
 }

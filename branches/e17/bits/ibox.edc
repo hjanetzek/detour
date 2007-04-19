@@ -3,8 +3,8 @@ group {
 	name: "e/modules/ibox/icon";
 
 	data {
-		item: "raise_on_hilight" "0"; // 1 boolean
-		//	 item: "item_list" "item item2 item3";
+		item: "raise_on_hilight" "0"; // boolean
+		// item: "item_list" "item item2 item3";
 	}
 
 	script {
@@ -44,9 +44,9 @@ group {
 			source: "e";
 			script {
 				if (get_int(urgent) == 1) {
-				run_program(PROGRAM:"go_urgent");
+					run_program(PROGRAM:"go_urgent");
+				}
 			}
-		    }
 		}
 
 		program {
@@ -84,7 +84,7 @@ group {
 			action: STATE_SET "visible" 0.0;
 			transition: LINEAR 0.1;
 			target: "label.clip";
-			//after: "hide_title";
+			// after: "hide_title";
 		}
 
 		program {
@@ -146,7 +146,4 @@ group {
 
 group {
 	name: "e/modules/ibox/drop_overlay";
-
-	parts {
-	}
 }

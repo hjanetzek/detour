@@ -8,15 +8,15 @@ part {
 		state: "default" 0.0;
 		min: 399 327;
 
-	image {
-		normal: "dialog_bg.png";
-		border: 2 2 2 2;
-	}
+		image {
+			normal: "dialog_bg.png";
+			border: 8 8 2 2;
+		}
 
-	fill { 
-		smooth: 0; 
+		fill { 
+			smooth: 0; 
+		}
 	}
-    }
 }
 
 part {
@@ -26,8 +26,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "base"; relative: 0.0 0.0; offset: 10 6; }
-	r2 { to: "button.area"; relative: 1.0 0.0; offset: -12 -10; }
+	rel1 { to: "base"; relative: 0.0 0.0; offset: 10 6; }
+	rel2 { to: "button.area"; relative: 1.0 0.0; offset: -12 -10; }
 	}
 }
 
@@ -40,8 +40,8 @@ part {
 		min: 299 30;
 		fixed: 1 1;
 
-	r1 { to: "base"; relative: 0.0 1.0; offset: 0 0; }
-	r2 { to: "base"; relative: 1.0 1.0; offset: 0 -41; }
+	rel1 { to: "base"; relative: 0.0 1.0; offset: 0 0; }
+	rel2 { to: "base"; relative: 1.0 1.0; offset: 0 -41; }
 
 	color: 255 0 0 0;
 	}
@@ -55,8 +55,8 @@ part {
 		state: "default" 0.0;
 		fixed: 1 1;
 
-	r1 { to: "button.area"; relative: 0.5 0.5; offset: 0 0; }
-	r2 { to: "button.area"; relative: 0.5 0.5; offset: 0 -5; }	
+	rel1 { to: "button.area"; relative: 0.5 0.5; offset: 0 0; }
+	rel2 { to: "button.area"; relative: 0.5 0.5; offset: 0 -5; }	
 
 	color: 0 0 0 0;       	    
 	}

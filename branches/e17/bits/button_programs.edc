@@ -146,8 +146,8 @@ program {
 		if (get_int(focus_activated) == 1) {
 		set_state(PART:"button_enabled", "hilited", 0.0);
 		set_state(PART:"e.text.label", "hilited", 0.0);
+		}
 	}
-    }
 }
 
 program {

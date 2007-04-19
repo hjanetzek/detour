@@ -16,22 +16,3 @@ program {
 	transition: DECELERATE 0.5;
 	target: "close-clip";
 }
-
-program {
-	name: "close_in";
-	signal: "mouse,in";
-	source: "button-close";
-	action: STATE_SET "hilited" 0.0;
-	transition: DECELERATE 0.15;
-	target: "button-close";
-	after: "close_out";
-}
-
-program {
-	name: "close_out";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.15;
-	target: "button-close";
-}

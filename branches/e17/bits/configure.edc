@@ -1,7 +1,6 @@
 
 group {
 	name: "e/widgets/configure/main";
-	//min: 299 341;
 	min: 399 327;
 	
 	parts {

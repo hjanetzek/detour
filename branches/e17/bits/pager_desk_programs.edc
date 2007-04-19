@@ -69,10 +69,8 @@ program {
 	source: "e";
 	action: STATE_SET "active" 0.0;
 	transition: ACCELERATE 0.5;
-	target: "lid.tl";
-	target: "lid.tr";
-	target: "lid.bl";
-	target: "lid.br";
+	target: "lid.l";
+	target: "lid.r";
 	target: "focus";
 }
 
@@ -82,9 +80,7 @@ program {
 	source: "e";
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
-	target: "lid.tl";
-	target: "lid.tr";
-	target: "lid.bl";
-	target: "lid.br";
+	target: "lid.l";
+	target: "lid.r";
 	target: "focus";
 }
