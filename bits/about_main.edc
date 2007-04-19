@@ -51,6 +51,26 @@ part {
 }
 
 part {
+	name: "watermark";
+	mouse_events:  0;
+
+	description {
+		state: "default" 0.0;
+		min: 200 138;
+		max: 200 138;
+		align: 1.0 1.0;
+		fixed: 1 1;
+
+	rel1 { relative: 1.0 1.0; offset: -1 -1; }
+	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+
+		image {
+			normal: "e17_dialog_watermark.png";
+		}
+	}
+}
+
+part {
 	name: "middle";
 	mouse_events: 0;
 	type: RECT;
