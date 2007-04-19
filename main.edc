@@ -1,16 +1,14 @@
 
-/* by cored.org et al
- * detour (seek) version 0.5.3 for Enlightenment 0.16.999.037 or later
+/* by cored.org et al (see AUTHORS)
+ * detour (seek) version 0.6.0 for Enlightenment 0.16.999.037 or later
  * */
 
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
-#define USE_CONTEXT_TITLE 0
+#define SEE_CONTEXT_MENUTITLE 0
+// USE_ALTERNATE_CLOCK 1
 
 /* Do not modify anything below unless you know what you are doing */
-#define r1 rel1
-#define r2 rel2
-
 #define BG_TYPE 0
 
 fonts {
@@ -64,6 +62,7 @@ collections {
 #include "bits/about_theme.edc"
 #include "bits/tclock.edc"
 #include "bits/ibox.edc"
+#include "bits/clock.edc"
 #include "bits/scrollframe.edc"
 #include "bits/ilist.edc"
 #include "bits/tlist.edc"
@@ -76,10 +75,9 @@ collections {
 #include "bits/exebuf.edc"
 #include "bits/deskpreview.edc"
 #include "bits/sys.edc"
+#include "bits/battery.edc"
+#include "bits/temperature.edc"
 //#include "bits/transitions.edc"
 //#include "bits/cpufreq.edc"
-//#include "bits/battery.edc"
-//#include "bits/clock.edc"
-//#include "bits/temperature.edc"
 //#include "gadman.edc" 
 }

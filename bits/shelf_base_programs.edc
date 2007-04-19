@@ -1,28 +1,4 @@
 
-      program {
-	 name:    "hide";
-	 signal:  "e,state,hidden";
-	 source:  "e";
-	 action:  STATE_SET "hidden" 0.0;
-	 transition: ACCELERATE 0.3;
-	 target:  "item_clip_bottom";
-	 target:  "item_clip_top";
-	 target:  "item_clip_left";
-	 target:  "item_clip_right";
-      }
-
-      program {
-	 name:    "show";
-	 signal:  "e,state,visible";
-	 source:  "e";
-	 transition: DECELERATE 0.3;
-	 action:  STATE_SET "default" 0.0;
-	 target:  "item_clip_bottom";
-	 target:  "item_clip_top";
-	 target:  "item_clip_left";
-	 target:  "item_clip_right";
-      }
-
 program {
 	name: "top";
 	signal: "e,state,orientation,top";

@@ -12,7 +12,7 @@ program {
 
 program {
 	name: "thumb_gen-"; 
-	signal:  "e,action,thumb,gen,alpha";
+	signal: "e,action,thumb,gen,alpha";
 	source: "e";
 	action: STATE_SET "default" 0.0;
 	target: "icon_box_shadow";

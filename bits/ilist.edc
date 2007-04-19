@@ -2,7 +2,6 @@
 # ifdef PROG
 #  undef PROG
 # endif
-
 #define PROG(NAME,SIGNAL,STATE) \
 program { \
 	name: NAME; \

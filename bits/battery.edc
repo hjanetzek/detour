@@ -1,0 +1,23 @@
+
+group {
+	name: "e/modules/battery/main";
+	max: 128 128;
+
+		script {
+			public message(Msg_Type:type, id, ...) {
+				if ((type == MSG_FLOAT) && (id == 1)) {
+				new Float:val;
+				val = getfarg(2);
+				set_state(PART:"battery", "default", val);
+				}
+			}
+		}
+
+	parts {
+		#include "battery_main.edc"
+	}
+
+	programs {
+		#include "battery_programs.edc"
+	}
+}

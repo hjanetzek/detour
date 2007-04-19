@@ -1,0 +1,46 @@
+
+group {
+	name: "e/modules/clock/main";
+
+	script {
+		public clock_cb(val) {
+		new buf[11];
+		new year, month, day, yearday, weekday, hour, minute;
+		new Float:second;
+		new v;
+
+		date(year, month, day, yearday, weekday, hour, minute, second);
+		v = round(second);
+		timer(1.0 - (second - v), "clock_cb", 1);
+		buf[0] = 0; 
+		if (v < 10) {snprintf(buf, 10, "0%i", v);}
+		else {snprintf(buf, 10, "%i", v);}
+		set_state(PART:"seconds", buf, 0.0);
+		v = minute;
+		buf[0] = 0; 
+		if (v < 10) {snprintf(buf, 10, "0%i", v);}
+		else {snprintf(buf, 10, "%i", v);}
+		set_state(PART:"minutes", buf, 0.0);
+		v = ((hour % 12) * 5) + ((minute * 5) / 60);
+		buf[0] = 0; 
+		if (v < 10) {snprintf(buf, 10, "0%i", v);}
+		else {snprintf(buf, 10, "%i", v);}
+		set_state(PART:"hour", buf, 0.0);
+		}
+	}
+
+	parts {
+		#include "clock_main.edc"
+	}
+
+	programs {
+		program {
+			name: "init";
+			signal: "load";
+			source: "";
+			script {
+				clock_cb(0);
+			}
+		}
+	}
+}

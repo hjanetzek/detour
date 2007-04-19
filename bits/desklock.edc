@@ -1,4 +1,49 @@
 
+# ifdef VERSION
+#  undef VERSION
+# endif
+#define version() \
+part { \
+	name: "text_version_clip"; \
+	type: RECT; \
+	mouse_events: 0; \
+\
+	description { \
+		state: "default" 0.0; \
+		color: 255 255 255 255; \
+	} \
+\
+	description { \
+		state: "default" 0.1; \
+		color: 255 255 255 0; \
+	} \
+} \
+part { \
+	name: "version"; \
+	type: TEXT; \
+	effect: SHADOW; \
+	mouse_events: 0; \
+	clip_to: "text_version_clip"; \
+\
+	description { \
+		state: "default" 0.0; \
+\
+	rel1 { to: "background_image"; relative: 1.0 1.0; offset: 0 0; } \
+	rel2 { to: "background_image"; relative: 0.9 1.0; offset: -1 -16; } \
+\
+	color: 255 255 255 255; \
+	color3: 7 7 7 128; \
+\
+		text { \
+			text: "detour 0.6.0 (seek)"; \
+			font: "Edje-Vera-Bold"; \
+			size: 10; \
+			min:  1 1; \
+			align: 0.5 0.5; \
+		} \
+	} \
+}
+
 group  {
 	name: "e/desklock/background";
 
@@ -7,6 +52,14 @@ group  {
 	}
 
 	programs {
+		program {
+			name: "show_version";
+			signal: "load";
+			source: "";
+			action: STATE_SET "default" 0.1;
+			transition: ACCELERATE 2.5;
+			target: "text_version_clip"; in: 25.0 0.0;
+		}
 	}
 }
 

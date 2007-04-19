@@ -7,8 +7,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 0.0 0.0;  offset: 0 0; }
-	r2 { relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { relative: 0.0 0.0;  offset: 0 0; }
+	rel2 { relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 104 108 111 255;
 	}
@@ -22,8 +22,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to_y: "base"; relative: 0.0 1.0; offset: 1 0; }
-	r2 { relative: 1.0  1.0; offset: -2 -2; }
+	rel1 { to_y: "base"; relative: 0.0 1.0; offset: 1 0; }
+	rel2 { relative: 1.0  1.0; offset: -2 -2; }
 
 	color: 104 108 111 255;
 	}
@@ -37,18 +37,18 @@ part {
 		state: "default" 0.0;
 		align: 0.5 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 1 1; }
-	r2 { relative: 1.0 1.0; offset: -2 -2; }
+	rel1 { relative: 0.0 0.0; offset: 1 1; }
+	rel2 { relative: 1.0 1.0; offset: -2 -2; }
 
-	image {
-		normal: "menu_bg.png";
-		border: 2 2 2 2;
-	}
+		image {
+			normal: "menu_bg.png";
+			border: 2 2 2 2;
+		}
 
-	fill {
-		smooth: 0;
+		fill {
+			smooth: 0;
+		}
 	}
-    }
 }
 
 
@@ -59,8 +59,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 7 -7; to_y: "e.swallow.list"; }
-	r2 { relative: 1.0 1.0; offset: -8 4; to_y: "e.swallow.list"; }
+	rel1 { to_y: "e.swallow.list"; relative: 0.0 0.0; offset: 7 -7; }
+	rel2 { to_y: "e.swallow.list"; relative: 1.0 1.0; offset: -8 4; }
 
 		image {
 			normal: "scrollframe_bg.png";
@@ -76,8 +76,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "list"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "list"; relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { to: "list"; relative: 0.0 0.0; offset: 0 0; }
+	rel2 { to: "list"; relative: 1.0 1.0; offset: -1 -1; }
 
 		image {
 			normal: "scrollframe_inset.png";
@@ -93,8 +93,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "list"; relative: 0.0 0.0; offset: -1 -1; }
-	r2 { to: "list"; relative: 1.0 1.0; offset: 0 -1; }
+	rel1 { to: "list"; relative: 0.0 0.0; offset: -1 -1; }
+	rel2 { to: "list"; relative: 1.0 1.0; offset: 0 -1; }
 
 	image.normal: "scrollframe_focus.png";
 	image.border: 7 7 7 7;
@@ -109,8 +109,8 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	r1 { relative: 0.0 0.0; offset: 5 -4; to_y: "e.swallow.list"; }
-	r2 { relative: 1.0 1.0; offset: -6 0; to_y: "e.swallow.list"; }
+	rel1 { to_y: "e.swallow.list"; relative: 0.0 0.0; offset: 5 -4; }
+	rel2 { to_y: "e.swallow.list"; relative: 1.0 1.0; offset: -6 0; }
 	}
 }
 
@@ -123,8 +123,8 @@ part {
 		state: "default" 0.0;
 		color: 0 0 0 0;
 
-	r1 { relative: 0.0 1.0; offset: 16 12; to_y: "e.text.title"; } 
-	r2 { relative: 1.0 0.0; offset: -17 -17;  to_y: "e.swallow.icon"; }
+	rel1 { to_y: "e.text.title"; relative: 0.0 1.0; offset: 16 12; } 
+	rel2 { to_y: "e.swallow.icon"; relative: 1.0 0.0; offset: -17 -17; }
 	}
 }
 
@@ -139,21 +139,21 @@ part {
 		align: 0.5 0.0;
 		fixed: 0 1;
 
-	r1 { relative: 0.0 0.0; offset: 16 10; }
-	r2 { relative: 1.0 0.0; offset: -17 10; }
+	rel1 { relative: 0.0 0.0; offset: 16 10; }
+	rel2 { relative: 1.0 0.0; offset: -17 10; }
 
 	color: 60 60 60 255;
 	color3: 170 168 169 128;
 
-	text {
-		text: "Title goes here";
-		font: "Edje-Vera-Bold";
-		size: 12;
-		min:  0 1;
-		align: 0.5 0.0;
-		 text_class: "winlist_title";	       
+		text {
+			text: "Title goes here";
+			font: "Edje-Vera-Bold";
+			size: 12;
+			min:  0 1;
+			align: 0.5 0.0;
+			 text_class: "winlist_title";	       
+		}
 	}
-    }
 }
 
 part {      
@@ -163,14 +163,14 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "e.swallow.icon"; relative: 0.0 0.0; offset: -8 -8; }
-	r2 { to: "e.swallow.icon"; relative: 1.0 1.0; offset: 7 7; }
+	rel1 { to: "e.swallow.icon"; relative: 0.0 0.0; offset: -8 -8; }
+	rel2 { to: "e.swallow.icon"; relative: 1.0 1.0; offset: 7 7; }
 
-	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
+		image {
+			normal: "entry.png";
+			border: 5 5 8 6;
+		}
 	}
-    }
 }
 
 part {
@@ -181,18 +181,18 @@ part {
 		state:  "default" 0.0;
 		max: 600 12;
 
-	r1 { relative: 0.0 1.0; offset: 0 -16; to_y: "e.text.label"; }
-	r2 { relative: 1.0 1.0; offset: 0 0; }
+	rel1 { relative: 0.0 1.0; offset: 0 -16; to_y: "e.text.label"; }
+	rel2 { relative: 1.0 1.0; offset: 0 0; }
 
-	image {
-		normal: "separator.png";
-		border: 0 0 4 0;
-	}
+		image {
+			normal: "separator.png";
+			border: 0 0 4 0;
+		}
 
-	fill {
-		smooth: 0;
+		fill {
+			smooth: 0;
+		}
 	}
-    }
 }
 
 part {   
@@ -201,21 +201,21 @@ part {
 
 	description {
 		state: "default" 0.0;
-		align: 0.5 1.0;
 		min: 22 22;
+		align: 0.5 1.0;
 
-	r1 { relative: 0.0 0.0; offset: 5 -3; to_y: "e.text.label"; }
-	r2 { relative: 1.0 1.0; offset: -6 3; to_y: "e.text.label"; }
+	rel1 { to_y: "e.text.label"; relative: 0.0 0.0; offset: 5 -3;}
+	rel2 { to_y: "e.text.label"; relative: 1.0 1.0; offset: -6 3; }
 
-	image {
-		normal: "entry.png";
-		border: 5 5 8 6;
+		image {
+			normal: "entry.png";
+			border: 5 5 8 6;
+		}
+
+		fill {
+			smooth: 0;
+		}
 	}
-
-	fill {
-		smooth: 0;
-	}
-    }
 }
 
 part {
@@ -228,20 +228,20 @@ part {
 		align: 0.5 1.0;
 		fixed: 0 1;
 
-	r1 { relative: 0.0 1.0; offset: 14 -23; }
-	r2 { relative: 1.0 1.0; offset: -15 -24; }
+	rel1 { relative: 0.0 1.0; offset: 14 -23; }
+	rel2 { relative: 1.0 1.0; offset: -15 -24; }
 
 	color: 60 60 60 255;
 
-	text {
-		text: "Title goes here";
-		font: "Edje-Vera";
-		size: 10;
-		min:  0 1;
-		align: 0.0 0.5;
-		text_class: "winlist_title";	       
+		text {
+			text: "Title goes here";
+			font: "Edje-Vera";
+			size: 10;
+			min:  0 1;
+			align: 0.0 0.5;
+			text_class: "winlist_title";	       
+		}
 	}
-    }
 }
 
 part {
@@ -250,14 +250,14 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 0 0 0 0;
-		aspect: 1.0 1.0;
-		align: 0.5 1.0;
 		min: 32 32;
 		fixed: 1 1;
+		aspect: 1.0 1.0;
+		align: 0.5 1.0;
 		aspect_preference: VERTICAL;
+		color: 0 0 0 0;
 
-	r1 { relative: 0.0 0.0; offset: 1 -12; to_y: "title_overlay";  }
-	r2 { relative: 1.0 0.0; offset: -2 -12; to_y: "title_overlay";}
+	rel1 { to_y: "title_overlay"; relative: 0.0 0.0; offset: 1 -12; }
+	rel2 { to_y: "title_overlay"; relative: 1.0 0.0; offset: -2 -12; }
 	}
 }

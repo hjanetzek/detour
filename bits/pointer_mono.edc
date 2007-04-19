@@ -7,10 +7,10 @@ part {
 	description {
 		state: "default" 0.0;
 
-	image {
-		normal: "cursor_mono.png";
+		image {
+			normal: "cursor_mono.png";
+		}
 	}
-    }
 }
 
 part {
@@ -21,7 +21,7 @@ part {
 		state: "default" 0.0;
 		visible: 0;
 
-	r1 { relative: 0.0 0.0; offset: 1 2; }
-	r2 { relative: 0.0 0.0; offset: 1 2; }
+	rel1 { relative: 0.0 0.0; offset: 1 2; }
+	rel2 { relative: 0.0 0.0; offset: 1 2; }
 	}
 }

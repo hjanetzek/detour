@@ -1,15 +1,24 @@
-detour 0.5.1
-
-Detour is is a graphical themed interface for the upcoming Enlightenment-DR17 desktop shell. Detour has been in the works since March of 2005, it began as a port of the Enlightenment-DR16 detroit theme. So many changes have occurred since, that it was no longer a port, rather it became a detour. 
-
---------------------------------------------------------------------------
+detour 0.6.0 (seek)
 
 This is an edje for the Enlightenment 0.17.0 Window Manager 
 currently in development. (http://enlightenment.org)
 
+Detour has been in the works since March of 2005. It began as a port of the Enlightenment-DR16 detroit theme. So many changes have occurred since, that it was no longer a port, rather it became a detour. 
+
 This project's website is: http://cored.org/prototype/detour/
 
-NOTES:
+NOTES: Textclasses for the titlebar and the menu labels have been explicitly disabled.
 
-Textclasses for the titlebar and the menu labels have been disabled.
-For more information visit http://cored.org/communicate/
+Detour has 4 build-time options available. Look at main.edc:6
+
+#define USE_ANIMATED_CURSOR (0/1)
+This options sets the whether or not you want the cursor to pulsate
+
+#define USE_TANGO_ICONS (0/1)
+You have the choice of using the default e17 icons or Tango icons
+
+#define SEE_CONTEXT_MENUTITLE (0/1)
+This options enables the context menu title
+
+#define USE_ALTERNATE_CLOCK (0/1)
+Allows you to chose between the default detour clock or the alternate one

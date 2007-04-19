@@ -2,96 +2,95 @@
 group {
 	name: "e/widgets/scrollframe";
 
-parts {
+	parts {
+		part {
+			name: "bg";
+			mouse_events: 0;
 
-	part {
-		name: "bg";
-		mouse_events: 0;
+			description {
+				state: "default" 0.0;
 
-		description {
-			state: "default" 0.0;
+			rel1 { offset: -1 3; }
+			rel2 { offset: -1 -3; }
 
-		r1 { offset: -1 3; }
-		r2 { offset: -1 -3; }
+				image {
+					normal: "scrollframe_bg.png";
+					border: 7 7 7 7;
+				}
 
-		image {
-		       normal: "scrollframe_bg.png";
-		       border: 7 7 7 7;
+				fill {
+					smooth: 0;
+				}
+			}
 		}
-
-		fill {
-			smooth: 0;
-		}
-	    }
-	}
 
 #include "scrollframe_main.edc"
 
-	part {
-		name: "border";
-		mouse_events: 0;
+			part {
+				name: "border";
+				mouse_events: 0;
 
-		description {
-			state: "default" 0.0;
+				description {
+					state: "default" 0.0;
 
-		r1 { offset: 0 4; }
-		r2 { offset: -2 -4; }
+				rel1 { offset: 0 4; }
+				rel2 { offset: -2 -4; }
 	
-		image {
-			normal: "scrollframe_inset.png";
-			border: 5 5 5 6;
-		}
-	    }
-	}
+					image {
+						normal: "scrollframe_inset.png";
+						border: 5 5 5 6;
+					}
+				}
+			}
 
 #include "scrollframe_vbar.edc"
 #include "scrollframe_hbar.edc"
 
-	part {
-		name: "focus_clip";
-		mouse_events: 0;
-		type: RECT;
+			part {
+				name: "focus_clip";
+				mouse_events: 0;
+				type: RECT;
 
-		description {
-			state: "default" 0.0;
-			color: 255 255 255 0;
+				description {
+					state: "default" 0.0;
+					color: 255 255 255 0;
 
-		r1.offset: -2 3;
-		r2.offset: 0 -3;
-		}
+				rel1.offset: -2 3;
+				rel2.offset: 0 -3;
+				}
 
-		description {
-			state: "focused" 0.0;
-			inherit: "default" 0.0;
-			color: 255 255 255 255;
-		}
-	}
+				description {
+					state: "focused" 0.0;
+					inherit: "default" 0.0;
+					color: 255 255 255 255;
+				}
+			}
 
-	part {
-		name: "focus";
-		mouse_events: 0;
-		clip_to: "focus_clip";
+			part {
+				name: "focus";
+				mouse_events: 0;
+				clip_to: "focus_clip";
 
-		description {
-			state: "default" 0.0;
+				description {
+					state: "default" 0.0;
 
-		r1.offset: -2 3;
-		r2.offset: 0 -3;
+				rel1.offset: -2 3;
+				rel2.offset: 0 -3;
 
-		image.normal: "scrollframe_focus.png";
-		image.border: 7 7 7 7;
-		}
-	}
-}
+					image.normal: "scrollframe_focus.png";
+					image.border: 7 7 7 7;
+					}
+				}
+			}
   
-programs {
-	#include "scrollframe_vbar_progs.edc"
-	#include "scrollframe_hbar_progs.edc"
+	programs {
+
+#include "scrollframe_vbar_progs.edc"
+#include "scrollframe_hbar_progs.edc"
 
 # ifdef FOCUS
 #  undef FOCUS
 # endif
-
 #define FOCUS(NAME,SIGNAL,STATE) \
 program { \
 	name: NAME; \
@@ -101,7 +100,6 @@ program { \
 	transition: DECELERATE 0.5; \
 	target: "focus_clip"; \
 }
-
 	FOCUS("focus_in", "e,state,focused", "focused")
 	FOCUS("focus_out", "e,state,unfocused", "default")
 	}

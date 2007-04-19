@@ -26,8 +26,8 @@ program {
 	script {
 		if (get_int(urgent) == 1) {
 		run_program(PROGRAM:"go_urgent");
+		}
 	}
-    }
 }
 
 program {
@@ -51,7 +51,7 @@ program {
 program {
 	name: "go_urgent";
 	signal: "e,state,urgent";
-	source:  "e";
+	source: "e";
 	action: STATE_SET "bigger" 0.0;
 	target: "item_clip";
 	after: "go_urgent2";
@@ -69,7 +69,7 @@ program {
 	 signal: "e,state,not_urgent";
 	 source: "e";
 	 script {
-	    set_int(urgent, 0);
+		set_int(urgent, 0);
 	 }
 }
 
