@@ -105,6 +105,7 @@ image: "entry_focus.png" COMP;
 // dialog
 image: "separator.png" COMP;
 image: "dialog_bg.png" COMP;
+image: "e17_dialog_watermark.png" COMP;
 
 // check
 image: "check.png" COMP;
