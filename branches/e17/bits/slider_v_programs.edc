@@ -2,7 +2,6 @@
 # ifdef PROG
 #  undef PROG
 # endif
-
 #define PROG(NAME,SIGNAL,SRC,ACT,TARGET)\
 program {\
 	name: NAME;\
@@ -18,7 +17,6 @@ PROG("slider+", "mouse,down,1", "slider_p2", DRAG_VAL_PAGE 0.0 1.0, "e.dragable.
 # ifdef PROG
 #  undef PROG
 # endif
-
 #define PROG(NAME,SIGNAL,SRC,ACT,TARGET)\
 program {\
 	name: NAME;\
@@ -34,7 +32,6 @@ PROG("up", "mouse,up,1", "e.dragable.slider", "default", "slider_image")
 # ifdef PROG
 #  undef PROG
 # endif
-
 #define PROG(NAME,SIGNAL,SRC,ACT,TARGET1,TARGET2,TARGET3)\
 program {\
 	name: NAME;\

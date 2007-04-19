@@ -23,10 +23,10 @@ part {
 	description { 
 		state: "default" 0.0; 
 
-	gradient {
-		spectrum: "background";
-	}
-    }
+		gradient {
+			spectrum: "background";
+		}
+    	}
 }
 #endif
 #endif

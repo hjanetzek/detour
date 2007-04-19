@@ -5,12 +5,12 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		visible: 0;
 		max: 9999 18;
 		color: 255 255 255 0;
+		visible: 0;
 
-	r1 { to_x: "e.swallow.icon"; relative: 1.0 0.0; offset: 4 -1; }
-	r2 { to_x: "type"; relative: 0.0  1.0; offset: -4 -1; }
+	rel1 { to_x: "e.swallow.icon"; relative: 1.0 0.0; offset: 4 -1; }
+	rel2 { to_x: "type"; relative: 0.0  1.0; offset: -4 -1; }
 
 	image.normal: "menu_select.png";
 	image.border: 5 5 5 5;
@@ -19,8 +19,8 @@ part {
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
-		visible:  1;
 		color: 255 255 255 255;
+		visible:  1;
 
 	image.normal: "menu_select.png";
 	image.border: 5 5 5 5;
@@ -38,42 +38,40 @@ part {
 		fixed: 1 1;
 		visible: 0;
 
-	r1 { relative: 0.0 0.0; offset: 0 6; }
-	r2 { relative: 0.0 0.0; offset: 0 6; }
+	rel1 { relative: 0.0 0.0; offset: 0 6; }
+	rel2 { relative: 0.0 0.0; offset: 0 6; }
 
-	text {
-		text_source:  "e.text.label";
-		source: "e.text.label";
-		min: 0 1;
-		text_class: "title_bar";
+		text {
+			text_source:  "e.text.label";
+			source: "e.text.label";
+			min: 0 1;
+			text_class: "title_bar";
+		}
 	}
-    }
 }
 
 part {
 	name: "e.text.label";
 	type: TEXT;
-	effect: SHADOW;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 1.0 0.0; offset: 9 6; to_x: "e.swallow.icon"; } 
-	r2 { relative: 0.0 1.0; offset: -8 -6; to_x: "type"; }
+	rel1 { to_x: "e.swallow.icon"; relative: 1.0 0.0; offset: 9 6; } 
+	rel2 { to_x: "type"; relative: 0.0 1.0; offset: -8 -6; }
 
 	color: 60 60 60 255;
-	color3: 0 0 0 0;
 
-	text {
-		text: "Item Label";
-		font: "Edje-Vera-Bold";
-		size: 10;
-		min: 0 1;
-		align: 0.0 0.5;
-		text_class: "winlist_title";	       
+		text {
+			text: "Item Label";
+			font: "Edje-Vera";
+			size: 10;
+			min: 0 1;
+			align: 0.0 0.5;
+			text_class: "winlist_title";	       
+		}
 	}
-}
 
 	description {
 		state: "active" 0.0;
@@ -94,8 +92,8 @@ part {
 		align: 0.0 0.5;
 		aspect_preference: VERTICAL;
 
-	r1 { relative: 0.0 0.0; offset: 1 1; }
-	r2 { relative: 0.0 1.0; offset: 1 4; to_y: "title2"; }
+	rel1 { relative: 0.0 0.0; offset: 1 1; }
+	rel2 { to_y: "title2"; relative: 0.0 1.0; offset: 1 4; }
 	}
 }
 
@@ -105,14 +103,14 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "type"; relative: 0.0 0.0; offset: 0 1; }
-	r2 { to: "type"; relative: 1.0 1.0; offset: 0 -1; }
+	rel1 { to: "type"; relative: 0.0 0.0; offset: 0 1; }
+	rel2 { to: "type"; relative: 1.0 1.0; offset: 0 -1; }
 
-	image {
-		normal: "pager_window_ds.png";
-		border: 3 3 3 3;
+		image {
+			normal: "pager_window_ds.png";
+			border: 3 3 3 3;
+		}
 	}
-    }
 }
 
 part {
@@ -125,44 +123,44 @@ part {
 		align: 1.0 0.5;
 		aspect_preference: VERTICAL;
 
-	r1 { relative: 1.0 0.0; offset: 1 1; }
-	r2 { to_y: "title2"; relative: 1.0 1.0; offset: -1 4; }
+	rel1 { relative: 1.0 0.0; offset: 1 1; }
+	rel2 { to_y: "title2"; relative: 1.0 1.0; offset: -1 4; }
 
-	image {
-		normal: "pager_window_winlist.png";
-		border: 6 13 7 5;
+		image {
+			normal: "pager_window_winlist.png";
+			border: 6 13 7 5;
+		}
 	}
-}
 
 	description {
 		state: "iconified" 0.0;
 		inherit: "default" 0.0;
 
-	image {
-		normal: "pager_window_iconified.png";
-		border: 23 4 26 3;
+		image {
+			normal: "pager_window_iconified.png";
+			border: 23 4 26 3;
+		}
 	}
-}
 
 	description {
 		state: "invisible" 0.0;
 		inherit: "default" 0.0;
 
-	image {
-		normal: "pager_desk.png";
-		border: 4 4 7 5;
+		image {
+			normal: "pager_desk.png";
+			border: 4 4 7 5;
+		}
 	}
-}
 
 	description {
 		state: "shaded" 0.0;
 		inherit: "default" 0.0;
 
-	image {
-		normal: "pager_window_shaded.png";
-		border: 6 13 7 5;
+		image {
+			normal: "pager_window_shaded.png";
+			border: 6 13 7 5;
+		}
 	}
-    }
 }
 
 part {
@@ -173,10 +171,10 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 14 14;
-		visible: 1;
 		color: 0 0 0 0;
+		visible: 1;
 
-	r1 { relative: 0.0 0.0; offset: 0 0; to: "e.text.label"; }
-	r2 { relative: 1.0 1.0; offset: -1 -1; to: "e.text.label"; }
+	rel1 { relative: 0.0 0.0; offset: 0 0; to: "e.text.label"; }
+	rel2 { relative: 1.0 1.0; offset: -1 -1; to: "e.text.label"; }
 	}
 }

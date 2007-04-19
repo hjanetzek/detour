@@ -25,9 +25,9 @@ group {
 	}
 
 	programs {
-#if USE_CONTEXT_TITLE == 0
+#if SEE_CONTEXT_MENUTITLE == 0
 #else
-#if USE_CONTEXT_TITLE == 1
+#if SEE_CONTEXT_MENUTITLE == 1
 		program {
 			name: "on";
 			signal: "e,action,show,title";

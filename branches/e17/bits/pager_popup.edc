@@ -7,8 +7,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 0 0; }
-	r2 { relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { relative: 0.0 0.0; offset: 0 0; }
+	rel2 { relative: 1.0 1.0; offset: -1 -1; }
 
 	color: 104 108 111 255;
 	}
@@ -21,18 +21,18 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to_y: "base2"; relative: 0.0 1.0; offset: 1 0; }
-	r2 { relative: 1.0 1.0; offset: -2 -2; }
+	rel1 { to_y: "base2"; relative: 0.0 1.0; offset: 1 0; }
+	rel2 { relative: 1.0 1.0; offset: -2 -2; }
 
-	image {
-		normal: "menu_bg.png";
-		border: 2 2 2 2;
-	}
+		image {
+			normal: "menu_bg.png";
+			border: 2 2 2 2;
+		}
 
-	fill {
-		smooth: 0;
+		fill {
+			smooth: 0;
+		}
 	}
-    }
 }
 
 part {
@@ -45,8 +45,8 @@ part {
 		max: 99999 0;
 		align: 0.5 0.0;
 
-	r1 { relative: 0.0 0.0; offset: 1 1; }
-	r2 { relative: 1.0 1.0; offset: -2 -2; }
+	rel1 { relative: 0.0 0.0; offset: 1 1; }
+	rel2 { relative: 1.0 1.0; offset: -2 -2; }
 
 	color: 0 0 0 0;
 	}
@@ -59,8 +59,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "title_overlay"; }
-	r2 { to: "title_overlay"; }
+	rel1 { to: "title_overlay"; }
+	rel2 { to: "title_overlay"; }
 
 	color: 0 0 0 0;
 	}
@@ -77,34 +77,34 @@ part {
 		align: 0.5 0.0;
 		fixed: 0 1;
 
-	r1 { relative: 0.0 0.0; offset: 26 24; }
-	r2 { relative: 1.0 0.0; offset: -26 24; }
+	rel1 { relative: 0.0 0.0; offset: 26 24; }
+	rel2 { relative: 1.0 0.0; offset: -26 24; }
 
 	color: 60 60 60 255;
 	color3: 170 168 169 128;
 
-	text {
-		text: "Title goes here";
-		font: "Edje-Vera-Bold";
-		size: 12;
-		min:  1 1;
-		align: 0.5 0.5;
-		text_class: "module_large_s";	       
+		text {
+			text: "Title goes here";
+			font: "Edje-Vera-Bold";
+			size: 12;
+			min:  1 1;
+			align: 0.5 0.5;
+			text_class: "module_large_s";	       
+		}
 	}
-    }
 }
 
 part {
-	 name: "title_overlay";
-	 mouse_events: 0;
+	name: "title_overlay";
+	mouse_events: 0;
 	type: RECT;
 
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 1.0;
+	description {
+		state: "default" 0.0;
+		align: 0.5 1.0;
 
-	r1 { to_y: "text"; relative: 0.0 0.0; offset: 16 -7; }
-	r2 { to_y: "text";  relative: 1.0 1.0; offset: -17 6; }
+	rel1{ to_y: "text"; relative: 0.0 0.0; offset: 16 -7; }
+	rel2 { to_y: "text";  relative: 1.0 1.0; offset: -17 6; }
 
 	color: 0 0 0 0;
 	}
@@ -118,8 +118,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "overlay"; }
-	r2 { to: "overlay"; }
+	rel1 { to: "overlay"; }
+	rel2 { to: "overlay"; }
 
 	color: 0 0 0 0;
 	}
@@ -133,8 +133,8 @@ part {
 	description {
 		state: "default" 0.0;
 	
-	r1 { to: "background"; offset: 4 4; }
-	r2 { to: "background"; offset: -5 -5; }
+	rel1 { to: "background"; offset: 4 4; }
+	rel2 { to: "background"; offset: -5 -5; }
 	
 	color: 255 255 255 255;
 	}
@@ -148,8 +148,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "overlay"; offset: 4 4; }
-	r2 { to: "overlay"; offset: -5 -5; }
+	rel1 { to: "overlay"; offset: 4 4; }
+	rel2 { to: "overlay"; offset: -5 -5; }
 
 	color: 0 0 0 0;
 	}
@@ -162,32 +162,29 @@ part {
 
 	description {
 		state:  "default" 0.0;
+		visible: 0;
 
-	r1 { to_y: "title_overlay"; relative: 0.0 1.0; offset: 16 6; }
-	r2 { relative: 1.0 1.0; offset: -17 -17; }
+	rel1 { to_y: "title_overlay"; relative: 0.0 1.0; offset: 16 6; }
+	rel2 { relative: 1.0 1.0; offset: -17 -17; }
 
-	color: 0 0 0 0;
+	color: 255 0 0 0;
 	}
 }
 
 part {
-	name: "separator";
+	name: "dot";
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		max: 608 12;
+		min: 11 11;
+		max: 11 11;
 
-	r1 { to: "pager"; relative: 0.0 1.0; offset: 0 0; }
-	r2 { to: "pager"; relative: 1.0 1.0; offset: 0 10; }
+	rel1 { to: "pager"; relative: 0.0 1.0; offset: 0 0; }
+	rel2 { to: "pager"; relative: 1.0 1.0; offset: 0 17; }
 
-	image {
-		normal: "separator.png";
-		border: 0 0 3 0;
-	}
-
-	fill {
-		smooth: 0;
-	}
-    }
+		image {
+			normal: "dot.png";
+		}
+    	}
 }

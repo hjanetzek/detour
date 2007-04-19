@@ -6,8 +6,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "e.swallow.content"; offset: 1 0; }
-	r2 { to: "e.swallow.content"; offset: -2 -2; }
+	rel1 { to: "e.swallow.content"; offset: 1 0; }
+	rel2 { to: "e.swallow.content"; offset: -2 -2; }
 	}
 }
   
@@ -19,8 +19,8 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "border"; offset: 0 1; }
-	r2 { to: "border"; offset: -1 -1; }
+	rel1 { to: "border"; offset: 0 1; }
+	rel2 { to: "border"; offset: -1 -1; }
 
 	color: 0 0 0 0;
 	}

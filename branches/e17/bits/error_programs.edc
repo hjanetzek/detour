@@ -19,6 +19,6 @@ program {
 }
 
 program {
-	name:   "emit.signal";
+	name: "emit.signal";
 	action: SIGNAL_EMIT "e,action,close" "";
 }

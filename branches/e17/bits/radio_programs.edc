@@ -4,7 +4,7 @@ program {
 	signal: "e,state,on";
 	source: "e";
 	action: STATE_SET "active" 0.0;
-	target:  "item1";
+	target: "item1";
 }
 
 program {
@@ -19,7 +19,7 @@ program {
 	name: "click";
 	signal: "mouse,down,1";
 	source: "event";
-	action:  SIGNAL_EMIT "e,action,toggle" "";
+	action: SIGNAL_EMIT "e,action,toggle" "";
 }
 
 program {

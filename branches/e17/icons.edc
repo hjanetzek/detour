@@ -27,7 +27,6 @@ image: "dialog-warning.png" COMP;
 image: "system-shutdown.png" COMP;
 image: "system-file-manager.png" COMP;
 image: "system-lock-screen.png" COMP;
-image: "start-here.png" COMP;
 image: "preferences-system-session.png" COMP;
 image: "system-search.png" COMP;
 image: "alacarte.png" COMP;
@@ -60,6 +59,8 @@ image: "application-x-executable.png" COMP;
 image: "text-x-generic.png" COMP;
 image: "preferences-desktop-peripherals.png" COMP;
 image: "applications-office.png" COMP;
+image: "gnome-devel.png" COMP;
+image: "image-loading.png" COMP;
 
 // hybrids
 image: "screen_normal.png" COMP;
@@ -70,8 +71,11 @@ image: "screen_hflip.png" COMP;
 image: "screen_vflip.png" COMP;
 image: "preferences-windows-list.png" COMP;
 image: "preferences-desktop-screensaver.png" COMP;
+image: "power-management.png" COMP;
+image: "applications-other2.png" COMP;
+image: "gnome-dev-keyboard-mouse.png" COMP;
 
-// gnome 2.16
+// gnome tango
 image: "gnome-session-reboot.png" COMP;
 image: "gnome-panel-window-list.png" COMP;
 image: "gnome-session-halt.png" COMP;
@@ -80,4 +84,3 @@ image: "gnome-session-logout.png" COMP;
 image: "gnome-session-suspend.png" COMP;
 image: "gnome-lost-window-menu.png" COMP;
 image: "gnome-run.png" COMP;
-image: "gnome-dev-keyboard.png" COMP;

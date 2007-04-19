@@ -8,8 +8,8 @@ part {
 		visible: 0;
 		min: 18 0;
 
-	r1 { offset: 1 0; }
-	r2 { to_x: "e.text.label"; offset: 1 -1; }
+	rel1 { offset: 1 0; }
+	rel2 { to_x: "e.text.label"; offset: 1 -1; }
 
 	image.normal: "menu_select.png";
 	image.border: 5 5 5 5;
@@ -37,22 +37,22 @@ part {
 		align: 0.0 0.5;
 		fixed: 1 1;
 
-	r1 { relative: 0.0 0.0; offset: 2 2; }
-	r2 { relative: 0.0 1.0; offset: 2 -3; }
+	rel1 { relative: 0.0 0.0; offset: 2 2; }
+	rel2 { relative: 0.0 1.0; offset: 2 -3; }
 
-	image {
-		normal: "check_base.png";
+		image {
+			normal: "check_base.png";
+		}
 	}
-}
 
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 
-	image {
-		normal: "check.png";
+		image {
+			normal: "check.png";
+		}
 	}
-    }
 }
       
 part {
@@ -62,22 +62,22 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; }
+	rel2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; }
 
-	image {
-		normal: "check_blank.png";
+		image {
+			normal: "check_blank.png";
+		}
 	}
-}
 
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 
-	image {
-		normal: "check_mark.png";
+		image {
+			normal: "check_mark.png";
+		}
 	}
-}
 
 	description {
 		state: "disabled" 0.0;
@@ -95,16 +95,16 @@ part {
 		state: "default" 0.0;
 		min: 16 16;
 
-	r1 { to_x: "outline"; relative: 1.0 0.0;  offset: 2 2; }
-	r2 { relative: 1.0 1.0; offset: -2 -2; } 
+	rel1 { to_x: "outline"; relative: 1.0 0.0;  offset: 2 2; }
+	rel2 { relative: 1.0 1.0; offset: -2 -2; } 
 	}
 
 	description {
 		state: "label_visible" 0.0;
 		min: 16 16;
 
-	r1 { to_x: "outline"; relative: 1.0 0.0; offset: 2 2; }
-	r2 { to_y: "e.text.label"; relative: 1.0 0.0; offset: -2 -2; }
+	rel1 { to_x: "outline"; relative: 1.0 0.0; offset: 2 2; }
+	rel2 { to_y: "e.text.label"; relative: 1.0 0.0; offset: -2 -2; }
 	}
 }
 
@@ -117,8 +117,8 @@ part {
 		state: "default" 0.0;
 		min: 16 16;
 
-	r1 { to: "e.swallow.icon"; }
-	r2 { to: "e.swallow.icon"; }
+	rel1 { to: "e.swallow.icon"; }
+	rel2 { to: "e.swallow.icon"; }
 
 	color: 255 255 255 255; 
 	}
@@ -139,20 +139,20 @@ part {
 		state: "default" 0.0;
 		min: 16 16;
 
-	r1 { to_x: "outline"; relative: 1.0 0.0; offset: 2 3; }
-	r2 { relative: 1.0 1.0; offset: -2 -2; }
+	rel1 { to_x: "outline"; relative: 1.0 0.0; offset: 2 3; }
+	rel2 { relative: 1.0 1.0; offset: -2 -2; }
 
 	color: 60 60 60 255;
 
-	text {
-		text: "Check Button";
-		font: "Edje-Vera";
-		size: 10;
-		min: 1 1;
-		align: 0.0 0.5;
-		text_class: "check_button";
+		text {
+			text: "Check Button";
+			font: "Edje-Vera";
+			size: 10;
+			min: 1 1;
+			align: 0.0 0.5;
+			text_class: "check_button";
+		}
 	}
-}
 
 	description {
 		state: "disabled" 0.0;
@@ -176,8 +176,8 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 0;
 
-	r1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; }
+	rel1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; }
+	rel2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; }
 	}
 
 	description {
