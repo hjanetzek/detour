@@ -85,7 +85,7 @@ part {
 }
 
 part {
-	name: "lid.l";
+	name: "overlay.left";
 	mouse_events: 0;
 	clip_to: "clip2";
 
@@ -96,7 +96,7 @@ part {
 	rel2 { to: "clip"; relative: 0.5 1.0; offset: 0 -1; }
 
 	image.normal: "pager_lid_l.png";
-	image.border: 2 1 2 2;
+	image.border: 2 2 2 2;
 	}
 
 	description {
@@ -109,7 +109,7 @@ part {
 }
 
 part {
-	name: "lid.r";
+	name: "overlay.right";
 	mouse_events: 0;
 	clip_to: "clip2";
 
@@ -120,7 +120,7 @@ part {
 	rel2 { to: "clip"; relative: 1.0 1.0; offset: 0 -1; }
 
 	image.normal: "pager_lid_r.png";
-	image.border: 1 1 2 1;
+	image.border: 2 2 2 2;
 	}
 
 	description {

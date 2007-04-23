@@ -6,6 +6,7 @@ program {
 	action: STATE_SET "label_visible" 0.0;
 	target: "e.swallow.icon";
 	target: "label_clip";
+	target: "focus";
 }
 
 program {

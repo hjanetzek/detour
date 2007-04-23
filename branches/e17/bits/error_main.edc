@@ -52,7 +52,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 8 8 8 8;
+			border: 5 5 8 6;
 		}
 	}
 }
