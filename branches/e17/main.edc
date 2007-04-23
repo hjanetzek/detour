@@ -6,7 +6,6 @@
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
 #define SEE_CONTEXT_MENUTITLE 0
-// USE_ALTERNATE_CLOCK 1
 
 /* Do not modify anything below unless you know what you are doing */
 #define BG_TYPE 0

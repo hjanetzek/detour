@@ -89,7 +89,7 @@ part {
 	
 		image {
 			normal: "entry.png";
-			border: 10 10 8 8;
+			border: 5 5 8 6;
 		}
 	}
 
@@ -102,7 +102,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 10 10 8 8;
+			border: 5 5 8 6;
 		}
 
 		fill {
@@ -151,7 +151,6 @@ part {
 		state: "default" 0.0;
 		color: 18 119 186 0;
 
-/* check */
 	rel2 { to: "e.dragable.slider"; relative: 0.0 1.0; offset: -1 -1; }
 	}
 }
@@ -159,7 +158,6 @@ part {
 part {
 	name: "runner_left";
 	mouse_events: 0;
-	clip_to: "clip";
 
 	description {
 		state: "default" 0.0;
@@ -201,7 +199,6 @@ part {
 part {
 	name: "runner_right";
 	mouse_events: 0;
-	clip_to: "clip";
 
 	description {
 		state: "default" 0.0;
@@ -310,11 +307,11 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 	}
 
 	description {
 		state: "disabled" 0.0;
-		inherit: "default" 0.0;
 		color: 255 255 255 128;
 	}
 }

@@ -7,14 +7,18 @@ part {
 	description { 
 		state: "default" 0.0; 
 
-	rel1 { to: "logo"; relative: 0.0 0.0; offset: -14 -13; }
+		rel1 { 
+			to: "icon"; 
+			relative: 0.0 0.0; 
+			offset: -14 -13; 
+		}
 
-	rel2 { 
-		to_x: "e.text.title"; 
-		to_y: "entry"; 
-		relative: 1.0 1.0; 
-		offset: 14 20; 
-	}
+		rel2 { 
+			to_x: "dot"; 
+			to_y: "icon"; 
+			relative: 1.0 1.0; 
+			offset: 14 10; 
+		}
 
 		image {
 			normal: "desklock_dialog_bg.png"; 
@@ -24,13 +28,14 @@ part {
 }
 
 part  {
-	name: "logo";
+	name: "icon";
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 		min: 48 48;
 		max: 48 48;
+		fixed: 1 1;
 
 		image {
 			normal: "system-lock-screen.png";
@@ -44,13 +49,21 @@ part {
 
 	description {
 		state: "default" 0.0;
-/* setting this to a fixed size is not a very good idea */
-		min: 182 21;
-		max: 182 21;
+		min: 265 21; /* setting this to a fixed size is not a very good idea */
+		max: 265 21;
 		fixed: 1 1;
 
-	rel1 { to: "logo"; relative: 1.0 0.3; offset: -8 -2; }
-	rel2 { to: "logo"; to_x: "dialog"; relative: 1.0 0.9; offset: -20 0; }
+		rel1 { 
+			to: "icon"; 
+			relative: 3.25 0.0; 
+			offset: 60 10; 
+		}
+
+		rel2 { 
+			to: "icon"; 
+			relative: 3.25 1.0; 
+			offset: -1 -1; 
+		}
 
 		image {
 			normal: "entry.png";
@@ -66,14 +79,22 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 60 60 60 255;
+		color3: 170 168 169 128;
 		fixed: 0 1;
 		align: 0.0 0.5;
 
-	rel1 { to: "logo"; relative: 1.0 0.0; offset: 6 8; }
-	rel2 { to: "logo"; relative: 1.0 0.3; offset: 0 0; }
+		rel1 { 
+			to: "icon"; 
+			relative: 1.0 0.0; 
+			offset: 6 8; 
+		}
 
-	color: 60 60 60 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			to: "icon"; 
+			relative: 1.0 0.3; 
+			offset: 0 0; 
+		}
 
 		text {
 			text: "Please enter your unlock password";
@@ -95,8 +116,17 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	rel1 { to: "entry"; relative: 0.0 0.0; offset: 6 5; }
-	rel2 { to: "entry"; relative: 1.0 1.0; offset: -4 -4; }
+		rel1 { 
+			to: "entry"; 
+			relative: 0.0 0.0; 
+			offset: 6 0; 
+		}
+		
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -107,13 +137,21 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 7 7 7 255;
 		fixed: 0 1;
 		align: 0.0 0.5;
 		  
-	rel1 { to: "entry_clip"; relative: 0.0 0.0; offset: 0 2; }
-	rel2 { to: "entry_clip"; relative: 0.0 1.0; offset: 0 0; }
-		  
-	color: 7 7 7 255;
+		rel1 { 
+			to: "entry_clip"; 
+			relative: 0.0 0.0; 	
+			offset: 0 2; 
+		}
+
+		rel2 { 
+			to: "entry_clip"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
 
 		text {
 			text: "****";
@@ -135,11 +173,19 @@ part {
 		state: "default" 0.0;
 		min: 1 9;
 		max: 1 9;
-		align: 0.0 0.5;
 		fixed: 1 1;
 
-	rel1 { to: "e.text.password"; relative: 1.0 0.0; offset: 0 -1; }
-	rel2 { to: "e.text.password"; relative: 1.0 0.9; offset: 0 -3; }
+		rel1 { 
+			to: "e.text.password"; 
+			relative: 1.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "e.text.password"; 
+			relative: 1.0 0.9; 
+			offset: 0 -1; 
+		}
 	}
 
 	description {
@@ -157,9 +203,19 @@ part {
 		state: "default" 0.0;
 		min: 11 11;
 		max: 11 11;
+		fixed: 1 1;
 
-	rel1 { to: "entry"; relative: 1.0 0.5; offset: 0 0; }
-	rel2 { to: "entry"; relative: 1.0 0.5; offset: 18 0; }
+		rel1 { 
+			to: "entry"; 
+			relative: 1.0 0.5; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 0.5; 
+			offset: 18 0; 
+		}
 
 		image {
 			normal: "dot.png";
