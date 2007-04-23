@@ -7,7 +7,12 @@ part {
 		state: "default" 0.0;
 		color: 138 171 225 229;
 
-	rel1 { offset: 0 0; }
-	rel2 { offset: 0 -2; }
+		rel1 { 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			offset: 0 -2; 
+		}
 	}
 }

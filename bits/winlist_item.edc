@@ -87,29 +87,14 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 0 0 0 0;
 		aspect: 1.0 1.0;
 		align: 0.0 0.5;
 		aspect_preference: VERTICAL;
 
-	rel1 { relative: 0.0 0.0; offset: 1 1; }
-	rel2 { to_y: "title2"; relative: 0.0 1.0; offset: 1 4; }
-	}
-}
+	rel1 { relative: 0.0 0.0; offset: 0 0; }
+	rel2 { to_x: "title2"; relative: 0.0 1.0; offset: -1 -1; }
 
-part {
-	name: "window_shadow";
-
-	description {
-		state: "default" 0.0;
-
-	rel1 { to: "type"; relative: 0.0 0.0; offset: 0 1; }
-	rel2 { to: "type"; relative: 1.0 1.0; offset: 0 -1; }
-
-		image {
-			normal: "pager_window_ds.png";
-			border: 3 3 3 3;
-		}
+	color: 0 0 0 0;
 	}
 }
 
