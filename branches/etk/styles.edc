@@ -18,7 +18,7 @@ styles
    /** Style for the label of a pressed button */
    STYLE("Button Pressed",
       "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
-      "color=#FFFFFFFF", /* Normal style */
+      "color=#3c3c3cFF style=shadow shadow_color=#AAA8A980", /* Normal style */
       "", "", "", "") /* Other styles */
    
    /** Style for the label of a disabled button */
@@ -30,7 +30,7 @@ styles
    /** Style for the label of a disabled toggled button */
    STYLE("Button Disabled Toggled",
       "Vera-Bold", "Vera-Bold", "Vera-Bold-Italic", "Vera-Bold-Italic", "Vera-Bold-Mono", "10",
-      "color=#4A5B7880", /* Normal style */
+      "color=#606060FF style=shadow shadow_color=#AAA8A980", /* Normal style */
       "", "", "", "") /* Other styles */
    
    /** Default style for the label of a check/radio button */
