@@ -71,17 +71,14 @@ part {
 		}
 
 		image {
-			normal: "radio1.png";
+			normal: "radio_blank.png";
 		}
 	}
 
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "radio0.png";
-		}
+		color: 255 255 255 128;
 	}
 }
       
@@ -106,7 +103,7 @@ part {
 		}
 
 		image {
-			normal: "radio2.png";
+			normal: "radio_check.png";
 		}
 	}
 

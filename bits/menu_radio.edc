@@ -8,11 +8,18 @@ part {
 		min: 20 18;
 		max: 20 18;
 
-	rel1 { relative: 0.0 0.0; offset: 0 1; }
-	rel2 { relative: 1.0 1.0; offset: -2 -2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
 
 		image {
-			normal: "radio1.png";
+			normal: "radio_outline.png";
 		}
 	}
 }
@@ -26,27 +33,30 @@ part {
 		state: "default" 0.0;
 		min: 20 18;
 		max: 20 18;
-		visible: 0;
 
-	rel1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; }
-	rel2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "outline"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "outline"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		image {
-			normal: "radio2.png";
+			normal: "radio_blank.png";
 		}
 	}
 
 	description {
 		state: "active" 0.0;
-		min: 20 18;
-		max: 20 18;
-		visible: 1;
-
-	rel1 { to: "outline"; relative: 0.0 0.0; offset: 0 0; }
-	rel2 { to: "outline"; relative: 1.0 1.0; offset: -1 -1; }
+		inherit: "default" 0.0;
 
 		image {
-			normal: "radio2.png";
+			normal: "radio_check.png";
 		}
 	}
 }

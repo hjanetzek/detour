@@ -9,13 +9,6 @@ group {
 	}
 
 	programs {
-		program {
-			name: "show_version";
-			signal: "load";
-			source: "";
-			action: STATE_SET "default" 0.1;
-			transition: ACCELERATE 2.5;
-			target: "text_version_clip"; in: 25.0 0.0;
-		}
+		show_version();
 	}
 }
