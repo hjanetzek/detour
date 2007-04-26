@@ -73,9 +73,9 @@ images {
    image: "progress_bar_left.png" COMP;
    image: "progress_bar_right.png" COMP;
    image: "progress_trough.png" COMP;
-   image: "radio_disabled.png" COMP;
-   image: "radio_off.png" COMP;
-   image: "radio_on.png" COMP;
+   image: "radio_outline.png" COMP;
+   image: "radio_blank.png" COMP;
+   image: "radio_check.png" COMP;
    image: "scrollbar_h_arrow_left.png" COMP;
    image: "scrollbar_h_arrow_right.png" COMP;
    image: "scrollbar_h_bar.png" COMP;
