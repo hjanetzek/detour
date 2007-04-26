@@ -58,6 +58,10 @@ program {
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
 	target: "outline";
+/* logic says we should also disable item1 but E expects the
+ * first option to be visible regardless of whether or not the
+ * the radio button is enabled or disabled 
+ */
 	target: "event";
 	target: "e.text.label";
 	target: "icon_clip";

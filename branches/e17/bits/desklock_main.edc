@@ -1,6 +1,6 @@
 
 part { 
-	name: "dialog";
+	name: "base";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -17,7 +17,7 @@ part {
 			to_x: "dot"; 
 			to_y: "icon"; 
 			relative: 1.0 1.0; 
-			offset: 14 10; 
+			offset: 16 10; 
 		}
 
 		image {
@@ -44,13 +44,38 @@ part  {
 }
 
 part {
+	name: "separator";
+	mouse_events: 0;
+	type: IMAGE;
+
+	description {
+		state: "default" 0.0;
+		min: 245 12;
+		max: 245 12;
+
+	rel1 { to: "entry"; relative: 0.0 1.0; offset: 0 0; }
+	rel2 { to: "entry"; relative: 1.0 1.0; offset: -1 0; }
+
+		image {
+			normal: "separator.png";
+			border: 0 0 4 0;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}
+
+part {
 	name: "entry";
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		min: 265 21; /* setting this to a fixed size is not a very good idea */
-		max: 265 21;
+/* setting this part to a fixed size is not a very good idea */
+		min: 251 21;
+		max: 251 21;
 		fixed: 1 1;
 
 		rel1 { 
@@ -62,7 +87,7 @@ part {
 		rel2 { 
 			to: "icon"; 
 			relative: 3.25 1.0; 
-			offset: -1 -1; 
+			offset: -18 -1; 
 		}
 
 		image {
