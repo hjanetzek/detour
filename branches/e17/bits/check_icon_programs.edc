@@ -4,7 +4,7 @@ program {
 	signal: "e,state,checked";
 	source: "e";
 	action: STATE_SET "active" 0.0;
-	target:  "item1";
+	target: "item1";
 }
 
 program {

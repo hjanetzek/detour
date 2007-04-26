@@ -48,8 +48,9 @@ program {
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
 	target: "outline";
-	target: "event";
+	target: "item1";
 	target: "e.text.label";
+	target: "event";
 }
 
 program {
@@ -58,6 +59,7 @@ program {
 	source: "e";
 	action: STATE_SET "default" 0.0;
 	target: "outline";
-	target: "event";
+	target: "item1";
 	target: "e.text.label";
+	target: "event";
 }

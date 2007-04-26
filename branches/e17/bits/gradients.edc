@@ -1,48 +1,12 @@
 
-spectrum {
-	name: "dialog";
-	color: 238 238 239 0 1; 
-	color: 209 210 210 0 1;
-}	
-
-spectrum {
-	name: "gradient";
-	color: 82 146 174 255 1; 
-	color: 42 108 158 255 1;
+spectrum { 
+	name: "backdrop"; 
+	color: 180 190 207 255 1; 
+	color: 84 86 86 255 1; 
 }
 
-spectrum {
-	name: "scrollbar_up";
-	color: 138 171 225 255 1;
-	color: 138 171 225 255 1;
-}
-
-spectrum {
-	name: "scrollbar_down";
-	color: 195 195 195 255 1;
-	color: 140 140 140 255 1;
-}
-
-spectrum {
-	name: "scrollbar_left";
-	color: 138 171 225 255 1;
-	color: 138 171 225 255 1;
-}
-
-spectrum {
-	name: "scrollbar_right";
-	color: 195 195 195 255 1;
-	color: 140 140 140 255 1;
-}
-
-spectrum {
-	name: "black_to_trans";
-	color: 0 0 0 255 1;
-	color: 0 0 0 0 1;
-}
-
-spectrum {
-	name: "background";
-	color: 165 165 165 255 1;
-	color: 44 44 44 255 1;
+spectrum { 
+	name: "backdrop_desaturated"; 
+	color: 188 188 188 255 1; 
+	color: 86 86 86 255 1; 
 }
