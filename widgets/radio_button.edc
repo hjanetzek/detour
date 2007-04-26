@@ -65,16 +65,13 @@ group {
                offset: 2 -3;
             }
             image {
-               normal: "radio_off.png";
+               normal: "radio_outline.png";
             }
          }
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
             color: 255 255 255 128;
-            image {
-               normal: "radio_disabled.png";
-            }
          }
       }
       part {
@@ -86,7 +83,6 @@ group {
             max: 20 18;
             align: 0.0 0.5;
             fixed: 1 1;
-            visible: 0;
             rel1 {
                to: "outline";
             }
@@ -94,13 +90,20 @@ group {
                to: "outline";
             }
             image {
-               normal: "radio_on.png";
+               normal: "radio_blank.png";
             }
          }
          description {
             state: "on" 0.0;
             inherit: "default" 0.0;
-            visible: 1;
+            image {
+               normal: "radio_check.png";
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
          }
       }
       part {
@@ -150,16 +153,18 @@ group {
          name: "radio_enable";
          signal: "etk,state,enabled";
          source: "etk";
-         action: STATE_SET "disabled" 0.0;
+         action: STATE_SET "enabled" 0.0;
          target: "outline";
+         target: "item1";
          target: "event";
       }
       program {
          name: "radio_disable";
          signal: "etk,state,disabled";
          source: "etk";
-         action: STATE_SET "default" 0.0;
+         action: STATE_SET "disabled" 0.0;
          target: "outline";
+         target: "item1";
          target: "event";
       }
    }

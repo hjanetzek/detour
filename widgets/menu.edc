@@ -385,21 +385,39 @@ group {
    name: "etk/menu/menu_item/radiobox";
    parts {
       part {
-         name: "radio";
+         name: "base";
          mouse_events: 0;
          description {
             state: "default" 0.0;
             min: 20 18;
             max: 20 18;
             image {
-               normal: "radio_off.png";
+               normal: "radio_outline.png";
+            }
+         }
+      }
+      part {
+         name: "radio";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 20 18;
+            max: 20 18;
+            rel1 {
+               to: "base";
+            }
+            rel2 {
+               to: "base";
+            }
+            image {
+               normal: "radio_blank.png";
             }
          }
          description {
             state: "on" 0.0;
             inherit: "default" 0.0;
             image {
-               normal: "radio_on.png";
+               normal: "radio_check.png";
             }
          }
       }
