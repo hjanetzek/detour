@@ -195,7 +195,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
-			text_class: "check_button";
+			// text_class: "check_button";
 		}
 	}
 
@@ -203,7 +203,6 @@ part {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 60 60 60 128;
-		color_class: "check_text_disabled";
 	}
 
 	description {

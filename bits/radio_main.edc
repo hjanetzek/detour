@@ -134,7 +134,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
-			text_class: "radio_button";
+			// text_class: "radio_button";
 		}
 	}
 
@@ -142,7 +142,6 @@ part {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 60 60 60 128;
-		color_class: "radio_text_disabled";
 	}
 
 	description {

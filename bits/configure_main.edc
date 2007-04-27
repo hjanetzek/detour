@@ -26,8 +26,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "base"; relative: 0.0 0.0; offset: 10 6; }
-	rel2 { to: "button.area"; relative: 1.0 0.0; offset: -12 -10; }
+		rel1 { 
+			to: "base"; 
+			relative: 0.0 0.0; 
+			offset: 10 6; 
+		}
+
+		rel2 { 
+			to: "button.area"; 
+			relative: 1.0 0.0;
+			offset: -12 -10; 
+		}
 	}
 }
 
@@ -38,12 +47,19 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 299 30;
-		fixed: 1 1;
+		color: 255 0 0 0;
 
-	rel1 { to: "base"; relative: 0.0 1.0; offset: 0 0; }
-	rel2 { to: "base"; relative: 1.0 1.0; offset: 0 -41; }
+		rel1 { 
+			to: "base"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
 
-	color: 255 0 0 0;
+		rel2 { 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: 0 -41; 
+		}
 	}
 }
 
@@ -53,11 +69,18 @@ part {
 
 	description {
 		state: "default" 0.0;
-		fixed: 1 1;
+		color: 0 0 0 0;  
 
-	rel1 { to: "button.area"; relative: 0.5 0.5; offset: 0 0; }
-	rel2 { to: "button.area"; relative: 0.5 0.5; offset: 0 -5; }	
+		rel1 { 
+			to: "button.area"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
 
-	color: 0 0 0 0;       	    
+		rel2 { 
+			to: "button.area"; 
+			relative: 0.5 0.5; 
+			offset: 0 -5; 
+		}	     	    
 	}
 }

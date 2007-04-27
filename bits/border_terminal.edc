@@ -11,11 +11,17 @@ part { \
 		state: "default" 0.0; \
 		min: 1 1; \
 		max: 1 9999; \
+		color: 104 108 111 255; \
 \
-	rel1 { relative: REL1; offset: OFF1; } \
-	rel2 { relative: REL2; offset: OFF2; } \
+		rel1 { \
+			relative: REL1; \
+			offset: OFF1; \
+		} \
 \
-	color: 104 108 111 255; \
+		rel2 { \
+			relative: REL2; \
+			offset: OFF2; \
+		} \
 	} \
 }
 
@@ -34,11 +40,19 @@ part {
 		state: "default" 0.0;
 		min: 1 1;
 		max: 9999 1;
+		color: 104 108 111 255;
 
-	rel1 { to: "bottom-left"; relative: 1.0 0.0; offset: 0 0; }
-	rel2 { to: "bottom-right"; relative: 0.0 0.0; offset: 0 0; }
+		rel1 { 
+			to: "bottom-left"; 
+			relative: 1.0 0.0; 
+			offset: 0 0; 
+		}
 
-	color: 104 108 111 255;
+		rel2 { 
+			to: "bottom-right"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 	}
 }
 

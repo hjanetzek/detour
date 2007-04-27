@@ -21,8 +21,15 @@ part {
 		aspect: 1 1;
 		aspect_preference: VERTICAL;
 
-	rel1 { relative: 0.0 0.0; offset: 4 4; }
-	rel2 { relative: 0.0 1.0; offset: 4 -5; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 4 4; 
+		}
+
+		rel2 { 
+			relative: 0.0 1.0; 
+			offset: 4 -5; 
+		}
 	}
 }
 
@@ -33,11 +40,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 
-	rel1 { to_x: "e.swallow.icon"; relative: 0.0 0.0; offset: 5 5; }
-	rel2 { offset: -6 -3; }
+		rel1 { 
+			to_x: "e.swallow.icon"; 
+			relative: 0.0 0.0; 
+			offset: 5 5; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			offset: -6 -3; 
+		}
 
 		text {
 			text: "ilist item";
@@ -45,7 +58,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0 0.5;
-			text_class: "ilist_header";
+			// text_class: "ilist_header";
 		}
 	}
 }

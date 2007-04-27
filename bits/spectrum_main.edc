@@ -8,11 +8,15 @@ part {
 		state: "default" 0.0;
 		min: 50 50;
 		aspect: 1 1;
+		color: 255 255 255 255;
 
-	rel1 { to: "overlay"; }
-	rel2 { to: "overlay"; }
+		rel1 { 
+			to: "overlay"; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "overlay"; 
+		}
  	}
 }
 
@@ -24,11 +28,17 @@ part {
 	description {
 		state: "default" 0.0;
 		aspect: 1 1;
+		color: 255 255 255 255;
 
-	rel1 { to: "background"; offset: 0 2; }
-	rel2 { to: "background"; offset: -2 -3; }
+		rel1 { 
+			to: "background"; 
+			offset: 0 2; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "background"; 
+			offset: -2 -3; 
+		}
 	}
 }
 
@@ -40,11 +50,15 @@ part {
 	description {
 		state: "default" 0.0;
 		aspect: 1 1;
+		color: 0 0 0 0;
 
-	rel1 { offset: 0 2; }
-	rel2 { offset: -2 -3; }
+		rel1 { 
+			offset: 0 2; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			offset: -2 -3; 
+		}
 	}
 }
 
@@ -65,8 +79,17 @@ part {
 		fixed: 1 1;
 		visible: 0;
 
-	rel1 { to: "e.swallow.content"; relative: 0.5 0.5; offset: 0 0; }
-	rel2 { to: "e.swallow.content"; relative: 0.5 0.5; offset: 0 0; }
+		rel1 { 
+			to: "e.swallow.content"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "e.swallow.content"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
 	}
 }
 
@@ -77,8 +100,15 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to_x: "e.dragable.cursor"; to_y: "e.swallow.content"; }
-	rel2 { to_x: "e.dragable.cursor"; to_y: "e.swallow.content"; }
+		rel1 { 
+			to_x: "e.dragable.cursor"; 
+			to_y: "e.swallow.content"; 
+		}
+
+		rel2 { 
+			to_x: "e.dragable.cursor"; 
+			to_y: "e.swallow.content"; 
+		}
 	}
 }
 
@@ -89,8 +119,15 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to_x: "e.swallow.content"; to_y: "e.dragable.cursor"; }
-	rel2 { to_x: "e.swallow.content"; to_y: "e.dragable.cursor"; }
+		rel1 { 
+			to_x: "e.swallow.content"; 
+			to_y: "e.dragable.cursor"; 
+		}
+
+		rel2 { 
+			to_x: "e.swallow.content"; 
+			to_y: "e.dragable.cursor"; 
+		}
 	}
 }
 

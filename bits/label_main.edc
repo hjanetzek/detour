@@ -6,11 +6,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 60 60 60 255;
 
-	rel1 { relative: 0.0 0.0; offset: 2 4; }
-	rel2 { relative: 1.0 1.0; offset: -3 -5; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 2 4; 
+		}
 
-	color: 60 60 60 255;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -3 -5; 
+		}
 
 		text {
 			text: "Label";
@@ -18,7 +24,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
-			text_class: "label";
+			// text_class: "label";
 		}
 	}
 }

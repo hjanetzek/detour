@@ -9,11 +9,19 @@ part {
 		color: 255 255 255 0;
 		visible: 0;
 
-	rel1 { to_x: "e.swallow.icons"; relative: 1.0 0.0; offset: 4 -1; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to_x: "e.swallow.icons"; 
+			relative: 1.0 0.0; 
+			offset: 4 -1; 
+		}
 
-	image.normal: "menu_select.png";
-	image.border: 5 5 5 5;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image.normal: "menu_select.png";
+		image.border: 5 5 5 5;
 	}
 
 	description {
@@ -22,8 +30,8 @@ part {
 		color: 255 255 255 255;
 		visible: 1;
 
-	image.normal: "menu_select.png";
-	image.border: 5 5 5 5;
+		image.normal: "menu_select.png";
+		image.border: 5 5 5 5;
 	}
 }
 
@@ -38,14 +46,21 @@ part {
 		fixed: 1 1;
 		visible: 0;
 
-	rel2 { relative: 0.0 0.0; offset: 0 6; }
-	rel2 { relative: 0.0 0.0; offset: 0 6; }
+		rel2 { 
+			relative: 0.0 0.0; 
+			offset: 0 6; 
+		}
+
+		rel2 { 
+			relative: 0.0 0.0; 
+			offset: 0 6; 
+		}
 
 		text {
 			text_source: "e.text.title";
 			source:  "e.text.title";
 			min: 0 1;
-			text_class: "title_bar";
+			// text_class: "title_bar";
 		}
 	}
 }
@@ -57,11 +72,18 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 60 60 60 255;
 	
-	rel1 { to_x: "e.swallow.icons"; relative: 1.0 0.0; offset: 9 6; }
-	rel2 { relative: 1.0 1.0; offset: -8 -6; }
+		rel1 {
+			to_x: "e.swallow.icons"; 
+			relative: 1.0 0.0; 
+			offset: 9 6; 
+		}
 
-	color: 60 60 60 255;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -8 -6; 
+		}
 
 		text {
 			text: "Item Label";
@@ -69,7 +91,7 @@ part {
 			size: 10;
 			min: 0 1;
 			align: 0.0 0.5;
-			text_class: "menu_item";
+			// text_class: "menu_item";
 		}
 	}
 
@@ -90,11 +112,18 @@ part {
 		aspect: 1.0 1.0;
 		align: 0.0 0.5;
 		aspect_preference: VERTICAL;
+		color: 0 0 0 0;
 
-	rel1 { relative: 0.0 0.0; offset: 1 1; }
-	rel2 { to_y: "title2"; relative: 0.0 1.0; offset: 1 8; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 1 1; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to_y: "title2"; 
+			relative: 0.0 1.0; 
+			offset: 1 8; 
+		}
 	}
 }
 
@@ -106,10 +135,18 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 14 14;
-		visible: 1;
 		color: 0 0 0 0;
+		visible: 1;
 
-	rel1 { to_x: "e.swallow.icons"; relative: 1.0 0.0; offset: 1 -1; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to_x: "e.swallow.icons"; 
+			relative: 1.0 0.0; 
+			offset: 1 -1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }

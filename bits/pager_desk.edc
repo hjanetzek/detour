@@ -8,8 +8,13 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 128;
 
-	rel1 { offset: 3 4; }
-	rel2 { offset: -3 -5; }
+		rel1 { 
+			offset: 3 4; 
+		}
+
+		rel2 { 
+			offset: -3 -5; 
+		}
 	}
 
 	description {
@@ -32,8 +37,13 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { offset: 1 1; }
-	rel2 { offset: 0 -1; }
+		rel1 { 
+			offset: 1 1; 
+		}
+
+		rel2 { 
+			offset: 0 -1; 
+		}
 
 		image {
 			normal: "entry.png";
@@ -59,11 +69,15 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { offset: 5 6; }
-	rel2 { offset: -7 -9; }
-	
-	color: 0 0 0 0;
+		rel1 { 
+			offset: 5 6; 
+		}
+
+		rel2 { 
+			offset: -7 -9; 
+		}
 	}
 }
 
@@ -76,11 +90,10 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	rel1.to: "overlay";
-	rel1.offset: 3 3;
- 
-	rel2.to: "overlay";
-	rel2.offset: -4 -5;
+		rel1.to: "overlay";
+		rel1.offset: 3 3;
+		rel2.to: "overlay";
+		rel2.offset: -4 -5;
 	}
 }
 
@@ -92,19 +105,37 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "clip"; relative: 0.0 0.0; offset: 0 0; }
-	rel2 { to: "clip"; relative: 0.5 1.0; offset: 0 -1; }
+		rel1 { 
+			to: "clip"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 
-	image.normal: "pager_lid_l.png";
-	image.border: 2 2 2 2;
+		rel2 { 
+			to: "clip"; 
+			relative: 0.5 1.0; 
+			offset: 0 -1; 
+		}
+
+		image.normal: "pager_lid_l.png";
+		image.border: 2 2 2 2;
 	}
 
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 
-	rel1 { to: "clip"; relative: -0.5 0.0; offset: 0 0; }
-	rel2 { to: "clip"; relative: 0.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "clip"; 
+			relative: -0.5 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "clip"; 
+			relative: 0.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -116,19 +147,37 @@ part {
 	description {
 		state: "default" 0.0;
 	
-	rel1 { to: "clip"; relative: 0.5 0.0; offset: 0 0; }
-	rel2 { to: "clip"; relative: 1.0 1.0; offset: 0 -1; }
+		rel1 { 
+			to: "clip"; 
+			relative: 0.5 0.0; 
+			offset: 0 0; 
+		}
 
-	image.normal: "pager_lid_r.png";
-	image.border: 2 2 2 2;
+		rel2 { 
+			to: "clip"; 
+			relative: 1.0 1.0; 
+			offset: 0 -1; 
+		}
+
+		image.normal: "pager_lid_r.png";
+		image.border: 2 2 2 2;
 	}
 
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 
-	rel1 { to: "clip"; relative: 1.0 0.0; offset: 0 0; }
-	rel2 { to: "clip"; relative: 1.5 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "clip"; 
+			relative: 1.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "clip"; 
+			relative: 1.5 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -140,8 +189,17 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 0;
 
-	rel1 { to: "overlay"; relative: 0.0 0.0; offset: -1 0; }
-	rel2 { to: "overlay"; relative: 1.0 1.0; offset: 0 0; }
+		rel1 { 
+			to: "overlay"; 
+			relative: 0.0 0.0; 
+			offset: -1 0; 
+		}
+
+		rel2 { 
+			to: "overlay"; 
+			relative: 1.0 1.0; 
+			offset: 0 0; 
+		}
 
 		image {
 			normal: "pager_focus.png";

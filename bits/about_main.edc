@@ -259,7 +259,7 @@ part {
 			size: 16;
 			min: 1 1;
 			align: 0.5 0.5;
-			text_class: "about_title";	       
+			// text_class: "about_title";	       
 		}
 	}
 }
@@ -295,7 +295,7 @@ part {
 			size: 12;
 			min: 1 1;
 			align: 0.5 0.5;
-			text_class: "about_version";	       
+			// text_class: "about_version";	       
 		}
 	}
 }
@@ -641,7 +641,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.55;
-			text_class: "button";
+			// text_class: "button";
 		}
 	}
 

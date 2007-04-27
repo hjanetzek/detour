@@ -6,8 +6,13 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { offset: 2 2; }
-	rel2 { offset: 0 -3; }
+		rel1 { 
+			offset: 2 2; 
+		}
+
+		rel2 { 
+			offset: 0 -3; 
+		}
 
 		image {
 		       normal: "scrollframe_bg.png";
@@ -29,8 +34,13 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	rel1 { to: "e.swallow.content"; }
-	rel2 { to: "e.swallow.content"; }
+		rel1 { 
+			to: "e.swallow.content"; 
+		}
+
+		rel2 { 
+			to: "e.swallow.content"; 
+		}
 	}
 }
 
@@ -43,8 +53,15 @@ part {
 		state: "default" 0.0;
 		color: 0 0 0 0;
 
-	rel1 { to: "bg"; offset: 3 3; }
-	rel2 { to: "bg"; offset: -4 -4; }
+		rel1 { 
+			to: "bg"; 
+			offset: 3 3; 
+		}
+
+		rel2 { 
+			to: "bg"; 
+			offset: -4 -4; 
+		}
 	}
 }
 
@@ -55,8 +72,15 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "bg"; offset: 2 1;}
-	rel2 { to: "bg"; offset: -3 -2;}
+		rel1 { 
+			to: "bg"; 
+			offset: 2 1;
+		}
+
+		rel2 { 
+			to: "bg"; 
+			offset: -3 -2;
+		}
 
 		image {	       
 			normal: "scrollframe_inset.png";

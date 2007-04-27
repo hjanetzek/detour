@@ -28,8 +28,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "entry"; relative: 0.0 0.0; offset: 6 6; }
-	rel2 { to: "entry"; relative: 1.0 1.0; offset: -7 -6; }
+		rel1 { 
+			to: "entry"; 
+			relative: 0.0 0.0; 
+			offset: 6 6; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 1.0; 
+			offset: -7 -6; 
+		}
 	}
 }
    

@@ -12,8 +12,17 @@ part { \
 		max: 20 18; \
 		fixed: 1 1; \
 \
-	rel1 { to: NAME"_bg"; relative: 0.0 0.0; offset: 0 0; } \
-	rel2 { to: NAME"_bg"; relative: 1.0 1.0; offset: -1 1; } \
+		rel1 { \
+			to: NAME"_bg"; \
+			relative: 0.0 0.0; \
+			offset: 0 0; \
+		} \
+\
+		rel2 { \
+			to: NAME"_bg"; \
+			relative: 1.0 1.0; \
+			offset: -1 1; \
+		} \
 \
 		image { \
 			normal: "bt.png"; \
@@ -36,8 +45,17 @@ part { \
 		max: 17 17; \
 		fixed: 1 1; \
 \
-	rel1 { to: NAME; relative: 0.0 0.0; offset: 0 0; } \
-	rel2 { to: NAME; relative: 1.0 1.0; offset: -1 -1; } \
+		rel1 { \
+			to: NAME; \
+			relative: 0.0 0.0; \
+			offset: 0 0; \
+		} \
+\
+		rel2 { \
+			to: NAME; \
+			relative: 1.0 1.0; \
+			offset: -1 -1; \
+		} \
 \
 		image { \
 			normal: "button_wm0.png"; \
@@ -55,8 +73,17 @@ part { \
 		max: 17 17; \
 		fixed: 1 1; \
 \
-	rel1 { to: NAME"_bg"; relative: 0.0 0.0; offset: 0 0; } \
-	rel2 { to: NAME"_bg"; relative: 1.0 1.0; offset: 0 -1; } \
+		rel1 { \
+			to: NAME"_bg"; \
+			relative: 0.0 0.0; \
+			offset: 0 0; \
+		} \
+\
+		rel2 { \
+			to: NAME"_bg"; \
+			relative: 1.0 1.0; \
+			offset: 0 -1; \
+		} \
 \
 		image { \
 			normal: "button_detail_"TYPE".png"; \
@@ -72,22 +99,21 @@ part { \
 		align: 1.0 0.0; \
 		aspect: 1.0 1.0; \
 		aspect_preference: VERTICAL; \
+		color: 0 0 0 0; \
 \
-	rel1 { \
-		relative: REL1X REL1Y; \
-		offset: OFF1X OFF1Y; \
-		to_x: TO1X; \
-		to_y: TO1Y; \
-	} \
+		rel1 { \
+			relative: REL1X REL1Y; \
+			offset: OFF1X OFF1Y; \
+			to_x: TO1X; \
+			to_y: TO1Y; \
+		} \
 \
-	rel2 { \
-		relative: REL2X REL2Y; \
-		offset: OFF2X OFF2Y; \
-		to_x: TO2X; \
-		to_y: TO2Y; \
-	} \
-\
-	color: 0 0 0 0; \
+		rel2 { \
+			relative: REL2X REL2Y; \
+			offset: OFF2X OFF2Y; \
+			to_x: TO2X; \
+			to_y: TO2Y; \
+		} \
 	} \
 } \
 part { \
@@ -99,8 +125,8 @@ part { \
 		state: "default" 0.0; \
 		color: 0 0 0 0; \
 \
-	rel1.to: NAME; \
-	rel2.to: NAME; \
+		rel1.to: NAME; \
+		rel2.to: NAME; \
 	} \
 } \
 
@@ -108,19 +134,27 @@ part { \
 group { \
 	name: "e/widgets/border/default/"TYPE; \
 \
-		parts { \
-			part { \
-				name: "whole"; \
-				type: RECT; \
+	parts { \
+		part { \
+			name: "whole"; \
+			type: RECT; \
 \
-				description { \
-					state: "default" 0.0; \
-					color: 255 0 0 0; \
+			description { \
+				state: "default" 0.0; \
+				color: 255 0 0 0; \
 \
-					rel1 { relative: 0.0 0.0; offset: 0 0; } \
-					rel2 { relative: 1.0 1.0; offset: -1 -1; } \
+				rel1 { \
+					relative: 0.0 0.0; \
+					offset: 0 0; \
+				} \
+\
+				rel2 { \
+					relative: 1.0 1.0; \
+					offset: -1 -1; \
 				} \
 			} \
-		BORDER_BUTTON("button",TYPE,0.0,0.0,-3,-3,"whole",1.0,1.0,2,2,"whole") \
+		} \
+	BORDER_BUTTON("button",TYPE,0.0,0.0,-3,-3,"whole",1.0,1.0,2,2,"whole") \
 	} \
 }
+

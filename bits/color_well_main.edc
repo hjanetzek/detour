@@ -9,8 +9,13 @@ part {
 		min: 50 50;
 		color: 255 255 255 255;
 
-	rel1 { to: "overlay"; }
-	rel2 { to: "overlay"; }
+		rel1 { 
+			to: "overlay"; 
+		}
+
+		rel2 { 
+			to: "overlay"; 
+		}
 	}
 }
 
@@ -21,11 +26,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 
-	rel1 { to: "background"; offset: 0 2; }
-	rel2 { to: "background"; offset: -2 -3; }
+		rel1 { 
+			to: "background"; 
+			offset: 0 2; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "background"; 
+			offset: -2 -3; 
+		}
 	}
 }
 
@@ -35,12 +46,16 @@ part {
 	clip_to: "content_clip";
 
 	description {
-		state: "default" 0.0; 
+		state: "default" 0.0;
+		color: 0 0 0 0; 
 
-	rel1 { offset: 0 2; }
-	rel2 { offset: -2 -3; }
+		rel1 { 
+			offset: 0 2; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			offset: -2 -3; 
+		}
 	}
 }
 

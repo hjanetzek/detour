@@ -6,8 +6,15 @@ part {
 	description {
 		state: "default" 0.0;
 	
-	rel1 { relative: 0.0 0.0; offset: 0 0; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	
 		image {
 			normal: "error-dialog_bg.png";
@@ -31,8 +38,15 @@ part {
 		max: 48 48;
 		fixed: 1 1;
 
-	rel1 { relative: 0.0 0.0; offset: 16 16; }
-	rel2 { relative: 0.0 0.0; offset: 80 80; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 16 16; 
+		}
+
+		rel2 { 
+			relative: 0.0 0.0; 
+			offset: 80 80; 
+		}
 
 		image {
 			normal: "dialog-error.png";
@@ -47,8 +61,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to_y: "error-icon"; relative: 0.0 1.0; offset: 16 16; }
-	rel2 { to_y: "button.area"; relative: 1.0  0.0; offset: -18 -17; }
+		rel1 { 
+			to_y: "error-icon"; 
+			relative: 0.0 1.0; 
+			offset: 16 16; 
+		}
+
+		rel2 { 
+			to_y: "button.area"; 
+			relative: 1.0 0.0; 
+			offset: -18 -17; 
+		}
 
 		image {
 			normal: "entry.png";
@@ -64,11 +87,19 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 60 60 60 255;
 
-	rel1 { to: "error-icon"; relative: 1.0 0.0; offset: 16 0; }
-	rel2 { to_y: "error-icon"; relative: 1.0 1.0; offset: -17 -1; }
+		rel1 { 
+			to: "error-icon"; 
+			relative: 1.0 0.0; 
+			offset: 16 0; 
+		}
 
-	color: 60 60 60 255;
+		rel2 { 
+			to_y: "error-icon"; 
+			relative: 1.0 1.0; 
+			offset: -17 -1; 
+		}
 
 		text {
 			text: "Title";
@@ -76,7 +107,7 @@ part {
 			size: 12;
 			min: 1 1;
 			align: 0.0 0.5;
-			text_class: "dialog_error";	       
+			// text_class: "dialog_error";	       
 		}
 	}
 }
@@ -89,8 +120,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "entry"; relative: 0.0 0.0; offset: 8 8; }
-	rel2 { to: "entry"; relative: 1.0 1.0; offset: -8 -8; }
+		rel1 { 
+			to: "entry"; 
+			relative: 0.0 0.0; 
+			offset: 8 8; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 1.0; 
+			offset: -8 -8; 
+		}
 
 		text {
 			style: "error_style";
@@ -109,21 +149,37 @@ part {
 		state: "default" 0.0;
 		color: 255 0 0 0;
 
-	rel1 { relative: 0.0 1.0; offset: 0 -45; }
-	rel2 { relative: 1.0 1.0; offset: -1 0; }
+		rel1 { 
+			relative: 0.0 1.0; 	
+			offset: 0 -45; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 0; 
+		}
 	}
 }
 
 part {
 	name: "separator";
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 		max: 333 12;
 
-	rel1 { to: "button.area"; relative: 0.0 0.0; offset: 0 -10; }
-	rel2 { to: "button.area"; relative: 1.0 0.0; offset: 0 0; }
+		rel1 { 
+			to: "button.area"; 
+			relative: 0.0 0.0; 
+			offset: 0 -10; 
+		}
+
+		rel2 { 
+			to: "button.area"; 
+			relative: 1.0 0.0; 
+			offset: 0 0; 
+		}
 
 		image {
 			normal: "separator.png";
@@ -147,11 +203,18 @@ part {
 		max: 98 26;
 		fixed: 1 1;
 
-	rel1 { to: "button.area"; offset: 0 0; }
-	rel2 { to: "button.area"; offset: 0 0; }	
+		rel1 { 
+			to: "button.area"; 
+			offset: 0 0; 
+		}
+		
+		rel2 { 
+			to: "button.area"; 
+			offset: 0 0; 
+		}
 
-	image.normal: "button_outline.png";
-	image.border: 7 7 7 7;
+		image.normal: "button_outline.png";
+		image.border: 7 7 7 7;
 	}
 
 	description {
@@ -175,8 +238,15 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	rel1 { to: "button_image"; offset: 6 1; }
-	rel2 { to: "button_image"; offset: -7 -2; }
+		rel1 { 
+			to: "button_image"; 
+			offset: 6 1; 
+		}
+
+		rel2 { 
+			to: "button_image";
+			offset: -7 -2; 
+		}
 	}
 
 	description {
@@ -206,11 +276,18 @@ part {
 		max: 86 24;
 		fixed: 1 1;
 
-	rel1 { to: "button_image"; offset: 6 1; }
-	rel2 { to: "button_image"; offset: -7 -2; }
+		rel1 { 
+			to: "button_image"; 
+			offset: 6 1; 
+		}
 
-	image.normal: "button.png";
-	image.border: 7 7 7 7;
+		rel2 { 
+			to: "button_image"; 
+			offset: -7 -2; 
+		}
+
+		image.normal: "button.png";
+		image.border: 7 7 7 7;
 	}
 
 	description {
@@ -233,12 +310,18 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 60 60 60 255;
+		color3: 170 168 169 128;
 
-	rel1 { to: "button_image"; offset: 6 1; }
-	rel2 { to: "button_image"; offset: -7 0; }
+		rel1 { 
+			to: "button_image"; 
+			offset: 6 1; 
+		}
 
-	color: 60 60 60 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			to: "button_image"; 
+			offset: -7 0; 
+		}
 
 		text {
 			text: "OK";
@@ -246,7 +329,7 @@ part {
 			size: 10;
 			min: 0 0;
 			align: 0.5 0.5;
-			text_class: "button";
+			// text_class: "button";
 		}
 	}
 }
