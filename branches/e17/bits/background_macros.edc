@@ -84,6 +84,6 @@ program { \
 	source: ""; \
 	action: STATE_SET "default" 0.1; \
 	transition: LINEAR 0.5; \
-	target: "text_version_clip"; in: 10.0 0.0; \
+	target: "text_version_clip"; in: 15.0 0.0; \
 }
 
