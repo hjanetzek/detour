@@ -6,8 +6,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "overlay"; relative: 0.0 0.0; offset: 0 0; }
-	rel2 { to: "overlay"; relative: 1.0 1.0; offset: 0 -1; }
+		rel1 { 
+			to: "overlay"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "overlay";
+			relative: 1.0 1.0; 
+			offset: 0 -1; 
+		}
 
 		image {
 			normal: "pager_window_ds.png";
@@ -22,8 +31,15 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { relative: 0.0 0.0; offset: -1 -1; }
-	rel2 { relative: 1.0 1.0; offset: 2 2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: -1 -1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: 2 2; 
+		}
 
 		image {
 			normal: "pager_window.png";
@@ -39,8 +55,15 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	rel1 { relative: 0.0 0.0; offset: -1 -1; }
-	rel2 { relative: 1.0 1.0; offset: 2 2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: -1 -1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: 2 2; 
+		}
 
 		image {
 			normal: "pager_window.png";
@@ -53,8 +76,13 @@ part {
 		inherit: "default" 0.0;
 		color: 255 255 255 0;
 
-	rel1 { relative: -0.5 -0.5; }
-	rel2 { relative: 1.5  1.5; }
+		rel1 { 
+			relative: -0.5 -0.5; 
+		}
+		
+		rel2 { 
+			relative: 1.5 1.5; 
+		}
 	}
 }
 
@@ -68,10 +96,16 @@ part {
 		max: 24 24;
 		aspect: 1.0 1.0;
 		aspect_preference: BOTH;
+		color: 0 0 0 0;
 
-	rel1 { to: "overlay"; offset: 1 6; }
-	rel2 { to: "overlay"; offset: -3 -3; }
+		rel1 { 
+			to: "overlay"; 
+			offset: 1 6; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "overlay"; 
+			offset: -3 -3; 
+		}
 	}
 }

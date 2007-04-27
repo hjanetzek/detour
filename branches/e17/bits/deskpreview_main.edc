@@ -6,8 +6,13 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { offset: 0 0; }
-	rel2 { offset: -4 -2; }
+		rel1 { 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			offset: -4 -2; 
+		}
 
 		image {
 			normal: "pager_desk.png";
@@ -27,11 +32,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 60 60 60 255;
 
-	rel1 { to: "bg"; offset: 4 5; }
-	rel2 { to: "bg"; offset: -5 -6; }
+		rel1 { 
+			to: "bg"; 
+			offset: 4 5; 
+		}
 
-	color: 60 60 60 255;
+		rel2 { 
+			to: "bg"; 
+			offset: -5 -6; 
+		}
 	}
 }
 
@@ -42,11 +53,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 
-	rel1 { to: "bg"; offset: 5 6; }
-	rel2 { to: "bg"; offset: -6 -7; }
-
-	color: 255 255 255 255;
+		rel1 { 
+			to: "bg"; 
+			offset: 5 6; 
+		}
+		
+		rel2 { 
+			to: "bg"; 
+			offset: -6 -7; 
+		}
 	}
 }
 
@@ -57,11 +74,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { to: "bg"; offset: 5 6; }
-	rel2 { to: "bg"; offset: -6 -7; }
+		rel1 { 
+			to: "bg"; 
+			offset: 5 6; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "bg"; 
+			offset: -6 -7; 
+		}
 	}
 }
 

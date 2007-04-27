@@ -15,8 +15,17 @@ part { \
 		min: 5 1; \
 		max: 5 9999; \
 \
-	rel1 { to: TO1; relative: REL1; offset: OFF1; } \
-	rel2 { to: TO2; relative: REL2; offset: OFF2; } \
+		rel1 { \
+			to: TO1; \
+			relative: REL1; \
+			offset: OFF1; \
+		} \
+\
+		rel2 { \
+			to: TO2; \
+			relative: REL2; \
+			offset: OFF2; \
+		} \
 \
 		image { \
 			normal: IMG; \
@@ -38,8 +47,17 @@ part { \
 		min: MIN; \
 		max: MAX; \
 \
-	rel1 { to: TO1; relative: REL1; offset: OFF1; } \
-	rel2 { to: TO2; relative: REL2; offset: OFF2; } \
+		rel1 { \
+			to: TO1; \
+			relative: REL1; \
+			offset: OFF1; \
+		} \
+\
+		rel2 { \
+			to: TO2; \
+			relative: REL2; \
+			offset: OFF2; \
+		} \
 \
 		image { \
 			normal: IMG1; \

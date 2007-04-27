@@ -149,7 +149,7 @@ group {
 	parts {
 
 /* i'm disabling this border style because in order to use it the dialog background
- * image would required to be updated 
+ * image would required modifications
 
 		#include "border_blend.edc"
  */

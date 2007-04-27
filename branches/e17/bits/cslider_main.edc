@@ -9,8 +9,13 @@ part {
 		min: 50 20;
 		color: 255 255 255 255;
 
-	rel1 { to: "overlay"; }
-	rel2 { to: "overlay"; }
+		rel1 { 
+			to: "overlay"; 
+		}
+
+		rel2 { 
+			to: "overlay"; 
+		}
 	}
 
 	description {
@@ -27,11 +32,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 		
-	rel1 { to: "background"; offset: 0 2; }
-	rel2 { to: "background"; offset: -2 -3; }
+		rel1 { 
+			to: "background"; 
+			offset: 0 2; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "background"; 
+			offset: -2 -3; 
+		}
 	}
 }
 
@@ -42,11 +53,15 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { offset: 0 2; }
-	rel2 { offset: -2 -3; }
+		rel1 { 
+			offset: 0 2; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			offset: -2 -3; 
+		}
 	}
 }
 
@@ -67,8 +82,17 @@ part {
 		max: 1 9999;
 		fixed: 1 1;
 
-	rel1 { to: "e.swallow.content"; relative: 0.5 0; offset: 0 0; }
-	rel2 { to: "e.swallow.content"; relative: 0.5 1; offset: 0 -1; }
+		rel1 { 
+			to: "e.swallow.content"; 
+			relative: 0.5 0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "e.swallow.content"; 
+			relative: 0.5 1; 
+			offset: 0 -1; 
+		}
 	}
 	
 	description {
@@ -77,8 +101,17 @@ part {
 		max: 9999 1;
 		fixed: 1 1;
 
-	rel1 { to: "e.swallow.content"; relative: 0 0.5 ; offset: 0 0; }
-	rel2 { to: "e.swallow.content"; relative: 1 0.5; offset: -1 0; }
+		rel1 { 
+			to: "e.swallow.content"; 
+			relative: 0 0.5 ; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "e.swallow.content"; 
+			relative: 1 0.5; 
+			offset: -1 0; 
+		}
 	}
 }
 

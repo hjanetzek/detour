@@ -9,8 +9,15 @@ part {
 		aspect: 1.0 1.0;
 		align: 0.5 0.0;
 
-	rel1 { relative: 0.0 0.0; offset: 2 2; } 
-	rel2 { relative: 1.0 1.0; offset: -3 -2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 2 2; 
+		} 
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -3 -2; 
+		}
 
 		image {
 			normal: "temperature-base.png";
@@ -28,21 +35,29 @@ part {
 		state: "default" 0.0;
 		aspect: 1.0 1.0;
 		align: 0.5 0.0;
+		color: 255 255 255 229;
 
-	rel1 { to: "temperature_base"; relative: 0.0 0.0; offset: -1 1; } 
-	rel2 { to: "temperature_base"; relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "temperature_base"; 
+			relative: 0.0 0.0; 
+			offset: -1 1; 
+		} 
+
+		rel2 { 
+			to: "temperature_base"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		image {
 			normal: "temperature-0.png";
 			border: 4 2 4 4;
 		}
-	color: 255 255 255 229;
 	}
 
 # ifdef DESCR
 #  undef DESCR
 # endif
-
 #define DESCR(STATE,IMG) \
 	description { \
 		state: "default" STATE; \
@@ -52,11 +67,11 @@ part {
 			normal: IMG; \
 		} \
 	}
-DESCR(0.2, "temperature-20.png")
-DESCR(0.4, "temperature-40.png")
-DESCR(0.6, "temperature-60.png")
-DESCR(0.8, "temperature-80.png")
-DESCR(1.0, "temperature-100.png")
+	DESCR(0.2, "temperature-20.png")
+	DESCR(0.4, "temperature-40.png")
+	DESCR(0.6, "temperature-60.png")
+	DESCR(0.8, "temperature-80.png")
+	DESCR(1.0, "temperature-100.png")
 }
 
 part {
@@ -68,12 +83,18 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.0;
+		color: 7 7 7 255;
+		color3: 170 168 169 128;
 
-	rel1 { to_x: "temperature"; relative: 0.5 0.5; offset: 2 -3; }
-	rel2 { relative: 0.5 0.0; }
+		rel1 { 
+			to_x: "temperature"; 
+			relative: 0.5 0.5; 
+			offset: 2 -3; 
+		}
 
-	color: 7 7 7 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			relative: 0.5 0.0; 
+		}
 
 		text {
 			text: "99^C";
@@ -81,7 +102,7 @@ part {
 			size: 9;
 			min: 1 1;
 			align: 0.0 0.0;
-			text_class: "module_small";	       
+			// text_class: "module_small";	       
 		}
 	}
 }

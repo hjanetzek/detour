@@ -6,11 +6,17 @@ part {
 	
 	description {
 		state: "default" 0.0;
+		color: 104 108 111 255;
 
-	rel1 { relative: 0.0 0.0; offset: 0 0; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 
-	color: 104 108 111 255;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -21,8 +27,16 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to_y: "base2"; relative: 0.0 1.0; offset: 1 0; }
-	rel2 { relative: 1.0 1.0; offset: -2 -2; }
+		rel1 { 
+			to_y: "base2"; 
+			relative: 0.0 1.0; 
+			offset: 1 0; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
 
 		image {
 			normal: "menu_bg.png";
@@ -44,11 +58,17 @@ part {
 		state: "default" 0.0;
 		max: 99999 0;
 		align: 0.5 0.0;
+		color: 0 0 0 0;
 
-	rel1 { relative: 0.0 0.0; offset: 1 1; }
-	rel2 { relative: 1.0 1.0; offset: -2 -2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 1 1; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
 	}
 }
 
@@ -58,11 +78,15 @@ part {
 	
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { to: "title_overlay"; }
-	rel2 { to: "title_overlay"; }
+		rel1 { 
+			to: "title_overlay"; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "title_overlay"; 
+		}
 	}
 }
 
@@ -76,12 +100,18 @@ part {
 		state: "default" 0.0;
 		align: 0.5 0.0;
 		fixed: 0 1;
+		color: 60 60 60 255;
+		color3: 170 168 169 128;
 
-	rel1 { relative: 0.0 0.0; offset: 26 24; }
-	rel2 { relative: 1.0 0.0; offset: -26 24; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 26 24; 
+		}
 
-	color: 60 60 60 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			relative: 1.0 0.0; 
+			offset: -26 24; 
+		}
 
 		text {
 			text: "Title goes here";
@@ -89,7 +119,7 @@ part {
 			size: 12;
 			min:  1 1;
 			align: 0.5 0.5;
-			text_class: "module_large_s";	       
+			// text_class: "module_large_s";	       
 		}
 	}
 }
@@ -102,11 +132,19 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 1.0;
+		color: 0 0 0 0;
 
-	rel1{ to_y: "text"; relative: 0.0 0.0; offset: 16 -7; }
-	rel2 { to_y: "text";  relative: 1.0 1.0; offset: -17 6; }
+		rel1{
+			to_y: "text"; 
+			relative: 0.0 0.0; 
+			offset: 16 -7; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to_y: "text";
+			relative: 1.0 1.0; 
+			offset: -17 6; 
+		}
 	}
 }
 
@@ -117,11 +155,15 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { to: "overlay"; }
-	rel2 { to: "overlay"; }
+		rel1 { 
+			to: "overlay"; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "overlay"; 
+		}
 	}
 }
 
@@ -132,11 +174,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 	
-	rel1 { to: "background"; offset: 4 4; }
-	rel2 { to: "background"; offset: -5 -5; }
-	
-	color: 255 255 255 255;
+		rel1 {
+			to: "background"; 
+			offset: 4 4; 
+		}
+
+		rel2 { 
+			to: "background"; 
+			offset: -5 -5; 
+		}
 	}
 }
 
@@ -147,11 +195,17 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { to: "overlay"; offset: 4 4; }
-	rel2 { to: "overlay"; offset: -5 -5; }
+		rel1 { 
+			to: "overlay"; 
+			offset: 4 4; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "overlay"; 
+			offset: -5 -5; 
+		}
 	}
 }
 
@@ -162,12 +216,19 @@ part {
 
 	description {
 		state:  "default" 0.0;
+		color: 255 0 0 0;
 		visible: 0;
 
-	rel1 { to_y: "title_overlay"; relative: 0.0 1.0; offset: 16 6; }
-	rel2 { relative: 1.0 1.0; offset: -17 -17; }
+		rel1 { 
+			to_y: "title_overlay"; 
+			relative: 0.0 1.0; 
+			offset: 16 6; 
+		}
 
-	color: 255 0 0 0;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -17 -17; 
+		}
 	}
 }
 
@@ -180,8 +241,17 @@ part {
 		min: 11 11;
 		max: 11 11;
 
-	rel1 { to: "pager"; relative: 0.0 1.0; offset: 0 0; }
-	rel2 { to: "pager"; relative: 1.0 1.0; offset: 0 17; }
+		rel1 { 
+			to: "pager"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "pager"; 
+			relative: 1.0 1.0; 
+			offset: 0 17; 
+		}
 
 		image {
 			normal: "dot.png";
