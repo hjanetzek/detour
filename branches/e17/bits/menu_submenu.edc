@@ -8,23 +8,28 @@ part {
 		min: 10 11;
 		max: 10 11;
 
-	rel2 { relative: 0.0 0.0; offset: 2 0; } 
-	rel2 { relative: 1.0 1.0; offset: -3 -1; }
+		rel2 { 
+			relative: 0.0 0.0; 
+			offset: 2 0; 
+		} 
 
-	image.normal: "arrow_dark.png";
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -3 -1; 
+		}
+
+		image.normal: "arrow_dark.png";
 	}
 
 	description {
         	state: "active" 0.0;
 		inherit: "default" 0.0;
-
-        image.normal: "arrow_light.png";
+	        image.normal: "arrow_light.png";
 	}
 
 	description {
         	state: "hidden" 0.0;
 		inherit: "default" 0.0;
-
-	image.normal: "arrow_blank.png";
+		image.normal: "arrow_blank.png";
 	}
 } 

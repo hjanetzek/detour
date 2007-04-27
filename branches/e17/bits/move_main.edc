@@ -6,8 +6,15 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { relative: 0.0 0.0; offset: 0 0; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		image { 
 			normal: "resize-dialog_bg.png"; 
@@ -27,8 +34,15 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { relative: 0.0 0.0; offset: 5 7.5; }
-	rel2 { relative: 1.0 1.0; offset: -5 -7.5; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 5 7.5; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -5 -7.5; 
+		}
 
 		text {
 			style: "move";

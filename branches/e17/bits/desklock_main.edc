@@ -53,8 +53,17 @@ part {
 		min: 245 12;
 		max: 245 12;
 
-	rel1 { to: "entry"; relative: 0.0 1.0; offset: 0 0; }
-	rel2 { to: "entry"; relative: 1.0 1.0; offset: -1 0; }
+		rel1 { 
+			to: "entry"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 1.0; 
+			offset: -1 0; 
+		}
 
 		image {
 			normal: "separator.png";
@@ -127,7 +136,7 @@ part {
 			size: 10;
 			align: 0.0 0.5;
 			min: 1 1;
-			text_class: "desklock_title";	
+			// text_class: "desklock_title";	
 		}
     	}
 }
@@ -184,7 +193,7 @@ part {
 			size: 11;
 			align: 0.0 0.5;
 			min: 1 1;
-			text_class: "desklock_passwd"; 
+			// text_class: "desklock_passwd"; 
 		}
 	}
 }

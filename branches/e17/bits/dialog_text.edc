@@ -7,8 +7,13 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { offset: 8 15; }
-	rel2 { offset: -9 0; }
+		rel1 { 
+			offset: 8 15; 
+		}
+
+		rel2 { 
+			offset: -9 0; 
+		}
 
 		text {
 			style: "dialog_style";

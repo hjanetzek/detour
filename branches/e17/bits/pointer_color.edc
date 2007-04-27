@@ -18,8 +18,13 @@ part {
 	description {
 		state: "default" 0.0;
 
-	rel1 { to: "base"; }
-	rel2 { to: "base"; }
+		rel1 { 
+			to: "base"; 
+		}
+
+		rel2 { 
+			to: "base"; 
+		}
 
 		image {
 			normal: "cursor.png";
@@ -39,8 +44,13 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 255;
 
-	rel1 { to: "base"; }
-	rel2 { to: "base"; }
+		rel1 { 
+			to: "base"; 
+		}
+
+		rel2 { 
+			to: "base"; 
+		}
 
 		image {
 			normal: "cursor.png";
@@ -51,8 +61,15 @@ part {
 		state: "pulsate" 0.0;
 		color: 255 255 255 0;
 
-	rel1 { to: "base"; relative: -0.5 -0.5; }
-	rel2 { to: "base"; relative: 1.5 1.5; }
+		rel1 { 
+			to: "base"; 
+			relative: -0.5 -0.5; 
+		}
+
+		rel2 { 
+			to: "base"; 
+			relative: 1.5 1.5; 
+		}
 
 		image {
 			normal: "cursor2.png";
@@ -69,10 +86,16 @@ part {
 	description {
 		state: "default" 0.0;
 		visible: 0;
+		color: 0 0 0 0;
 
-	rel1 { relative: 0.36 0.16; offset: 0 0; }
-	rel2 { relative: 0.36 0.16; offset: 0 0; }
+		rel1 { 
+			relative: 0.36 0.16; 
+			offset: 0 0;
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			relative: 0.36 0.16; 
+			offset: 0 0; 
+		}
 	}
 }

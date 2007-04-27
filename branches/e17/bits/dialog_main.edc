@@ -6,8 +6,15 @@ part {
 	description {
 		state: "default" 0.0;
 	
-	rel1 { relative: 0.0 0.0; offset: 0 0; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	
 		image {
 			normal: "dialog_bg.png";
@@ -28,11 +35,18 @@ part {
 		state: "default" 0.0;
 		align: 0.0 0.5;
 		fixed: 1 0;
+		color: 0 0 0 0;
 
-	rel1 { relative: 0.0 0.0; offset: 5 7; }
-	rel2 { to_y: "e.swallow.buttons"; relative: 0.0 0.0; offset: 6 -15; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 5 7; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to_y: "e.swallow.buttons"; 
+			relative: 0.0 0.0; 
+			offset: 6 -15; 
+		}
 	}
 }
 
@@ -42,11 +56,19 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { to_x: "e.swallow.icon"; relative: 1 0; offset: 0 7; }
-	rel2 { to_y: "separator"; relative: 1 0; offset: -8 -7; }
+		rel1 { 
+			to_x: "e.swallow.icon"; 
+			relative: 1 0; 
+			offset: 0 7; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to_y: "separator"; 
+			relative: 1 0; 
+			offset: -8 -7; 
+		}
 	}
 }
 
@@ -60,8 +82,17 @@ part {
 		max: 99 1;
 		color: 255 0 0 0;
 
-	rel1 { to: "e.swallow.buttons"; relative: 0.0 0.0; offset: 0 -6; }
-	rel2 { to: "e.swallow.buttons"; relative: 1.0 0.0; offset: -1 4; }
+		rel1 { 
+			to: "e.swallow.buttons"; 
+			relative: 0.0 0.0; 
+			offset: 0 -6; 
+		}
+		
+		rel2 { 
+			to: "e.swallow.buttons"; 
+			relative: 1.0 0.0; 
+			offset: -1 4; 
+		}
 	}
 }
 
@@ -74,10 +105,18 @@ part {
 		state: "default" 0.0;
 		align: 0.5 1.0;
 		fixed: 0 1;
+		color: 0 0 0 0;
 
-	rel1 { to: "base"; relative: 0.0 1.0; offset: 0 -1; }
-	rel2 { to: "base"; relative: 1.0 1.0; offset: -1 -4; }
+		rel1 {
+			to: "base"; 
+			relative: 0.0 1.0; 
+			offset: 0 -1; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: -1 -4; 
+		}
 	}
 }

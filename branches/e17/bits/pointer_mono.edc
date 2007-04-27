@@ -21,7 +21,14 @@ part {
 		state: "default" 0.0;
 		visible: 0;
 
-	rel1 { relative: 0.0 0.0; offset: 1 2; }
-	rel2 { relative: 0.0 0.0; offset: 1 2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 1 2; 
+		}
+
+		rel2 { 
+			relative: 0.0 0.0; 
+			offset: 1 2; 
+		}
 	}
 }

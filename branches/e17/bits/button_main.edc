@@ -183,7 +183,7 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.0 0.5;
-		color: 255 0 0 128;
+		color: 0 0 0 0;
 
 		rel1 { 
 			to: "button_image"; 
@@ -201,10 +201,10 @@ part {
 	description {
 		state: "visible" 0.0;
 		inherit: "default" 0.0;
-		color: 255 0 0 128;
 		aspect: 1.0 1.0;
 		aspect_preference: VERTICAL;
-		align: 0.0 0.5;	
+		align: 0.0 0.5;
+		color: 0 0 0 0;
 
 		rel1 { 
 			to: "button_image"; 
@@ -248,7 +248,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.55;
-			text_class: "button";
+			// text_class: "button";
 		}
 	}
 

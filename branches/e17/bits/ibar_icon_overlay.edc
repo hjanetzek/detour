@@ -17,42 +17,62 @@ part {
 
 	description {
 		state: "default" 0.0; 
+		color: 255 255 255 0;
 		visible: 0;
 
-	rel1 { to: "base"; }
-	rel2 { to: "base"; }
+		rel1 { 
+			to: "base"; 
+		}
 
-	color: 255 255 255 0;
+		rel2 { 
+			to: "base"; 
+		}
 	}
 	
 	description {
 		state: "visible" 0.0;
+		color: 255 255 255 255;
 		visible: 1;
 
-	rel1 { to: "base"; }
-	rel2 { to: "base"; }
+		rel1 { 
+			to: "base"; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "base"; 
+		}
 	}
 
 	description {
 		state: "hidden" 0.0;
+		color: 255 255 255 0;
 		visible: 1;
 
-	rel1 { to: "base"; relative: -0.5 -0.5; }
-	rel2 { to: "base"; relative: 1.5 1.5; }
-
-	color: 255 255 255 0;
+		rel1 { 
+			to: "base"; 
+			relative: -0.5 -0.5; 
+		}
+		
+		rel2 { 
+			to: "base"; 
+			relative: 1.5 1.5;
+		}
 	}
 
 	description {
 		state: "huge" 0.0;
+		color: 255 255 255 0;
 		visible: 1;
 
-	rel1 { to: "base"; relative: -2.0 -2.0; }
-	rel2 { to: "base"; relative: 3.0 3.0; }
+		rel1 { 
+			to: "base"; 
+			relative: -2.0 -2.0; 
+		}
 
-	color: 255 255 255 0;
+		rel2 { 
+			to: "base"; 
+			relative: 3.0 3.0; 
+		}
 	}
 }
 
@@ -63,11 +83,15 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 0 0 0 0;
 
-	rel1 { to: "background"; }
-	rel2 { to: "background"; }
+		rel1 { 
+			to: "background"; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "background"; 
+		}
 	}
 }
 
@@ -81,12 +105,18 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.5;
+		color: 7 7 7 255;
+		color3: 170 168 169 128;
 		
-	rel1 { relative: 0.0 0.0; offset: 0 2; }
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 2; 
+		}
 
-	color: 7 7 7 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		text {
 			text: "";
@@ -94,7 +124,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.5;
-			text_class: "module_normal";
+			// text_class: "module_normal";
 		}
 	}
 }
@@ -107,11 +137,19 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.5;
+		color: 255 255 255 0;
 
-	rel1 { to: "e.text.label"; relative: 0.0 0.0; offset: 0 0; }
-	rel2 { to: "e.text.label"; relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "e.text.label"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 
-	color: 255 255 255 0;
+		rel2 { 
+			to: "e.text.label"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 
 	description {

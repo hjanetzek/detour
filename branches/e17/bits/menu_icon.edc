@@ -8,8 +8,15 @@ part {
 		min: 19 19;
 		aspect: 1.0 1.0;
 		align: 0.5 1.0;
+		color: 0 0 0 0;
 
-	rel1 { relative: 0.0 0.0; offset: 2 0;}
-	rel2 { relative: 1.0 1.0; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 2 0;
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+		}
 	}
 }
