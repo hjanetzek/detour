@@ -14,7 +14,7 @@ program {
 	signal: "e,state,on";
 	source: "e";
 	action: STATE_SET "active" 0.0;
-	target: "item1";
+	target: "radio";
 }
 
 program {
@@ -22,7 +22,7 @@ program {
 	signal: "e,state,off";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	target: "item1";
+	target: "radio";
 }
 
 program {
@@ -38,7 +38,7 @@ program {
 	source: "e";
 	script {
 		set_state(PART:"focus", "active", 0.0);
-		set_state(PART:"e.text.label", "active", 0.0);
+		// set_state(PART:"e.text.label", "active", 0.0);
 	}
 }
 
@@ -48,7 +48,7 @@ program {
 	source: "e";
 	script {
 		set_state(PART:"focus", "default", 0.0);
-		set_state(PART:"e.text.label", "default", 0.0);
+		// set_state(PART:"e.text.label", "default", 0.0);
 	}
 }
 
@@ -58,10 +58,6 @@ program {
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
 	target: "outline";
-/* logic says we should also disable item1 but E expects the
- * first option to be visible regardless of whether or not the
- * the radio button is enabled or disabled 
- */
 	target: "event";
 	target: "e.text.label";
 	target: "icon_clip";

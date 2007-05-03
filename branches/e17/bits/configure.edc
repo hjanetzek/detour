@@ -1,7 +1,7 @@
 
 group {
 	name: "e/widgets/configure/main";
-	min: 399 327;
+	min: 410 327;
 	
 	parts {
 		#include "configure_main.edc"

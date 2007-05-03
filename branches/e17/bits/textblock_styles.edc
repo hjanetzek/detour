@@ -1,0 +1,51 @@
+	style {
+		name: "about_this_theme";
+		base: "font=Edje-Vera font_size=10 color=#070707 wrap=word";
+      
+		tag: "br" "\n";
+		tag: "bold" "+ font=Edje-Vera-Bold";
+		tag: "mono" "+ font=Edje-Vera-Mono";
+		tag: "center" "+ align=middle";
+		tag: "square" "+ font=Edje-Vera backing_color=#d3e4fb backing=on";
+		tag: "subliminal" "+ color=#f0f0f0";
+		tag: "red" "+ color=#cc0000";
+		tag: "underline" "+ underline=on underline_color=#3c3c3c";
+	}
+
+	style {
+		name: "about_style";
+		base: "font=Edje-Vera font_size=10 align=center color=#070707 wrap=word"; 
+		//text_class=tb_plain 
+      
+		tag:  "br" "\n";
+		tag:  "hilight" "+ font=Edje-Vera-Bold"; // text_class=tb_light
+		tag:  "title" "+ font_size=11 font=Edje-Vera"; // text_class=tb_big
+		tag:  "/title" "- \n \n";
+	}
+
+	style {
+		name: "resize";
+		base: "font=Edje-Vera-Bold font_size=10 align=center color=#3c3c3c";
+	}
+
+	style {
+		name: "move";
+		base: "font=Edje-Vera-Bold font_size=10 align=center color=#3c3c3c";
+	}
+
+	style {
+		name: "dialog_style";
+		base: "font=Edje-Vera-Bold font_size=10 align=center color=#3c3c3c wrap=word";
+		// text_class=tb_plain
+		tag:  "br" "\n";
+	}
+
+	style {
+		name: "error_style";
+		base: "font=Edje-Vera font_size=10 align=left color=#3c3c3c wrap=word";
+		// text_class=tb_plain
+      
+		tag:  "br" "\n";
+		tag:  "hilight" "+ font=Edje-Vera-Bold underline=on underline_color=#3c3c3c"; 
+		// text_class=tb_light 
+	}

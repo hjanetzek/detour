@@ -1,11 +1,11 @@
 
 /* by cored.org et al (see AUTHORS)
- * detour (seek) version 0.6.0 for Enlightenment 0.16.999.037 or later
+ * detour (seek) version 0.6.1 for Enlightenment 0.16.999.037 or later
  */
 
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
-#define SEE_CONTEXT_MENUTITLE 1
+#define SEE_CONTEXT_MENUTITLE 0
 #define BG_TYPE 0
 
 fonts {
@@ -17,6 +17,10 @@ font: "fonts/VeraMoBd.ttf" "Edje-Vera-Mono-Bold";
 
 spectra {
 #include "bits/gradients.edc"
+}
+
+styles {
+#include "bits/textblock_styles.edc"
 }
 
 images {
@@ -75,6 +79,6 @@ collections {
 #include "bits/battery.edc"
 #include "bits/temperature.edc"
 //#include "bits/transitions.edc"
+//#include "gadman.edc"
 //#include "bits/cpufreq.edc"
-//#include "gadman.edc" 
 }

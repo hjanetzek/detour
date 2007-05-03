@@ -1,16 +1,4 @@
 
-styles {
-	style {
-		name: "about_style";
-		base: "font=Edje-Vera font_size=10 text_class=tb_plain align=center color=#070707 style=shadow shadow_color=#ffffff80 wrap=word";
-      
-		tag:  "br" "\n";
-		tag:  "hilight" "+ font=Edje-Vera-Bold text_class=tb_light";
-		tag:  "title" "+ font_size=11 font=Edje-Vera-Bold text_class=tb_big color=#070707";
-		tag:  "/title" "- \n \n";
-	}
-}
-
 group {
 	name: "e/widgets/about/main";
 

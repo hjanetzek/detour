@@ -2,7 +2,6 @@
 # ifdef ITEM_SEL
 #  undef ITEM_SEL
 # endif
-
 #define ITEM_SEL(NAME,SIGNAL,STATE_NAME,INDEX,TRANSITION,TRANS_INDEX,TARGET) \
 program { \
 	name: NAME; \
@@ -16,6 +15,26 @@ program { \
 #define sel() \
 	ITEM_SEL("go_passive", "e,state,unselected", "default", 0.0, DECELERATE, 0.0, "content") \
 	ITEM_SEL("go_active", "e,state,selected", "active", 0.0, DECELERATE, 0.0, "content")
+
+# ifdef ITEM_TOGGLE
+#  undef ITEM_TOGGLE
+# endif
+#define ITEM_TOGGLE(NAME) \
+program { \
+	name: "signal_toggle_on"; \
+	signal: "e,state,on"; \
+	source: "e"; \
+	action: STATE_SET "active" 0.0; \
+	target: NAME; \
+} \
+\
+program { \
+	name: "signal_toggle_off"; \
+	signal: "e,state,off"; \
+	source: "e"; \
+	action: STATE_SET "default" 0.0; \
+	target: NAME; \
+}
 
 group {
 	name: "e/widgets/menu/default/background";
@@ -88,7 +107,7 @@ group {
 	}
 
 	programs {
-		#include "menu_check_signals.edc"
+		ITEM_TOGGLE("check")
 	}
 }
 
@@ -100,7 +119,7 @@ group {
 	}
 
 	programs {
-		#include "menu_radio_signals.edc"
+		ITEM_TOGGLE("radio")
 	}
 }
 
