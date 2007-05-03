@@ -6,7 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 399 327;
+		min: 410 327;
 
 		image {
 			normal: "dialog_bg.png";

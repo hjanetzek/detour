@@ -1,6 +1,6 @@
-
+   
 part {
-	name: "outline";
+	name: "check";
 	mouse_events: 0;
 	type: IMAGE;
 
@@ -20,41 +20,7 @@ part {
 		}
 
 		image {
-			normal: "check_base.png";
-		}
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 128;
-	}
-}
-      
-part {
-	name: "item1";
-	mouse_events: 0;
-	type: IMAGE;
-
-	description {
-		state: "default" 0.0;
-		min: 20 18;
-		max: 20 18;
-
-		rel1 { 
-			to: "outline"; 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "outline"; 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "check_blank.png";
+			normal: "check0.png";
 		}
 	}
 
@@ -63,7 +29,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "check_mark.png";
+			normal: "check1.png";
 		}
 	}
 

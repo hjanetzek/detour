@@ -29,9 +29,9 @@ part {
 		image.border: 5 5 5 5;
 	}
 }
-
+      
 part {
-	name: "outline";
+	name: "check";
 	mouse_events: 0;
 
 	description {
@@ -41,49 +41,8 @@ part {
 		fixed: 1 1;
 		align: 0.0 0.5;
 
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 2 2; 
-		}
-
-		rel2 { 
-			relative: 0.0 1.0; 
-			offset: 2 -3; 
-		}
-
 		image {
-			normal: "check_base.png";
-		}
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 128;
-	}
-}
-      
-part {
-	name: "item1";
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to: "outline"; 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "outline"; 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "check_blank.png";
+			normal: "check0.png";
 		}
 	}
 
@@ -92,7 +51,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "check_mark.png";
+			normal: "check1.png";
 		}
 	}
 
@@ -113,7 +72,7 @@ part {
 		min: 16 16;
 
 		rel1 { 
-			to_x: "outline"; 
+			to_x: "check"; 
 			relative: 1.0 0.0; 
 			offset: 2 2; 
 		}
@@ -129,7 +88,7 @@ part {
 		min: 16 16;
 
 		rel1 { 
-			to_x: "outline"; 
+			to_x: "check"; 
 			relative: 1.0 0.0; 
 			offset: 2 2; 
 		}
@@ -179,7 +138,7 @@ part {
 		color: 60 60 60 255;
 
 		rel1 { 
-			to_x: "outline"; 
+			to_x: "check"; 
 			relative: 1.0 0.0; 
 			offset: 2 3; 
 		}
