@@ -68,7 +68,7 @@ part { \
 		} \
 \
 		text { \
-			text: "detour 0.6.0 (seek)"; \
+			text: "detour 0.6.1 (seek)"; \
 			font: "Edje-Vera-Bold"; \
 			size: 10; \
 			min:  1 1; \
