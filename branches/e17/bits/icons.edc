@@ -69,15 +69,15 @@ ICON("e/icons/enlightenment/power_management", "power-management.png")
 ICON("e/icons/enlightenment/menus", "alacarte.png")
 ICON("e/icons/enlightenment/system", "preferences-system-session.png")
 ICON("e/icons/enlightenment/menu_settings", "alacarte.png")
-ICON("e/icons/enlightenment/run", "gnome-run.png")
 ICON("e/icons/enlightenment/advanced", "gnome-devel.png")
 ICON("e/icons/enlightenment/transitions", "image-loading.png")
 ICON("e/icons/enlightenment/ibar_applications", "applications-other.png")
 ICON("e/icons/enlightenment/startup_applications", "applications-other2.png")
 ICON("e/icons/enlightenment/restart_applications", "application-x-executable.png")
 ICON("e/icons/enlightenment/startup", "system-shutdown.png")
-ICON("e/icons/enlightenment/extensions", "applications-system.png")
 ICON("e/icons/enlightenment/behavior", "gnome-dev-keyboard-mouse.png")
+ICON("e/icons/enlightenment/extensions", "gnome-run.png")
+ICON("e/icons/enlightenment/run", "applications-system.png")
 
 # ifdef ICON
 #  undef ICON
@@ -143,7 +143,7 @@ group { \
 				state: "default" 0.0; \
 				aspect: 1.0 1.0; \
 				aspect_preference: BOTH; \
-				max:  SIZE; \
+				max: SIZE; \
 \
 				image { \
 					normal: IMAGE; \
@@ -156,3 +156,292 @@ group { \
 ICON("e/icons/widget/new_dialog", 32 32, "go-next.png")
 ICON("e/icons/widget/up_arrow", 32 32, "go-up.png")
 ICON("e/icons/widget/down_arrow", 32 32, "go-down.png")
+
+# ifdef ICON
+#  undef ICON
+# endif
+#define ICON(GROUP_NAME,SIZE,IMAGE) \
+group { \
+	name: GROUP_NAME; \
+	max: SIZE; \
+	parts { \
+		part { \
+			name: "screen"; \
+			mouse_events:  0; \
+\
+			description { \
+				max: SIZE; \
+				state: "default" 0.0; \
+				aspect: 1.0 1.0; \
+				aspect_preference: BOTH; \
+\
+				image { \
+					normal: IMAGE; \
+				} \
+			} \
+		} \
+	} \
+}
+ICON("e/icons/enlightenment/wallpaper_stretch", 24 24, "wallpaper_screen_stretch.png")
+ICON("e/icons/enlightenment/wallpaper_center", 24 24, "wallpaper_screen_center.png")
+ICON("e/icons/enlightenment/wallpaper_tile", 24 24, "wallpaper_screen_tile.png")
+ICON("e/icons/enlightenment/wallpaper_scale_aspect_in", 24 24, "wallpaper_screen_in.png")
+ICON("e/icons/enlightenment/wallpaper_scale_aspect_out", 24 24, "wallpaper_screen_out.png")
+
+group {
+	name: "e/icons/enlightenment/gradient_h";
+	max: 24 24;
+
+	parts {
+		part {
+			name: "bg";
+			mouse_events: 0;
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				max: 24 24;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+
+				image {
+					normal: "wallpaper_screen_grad.png";
+				}
+			}
+		}
+
+		part {
+			name: "screen";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+            
+				rel1 {
+					to: "bg";
+					offset: 5 5;
+				}
+
+				rel2 {
+					to: "bg";
+					offset: -6 -6;
+				}
+
+				gradient {
+					spectrum: "black_to_trans";
+					rel1.relative: 0 0.5;
+					rel1.offset: 0 0;
+					rel2.relative: 1 0.5;
+					rel2.offset: -1 0;
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/icons/enlightenment/gradient_v";
+	max: 24 24;
+
+	parts {
+		part {
+			name: "bg";
+			mouse_events: 0;
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				max: 24 24;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+
+				image {
+					normal: "wallpaper_screen_grad.png";
+				}
+			}
+		}
+
+		part {
+			name: "screen";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+            
+				rel1 {
+					to: "bg";
+					offset: 5 5;
+				}
+
+				rel2 {
+					to: "bg";
+					offset: -6 -6;
+				}
+
+				gradient {
+					spectrum: "black_to_trans";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/icons/enlightenment/gradient_du";
+	max: 24 24;
+
+	parts {
+		part {
+			name: "bg";
+			mouse_events: 0;
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				max: 24 24;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+
+				image {
+					normal: "wallpaper_screen_grad.png";
+				}
+			}
+		}
+
+		part {
+			name: "screen";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+            
+				rel1 {
+					to: "bg";
+					offset: 5 5;
+				}
+
+				rel2 {
+					to: "bg";
+					offset: -6 -6;
+				}
+
+				gradient {
+					spectrum: "black_to_trans";
+					rel1.relative: 0 1;
+					rel1.offset: 0 -1;
+					rel2.relative: 1 0;
+					rel2.offset: -1 0;
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/icons/enlightenment/gradient_dd";
+	max: 24 24;
+
+	parts {
+		part {
+			name: "bg";
+			mouse_events: 0;
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				max: 24 24;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+
+				image {
+					normal: "wallpaper_screen_grad.png";
+				}
+			}
+		}
+
+		part {
+			name: "screen";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+            
+				rel1 {
+					to: "bg";
+					offset: 5 5;
+				}
+
+				rel2 {
+					to: "bg";
+					offset: -6 -6;
+				}
+
+				gradient {
+					spectrum: "black_to_trans";
+					rel1.relative: 0 0;
+					rel1.offset: 0 0;
+					rel2.relative: 1 1;
+					rel2.offset: -1 -1;
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/icons/enlightenment/gradient_rad";
+	max: 24 24;
+
+	parts {
+		part {
+			name: "bg";
+			mouse_events: 0;
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				max: 24 24;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+
+				image {
+					normal: "wallpaper_screen_grad.png";
+				}
+			}
+		}
+
+		part {
+			name: "screen";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+            
+				rel1 {
+					to: "bg";
+					offset: 5 5;
+				}
+
+				rel2 {
+					to: "bg";
+					offset: -6 -6;
+				}
+
+				gradient {
+					spectrum: "black_to_trans";
+					type: "radial";
+				}
+
+				fill {
+					origin.relative: 0.5 0.5;
+				}
+			}
+		}
+	}
+}
+
