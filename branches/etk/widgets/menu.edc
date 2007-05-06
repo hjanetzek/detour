@@ -191,19 +191,12 @@ group {
             }
          }
          description {
-            state: "light" 0.0;
+            state: "selected" 0.0;
             inherit: "default" 0.0;
             image {
                normal: "menu_item_arrow_light.png";
             }
 	 }
-         description {
-            state: "blank" 0.0;
-            inherit: "default" 0.0;
-            image {
-               normal: "menu_item_arrow_blank.png";
-            }
-         }
       }
       part {
          name: "etk.text.label";
@@ -245,7 +238,7 @@ group {
          action: STATE_SET "selected" 0.0;
          target: "highlight";
          target: "etk.text.label";
-         after: "item_arrow_blink1";
+         target: "arrow";
       }
       program {
          name: "item_unselect";
@@ -254,7 +247,7 @@ group {
          action: STATE_SET "default" 0.0;
          target: "highlight";
          target: "etk.text.label";
-         after: "item_arrow_stop_blink1";
+         target: "arrow";
       }
       program {
          name: "item_left_widget_show";
@@ -291,32 +284,6 @@ group {
          action: STATE_SET "default" 0.0;
          target: "arrow_clip";
       }
-      program {
-         name: "item_arrow_blink1";
-         action: STATE_SET "light" 0.0;
-         target: "arrow";
-         in: 0.5 0.0;
-         after: "item_arrow_blink2";
-      }
-      program {
-         name: "item_arrow_blink2";
-         action: STATE_SET "default" 0.0;
-         target: "arrow";
-         in: 0.5 0.0;
-         after: "item_arrow_blink1";
-      }
-      program {
-         name: "item_arrow_stop_blink1";
-         action: ACTION_STOP;
-         target: "item_arrow_blink1";
-         target: "item_arrow_blink2";
-         after: "item_arrow_stop_blink2";
-      }
-      program {
-         name: "item_arrow_stop_blink2";
-         action: STATE_SET "default" 0.0;
-         target: "arrow";
-      }
    }
 }
 
@@ -325,39 +292,21 @@ group {
    name: "etk/menu/menu_item/checkbox";
    parts {
       part {
-         name: "base";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            min: 20 18;
-            max: 20 18;
-            image {
-               normal: "check_base.png";
-            }
-         }
-      }
-      part {
          name: "check";
          mouse_events: 0;
          description {
             state: "default" 0.0;
             min: 20 18;
             max: 20 18;
-            rel1 {
-               to: "base";
-            }
-            rel2 {
-               to: "base";
-            }
             image {
-               normal: "check_blank.png";
+               normal: "check0.png";
             }
          }
          description {
             state: "checked" 0.0;
             inherit: "default" 0.0;
             image {
-               normal: "check_mark.png";
+               normal: "check1.png";
             }
          }
       }
@@ -392,7 +341,7 @@ group {
             min: 20 18;
             max: 20 18;
             image {
-               normal: "radio_outline.png";
+               normal: "radio0.png";
             }
          }
       }
@@ -403,22 +352,15 @@ group {
             state: "default" 0.0;
             min: 20 18;
             max: 20 18;
-            rel1 {
-               to: "base";
-            }
-            rel2 {
-               to: "base";
-            }
+	    visible: 0;
             image {
-               normal: "radio_blank.png";
+               normal: "radio1.png";
             }
          }
          description {
             state: "on" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "radio_check.png";
-            }
+	    visible: 1;
          }
       }
    }
@@ -446,6 +388,8 @@ group {
    name: "etk/menu_bar";
 }
 
+
 group {
    name: "etk/menu_bar/menu_item";
 }*/
+

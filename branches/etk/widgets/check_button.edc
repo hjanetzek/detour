@@ -48,7 +48,7 @@ group {
          }
       }
       part {
-         name: "outline";
+         name: "check";
          mouse_events: 0;
          description {
             state: "default" 0.0;
@@ -65,39 +65,14 @@ group {
                offset: 2 -3;
             }
             image {
-               normal: "check_base.png";
-            }
-         }
-         description {
-            state: "disabled" 0.0;
-            inherit: "default" 0.0;
-            color: 255 255 255 128;
-         }
-      }
-      part {
-         name: "item1";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            min: 20 18;
-            max: 20 18;
-            align: 0.0 0.5;
-            fixed: 1 1;
-            rel1 {
-               to: "outline";
-            }
-            rel2 {
-               to: "outline";
-            }
-            image {
-               normal: "check_blank.png";
+               normal: "check0.png";
             }
          }
          description {
             state: "on" 0.0;
             inherit: "default" 0.0;
             image {
-               normal: "check_mark.png";
+               normal: "check1.png";
             }
          }
          description {
@@ -126,14 +101,14 @@ group {
          signal: "etk,state,on";
          source: "etk";
          action: STATE_SET "on" 0.0;
-         target: "item1";
+         target: "check";
       }
       program {
          name: "check_turn_off";
          signal: "etk,state,off";
          source: "etk";
          action: STATE_SET "default" 0.0;
-         target: "item1";
+         target: "check";
       }
       program {
          name: "check_focus";
@@ -154,8 +129,7 @@ group {
          signal: "etk,state,enabled";
          source: "etk";
          action: STATE_SET "default" 0.0;
-         target: "outline";
-         target: "item1";
+         target: "check";
          target: "event";
       }
       program {
@@ -163,8 +137,7 @@ group {
          signal: "etk,state,disabled";
          source: "etk";
          action: STATE_SET "disabled" 0.0;
-         target: "outline";
-         target: "item1";
+         target: "check";
          target: "event";
       }
    }

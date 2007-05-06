@@ -7,9 +7,8 @@ images {
    image: "button_outline.png" COMP;
    image: "button_on.png" COMP;
    image: "button_on_disabled.png" COMP;
-   image: "check_base.png" COMP;
-   image: "check_blank.png" COMP;
-   image: "check_mark.png" COMP;
+   image: "check0.png" COMP;
+   image: "check1.png" COMP;
    image: "combobox_button.png" COMP;
    image: "combobox_button_clicked.png" COMP;
    image: "combobox_button_disabled.png" COMP;
@@ -30,7 +29,6 @@ images {
    image: "iconbox_label_bg.png" COMP;
    image: "iconbox_over.png" COMP;
    image: "menu_bg.png" COMP;
-   image: "menu_item_arrow_blank.png" COMP;
    image: "menu_item_arrow_dark.png" COMP;
    image: "menu_item_arrow_light.png" COMP;
    image: "menu_item_select.png" COMP;
@@ -73,9 +71,8 @@ images {
    image: "progress_bar_left.png" COMP;
    image: "progress_bar_right.png" COMP;
    image: "progress_trough.png" COMP;
-   image: "radio_outline.png" COMP;
-   image: "radio_blank.png" COMP;
-   image: "radio_check.png" COMP;
+   image: "radio0.png" COMP;
+   image: "radio1.png" COMP;
    image: "scrollbar_h_arrow_left.png" COMP;
    image: "scrollbar_h_arrow_right.png" COMP;
    image: "scrollbar_h_bar.png" COMP;
