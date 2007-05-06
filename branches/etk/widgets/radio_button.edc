@@ -65,7 +65,7 @@ group {
                offset: 2 -3;
             }
             image {
-               normal: "radio_outline.png";
+               normal: "radio0.png";
             }
          }
          description {
@@ -75,7 +75,7 @@ group {
          }
       }
       part {
-         name: "item1";
+         name: "radio";
          mouse_events: 0;
          description {
             state: "default" 0.0;
@@ -83,22 +83,23 @@ group {
             max: 20 18;
             align: 0.0 0.5;
             fixed: 1 1;
+	    visible: 0;
             rel1 {
-               to: "outline";
+               relative: 0.0 0.0;
+               offset: 2 2;
             }
             rel2 {
-               to: "outline";
+               relative: 0.0 1.0;
+               offset: 2 -3;
             }
             image {
-               normal: "radio_blank.png";
+               normal: "radio1.png";
             }
          }
          description {
             state: "on" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "radio_check.png";
-            }
+            visible: 1;
          }
          description {
             state: "disabled" 0.0;
@@ -126,14 +127,14 @@ group {
          signal: "etk,state,on";
          source: "etk";
          action: STATE_SET "on" 0.0;
-         target: "item1";
+         target: "radio";
       }
       program {
          name: "radio_turn_off";
          signal: "etk,state,off";
          source: "etk";
          action: STATE_SET "default" 0.0;
-         target: "item1";
+         target: "radio";
       }
       program {
          name: "radio_focus";
@@ -155,7 +156,7 @@ group {
          source: "etk";
          action: STATE_SET "enabled" 0.0;
          target: "outline";
-         target: "item1";
+         target: "radio";
          target: "event";
       }
       program {
@@ -164,7 +165,7 @@ group {
          source: "etk";
          action: STATE_SET "disabled" 0.0;
          target: "outline";
-         target: "item1";
+         target: "radio";
          target: "event";
       }
    }
