@@ -234,6 +234,11 @@ group {
                min: 1 1;
             }
          }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 60 60 60 128;
+         }
       }
       part {
          name: "focus";
@@ -314,11 +319,11 @@ group {
 	 signal: "etk,state,enabled";
 	 source: "etk";
          action: STATE_SET "default" 0.0;
+	 target: "trough_left";
+	 target: "trough";
+	 target: "trough_right";
 	 target: "etk.dragable.slider";
 	 target: "label_under";
-	 target: "trough";
-	 target: "trough_left";
-	 target: "trough_right";
 	 target: "etk.text.label";
      }
       program {
@@ -326,11 +331,11 @@ group {
 	 signal: "etk,state,disabled";
 	 source: "etk";
          action: STATE_SET "disabled" 0.0;
+	 target: "trough_left";
+	 target: "trough";
+	 target: "trough_right";
 	 target: "etk.dragable.slider";
 	 target: "label_under";
-	 target: "trough";
-	 target: "trough_left";
-	 target: "trough_right";
 	 target: "etk.text.label";
       }
    }
@@ -573,6 +578,11 @@ group {
                size: 10;
                min: 1 1;
             }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 60 60 60 128;
          }
       }
       part {
