@@ -1,6 +1,6 @@
 
 program {
-	name: "turn_on1";
+	name: "turn_on";
 	signal: "e,state,checked";
 	source: "e";
 	action: STATE_SET "active" 0.0;
@@ -8,7 +8,7 @@ program {
 }
 
 program {
-	name: "turn_off1";
+	name: "turn_off";
 	signal: "e,state,unchecked";
 	source: "e";
 	action: STATE_SET "default" 0.0;
