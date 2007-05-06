@@ -19,6 +19,14 @@ image: "icon_shelf_menu_bar.png" COMP;
 image: "icon_shelf_panel.png" COMP;
 image: "icon_shelf_top_desk.png" COMP;
 
+// screen
+image: "wallpaper_screen_stretch.png" COMP;
+image: "wallpaper_screen_center.png" COMP;
+image: "wallpaper_screen_tile.png" COMP;
+image: "wallpaper_screen_in.png" COMP;
+image: "wallpaper_screen_out.png" COMP;
+image: "wallpaper_screen_grad.png" COMP;
+
 ## Tango Icons http://tango.freedesktop.org
 image: "view-fullscreen.png" COMP;
 image: "video-display.png" COMP;

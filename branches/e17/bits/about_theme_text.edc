@@ -26,7 +26,7 @@ part {
 			text: "detour (seek)";
 			font: "Edje-Vera-Bold";
 			size: 12;
-			min:  1 1;
+			min: 1 1;
 			align: 0.5 0.5;
 		}
     	}
@@ -58,7 +58,7 @@ part {
 			text: "version 0.6.1";
 			font: "Edje-Vera";
 			size: 10;
-			min:  1 1;
+			min: 1 1;
 			align: 0.5 0.5;
 		}
     	}
@@ -127,7 +127,7 @@ part {
 		rel1 { 
 			to: "entry_about"; 
 			relative: 0.0 0.0; 
-			offset: 4 5; 
+			offset: 7 5; 
 		}
 	
 		rel2 { 
@@ -144,7 +144,7 @@ part {
 		rel1 { 
 			to: "entry_about"; 
 			relative: 0.0 0.0; 
-			offset: 4 -116; 
+			offset: 7 -116; 
 		}
 
 		rel2 { 
@@ -161,7 +161,7 @@ part {
 		rel1 { 
 			to: "entry_about"; 
 			relative: 0.0 0.0; 
-			offset: 4 -236; 
+			offset: 7 -236; 
 		}
 
 		rel2 { 
@@ -178,7 +178,7 @@ part {
 		rel1 { 
 			to: "entry_about"; 
 			relative: 0.0 0.0; 
-			offset: 4 -358; 
+			offset: 7 -358; 
 		}
 		
 		rel2 { 
@@ -209,8 +209,7 @@ part {
 
 		text {
 			style: "about_this_theme";
-			min: 0 0;
-			text: "Greetings to the <bold>Enlightenment.org</bold> crew (past and present). <br><br><bold>detour</bold> is distributed <underline>WITHOUT ANY WARRANTY</underline> under the terms of the BSD Artistic License. All derivative works, compound produced from, or related to, shall retain the original license. See <bold>LICENSE</bold> for more information.<br><br><br><br>The Enlightenment logos are property of the <bold>Enlightenment Project</bold>.<br><br>Visit: <underline>http://enlightenment.org</underline> for more information.<br><br><bold>Tango Project</bold> icons are property of the Tango Project, and released under the Creative Commons Attribution Share-Alike license.<br><br>Visit: <underline>http://tango.freedesktop.org</underline> for more information.<br><br><bold>Bitstream Vera</bold> fonts are property of Bitstream, Inc.<br><br>Visit: <underline>http://www.gnome.org/fonts/</underline> for more information.<br><br><br><br><br><br><br><br><br>Designed and developed by Alberto Castro (boycott tokyo) with help from Hanes Janetzek (jeffdameth), and many others (see AUTHORS).<br><br><bold><center>Enjoy!</center></bold><br><br><center>http://cored.org</center><br><subliminal><center>(the Tricks of the Guild. 2007)</center></subliminal>";
+			text: "Greetings to the <bold>Enlightenment.org</bold> crew (past and present). <br><br><bold>detour</bold> is distributed <underline>WITHOUT ANY WARRANTY</underline> under the terms of the BSD Artistic License. All derivative works, compound produced from, or related to, shall retain the original license. See <bold>LICENSE</bold> for more information.<br><br><br><br>The Enlightenment logos are property of the <bold>Enlightenment Project</bold>.<br><br>Visit: <underline>http://enlightenment.org</underline> for more information.<br><br><bold>Tango Project</bold> icons are property of the Tango Project, and released under the Creative Commons Attribution Share-Alike license.<br><br>Visit: <underline>http://tango.freedesktop.org</underline> for more information.<br><br><bold>Bitstream Vera</bold> fonts are property of Bitstream, Inc.<br><br>Visit: <underline>http://www.gnome.org/fonts/</underline> for more information.<br><br><br><br><br><br><br><br><br><bold>detour</bold> is designed and developed by Alberto Castro (boykot tokyo) with help from Hanes Janetzek (jeffdameth) (see AUTHORS).<br><br><bold><center>Enjoy!</center></bold><br><br><center>http://cored.org</center><br><center><subliminal>(the Tricks of the Guild. 2007)</subliminal></center>";
 		}
     	}
 }

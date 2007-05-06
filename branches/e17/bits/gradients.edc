@@ -10,3 +10,9 @@ spectrum {
 	color: 188 188 188 255 1; 
 	color: 86 86 86 255 1; 
 }
+
+spectrum {
+	name: "black_to_trans";
+	color: 0 0 0 255 1;
+	color: 0 0 0 0 1;
+}

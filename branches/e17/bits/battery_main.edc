@@ -9,8 +9,15 @@ part {
 		aspect: 1 1;
 		align: 0.0 0.5;
 
-	rel1 { relative: 0.0 0.0; offset: 0 0; } 
-	rel2 { relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		} 
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		image {
 			normal: "battery-0.png";
@@ -67,8 +74,17 @@ part {
 		state: "default" 0.0;
 		color: 255 255 255 0;
 
-	rel1 { to: "battery"; relative: 0.0 0.0; offset: 1 1; }
-	rel2 { to: "battery"; relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "battery"; 
+			relative: 0.0 0.0; 
+			offset: 1 1; 
+		}
+
+		rel2 { 
+			to: "battery"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -80,12 +96,20 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 7 7 7 255;
+		color3: 170 168 169 128;
 
-	rel1 { to: "text_clip"; relative: 0.5 0.55; offset: 0 0; }
-	rel2 { to: "text_clip"; relative: 0.5 0.55; offset: -1 -1; }
+		rel1 { 
+			to: "text_clip"; 
+			relative: 0.5 0.55; 
+			offset: 0 0; 
+		}
 
-	color: 7 7 7 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			to: "text_clip"; 
+			relative: 0.5 0.55; 
+			offset: -1 -1; 
+		}
 
 		text {
 			text: "100%";
@@ -93,7 +117,7 @@ part {
 			size: 9;
 			min: 1 1;
 			align: 1.0 0.0;
-			text_class: "module_small";
+			// text_class: "module_small";
 		}
 	}
 }
@@ -106,12 +130,20 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 7 7 7 255;
+		color3: 170 168 169 128;
 
-	rel1 { to_y: "text_clip"; relative: 0.5 0.8; offset: 0 0; }
-	rel2 { to_x: "e.text.reading"; relative: 0.5 1.0; offset: -1 -1; }
+		rel1 { 
+			to_y: "text_clip"; 
+			relative: 0.5 0.8; 
+			offset: 0 0; 
+		}
 
-	color: 7 7 7 255;
-	color3: 170 168 169 128;
+		rel2 { 
+			to_x: "e.text.reading"; 
+			relative: 0.5 1.0; 
+			offset: -1 -1; 
+		}
 
 		text {
 			text: "00:00";
@@ -119,7 +151,7 @@ part {
 			size: 8;
 			min: 1 1;
 			align: 1.0 0.0;
-			text_class: "module_small";
+			// text_class: "module_small";
 		}
 	}
 }

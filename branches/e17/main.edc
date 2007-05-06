@@ -78,6 +78,7 @@ collections {
 #include "bits/sys.edc"
 #include "bits/battery.edc"
 #include "bits/temperature.edc"
+#include "bits/font_preview.edc"
 //#include "bits/transitions.edc"
 //#include "gadman.edc"
 //#include "bits/cpufreq.edc"
