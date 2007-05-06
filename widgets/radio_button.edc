@@ -83,7 +83,7 @@ group {
             max: 20 18;
             align: 0.0 0.5;
             fixed: 1 1;
-	    visible: 0;
+            visible: 0;
             rel1 {
                relative: 0.0 0.0;
                offset: 2 2;
