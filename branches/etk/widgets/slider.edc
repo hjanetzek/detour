@@ -40,6 +40,13 @@ group {
                normal: "slider_h_trough_left.png";
             }
          }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "slider_h_left_disabled.png";
+            }
+         }
       }
       part {
          name: "trough_right";
@@ -60,6 +67,13 @@ group {
                normal: "slider_h_trough_right.png";
             }
          }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "slider_h_right_disabled.png";
+            }
+         }
       }
       part {
          name: "trough";
@@ -78,6 +92,13 @@ group {
             }
             image {
                normal: "slider_h_trough.png";
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "slider_h_disabled.png";
             }
          }
       }
@@ -288,6 +309,30 @@ group {
          action: STATE_SET "default" 0.0;
          target: "focus";
       }
+      program {
+	 name: "enable";
+	 signal: "etk,state,enabled";
+	 source: "etk";
+         action: STATE_SET "default" 0.0;
+	 target: "etk.dragable.slider";
+	 target: "label_under";
+	 target: "trough";
+	 target: "trough_left";
+	 target: "trough_right";
+	 target: "etk.text.label";
+     }
+      program {
+	 name: "disable";
+	 signal: "etk,state,disabled";
+	 source: "etk";
+         action: STATE_SET "disabled" 0.0;
+	 target: "etk.dragable.slider";
+	 target: "label_under";
+	 target: "trough";
+	 target: "trough_left";
+	 target: "trough_right";
+	 target: "etk.text.label";
+      }
    }
 }
 
@@ -334,6 +379,13 @@ group {
                normal: "slider_v_trough_up.png";
             }
          }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "slider_v_top_disabled.png";
+            }
+         }
       }
       part {
          name: "trough_down";
@@ -352,6 +404,13 @@ group {
             }
             image {
                normal: "slider_v_trough_down.png";
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "slider_v_bot_disabled.png";
             }
          }
       }
@@ -373,6 +432,13 @@ group {
             image {
                normal: "slider_v_trough.png";
                border: 2 2 1 1;
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "slider_v_disabled.png";
             }
          }
       }
@@ -582,6 +648,30 @@ group {
          source: "etk";
          action: STATE_SET "default" 0.0;
          target: "focus";
+      }
+      program {
+	 name: "enable";
+	 signal: "etk,state,enabled";
+	 source: "etk";
+         action: STATE_SET "default" 0.0;
+	 target: "etk.dragable.slider";
+	 target: "label_under";
+	 target: "trough";
+	 target: "trough_down";
+	 target: "trough_up";
+	 target: "etk.text.label";
+     }
+      program {
+	 name: "disable";
+	 signal: "etk,state,disabled";
+	 source: "etk";
+         action: STATE_SET "disabled" 0.0;
+	 target: "etk.dragable.slider";
+	 target: "label_under";
+	 target: "trough";
+	 target: "trough_down";
+	 target: "trough_up";
+	 target: "etk.text.label";
       }
    }
 }
