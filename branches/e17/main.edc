@@ -1,6 +1,6 @@
 
 /* by cored.org et al (see AUTHORS)
- * detour (seek) version 0.6.1 for Enlightenment 0.16.999.037 or later
+ * detour (seek) version 0.6.1 for Enlightenment 0.16.999.038 or later
  */
 
 #define USE_ANIMATED_CURSOR 1
