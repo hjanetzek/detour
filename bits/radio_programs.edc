@@ -43,6 +43,16 @@ program {
 }
 
 program {
+	name: "enable";
+	signal: "e,state,enabled";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "outline";
+	target: "event";
+	target: "e.text.label";
+}
+
+program {
 	name: "disable";
 	signal: "e,state,disabled";
 	source: "e";
@@ -52,12 +62,3 @@ program {
 	target: "e.text.label";
 }
 
-program {
-	name: "enable";
-	signal: "e,state,enabled";
-	source: "e";
-	action: STATE_SET "default" 0.0;
-	target: "outline";
-	target: "event";
-	target: "e.text.label";
-}
