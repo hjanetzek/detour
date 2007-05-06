@@ -158,17 +158,6 @@ group {
 			source: "e";
 			action: STATE_SET "active" 0.0;
 			target: "arrow";
-			after: "go_inactive";
-		}
-
-		program {
-			name: "go_inactive";
-			signal: "";
-			source: "";
-			action: STATE_SET "hidden" 0.0;
-			transition: DECELERATE 1.0;
-			target: "arrow";
-			after: "go_active";
 		}
 
 		program {

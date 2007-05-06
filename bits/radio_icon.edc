@@ -62,7 +62,7 @@ part {
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 2 2; 
+			offset: 2 1; 
 		}
 
 		rel2 { 
@@ -96,7 +96,7 @@ part {
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 2 2; 
+			offset: 2 1; 
 		}
 
 		rel2 { 
@@ -124,7 +124,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 16 16;
+		//min: 16 16;
 		aspect: 1.0 1.0;
 
 		rel1 { 
@@ -141,7 +141,7 @@ part {
 
 	description {
 		state: "label_visible" 0.0;
-		min: 16 16;
+		//min: 16 16;
 
 		rel1 { 
 			to_x: "radio"; 
@@ -163,7 +163,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 16 16;
+		//min: 16 16;
 		color: 255 255 255 255;
 
 		rel1 { 
@@ -189,7 +189,7 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		min: 16 16;
+		min: 24 24;
 		visible: 0;
 
 		rel1 { 
@@ -216,7 +216,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 16 16;
+		min: 24 24;
 		color: 60 60 60 255;
 
 		rel1 { 

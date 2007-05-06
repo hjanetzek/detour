@@ -45,9 +45,6 @@ program {
 	after: "go"; 
 }
 
-
-/**/
-
 program {
 	name: "button_click";
 	signal: "mouse,down,1";

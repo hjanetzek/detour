@@ -11,7 +11,7 @@ part {
 
 	description {
 		state: "faded" 0.0;
-		color: 255 255 255 64;
+		color: 255 255 255 164;
 	}
 }
 
