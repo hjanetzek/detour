@@ -410,6 +410,14 @@ image: "e17_busy-9.png" COMP;
 
 // spectrum
 image: "cs_box.png" COMP;
+image: "color_slider.png" COMP;
+image: "color_slider_x.png" COMP;
+image: "color_slider_y.png" COMP;
+
+// cslider
+image: "cp_slider_trough.png" COMP;
+image: "cp_slider_trough_left.png" COMP;
+image: "cp_slider_trough_right.png" COMP;
 
 // border window menu
 image: "button_wm0.png" COMP;

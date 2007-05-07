@@ -6,4 +6,5 @@ program {
 	action: STATE_SET "vertical" 0.0;
 	target: "e.dragable.cursor";
 	target: "background";
+	target: "e.swallow.content";
 } 
