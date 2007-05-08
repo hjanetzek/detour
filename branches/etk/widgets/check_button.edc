@@ -173,6 +173,12 @@ group {
          description {
             state: "default" 0.0;
             align: 0.0 0.5;
+            rel1 {
+               offset: 0 2;
+            }
+            rel2 {
+               offset: -1 -1;
+            }
             text {
                style: "Check Default";
                min: 1 1;

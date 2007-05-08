@@ -46,6 +46,11 @@ group {
                normal: "spinner_base.png";
             }
          }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
+         }
       }
       part {
          name: "spinner";
@@ -101,6 +106,11 @@ group {
             inherit: "default" 0.0;
             color: 215 215 215 255;
          }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
+         }
       }
       part {
          name: "down_button";
@@ -126,6 +136,11 @@ group {
             state: "down" 0.0;
             inherit: "default" 0.0;
             color: 215 215 215 255;
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
          }
       }
       part {
@@ -211,6 +226,24 @@ group {
       program {
          name: "spinner_decrement_stop";
          action: SIGNAL_EMIT "etk,action,decrement,stop" "";
+      }
+      program {
+         name: "enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "button_base";
+         target: "up_button";
+         target: "down_button";
+     }
+      program {
+         name: "disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "button_base";
+         target: "up_button";
+         target: "down_button";
       }
    }
 }
