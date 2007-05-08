@@ -1,0 +1,10 @@
+todo
+----
+  o simplify radio and check widgets to use 2 images (if possible)
+  o alternate shelf style does not swallow icons properly when
+    the shelf style is not set to shrink contents
+  o separate the background from desklock
+  o test all textclasses
+  o set the battery module display text only when running on 
+    battery mode
+
