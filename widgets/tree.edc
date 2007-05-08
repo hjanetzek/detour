@@ -57,8 +57,12 @@ group {
  */
 
 /* TODO: implement... */
-
-
+/*
+TREE_HEADER("etk/tree/header", "button.png", "button_disabled.png");
+TREE_HEADER("etk/tree/header_unique", "button.png", "button_disabled.png");
+TREE_HEADER("etk/tree/header_first", "button.png", "button_disabled.png");
+TREE_HEADER("etk/tree/header_last", "button.png", "button_disabled.png");
+*/
 /**
  * group "etk/tree/scrolled_view"
  * -----------------------
@@ -295,6 +299,150 @@ group {
          action: STATE_SET "default" 0.0;
          target: "select";
          target: "select_separator";
+      }
+   }
+}
+
+/**
+ * group "etk/tree/expander"
+ * -----------------------
+ * This group corresponds to the expander object used to fold/unfold rows.
+ *
+ * Signals:
+ * --------
+ * - "etk,action,fold": emitted when the corresponding row is folded
+ * - "etk,action,unfold": emitted when the corresponding row is unfolded
+ *
+ * The min size of the group is used to determine the size of the expander in the tree
+ *
+ * Note that this group doesn't have the common signals of a widget
+ * ("etk,state,enter", "etk,state,leave", ...) since a tree's expander is not a widget.
+ * You can though use the signals "mouse,in", "mouse,out", "mouse,down,1" (...)
+ * emitted automatically by Edje
+ */
+group {
+   name: "etk/tree/expander";
+   min: 18 18;
+   parts {
+      part {
+         name: "expander_arrow";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image {
+               normal: "button.png";
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+         description {
+            state: "expanded" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "button_disabled.png";
+            }
+            fill {
+               smooth: 0;
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "expander_fold";
+         signal: "etk,action,fold";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "expander_arrow";
+      }
+      program {
+         name: "expander_unfold";
+         signal: "etk,action,unfold";
+         source: "etk";
+         action: STATE_SET "expanded" 0.0;
+         target: "expander_arrow";
+      }
+   }
+}
+
+/**
+ * group "etk/tree/checkbox"
+ * -----------------------
+ * This group corresponds to the checkbox used by the "checkbox" model of the tree
+ *
+ * Signals:
+ * --------
+ * - "etk,state,on": emitted when the checkbox is checked
+ * - "etk,action,off": emitted when the checkbox is unchecked
+ *
+ * The min size of the group is used to determine the size of the checkbox in the tree
+ *
+ * Note that this group doesn't have the common signals of a widget
+ * ("etk,state,enter", "etk,state,leave", ...) since a tree's checkbox is not a widget.
+ * You can though use the signals "mouse,in", "mouse,out", "mouse,down,1" (...)
+ * emitted automatically by Edje
+ */
+group {
+   name: "etk/tree/checkbox";
+   min: 20 18;
+   max: 20 18;
+   parts {
+      part {
+         name: "check";
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            min: 20 18;
+            max: 20 18;
+            image {
+               normal: "check0.png";
+            }
+         }
+         description {
+            state: "on" 0.0;
+            inherit: "default" 0.0;
+            image {
+               normal: "check1.png";
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "tree_checkbox_activate";
+         signal: "etk,state,on";
+         source: "etk";
+         action: STATE_SET "on" 0.0;
+         target: "check";
+      }
+      program {
+         name: "tree_checkbox_desactivate";
+         signal: "etk,state,off";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "check";
+      }
+      program {
+         name: "tree_checkbox_down";
+         signal: "mouse,down,1*";
+         source: "check";
+         action: STATE_SET "on" 0.0;
+         target: "check";
+      }
+      program {
+         name: "tree_checkbox_up";
+         signal: "mouse,up,1";
+         source: "check";
+         action: STATE_SET "default" 0.0;
+         target: "check";
       }
    }
 }

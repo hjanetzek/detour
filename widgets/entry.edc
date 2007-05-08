@@ -112,15 +112,32 @@ group {
             text {
                text: "Entry";
                font: "Vera";
-               size: 11;
+               size: 10;
                min: 1 1;
                align: 0.0 0.5;
             }
          } 
-/* 
- * simon: there should probably be a second state for selected text, 
- * ie: text becomes white for text selection
- */	
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 7 7 7 128;
+         }	
+      }
+   }
+   programs {
+      program {
+         name: "text_enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.text";
+      }
+      program {
+         name: "text_disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "etk.text.text";
       }
    }
 }
