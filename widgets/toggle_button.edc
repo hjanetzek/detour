@@ -41,7 +41,8 @@ group {
          }
       }
       part {
-         name: "focus1";
+         name: "focus_clip";
+         type: RECT;
          mouse_events: 0;
          description {
             state: "default" 0.0;
@@ -52,15 +53,29 @@ group {
             rel2 {
                to: "button";
             }
-            image {
-               normal: "button_focus_bottom.png";
-               border: 7 7 7 7;
-            }
          }
          description {
             state: "visible" 0.0;
             inherit: "default" 0.0;
-            color: 255 255 255 0;
+            color: 255 255 255 255;
+         }
+      }
+      part {
+         name: "focus";
+         mouse_events: 0;
+         clip_to: "focus_clip";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               to: "button";
+            }
+            rel2 {
+               to: "button";
+            }
+            image {
+               normal: "button_focus.png";
+               border: 7 7 7 7;
+            }
          }
       }
       part {
@@ -117,29 +132,6 @@ group {
             }
          }
       }
-      part {
-         name: "focus2";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            color: 255 255 255 0;
-            rel1 {
-               to: "button";
-            }
-            rel2 {
-               to: "button";
-            }
-            image {
-               normal: "button_focus_top.png";
-               border: 7 7 7 7;
-            }
-         }
-         description {
-            state: "visible" 0.0;
-            inherit: "default" 0.0;
-            color: 255 255 255 0;
-         }
-      }
    }
    programs {
       program {
@@ -193,44 +185,21 @@ group {
             update_state();
          }
       }
-      
       program {
          name: "button_focus";
          signal: "etk,state,focused";
          source: "etk";
-         after: "button_focus_show";
+         action: STATE_SET "visible" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
       }
       program {
          name: "button_unfocus";
          signal: "etk,state,unfocused";
          source: "etk";
-         action: ACTION_STOP;
-         target: "button_focus_show";
-         target: "button_focus_hide";
-         after: "button_unfocus2";
-      }
-      program {
-         name: "button_unfocus2";
          action: STATE_SET "default" 0.0;
          transition: DECELERATE 0.5;
-         target: "focus1";
-         target: "focus2";
-      }
-      program {
-         name: "button_focus_show";
-         action: STATE_SET "visible" 0.0;
-         transition: DECELERATE 1.0;
-         target: "focus1";
-         target: "focus2";
-         after: "button_focus_hide";
-      }
-      program {
-         name: "button_focus_hide";
-         action: STATE_SET "default" 0.0;
-         transition: DECELERATE 0.5;
-         target: "focus1";
-         target: "focus2";
-         after: "button_focus_show";
+         target: "focus_clip";
       }
    }
    script {
