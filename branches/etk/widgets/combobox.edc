@@ -25,6 +25,44 @@ group {
          }
       }
       part {
+         name: "focus_clip";
+         type: RECT;
+         mouse_events: 0;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 0;
+            rel1 {
+               to: "combo_button";
+            }
+            rel2 {
+               to: "combo_button";
+            }
+         }
+         description {
+            state: "visible" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 255;
+         }
+      }
+      part {
+         name: "focus";
+         mouse_events: 0;
+         clip_to: "focus_clip";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               to: "combo_button";
+            }
+            rel2 {
+               to: "combo_button";
+            }
+            image {
+               normal: "combobox_focus.png";
+               border: 7 7 7 7;
+            }
+         }
+      }
+      part {
          name: "combo_button";
          description {
             state: "default" 0.0;
@@ -178,6 +216,22 @@ group {
             update_state();
             set_state(PART:"combo_arrow", "disabled", 0.0);
          }
+      }
+      program {
+         name: "button_focus";
+         signal: "etk,state,focused";
+         source: "etk";
+         action: STATE_SET "visible" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
+      }
+      program {
+         name: "button_unfocus";
+         signal: "etk,state,unfocused";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
       }
    }
    script {
