@@ -8,7 +8,7 @@ image: "frame_outline.png" COMP;
 
 // button
 image: "button.png" COMP;
-image: "button_focus_bottom.png" COMP;
+image: "button_focus.png" COMP;
 image: "button_disabled.png" COMP;
 image: "button_outline.png" COMP;
 image: "button_clicked.png" COMP;

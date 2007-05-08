@@ -78,7 +78,7 @@ part {
 	description {
 		state: "visible" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 0;
+		color: 255 255 255 255;
 	}
 }
 
@@ -98,7 +98,7 @@ part {
 			to: "button_enabled"; 
 		}
 	
-		image.normal: "button_focus_bottom.png";
+		image.normal: "button_focus.png";
 		image.border: 7 7 7 7;
 	}
 }
