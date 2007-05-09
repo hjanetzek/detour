@@ -21,6 +21,7 @@ images {
    image: "cp_slider_trough_right.png" COMP;
    image: "dialog_bg.png" COMP;
    image: "dialog_separator.png" COMP;
+   image: "drag_default.png" COMP;
    image: "entry.png" COMP;
    image: "entry_focus.png" COMP;
    image: "frame_outline.png" COMP;
