@@ -55,7 +55,7 @@ part {
 		}
 
 		text {
-			text: "version 0.6.1";
+			text: "version 0.6.2";
 			font: "Edje-Vera";
 			size: 10;
 			min: 1 1;
