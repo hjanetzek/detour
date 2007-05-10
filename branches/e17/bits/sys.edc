@@ -9,8 +9,6 @@ styles {
 	}
 }
 
-#include "sys_macros.edc"
-
 group {
 	name: "e/sys/logout";
 

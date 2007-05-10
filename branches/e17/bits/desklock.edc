@@ -1,6 +1,4 @@
 
-#include "background_macros.edc"
-
 group  {
 	name: "e/desklock/background";
 

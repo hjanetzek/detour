@@ -11,10 +11,10 @@ program {
 	name: "button_unclick";
 	signal: "mouse,up,1";
 	source: "button_enabled";
-	script {
-		set_state(PART:"button_enabled", "default", 0.0);
-		set_state(PART:"e.text.label", "default", 0.0);
-	}
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "button_enabled";
+	target: "e.text.label";
 }
 
 program {
@@ -74,10 +74,9 @@ program {
 	}
 }
 
-// Support e,action,icon,hide for the button widget.
-
 program {
 	name: "icon_invisible";
+	/* Support e,action,icon,hide for the button widget. */
 	signal: "e,action,hide,icon";
 	source: "e";
 	action: STATE_SET "default" 0.0;

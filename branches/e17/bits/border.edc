@@ -1,7 +1,4 @@
 
-#include "border_macros.edc"
-#include "border_menu.edc"
-
 group {
 	name: "e/widgets/border/classic/border";
 

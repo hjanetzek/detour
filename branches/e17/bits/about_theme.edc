@@ -63,6 +63,7 @@ group {
 	}
 
 	programs {
+		buttons()
 		#include "about_theme_programs.edc"
 	}
 }

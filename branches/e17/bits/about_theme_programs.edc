@@ -1,8 +1,7 @@
 
-/* scrolling textblock */
-
 program {
 	name: "go";
+	/* scrolling textblock begin */
 	signal: "load";
 	source: "";
 	action: STATE_SET "default" 0.1;
@@ -35,7 +34,8 @@ program {
 }
 
 program {
-	name: "return"; /* to the first state */
+	name: "return";
+	/* to the first state */
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.0;
@@ -45,29 +45,3 @@ program {
 	after: "go"; 
 }
 
-program {
-	name: "button_click";
-	signal: "mouse,down,1";
-	source: "button_enabled";
-	action: STATE_SET "clicked" 0.0;
-	target: "button_enabled";
-	target: "button_clip";
-	target: "button_text";
-}
-
-program {
-	name: "button_unclick";
-	signal: "mouse,up,1";
-	source: "button_enabled";
-	action: STATE_SET "default" 0.0;
-	target: "button_enabled";
-	target: "button_clip";
-	target: "button_text";
-}
-
-program {
-	name: "emit.signal";
-	signal: "mouse,clicked,1";
-	source: "button_enabled";
-	action: SIGNAL_EMIT "e,action,close" "";
-}

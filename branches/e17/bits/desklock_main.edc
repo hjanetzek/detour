@@ -82,7 +82,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-/* setting this part to a fixed size is not a very good idea */
+		/* setting this part to a fixed size is not a very good idea */
 		min: 251 21;
 		max: 251 21;
 		fixed: 1 1;
