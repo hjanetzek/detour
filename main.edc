@@ -3,7 +3,7 @@
 //~ #include "macros/scrollbar.edc"
 #include "macros/style.edc"
 //~ #include "macros/toolbar.edc"
-//#include "macros/tree_header.edc"
+#include "macros/tree_header.edc"
 
 fonts {
    font: "Vera.ttf" "Vera";

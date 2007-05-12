@@ -50,7 +50,7 @@ group { \
                to: "header"; \
             } \
             image { \
-               normal: "button_disabled.png"; \
+               normal: "tree_header_over.png"; \
             } \
             fill { \
                smooth: 0; \

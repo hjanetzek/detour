@@ -56,13 +56,11 @@ group {
  * - common widget's signals: "etk,state,enter", "etk,state,leave", "etk,state,shown"
  */
 
-/* TODO: implement... */
-/*
-TREE_HEADER("etk/tree/header", "button.png", "button_disabled.png");
-TREE_HEADER("etk/tree/header_unique", "button.png", "button_disabled.png");
-TREE_HEADER("etk/tree/header_first", "button.png", "button_disabled.png");
-TREE_HEADER("etk/tree/header_last", "button.png", "button_disabled.png");
-*/
+TREE_HEADER("etk/tree/header", "tree_header_middle.png", "tree_header_middle2.png");
+TREE_HEADER("etk/tree/header_unique", "tree_header_unique.png", "tree_header_unique2.png");
+TREE_HEADER("etk/tree/header_first", "tree_header_first.png", "tree_header_first2.png");
+TREE_HEADER("etk/tree/header_last", "tree_header_last.png", "tree_header_last2.png");
+
 /**
  * group "etk/tree/scrolled_view"
  * -----------------------
@@ -328,6 +326,8 @@ group {
          name: "expander_arrow";
          description {
             state: "default" 0.0;
+            min: 13 16;
+            max: 13 16;
             rel1 {
                relative: 0.0 0.0;
                offset: 0 0;
@@ -337,7 +337,7 @@ group {
                offset: -1 -1;
             }
             image {
-               normal: "button.png";
+               normal: "tree_arrow1.png";
             }
             fill {
                smooth: 0;
@@ -346,8 +346,10 @@ group {
          description {
             state: "expanded" 0.0;
             inherit: "default" 0.0;
+            min: 16 13;
+            max: 16 13;
             image {
-               normal: "button_disabled.png";
+               normal: "tree_arrow2.png";
             }
             fill {
                smooth: 0;
@@ -393,11 +395,9 @@ group {
 group {
    name: "etk/tree/checkbox";
    min: 20 18;
-   max: 20 18;
    parts {
       part {
          name: "check";
-         mouse_events: 0;
          description {
             state: "default" 0.0;
             min: 20 18;
@@ -507,3 +507,6 @@ group {
       }
    }
 }
+
+/* TODO: we should be able to theme the progress-bar model... */
+/* TODO: document "etk/tree/grid" */
