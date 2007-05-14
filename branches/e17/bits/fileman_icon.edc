@@ -1,0 +1,145 @@
+
+group {
+	name: "e/icons/fileman/home";
+
+	parts {
+		part {
+			name: "icon";
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				align: 0.5 0.0;
+
+				image {
+					normal: "user-home.png";
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 128 128 128 255;
+			}
+		}
+	}
+
+	programs {
+		program {
+			name: "disable";
+			signal: "disable";
+			source: "";
+			action: STATE_SET "disabled" 0.0;
+			transition: LINEAR 0.1;
+			target: "icon";
+		}
+
+		program {
+			name: "default";
+			signal: "default";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.1;
+			target: "icon";
+		}
+	}
+}
+
+group {
+	name: "e/icons/fileman/desktop";
+
+	parts {
+		part {
+			name: "icon";
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				align: 0.5 0.0;
+
+				image {
+					normal: "gnome-fs-desktop.png";
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 128 128 128 255;
+			}
+		}
+	}
+
+	programs {
+		program {
+			name: "disable";
+			signal: "disable";
+			source: "";
+			action: STATE_SET "disabled" 0.0;
+			transition: LINEAR 0.1;
+			target: "icon";
+		}
+
+		program {
+			name: "default";
+			signal: "default";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.1;
+			target: "icon";
+		}
+	}
+}
+
+group {
+	name: "e/icons/fileman/hd";
+
+	parts {
+		part {
+			name: "icon";
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				align: 0.5 0.0;
+
+				image {
+					normal: "drive-harddisk.png";
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 128 128 128 255;
+			}
+		}
+	}
+
+	programs {
+		program {
+			name: "disable";
+			signal: "disable";
+			source: "";
+			action: STATE_SET "disabled" 0.0;
+			transition: LINEAR 0.1;
+			target: "icon";
+		}
+
+		program {
+			name: "default";
+			signal: "default";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.1;
+			target: "icon";
+		}
+	}
+}
+

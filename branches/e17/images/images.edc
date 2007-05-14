@@ -134,6 +134,12 @@ image: "shelf_alternate_over_r.png" COMP;
 image: "shelf_alternate_inset.png" COMP;
 image: "shelf_invisible_inset_bg.png" COMP;
 
+// scrollbar
+image: "sb_bl1.png" COMP;
+image: "sb_br1.png" COMP;
+image: "sb_btu1.png" COMP;
+image: "sb_btd1.png" COMP;
+
 // scrollframe
 image: "scrollframe_inset.png" COMP;
 image: "scrollframe_focus.png" COMP;
@@ -391,19 +397,6 @@ image: "e17_logo_small_p27.png" COMP;
 image: "e17_logo_small_p28.png" COMP;
 image: "e17_logo_small_p29.png" COMP;
 
-// fileman
-image: "e17_fileman_thumb_bg.png" COMP;
-image: "e17_mini_button_shadow2.png" COMP;
-image: "e17_busy-1.png" COMP; 
-image: "e17_busy-2.png" COMP; 
-image: "e17_busy-3.png" COMP; 
-image: "e17_busy-4.png" COMP; 
-image: "e17_busy-5.png" COMP; 
-image: "e17_busy-6.png" COMP; 
-image: "e17_busy-7.png" COMP; 
-image: "e17_busy-8.png" COMP; 
-image: "e17_busy-9.png" COMP; 
-
 // exebuf
 
 // deskpreview
@@ -456,3 +449,56 @@ image: "temperature-40.png" COMP;
 image: "temperature-60.png" COMP;
 image: "temperature-80.png" COMP;
 image: "temperature-100.png" COMP;
+
+// fileman
+image: "e17_fileman_thumb_bg.png" COMP;
+image: "e17_mini_button_shadow2.png" COMP;
+image: "e17_busy-1.png" COMP; 
+image: "e17_busy-2.png" COMP; 
+image: "e17_busy-3.png" COMP; 
+image: "e17_busy-4.png" COMP; 
+image: "e17_busy-5.png" COMP; 
+image: "e17_busy-6.png" COMP; 
+image: "e17_busy-7.png" COMP; 
+image: "e17_busy-8.png" COMP; 
+image: "e17_busy-9.png" COMP;
+
+image: "folder.png" COMP;
+image: "folder-open.png" COMP;   
+image: "text-x-generic.png" COMP;
+image: "document-open.png" COMP;
+image: "user-home.png" COMP;
+image: "gnome-fs-desktop.png" COMP;   
+image: "drive-harddisk.png" COMP;   
+
+// fileman mime-types
+image: "gnome-mime-application-pdf.png" COMP; // pdf
+image: "shellscript.png" COMP; // sh, .c, .o, .h, .cpp, .patch, .cs
+image: "image-x-generic.png" COMP; // png, jpeg, xcf
+image: "document.png" COMP; // doc
+image: "audio-x-generic.png" COMP; // ogg, mp3
+image: "text-x-generic.png" COMP; // txt, doc
+image: "folder_tar.png" COMP; // bz2, tar, gz, zip, deb
+image: "gnome-mime-application-x-font.png" COMP; // pcf, ttf, bdf
+image: "text-html.png" COMP; // html, css,
+image: "video-x-generic.png" COMP; // mpeg, avi
+   
+/*
+image: "e17_button_detail_open.png" COMP;   
+image: "e17_button_detail_paste.png" COMP;
+image: "e17_button_detail_copy.png" COMP;
+image: "e17_button_detail_cut.png" COMP;
+image: "e17_button_detail_rename.png" COMP;
+image: "e17_button_detail_delete.png" COMP;
+image: "e17_button_detail_properties.png" COMP;
+image: "e17_button_detail_arrange_name.png" COMP;
+image: "e17_button_detail_arrange.png" COMP;
+image: "e17_button_detail_arrange_time.png" COMP;
+image: "e17_button_detail_new.png" COMP;   
+image: "e17_button_detail_new_dir.png" COMP;
+image: "e17_button_detail_properties.png" COMP;
+image: "e17_button_detail_refresh.png" COMP;
+image: "e17_button_detail_view_details.png" COMP;
+image: "e17_button_detail_view_name.png" COMP;
+image: "e17_button_detail_view.png" COMP; 
+*/ 

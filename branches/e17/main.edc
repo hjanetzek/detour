@@ -1,17 +1,18 @@
 
 /* by cored.org et al (see AUTHORS)
- * detour (seek) version 0.6.2 for Enlightenment 0.16.999.038 or later
+ * detour version 0.6.3 (seek) for Enlightenment 0.16.999.038 or later
  */
 
 #include "macros/background.edc"
 #include "macros/border.edc"
 #include "macros/border_menu.edc"
 #include "macros/buttons.edc"
+#include "macros/fileman.edc"
 #include "macros/sys.edc"
 
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
-#define SEE_CONTEXT_MENUTITLE 0
+#define SEE_CONTEXT_MENUTITLE 1
 #define BG_TYPE 0
 
 fonts {
@@ -46,12 +47,6 @@ collections {
 #include "bits/move.edc"
 #include "bits/dialog.edc"
 #include "bits/configure.edc"
-#if USE_TANGO_ICONS == 0
-#else
-#if USE_TANGO_ICONS == 1
-#include "bits/icons.edc"
-#endif
-#endif
 #include "bits/pointer.edc"
 #include "bits/entry.edc"
 #include "bits/check.edc"
@@ -76,6 +71,15 @@ collections {
 #include "bits/winlist.edc"
 #include "bits/about.edc"
 #include "bits/fileman.edc"
+#if USE_TANGO_ICONS == 0
+#else
+#if USE_TANGO_ICONS == 1
+#include "bits/icons.edc"
+#include "bits/fileman_icon.edc"
+#include "bits/fileman_icon_clickable.edc"
+#include "bits/fileman_mime.edc"
+#endif
+#endif
 #include "bits/color_well.edc"
 #include "bits/cslider.edc"
 #include "bits/spectrum.edc"

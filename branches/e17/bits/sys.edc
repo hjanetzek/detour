@@ -4,8 +4,8 @@ styles {
 		name: "sys_style";
 		base: "font=Edje-Vera-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word"; // text_class=tb_large
       
-		tag:  "br" "\n";
-		tag:  "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14"; // text_class=tb_large_light
+		tag: "br" "\n";
+		tag: "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14"; // text_class=tb_large_light
 	}
 }
 

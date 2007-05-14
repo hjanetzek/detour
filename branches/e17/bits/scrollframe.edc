@@ -29,7 +29,7 @@ group {
 			}
 		}
 
-#include "scrollframe_main.edc"
+		#include "scrollframe_main.edc"
 
 		part {
 			name: "border";
@@ -53,8 +53,8 @@ group {
 			}
 		}
 
-#include "scrollframe_vbar.edc"
-#include "scrollframe_hbar.edc"
+		#include "scrollframe_vbar.edc"
+		#include "scrollframe_hbar.edc"
 
 		part {
 			name: "focus_clip";
@@ -107,7 +107,8 @@ program { \
 	transition: DECELERATE 0.5; \
 	target: "focus_clip"; \
 }
-	FOCUS("focus_in", "e,state,focused", "focused")
-	FOCUS("focus_out", "e,state,unfocused", "default")
+FOCUS("focus_in", "e,state,focused", "focused")
+FOCUS("focus_out", "e,state,unfocused", "default")
 	}
 }
+
