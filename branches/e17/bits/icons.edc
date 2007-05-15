@@ -5,7 +5,7 @@
 #define ICON(GROUP_NAME,IMAGE) \
 group { \
 	name: GROUP_NAME; \
-	max: 64 64; \
+	max: 256 256; \
 \
 	parts { \
 			part { \
@@ -16,7 +16,7 @@ group { \
 					state: "default" 0.0; \
 					aspect: 1.0 1.0; \
 					aspect_preference: BOTH; \
-					max: 64 64; \
+					max: 256 256; \
 \
 					image { \
 						normal: IMAGE; \
