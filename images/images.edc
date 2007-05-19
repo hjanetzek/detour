@@ -462,43 +462,4 @@ image: "e17_busy-6.png" COMP;
 image: "e17_busy-7.png" COMP; 
 image: "e17_busy-8.png" COMP; 
 image: "e17_busy-9.png" COMP;
-
-image: "folder.png" COMP;
-image: "folder-open.png" COMP;   
-image: "text-x-generic.png" COMP;
-image: "document-open.png" COMP;
-image: "user-home.png" COMP;
-image: "gnome-fs-desktop.png" COMP;   
-image: "drive-harddisk.png" COMP;   
-
-// fileman mime-types
-image: "gnome-mime-application-pdf.png" COMP; // pdf
-image: "shellscript.png" COMP; // sh, .c, .o, .h, .cpp, .patch, .cs
-image: "image-x-generic.png" COMP; // png, jpeg, xcf
-image: "document.png" COMP; // doc
-image: "audio-x-generic.png" COMP; // ogg, mp3
-image: "text-x-generic.png" COMP; // txt, doc
-image: "folder_tar.png" COMP; // bz2, tar, gz, zip, deb
-image: "gnome-mime-application-x-font.png" COMP; // pcf, ttf, bdf
-image: "text-html.png" COMP; // html, css,
-image: "video-x-generic.png" COMP; // mpeg, avi
    
-/*
-image: "e17_button_detail_open.png" COMP;   
-image: "e17_button_detail_paste.png" COMP;
-image: "e17_button_detail_copy.png" COMP;
-image: "e17_button_detail_cut.png" COMP;
-image: "e17_button_detail_rename.png" COMP;
-image: "e17_button_detail_delete.png" COMP;
-image: "e17_button_detail_properties.png" COMP;
-image: "e17_button_detail_arrange_name.png" COMP;
-image: "e17_button_detail_arrange.png" COMP;
-image: "e17_button_detail_arrange_time.png" COMP;
-image: "e17_button_detail_new.png" COMP;   
-image: "e17_button_detail_new_dir.png" COMP;
-image: "e17_button_detail_properties.png" COMP;
-image: "e17_button_detail_refresh.png" COMP;
-image: "e17_button_detail_view_details.png" COMP;
-image: "e17_button_detail_view_name.png" COMP;
-image: "e17_button_detail_view.png" COMP; 
-*/ 

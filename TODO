@@ -1,13 +1,30 @@
 
 -=TODO=-
 
-  o separate the background from desklock
+fix:
+  o set the battery module to display text only when running on 
+    battery mode via embryo using its configured time interval
+  o properly center entry text (ie. sliders, etc)
   o fix scrollframe 
-  o set the battery module display text only when running on 
-    battery mode via embryo
-  o fileman.edc simplification (depends on fm/fwin)
-  o transitions
-  o test all text_classes
-  o support color_classes
-  o design cpufreq module 
+  
+test:
+  o test all text classes
+  o support color classes
+
+design:
+  o transitions images (transition dialog) 
   o design gadman
+  o design cpufreq module 
+  o design theme wallpaper (separate the background from desklock)
+  o design a better insignia/logo
+
+redo:
+  o re-desing pager desktop overlay
+  o re-design icon/object drop animation
+  o find more suitable icons for some of the available tasks
+
+ideas:
+  o re-design exebuf to display entry, command titles ?
+  o add subtle animation for shelf layout icons (when selected) ?
+  o new mouse cursor ?
+

@@ -1,4 +1,36 @@
 
+// efm actions
+image: "document-new.png" COMP;
+image: "document-open.png" COMP;
+image: "document-properties.png" COMP;
+image: "edit-copy.png" COMP;
+image: "edit-paste.png" COMP;
+image: "filesaveas.png" COMP;
+image: "folder-new.png" COMP;
+image: "edit-cut.png" COMP;
+image: "edit-delete.png" COMP;
+image: "view-refresh.png" COMP;
+
+// fileman mime-types
+image: "gnome-mime-application-pdf.png" COMP; // pdf
+image: "shellscript.png" COMP; // sh, .c, .o, .h, .cpp, .patch, .cs
+image: "image-x-generic.png" COMP; // png, jpeg, xcf
+image: "document.png" COMP; // doc
+image: "audio-x-generic.png" COMP; // ogg, mp3
+image: "text-x-generic.png" COMP; // txt, doc
+image: "folder_tar.png" COMP; // bz2, tar, gz, zip, deb
+image: "gnome-mime-application-x-font.png" COMP; // pcf, ttf, bdf
+image: "text-html.png" COMP; // html, css,
+image: "video-x-generic.png" COMP; // mpeg, avi
+
+image: "folder.png" COMP;
+image: "folder-open.png" COMP;   
+image: "text-x-generic.png" COMP;
+image: "document-open.png" COMP;
+image: "user-home.png" COMP;
+image: "gnome-fs-desktop.png" COMP;   
+image: "drive-harddisk.png" COMP;   
+
 // shelf
 image: "icon_shelf_bottom_left.png" COMP;
 image: "icon_shelf_bottom.png" COMP;

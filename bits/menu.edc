@@ -27,7 +27,6 @@ program { \
 	action: STATE_SET "active" 0.0; \
 	target: NAME; \
 } \
-\
 program { \
 	name: "signal_toggle_off"; \
 	signal: "e,state,off"; \
@@ -68,14 +67,28 @@ group {
 }
 
 group {
-	name: "e/widgets/menu/default/item_bg";
+	name: "e/widgets/menu/default/submenu";
 
 	parts {
-		#include "menu_item_bg.edc"
+		#include "menu_submenu.edc"
 	}
 
 	programs {
-		sel()
+		program {
+			name: "go_active";
+			signal: "e,state,selected";
+			source: "e";
+			action: STATE_SET "active" 0.0;
+			target: "arrow";
+		}
+
+		program {
+			name: "go_passive";
+			signal: "e,state,unselected";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "arrow";
+		}
 	}
 }
 
@@ -84,18 +97,6 @@ group {
 
 	parts {
 		#include "menu_separator.edc"
-	}
-}
-
-group {
-	name: "e/widgets/menu/default/submenu_bg";
-
-	parts {
-		#include "menu_submenu_bg.edc"
-	}
-
-	programs {
-		sel()
 	}
 }
 
@@ -132,6 +133,30 @@ group {
 }
 
 group {
+	name: "e/widgets/menu/default/item_bg";
+
+	parts {
+		#include "menu_item_bg.edc"
+	}
+
+	programs {
+		sel()
+	}
+}
+
+group {
+	name: "e/widgets/menu/default/submenu_bg";
+
+	parts {
+		#include "menu_submenu_bg.edc"
+	}
+
+	programs {
+		sel()
+	}
+}
+
+group {
 	name: "e/widgets/menu/default/label";
 
 	parts {
@@ -144,28 +169,3 @@ group {
 	}
 }
 
-group {
-	name: "e/widgets/menu/default/submenu";
-
-	parts {
-		#include "menu_submenu.edc"
-	}
-
-	programs {
-		program {
-			name: "go_active";
-			signal: "e,state,selected";
-			source: "e";
-			action: STATE_SET "active" 0.0;
-			target: "arrow";
-		}
-
-		program {
-			name: "go_passive";
-			signal: "e,state,unselected";
-			source: "e";
-			action: STATE_SET "default" 0.0;
-			target: "arrow";
-		}
-	}
-}
