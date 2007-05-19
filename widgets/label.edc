@@ -42,4 +42,20 @@ group {
          }
       }
    }
+   programs {
+      program {
+         name: "label_enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.label";
+      }
+      program {
+         name: "label_disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "etk.text.label";
+      }
+   }
 }
