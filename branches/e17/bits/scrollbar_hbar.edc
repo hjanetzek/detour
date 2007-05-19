@@ -11,7 +11,7 @@ part {
 		color: 255 255 255 255;
 
 	rel1 { relative: 0.0 1.0; offset: 0 0; }
-	rel2 { relative: 0.0 1.0; offset: 1 -1; to_x: "sb_vbar"; }
+	rel2 { relative: 0.0 1.0; offset: 1 0; to_x: "sb_vbar"; }
 	}
 
 	description {
@@ -19,7 +19,7 @@ part {
 		visible: 0;
 
 	rel1 { relative: 0.0 1.0; offset: 0 0; }
-	rel2 { relative: 0.0 1.0; offset: 1 -6; to_x: "sb_vbar"; }
+	rel2 { relative: 0.0 1.0; offset: 1 -5; to_x: "sb_vbar"; }
 	}
 }
 

@@ -5,14 +5,21 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 20 2;
+		min: 20 3;
 
-	rel1 { relative: 0.0 0.0; offset: -2 3; }
-	rel2 { relative: 1.0 1.0; offset: 1 -2; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: -2 3; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: 1 -3; 
+		}
 
 		image {
 			normal: "menu_separator.png";
-			border: 8 8 1 1;
+			border: 2 2 1 1;
 		}
 	}
 }

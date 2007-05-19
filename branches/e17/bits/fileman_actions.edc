@@ -1,0 +1,306 @@
+
+/*
+ * Missing icons for: 
+ * "arrange_name"
+ * "arrange"
+ * "arrange_time"
+ * "view_details"
+ * "view_name"
+ * "view"
+ */
+
+#if USE_TANGO_ICONS == 0
+#else
+#if USE_TANGO_ICONS == 1
+group {
+	name: "e/fileman/button/open";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "document-open.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/copy";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "edit-copy.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/cut";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "edit-cut.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/paste";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "edit-paste.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/delete";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "edit-delete.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/properties";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "document-properties.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/new";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "document-new.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/new_dir";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "folder-new.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/refresh";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "view-refresh.png";
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/button/rename";
+
+	parts {
+		part {
+			name: "whole";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+
+				image {
+					normal: "filesaveas.png";
+				}
+			}
+		}
+	}
+}
+#endif
+#endif
+

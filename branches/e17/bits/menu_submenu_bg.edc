@@ -4,7 +4,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 9999 20;
+		max: 9999 21;
 		visible: 0;
 
 		rel1 { 
@@ -34,7 +34,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		align: 0 0;
+		align: 0.0 0.0;
 		color: 0 0 0 0;
 
 		rel1 { 

@@ -103,7 +103,7 @@ group {
 				aspect_preference: BOTH;
 
 				image {
-					normal: "document-open.png";
+					normal: "folder-open.png";
 				}
 			}
 

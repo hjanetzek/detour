@@ -1454,7 +1454,7 @@ group {
 				align: 0.5 0.0;
 
 				image {
-					normal: "folder_tar.png";
+					normal: "video-x-generic.png";
 				}
 			}
 
