@@ -1,14 +1,4 @@
 
-styles {
-	style {
-		name: "sys_style";
-		base: "font=Edje-Vera-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word"; // text_class=tb_large
-      
-		tag: "br" "\n";
-		tag: "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14"; // text_class=tb_large_light
-	}
-}
-
 group {
 	name: "e/sys/logout";
 
@@ -51,6 +41,7 @@ group {
 		PR("7", 1.2, "p7");
 		PR("8", 1.4, "p8");
 		PR("9", 1.6, "p9");
+
 		PR("21", 1.6, "p21");
 		PR("22", 1.4, "p22");
 		PR("23", 1.2, "p23");
@@ -105,6 +96,7 @@ group {
 		PR("7", 1.2, "p7");
 		PR("8", 1.4, "p8");
 		PR("9", 1.6, "p9");
+
 		PR("21", 1.6, "p21");
 		PR("22", 1.4, "p22");
 		PR("23", 1.2, "p23");
@@ -159,6 +151,7 @@ group {
 		PR("7", 1.2, "p7");
 		PR("8", 1.4, "p8");
 		PR("9", 1.6, "p9");
+
 		PR("21", 1.6, "p21");
 		PR("22", 1.4, "p22");
 		PR("23", 1.2, "p23");
@@ -213,6 +206,7 @@ group {
 		PR("7", 1.2, "p7");
 		PR("8", 1.4, "p8");
 		PR("9", 1.6, "p9");
+
 		PR("21", 1.6, "p21");
 		PR("22", 1.4, "p22");
 		PR("23", 1.2, "p23");
@@ -267,6 +261,7 @@ group {
 		PR("7", 1.2, "p7");
 		PR("8", 1.4, "p8");
 		PR("9", 1.6, "p9");
+
 		PR("21", 1.6, "p21");
 		PR("22", 1.4, "p22");
 		PR("23", 1.2, "p23");

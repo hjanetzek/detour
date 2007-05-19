@@ -214,6 +214,7 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.5;
+		color: 0 0 0 0;
 		/* TODO: fixed: 1 1; */
 
 		rel1 { 
@@ -229,17 +230,19 @@ part {
 part {
 	name: "e.text.label";
 	type: TEXT;
+	effect: SHADOW;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 		min: 16 16;
 		color: 60 60 60 255;
+		color3: 0 0 0 0;
 
 		rel1 { 
 			to_x: "icon0"; 
 			relative: 1.0 0.0; 
-			offset: 8 4; 
+			offset: 4 4; 
 		}
 
 		rel2 { 
@@ -253,7 +256,7 @@ part {
 			size: 11;
 			min: 1 1;
 			align: 0.0 0.5;
-			text_class: "ilist_item";	       
+			// text_class: "ilist_item";	       
 		}
 	}
 
@@ -261,6 +264,7 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
+		color3: 0 0 0 0;
 	}
 }
 
@@ -273,3 +277,4 @@ part {
 		color: 0 0 0 0;
 	}
 }
+

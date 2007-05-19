@@ -203,13 +203,13 @@ group {
 				state: "default" 0.0;
 
 				rel1 { 
-					to: "e.swallow.content"; 
-					offset: 1 0; 
+					//to: "e.swallow.content"; 
+					//offset: 1 0; 
 				}
 		
 				rel2 { 
-					to: "e.swallow.content"; 
-					offset: -2 -2; 
+					//to: "e.swallow.content"; 
+					//offset: -2 -2; 
 				}
 			}
 		}
@@ -222,6 +222,11 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 0 0 0 0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
 
 				rel2 {
 					relative: 0.0 0.0;
