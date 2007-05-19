@@ -453,7 +453,7 @@ group {
 
 group {
 	name: "e/icons/enlightenment/e";
-	max: 64 64;
+	max: 256 256;
 
 	parts {
 		part {      
@@ -464,10 +464,10 @@ group {
 				state: "default" 0.0;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
-				max: 64 64;
+				max: 256 256;
 
 				image {
-					normal: "e17_icon_e_0.png";
+					normal: "e17_logo_small.png";
 				}
 			}
 		}
