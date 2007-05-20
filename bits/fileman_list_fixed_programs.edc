@@ -1,23 +1,5 @@
 
 program {
-	name: "go_active";
-	signal: "e,state,selected";
-	source: "e";
-	action: STATE_SET "default" 0.0;
-	target: "base";
-	target: "e.text.label";
-}
-
-program {
-	name: "go_inactive";
-	signal: "e,state,unselected";
-	source: "e";
-	action: STATE_SET "active" 0.0;
-	target: "base";
-	target: "e.text.label";
-}
-
-program {
 	name: "thumb_gen";
 	signal: "e,action,thumb,gen";
 	source: "e";
