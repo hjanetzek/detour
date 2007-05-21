@@ -3,7 +3,17 @@ group  {
 	name: "e/desklock/background";
 
 	parts { 
-		#include "background_main.edc"
+		part { 
+			name: "background_image";
+			type: RECT;
+
+			description {
+				state: "default" 0.0;
+				color: 139 157 180 255;
+			}
+		}
+
+		version()
 	}
 
 	programs {
