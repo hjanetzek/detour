@@ -13,7 +13,50 @@
  */
 group {
    name: "etk/label";
-   alias: "etk/tree/header/label";
+   parts {
+      part {
+         name: "etk.text.label";
+         type: TEXTBLOCK;
+         description {
+            state: "default" 0.0;
+            align: 0.0 0.5;
+            rel1 {
+               offset: 5 0;
+            }
+            text {
+               style: "Default";
+               min: 1 1;
+            }
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            text {
+               style: "Button Disabled";
+               min: 1 1;
+            }
+         }
+      }
+   }
+   programs {
+      program {
+         name: "label_enable";
+         signal: "etk,state,enabled";
+         source: "etk";
+         action: STATE_SET "default" 0.0;
+         target: "etk.text.label";
+      }
+      program {
+         name: "label_disable";
+         signal: "etk,state,disabled";
+         source: "etk";
+         action: STATE_SET "disabled" 0.0;
+         target: "etk.text.label";
+      }
+   }
+}
+group {
+   name: "etk/tree/header/label";
    alias: "etk/tree/header_unique/label";
    alias: "etk/tree/header_first/label";
    alias: "etk/tree/header_last/label";
@@ -28,7 +71,7 @@ group {
                offset: 5 0;
             }
             text {
-               style: "Default";
+               style: "Button Default";
                min: 1 1;
             }
          }
