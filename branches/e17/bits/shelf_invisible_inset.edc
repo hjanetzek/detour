@@ -1,10 +1,12 @@
 
 part {
 	name: "background";
+	type: IMAGE;
 	mouse_events: 0;
 	
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 128;
 
 		image {
 			normal: "shelf_invisible_inset_bg.png";
@@ -14,8 +16,6 @@ part {
 		fill {
 			smooth: 0;
 		}
-
-	color: 255 255 255 128;
 	}
 }
 
@@ -27,11 +27,19 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 
-	rel1 { to: "background"; relative: 0.0 0.0; offset: 3 4; }
-	rel2 { to: "background"; relative: 1.0 1.0; offset: -5 -4; }
+		rel1 { 
+			to: "background"; 
+			relative: 0.0 0.0; 
+			offset: 3 4; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "background"; 
+			relative: 1.0 1.0; 
+			offset: -5 -4; 
+		}
 	}
 }
 
@@ -43,10 +51,15 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 0 0 0;
 
-	rel1 { to: "items_clip"; }
-	rel2 { to: "items_clip"; }
+		rel1 { 
+			to: "items_clip"; 
+		}
 
-	color: 255 0 0 0;
+		rel2 {
+			to: "items_clip"; 
+		}
 	}
 }
+

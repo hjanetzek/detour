@@ -10,8 +10,10 @@ fix:
 test:
   o test all text classes
   o support color classes
+  o exebuf might be buggy in certain scenarios ?
 
 design:
+  o shelf: do something with e,state,hidden|visible
   o transitions images (transition dialog) 
   o design gadman
   o design cpufreq module 
@@ -24,7 +26,9 @@ redo:
   o find more suitable icons for some of the available tasks
 
 ideas:
+
   o re-design exebuf to display entry, command titles ?
   o add subtle animation for shelf layout icons (when selected) ?
   o new mouse cursor ?
+  o different stlye scrollbars for efm ?
 

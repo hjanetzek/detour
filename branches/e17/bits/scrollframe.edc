@@ -91,9 +91,8 @@ group {
 	}
   
 	programs {
-
-#include "scrollframe_vbar_progs.edc"
-#include "scrollframe_hbar_progs.edc"
+		#include "scrollframe_vbar_progs.edc"
+		#include "scrollframe_hbar_progs.edc"
 
 # ifdef FOCUS
 #  undef FOCUS
