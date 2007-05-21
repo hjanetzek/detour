@@ -19,7 +19,7 @@ group { \
             } \
             image { \
                normal: image_file; \
-               border: 3 3 3 3; \
+               border: 6 6 6 6; \
             } \
             fill { \
                smooth: 0; \
@@ -51,6 +51,7 @@ group { \
             } \
             image { \
                normal: "tree_header_over.png"; \
+               border: 4 4 2 2; \
             } \
             fill { \
                smooth: 0; \
