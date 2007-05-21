@@ -5,12 +5,11 @@ fix:
   o set the battery module to display text only when running on 
     battery mode via embryo using its configured time interval
   o properly center entry text (ie. sliders, etc)
-  o fix scrollframe 
+  o fix scrollframe (items are sometimes hidden in some scenarios) 
   
 test:
   o test all text classes
   o support color classes
-  o exebuf might be buggy in certain scenarios ?
 
 design:
   o shelf: do something with e,state,hidden|visible
@@ -24,6 +23,7 @@ redo:
   o re-desing pager desktop overlay
   o re-design icon/object drop animation
   o find more suitable icons for some of the available tasks
+  o exebuf
 
 ideas:
 
