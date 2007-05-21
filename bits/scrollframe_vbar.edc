@@ -8,11 +8,20 @@ part {
 		state: "default" 0.0;
 		min: 19 19;
 		align: 1.0 0.0;
+		color: 255 255 255 255;
 
-	rel1 { to: "border"; relative: 1.0 0.0; offset: 0 1; }
-	rel2 { to: "border"; relative: 1.0 0.0; offset: 0 1; to_y: "sb_hbar"; }
+		rel1 { 
+			to: "border"; 
+			relative: 1.0 0.0; 
+			offset: 0 1; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "border"; 
+			relative: 1.0 0.0; 
+			offset: 0 1; 
+			to_y: "sb_hbar"; 
+		}
 	}
 
 	description {
@@ -20,8 +29,18 @@ part {
 		max: 0 99999;
 		visible: 0;
 
-	rel1 { to: "border"; relative: 1.0 0.0; offset: 0 1; }
-	rel2 { to: "border"; relative: 1.0 0.0; offset: -4 0; to_y: "sb_hbar"; }
+		rel1 { 
+			to: "border"; 
+			relative: 1.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			to: "border"; 
+			relative: 1.0 0.0; 
+			offset: -4 0; 
+			to_y: "sb_hbar"; 
+		}
 	}
 }
 
@@ -35,8 +54,17 @@ part {
 		state: "default" 0.0;
 		color: 255 0 0 0;
 
-	rel1 { to: "sb_vbar_a1"; relative: 0.0 1.0; offset: 0 0; }
-	rel2 { to: "sb_vbar_a2"; relative: 1.0 0.0; offset: -1 -1; }
+		rel1 { 
+			to: "sb_vbar_a1"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "sb_vbar_a2"; 
+			relative: 1.0 0.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -48,11 +76,19 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 0 0 0;
 
-	rel1 { to: "sb_vbar_a1"; relative: 0.0 1.0; offset: 5 1; }
-	rel2 { to: "e.dragable.vbar"; relative: 1.0 0.0; offset: -4 2; }
+		rel1 { 
+			to: "sb_vbar_a1"; 
+			relative: 0.0 1.0; 
+			offset: 5 1; 
+		}
 
-	color: 255 0 0 0;
+		rel2 { 
+			to: "e.dragable.vbar"; 
+			relative: 1.0 0.0; 
+			offset: -4 2; 
+		}
 	}
 }
 
@@ -64,11 +100,19 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 0 0 0;
 
-	rel1 { to: "e.dragable.vbar"; relative: 0.0 1.0; offset: 3 -3; }
-	rel2 { to: "sb_vbar_a2"; relative: 1.0 0.0; offset: -6 -1; }
+		rel1 { 
+			to: "e.dragable.vbar"; 
+			relative: 0.0 1.0; 
+			offset: 3 -3; 
+		}
 
-	color: 255 0 0 0;
+		rel2 { 
+			to: "sb_vbar_a2"; 
+			relative: 1.0 0.0; 
+			offset: -6 -1; 
+		}
 	}
 }
 
@@ -81,8 +125,13 @@ part {
 		state: "default" 0.0;
 		max: 17 99999;
 
-	rel1 { to: "sb_vbar_base"; }
-	rel2 { to: "sb_vbar_base"; }
+		rel1 { 
+			to: "sb_vbar_base"; 
+		}
+
+		rel2 { 
+			to: "sb_vbar_base"; 
+		}
 
 		image { 
 			normal: "sf_vb_runner.png"; 
@@ -110,8 +159,15 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: HORIZONTAL;
 
-	rel1 { to: "sb_vbar"; relative: 0.0 0.0; }
-	rel2 { to: "sb_vbar"; relative: 1.0 0.0; }
+		rel1 { 
+			to: "sb_vbar"; 
+			relative: 0.0 0.0; 
+		}
+
+		rel2 { 
+			to: "sb_vbar"; 
+			relative: 1.0 0.0; 
+		}
 
 		image {
 			normal: "sf_btu1.png";
@@ -134,8 +190,17 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: HORIZONTAL;
 
-	rel1 { to: "sb_vbar"; relative: 0.0 1.0; offset: 0 0; }
-	rel2 { to: "sb_vbar"; relative: 1.0 1.0; offset: 0 -1; }
+		rel1 { 
+			to: "sb_vbar"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "sb_vbar"; 
+			relative: 1.0 1.0; 
+			offset: 0 -1; 
+		}
 
 		image {
 			normal: "sf_btd1.png";
@@ -153,11 +218,19 @@ part {
 		state: "default" 0.0;
 		min: 13 36;
 		max: 13 9999;
+		color: 255 255 255 255;
 
-	rel1 { to: "sb_vbar_base"; relative: 0.0 0.0; offset: 0 0;}
-	rel2 { to: "sb_vbar_base"; relative: 1.0 1.0; offset: 0 0; }
+		rel1 { 
+			to: "sb_vbar_base"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "sb_vbar_base"; 
+			relative: 1.0 1.0; 
+			offset: 0 0; 
+		}
 	}
 
 	description {
@@ -185,8 +258,17 @@ part {
 		max: 13 9999;
 		color: 255 255 255 255;
 
-	rel1 { to: "sb_vbar_base"; relative: 0.5 0.5; offset: 0 0;}
-	rel2 { to: "sb_vbar_base"; relative: 0.5 0.5; offset: 0 0; }
+		rel1 { 
+			to: "sb_vbar_base"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "sb_vbar_base"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
 
 		image {
 			normal: "sf_barv1.png";
@@ -213,8 +295,15 @@ part {
 		max: 7 13;
 		fixed: 1 1;
 
-	rel1 { to: "e.dragable.vbar"; offset: 0 8; } 
-	rel2 { to: "e.dragable.vbar"; offset: 0 -8; }
+		rel1 { 
+			to: "e.dragable.vbar"; 
+			offset: 0 8; 
+		} 
+
+		rel2 { 
+			to: "e.dragable.vbar"; 
+			offset: 0 -8; 
+		}
 
 		image {
 			normal: "sf_barv_thumb.png";
@@ -244,8 +333,15 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: HORIZONTAL;
 
-	rel1 { to: "sb_vbar"; relative: 0.0 0.0; }
-	rel2 { to: "sb_vbar"; relative: 1.0 0.0; }
+		rel1 { 
+			to: "sb_vbar"; 
+			relative: 0.0 0.0; 
+		}
+
+		rel2 { 
+			to: "sb_vbar"; 
+			relative: 1.0 0.0; 
+		}
 
 		image {
 			normal: "sf_btu1_over.png";
@@ -274,8 +370,17 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: HORIZONTAL;
 
-	rel1 { to: "sb_vbar"; relative: 0.0 1.0; offset: 0 0; }
-	rel2 { to: "sb_vbar"; relative: 1.0 1.0; offset: 0 -1; }
+		rel1 { 
+			to: "sb_vbar"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "sb_vbar"; 
+			relative: 1.0 1.0; 
+			offset: 0 -1; 
+		}
 
 		image {
 			normal: "sf_btd1_over.png";
@@ -288,3 +393,4 @@ part {
 		color: 215 215 215 255;
 	}
 }
+

@@ -1,6 +1,7 @@
 
 part {
 	name: "base";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -30,7 +31,7 @@ part {
 part {
 	name: "error-icon";
 	type: IMAGE;
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -333,3 +334,4 @@ part {
 		}
 	}
 }
+

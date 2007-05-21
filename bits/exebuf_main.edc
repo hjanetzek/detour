@@ -67,77 +67,6 @@ part {
 	}
 }
 
-part {
-	name: "eap_list_entry";
-	type: IMAGE;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to_y: "e.swallow.eap_list"; 
-			relative: 0.0 0.0; 
-			offset: 8 0; 
-		}
-		
-		rel2 { 
-			to_y: "e.swallow.eap_list"; 
-			relative: 1.0 1.0; 
-			offset: -9 -1;
-		}
-
-		image {
-			normal: "entry.png";
-			border: 5 5 8 6;
-		}
-	}
-}
-
-part {
-	name: "eap_list_clip";
-	type: RECT;
-
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 255;
-
-		rel1 { 
-			to_y: "e.swallow.eap_list"; 
-			relative: 0.0 0.0; 
-			offset: 12 4; 
-		}
-		
-		rel2 { 
-			to_y: "e.swallow.eap_list"; 
-			relative: 1.0 1.0; 
-			offset: -13 -4; 
-		}
-	}
-}
-
-part {
-	name: "e.swallow.eap_list";
-	type: SWALLOW;
-	clip_to: "eap_list_clip";
-	
-	description {
-		state: "default" 0.0;
-		min: 32 64;
-		align: 0.5 0.0;
-		color: 0 0 0 0;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 16 6; 
-		}
-
-		rel2 { 
-			to_y: "e.text.label"; 
-			relative: 1.0 0.0; 
-			offset: -17 -17; 
-		}
-	}
-}
 
 part {
 	name: "bottom";
@@ -166,22 +95,22 @@ part {
 }
 
 part {
-	name: "exe_list_entry";
+	name: "eap_list_entry";
 	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
 
 		rel1 { 
-			to_y: "e.swallow.exe_list"; 
+			to_y: "e.swallow.eap_list"; 
 			relative: 0.0 0.0; 
-			offset: 8 2; 
+			offset: 4 -1; 
 		}
-
+		
 		rel2 { 
-			to_y: "e.swallow.exe_list"; 
+			to_y: "e.swallow.eap_list"; 
 			relative: 1.0 1.0; 
-			offset: -9 -1; 
+			offset: -5 -1;
 		}
 
 		image {
@@ -192,23 +121,52 @@ part {
 }
 
 part {
-	name: "exe_list_clip";
-	type: RECT;
+	name: "exe_list_entry";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 255;
 
 		rel1 { 
 			to_y: "e.swallow.exe_list"; 
 			relative: 0.0 0.0; 
-			offset: 12 6; 
+			offset: 4 2; 
 		}
 
 		rel2 { 
 			to_y: "e.swallow.exe_list"; 
 			relative: 1.0 1.0; 
-			offset: -13 -4; 
+			offset: -5 19; 
+		}
+
+		image {
+			normal: "entry.png";
+			border: 5 5 8 6;
+		}
+	}
+}
+
+part {
+	name: "e.swallow.icons";
+	type: SWALLOW;
+	
+	description {
+		state: "default" 0.0;
+		aspect_preference: VERTICAL;
+		aspect: 1.0 1.0;
+		align: 0.0 0.5;
+		color: 0 0 0 0;
+
+		rel1 { 
+			to_y: "e.text.label"; 
+			relative: 0.0 0.0; 
+			offset: 16 -7; 
+		}
+
+		rel2 { 
+			to_y: "e.text.label"; 
+			relative: 1.0 1.0; 
+			offset: 16 8; 
 		}
 	}
 }
@@ -227,13 +185,157 @@ part {
 		rel1 { 
 			to_y: "e.text.label"; 
 			relative: 0.0 1.0; 
-			offset: 16 16; 
+			offset: 8 16; 
 		}
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -17 -17; 
+			offset: -17 -57; 
 		}
+	}
+}
+
+part {
+	name: "eap_list_clip";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to_y: "e.swallow.eap_list"; 
+			relative: 0.0 0.0; 
+			offset: 8 3;
+		}
+		
+		rel2 { 
+			to_y: "e.swallow.eap_list"; 
+			relative: 1.0 1.0; 
+			offset: -9 -6; 
+		}
+	}
+}
+
+part {
+	name: "e.swallow.eap_list";
+	type: SWALLOW;
+	clip_to: "eap_list_clip";
+	
+	description {
+		state: "default" 0.0;
+		min: 32 64;
+		align: 0.5 0.0;
+		color: 0 0 0 0;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 8 6;
+		}
+
+		rel2 { 
+			to_y: "e.text.label"; 
+			relative: 1.0 0.0; 
+			offset: -13 -17; 
+		}
+	}
+}
+
+part {
+	name: "exe_list_clip";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to_y: "e.swallow.exe_list"; 
+			relative: 0.0 0.0; 
+			offset: 8 6;
+		}
+
+		rel2 { 
+			to_y: "e.swallow.exe_list"; 
+			relative: 1.0 1.0; 
+			offset: -9 14;
+		}
+	}
+}
+
+part {      
+	name: "icon";
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 { 
+			to: "e.swallow.icons"; 
+			relative: 0.0 0.0; 
+			offset: -8 -8; 
+		}
+
+		rel2 { 
+			to: "e.swallow.icons"; 
+			relative: 1.0 1.0; 
+			offset: 7 7; 
+		}
+
+		image {
+		       normal: "scrollframe_bg.png";
+		       border: 7 7 7 7;
+		}
+	}
+}
+
+part {      
+	name: "icon_inset";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 { 
+			to: "e.swallow.icons"; 
+			relative: 0.0 0.0; 
+			offset: -6 -7; 
+		}
+
+		rel2 { 
+			to: "e.swallow.icons"; 
+			relative: 1.0 1.0; 
+			offset: 5 7; 
+		}
+
+		image {
+			normal: "scrollframe_inset.png";
+			border: 5 5 5 6;
+		}
+	}
+}
+
+part {      
+	name: "icon_overlay";
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 { 
+			to: "e.swallow.icons"; 
+			relative: 0.0 0.0; 
+			offset: -8 -8; 
+		}
+
+		rel2 { 
+			to: "e.swallow.icons"; 
+			relative: 1.0 1.0; 
+			offset: 7 7; 
+		}
+
+		image.normal: "scrollframe_focus.png";
+		image.border: 7 7 7 7;
 	}
 }
 
@@ -326,104 +428,3 @@ part {
 	}
 }
 
-
-part {      
-	name: "icon";
-	mouse_events: 1;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to: "e.swallow.icons"; 
-			relative: 0.0 0.0; 
-			offset: -8 -8; 
-		}
-
-		rel2 { 
-			to: "e.swallow.icons"; 
-			relative: 1.0 1.0; 
-			offset: 7 7; 
-		}
-
-		image {
-		       normal: "scrollframe_bg.png";
-		       border: 7 7 7 7;
-		}
-	}
-}
-
-part {      
-	name: "icon_inset";
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to: "e.swallow.icons"; 
-			relative: 0.0 0.0; 
-			offset: -6 -7; 
-		}
-
-		rel2 { 
-			to: "e.swallow.icons"; 
-			relative: 1.0 1.0; 
-			offset: 5 7; 
-		}
-
-		image {
-			normal: "scrollframe_inset.png";
-			border: 5 5 5 6;
-		}
-	}
-}
-
-part {      
-	name: "icon_overlay";
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to: "e.swallow.icons"; 
-			relative: 0.0 0.0; 
-			offset: -8 -8; 
-		}
-
-		rel2 { 
-			to: "e.swallow.icons"; 
-			relative: 1.0 1.0; 
-			offset: 7 7; 
-		}
-
-		image.normal: "scrollframe_focus.png";
-		image.border: 7 7 7 7;
-	}
-}
-
-part {
-	name: "e.swallow.icons";
-	type: SWALLOW;
-	
-	description {
-		state: "default" 0.0;
-		aspect_preference: VERTICAL;
-		aspect: 1.0 1.0;
-		align: 0.0 0.5;
-		color: 0 0 0 0;
-
-		rel1 { 
-			to_y: "e.text.label"; 
-			relative: 0.0 0.0; 
-			offset: 16 -7; 
-		}
-
-		rel2 { 
-			to_y: "e.text.label"; 
-			relative: 1.0 1.0; 
-			offset: 16 8; 
-		}
-	}
-}

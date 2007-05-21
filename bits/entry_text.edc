@@ -8,13 +8,14 @@ part {
 		state: "default" 0.0;
 		color: 7 7 7 255;
 
-	text {
-		text: "Entry";
-		font: "Edje-Vera";
-		size: 11;
-		min: 1 1;
-		align: 0.0 0.0;
-		// text_class: "entry";
+		text {
+			text: "Entry";
+			font: "Edje-Vera";
+			size: 11;
+			min: 1 1;
+			align: 0.0 0.0;
+			// text_class: "entry";
+		}
 	}
-    }
 }
+

@@ -1,7 +1,7 @@
-detour 0.6.0 (seek)
+detour 0.6.x (seek)
 
 This is an edje for the Enlightenment 0.17.0 Window Manager 
-currently in development. (http://enlightenment.org)
+currently in development. See http://enlightenment.org
 
 Detour has been in the works since September of 2005. It began as a port of 
 the Enlightenment-DR16 detroit theme. So many changes have occurred since, 
@@ -12,8 +12,28 @@ Project's website:
 http://cored.org/prototype/detour/
 http://code.google.com/p/detour/
 
--=NOTES=-
+Use the following command check out the latest source code:
 
-Textclasses for the titlebar and the menu labels have been explicitly
+svn checkout http://detour.googlecode.com/svn/branches/e17
+
+NOTES:
+
+Build time options: look at main.edc:12
+
+This options sets whether or not you want the cursor to pulsate
+	#define USE_ANIMATED_CURSOR (0/1)
+
+You have the choice of using the default e17 icons or Tango icons
+	#define USE_TANGO_ICONS (0/1)
+
+This options sets whether or not you want the icons of the ibar to fade
+	#define FADE_BAR_ICONS (0/1)
+
+This options enables the context menu title
+	#define SEE_CONTEXT_MENUTITLE (0/1)
+
+Text_classes for the titlebar and the menu labels have been explicitly
 disabled.
+
+Color_classes are not implemented.
 
