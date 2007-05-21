@@ -1,4 +1,4 @@
-detour 0.6.x (seek)
+detour 0.6 (seek) series
 
 This is an edje for the Enlightenment 0.17.0 Window Manager 
 currently in development. See http://enlightenment.org
@@ -32,8 +32,7 @@ This options sets whether or not you want the icons of the ibar to fade
 This options enables the context menu title
 	#define SEE_CONTEXT_MENUTITLE (0/1)
 
-Text_classes for the titlebar and the menu labels have been explicitly
-disabled.
+Text_classes have been explicitly disabled.
 
 Color_classes are not implemented.
 
