@@ -29,7 +29,7 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-		visible:  1;
+		visible: 1;
 
 	image.normal: "menu_select.png";
 	image.border: 5 5 5 5;
@@ -211,3 +211,4 @@ part {
 		}
 	}
 }
+

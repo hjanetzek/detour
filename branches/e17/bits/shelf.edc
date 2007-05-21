@@ -1,9 +1,4 @@
 
-/*
- * TODO
- * Do something with e,state,hidden|visible
- */
-
 group {
 	name: "e/shelf/default/base";
 

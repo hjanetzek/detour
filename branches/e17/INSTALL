@@ -1,23 +1,9 @@
 
-Use the following command check out the latest source code:
-
-svn checkout http://detour.googlecode.com/svn/branches/e17
-
-Detour has 4 build-time options available. Look at main.edc:12
-
-#define USE_ANIMATED_CURSOR (0/1)
-This options sets whether or not you want the cursor to pulsate
-
-#define USE_TANGO_ICONS (0/1)
-You have the choice of using the default e17 icons or Tango icons
-
-#define FADE_BAR_ICONS (0/1)
-This options sets whether or not you want the icons of the ibar/ibox to fade
-
-#define SEE_CONTEXT_MENUTITLE (0/1)
-This options enables the context menu title
-
 COMPILING and INSTALLING:
 
-make
+To compile and install:
+	make
+
+To uninstall:
+	make uninstall
 

@@ -9,8 +9,15 @@ part {
 		max: 20 9999;
 		visible: 0;
 
-	rel1 { to: "slider_base"; offset: -2 3; }
-	rel2 { to: "slider_base"; offset: 0 -4; }
+		rel1 { 
+			to: "slider_base"; 
+			offset: -2 3; 
+		}
+
+		rel2 { 
+			to: "slider_base"; 
+			offset: 0 -4; 
+		}
 
 		image {
 			normal: "slider_focus.png";
@@ -34,16 +41,28 @@ part {
 		state: "default" 0.0;
 		color: 255 0 0 0;
 
-	rel1 { offset: 0 0; }
-	rel2 { offset: -1 -1; }
+		rel1 { 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			offset: -1 -1; 
+		}
 	}
 
 	description {
 		state: "active" 0.0;
 		color: 255 0 0 0;
 
-	rel1 { offset: 2 2; }
-	rel2 { to_y: "label_under"; relative: 1.0 0.0; offset: -3 -1; }
+		rel1 { 
+			offset: 2 2; 
+		}
+
+		rel2 { 
+			to_y: "label_under"; 
+			relative: 1.0 0.0; 
+			offset: -3 -1; 
+		}
 	}
 }
 
@@ -56,8 +75,17 @@ part {
 		state: "default" 0.0;
 		max: 11 99999;
 
-	rel1 { to: "runner_top"; relative: 0.0 1.0; offset: -1 0; }
-	rel2 { to: "runner_bot"; relative: 1.0 1.0; offset: 0 -7; }
+		rel1 { 
+			to: "runner_top"; 
+			relative: 0.0 1.0; 
+			offset: -1 0; 
+		}
+
+		rel2 { 
+			to: "runner_bot"; 
+			relative: 1.0 1.0; 
+			offset: 0 -7; 
+		}
 
 		image {
 			normal: "sb_runnerv.png";
@@ -81,7 +109,7 @@ part {
 
 part {
 	name: "label_under";
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -98,8 +126,17 @@ part {
 		state: "active" 0.0;
 		min: 22 22;
 
-	rel1 { to: "e.text.label"; relative: 0.0 0.0; offset: -6 -4; }
-	rel2 { to: "e.text.label"; relative: 1.0 1.0; offset: 3 3; }
+		rel1 { 
+			to: "e.text.label"; 
+			relative: 0.0 0.0; 
+			offset: -6 -4; 
+		}
+
+		rel2 { 
+			to: "e.text.label"; 
+			relative: 1.0 1.0; 
+			offset: 3 3; 
+		}
 
 		image {
 			normal: "entry.png";
@@ -126,11 +163,17 @@ part {
 	description {
 		state: "active" 0.0;
 		align: 0.5 1.0;
+		color: 60 60 60 255;
 
-	rel1 { relative: 0.0 1.0; offset: 7 -8; }
-	rel2 { relative: 1.0 1.0; offset: -8 -8; }
+		rel1 { 
+			relative: 0.0 1.0; 
+			offset: 7 -8; 
+		}
 
-	color: 60 60 60 255;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -8 -8; 
+		}
 
 		text {
 			text: "00.00";
@@ -152,7 +195,11 @@ part {
 		state: "default" 0.0;
 		color: 18 119 186 0;
 
-	rel2 { to: "e.dragable.slider"; relative: 1.0 0.0; offset: -1 -1; }
+		rel2 { 
+			to: "e.dragable.slider"; 
+			relative: 1.0 0.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -166,8 +213,17 @@ part {
 		max: 11 6;
 		fixed: 1 1;
 
-	rel1 { to: "slider_base"; relative: 0.5 0.0; offset: 0 14; }
-	rel2 { to: "slider_base"; relative: 0.5 0.0; offset: -1 0; }
+		rel1 { 
+			to: "slider_base"; 
+			relative: 0.5 0.0; 
+			offset: 0 14; 
+		}
+
+		rel2 { 
+			to: "slider_base"; 
+			relative: 0.5 0.0; 
+			offset: -1 0; 
+		}
 
 		image {
 			normal: "sb_runnerv_top.png";
@@ -193,7 +249,11 @@ part {
 		state: "default" 0.0;
 		color: 231 93 7 0;
 
-	rel1 { to: "e.dragable.slider"; relative: 0.0 1.0; offset: 0 0; }
+		rel1 { 
+			to: "e.dragable.slider"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
 	}
 }
 
@@ -207,8 +267,17 @@ part {
 		max: 11 6;
 		fixed: 1 1;
 
-	rel1 { to: "slider_base"; relative: 0.5 1.0; offset: 0 0; }
-	rel2 { to: "slider_base"; relative: 0.5 1.0; offset: -1 -14; }
+		rel1 { 
+			to: "slider_base"; 
+			relative: 0.5 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "slider_base"; 
+			relative: 0.5 1.0; 
+			offset: -1 -14; 
+		}
 
 		image {
 			normal: "sb_runnerv_bot.png";
@@ -233,11 +302,19 @@ part {
 	description {
 		state: "default" 0.0;
 		max: 11 99999;
+		color: 0 0 0 0;
 
-	rel1 { to: "runner_top"; relative: 0.0 1.0; offset: 17 -2; }
-	rel2 { to: "runner_bot"; relative: 1.0 0.0; offset: 0 2; }
+		rel1 { 
+			to: "runner_top"; 
+			relative: 0.0 1.0; 
+			offset: 17 -2; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "runner_bot"; 
+			relative: 1.0 0.0; 
+			offset: 0 2; 
+		}
 	}
 }
 
@@ -257,11 +334,19 @@ part {
 		min: 17 29;
 		max: 17 29;
 		fixed: 1 1;
+		color: 0 0 0 0;
 
-	rel1 { to: "slider_base"; relative: 0.5 0.5; offset: 1 0; }
-	rel2 { to: "slider_base"; relative: 0.5 0.5; offset: 1 0; }
+		rel1 { 
+			to: "slider_base"; 
+			relative: 0.5 0.5; 
+			offset: 1 0; 
+		}
 
-	color: 0 0 0 0;
+		rel2 { 
+			to: "slider_base"; 
+			relative: 0.5 0.5; 
+			offset: 1 0; 
+		}
 	}
 }
     
@@ -275,8 +360,13 @@ part {
 		max: 17 29;
 		fixed: 1 1;
 
-	rel1 { to: "e.dragable.slider"; }
-	rel2 { to: "e.dragable.slider"; }
+		rel1 { 
+			to: "e.dragable.slider"; 
+		}
+
+		rel2 { 
+			to: "e.dragable.slider"; 
+		}
 
 		image {
 			normal: "slider_vert0.png";
@@ -334,3 +424,4 @@ part {
 		visible: 1;
 	}
 }
+

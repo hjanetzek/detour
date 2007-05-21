@@ -33,6 +33,7 @@ group {
 
 group {
 	name: "e/widgets/border/dialog/border";
+	alias: "e/widgets/border/urgent/border";
 
 	data {
 		// item: "shaped" "0";
@@ -121,22 +122,6 @@ group {
 }
 
 group {
-	name: "e/widgets/border/urgent/border";
-
-	data {
-		// item: "shaped" "0";
-	}
-
-	parts {
-		#include "border_dialog.edc"
-	}
-
-	programs {
-		#include "border_dialog_programs.edc"
-	}
-}
-
-group {
 	name: "e/widgets/border/window_blend/border";
 
 	data {
@@ -145,7 +130,8 @@ group {
 
 	parts {
 
-/* i'm disabling this border style because in order to use it the dialog background
+/* i'm disabling this border style because in 
+ * order to use it the dialog background
  * image would required modifications
 
 		#include "border_blend.edc"

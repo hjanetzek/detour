@@ -46,7 +46,7 @@ part {
 		fixed: 1 1;
 		visible: 0;
 
-		rel2 { 
+		rel1 { 
 			relative: 0.0 0.0; 
 			offset: 0 6; 
 		}
@@ -116,13 +116,13 @@ part {
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 1 1; 
+			offset: 4 3;
 		}
 
 		rel2 { 
 			to_y: "title2"; 
 			relative: 0.0 1.0; 
-			offset: 1 8; 
+			offset: -1 1;
 		}
 	}
 }

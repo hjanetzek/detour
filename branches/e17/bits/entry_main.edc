@@ -1,6 +1,7 @@
 
 part {
 	name: "entry";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
