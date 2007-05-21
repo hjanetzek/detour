@@ -2,7 +2,7 @@
 group { \
    name: group_name; \
    data { \
-      item: "inset" "5 5 5 4"; \
+      item: "inset" "1 5 5 4"; \
    } \
    parts { \
       part { \
