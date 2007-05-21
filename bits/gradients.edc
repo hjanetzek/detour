@@ -6,9 +6,9 @@ spectrum {
 }
 
 spectrum { 
-	name: "backdrop_desaturated"; 
-	color: 188 188 188 255 1; 
-	color: 86 86 86 255 1; 
+	name: "radial_gradient"; 
+	color: 239 239 239 255 1;
+	color: 139 157 180 255 1; 
 }
 
 spectrum {
