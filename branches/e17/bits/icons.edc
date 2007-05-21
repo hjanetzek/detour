@@ -439,7 +439,7 @@ group {
 				}
 
 				gradient {
-					spectrum: "backdrop_desaturated";
+					spectrum: "black_to_trans";
 					type: "radial";
 				}
 
@@ -498,7 +498,7 @@ group {
 			description {
 				state: "hilited" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 255;
+				color: 255 255 255 128;
 				visible: 1;
 			}
 		}
@@ -512,13 +512,12 @@ group {
 			action: STATE_SET "hilited" 0.0;
 			transition: DECELERATE 0.5;
 			target: "e_glow";
-			after: "e_out";
 		}
 
 		program {
 			name: "e_out";
-			signal: ""; // e,state,unselected
-			source: "";
+			signal: "e,state,unselected";
+			source: "e";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 1.0;
 			target: "e_glow";
