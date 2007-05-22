@@ -18,7 +18,7 @@ part { \
 part { \
 	name: "version"; \
 	type: TEXT; \
-	effect: SOFT_SHADOW; \
+	effect: SHADOW; \
 	mouse_events: 0; \
 	clip_to: "text_version_clip"; \
 \
@@ -40,7 +40,7 @@ part { \
 		} \
 \
 		text { \
-			text: "detour 0.6.4 (seek)"; \
+			text: "detour 0.6.5 (seek)"; \
 			font: "Edje-Vera-Bold"; \
 			size: 10; \
 			min:  1 1; \
@@ -55,7 +55,7 @@ program { \
 	signal: "load"; \
 	source: ""; \
 	action: STATE_SET "default" 0.1; \
-	transition: LINEAR 1.0; \
+	transition: ACCELERATE 0.5; \
 	target: "text_version_clip"; in: 6.0 0.0; \
 }
 

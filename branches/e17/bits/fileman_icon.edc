@@ -62,7 +62,7 @@ group {
 				align: 0.5 0.0;
 
 				image {
-					normal: "gnome-fs-desktop.png";
+					normal: "user-desktop.png";
 				}
 			}
 

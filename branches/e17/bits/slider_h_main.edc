@@ -301,6 +301,7 @@ part {
 	description {
 		state: "default" 0.0;
 		max: 99999 11;
+		fixed: 1 1;
 		color: 255 0 0 0;
 
 		rel1 { 

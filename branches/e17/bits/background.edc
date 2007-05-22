@@ -8,7 +8,7 @@ group {
 
 	programs {
 		show_version();
-
+/*
 		program {
 			name: "go_pulse";
 			signal: "show";
@@ -26,5 +26,6 @@ group {
 			transition: DECELERATE 0.75;
 			target: "e_pulsate";  
 		}
+*/
 	}
 }
