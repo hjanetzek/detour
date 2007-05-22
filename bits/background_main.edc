@@ -11,7 +11,7 @@ part {
 		fill.origin.relative: 0.5 0.5;
 	}
 }
-
+/*
 part {
 	name: "logo";
 	type: IMAGE;
@@ -19,20 +19,20 @@ part {
 
 	description {
 		state:"default" 0.0;
-		min: 128 128;
-		max: 128 128;
+		min: 64 64;
+		max: 64 64;
 		fixed: 1 1;
 		align: 0.5 0.5;
 
 		rel1 { 
 			to: "background_image"; 
-			relative: 0.50 0.50; 
+			relative: 0.850 0.850; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
 			to: "background_image";
-			relative: 0.50 0.50; 
+			relative: 0.850 0.850; 
 			offset: -1 -1; 
 		}
 
@@ -41,7 +41,6 @@ part {
 		}
     	}
 }
-
 part {
 	name: "e_pulsate";
 	type: IMAGE;
@@ -49,8 +48,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 128 128;
-		max: 128 128;
+		min: 64 64;
+		max: 64 64;
 		fixed: 1 1;
 		align: 0.5 0.5;
 		color: 255 255 255 255;
@@ -58,13 +57,13 @@ part {
 
 		rel1 { 
 			to: "background_image"; 
-			relative: 0.50 0.50; 
+			relative: 0.850 0.850; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
 			to: "background_image";
-			relative: 0.50 0.50; 
+			relative: 0.850 0.850; 
 			offset: -1 -1; 
 		}
 
@@ -93,6 +92,7 @@ part {
 		}
 	}
 }
+*/
 #else
 #if BG_TYPE == 1
 part { 

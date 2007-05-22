@@ -124,7 +124,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		//min: 16 16;
+		// min: 16 16;
 		aspect: 1.0 1.0;
 
 		rel1 { 
@@ -141,7 +141,7 @@ part {
 
 	description {
 		state: "label_visible" 0.0;
-		//min: 16 16;
+		// min: 16 16;
 
 		rel1 { 
 			to_x: "radio"; 
@@ -163,7 +163,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		//min: 16 16;
+		// min: 16 16;
 		color: 255 255 255 255;
 
 		rel1 { 
@@ -216,7 +216,10 @@ part {
 
 	description {
 		state: "default" 0.0;
+		/* TODO: fix this fixed shit */
 		min: 24 24;
+		// fixed: 1 1;
+		/* TODO: fix this fixed shit */
 		color: 60 60 60 255;
 
 		rel1 { 

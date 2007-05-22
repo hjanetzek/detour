@@ -69,7 +69,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 0 0 0 0;  
+		color: 0 0 0 0; 
+		fixed: 1 1; 
 
 		rel1 { 
 			to: "button.area"; 
