@@ -22,6 +22,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -51,6 +53,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -80,6 +84,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -109,6 +115,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -138,6 +146,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -167,6 +177,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -196,6 +208,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -225,6 +239,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -254,6 +270,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -283,6 +301,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				max: 16 16;
+				aspect: 1.0 1.0;
 
 				rel1 {
 					relative: 0.0 0.0;

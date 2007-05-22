@@ -19,7 +19,7 @@ image: "document.png" COMP; // doc
 image: "audio-x-generic.png" COMP; // ogg, mp3
 image: "text-x-generic.png" COMP; // txt, doc
 image: "folder_tar.png" COMP; // bz2, tar, gz, zip, deb
-image: "gnome-mime-application-x-font.png" COMP; // pcf, ttf, bdf
+image: "font-x-generic.png" COMP; // pcf, ttf, bdf
 image: "text-html.png" COMP; // html, css,
 image: "video-x-generic.png" COMP; // mpeg, avi
 
@@ -28,7 +28,7 @@ image: "folder-open.png" COMP;
 image: "text-x-generic.png" COMP;
 image: "document-open.png" COMP;
 image: "user-home.png" COMP;
-image: "gnome-fs-desktop.png" COMP;   
+image: "user-desktop.png" COMP;   
 image: "drive-harddisk.png" COMP;   
 
 // shelf
