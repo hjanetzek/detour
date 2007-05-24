@@ -23,9 +23,6 @@ Build time options: look at main.edc:12
 This options sets whether or not you want the cursor to pulsate
 	#define USE_ANIMATED_CURSOR (0/1)
 
-You have the choice of using the default e17 icons or Tango icons
-	#define USE_TANGO_ICONS (0/1)
-
 This options sets whether or not you want the icons of the ibar to fade
 	#define FADE_BAR_ICONS (0/1)
 

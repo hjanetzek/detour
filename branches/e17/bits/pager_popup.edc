@@ -39,8 +39,8 @@ part {
 		}
 
 		image {
-			normal: "menu_bg.png";
-			border: 2 2 2 2;
+			normal: "dialog_bg.png";
+			border: 8 8 2 2;
 		}
 
 		fill {
