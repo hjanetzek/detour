@@ -10,10 +10,8 @@
 #include "macros/sys.edc"
 
 #define USE_ANIMATED_CURSOR 1
-#define USE_TANGO_ICONS 1
 #define FADE_BAR_ICONS 1
 #define SEE_CONTEXT_MENUTITLE 0
-#define BG_TYPE 0
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";
@@ -37,6 +35,9 @@ images {
 
 data {
 }
+
+#define USE_TANGO_ICONS 1
+#define BG_TYPE 0
 
 collections {
 #include "bits/background.edc"

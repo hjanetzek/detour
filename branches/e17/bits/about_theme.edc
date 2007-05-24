@@ -37,10 +37,9 @@ group {
 
 		description {
 			state: "default" 0.0;
-			min: 168 112;
-			max: 168 112;
+			min: 110 108;
+			max: 110 108;
 			align: 0.5 0.5;
-			fixed: 1 1;
 
 			rel1 { 
 				relative: 0.5 0.0; 

@@ -60,7 +60,6 @@ image: "wallpaper_screen_out.png" COMP;
 image: "wallpaper_screen_grad.png" COMP;
 
 ## Tango Icons http://tango.freedesktop.org
-image: "view-fullscreen.png" COMP;
 image: "video-display.png" COMP;
 image: "dialog-error.png" COMP;
 image: "dialog-warning.png" COMP;
@@ -85,7 +84,6 @@ image: "window-new.png" COMP;
 image: "wmtweaks.png" COMP;
 image: "view-colors.png" COMP;
 image: "workspace-switcher.png" COMP;
-image: "view-fullscreen.png" COMP;
 image: "view-refresh.png" COMP;
 image: "gnome-dev-mouse-optical.png" COMP;
 image: "emblem-favorite.png" COMP;
@@ -117,6 +115,7 @@ image: "preferences-desktop-screensaver.png" COMP;
 image: "power-management.png" COMP;
 image: "applications-other2.png" COMP;
 image: "gnome-dev-keyboard-mouse.png" COMP;
+image: "display-size.png" COMP;
 
 // gnome tango
 image: "gnome-session-reboot.png" COMP;
