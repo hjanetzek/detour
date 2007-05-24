@@ -73,7 +73,7 @@ group {
    name: "etk/menu/menu_item";
    /* TODO: temporary until we implement name: "etk/menu_bar/menu_item" */
    alias: "etk/menu_bar/menu_item";
-   min: 0 22;
+   min: 0 21;
    parts {
       part {
          name: "item_rect";

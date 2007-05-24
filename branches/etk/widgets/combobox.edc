@@ -308,6 +308,7 @@ group {
          mouse_events: 1;
          description {
             state: "default" 0.0;
+            min: 0 21;
             visible: 1;
             color: 0 0 0 0;
 	    rel1.offset: 1 0;
