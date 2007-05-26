@@ -4,32 +4,29 @@ This is an edje for the Enlightenment 0.17.0 Window Manager
 currently in development. See http://enlightenment.org
 
 Detour has been in the works since September of 2005. It began as a port of 
-the Enlightenment-DR16 detroit theme. So many changes have occurred since, 
-that it was no longer a port, rather it became a detour. 
+the detroit Enlightenment-DR16 theme. The differences in the color scheme, design and goals were so differen , that it was no longer a port, rather it became a detour. 
 
 Project's website: 
 
 http://cored.org/prototype/detour/
 http://code.google.com/p/detour/
 
+Greetings to the Enlightenment.org crew (past and present). detour is distributed WITHOUT ANY WARRANTY under the terms of the BSD Artistic License. All derivative works, compound produced from, or related to, shall retain the original license. See LICENSE for more information.
+
+The Enlightenment logos are property of the Enlightenment Project.
+Visit: http://enlightenment.org for more information.
+
+Tango Project icons are property of the Tango Project, and released under the Creative Commons Attribution Share-Alike license.
+Visit: http://tango.freedesktop.org for more information.
+
+Bitstream Vera fonts are property of Bitstream, Inc.
+Visit: http://www.gnome.org/fonts/ for more information.
+
+Please note that text classes has been disabled explicitly, and color classes are not yet implemented.
+
 Use the following command check out the latest source code:
 
 svn checkout http://detour.googlecode.com/svn/branches/e17
 
-NOTES:
-
-Build time options: look at main.edc:12
-
-This options sets whether or not you want the cursor to pulsate
-	#define USE_ANIMATED_CURSOR (0/1)
-
-This options sets whether or not you want the icons of the ibar to fade
-	#define FADE_BAR_ICONS (0/1)
-
-This options enables the context menu title
-	#define SEE_CONTEXT_MENUTITLE (0/1)
-
-Text_classes have been explicitly disabled.
-
-Color_classes are not implemented.
+Enjoy!
 

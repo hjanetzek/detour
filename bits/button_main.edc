@@ -53,7 +53,6 @@ part {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 0;
-		visible: 0;
 	}
 }
 
@@ -209,13 +208,13 @@ part {
 		rel1 { 
 			to: "button_image"; 
 			relative: 0.0 0.0; 
-			offset: 8 5; 
+			offset: 16 5; 
 		}
 
 		rel2 { 
 			to: "button_image"; 
 			relative: 0.0 1.0; 
-			offset: 7 -6; 
+			offset: -1 -6; 
 		}
 	}
 }
@@ -232,14 +231,14 @@ part {
 		color3: 170 168 169 128;
 
 		rel1 {
-			relative: 1.0 0.0; offset: 4 0;
 			to_x: "e.swallow.icon";
 			to_y: "button_image";
+			relative: 1.0 0.0; offset: 4 0;
 		}
 
 		rel2 {
-			relative: 1.0 1.0; offset: -8 0;
 			to: "button_image";
+			relative: 1.0 1.0; offset: -8 0;
 		}
 
 		text {
