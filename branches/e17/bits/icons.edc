@@ -102,8 +102,8 @@ group { \
 					normal: IMAGE; \
 				} \
 	    		} \
-   		} \
-    	} \
+		} \
+	} \
 }
 
 ICON("e/icons/enlightenment/shelf_position_bottom", "icon_shelf_bottom.png")
@@ -189,9 +189,13 @@ group { \
 }
 
 ICON("e/icons/enlightenment/wallpaper_stretch", 24 24, "wallpaper_screen_stretch.png")
+
 ICON("e/icons/enlightenment/wallpaper_center", 24 24, "wallpaper_screen_center.png")
+
 ICON("e/icons/enlightenment/wallpaper_tile", 24 24, "wallpaper_screen_tile.png")
+
 ICON("e/icons/enlightenment/wallpaper_scale_aspect_in", 24 24, "wallpaper_screen_in.png")
+
 ICON("e/icons/enlightenment/wallpaper_scale_aspect_out", 24 24, "wallpaper_screen_out.png")
 
 group {
