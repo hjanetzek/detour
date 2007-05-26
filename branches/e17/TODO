@@ -1,32 +1,24 @@
 
 fix:
-  o set the battery module to display text only when running on 
-    battery mode via embryo using its configured time interval
-  o properly center entry text (ie. sliders, etc)
   o fix scrollframe (items are sometimes hidden in some scenarios) 
-  o radio_icon fixed text
-  
+
 test:
   o test all text classes
   o support color classes
 
 design:
-  o shelf: do something with e,state,hidden|visible
+  o different stlye scrollbars for efm
   o transitions images (transition dialog) 
   o design gadman
   o design cpufreq module 
   o design theme wallpaper
-  o design a better insignia/logo
 
 re-design:
   o re-desing pager desktop overlay
   o re-design icon/object drop animation (separate dnd animation for efm)
   o find more suitable icons for some of the available tasks
-  o exebuf ?
+  o clock module
 
 ideas:
-
-  o re-design exebuf to display entry, command titles ?
-  o add subtle animation for shelf layout icons (when selected) ?
-  o different stlye scrollbars for efm ?
+  o shelf: do something with e,state,hidden|visible ?
 

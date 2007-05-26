@@ -76,7 +76,6 @@ program {
 
 program {
 	name: "icon_invisible";
-	/* Support e,action,icon,hide for the button widget. */
 	signal: "e,action,hide,icon";
 	source: "e";
 	action: STATE_SET "default" 0.0;

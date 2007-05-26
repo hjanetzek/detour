@@ -3,16 +3,18 @@ program {
 	name: "charge";
 	signal: "e,state,charging";
 	source: "e";
-	action: STATE_SET "charging" 0.0;
+	action: STATE_SET "default" 0.0;
 	target: "fade_clip";
+	target: "text_fade_clip";
 }
 
 program {
 	name: "discharge";
 	signal: "e,state,discharging";
 	source: "e";
-	action: STATE_SET "default" 0.0;
+	action: STATE_SET "charging" 0.0;
 	target: "fade_clip";
+	target: "text_fade_clip";
 }
 
 program {
@@ -21,6 +23,7 @@ program {
 	source: "e";
 	action: STATE_SET "faded" 0.0;
 	target: "fade_clip";
+	target: "text_fade_clip";
 }
 
 program {
@@ -29,8 +32,8 @@ program {
 	source: "e";
 	action: STATE_SET "faded" 0.0;
 	transition: ACCELERATE 0.3;
-	after: "pulse2";
 	target: "pulse_clip";
+	after: "pulse2";
 }
 
 program {

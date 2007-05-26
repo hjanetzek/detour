@@ -113,7 +113,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 22 22;
+		min: 27 22;
 		visible: 0;
 
 		image {
@@ -124,12 +124,12 @@ part {
 
 	description {
 		state: "active" 0.0;
-		min: 22 22;
+		min: 27 22;
 
 		rel1 { 
 			to: "e.text.label"; 
 			relative: 0.0 0.0; 
-			offset: -6 -4; 
+			offset: -7 -4; 
 		}
 
 		rel2 { 
