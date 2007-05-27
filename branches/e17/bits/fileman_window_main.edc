@@ -8,15 +8,34 @@ part {
 		state: "default" 0.0;
 
 		image {
-			normal: "dialog_bg.png";
-			border: 8 8 2 2;
-		}
-
-		fill { 
-			smooth: 0; 
+			normal: "menu_bg.png";
+			border: 2 2 2 2;
 		}
 	}
 }
+
+/*
+part {
+	name: "over";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 1 1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
+	}
+}
+*/
 
 part {
 	name: "e.swallow.bg";
