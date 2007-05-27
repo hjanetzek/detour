@@ -36,7 +36,7 @@ part {
 		}
 
 		image {
-			normal: "e17_mini_button_shadow2.png";
+			normal: "fileman_button_shadow2.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -100,7 +100,7 @@ part {
 		}
 
 		image {
-			normal: "e17_fileman_thumb_bg.png";
+			normal: "fileman_thumb_bg.png";
 		}	    	       
 
 		fill {	    
