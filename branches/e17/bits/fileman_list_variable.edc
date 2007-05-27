@@ -72,7 +72,7 @@ part {
 	rel2 { to: "icon_box"; relative: 1.0 1.0; offset: -2 -2; }
 
 		image {
-			normal: "e17_fileman_thumb_bg.png";
+			normal: "fileman_thumb_bg.png";
 		}
 	    	       
 		fill {	    
