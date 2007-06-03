@@ -114,7 +114,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 6;
+			border: 5 5 8 7;
 		}
     	}
 }
@@ -138,7 +138,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 6;
+			border: 5 5 8 7;
 		}
 	}
 }
@@ -176,7 +176,7 @@ part {
 part {
 	name: "e.textblock.authors";
 	type: TEXTBLOCK;
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -653,3 +653,4 @@ part {
 		color3: 170 168 169 64;
 	}
 }
+

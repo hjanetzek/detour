@@ -13,7 +13,7 @@
 #else
 #if USE_TANGO_ICONS == 1
 group {
-	name: "e/fileman/button/open";
+	name: "e/fileman/default/button/open";
 
 	parts {
 		part {
@@ -44,7 +44,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/copy";
+	name: "e/fileman/default/button/copy";
 
 	parts {
 		part {
@@ -75,7 +75,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/cut";
+	name: "e/fileman/default/button/cut";
 
 	parts {
 		part {
@@ -106,7 +106,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/paste";
+	name: "e/fileman/default/button/paste";
 
 	parts {
 		part {
@@ -137,7 +137,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/delete";
+	name: "e/fileman/default/button/delete";
 
 	parts {
 		part {
@@ -168,7 +168,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/properties";
+	name: "e/fileman/default/button/properties";
 
 	parts {
 		part {
@@ -199,7 +199,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/new";
+	name: "e/fileman/default/button/new";
 
 	parts {
 		part {
@@ -230,7 +230,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/new_dir";
+	name: "e/fileman/default/button/new_dir";
 
 	parts {
 		part {
@@ -261,7 +261,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/refresh";
+	name: "e/fileman/default/button/refresh";
 
 	parts {
 		part {
@@ -292,7 +292,7 @@ group {
 }
 
 group {
-	name: "e/fileman/button/rename";
+	name: "e/fileman/default/button/rename";
 
 	parts {
 		part {

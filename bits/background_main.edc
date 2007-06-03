@@ -106,4 +106,4 @@ part {
 }
 #endif
 #endif
-version()
+version_clip()

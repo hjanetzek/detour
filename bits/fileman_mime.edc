@@ -1,4 +1,25 @@
 
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG() \
+program { \
+	name: "disable"; \
+	signal: "disable"; \
+	source: ""; \
+	action: STATE_SET "disabled" 0.0; \
+	transition: LINEAR 0.1; \
+	target: "icon"; \
+} \
+program { \
+	name: "enable"; \
+	signal: "default"; \
+	source: ""; \
+	action: STATE_SET "default" 0.0; \
+	transition: LINEAR 0.1; \
+	target: "icon"; \
+}
+
 group {
 	name: "e/icons/fileman/mime/application/pdf";
 
@@ -27,23 +48,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -75,23 +80,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -123,23 +112,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -171,23 +144,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -219,23 +176,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -267,23 +208,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -315,23 +240,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -363,23 +272,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -411,23 +304,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -459,23 +336,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -507,23 +368,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -555,23 +400,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -603,23 +432,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -651,23 +464,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -699,23 +496,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -747,23 +528,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -795,23 +560,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -843,23 +592,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -891,23 +624,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -939,23 +656,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -987,23 +688,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1035,23 +720,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1083,23 +752,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1131,23 +784,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1179,23 +816,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1227,23 +848,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1275,23 +880,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1323,23 +912,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1371,23 +944,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1419,23 +976,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1467,23 +1008,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1515,23 +1040,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1563,23 +1072,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1611,23 +1104,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
 
@@ -1659,22 +1136,7 @@ group {
 	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
-			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
-
-		program {
-			name: "default";
-			signal: "default";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
-			target: "icon";
-		}
+		PROG()
 	}
 }
+

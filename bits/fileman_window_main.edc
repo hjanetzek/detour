@@ -2,15 +2,31 @@
 part {
 	name: "base";
 	mouse_events: 0;
-	type: IMAGE;
+	// type: IMAGE;
+	type: RECT;
 
 	description {
 		state: "default" 0.0;
+		color: 251 251 251 255;
 
+/*
 		image {
 			normal: "menu_bg.png";
 			border: 2 2 2 2;
 		}
+*/
+
+	}
+}
+
+part {
+	name: "e.swallow.bg";
+	type: SWALLOW;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
 	}
 }
 
@@ -37,13 +53,3 @@ part {
 }
 */
 
-part {
-	name: "e.swallow.bg";
-	type: SWALLOW;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 0 0 0 0;
-	}
-}

@@ -7,7 +7,23 @@ name: "e/widgets/exebuf/main";
 	}
 
 	programs {
-		#include "exebuf_main_programs.edc"
+		program {
+			name: "blink1";
+			signal: "show";
+			source: "";
+			action: STATE_SET "faded" 0.0;
+			transition: LINEAR 0.5;
+			target: "cursor";
+			after: "blink2";
+		}
+
+		program {
+			name: "blink2";
+			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.5;
+			target: "cursor";
+			after: "blink1";
+		}
 	}
 }
 
@@ -19,6 +35,23 @@ group {
 	}
 
 	programs {
-		#include "exebuf_item_programs.edc"
+		program {
+			name: "active";
+			signal: "e,state,selected";
+			source: "e";
+			action: STATE_SET "active" 0.0;
+			target: "e.text.title";
+			target: "title_bar";
+		}
+
+		program {
+			name: "passive";
+			signal: "e,state,unselected";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "e.text.title";
+			target: "title_bar";
+		}
 	}
 }
+
