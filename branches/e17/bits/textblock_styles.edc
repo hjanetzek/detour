@@ -2,7 +2,8 @@
 style {
 	name: "about_this_theme";
 	base: "font=Edje-Vera font_size=10 color=#070707 wrap=word";
-      
+
+	tag: "big" "+ font_size=12";
 	tag: "br" "\n";
 	tag: "bold" "+ font=Edje-Vera-Bold";
 	tag: "mono" "+ font=Edje-Vera-Mono";

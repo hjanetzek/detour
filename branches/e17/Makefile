@@ -16,7 +16,7 @@ all: version clean build install
 
 version:
 	@echo ""
-	grep "version" main.edc
+	cat main.edc | head -3 | tail -1
 
 clean:
 	@echo ""
@@ -39,7 +39,7 @@ install: detour-e17.edj
 
 uninstall: detour-e17.edj
 	@echo ""
-	@echo "Removing detour-e17.edj"
+	@echo "Removing" $(OUT)
 	rm $(HOME)/.e/e/themes/$(OUT)
 	@echo
 	@echo --------------------------------------------------
@@ -47,3 +47,4 @@ uninstall: detour-e17.edj
 	@echo $(HOME)/e/e/themes/ directory.
 	@echo --------------------------------------------------
 	@echo
+

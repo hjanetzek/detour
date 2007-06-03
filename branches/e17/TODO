@@ -1,24 +1,19 @@
 
-fix:
-  o fix scrollframe (items are sometimes hidden in some scenarios) 
+  o fix scrollframe (items are sometimes hidden in some scenarios)
+  o invisible shelf and insets
+  o alternate shelf and insets
 
-test:
-  o test all text classes
-  o support color classes
+  o borders: are missing e,state,hung|unhung
+  o shelf: do something with e,state,hidden|visible
 
-design:
-  o different stlye scrollbars for efm
+  o different stlye scrollbars for efm 
   o transitions images (transition dialog) 
   o design gadman
   o design cpufreq module 
+  o clock module
   o design theme wallpaper
 
-re-design:
-  o re-desing pager desktop overlay
   o re-design icon/object drop animation (separate dnd animation for efm)
-  o find more suitable icons for some of the available tasks
-  o clock module
 
-ideas:
-  o shelf: do something with e,state,hidden|visible ?
-
+  o text classes
+  o support color classes

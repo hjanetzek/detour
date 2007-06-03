@@ -109,6 +109,7 @@ part {
 
 	description {
 		state: "default" 0.0;
+		min: 22 22;
 		aspect: 1.0 1.0;
 		align: 0.0 0.5;
 		aspect_preference: VERTICAL;
@@ -116,13 +117,13 @@ part {
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 1 1; 
+			offset: 0 8; 
 		}
 
 		rel2 { 
 			to_y: "title2"; 
 			relative: 0.0 1.0; 
-			offset: 1 8; 
+			offset: -1 -1; 
 		}
 	}
 }

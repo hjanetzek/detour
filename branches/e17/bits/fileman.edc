@@ -13,7 +13,7 @@ program { \
 } 
 
 group {
-	name: "e/fileman/window/main";
+	name: "e/fileman/default/window/main";
 
 	parts {
 		#include "fileman_window_main.edc"
@@ -21,7 +21,7 @@ group {
 }
 
 group {
-	name: "e/fileman/list/fixed";
+	name: "e/fileman/default/list/fixed";
 	
 	parts {
 		#include "fileman_list_fixed.edc"
@@ -30,13 +30,12 @@ group {
 	programs {
 		PROG("active", "e,state,selected", "active")
 		PROG("deactivate", "e,state,unselected", "default")
-
-		#include "fileman_list_fixed_programs.edc"
+		FILEMAN_LIST_PROGS()
 	}
 }
 
 group {
-	name: "e/fileman/list_odd/fixed";
+	name: "e/fileman/default/list_odd/fixed";
 
 	parts {
 		#include "fileman_list_odd.edc"
@@ -45,8 +44,7 @@ group {
 	programs {
 		PROG("active", "e,state,selected", "active")
 		PROG("deactivate", "e,state,unselected", "default")
-
-		#include "fileman_list_odd_programs.edc"
+		FILEMAN_LIST_PROGS()
 	}
 }
 
@@ -77,7 +75,8 @@ group {
 */
 
 group {
-	name: "e/fileman/icon/fixed";
+	name: "e/fileman/default/icon/fixed";
+	alias: "e/fileman/desktop/icon/fixed";
 
 	parts {
 		#include "fileman_icon_fixed.edc"
@@ -89,7 +88,7 @@ group {
 }
 
 group {
-	name: "e/fileman/icon/variable";
+	name: "e/fileman/default/icon/variable";
 
 	parts {
 		#include "fileman_icon_variable.edc"      
@@ -101,7 +100,19 @@ group {
 }
 
 group {
-	name: "e/fileman/overlay";
+	name: "e/fileman/desktop/icon/variable";
+
+	parts {
+		#include "fileman_desktop_icon_variable.edc"      
+	}
+
+	programs {
+    		#include "fileman_icon_variable_programs.edc"
+	}   
+}
+
+group {
+	name: "e/fileman/default/overlay";
 
 	parts {
 		#include "fileman_overlay.edc"
@@ -113,8 +124,27 @@ group {
 }
 
 group {
-	name: "e/fileman/list/drop_in";
-	alias: "e/fileman/list/drop_between";
+	name: "e/fileman/desktop/overlay";
+
+	parts {
+		part {
+			name: "e.text.typebuf_label";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				color: 0 0 0 0;
+				visible: 0;
+			}
+		}
+	}
+}
+
+group {
+	name: "e/fileman/default/list/drop_between";
+	alias: "e/fileman/default/list/drop_in";
+	alias: "e/fileman/desktop/list/drop_between";
+	alias: "e/fileman/desktop/list/drop_in";
 
 	parts {
 		#include "ibar_drop.edc"
@@ -153,8 +183,8 @@ group {
 }
 
 group {
-	name: "e/fileman/scrollframe/default";
-	alias: "e/fileman/scrollframe/desktop";
+	name: "e/fileman/default/scrollframe";
+	alias: "e/fileman/desktop/scrollframe";
 
 	parts {
 		part {
@@ -164,16 +194,7 @@ group {
 	
 			description {
 				state: "default" 0.0;
-
-				rel1 { 
-					//to: "e.swallow.content"; 
-					//offset: 1 0; 
-				}
-		
-				rel2 { 
-					//to: "e.swallow.content"; 
-					//offset: -2 -2; 
-				}
+				color: 255 255 255 255;
 			}
 		}
 
