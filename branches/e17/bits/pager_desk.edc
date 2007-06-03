@@ -47,7 +47,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 6;
+			border: 5 5 8 7;
 			middle: 1;
 		}
 

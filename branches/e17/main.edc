@@ -1,16 +1,19 @@
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.6.5 (seek) for Enlightenment 0.16.999.038 or later
+ * detour version 0.6.6 (seek) for Enlightenment 0.16.999.038 or later
  */
+
+#define version 0.6.6
 
 #include "macros/background.edc"
 #include "macros/border.edc"
 #include "macros/border_menu.edc"
 #include "macros/buttons.edc"
+#include "macros/fileman_list.edc"
 #include "macros/sys.edc"
 
 #define USE_ANIMATED_CURSOR 1
-#define FADE_BAR_ICONS 1
+#define FADE_BAR_ICONS 0
 #define SEE_CONTEXT_MENUTITLE 0
 
 fonts {
@@ -95,3 +98,4 @@ collections {
 //#include "gadman.edc"
 //#include "bits/cpufreq.edc"
 }
+

@@ -6,7 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 0 0 0;
+		color: 0 0 0 0;
 	}
 }
 
@@ -63,7 +63,7 @@ part {
 
 		rel1 { 
 			to: "base"; 
-			relative: -0.5 -0.5; 
+			relative: -0.5 -0.5;
 		}
 
 		rel2 { 
@@ -85,8 +85,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		visible: 0;
 		color: 0 0 0 0;
+		visible: 0;
 
 		rel1 { 
 			relative: 0.36 0.16; 
@@ -99,3 +99,4 @@ part {
 		}
 	}
 }
+

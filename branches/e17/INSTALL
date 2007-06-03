@@ -1,13 +1,13 @@
 
-Build time options: look at Line:12 of main.edc
+main.edc: build time options
 
-This options sets whether or not you want the cursor to pulsate
+This options disables or enables mouse pointer pulsating animation
 	#define USE_ANIMATED_CURSOR (0/1)
 
-This options sets whether or not you want the icons of ibar to fade
+Set this option to 1 to lower ibar icons opacity
 	#define FADE_BAR_ICONS (0/1)
 
-This options enables the context menu title
+This options enables or disables the view of context menu title
 	#define SEE_CONTEXT_MENUTITLE (0/1)
 
 COMPILING and INSTALLING:

@@ -256,8 +256,8 @@ part {
 		state: "default" 0.0;
 		align: 0.5 1.0;
 		fixed: 0 1;
-		color: 60 60 60 255;
-		color3: 0 0 0 0;
+		color: 255 255 255 255;
+		color3: 7 7 7 32;
 
 		rel1 { 
 			relative: 0.0 1.0; 
@@ -272,11 +272,11 @@ part {
 		text {
 			text: "No Title";
 			size: 10;
-			font: "Edje-Vera";
+			font: "Edje-Vera-Bold";
 			min: 1 1;
 			align: 0.5 1.0;
-			elipsis: 0.0;
-			// text_class: "fileman_icon";	  
+			elipsis: 0.0;  
+			// text_class: "desktop_fileman_icon";	
 		}
 	}
 

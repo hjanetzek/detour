@@ -107,13 +107,13 @@ part {
 		rel1 { 
 			to: "list"; 
 			relative: 0.0 0.0; 
-			offset: 0 0; 
+			offset: 1 0; 
 		}
 
 		rel2 { 
 			to: "list"; 
 			relative: 1.0 1.0; 
-			offset: -1 -1; 
+			offset: -2 -2; 
 		}
 
 		image {
@@ -247,7 +247,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 6;
+			border: 5 5 8 7;
 		}
 	}
 }
@@ -284,7 +284,7 @@ part {
 
 part {   
 	name: "title_overlay";
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -305,7 +305,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 6;
+			border: 5 5 8 7;
 		}
 
 		fill {

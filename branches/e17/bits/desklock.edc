@@ -13,7 +13,7 @@ group  {
 			}
 		}
 
-		version()
+		version_clip()
 	}
 
 	programs {

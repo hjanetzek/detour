@@ -114,14 +114,10 @@ part {
 
 		rel1 { 
 			to: "button_clip"; 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
 		}
 
 		rel2 { 
 			to: "button_clip"; 
-			relative: 1.0 1.0;
-			offset: -1 -1; 
 		}
 
 		image.normal: "button.png";
