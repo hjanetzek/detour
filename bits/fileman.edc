@@ -214,7 +214,7 @@ group {
 
 				rel2 {
 					relative: 0.0 0.0;
-					offset: -1 -1;
+					offset: 0 0;
 					to_x: "sb_vbar";
 					to_y: "sb_hbar";
 				}
