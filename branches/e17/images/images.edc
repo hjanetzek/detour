@@ -119,7 +119,6 @@ image: "preview_bg.png" COMP;
 
 // shelf
 image: "shelf_default_bg_t.png" COMP;
-image: "shelf_default_bg_h.png" COMP;
 image: "shelf_default_bg_v.png" COMP;
 image: "shelf_default_r_bg_v.png" COMP;
 image: "shelf_default_inset_bg.png" COMP;
@@ -453,13 +452,6 @@ image: "temperature-100.png" COMP;
 // fileman
 image: "fileman_thumb_bg.png" COMP;
 image: "fileman_button_shadow2.png" COMP;
-image: "e17_busy-1.png" COMP; 
-image: "e17_busy-2.png" COMP; 
-image: "e17_busy-3.png" COMP; 
-image: "e17_busy-4.png" COMP; 
-image: "e17_busy-5.png" COMP; 
-image: "e17_busy-6.png" COMP; 
-image: "e17_busy-7.png" COMP; 
-image: "e17_busy-8.png" COMP; 
-image: "e17_busy-9.png" COMP;
+image: "busy_1.png" COMP;
+image: "busy_2.png" COMP;
    
