@@ -7,7 +7,7 @@ group {
          description {
             state: "default" 0.0;
             rel1 {
-               relative: 0 0;
+               relative: 0.0 0.0;
                offset: 0 0;
             }
             rel2 {
@@ -31,7 +31,7 @@ group {
             state: "default" 0.0;
             visible: 0;
             rel1 {
-               relative: 0 0;
+               relative: 0.0 0.0;
                offset: 6 6;
                to: "tab";
             }
@@ -180,7 +180,7 @@ group {
          description {
             state: "default" 0.0;
             rel1 {
-               relative: 0 0;
+               relative: 0.0 0.0;
                offset: 0 -5;
             }
             rel2 {
