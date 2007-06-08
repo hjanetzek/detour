@@ -41,16 +41,6 @@ group {
                to: "tab";
             }
          }
-         description {
-            state: "down" 0.0;
-            inherit: "default" 0.0;
-            rel1 {
-               offset: 7 7;
-            }
-            rel2 {
-               offset: -10 -4;
-            }
-         }
       }
       part {
          name: "etk.swallow.content";
@@ -152,20 +142,14 @@ group {
          target: "shadow";
          target: "label_hint";
       }
-      program {
-         name: "tab_pressed";
-         signal: "etk,state,pressed";
-         source: "etk";
-         action: STATE_SET "down" 0.0;
-         target: "label_rect";
-      }
-      program {
-         name: "tab_released";
-         signal: "etk,state,released";
-         source: "etk";
-         action: STATE_SET "default" 0.0;
-         target: "label_rect";
-      }
+/**
+ * group "etk/notebook/tab"
+ * -----------------------
+ * unused signals:
+ * etk,state,pressed
+ * etk,state,released
+ *
+ */
    }
 }
 group {
