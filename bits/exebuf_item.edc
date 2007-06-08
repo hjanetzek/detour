@@ -68,6 +68,7 @@ part {
 part {
 	name: "e.text.title";
 	type: TEXT;
+	effect: NONE;
 	mouse_events: 0;
 
 	description {
@@ -99,7 +100,15 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-		color3: 0 0 0 0;
+
+		text {
+			text: "Item Label";
+			font: "Edje-Vera-Bold";
+			size: 11;
+			min: 0 0;
+			align: 0.0 0.5;
+			// text_class: "menu_item";
+		}
 	}
 }
 

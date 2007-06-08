@@ -451,7 +451,7 @@ image: "temperature-100.png" COMP;
 
 // fileman
 image: "fileman_thumb_bg.png" COMP;
-image: "fileman_button_shadow2.png" COMP;
+image: "fileman_shadow.png" COMP;
 image: "busy_1.png" COMP;
 image: "busy_2.png" COMP;
    
