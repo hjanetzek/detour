@@ -3,6 +3,11 @@ Use the following command check out the latest source code:
 
 svn checkout http://detour.googlecode.com/svn/branches/etk
 
-INSTALL:
+COMPILING and INSTALLING:
 
-To build the project run: make
+To compile and install:
+	make
+
+To uninstall:
+	make uninstall
+

@@ -60,6 +60,7 @@ group {
    alias: "etk/tree/header_unique/label";
    alias: "etk/tree/header_first/label";
    alias: "etk/tree/header_last/label";
+   alias: "etk/notebook/tab/label";
    parts {
       part {
          name: "etk.text.label";
