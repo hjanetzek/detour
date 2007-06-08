@@ -115,6 +115,19 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
+
+/*
+		rel2.offset: 0 -1;
+
+		text {
+			text: "Check Button";
+			font: "Edje-Vera-Bold";
+			size: 10;
+			min: 0 0;
+			align: 0.0 0.5;
+			// text_class: "check_button";
+		}
+*/
 	}
 }
 

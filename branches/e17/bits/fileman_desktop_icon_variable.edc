@@ -51,7 +51,7 @@ part {
 		}
 
 		image {
-			normal: "fileman_button_shadow2.png";
+			normal: "fileman_shadow.png";
 			border: 6 6 6 6;
 		}
 	}
