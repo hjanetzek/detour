@@ -1,9 +1,9 @@
 fonts 	        = fonts
 images 	        = images
-CC			= edje_cc
-SRC			= main.edc
-OUT			= detour-etk.edj
-COMPILE 		= $(CC) $(EDJE_CC_FLAGS)
+CC		= edje_cc
+SRC		= main.edc
+OUT		= detour-etk.edj
+COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
 PATH_INSTALL    = $(HOME)/.e/etk/themes
 
 EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/

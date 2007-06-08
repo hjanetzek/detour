@@ -34,6 +34,10 @@ images {
    image: "menu_item_arrow_light.png" COMP;
    image: "menu_item_select.png" COMP;
    image: "menu_separator.png" COMP;
+   image: "notebook_tab.png" COMP;
+   image: "notebook_frame.png" COMP;
+   image: "notebook_tab_hint.png" COMP;
+   image: "notebook_tab_shadow.png" COMP;
    image: "paned_h_handle.png" COMP;
    image: "paned_v_handle.png" COMP;
    image: "progress_bar_fill_0.png" COMP;
