@@ -74,6 +74,7 @@ group {
    /* TODO: temporary until we implement name: "etk/menu_bar/menu_item" */
    alias: "etk/menu_bar/menu_item";
    min: 0 21;
+   max: 9999 21; // not sure this is such a good idea
    parts {
       part {
          name: "item_rect";
