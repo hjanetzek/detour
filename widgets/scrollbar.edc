@@ -33,13 +33,15 @@ group {
          name: "trough_left";
          description {
             state: "default" 0.0;
+            min: 13 17;
+            max: 13 17;
             rel1 {
                relative: 0.0 0.5;
-               offset: 0 -8;
+               offset: -2 -4;
             }
             rel2 {
                relative: 0.0 0.5;
-               offset: 12 8;
+               offset: 12 6;
             }
             image {
                normal: "scrollbar_h_trough_left.png";
@@ -50,13 +52,15 @@ group {
          name: "trough_right";
          description {
             state: "default" 0.0;
+            min: 13 17;
+            max: 13 17;
             rel1 {
                relative: 1.0 0.5;
-               offset: -13 -8;
+               offset: -13 -4;
             }
             rel2 {
                relative: 1.0 0.5;
-               offset: -1 8;
+               offset: -1 6;
             }
             image {
                normal: "scrollbar_h_trough_right.png";
@@ -336,9 +340,11 @@ group {
          name: "trough_down";
          description {
             state: "default" 0.0;
+            min: 17 13; // silly fix for alignment
+            max: 17 13;
             rel1 {
                relative: 0.5 1.0;
-               offset: -8 -13;
+               offset: -8 -11;
             }
             rel2 {
                relative: 0.5 1.0;
