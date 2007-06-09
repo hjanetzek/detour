@@ -29,6 +29,7 @@ images {
    image: "iconbox_focus.png" COMP;
    image: "iconbox_label_bg.png" COMP;
    image: "iconbox_over.png" COMP;
+   image: "iconbox_rubberband.png" COMP;
    image: "menu_bg.png" COMP;
    image: "menu_item_arrow_dark.png" COMP;
    image: "menu_item_arrow_light.png" COMP;
