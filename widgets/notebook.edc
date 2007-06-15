@@ -100,14 +100,14 @@ group {
             state: "default" 0.0;
             color: 255 255 255 255;
             rel1 {
+               to: "tab";
                relative: 0.0 1.0;
                offset: 4 -26;
-               to: "tab";
             }
             rel2 {
+               to: "tab";
                relative: 1.0 1.0;
                offset: -5 -1;
-               to: "tab";
             }
             image {
                normal: "notebook_tab_shadow.png";
