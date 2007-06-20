@@ -44,27 +44,33 @@ group {
          }
       }
       part {
-         name: "entry_focus";
+         name: "focus_clip";
+         type: RECT;
          description {
             state: "default" 0.0;
             color: 255 255 255 0;
-            visible: 0;
-            rel1 {
-               to: "entry";
-            }
-            rel2 {
-               to: "entry";
-            }
-            image {
-               normal: "entry_focus.png";
-               border: 7 7 6 6;
-            }
          }
          description {
             state: "focused" 0.0;
             inherit: "default" 0.0;
             color: 255 255 255 255;
-            visible: 1;
+         }
+      }
+      part {
+         name: "focus";
+         clip_to: "focus_clip";
+         description {
+            state: "default" 0.0;
+            rel1 {
+               relative: 0.0 0.0;
+               offset: 0 0;
+            }
+            rel2 {
+               relative: 1.0 1.0;
+               offset: -1 -1;
+            }
+            image.normal: "entry_focus.png";
+            image.border: 7 7 8 7;
          }
       }
    }
@@ -74,16 +80,16 @@ group {
          signal: "etk,state,focused";
          source: "etk";
          action: STATE_SET "focused" 0.0;
-         transition: DECELERATE 0.2;
-         target: "entry_focus";
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
       }
       program {
          name: "entry_unfocus";
          signal: "etk,state,unfocused";
          source: "etk";
          action: STATE_SET "default" 0.0;
-         transition: DECELERATE 0.2;
-         target: "entry_focus";
+         transition: DECELERATE 0.5;
+         target: "focus_clip";
       }
    }
 }
