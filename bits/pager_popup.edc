@@ -39,8 +39,8 @@ part {
 		}
 
 		image {
-			normal: "dialog_bg.png";
-			border: 8 8 2 2;
+			normal: "menu_bg.png";
+			border: 2 2 2 2;
 		}
 
 		fill {
@@ -119,7 +119,7 @@ part {
 			size: 12;
 			min:  1 1;
 			align: 0.5 0.5;
-			// text_class: "module_large_s";	       
+			//~ text_class: "module_large_s";	       
 		}
 	}
 }

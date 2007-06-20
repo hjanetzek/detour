@@ -102,7 +102,7 @@ part {
 			size: 9;
 			min: 1 1;
 			align: 0.0 0.0;
-			// text_class: "module_small";	       
+			//~ text_class: "module_small";	       
 		}
 	}
 }

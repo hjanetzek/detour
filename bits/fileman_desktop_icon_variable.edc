@@ -18,7 +18,7 @@ part {
 		}
 
 		image {
-			normal: "button_focus.png";
+			normal: "menu_select.png";
 			border: 8 8 8 8;
 		}       
 	}
@@ -273,9 +273,16 @@ part {
 			text: "No Title";
 			size: 10;
 			font: "Edje-Vera-Bold";
-			min: 1 1;
-			align: 0.5 1.0;
-			elipsis: 0.0;  
+			#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
+				min: 1 1;
+				elipsis: 0.0;
+			#else
+			#if TRUNCATE_DESKTOP_ICON_FILENAME == 1
+				min: 0 1;
+				elipsis: 0.0;
+			#endif
+			#endif
+			align: 0.5 1.0; 
 			// text_class: "desktop_fileman_icon";	
 		}
 	}

@@ -7,7 +7,7 @@ part {
 		state: "default" 0.0; //~ top
 
 		image {
-			normal: "shelf_default_bg_t.png";
+			normal: "shelf_default_bg_t2.png";
 			border: 4 4 3 3;
 		}
 
@@ -102,7 +102,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "shelf_default_bg_v.png";
+			normal: "shelf_default_bg_v2.png";
 			border: 3 2 3 2;
 		}
 
@@ -122,7 +122,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "shelf_default_bg_v.png";
+			normal: "shelf_default_bg_v2.png";
 			border: 3 2 3 2;
 		}
 
@@ -142,7 +142,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "shelf_default_bg_v.png";
+			normal: "shelf_default_bg_v2.png";
 			border: 3 2 3 2;
 		}
 
@@ -162,7 +162,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "shelf_default_r_bg_v.png";
+			normal: "shelf_default_r_bg_v2.png";
 			border: 2 3 3 2;
 		}
 
@@ -182,7 +182,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "shelf_default_r_bg_v.png";
+			normal: "shelf_default_r_bg_v2.png";
 			border: 2 3 3 2;
 		}
 
@@ -202,7 +202,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "shelf_default_r_bg_v.png";
+			normal: "shelf_default_r_bg_v2.png";
 			border: 2 3 3 2;
 		}
 

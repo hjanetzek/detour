@@ -18,7 +18,7 @@ part {
 		}
 
 		image {
-			normal: "button_focus.png";
+			normal: "menu_select.png";
 			border: 8 8 8 8;
 		}       
 	}

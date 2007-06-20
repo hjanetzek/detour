@@ -1,19 +1,19 @@
 
-// desklock
+//~ desklock
 image: "desklock_dialog_bg.png" COMP;
 image: "dot.png" COMP;
 
-// frame
+//~ frame
 image: "frame_outline.png" COMP;
 
-// button
+//~ button
 image: "button.png" COMP;
 image: "button_focus.png" COMP;
 image: "button_disabled.png" COMP;
 image: "button_outline.png" COMP;
 image: "button_clicked.png" COMP;
 
-// slider
+//~ slider
 image: "slider_0.png" COMP;
 image: "slider_1.png" COMP;
 image: "slider_2.png" COMP;
@@ -34,7 +34,7 @@ image: "sb_runnerh_left_disabled.png" COMP;
 image: "sb_runnerh_right_disabled.png" COMP;
 image: "slider_focus.png" COMP;
 
-// border default
+//~ border default
 image: "tl.png" COMP;
 image: "tb.png" COMP;
 image: "tr.png" COMP;
@@ -46,26 +46,26 @@ image: "rb.png" COMP;
 image: "lb-blend.png" COMP;
 image: "rb-blend.png" COMP;
 
-// border buttons
+//~ border buttons
 image: "bt.png" COMP;
 image: "bt-max.png" COMP;
 image: "bt-close.png" COMP;
 image: "bt-min.png" COMP;
 
-// border shaped
+//~ border shaped
 image: "bld-shaped.png" COMP;
 image: "brd-shaped.png" COMP;
 image: "tld-shaped.png" COMP;
 image: "trd-shaped.png" COMP;
 image: "tb-shaped.png" COMP;
 
-// border full
+//~ border full
 image: "tl-full.png" COMP;
 image: "tr-full.png" COMP;
 image: "bl-full.png" COMP;
 image: "br-full.png" COMP;
 
-// border dialog
+//~ border dialog
 image: "tl-dialog.png" COMP;
 image: "tb-dialog.png" COMP;
 image: "tr-dialog.png" COMP;
@@ -73,54 +73,57 @@ image: "bl-dialog.png" COMP;
 image: "bb-dialog.png" COMP;
 image: "br-dialog.png" COMP;
 
-// border container
+//~ border container
 image: "bl-shaped.png" COMP;
 image: "br-shaped.png" COMP;
 image: "tl-shaped.png" COMP;
 image: "tr-shaped.png" COMP;
 
-// ibar
+//~ ibar
 image: "ibar_drop.png" COMP;
 
-// resize
+//~ resize
 image: "resize-dialog_bg.png" COMP;
 
-// pointer
+//~ pointer
 image: "cursor.png" COMP;
 image: "cursor2.png" COMP;
 image: "cursor_mono.png" COMP;
 
-// menu
+//~ menu
 image: "arrow_light.png" COMP;
 image: "arrow_dark.png" COMP;
 image: "menu_bg.png" COMP;
 image: "menu_separator.png" COMP;
 image: "menu_select.png" COMP;
 
-// entry
+//~ entry
 image: "entry.png" COMP;
 image: "entry_focus.png" COMP;
 
-// dialog
+//~ dialog
 image: "separator.png" COMP;
 image: "dialog_bg.png" COMP;
 
-// check
+//~ check
 image: "check0.png" COMP;
 image: "check1.png" COMP;
 
-// radio
+//~ radio
 image: "radio0.png" COMP;
 image: "radio1.png" COMP;
 
-// preview
+//~ preview
 image: "preview_bg_over.png" COMP;
 image: "preview_bg.png" COMP;
 
-// shelf
+//~ shelf
 image: "shelf_default_bg_t.png" COMP;
+image: "shelf_default_bg_t2.png" COMP;
 image: "shelf_default_bg_v.png" COMP;
+image: "shelf_default_bg_v2.png" COMP;
 image: "shelf_default_r_bg_v.png" COMP;
+image: "shelf_default_r_bg_v2.png" COMP;
 image: "shelf_default_inset_bg.png" COMP;
 image: "shelf_alternate_bg.png" COMP;
 image: "shelf_alternate_over.png" COMP;
@@ -133,13 +136,13 @@ image: "shelf_alternate_over_r.png" COMP;
 image: "shelf_alternate_inset.png" COMP;
 image: "shelf_invisible_inset_bg.png" COMP;
 
-// scrollbar
+//~ scrollbar
 image: "sb_bl1.png" COMP;
 image: "sb_br1.png" COMP;
 image: "sb_btu1.png" COMP;
 image: "sb_btd1.png" COMP;
 
-// scrollframe
+//~ scrollframe
 image: "scrollframe_inset.png" COMP;
 image: "scrollframe_focus.png" COMP;
 image: "sf_vb_runner.png" COMP;
@@ -161,16 +164,16 @@ image: "sf_btd1_over.png" COMP;
 image: "sf_bl1_over.png" COMP;
 image: "sf_br1_over.png" COMP;
 
-// background
+//~ background
 
-// error
+//~ error
 image: "error-dialog_bg.png" COMP;
 
-// transitions
+//~ transitions
 
-// ilist
+//~ ilist
 
-// pager
+//~ pager
 image: "pager_desk.png" COMP;
 image: "pager_focus.png" COMP;
 image: "pager_window.png" COMP;
@@ -179,10 +182,10 @@ image: "pager_window_winlist.png" COMP;
 image: "pager_lid_l.png" COMP;
 image: "pager_lid_r.png" COMP;
 
-// about_theme
+//~ about_theme
 image: "tree_route.png" COMP;
 
-// clock
+//~ clock
 image: "hour.cursor.00.png" COMP;
 image: "hour.cursor.01.png" COMP;
 image: "hour.cursor.02.png" COMP;
@@ -365,17 +368,17 @@ image: "seconds.cursor.58.png" COMP;
 image: "seconds.cursor.59.png" COMP;
 image: "clock_bg.png" COMP;
 
-// tclock
+//~ tclock
 
-// move
+//~ move
 
-// ibox
+//~ ibox
 
-// winlist
+//~ winlist
 image: "pager_window_shaded.png" COMP;
 image: "pager_window_iconified.png" COMP;
 
-// about
+//~ about
 image: "e17_logo_small.png" COMP;
 image: "e17_logo_small_p1.png" COMP;
 image: "e17_logo_small_p2.png" COMP;
@@ -396,22 +399,22 @@ image: "e17_logo_small_p27.png" COMP;
 image: "e17_logo_small_p28.png" COMP;
 image: "e17_logo_small_p29.png" COMP;
 
-// exebuf
+//~ exebuf
 
-// deskpreview
+//~ deskpreview
 
-// spectrum
+//~ spectrum
 image: "cs_box.png" COMP;
 image: "color_slider.png" COMP;
 image: "color_slider_x.png" COMP;
 image: "color_slider_y.png" COMP;
 
-// cslider
+//~ cslider
 image: "cp_slider_trough.png" COMP;
 image: "cp_slider_trough_left.png" COMP;
 image: "cp_slider_trough_right.png" COMP;
 
-// border window menu
+//~ border window menu
 image: "button_wm0.png" COMP;
 image: "button_detail_close.png" COMP;
 image: "button_detail_maximize.png" COMP;
@@ -431,7 +434,7 @@ image: "button_detail_stack_normal.png" COMP;
 image: "button_detail_stack_on_top.png" COMP;
 image: "button_detail_properties.png" COMP;
 
-// battery
+//~ battery
 image: "battery-0.png" COMP;
 image: "battery-20.png" COMP;
 image: "battery-40.png" COMP;
@@ -440,7 +443,7 @@ image: "battery-80.png" COMP;
 image: "battery-100.png" COMP;
 image: "battery-charge.png" COMP;
 
-// temperature 
+//~ temperature 
 image: "temperature-base.png" COMP;
 image: "temperature-0.png" COMP;
 image: "temperature-20.png" COMP;
@@ -449,9 +452,10 @@ image: "temperature-60.png" COMP;
 image: "temperature-80.png" COMP;
 image: "temperature-100.png" COMP;
 
-// fileman
+//~ fileman
 image: "fileman_thumb_bg.png" COMP;
 image: "fileman_shadow.png" COMP;
 image: "busy_1.png" COMP;
 image: "busy_2.png" COMP;
+image: "fileman_drop.png" COMP;
    

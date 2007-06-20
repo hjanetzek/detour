@@ -7,6 +7,8 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 299 341;
+		max: 299 341;
+		fixed: 1 1;
 		color: 255 255 255 255;
 	}
 }
@@ -34,7 +36,7 @@ part {
 
 part {
 	name: "separator";
-	mouse_events:  0;
+	mouse_events: 0;
 	clip_to: "base";
 
 	description {
@@ -231,7 +233,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "button";
+			//~ text_class: "button";
 		}
 	}
 
@@ -257,7 +259,7 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.0 0.5;
-		//fixed: 1 1; ??
+		//~ fixed: 1 1; ??
 
 		rel1 { 
 			to: "button_enabled"; 
@@ -289,6 +291,34 @@ part {
 			to: "button_enabled"; 
 			relative: 0.0 1.0; 
 			offset: 3 -6.5; 
+		}
+	}
+}
+
+part {
+	name: "dot";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 11 11;
+		max: 11 11;
+		fixed: 1 1;
+	
+		rel1 { 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: -24 -12; 
+		}
+	
+		image {
+			normal: "dot.png";
 		}
 	}
 }

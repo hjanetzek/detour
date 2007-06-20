@@ -108,7 +108,7 @@ part {
 			size: 12;
 			min: 1 1;
 			align: 0.0 0.5;
-			// text_class: "dialog_error";	       
+			//~ text_class: "dialog_error";	       
 		}
 	}
 }
@@ -323,7 +323,7 @@ part {
 			size: 10;
 			min: 0 0;
 			align: 0.5 0.5;
-			// text_class: "button";
+			//~ text_class: "button";
 		}
 	}
 }

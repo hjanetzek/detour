@@ -124,7 +124,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		// min: 16 16;
+		//~ min: 16 16;
 		aspect: 1.0 1.0;
 
 		rel1 { 
@@ -141,7 +141,7 @@ part {
 
 	description {
 		state: "label_visible" 0.0;
-		// min: 16 16;
+		//~ min: 16 16;
 
 		rel1 { 
 			to_x: "radio"; 
@@ -163,7 +163,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		// min: 16 16;
+		//~ min: 16 16;
 		color: 255 255 255 255;
 
 		rel1 { 
@@ -218,7 +218,7 @@ part {
 		state: "default" 0.0;
 		/* TODO: fix this fixed shit */
 		min: 24 24;
-		// fixed: 1 1;
+		//~ fixed: 1 1;
 		/* TODO: fix this fixed shit */
 		color: 60 60 60 255;
 
@@ -239,7 +239,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "radio_button";	       
+			//~ text_class: "radio_button";	       
 		}
 	}
 
@@ -247,7 +247,7 @@ part {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 60 60 60 128;
-		// color_class: "radio_text_disabled";
+		//~ color_class: "radio_text_disabled";
 	}
 
 	description {

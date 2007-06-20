@@ -232,7 +232,7 @@ part {
 			size: 16;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "about_title";	       
+			//~ text_class: "about_title";	       
 		}
 	}
 }
@@ -266,7 +266,7 @@ part {
 			size: 12;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "about_version";	       
+			//~ text_class: "about_version";	       
 		}
 	}
 }
@@ -368,7 +368,7 @@ PT("p28", 0.6093750, 0.6875000, 0.8046875, 0.8906250);
 PT("p29", 0.6640625, 0.6406250, 0.8671875, 0.8359375);
 
 part {
-	name: "dot1";
+	name: "dot";
 	mouse_events: 0;
 
 	description {
@@ -376,51 +376,23 @@ part {
 		min: 11 11;
 		max: 11 11;
 		fixed: 1 1;
-
+	
 		rel1 { 
-			to: "about_bg"; 
-			relative: 0.5 1.0; 
-			offset: 0 14; 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "about_bg"; 
-			relative: 0.5 1.0; 
-			offset: -1 -1; 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: -24 -12; 
 		}
-
+	
 		image {
 			normal: "dot.png";
 		}
-    	}
-}
-
-part {
-	name: "dot2";
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 11 11;
-		max: 11 11;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "authors_bg"; 
-			relative: 0.5 1.0; 
-			offset: 0 14; 
-		}
-
-		rel2 { 
-			to: "authors_bg"; 
-			relative: 0.5 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "dot.png";
-		}
-    	}
+	}
 }
 
 part {
@@ -635,7 +607,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.55;
-			// text_class: "button";
+			//~ text_class: "button";
 		}
 	}
 
