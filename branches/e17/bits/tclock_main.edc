@@ -58,7 +58,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "module_large";			  
+			//~ text_class: "module_large";			  
 		}
 	}
 
@@ -105,7 +105,7 @@ part {
 			size: 9;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "module_small";
+			//~ text_class: "module_small";
 		}
 	}
 

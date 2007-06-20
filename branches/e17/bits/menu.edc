@@ -43,24 +43,24 @@ group {
 	}
 
 	programs {
-#if SEE_CONTEXT_MENUTITLE == 0
+#if VISIBLE_CONTEXT_MENU_TITLE == 0
 #else
-#if SEE_CONTEXT_MENUTITLE == 1
-		program {
-			name: "on";
-			signal: "e,action,show,title";
-			source: "e";
-			action: STATE_SET "active" 0.0;
-			target: "e.text.title";
-		}
+#if VISIBLE_CONTEXT_MENU_TITLE == 1
+	program {
+		name: "on";
+		signal: "e,action,show,title";
+		source: "e";
+		action: STATE_SET "active" 0.0;
+		target: "e.text.title";
+	}
 
-		program {
-			name: "off";
-			signal: "e,action,hide,title";
-			source: "e";
-			action: STATE_SET "default" 0.0;
-			target: "e.text.title";
-		}
+	program {
+		name: "off";
+		signal: "e,action,hide,title";
+		source: "e";
+		action: STATE_SET "default" 0.0;
+		target: "e.text.title";
+	}
 #endif
 #endif
 	}

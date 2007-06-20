@@ -154,7 +154,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
-			// text_class: "check_button";
+			//~ text_class: "check_button";
 		}
 	}
 

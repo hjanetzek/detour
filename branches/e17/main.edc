@@ -1,9 +1,9 @@
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.6.6 (seek) for Enlightenment 0.16.999.038 or later
+ * detour version 0.6.7 (seek) for Enlightenment 0.16.999.039 or later
  */
 
-#define version 0.6.6
+#define version 0.6.7
 
 #include "macros/background.edc"
 #include "macros/border.edc"
@@ -13,8 +13,12 @@
 #include "macros/sys.edc"
 
 #define USE_ANIMATED_CURSOR 1
-#define FADE_BAR_ICONS 0
-#define SEE_CONTEXT_MENUTITLE 0
+#define USE_TANGO_ICONS 1
+#define VISIBLE_CONTEXT_MENU_TITLE 0
+#define FADE_IBAR_ICONS 0
+#define TRUNCATE_DESKTOP_ICON_FILENAME 1
+#define BG_TYPE 1
+#define ENABLE_DETROIT_SHELF_STYLE 0
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";
@@ -38,9 +42,6 @@ images {
 
 data {
 }
-
-#define USE_TANGO_ICONS 1
-#define BG_TYPE 0
 
 collections {
 #include "bits/background.edc"
@@ -78,11 +79,11 @@ collections {
 #if USE_TANGO_ICONS == 0
 #else
 #if USE_TANGO_ICONS == 1
-#include "bits/icons.edc"
-#include "bits/fileman_actions.edc"
-#include "bits/fileman_icon.edc"
-#include "bits/fileman_icon_clickable.edc"
-#include "bits/fileman_mime.edc"
+	#include "bits/icons.edc"
+	#include "bits/fileman_actions.edc"
+	#include "bits/fileman_icon.edc"
+	#include "bits/fileman_icon_clickable.edc"
+	#include "bits/fileman_mime.edc"
 #endif
 #endif
 #include "bits/color_well.edc"
@@ -94,8 +95,8 @@ collections {
 #include "bits/battery.edc"
 #include "bits/temperature.edc"
 #include "bits/font_preview.edc"
-//#include "bits/transitions.edc"
-//#include "gadman.edc"
-//#include "bits/cpufreq.edc"
+//~ #include "bits/transitions.edc"
+//~ #include "gadman.edc"
+//~ #include "bits/cpufreq.edc"
 }
 

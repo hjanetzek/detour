@@ -108,6 +108,7 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
+				color: 255 255 255 128;
 
 				image {
 					normal: "drive-harddisk.png";
@@ -117,27 +118,27 @@ group {
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 128 128 128 255;
+				color: 255 255 255 255;
 			}
 		}
 	}
 
 	programs {
 		program {
-			name: "disable";
-			signal: "disable";
-			source: "";
+			name: "full";
+			signal: "e,state,removable,full";
+			source: "e";
 			action: STATE_SET "disabled" 0.0;
-			transition: LINEAR 0.1;
+			transition: LINEAR 0.5;
 			target: "icon";
 		}
 
 		program {
-			name: "default";
-			signal: "default";
-			source: "";
+			name: "empty";
+			signal: "e,state,removable,empty";
+			source: "e";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.1;
+			transition: LINEAR 0.5;
 			target: "icon";
 		}
 	}

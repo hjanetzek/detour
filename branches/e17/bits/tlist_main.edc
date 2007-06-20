@@ -40,7 +40,7 @@ part {
 			size: 11;
 			min: 1 1;
 			align: 0.0 0.5;
-			// text_class: "tlist";	       
+			//~ text_class: "tlist";	       
 		}
 	}
 

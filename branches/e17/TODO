@@ -1,19 +1,18 @@
 
+  o fileman separate drop animation of desktop and fwin
+  o borders need an overhaul
   o fix scrollframe (items are sometimes hidden in some scenarios)
   o invisible shelf and insets
-  o alternate shelf and insets
 
-  o borders: are missing e,state,hung|unhung
+  o borders: missing e,state,hung|unhung
   o shelf: do something with e,state,hidden|visible
 
-  o different stlye scrollbars for efm 
   o transitions images (transition dialog) 
   o design gadman
   o design cpufreq module 
-  o clock module
   o design theme wallpaper
 
-  o re-design icon/object drop animation (separate dnd animation for efm)
+  o re-design clock module
 
-  o text classes
-  o support color classes
+  o support text_classes
+  o support color_classes

@@ -1,6 +1,6 @@
 
 part {
-	name: "project";
+	name: "project_name";
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
@@ -33,7 +33,7 @@ part {
 }
 
 part {
-	name: "version";
+	name: "project_version";
 	type: TEXT;
 	effect: NONE;
 	mouse_events: 0;
@@ -43,13 +43,13 @@ part {
 		color: 60 60 60 255;
 
 		rel1 { 
-			to: "project"; 
+			to: "project_name"; 
 			relative: 0.5 1.0; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "project"; 
+			to: "project_name"; 
 			relative: 0.5 1.0; 
 			offset: -1 8; 
 		}
@@ -72,7 +72,7 @@ part {
 		state: "default" 0.0;
 
 		rel1 { 
-			to_y: "version"; 
+			to_y: "project_version"; 
 			to_x: "background"; 
 			relative: 0.0 1.0; 
 			offset: 4 5; 
@@ -116,6 +116,7 @@ part {
 
 part {
 	name: "entry_clip";
+//~ this part is responsible for the scrolling textblock
 	type: RECT;
 	mouse_events: 0;
 	clip_to: "container";

@@ -1,5 +1,5 @@
 
-// efm actions
+//~ efm actions
 image: "document-new.png" COMP;
 image: "document-open.png" COMP;
 image: "document-properties.png" COMP;
@@ -11,17 +11,17 @@ image: "edit-cut.png" COMP;
 image: "edit-delete.png" COMP;
 image: "view-refresh.png" COMP;
 
-// fileman mime-types
-image: "gnome-mime-application-pdf.png" COMP; // pdf
-image: "shellscript.png" COMP; // sh, .c, .o, .h, .cpp, .patch, .cs
-image: "image-x-generic.png" COMP; // png, jpeg, xcf
-image: "document.png" COMP; // doc
-image: "audio-x-generic.png" COMP; // ogg, mp3
-image: "text-x-generic.png" COMP; // txt, doc
-image: "folder_tar.png" COMP; // bz2, tar, gz, zip, deb
-image: "font-x-generic.png" COMP; // pcf, ttf, bdf
-image: "text-html.png" COMP; // html, css,
-image: "video-x-generic.png" COMP; // mpeg, avi
+//~ fileman mime-types
+image: "gnome-mime-application-pdf.png" COMP; //~ pdf
+image: "shellscript.png" COMP; //~ sh, .c, .o, .h, .cpp, .patch, .cs
+image: "image-x-generic.png" COMP; //~ png, jpeg, xcf
+image: "document.png" COMP; //~ doc
+image: "audio-x-generic.png" COMP; //~ ogg, mp3
+image: "text-x-generic.png" COMP; //~ txt, doc
+image: "folder_tar.png" COMP; //~ bz2, tar, gz, zip, deb
+image: "font-x-generic.png" COMP; //~ pcf, ttf, bdf
+image: "text-html.png" COMP; //~ html, css,
+image: "video-x-generic.png" COMP; //~ mpeg, avi
 
 image: "folder.png" COMP;
 image: "folder-open.png" COMP;   
@@ -31,7 +31,7 @@ image: "user-home.png" COMP;
 image: "user-desktop.png" COMP;   
 image: "drive-harddisk.png" COMP;   
 
-// shelf
+//~ shelf
 image: "icon_shelf_bottom_left.png" COMP;
 image: "icon_shelf_bottom.png" COMP;
 image: "icon_shelf_bottom_right.png" COMP;
@@ -51,7 +51,7 @@ image: "icon_shelf_menu_bar.png" COMP;
 image: "icon_shelf_panel.png" COMP;
 image: "icon_shelf_top_desk.png" COMP;
 
-// screen
+//~ screen
 image: "wallpaper_screen_stretch.png" COMP;
 image: "wallpaper_screen_center.png" COMP;
 image: "wallpaper_screen_tile.png" COMP;
@@ -59,7 +59,7 @@ image: "wallpaper_screen_in.png" COMP;
 image: "wallpaper_screen_out.png" COMP;
 image: "wallpaper_screen_grad.png" COMP;
 
-## Tango Icons http://tango.freedesktop.org
+//~ Tango Icons http://tango.freedesktop.org
 image: "video-display.png" COMP;
 image: "dialog-error.png" COMP;
 image: "dialog-warning.png" COMP;
@@ -98,12 +98,13 @@ image: "preferences-desktop-peripherals.png" COMP;
 image: "applications-office.png" COMP;
 image: "gnome-devel.png" COMP;
 image: "image-loading.png" COMP;
+image: "stock_select-all.png" COMP;
 
-// e
+//~ e
 image: "e17_icon_e_0.png" COMP;
 image: "e17_icon_e_glow_0.png" COMP;
 
-// hybrids
+//~ hybrids
 image: "screen_normal.png" COMP;
 image: "screen_left.png" COMP;
 image: "screen_right.png" COMP;
@@ -117,7 +118,7 @@ image: "applications-other2.png" COMP;
 image: "gnome-dev-keyboard-mouse.png" COMP;
 image: "display-size.png" COMP;
 
-// gnome tango
+//~ gnome tango
 image: "gnome-session-reboot.png" COMP;
 image: "gnome-panel-window-list.png" COMP;
 image: "gnome-session-halt.png" COMP;
