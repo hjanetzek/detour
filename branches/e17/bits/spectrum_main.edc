@@ -128,14 +128,14 @@ part {
 
 		rel1 { 
 			to_x: "e.dragable.cursor"; 
-			// to_y: "e.swallow.content"; 
+			//~ to_y: "e.swallow.content"; 
 			relative: 0.0 1.0; 
 			offset: 0 0;  
 		}
 
 		rel2 { 
 			to_x: "e.dragable.cursor"; 
-			// to_y: "e.swallow.content"; 
+			//~ to_y: "e.swallow.content"; 
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
@@ -157,14 +157,14 @@ part {
 		fixed: 1 1;
 
 		rel1 { 
-			// to_x: "e.swallow.content"; 
+			//~ to_x: "e.swallow.content"; 
 			to_y: "e.dragable.cursor"; 
 			relative: 1.0 0.0; 
 			offset: 5 5; 
 		}
 
 		rel2 { 
-			// to_x: "e.swallow.content"; 
+			//~ to_x: "e.swallow.content"; 
 			to_y: "e.dragable.cursor"; 
 			relative: 1.0 1.0; 
 			offset: -1 -1; 

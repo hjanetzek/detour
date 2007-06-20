@@ -61,7 +61,7 @@ part {
 			text_source: "e.text.label";
 			source: "e.text.label";
 			min: 0 1;
-			// text_class: "title_bar";
+			//~ text_class: "title_bar";
 		}
 	}
 }
@@ -94,7 +94,7 @@ part {
 			size: 10;
 			min: 0 1;
 			align: 0.0 0.5;
-			// text_class: "winlist_title";	       
+			//~ text_class: "winlist_title";	       
 		}
 	}
 
@@ -111,7 +111,7 @@ part {
 			size: 11;
 			min: 0 0;
 			align: 0.0 0.5;
-			// text_class: "winlist_title";	       
+			//~ text_class: "winlist_title";	       
 		}
 	}
 }

@@ -17,7 +17,7 @@ part {
 
 		image {
 			normal: "ibar_drop.png";
-			border: 5 5 5 5;
+			border: 4 4 4 4;
 		}
 	}
 
@@ -35,7 +35,8 @@ part {
 
 		image {
 			normal: "ibar_drop.png";
-			border: 5 5 5 5;
+			border: 4 4 4 4;
 		}
 	}
 }
+

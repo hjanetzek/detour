@@ -6,10 +6,10 @@ part {
 
 	description {
 		state: "default" 0.0;
-		#if FADE_BAR_ICONS
-		color: 255 255 255 164;
+		#if FADE_IBAR_ICONS
+			color: 255 255 255 164;
 		#else
-		color: 255 255 255 255;
+			color: 255 255 255 255;
 		#endif
 	}
 

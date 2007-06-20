@@ -12,7 +12,6 @@ program {
 	signal: "mouse,up,1";
 	source: "button_enabled";
 	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.5;
 	target: "button_enabled";
 	target: "e.text.label";
 }

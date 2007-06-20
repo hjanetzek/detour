@@ -10,8 +10,8 @@ group {
 			description {
 				state: "default" 0.0;
 		/* dimension agnostic? */
-				//aspect: 1.0 1.0;
-				//aspect_preference: BOTH;
+				//~ aspect: 1.0 1.0;
+				//~ aspect_preference: BOTH;
 
 				image {
 					normal: "night_sky.png";
@@ -32,8 +32,8 @@ parts {
 		description {
 			state: "default" 0.0;
 		/* dimension agnostic? */
-			//aspect: 1.0 1.0;
-			//aspect_preference: BOTH;
+			//~ aspect: 1.0 1.0;
+			//~ aspect_preference: BOTH;
 			
 			image {
 				normal: "night_sky.png";
