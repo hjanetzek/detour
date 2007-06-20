@@ -173,7 +173,6 @@ group {
          signal: "etk,state,released";
          source: "etk";
          action: STATE_SET "default" 0.0;
-         transition: DECELERATE 0.5;
          target: "button_enabled";
       }
       program {
