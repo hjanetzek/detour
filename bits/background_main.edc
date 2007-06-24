@@ -1,5 +1,5 @@
 
-#if BG_TYPE == 0
+#if BACKGROUND_TYPE == 0
 part { 
 	name: "background_image";
 	type: GRADIENT;
@@ -94,7 +94,7 @@ part {
 }
 */
 #else
-#if BG_TYPE == 1
+#if BACKGROUND_TYPE == 1
 part { 
 	name: "background_image";
 	type: RECT;
