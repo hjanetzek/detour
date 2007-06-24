@@ -400,6 +400,7 @@ image: "e17_logo_small_p28.png" COMP;
 image: "e17_logo_small_p29.png" COMP;
 
 //~ exebuf
+image: "dot2.png" COMP;
 
 //~ deskpreview
 
@@ -433,6 +434,8 @@ image: "button_detail_stack_below.png" COMP;
 image: "button_detail_stack_normal.png" COMP;
 image: "button_detail_stack_on_top.png" COMP;
 image: "button_detail_properties.png" COMP;
+image: "button_detail_skip.png" COMP;
+image: "button_detail_skip_pager.png" COMP;
 
 //~ battery
 image: "battery-0.png" COMP;

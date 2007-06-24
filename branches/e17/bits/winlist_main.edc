@@ -373,3 +373,31 @@ part {
 	}
 }
 
+part {
+	name: "dot";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 15 11;
+		max: 15 11;
+		fixed: 1 1;
+	
+		rel1 { 
+			to: "base3"; 
+			relative: 0.5 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "base3"; 
+			relative: 0.5 1.0; 
+			offset: 0 -14; 
+		}
+	
+		image {
+			normal: "dot2.png";
+		}
+	}
+}
+
