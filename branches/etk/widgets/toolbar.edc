@@ -28,7 +28,7 @@ group {
    }
 }
 
-/*
+
 group {
    name: "etk/htoolbar/tool_button";
    alias: "etk/tool_button";
@@ -39,4 +39,5 @@ group {
    name: "etk/vtoolbar/tool_button";
    TOOL_BUTTON_GROUP(-4, 0, 1, -1)
 }
-*/
+
+
