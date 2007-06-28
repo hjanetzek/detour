@@ -1,0 +1,28 @@
+
+program {
+	name: "ascending";
+	signal: "ascending";
+	source: "EWL";
+	action: STATE_SET "ascending" 0.0;
+	target: "arrow";
+	transition: LINEAR 0.0;
+}
+
+program {
+	name: "descending";
+	signal: "descending";
+	source: "EWL";
+	action: STATE_SET "descending" 0.0;
+	target: "arrow";
+	transition: LINEAR 0.0;
+}
+
+program {
+	name: "default";
+	signal: "default";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	target: "arrow";
+	transition: LINEAR 0.0;
+}
+

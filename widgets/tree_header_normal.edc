@@ -1,0 +1,71 @@
+
+part {
+	name: "bg";
+	type: RECT;
+	mouse_events: 0;
+			
+	description {
+		state: "default" 0.0;
+		min: 5 19;
+		color: 225 232 239 255;
+	}
+
+	description {
+		state: "odd" 0.0;
+		inherit: "default" 0.0;
+		color: 243 243 243 255;
+	}
+}
+
+part {
+	name: "highlight";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 165 190 217 255;
+		visible: 0;
+				
+		rel1 {
+			offset: -4 -4;
+		}
+
+		rel2 {
+			offset: 3 3;
+		}
+	}
+			
+	description {
+		state: "highlighted" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+}
+
+part {
+	name: "selected";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 165 190 217 255;
+		visible: 0;
+
+		rel1 {
+			offset: -4 -4;
+		}
+
+		rel2 {
+			offset: 3 3;
+		}
+	}
+
+	description {
+		state: "selected" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+}
+

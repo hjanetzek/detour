@@ -1,0 +1,55 @@
+
+program {
+	name: "odd";
+	signal: "odd";
+	source: "*";
+	action: STATE_SET "odd" 0.0;
+	transition: LINEAR 0.0;
+	target: "bg";
+}
+		
+program {
+	name: "even";
+	signal: "even";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 0.0;
+	target: "bg";
+}
+
+program {
+	name: "select";
+	signal: "tree-selected";
+	source: "*";
+	action: STATE_SET "selected" 0.0;
+	transition: DECELERATE 0.25;
+	target: "selected";
+}
+
+program {
+	name: "un-select";
+	signal: "tree-deselect";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	transition: ACCELERATE 0.01;
+	target: "selected";
+}
+
+program {
+	name: "highlight";
+	signal: "highlight,on";
+	source: "EWL";
+	action: STATE_SET "highlighted" 0.0;
+	transition: LINEAR 0.0;
+	target: "highlight";
+}
+
+program {
+	name: "un-highlight";
+	signal: "highlight,off";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 0.0;
+	target: "highlight";
+}
+

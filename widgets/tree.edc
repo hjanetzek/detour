@@ -1,0 +1,106 @@
+
+group {
+	name: "ewl/tree";
+
+	data {
+		item: "inset" 1;
+		item: "inset/top" 4;
+		item: "inset/bottom" 0;
+	}
+
+	parts {
+		#include "tree_bg.edc"
+	}
+
+	programs {
+		program {
+			name: "focus";
+			signal: "focus,in";
+			source: "EWL";
+			action: STATE_SET "focused" 0.0;
+			transition: DECELERATE 0.5; 
+			target: "overlay";
+		}
+
+		program {
+			name: "unfocus";
+			signal: "focus,out";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "overlay";
+		}
+	}
+}
+
+group {
+	name: "ewl/tree/scrollpane/background";
+}
+
+group {
+	name: "ewl/tree/vbox";
+
+	data {
+		item: "inset/top" 7;
+		item: "inset/bottom" 5;
+		item: "inset/left" 10;
+		item: "inset/right" 6;
+	}
+}
+
+group {
+	name: "ewl/tree/expansion";
+	min: 12 12;
+
+	parts {
+		#include "tree_expansion.edc"
+	}
+
+	programs {
+		#include "tree_expansion_programs.edc"
+	}
+}
+
+group {
+	name: "ewl/tree/header";
+
+	data {
+		item: "pad" 0;
+		item: "inset" 4;
+	}
+
+	parts {
+		#include "tree_header.edc"
+	}
+}
+
+group {
+	name: "ewl/tree/header/button";
+	min: 16 16;
+
+	parts {
+		#include "tree_header_button.edc"
+	}
+
+	programs {
+		#include "tree_header_button_programs.edc"
+	}
+}
+
+
+group {
+	name: "ewl/tree/header/normal";
+}
+
+group {
+	name: "ewl/row";
+
+	parts {
+		#include "tree_header_normal.edc"
+	}
+
+	programs {
+		#include "tree_header_normal_programs.edc"
+	}
+}
+

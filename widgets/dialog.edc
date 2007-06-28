@@ -1,0 +1,23 @@
+
+group {
+	name: "ewl/dialog";
+
+	parts {
+		#include "dialog_main.edc"
+	}
+}
+
+group {
+	name: "ewl/dialog/actionarea";
+	min: 317 12;
+	
+	data {
+		item: "inset/top" 10;
+		item: "inset/bottom" 2;
+	}
+
+	parts {
+		#include "dialog_actionarea.edc"
+	}
+}
+

@@ -1,0 +1,9 @@
+
+ o Tree Widget has no focus consequently..... mouse_events could be 
+   use but that might lead to inconsistencies....?
+
+ o implement slider
+ o implement scrollbar
+ o fix scrollframe
+ o combobox widget
+ o spinner widget

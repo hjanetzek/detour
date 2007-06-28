@@ -1,0 +1,20 @@
+
+group {
+	name: "ewl/button";
+
+	data {
+		item: "inset" 5;
+		item: "inset/left" 14;
+		item: "inset/right" 14;
+		item: "pad" 2;
+	}
+
+	parts {
+		#include "button_main.edc"
+	}
+
+	programs {
+		#include "button_programs.edc"
+	}
+}
+

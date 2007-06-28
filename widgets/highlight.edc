@@ -1,0 +1,17 @@
+
+group {
+	name: "ewl/highlight";
+
+	parts {
+		part {
+			name: "highlight";
+			type: RECT;
+
+			description {
+				state: "default" 0.0;
+				color: 138 171 225 128;
+			}
+		}
+	}
+}
+

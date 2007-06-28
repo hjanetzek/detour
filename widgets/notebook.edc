@@ -1,0 +1,202 @@
+
+group {
+	name: "ewl/notebook/pages";
+
+	data {
+	//~ corresponds to the inset inside the notebook frame
+	//~ it should have 6px between the dialog and the frame
+		item: "inset" 6;
+		item: "inset/top" 10;
+		item: "pad" 0;
+		item: "pad/left" 6;
+		item: "pad/right" 6;
+		item: "pad/bottom" 6;
+	}
+
+	parts {
+		#include "notebook_page.edc"
+	}
+
+	programs {
+		program {
+			name: "visible";
+			signal: "tabs";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "outline";
+		}
+
+		program {
+			name: "hidden";
+			signal: "notabs";
+			source: "EWL";
+			action: STATE_SET "hidden" 0.0;
+			target: "outline";
+		}
+	}
+}
+
+group {
+	name: "ewl/notebook/top";
+	
+	data {
+		item: "inset" 0;
+		item: "pad" 0;
+		item: "pad/left" 4;
+		item: "pad/right" 4;
+	}
+}
+
+group {
+	name: "ewl/notebook/top/tab";
+
+	data {
+	//~ there should be 6px padding between the tab 
+	//~ buttons and the menu itself (for instance ewl_test)
+		item: "pad/top" 6;
+		item: "pad" 0;
+		item: "inset" 26;
+		item: "inset/top" 6;
+		item: "inset/bottom" 0;
+	}
+
+	parts {
+		#include "notebook_top_tab.edc"
+	}
+
+	programs {
+		program {
+			name: "selected";
+			signal: "selected";
+			source: "EWL";
+			action: STATE_SET "selected" 0.0;
+			target: "outline";
+			target: "label_hint";
+		}
+
+		program {
+			name: "de-select";
+			signal: "default";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "outline";
+			target: "label_hint";
+		}
+	}
+}
+
+//~ didn't touch anything bellow this
+
+/*
+
+group {
+	name: "ewl/notebook/bottom/tab";
+
+	data {
+		item: "pad" 0;
+		item: "inset" 4;
+		item: "inset/top" 0;
+		item: "inset/bottom" 4;
+	}
+
+	parts {
+		#include "notebook_bot_tab.edc"
+	}
+
+	programs {
+		program {
+			name: "selected";
+			signal: "selected";
+			source: "EWL";
+			action: STATE_SET "selected" 0.0;
+			target: "outline";
+		}
+
+		program {
+			name: "de-select";
+			signal: "default";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "outline";
+		}
+	}
+}
+
+group {
+	name: "ewl/notebook/left";
+	
+	data {
+		item: "inset" 0;
+		item: "pad" 0;
+		item: "pad/top" 4;
+		item: "pad/bottom" 4;
+	}
+}
+
+group {
+	name: "ewl/notebook/left/tab";
+
+	data {
+		item: "pad" 0;
+		item: "inset" 4;
+		item: "inset/left" 2;
+		item: "inset/right" 0;
+	}
+
+	parts {
+		#include "notebook_left_tab.edc"
+	}
+
+	programs {
+		program {
+			name: "selected";
+			signal: "selected";
+			source: "EWL";
+			action: STATE_SET "selected" 0.0;
+			target: "outline";
+		}
+		program {
+			name: "de-select";
+			signal: "default";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "outline";
+		}
+	}
+}
+
+group {
+	name: "ewl/notebook/right/tab";
+
+	data {
+		item: "pad" 0;
+		item: "inset" 4;
+		item: "inset/left" 0;
+		item: "inset/right" 2;
+	}
+
+	parts {
+		#include "notebook_right_tab.edc"
+	}
+
+	programs {
+		program {
+			name: "selected";
+			signal: "selected";
+			source: "EWL";
+			action: STATE_SET "selected" 0.0;
+			target: "outline";
+		}
+
+		program {
+			name: "de-select";
+			signal: "default";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "outline";
+		}
+	}
+}
+*/
+
+

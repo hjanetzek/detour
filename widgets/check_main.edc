@@ -1,0 +1,65 @@
+
+part {
+	name: "focus";
+	type: IMAGE;
+
+	description {
+		state: "default" 0.0;
+		min: 0 0;
+		max: 9999 20;
+		visible: 0;
+
+		image.normal: "menu_item_select.png";
+		image.border: 5 5 5 5;
+	} 
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+		color: 225 255 255 229;
+		visible: 1;
+	}
+}
+
+part {
+	name: "check";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 2 2; 
+		}
+
+		rel2 { 
+			relative: 0.0 1.0; 
+			offset: 2 -3; 
+		}
+
+		image {
+			normal: "check0.png";
+		}
+	}
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+	
+		image {
+			normal: "check1.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+
