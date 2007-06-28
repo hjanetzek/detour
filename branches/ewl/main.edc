@@ -3,7 +3,7 @@
  * detour for the Enlightened Widget Library
  */
 
-#define version 0.3.0
+//~ #define version 0.3.0
 
 fonts {
 font: "fonts/Vera.ttf" "ewl/default";
