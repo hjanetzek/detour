@@ -1,0 +1,39 @@
+
+program {
+	name: "blink-on";
+	signal: "show";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	target: "cursor";
+	after: "blink-hold-on";
+}
+
+program {
+	name: "blink-off";
+	action: STATE_SET "default" 0.0;
+	target: "cursor";
+	after: "blink-hold-off";
+}
+
+program {
+	name: "blink-hold-on";
+	in: 1.0 0.0;
+	after: "blink-off";
+}
+
+program {
+	name: "blink-hold-off";
+	in: 0.5 0.0;
+	after: "blink-on";
+}
+
+program {
+	name: "no-blink";
+	signal: "noblink";
+	source, "EWL";
+	action: ACTION_STOP;
+	target: "blink-hold-on";
+	target: "blink-hold-off";
+	after: "blink-on";
+}
+

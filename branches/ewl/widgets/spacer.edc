@@ -1,0 +1,9 @@
+
+group {
+	name: "ewl/spacer";
+
+	parts {
+		#include "spacer_main.edc"
+	}
+}
+

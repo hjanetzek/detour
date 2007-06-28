@@ -1,0 +1,36 @@
+
+part {
+	name: "arrow";
+	mouse_events: 0;
+	
+	description {
+		state: "default" 0.0;
+		min: 16 16;
+		visible: 0;
+
+		image {
+			normal: "button_detail_down.png";
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+			
+	description {
+		state: "ascending" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+
+	description {
+		state: "descending" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+				
+		image {
+			normal: "button_detail_up.png";
+		}
+	}
+}
+

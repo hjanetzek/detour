@@ -1,0 +1,49 @@
+
+program {
+	name: "turn,on";
+	signal: "checked";
+	source: "EWL";
+	action: STATE_SET "active" 0.0;
+	target: "radio";
+}
+
+program {
+	name: "turn,off";
+	signal: "default";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	target: "radio";
+}
+
+program {
+	name: "diable";
+	signal: "disabled";
+	source: "EWL";
+	action: STATE_SET "disabled" 0.0;
+	target: "outline";
+}
+
+program {
+	name: "enable";
+	signal: "enabled";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	target: "outline";
+}
+
+program {
+	name: "focus";
+	signal: "focus,in";
+	source: "EWL";
+	action: STATE_SET "active" 0.0; 
+	target: "focus";
+}
+
+program {
+	name: "unfocus";
+	signal: "focus,out";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	target: "focus";
+}
+
