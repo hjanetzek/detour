@@ -1,0 +1,72 @@
+
+group {
+	name: "ewl/entry";
+	min: 21 21;
+	//~ max: 9999 21;
+/*
+ * The entry widget is re-used in other areas like the
+ * text editor test. Althought the entry widget should 
+ * really be of fixed size imo. Something else should 
+ * used instead for the text editor test, it already 
+ * has a frame like border why use 2 ?
+ */
+
+
+	data {
+		item: "inset/top" 6;
+		item: "inset/left" 6;
+	}
+
+	parts {
+		#include "entry_main.edc"
+	}
+
+	programs {
+		#include "entry_main_programs.edc"
+	}
+}
+
+group {
+	name: "ewl/entry/cursor";
+	min: 1 12;
+	max: 1 10000;
+
+	data {
+		item: "pad" 0;
+		item: "pad/top" 1;
+	}
+
+	parts {
+		#include "entry_cursor.edc"
+	}
+
+	programs {
+		#include "entry_cursor_programs.edc"
+	}
+}
+
+group {
+	name: "ewl/entry/selection";
+
+/* The selection should have an option to set it on the fg/bg
+ * Padding needs fixing: text/selection/cursor
+ */ 
+
+	data {
+		item: "pad/top" 0;
+		item: "pad/bottom" 0;
+	}
+	
+	parts {
+		part {
+			name: "selection";
+			type: RECT;
+
+			description {
+				state: "default" 0.0;
+				color: 138 171 225 128;
+			}
+		}
+	}
+}
+

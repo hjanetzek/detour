@@ -1,0 +1,26 @@
+
+part {
+	name: "button_image";
+	type: IMAGE;
+	mouse_events: 1;
+	
+	description {
+		state: "default" 0.0;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: 0 0;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: -1 -1;
+		}
+
+		image {
+			normal: "tree_header_unique.png";
+			border: 6 6 6 6;
+		}
+	}
+}
+

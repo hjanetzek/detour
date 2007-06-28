@@ -1,0 +1,21 @@
+
+group {
+	name: "ewl/button/check/item";
+
+	data {
+		item: "inset" 4;
+	}
+
+/* There should be 4 pixels padding between check/radio widget
+ * and the text.
+ */
+
+	parts {
+		#include "check_main.edc"
+	}
+
+	programs {
+		#include "check_programs.edc"
+	}
+}
+

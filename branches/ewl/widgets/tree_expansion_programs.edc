@@ -1,0 +1,35 @@
+
+program {
+	name: "expandable";
+	signal: "expandable";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	target: "clip";
+}
+		
+program {
+	name: "nonexpandable";
+	signal: "nonexpandable";
+	source: "*";
+	action: STATE_SET "hidden" 0.0;
+	target: "clip";
+}
+
+program {
+	name: "collapsed";
+	signal: "default";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 0.0;
+	target: "expansion";
+}
+
+program {
+	name: "expand";
+	signal: "checked";
+	source: "*";
+	action: STATE_SET "open" 0.0;
+	transition: LINEAR 0.0;
+	target: "expansion";
+}
+

@@ -1,0 +1,65 @@
+
+//~ dialog
+image: "dialog_bg.png" COMP;
+
+//~ button
+image: "button.png" COMP;
+image: "button_focus.png" COMP;
+image: "button_disabled.png" COMP;
+image: "button_outline.png" COMP;
+image: "button_clicked.png" COMP;
+
+//~ radio
+image: "radio0.png" COMP;
+image: "radio1.png" COMP;
+
+//~ check
+image: "check0.png" COMP;
+image: "check1.png" COMP;
+
+//~ frame
+image: "frame_outline.png" COMP;
+
+//~ entry
+image: "entry.png" COMP;
+image: "entry_focus.png" COMP;
+
+//~ arrows
+image: "button_detail_up.png" COMP;
+image: "button_detail_down.png" COMP;
+
+//~ scroll bg
+image: "tree_bg.png" COMP;
+image: "tree_over.png" COMP;
+image: "tree_focus.png" COMP;
+
+//~ slider h
+image: "slider_h_disabled.png" COMP;
+image: "slider_h_left_disabled.png" COMP;
+image: "slider_h_right_disabled.png" COMP;
+image: "slider_h_trough.png" COMP;
+image: "slider_h_trough_left.png" COMP;
+image: "slider_h_trough_right.png" COMP;
+
+//~ slider v
+image: "slider_v_disabled.png" COMP;
+image: "slider_v_bot_disabled.png" COMP;
+image: "slider_v_top_disabled.png" COMP;
+image: "slider_v_trough.png" COMP;
+image: "slider_v_trough_up.png" COMP;
+image: "slider_v_trough_down.png" COMP;
+
+//~ menu
+image: "menu_item_select.png" COMP;
+
+//~ notebook
+image: "notebook_frame.png" COMP;
+image: "notebook_tab.png" COMP;
+image: "notebook_tab2.png" COMP;
+image: "notebook_tab_hint.png" COMP;
+
+//~ tree
+image: "tree_arrow1.png" COMP;
+image: "tree_arrow2.png" COMP;
+image: "tree_header_unique.png" COMP;
+

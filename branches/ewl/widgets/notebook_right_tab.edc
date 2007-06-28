@@ -1,0 +1,37 @@
+
+part {
+	name: "outline";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -18 0;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: -1 -1;
+		}
+
+		image {
+			normal: "e17_button_sm_disabled.png";
+			border: 8 8 8 8;
+		}
+	}
+
+	description {
+		state: "selected" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+
+		image {
+			normal: "ewl_notebook_tab_right_selected.png";
+			border: 8 8 8 8;
+		}
+	}
+}
+

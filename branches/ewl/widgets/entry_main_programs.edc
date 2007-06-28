@@ -1,0 +1,35 @@
+
+program {
+	name: "enable";
+	signal: "enabled";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	target: "entry";
+}
+
+program {
+	name: "disable";
+	signal: "disabled";
+	source: "*";
+	action: STATE_SET "disabled" 0.0;
+	target: "entry";
+}
+
+program {
+	name: "focus,in";
+	signal: "focus,in";
+	source: "*";
+	action: STATE_SET "focused" 0.0;
+	transition: DECELERATE 0.5;
+	target: "focus_clip";
+}
+
+program {
+	name: "focus,out";
+	signal: "focus,out";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "focus_clip";
+}
+

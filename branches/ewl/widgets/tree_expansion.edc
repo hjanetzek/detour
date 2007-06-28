@@ -1,0 +1,46 @@
+
+part {
+	name: "clip";
+	type: RECT;
+	mouse_events: 1;
+			
+	description {
+		state: "default" 0.0;
+        	visible: 1;
+	}
+
+	description {
+		state: "hidden" 0.0;
+		visible: 0;
+	}
+}
+
+part {
+	name: "expansion";
+	mouse_events: 1;
+	clip_to: "clip";
+
+	description {
+		state: "default" 0.0;
+		min: 13 16;
+		max: 13 16;
+		fixed: 1 1;
+				
+		image {
+			normal: "tree_arrow1.png";
+		}
+	}
+	
+	description {
+		state: "open" 0.0;
+		inherit: "default" 0.0;
+		min: 16 13;
+		max: 16 13;
+		fixed: 1 1;
+				
+		image {
+			normal: "tree_arrow2.png";
+		}
+	}
+}
+

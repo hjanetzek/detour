@@ -1,0 +1,33 @@
+
+/* Let's keep the interface as simple as possible
+ * no need for a separator imo.
+ */
+
+/*
+part {
+	name: "separator";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 600 12;
+
+		rel1 {
+			relative: 0.0 0.0;
+		}
+				
+		rel2 {
+			relative: 1.0 1.0;
+		}
+				
+		image {
+			normal: "separator.png";
+			border: 0 0 4 0;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}
+*/

@@ -1,0 +1,77 @@
+
+part {
+	name: "outline";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -2 0;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 2 4;
+		}
+
+		image {
+			normal: "notebook_tab2.png";
+			border: 8 8 9 1;
+		}
+	}
+
+	description {
+		state: "selected" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+
+		image {
+			normal: "notebook_tab.png";
+			border: 8 8 9 6;
+		}
+	}
+}
+
+part {
+	name: "label_hint";
+	mouse_events: 1;
+	
+	description {
+		state: "default" 0.0;
+		min: 28 5;
+		max: 9999 5;
+		fixed: 1 1;
+		color: 255 255 255 0;
+
+		rel1 {
+			to: "outline";
+			relative: 0.0 0.0;
+			offset: 4 9;
+		}
+
+		rel2 {
+			to: "outline";
+			relative: 1.0 0.0;
+			offset: -5 -1;
+		}
+
+		image {
+			normal: "notebook_tab_hint.png";
+			border: 6 6 4 2;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+
+	description {
+		state: "selected" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+}
+
