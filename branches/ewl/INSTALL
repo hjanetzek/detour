@@ -1,8 +1,0 @@
-
-Use the following command check out the latest source code:
-
-svn checkout http://detour.googlecode.com/svn/branches/ewl
-
-INSTALL:
-
-To build the project run: make
