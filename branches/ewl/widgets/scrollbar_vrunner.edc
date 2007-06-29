@@ -5,7 +5,7 @@ part {
 		state: "default" 0.0;
 
 		image {
-			normal: "sf_vb_runner.png";
+			normal: "scrollbar_v_trough.png";
 			border: 8 8 6 6;
 		}
 
