@@ -20,7 +20,7 @@ part {
 
 		image {
 			normal: "notebook_frame.png";
-			border: 6 6 6 7;
+			border: 6 6 11 7;
 			middle: 0;
 		}
 

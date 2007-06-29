@@ -3,8 +3,6 @@
  * detour for the Enlightened Widget Library
  */
 
-//~ #define version 0.3.0
-
 fonts {
 font: "fonts/Vera.ttf" "ewl/default";
 font: "fonts/VeraBd.ttf" "ewl/default/bold";
@@ -52,17 +50,6 @@ data {
 	item: "/label/group" "ewl/label";
 	item: "/label/textpart" "ewl/label/text";
 
-	/* combo */
-	//~ item: "/combo/group" "ewl/combo";
-	//~ item: "/combo/cell/group" "ewl/combo/contents";
-	//~ item: "/combo/popup/group" "ewl/menu";
-	//~ item: "/combo_cell/group" "ewl/combo/popup/contents";
-	//~ item: "/combo_menu/body/group" "ewl/combo/popup/submenu";
-	//~ item: "/combo/button/group" "ewl/combo/button";
-
-	/* dnd groups */
-	//~ item: "/dndcursor/group" "ewl/sphere-cursor";
-
 	/* entry/text related groups */
 	item: "/entry/group" "ewl/entry";
 	item: "/entry/cursor/group" "ewl/entry/cursor";
@@ -80,64 +67,27 @@ data {
 
 	/* notebook */
 	item: "/notebook/pages/group" "ewl/notebook/pages";
-
 	item: "/notebook/top/tabbar/group" "ewl/notebook/top";
 	item: "/notebook/bottom/tabbar/group" "ewl/notebook/top";
-	//~ item: "/notebook/left/tabbar/group" "ewl/notebook/left";
-	//~ item: "/notebook/right/tabbar/group" "ewl/notebook/left";
-
+	item: "/notebook/left/tabbar/group" "ewl/notebook/left";
+	item: "/notebook/right/tabbar/group" "ewl/notebook/left";
 	item: "/notebook/top/tabbar/tab/group" "ewl/notebook/top/tab";
-	//~ item: "/notebook/bottom/tabbar/tab/group" "ewl/notebook/bottom/tab";
-	//~ item: "/notebook/left/tabbar/tab/group" "ewl/notebook/left/tab";
-	//~ item: "/notebook/right/tabbar/tab/group" "ewl/notebook/right/tab";
+	item: "/notebook/bottom/tabbar/tab/group" "ewl/notebook/bottom/tab";
+	item: "/notebook/left/tabbar/tab/group" "ewl/notebook/left/tab";
+	item: "/notebook/right/tabbar/tab/group" "ewl/notebook/right/tab";
 
-	/* paned */
-	//~ item: "/grabber/vertical/group" "ewl/separator/vertical";
-	//~ item: "/grabber/horizontal/group" "ewl/separator/horizontal";
+	/* scrollpane background */
+	item: "/scrollpane/group" "ewl/scrollpane/background";
 
-	/* progressbar */
-	//~ item: "/progressbar/group" "ewl/progressbar";
-	//~ item: "/progressbar_bar/group" "ewl/progressbar/bar";
+	/* seeker vertical */
+	item: "/vseeker/group" "ewl/seeker/vertical";
+	item: "/vseeker/vbutton/group" "ewl/seeker/vertical/button";
+	item: "/vscrollbar/vseeker/vbutton/group" "ewl/scrollbar/vertical/button";
 
-	/* scrollbar h */
-	//~ item: "/hscrollbar/hseeker/group" "/ewl/hrunner";
-	//~ item: "/hscrollbar/increment/group" "/ewl/hscrollbar/increment";
-	//~ item: "/hscrollbar/hseeker/hbutton/group" "/ewl/hscrollbar";
-	//~ item: "/hscrollbar/decrement/group" "/ewl/hscrollbar/decrement";
-
-	/* scrollbar v */
-	//~ item: "/vscrollbar/hseeker/group" "/ewl/vrunner";
-	//~ item: "/vscrollbar/increment/group" "/ewl/vscrollbar/increment";
-	//~ item: "/vscrollbar/hseeker/hbutton/group" "/ewl/vscrollbar";
-	//~ item: "/vscrollbar/decrement/group" "/ewl/vscrollbar/decrement";
-
-	/* seeker h */
-	//~ item: "/hseeker/group" "ewl/seeker/horizontal";
-	//~ item: "/hseeker/hbutton/group" "ewl/seeker/horizontal/button";
-
-	/* seeker v */
-	//~ item: "/vseeker/group" "ewl/seeker/vertical";
-	//~ item: "/vseeker/vbutton/group" "ewl/seeker/vertical/button";
-
-	/* separator groups */
-	//~ item: "/hseparator/group" "ewl/separator/horizontal";
-	//~ item: "/vseparator/group" "ewl/separator/vertical";
-
-	/* shadow */
-	//~ item: "/shadow/group" "ewl/shadow";
-
-	/* spacer */
-	//~ item: "/spacer/group" "ewl/spacer";
-
-	/* spinner */
-	//~ item: "/spinner/controls/decrement/group" "ewl/spinner/decrement";
-	//~ item: "/spinner/controls/increment/group" "ewl/spinner/increment";
-
-	/* toolbar */
-	//~ item: "/htoolbar/group" "ewl/menu";
-	//~ item: "/vtoolbar/group" "ewl/menu";
-	//~ item: "/htoolbar/hbox/icon/group" "ewl/toolbar/icon";
-	//~ item: "/vtoolbar/vbox/icon/group" "ewl/toolbar/icon";
+	/* seeker horizontal */
+	item: "/hseeker/group" "ewl/seeker/horizontal";
+	item: "/hseeker/hbutton/group" "ewl/seeker/horizontal/button";
+	item: "/hscrollbar/hseeker/hbutton/group" "ewl/scrollbar/horizontal/button";
 
 	/* tree */
 	item: "/tree/group" "ewl/tree";
@@ -153,8 +103,8 @@ data {
 	item: "/tree_header/header/button/group" "ewl/tree/header/button";
 
 	item: "/row/group" "ewl/row";
-	//~ item: "/node/check/group" "ewl/tree/expansion";
-  item: "/expansion/group" "ewl/tree/expansion";
+	item: "/node/check/group" "ewl/tree/expansion";
+  	item: "/expansion/group" "ewl/tree/expansion";
 
 	/* window related groups */
 	item: "/tooltip/group" "ewl/window";
@@ -185,6 +135,57 @@ data {
 
 	/* A blank group to be used if you want to remove a theme */
 	item: "/blank/group" "ewl/blank";
+
+	/* combo */
+	//~ item: "/combo/group" "ewl/combo";
+	//~ item: "/combo/cell/group" "ewl/combo/contents";
+	//~ item: "/combo/popup/group" "ewl/menu";
+	//~ item: "/combo_cell/group" "ewl/combo/popup/contents";
+	//~ item: "/combo_menu/body/group" "ewl/combo/popup/submenu";
+	//~ item: "/combo/button/group" "ewl/combo/button";
+
+	/* dnd groups */
+	//~ item: "/dndcursor/group" "ewl/sphere-cursor";
+
+	/* separator groups */
+	//~ item: "/hseparator/group" "ewl/separator/horizontal";
+	//~ item: "/vseparator/group" "ewl/separator/vertical";
+
+	/* shadow */
+	//~ item: "/shadow/group" "ewl/shadow";
+
+	/* spacer */
+	//~ item: "/spacer/group" "ewl/spacer";
+
+	/* spinner */
+	//~ item: "/spinner/controls/decrement/group" "ewl/spinner/decrement";
+	//~ item: "/spinner/controls/increment/group" "ewl/spinner/increment";
+
+	/* toolbar */
+	//~ item: "/htoolbar/group" "ewl/menu";
+	//~ item: "/vtoolbar/group" "ewl/menu";
+	//~ item: "/htoolbar/hbox/icon/group" "ewl/toolbar/icon";
+	//~ item: "/vtoolbar/vbox/icon/group" "ewl/toolbar/icon";
+
+	/* scrollbar h */
+	//~ item: "/hscrollbar/hseeker/group" "/ewl/hrunner";
+	//~ item: "/hscrollbar/increment/group" "/ewl/hscrollbar/increment";
+	//~ item: "/hscrollbar/hseeker/hbutton/group" "/ewl/hscrollbar";
+	//~ item: "/hscrollbar/decrement/group" "/ewl/hscrollbar/decrement";
+
+	/* scrollbar v */
+	//~ item: "/vscrollbar/hseeker/group" "/ewl/vrunner";
+	//~ item: "/vscrollbar/increment/group" "/ewl/vscrollbar/increment";
+	//~ item: "/vscrollbar/hseeker/hbutton/group" "/ewl/vscrollbar";
+	//~ item: "/vscrollbar/decrement/group" "/ewl/vscrollbar/decrement";
+
+	/* paned */
+	//~ item: "/grabber/vertical/group" "ewl/separator/vertical";
+	//~ item: "/grabber/horizontal/group" "ewl/separator/horizontal";
+
+	/* progressbar */
+	//~ item: "/progressbar/group" "ewl/progressbar";
+	//~ item: "/progressbar_bar/group" "ewl/progressbar/bar";
 }
 
 collections {
@@ -200,6 +201,8 @@ collections {
 #include "widgets/tree.edc"
 #include "widgets/notebook.edc"
 #include "widgets/spacer.edc"
+#include "widgets/scrollpane.edc"
+#include "widgets/seeker.edc"
 //~ #include "widgets/separator.edc"
 //~ #include "widgets/menu.edc"
 //~ #include "widgets/progress.edc"

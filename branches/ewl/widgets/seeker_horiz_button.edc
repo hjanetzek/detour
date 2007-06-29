@@ -1,0 +1,45 @@
+
+part {
+	name: "drag";
+
+	description {
+		state: "default" 0.0;
+		min: 29 17;
+		max: 29 17;
+
+		rel1 {
+			offset: 0 2;
+		}
+
+		rel2 {
+			offset: -1 -1;
+		}
+
+		image {
+			normal: "slider_h_btn_up.png";
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+
+	description {
+		state: "down" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "slider_h_btn_down.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "slider_h_btn_disabled.png";
+		}
+	}
+}
+
