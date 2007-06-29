@@ -1,0 +1,16 @@
+
+group {
+	name: "ewl/scrollpane/background";
+
+	data {
+		item: "inset" 9;
+		item: "inset/bottom" 5;
+		item: "inset/right" 5;
+		item: "pad" 6; //~ padding
+	}
+
+	parts {
+		#include "scrollpane_bg.edc"
+	}
+}
+
