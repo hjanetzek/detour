@@ -1,0 +1,17 @@
+program {
+	name: "clicked";
+        signal: "mouse,down,*";
+        source: "EWL";
+        action: STATE_SET "clicked" 0.0;
+        target: "scrollbar";
+        target: "thumb";
+}
+program
+{
+        name: "default";
+        signal: "mouse,up,*";
+	source: "*";
+        action: STATE_SET "default" 0.0;
+        target: "scrollbar";
+        target: "thumb";
+}
