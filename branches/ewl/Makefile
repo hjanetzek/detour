@@ -10,8 +10,7 @@ EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/
 
 .SILENT :
 
-//all: version checkdir clean build install
-all: clean build 
+all: version checkdir clean build install
 
 version:
 	@echo ""
