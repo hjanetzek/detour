@@ -34,8 +34,9 @@ image: "tree_over.png" COMP;
 image: "tree_focus.png" COMP;
 
 //~ scrollbar
-image: "sf_hb_runner.png" COMP;
-image: "sf_vb_runner.png" COMP;
+image: "scrollbar_h_trough.png" COMP;
+image: "scrollbar_h_trough_left.png" COMP;
+image: "scrollbar_v_trough.png" COMP;
 
 //~ slider h
 image: "slider_h_disabled.png" COMP;
