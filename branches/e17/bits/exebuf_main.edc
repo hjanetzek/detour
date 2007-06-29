@@ -262,7 +262,13 @@ part {
 			align: 0.0 1.0;
 			size: 12;
 			min: 1 1;
-			//~ text_class: "exebuf_command";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "exebuf_command";
+			#endif
+			#endif
 		}
 	}
 }

@@ -221,7 +221,13 @@ part {
 			size: 12;
 			min: 0 1;
 			align: 0.5 0.0;
-			//~ text_class: "winlist_title";	       
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "winlist_title";
+			#endif
+			#endif	       
 		}
 	}
 }
@@ -341,7 +347,13 @@ part {
 			size: 10;
 			min: 0 1;
 			align: 0.0 0.5;
-			//~ text_class: "winlist_title";	       
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "winlist_title";
+			#endif
+			#endif	       
 		}
 	}
 }

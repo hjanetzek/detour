@@ -124,7 +124,13 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.5;
-			//~ text_class: "module_normal";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "module_normal";
+			#endif
+			#endif
 		}
 	}
 }
@@ -158,3 +164,4 @@ part {
 		color: 255 255 255 255;
 	}
 }
+

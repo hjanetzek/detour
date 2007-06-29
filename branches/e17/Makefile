@@ -1,4 +1,4 @@
-# Makefile for Seek
+# Makefile for seek
 
 fonts 	= fonts
 images 	= images
@@ -16,7 +16,7 @@ all: version clean build install
 
 version:
 	@echo ""
-	cat main.edc | head -3 | tail -1
+	cat main.edc | head -9 | tail -1
 
 clean:
 	@echo ""

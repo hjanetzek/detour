@@ -243,7 +243,13 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.55;
-			//~ text_class: "button";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "button";
+			#endif
+			#endif
 		}
 	}
 
@@ -261,3 +267,4 @@ part {
 		color3: 170 168 169 128;
 	}
 }
+
