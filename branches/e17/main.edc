@@ -18,7 +18,7 @@
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
 #define BACKGROUND_TYPE 1
 #define ENABLE_DETROIT_SHELF_STYLE 0
-#define ENABLE_TEXT_CLASSES 0
+#define ENABLE_TEXT_CLASSES 0 /* (incomplete) */  
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";

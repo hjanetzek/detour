@@ -275,7 +275,13 @@ part {
 			min: 1 1;
 			align: 0.5 1.0;
 			elipsis: 0.0;
-			// text_class: "fileman_icon";	  
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "fileman_icon";
+			#endif
+			#endif	  
 		}
 	}
 

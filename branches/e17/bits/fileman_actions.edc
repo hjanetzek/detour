@@ -1,12 +1,4 @@
 
-//~ Missing icons for: 
-//~  "arrange_name"
-//~  "arrange"
-//~  "arrange_time"
-//~  "view_details"
-//~  "view_name"
-//~  "view"
-
 #if USE_TANGO_ICONS == 0
 #else
 #if USE_TANGO_ICONS == 1
