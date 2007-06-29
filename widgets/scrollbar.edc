@@ -41,3 +41,26 @@ group {
 		#include "scrollbar_hincrement.edc"
 	}
 }
+
+group {
+	name: "ewl/vscrollbar/decrement";
+
+	min: 17 13;
+	max: 17 13;
+
+	parts {
+		#include "scrollbar_vdecrement.edc"
+	}
+}
+
+group {
+	name: "ewl/vscrollbar/increment";
+
+	min: 17 13;
+	max: 17 13;
+
+	parts {
+		#include "scrollbar_vincrement.edc"
+	}
+}
+

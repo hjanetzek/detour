@@ -1,23 +1,22 @@
 part {
-	name: "decrement";
+	name: "increment";
 	mouse_events: 1;
 
 	description {
 		state: "default" 0.0;
+	
+		min: 17 13;
+		max: 17 13;
 
-		min: 13 17;
-		max: 13 17;
-		
 		fixed: 1 1;
 
 		align: 0.5 1.0;
 
 		aspect: 1.0 1.0;
-		aspect_preference: VERTICAL;
-		
+		aspect_preference: HORIZONTAL;
+
 		image {
-			normal: "scrollbar_h_trough_left.png";
+			normal: "scrollbar_v_trough_up.png";
 		}
 	}
 }
-
