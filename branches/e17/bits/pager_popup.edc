@@ -119,7 +119,13 @@ part {
 			size: 12;
 			min:  1 1;
 			align: 0.5 0.5;
-			//~ text_class: "module_large_s";	       
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "module_large_s";
+			#endif
+			#endif     
 		}
 	}
 }
@@ -258,3 +264,4 @@ part {
 		}
     	}
 }
+

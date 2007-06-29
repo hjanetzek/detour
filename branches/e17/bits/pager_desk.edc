@@ -48,7 +48,6 @@ part {
 		image {
 			normal: "entry.png";
 			border: 5 5 8 7;
-			middle: 1;
 		}
 
 		fill {
@@ -213,3 +212,4 @@ part {
 		color: 255 255 255 255;
 	}
 }
+
