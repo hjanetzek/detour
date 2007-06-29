@@ -33,10 +33,16 @@ image: "tree_bg.png" COMP;
 image: "tree_over.png" COMP;
 image: "tree_focus.png" COMP;
 
-//~ scrollbar
+//~ scrollbar h
+image: "scrollbar_h_bar.png" COMP;
+image: "scrollbar_h_thumb.png" COMP;
 image: "scrollbar_h_trough.png" COMP;
 image: "scrollbar_h_trough_left.png" COMP;
 image: "scrollbar_h_trough_right.png" COMP;
+
+//~ scrollbar v
+image: "scrollbar_v_bar.png" COMP;
+image: "scrollbar_v_thumb.png" COMP;
 image: "scrollbar_v_trough.png" COMP;
 image: "scrollbar_v_trough_down.png" COMP;
 image: "scrollbar_v_trough_up.png" COMP;

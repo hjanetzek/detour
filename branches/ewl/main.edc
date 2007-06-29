@@ -169,15 +169,15 @@ data {
 
 	/* scrollbar h */
 	item: "/hscrollbar/hseeker/group" "ewl/scrollbar/hrunner";
-	item: "/hscrollbar/increment/group" "ewl/hscrollbar/increment";
-	//~ item: "/hscrollbar/hseeker/hbutton/group" "/ewl/hscrollbar";
-	item: "/hscrollbar/decrement/group" "ewl/hscrollbar/decrement";
+	item: "/hscrollbar/increment/group" "ewl/scrollbar/hincrement";
+	item: "/hscrollbar/hseeker/hbutton/group" "ewl/scrollbar/hbutton";
+	item: "/hscrollbar/decrement/group" "ewl/scrollbar/hdecrement";
 
 	/* scrollbar v */
 	item: "/vscrollbar/vseeker/group" "ewl/scrollbar/vrunner";
-	item: "/vscrollbar/increment/group" "ewl/vscrollbar/increment";
-	//~ item: "/vscrollbar/hseeker/hbutton/group" "/ewl/vscrollbar";
-	item: "/vscrollbar/decrement/group" "ewl/vscrollbar/decrement";
+	item: "/vscrollbar/increment/group" "ewl/scrollbar/vincrement";
+	item: "/vscrollbar/vseeker/vbutton/group" "ewl/scrollbar/vbutton";
+	item: "/vscrollbar/decrement/group" "ewl/scrollbar/vdecrement";
 
 	/* paned */
 	//~ item: "/grabber/vertical/group" "ewl/separator/vertical";
