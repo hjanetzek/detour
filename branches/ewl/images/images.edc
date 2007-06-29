@@ -36,7 +36,10 @@ image: "tree_focus.png" COMP;
 //~ scrollbar
 image: "scrollbar_h_trough.png" COMP;
 image: "scrollbar_h_trough_left.png" COMP;
+image: "scrollbar_h_trough_right.png" COMP;
 image: "scrollbar_v_trough.png" COMP;
+image: "scrollbar_v_trough_down.png" COMP;
+image: "scrollbar_v_trough_up.png" COMP;
 
 //~ slider h
 image: "slider_h_disabled.png" COMP;
