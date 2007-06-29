@@ -10,8 +10,9 @@
   heavily on what the future has stored for efm.
 
 - Text_Classes are a touchy subject. No doubt, they are easy to add, but the
-  default text_classes have an undesired effect on the interface. This is why
-  they are not in use.
+  default text_classes have an undesired effect on the interface. This is 
+  why they are not in use. Titlebar still not using:
+	text_class: "title_bar"
 
   Window borders
   - This is one of biggest overhauls. It will happen, it will have 
@@ -43,5 +44,9 @@
 
 - Eventually support color_classes. Albeit i think the dialog needs a 
   design implementation redo. 
+
+- Missing icons:
+  "arrange_name" "arrange" "arrange_time" "view_details" "view_name"
+  "view"
 
  */
