@@ -1,0 +1,16 @@
+part {
+	name: "runner";
+
+	description {
+		state: "default" 0.0;
+		
+		image {
+			normal: "sf_hb_runner.png";
+			border: 6 6 8 8;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}

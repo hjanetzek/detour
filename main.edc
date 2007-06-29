@@ -168,13 +168,13 @@ data {
 	//~ item: "/vtoolbar/vbox/icon/group" "ewl/toolbar/icon";
 
 	/* scrollbar h */
-	//~ item: "/hscrollbar/hseeker/group" "/ewl/hrunner";
+	item: "/hscrollbar/hseeker/group" "ewl/scrollbar/hrunner";
 	//~ item: "/hscrollbar/increment/group" "/ewl/hscrollbar/increment";
 	//~ item: "/hscrollbar/hseeker/hbutton/group" "/ewl/hscrollbar";
 	//~ item: "/hscrollbar/decrement/group" "/ewl/hscrollbar/decrement";
 
 	/* scrollbar v */
-	//~ item: "/vscrollbar/hseeker/group" "/ewl/vrunner";
+	item: "/vscrollbar/vseeker/group" "ewl/scrollbar/vrunner";
 	//~ item: "/vscrollbar/increment/group" "/ewl/vscrollbar/increment";
 	//~ item: "/vscrollbar/hseeker/hbutton/group" "/ewl/vscrollbar";
 	//~ item: "/vscrollbar/decrement/group" "/ewl/vscrollbar/decrement";
@@ -201,6 +201,7 @@ collections {
 #include "widgets/tree.edc"
 #include "widgets/notebook.edc"
 #include "widgets/spacer.edc"
+#include "widgets/scrollbar.edc"
 #include "widgets/scrollpane.edc"
 #include "widgets/seeker.edc"
 //~ #include "widgets/separator.edc"

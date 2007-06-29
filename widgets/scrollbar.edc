@@ -1,0 +1,21 @@
+group {
+	name: "ewl/scrollbar/vrunner";
+
+	min: 17 17;
+	max: 17 99999;
+
+	parts {
+		#include "scrollbar_vrunner.edc"
+	}
+}
+
+group {
+	name: "ewl/scrollbar/hrunner";
+
+	min: 17 17;
+	max: 99999 17;
+
+	parts {
+		#include "scrollbar_hrunner.edc"
+	}
+}
