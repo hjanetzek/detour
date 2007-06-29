@@ -1,0 +1,71 @@
+
+group {
+	name: "ewl/seeker/vertical";
+
+	parts {
+		#include "seeker_vtrough.edc"
+	}
+}
+
+group {
+	name: "ewl/seeker/horizontal";
+
+	parts {
+		#include "seeker_htrough.edc"
+	}
+}
+
+group {
+	name: "ewl/seeker/vertical/button";
+	min: 17 29;
+
+	parts {
+		#include "seeker_vertical_button.edc"
+	}
+
+	programs {
+		program {
+			name: "drag_down";
+			signal: "mouse,down,*";
+			source: "EWL";
+			action: STATE_SET "down" 0.0;
+			target: "drag";
+		}
+
+		program {
+			name: "drag_up";
+			signal: "mouse,up,*";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "drag";
+		}
+	}
+}
+
+group {
+	name: "ewl/seeker/horizontal/button";
+	min: 29 17;
+
+	parts {
+		#include "seeker_horiz_button.edc"
+	}
+
+	programs {
+		program {
+			name: "drag_down";
+			signal: "mouse,down,*";
+			source: "EWL";
+			action: STATE_SET "down" 0.0;
+			target: "drag";
+		}
+
+		program {
+			name: "drag_up";
+			signal: "mouse,up,*";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			target: "drag";
+		}
+	}
+}
+

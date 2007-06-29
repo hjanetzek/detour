@@ -1,0 +1,64 @@
+
+part {
+	name: "bg";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+		image {
+			normal: "tree_bg.png";
+			border: 7 7 7 7;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}
+		
+part {
+	name: "overlay";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 { 
+			to: "bg";
+		}
+
+		rel2 {
+			to: "bg";
+		}
+
+		image {
+			normal: "tree_over.png";
+			border: 6 6 6 7;
+			middle: 0;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+
+//~ should this have focus ?
+//~ in that case its missing programs
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "tree_focus.png";
+			border: 7 7 7 7;
+			middle: 0;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}
+

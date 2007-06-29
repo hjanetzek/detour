@@ -1,0 +1,126 @@
+
+part {
+	name: "slider_base";
+	type: RECT;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		color: 255 0 0 0;
+	}
+}
+
+part {
+	name: "runner_left";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 6 11;
+		max: 6 11;
+		//fixed: 1 1;
+
+		rel1 { 
+			to: "slider_base"; 
+			relative: 0.0 0.0; 
+			offset: 6 0; 
+		}
+
+		rel2 { 
+			to: "slider_base"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		image {
+			normal: "slider_h_trough_left.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "slider_h_left_disabled.png";
+		}
+	}
+}
+
+part {
+	name: "slider_runner";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 99999 11;
+
+		rel1 { 
+			to: "runner_left"; 
+			relative: 1.0 0.0; 
+			offset: 0 -1; 
+		}
+
+		rel2 { 
+			to: "runner_right"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		image {
+			normal: "slider_h_trough.png";
+			border: 1 1 6 5;
+		}
+	
+		fill {
+			smooth: 1;
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "slider_h_disabled.png";
+		}
+	}
+}
+
+part {
+	name: "runner_right";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 6 11;
+		max: 6 11;
+		//fixed: 1 1;
+
+		rel1 { 
+			to: "slider_base"; 
+			relative: 1.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "slider_base"; 
+			relative: 1.0 1.0; 
+			offset: -7 0; 
+		}
+
+		image {
+			normal: "slider_h_trough_right.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "slider_h_right_disabled.png";
+		}
+	}
+}
+
