@@ -3,6 +3,12 @@
 #include "macros/tree_header.edc"
 #include "macros/toolbar.edc"
 
+/* (see AUTHORS)
+ * detour for the Enlightened Toolkit Library
+ */
+
+#define version 0.4.0
+
 fonts {
    font: "Vera.ttf" "Vera";
    font: "VeraBd.ttf" "Vera-Bold";
@@ -42,4 +48,5 @@ collections {
    #include "widgets/toolbar.edc"
    #include "widgets/label.edc"
    #include "widgets/drag.edc"
+   #include "widgets/combobox_entry.edc"
 }

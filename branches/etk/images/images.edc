@@ -9,8 +9,11 @@ images {
    image: "check0.png" COMP;
    image: "check1.png" COMP;
    image: "combobox_button.png" COMP;
+   image: "combobox_button2.png" COMP;
    image: "combobox_button_clicked.png" COMP;
+   image: "combobox_button_clicked2.png" COMP;
    image: "combobox_button_disabled.png" COMP;
+   image: "combobox_button_disabled2.png" COMP;
    image: "combobox_focus.png" COMP;
    image: "combo_arrow.png" COMP;
    image: "combo_arrow2.png" COMP;
