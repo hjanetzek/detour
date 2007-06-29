@@ -175,9 +175,9 @@ data {
 
 	/* scrollbar v */
 	item: "/vscrollbar/vseeker/group" "ewl/scrollbar/vrunner";
-	//~ item: "/vscrollbar/increment/group" "/ewl/vscrollbar/increment";
+	item: "/vscrollbar/increment/group" "ewl/vscrollbar/increment";
 	//~ item: "/vscrollbar/hseeker/hbutton/group" "/ewl/vscrollbar";
-	//~ item: "/vscrollbar/decrement/group" "/ewl/vscrollbar/decrement";
+	item: "/vscrollbar/decrement/group" "ewl/vscrollbar/decrement";
 
 	/* paned */
 	//~ item: "/grabber/vertical/group" "ewl/separator/vertical";
