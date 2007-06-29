@@ -101,7 +101,13 @@ part {
 			min: 0 0;
 			align: 0.5 0.0;
 			elipsis: 0.0;
-			//~ text_class: "menu_title";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "menu_title";
+			#endif
+			#endif
 		}
 	}
 
@@ -147,3 +153,4 @@ part {
 		}
 	} 
 }
+

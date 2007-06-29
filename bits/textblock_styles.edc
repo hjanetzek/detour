@@ -16,16 +16,19 @@ style {
 
 style {
 	name: "about_style";
-	base: "font=Edje-Vera font_size=10 align=center color=#070707 wrap=word"; 
-	//text_class=tb_plain 
+	#if ENABLE_TEXT_CLASSES == 0
+		base: "font=Edje-Vera font_size=10 align=center color=#070707 wrap=word";
+		tag:  "hilight" "+ font=Edje-Vera-Bold";
+		tag:  "title" "+ font_size=11 font=Edje-Vera";
+	#else
+	#if ENABLE_TEXT_CLASSES == 1
+		base: "font=Edje-Vera font_size=10 align=center color=#070707 wrap=word text_class=tb_plain";
+	tag:  "hilight" "+ font=Edje-Vera-Bold text_class=tb_light"; 
+	tag:  "title" "+ font_size=11 font=Edje-Vera text_class=tb_big";
+	#endif
+	#endif
       
-	tag:  "br" "\n";
-
-	//~ text_class=tb_light
-	tag:  "hilight" "+ font=Edje-Vera-Bold"; 
-
-	//~ text_class=tb_big
-	tag:  "title" "+ font_size=11 font=Edje-Vera"; 
+	tag:  "br" "\n"; 
 	tag:  "/title" "- \n \n";
 }
 
@@ -40,26 +43,33 @@ style {
 }
 
 style {
-	//~ text_class=tb_plain
 	name: "dialog_style";
-	base: "font=Edje-Vera-Bold font_size=10 align=center color=#3c3c3c wrap=word"; 
+	#if ENABLE_TEXT_CLASSES == 0
+		base: "font=Edje-Vera-Bold font_size=10 align=center color=#3c3c3c wrap=word"; 
+		tag:  "hilight" "+ font=Edje-Vera font_size=10 color=#2d2d2d";
+	#else
+	#if ENABLE_TEXT_CLASSES == 1
+		base: "font=Edje-Vera-Bold font_size=10 align=center color=#3c3c3c wrap=word text_class=tb_plain";
+	tag:  "hilight" "+ font=Edje-Vera font_size=10 color=#2d2d2d text_class=tb_light"; 
+	#endif
+	#endif
 
 	tag:  "br" "\n";
-
-	//~ text_class=tb_light
-	tag:  "hilight" "+ font=Edje-Vera font_size=10 color=#2d2d2d"; 
 }
 
 style {
-	//~ text_class=tb_plain
 	name: "error_style";
-	base: "font=Edje-Vera font_size=10 align=left color=#3c3c3c wrap=word";
-	
-      
-	tag:  "br" "\n";
+	#if ENABLE_TEXT_CLASSES == 0
+		base: "font=Edje-Vera font_size=10 align=left color=#3c3c3c wrap=word";
+		tag:  "hilight" "+ font=Edje-Vera font_size=10 color=#2d2d2d"; 
+	#else
+	#if ENABLE_TEXT_CLASSES == 1
+      		base: "font=Edje-Vera font_size=10 align=left color=#3c3c3c wrap=word text_class=tb_plain";
+		tag:  "hilight" "+ font=Edje-Vera font_size=10 color=#2d2d2d text_class=tb_light"; 
+	#endif
+	#endif
 
-	//~ text_class=tb_light
-	tag:  "hilight" "+ font=Edje-Vera font_size=10 color=#2d2d2d"; 
+	tag:  "br" "\n";
 }
 
 style {
@@ -78,7 +88,12 @@ style {
 
 	tag: "br" "\n";
 
-	//~ text_class=tb_large_light
-	tag: "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14"; 
+	#if ENABLE_TEXT_CLASSES == 0
+		tag: "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14";
+	#else
+	#if ENABLE_TEXT_CLASSES == 1
+		tag: "hilight" "+ font=Edje-Vera-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14 text_class=tb_large_light";
+	#endif
+	#endif
 }
 
