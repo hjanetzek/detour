@@ -1,15 +1,4 @@
 group {
-	name: "ewl/scrollbar/vrunner";
-
-	min: 17 17;
-	max: 17 99999;
-
-	parts {
-		#include "scrollbar_vrunner.edc"
-	}
-}
-
-group {
 	name: "ewl/scrollbar/hrunner";
 
 	min: 17 17;
@@ -21,7 +10,34 @@ group {
 }
 
 group {
-	name: "ewl/hscrollbar/decrement";
+        name: "ewl/scrollbar/vrunner";
+
+        min: 17 17;
+        max: 17 99999;
+
+        parts {
+                #include "scrollbar_vrunner.edc"
+        }
+}
+
+
+group {
+        name: "ewl/scrollbar/hbutton";
+
+        min: 36 17;
+        max: 99999 17;
+
+        parts {
+                #include "scrollbar_hbutton.edc"
+        }
+
+	programs {
+		#include "scrollbar_hbutton_progs.edc"
+	}
+}
+
+group {
+	name: "ewl/scrollbar/hdecrement";
 
 	min: 13 17;
 	max: 13 17;
@@ -32,7 +48,7 @@ group {
 }
 
 group {
-	name: "ewl/hscrollbar/increment";
+	name: "ewl/scrollbar/hincrement";
 
 	min: 13 17;
 	max: 13 17;
@@ -43,7 +59,22 @@ group {
 }
 
 group {
-	name: "ewl/vscrollbar/decrement";
+        name: "ewl/scrollbar/vbutton";
+
+        min: 17 36;
+        max: 17 99999;
+
+        parts {
+                #include "scrollbar_vbutton.edc"
+        }
+
+        programs {
+                #include "scrollbar_vbutton_progs.edc"
+        }
+}
+
+group {
+	name: "ewl/scrollbar/vdecrement";
 
 	min: 17 13;
 	max: 17 13;
@@ -54,7 +85,7 @@ group {
 }
 
 group {
-	name: "ewl/vscrollbar/increment";
+	name: "ewl/scrollbar/vincrement";
 
 	min: 17 13;
 	max: 17 13;

@@ -1,0 +1,80 @@
+part {
+        name: "scrollbar_base";
+        type: RECT;
+        mouse_events: 0;
+
+        description {
+                state: "default" 0.0;
+
+                color: 255 255 255 0;
+        }
+}
+
+part {
+        name: "scrollbar";
+
+        description {
+                state: "default" 0.0;
+
+                min: 13 17;
+                max: 13 99999;
+
+                fixed: 1 1;
+
+                align: 0.5 0.5;
+
+                rel1 {
+                        to: "scrollbar_base";
+                }
+                rel2 {
+                        to: "scrollbar_base";
+                }
+
+                image {
+                        normal: "scrollbar_v_bar.png";
+                        border: 6 6 6 6;
+                }
+		
+		fill {
+                        smooth: 0;
+                }
+        }
+        description {
+                state: "clicked" 0.0;
+                inherit: "default" 0.0;
+                color: 215 215 215 255;
+        }
+}
+
+part {
+        name: "thumb";
+
+        description {
+                state: "default" 0.0;
+
+                min: 7 11;
+                max: 7 11;
+
+                fixed: 1 1;
+
+                rel1 {
+                        relative: 0.5 0.5;
+                        offset: 0 0;
+                }
+                rel2 {
+                        relative: 0.5 0.5;
+                        offset: 0 0;
+                }
+
+                image {
+                        normal: "scrollbar_v_thumb.png";
+                        border: 2 2 2 2;
+		}
+	}
+        description {
+                state: "clicked" 0.0;
+                inherit: "default" 0.0;
+                color: 215 215 215 255;
+        }
+}
+
