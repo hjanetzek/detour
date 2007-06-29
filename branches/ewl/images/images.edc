@@ -33,6 +33,10 @@ image: "tree_bg.png" COMP;
 image: "tree_over.png" COMP;
 image: "tree_focus.png" COMP;
 
+//~ scrollbar
+image: "sf_hb_runner.png" COMP;
+image: "sf_vb_runner.png" COMP;
+
 //~ slider h
 image: "slider_h_disabled.png" COMP;
 image: "slider_h_left_disabled.png" COMP;
