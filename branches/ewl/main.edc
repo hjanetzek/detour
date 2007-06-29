@@ -169,9 +169,9 @@ data {
 
 	/* scrollbar h */
 	item: "/hscrollbar/hseeker/group" "ewl/scrollbar/hrunner";
-	//~ item: "/hscrollbar/increment/group" "/ewl/hscrollbar/increment";
+	item: "/hscrollbar/increment/group" "ewl/hscrollbar/increment";
 	//~ item: "/hscrollbar/hseeker/hbutton/group" "/ewl/hscrollbar";
-	//~ item: "/hscrollbar/decrement/group" "/ewl/hscrollbar/decrement";
+	item: "/hscrollbar/decrement/group" "ewl/hscrollbar/decrement";
 
 	/* scrollbar v */
 	item: "/vscrollbar/vseeker/group" "ewl/scrollbar/vrunner";

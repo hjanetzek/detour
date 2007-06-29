@@ -19,3 +19,25 @@ group {
 		#include "scrollbar_hrunner.edc"
 	}
 }
+
+group {
+	name: "ewl/hscrollbar/decrement";
+
+	min: 13 17;
+	max: 13 17;
+
+	parts {
+		#include "scrollbar_hdecrement.edc"
+	}
+}
+
+group {
+	name: "ewl/hscrollbar/increment";
+
+	min: 13 17;
+	max: 13 17;
+
+	parts {
+		#include "scrollbar_hincrement.edc"
+	}
+}

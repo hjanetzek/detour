@@ -1,23 +1,4 @@
 part {
-	name: "left";
-
-	description {
-		state: "default" 0.0;
-
-		fixed: 1 1;
-		aspect: 1.0 1.0;
-
-		image {
-			normal: "scrollbar_h_trough_left.png";
-		}
-
-		fill {
-			smooth: 0;
-		}
-	}
-}
-
-part {
 	name: "runner";
 
 	description {

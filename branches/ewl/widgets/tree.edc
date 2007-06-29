@@ -3,7 +3,7 @@ group {
 	name: "ewl/tree";
 
 	data {
-		item: "inset" 1;
+		item: "inset" 2;
 		item: "inset/top" 4;
 		item: "inset/bottom" 0;
 	}
@@ -41,10 +41,8 @@ group {
 	name: "ewl/tree/vbox";
 
 	data {
-		item: "inset/top" 7;
-		item: "inset/bottom" 5;
-		item: "inset/left" 10;
-		item: "inset/right" 6;
+		item: "inset" 1;
+		item: "inset/bottom" 3;
 	}
 }
 
