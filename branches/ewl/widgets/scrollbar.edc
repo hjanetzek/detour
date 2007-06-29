@@ -32,7 +32,7 @@ group {
         }
 
 	programs {
-		#include "scrollbar_hbutton_progs.edc"
+		#include "scrollbar_h_progs.edc"
 	}
 }
 
@@ -69,7 +69,7 @@ group {
         }
 
         programs {
-                #include "scrollbar_vbutton_progs.edc"
+                #include "scrollbar_v_progs.edc"
         }
 }
 
