@@ -49,4 +49,8 @@
   "arrange_name" "arrange" "arrange_time" "view_details" "view_name"
   "view"
 
+- Buttons
+  Pressed button shadow should be a part by itself. Required update
+  to both ewl and etk
+
  */
