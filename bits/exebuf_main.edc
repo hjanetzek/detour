@@ -102,8 +102,7 @@ part {
 		state: "default" 0.0;
 		min: 32 64;
 		align: 0.5 0.0;
-		color: 0 0 0 0;
-
+		
 		rel1 { 
 			relative: 0.0 0.0; 
 			offset: 16 10; 
@@ -196,7 +195,6 @@ part {
 		state: "default" 0.0;
 		min: 32 64;
 		align: 0.5 1.0;
-		color: 0 0 0 0;
 
 		rel1 { 
 			to_y: "e.text.label"; 
@@ -401,8 +399,7 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: VERTICAL;
 		align: 0.0 0.5;
-		color: 0 0 0 0;
-
+		
 		rel1 { 
 			to_y: "e.text.label"; 
 			relative: 0.0 0.0; 

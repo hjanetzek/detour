@@ -176,8 +176,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 0 0 0 0;
-
+		
 		rel1 { 
 			to_y: "e.text.title"; 
 			relative: 0.0 1.0; 
@@ -369,7 +368,6 @@ part {
 		aspect: 1.0 1.0;
 		align: 0.5 1.0;
 		aspect_preference: VERTICAL;
-		color: 0 0 0 0;
 
 		rel1 { 
 			to_y: "title_overlay"; 
