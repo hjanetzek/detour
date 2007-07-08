@@ -7,11 +7,12 @@ image: "dot.png" COMP;
 image: "frame_outline.png" COMP;
 
 //~ button
-image: "button.png" COMP;
-image: "button_focus.png" COMP;
-image: "button_disabled.png" COMP;
 image: "button_outline.png" COMP;
-image: "button_clicked.png" COMP;
+image: "button_focus.png" COMP;
+image: "button.png" COMP;
+image: "button_shadow.png" COMP;
+image: "button_disabled.png" COMP;
+image: "button_shadow_overlay.png" COMP;
 
 //~ slider
 image: "slider_0.png" COMP;

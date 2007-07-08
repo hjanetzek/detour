@@ -47,7 +47,7 @@ BORDER5("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -5 
 
 BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
 BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
-E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 5 0, "bottom-right", 0.0 1.0, 0 -7, 0 0 0 255)
+E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 5 0, "bottom-right", 0.0 1.0, 0 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 19 19, 19 19, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
 TITLE("e.text.title", "title.area.clip", 0.0, "title.area.clip", 0.0 0.5, 23 5, "title.area.clip", 1.0 0.5, -5 0, 60 60 60 255, 170 168 169 128, 0.1, 95 95 93 255, 170 168 169 128)
