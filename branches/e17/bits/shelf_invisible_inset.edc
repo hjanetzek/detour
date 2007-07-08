@@ -42,7 +42,6 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 0 0 0;
 
 		rel1 { 
 			to: "items_clip"; 

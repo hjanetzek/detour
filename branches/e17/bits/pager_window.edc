@@ -96,8 +96,7 @@ part {
 		max: 24 24;
 		aspect: 1.0 1.0;
 		aspect_preference: BOTH;
-		color: 0 0 0 0;
-
+		
 		rel1 { 
 			to: "overlay"; 
 			offset: 1 6; 

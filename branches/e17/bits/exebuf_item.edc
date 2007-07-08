@@ -140,8 +140,7 @@ part {
 		aspect: 1.0 1.0;
 		align: 0.0 0.5;
 		aspect_preference: VERTICAL;
-		color: 0 0 0 0;
-
+		
 		rel1 { 
 			relative: 0.0 0.0; 
 			offset: 0 8; 

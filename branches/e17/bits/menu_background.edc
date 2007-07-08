@@ -139,8 +139,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 0 0 0 0;
-
+  
 		rel1 { 
 			to_y: "e.text.title"; 
 			relative: 0.0 1.0; 

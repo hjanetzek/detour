@@ -140,7 +140,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 0 0 0 0;
+		
 		aspect: 1.0 1.0;
 		align: 0.0 0.5;
 		aspect_preference: VERTICAL;
@@ -224,7 +224,7 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 14 14;
-		color: 0 0 0 0;
+		
 		visible: 1;
 
 		rel1 {
