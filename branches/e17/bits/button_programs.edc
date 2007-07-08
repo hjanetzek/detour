@@ -13,7 +13,9 @@ program {
 	source: "button_enabled";
 	action: STATE_SET "default" 0.0;
 	target: "button_enabled";
+	target: "button_shadow";
 	target: "e.text.label";
+	target: "button_shadow_overlay";
 }
 
 program {
@@ -46,10 +48,12 @@ program {
 	signal: "e,state,enabled";
 	source: "e";
 	action: STATE_SET "default" 0.0;
+	target: "button_image"; 
 	target: "button_enabled";
+	target: "button_shadow";
 	target: "button_disabled"; 
 	target: "e.text.label"; 
-	target: "button_image"; 
+	target: "button_shadow_overlay";
 }
 
 program {
@@ -57,10 +61,12 @@ program {
 	signal: "e,state,disabled";
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
+	target: "button_image";
 	target: "button_enabled";
+	target: "button_shadow";
 	target: "button_disabled";
 	target: "e.text.label"; 
-	target: "button_image"; 
+	target: "button_shadow_overlay";
 }
 
 program {
@@ -70,6 +76,8 @@ program {
 	script {
 		set_state(PART:"button_enabled", "clicked", 0.0);
 		set_state(PART:"e.text.label", "clicked", 0.0);
+		set_state(PART:"button_shadow", "clicked", 0.0);
+		set_state(PART:"button_shadow_overlay", "clicked", 0.0);
 	}
 }
 

@@ -14,7 +14,7 @@ part {
 	}
 }
 
-E_SWALLOW_CLIENT("e.swallow.client", "pixel", 0.0 0.0, 1 1, "pixel", 1.0 1.0, -2 -2, 0 0 0 255)
+E_SWALLOW_CLIENT("e.swallow.client", "pixel", 0.0 0.0, 1 1, "pixel", 1.0 1.0, -2 -2)
 
 part {
 	name: "whole";

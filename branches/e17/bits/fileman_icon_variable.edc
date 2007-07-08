@@ -271,7 +271,13 @@ part {
 			text: "No Title";
 			size: 10;
 			font: "Edje-Vera";
-			min: 1 1;
+			#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
+				min: 1 1;
+			#else
+			#if TRUNCATE_DESKTOP_ICON_FILENAME == 1
+				min: 1 1;
+			#endif
+			#endif
 			align: 0.5 1.0;
 			elipsis: 0.0;
 			#if ENABLE_TEXT_CLASSES == 0
