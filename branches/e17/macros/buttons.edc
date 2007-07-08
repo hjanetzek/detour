@@ -10,7 +10,9 @@ program { \
 	script { \
 		set_state(PART:"button_enabled", "clicked", 0.0); \
 		set_state(PART:"button_clip", "clicked", 0.0); \
+		set_state(PART:"button_shadow", "clicked", 0.0); \
 		set_state(PART:"button_text", "clicked", 0.0); \
+		set_state(PART:"button_shadow_overlay", "clicked", 0.0); \
 	} \
 } \
 program { \
@@ -19,8 +21,10 @@ program { \
 	source: "button_enabled"; \
 	action: STATE_SET "default" 0.0; \
 	target: "button_enabled"; \
+	target: "button_shadow"; \
 	target: "button_clip"; \
 	target: "button_text"; \
+	target: "button_shadow_overlay"; \
 } \
 program { \
 	name: "button_clicked"; \

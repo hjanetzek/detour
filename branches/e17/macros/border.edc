@@ -126,7 +126,7 @@ part { \
 	} \
 }
 
-#define E_SWALLOW_CLIENT(NAME, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) \
+#define E_SWALLOW_CLIENT(NAME, TO1, REL1, OFF1, TO2, REL2, OFF2) \
 part { \
 	name: NAME; \
 	type: SWALLOW; \
@@ -134,7 +134,6 @@ part { \
 \
 	description { \
 		state: "default" 0.0; \
-		color: COLOR; \
 \
 		rel1 { \
 			to_y: TO1; \
