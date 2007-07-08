@@ -178,8 +178,7 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.0 0.5;
-		color: 0 0 0 0;
-
+		
 		rel1 { 
 			to: "button_image"; 
 			relative: 0.0 0.0; 
@@ -199,7 +198,6 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: VERTICAL;
 		align: 0.0 0.5;
-		color: 0 0 0 0;
 
 		rel1 { 
 			to: "button_image"; 
