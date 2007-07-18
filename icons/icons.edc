@@ -24,12 +24,13 @@ image: "text-html.png" COMP; //~ html, css,
 image: "video-x-generic.png" COMP; //~ mpeg, avi
 
 image: "folder.png" COMP;
-image: "folder-open.png" COMP;   
+image: "folder-open.png" COMP;
 image: "text-x-generic.png" COMP;
 image: "document-open.png" COMP;
 image: "user-home.png" COMP;
-image: "user-desktop.png" COMP;   
-image: "drive-harddisk.png" COMP;   
+image: "user-desktop.png" COMP;
+image: "drive-harddisk.png" COMP;
+image: "computer.png" COMP; 
 
 //~ shelf
 image: "icon_shelf_bottom_left.png" COMP;

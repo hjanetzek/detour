@@ -163,7 +163,7 @@ group {
 
 				image {
 					normal: "fileman_drop.png";
-					border: 22 22 22 22;
+					border: 26 26 26 26;
 				}
 			}
 
@@ -181,7 +181,7 @@ group {
 
 				image {
 					normal: "fileman_drop.png";
-					border: 22 22 22 22;
+					border: 26 26 26 26;
 				}
 			}
 		}
@@ -232,7 +232,7 @@ group {
 
 				image {
 					normal: "fileman_drop.png";
-					border: 22 22 22 22;
+					border: 26 26 26 26;
 				}
 			}
 
@@ -250,7 +250,7 @@ group {
 
 				image {
 					normal: "fileman_drop.png";
-					border: 22 22 22 22;
+					border: 26 26 26 26;
 				}
 			}
 		}
