@@ -43,9 +43,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_h_left_disabled.png";
-            }
+            color: 255 255 255 128;
          }
       }
       part {
@@ -70,9 +68,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_h_right_disabled.png";
-            }
+            color: 255 255 255 128;
          }
       }
       part {
@@ -97,9 +93,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_h_disabled.png";
-            }
+            color: 255 255 255 128;
          }
       }
       part {
@@ -189,15 +183,15 @@ group {
             state: "default" 0.0;
             align: 1.0 0.5;
             fixed: 1 1;
-            min: 30 0;
+            min: 30 22;
             rel1 {
                relative: 0.0 0.0;
-               offset: -6 -5;
+               offset: -6 0;
                to: "etk.text.label";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: 4 2;
+               offset: 4 -1;
                to: "etk.text.label";
             }
             image {
@@ -323,7 +317,6 @@ group {
 	 target: "trough";
 	 target: "trough_right";
 	 target: "etk.dragable.slider";
-	 target: "label_under";
 	 target: "etk.text.label";
      }
       program {
@@ -335,7 +328,6 @@ group {
 	 target: "trough";
 	 target: "trough_right";
 	 target: "etk.dragable.slider";
-	 target: "label_under";
 	 target: "etk.text.label";
       }
    }
@@ -387,9 +379,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_v_top_disabled.png";
-            }
+            color: 255 255 255 128;
          }
       }
       part {
@@ -414,9 +404,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_v_bot_disabled.png";
-            }
+            color: 255 255 255 128;
          }
       }
       part {
@@ -442,9 +430,7 @@ group {
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_v_disabled.png";
-            }
+            color: 255 255 255 128;
          }
       }
       part {
@@ -534,15 +520,15 @@ group {
             state: "default" 0.0;
             align: 0.5 1.0;
             fixed: 1 1;
-            min: 30 0;
+            min: 30 22;
             rel1 {
                relative: 0.0 0.0;
-               offset: -6 -5;
+               offset: -6 0;
                to: "etk.text.label";
             }
             rel2 {
                relative: 1.0 1.0;
-               offset: 4 2;
+               offset: 4 4;
                to: "etk.text.label";
             }
             image {
@@ -665,7 +651,6 @@ group {
 	 source: "etk";
          action: STATE_SET "default" 0.0;
 	 target: "etk.dragable.slider";
-	 target: "label_under";
 	 target: "trough";
 	 target: "trough_down";
 	 target: "trough_up";
@@ -677,7 +662,6 @@ group {
 	 source: "etk";
          action: STATE_SET "disabled" 0.0;
 	 target: "etk.dragable.slider";
-	 target: "label_under";
 	 target: "trough";
 	 target: "trough_down";
 	 target: "trough_up";
