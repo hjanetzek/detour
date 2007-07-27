@@ -47,19 +47,6 @@ PROG("show_label", "e,action,show,label", "e", "active", "slider_base", "label_u
 PROG("hide_label", "e,action,hide,label", "e", "default", "slider_base", "label_under", "e.text.label")
 
 program {
-	name: "disable";
-	signal: "e,state,disabled";
-	source: "e";
-	action: STATE_SET "disabled" 0.0;
-	target: "clip";
-	target: "catch";
-	target: "runner_bot";
-	target: "runner_top";
-	target: "slider_runner";
-	target: "slider_image";
-}
-
-program {
 	name: "enable";
 	signal: "e,state,enabled";
 	source: "e";
@@ -69,6 +56,16 @@ program {
 	target: "runner_bot";
 	target: "runner_top";
 	target: "slider_runner";
+	target: "slider_image";
+}
+
+program {
+	name: "disable";
+	signal: "e,state,disabled";
+	source: "e";
+	action: STATE_SET "disabled" 0.0;
+	target: "clip";
+	target: "catch";
 	target: "slider_image";
 }
 
