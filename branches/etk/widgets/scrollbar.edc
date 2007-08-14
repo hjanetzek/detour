@@ -35,6 +35,7 @@ group {
             state: "default" 0.0;
             min: 13 17;
             max: 13 17;
+            fixed: 1 1;
             rel1 {
                relative: 0.0 0.5;
                offset: -2 -4;
@@ -54,6 +55,7 @@ group {
             state: "default" 0.0;
             min: 13 17;
             max: 13 17;
+            fixed: 1 1;
             rel1 {
                relative: 1.0 0.5;
                offset: -13 -4;
@@ -323,6 +325,7 @@ group {
          name: "trough_up";
          description {
             state: "default" 0.0;
+            fixed: 1 1;
             rel1 {
                relative: 0.5 0.0;
                offset: -8 0;
@@ -342,6 +345,7 @@ group {
             state: "default" 0.0;
             min: 17 13; // silly fix for alignment
             max: 17 13;
+            fixed: 1 1;
             rel1 {
                relative: 0.5 1.0;
                offset: -8 -11;
