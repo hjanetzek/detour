@@ -6,7 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 60 26;
+		min: 50 26;
 		color: 255 255 255 215;
 
 		rel1 { 
@@ -111,7 +111,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 44 24;
 
 		rel1 { 
 			to: "button_clip"; 
@@ -145,7 +145,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 44 24;
 		color: 255 255 255 0;
 
 		rel1 { 
@@ -181,7 +181,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 44 24;
 		color: 255 255 255 0;
 		visible: 0;
 
