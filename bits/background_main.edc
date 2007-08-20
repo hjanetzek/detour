@@ -11,6 +11,15 @@ part {
 		fill.origin.relative: 0.5 0.5;
 	}
 }
+part { 
+	name: "over";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 7 7 7 16;
+	}
+}
 /*
 part {
 	name: "logo";

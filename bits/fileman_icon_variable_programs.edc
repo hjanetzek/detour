@@ -6,16 +6,17 @@ program {
 	action: STATE_SET "active" 0.0;
 	target: "e.text.label"; 
 	target: "icon_overlay";
+	target: "filename_overlay";
 } 
 
 program { 
 	name: "passive";
 	signal: "e,state,unselected"; 
 	source: "e"; 
-	action: STATE_SET "default" 0.0;
-	transition: LINEAR 0.2;	 
+	action: STATE_SET "default" 0.0;	 
 	target: "e.text.label";
-	target: "icon_overlay";	 
+	target: "icon_overlay";	
+	target: "filename_overlay"; 
 }  
 
 program {
