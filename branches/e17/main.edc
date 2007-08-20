@@ -6,19 +6,20 @@
 #include "macros/sys.edc"
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.6.8 (seek) for Enlightenment 0.16.999.039 or later
+ * detour version 0.6.9 (seek) for Enlightenment 0.16.999.040 or later
  */
 
-#define version 0.6.8
+#define version 0.6.9
 
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
 #define VISIBLE_CONTEXT_MENU_TITLE 0
 #define FADE_IBAR_ICONS 0
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
-#define BACKGROUND_TYPE 1
+#define BACKGROUND_TYPE 0
 #define ENABLE_DETROIT_SHELF_STYLE 0
-#define ENABLE_TEXT_CLASSES 0 /* (incomplete) */  
+#define ENABLE_TEXT_CLASSES 0 /* (incomplete) */ 
+#define USE_TEXTBLOCK_ICON_FILENAME 1
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";
