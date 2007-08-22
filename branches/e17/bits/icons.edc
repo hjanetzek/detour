@@ -160,6 +160,7 @@ group { \
 ICON("e/icons/widget/new_dialog", 16 16, "go-next.png")
 ICON("e/icons/widget/up_arrow", 16 16, "go-up.png")
 ICON("e/icons/widget/down_arrow", 16 16, "go-down.png")
+ICON("e/icons/widget/up_dir", 16 16, "go-up.png")
 
 # ifdef ICON
 #  undef ICON
