@@ -16,6 +16,7 @@ program {
 	target: "button_shadow";
 	target: "e.text.label";
 	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
@@ -54,6 +55,7 @@ program {
 	target: "button_disabled"; 
 	target: "e.text.label"; 
 	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
@@ -67,6 +69,7 @@ program {
 	target: "button_disabled";
 	target: "e.text.label"; 
 	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
@@ -78,6 +81,7 @@ program {
 		set_state(PART:"e.text.label", "clicked", 0.0);
 		set_state(PART:"button_shadow", "clicked", 0.0);
 		set_state(PART:"button_shadow_overlay", "clicked", 0.0);
+		set_state(PART:"minimum.size.hack", "clicked", 0.0);
 	}
 }
 
