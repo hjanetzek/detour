@@ -20,10 +20,11 @@ group {
 			}
 
 				text {
-					style:  "textblock_style";
+					style: "textblock_style";
 					min: 1 1;
 				}
 	    		}
 		}
 	}
 }
+
