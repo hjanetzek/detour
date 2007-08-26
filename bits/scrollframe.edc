@@ -98,16 +98,16 @@ group {
 #  undef FOCUS
 # endif
 #define FOCUS(NAME,SIGNAL,STATE) \
-program { \
-	name: NAME; \
-	signal: SIGNAL; \
-	source: "e"; \
-	action: STATE_SET STATE 0.0; \
-	transition: DECELERATE 0.5; \
-	target: "focus_clip"; \
-}
-FOCUS("focus_in", "e,state,focused", "focused")
-FOCUS("focus_out", "e,state,unfocused", "default")
+	program { \
+		name: NAME; \
+		signal: SIGNAL; \
+		source: "e"; \
+		action: STATE_SET STATE 0.0; \
+		transition: DECELERATE 0.5; \
+		target: "focus_clip"; \
+	}
+	FOCUS("focus_in", "e,state,focused", "focused")
+	FOCUS("focus_out", "e,state,unfocused", "default")
 	}
 }
 
