@@ -28,12 +28,14 @@ part {
 		
 		rel1 { 
 			to: "border"; 
-			offset: 0 1; 
+			offset: 0 2; 
 		}
 		
 		rel2 { 
-			to: "border"; 
-			offset: -1 -1; 
+			to_x: "sb_vbar"; 
+			to_y: "sb_hbar"; 
+			relative: 0.0 0.0;
+			offset: 1 1; 
 		}
 	}
 }
