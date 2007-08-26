@@ -31,9 +31,11 @@ spectra {
 #include "bits/gradients.edc"
 }
 
+/*
 styles {
 #include "bits/textblock_styles.edc"
 }
+*/
 
 images {
 #include "icons/icons.edc"
