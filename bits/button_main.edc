@@ -187,11 +187,13 @@ part {
 		visible: 0;
 
 		rel1 { 
-			to: "button_enabled"; 
+			to: "button_clip"; 
+			//to: "button_enabled"; 
 		}
 
 		rel2 { 
-			to: "button_enabled"; 
+			to: "button_clip"; 
+			//to: "button_enabled"; 
 		}
 
 		image.normal: "button_disabled.png";
