@@ -12,15 +12,13 @@
 - Text_Classes are a touchy subject. No doubt, they are easy to add, but the
   default text_classes have an undesired effect on the interface. This is 
   why they are not in use. Titlebar still not using:
-	text_class: "title_bar"
+  text_class: "title_bar"
 
   Window borders
   - This is one of biggest overhauls. It will happen, it will have 
     considerate effect on the interface's color scheme. Some people have 
     mentioned that detour is missing color, too gray. This is the item that 
     lays the foundation 
-
-- In some scenarios the scrollframe overlaps tlist/ilist text items.
 
 - Need to finish invisible shelf and insets.
 
@@ -29,7 +27,7 @@
   e,state,hidden|visible (shelf)
 
 - The transition dialog needs to use its own images. Raster suggests using
-  some subtle.
+  something subtle.
 
   Gadman 
   - Needs to be designed.
@@ -48,9 +46,5 @@
 - Missing icons:
   "arrange_name" "arrange" "arrange_time" "view_details" "view_name"
   "view"
-
-- Buttons
-  Pressed button shadow should be a part by itself. Required update
-  to both ewl and etk
 
  */
