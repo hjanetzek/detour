@@ -3,6 +3,7 @@ program {
         signal: "mouse,down,*";
         source: "EWL";
         action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
         target: "scrollbar";
         target: "thumb";
 }
@@ -12,6 +13,7 @@ program
         signal: "mouse,up,*";
         source: "*";
         action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.15;
         target: "scrollbar";
         target: "thumb";
 }
