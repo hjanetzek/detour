@@ -1,23 +1,15 @@
 
 program {
-	name: "turn_on";
-	signal: "e,state,checked";
-	source: "e";
-	action: STATE_SET "active" 0.0;
-	target: "check";
-}
-
-program {
-	name: "turn_off";
-	signal: "e,state,unchecked";
-	source: "e";
-	action: STATE_SET "default" 0.0;
+	name: "semi-click";
+	signal: "mouse,down,1";
+	source: "event";
+	action: STATE_SET "semi-clicked" 0.0;
 	target: "check";
 }
 
 program {
 	name: "click";
-	signal: "mouse,down,1";
+	signal: "mouse,up,1";
 	source: "event";
 	action: SIGNAL_EMIT "e,action,toggle" "";
 }
@@ -61,3 +53,20 @@ program {
 	target: "e.text.label";
 	target: "event";
 }
+
+program {
+	name: "turn_on";
+	signal: "e,state,checked";
+	source: "e";
+	action: STATE_SET "active" 0.0;
+	target: "check";
+}
+
+program {
+	name: "turn_off";
+	signal: "e,state,unchecked";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "check";
+}
+

@@ -241,18 +241,18 @@ part {
 		rel1 { 
 			to_x: "icon0"; 
 			relative: 1.0 0.0; 
-			offset: 4 4; 
+			offset: 6 6; 
 		}
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -5 -5; 
+			offset: -5 -3; 
 		}
 
 		text {
 			text: "Item Label";
 			font: "Edje-Vera";
-			size: 11;
+			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
