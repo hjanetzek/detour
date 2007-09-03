@@ -148,8 +148,8 @@ data {
 	//~ item: "/dndcursor/group" "ewl/sphere-cursor";
 
 	/* separator groups */
-	//~ item: "/hseparator/group" "ewl/separator/horizontal";
-	//~ item: "/vseparator/group" "ewl/separator/vertical";
+	item: "/hseparator/group" "ewl/separator/horizontal";
+	item: "/vseparator/group" "ewl/separator/vertical";
 
 	/* shadow */
 	//~ item: "/shadow/group" "ewl/shadow";
@@ -204,7 +204,7 @@ collections {
 #include "widgets/scrollbar.edc"
 #include "widgets/scrollpane.edc"
 #include "widgets/seeker.edc"
-//~ #include "widgets/separator.edc"
+#include "widgets/separator.edc"
 //~ #include "widgets/menu.edc"
 //~ #include "widgets/progress.edc"
 //~ #include "widgets/scrollbar.edc"
