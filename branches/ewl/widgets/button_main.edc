@@ -20,7 +20,7 @@ part {
 		}
 
 		image.normal: "button_outline.png";
-		image.border: 50 50 50 50;
+		image.border: 7 7 7 7;
 	}
 
 	description {

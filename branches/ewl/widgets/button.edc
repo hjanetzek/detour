@@ -3,7 +3,7 @@ group {
 	name: "ewl/button";
 
 	data {
-		item: "inset" 5;
+		item: "inset" 10;
 		item: "inset/left" 14;
 		item: "inset/right" 14;
 		item: "pad" 2;
