@@ -18,3 +18,52 @@ group {
 	}
 }
 
+group {
+	name: "ewl/button/other";
+
+	parts {
+		part {
+			name: "focus";
+			mouse_events: 0;
+		
+			description {
+				state: "default" 0.0;
+				min: 18 0;
+				max: 9999 20;
+				visible: 0;
+				color: 255 255 255 0;
+				image.normal: "menu_item_select.png";
+				image.border: 7 7 7 7;
+				fill.smooth: 0;
+			}
+			
+			description {
+				state: "focused" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+				color: 255 255 255 255;
+			}
+		}
+	}
+
+	programs {
+		program {
+			name: "focus,in";
+			signal: "focus,in";
+			source: "EWL";
+			action: STATE_SET "focused" 0.0;
+			transition: DECELERATE 0.5;
+			target: "focus";
+		}
+	
+		program	{
+			name: "focus,out";
+			signal: "focus,out";
+			source: "EWL";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "focus";
+		}
+	}
+}
+

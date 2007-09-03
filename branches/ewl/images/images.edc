@@ -90,3 +90,7 @@ image: "tree_header_unique.png" COMP;
 //~ separator
 image: "separator_h.png" COMP;
 image: "separator_v.png" COMP;
+
+//~ menu
+image: "menu_select.png" COMP;
+image: "menu_item_select.png" COMP;
