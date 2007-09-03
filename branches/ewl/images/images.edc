@@ -87,3 +87,6 @@ image: "tree_arrow1.png" COMP;
 image: "tree_arrow2.png" COMP;
 image: "tree_header_unique.png" COMP;
 
+//~ separator
+image: "separator_h.png" COMP;
+image: "separator_v.png" COMP;
