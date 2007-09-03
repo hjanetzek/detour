@@ -219,8 +219,31 @@ part {
 }
 
 part {
+	name: "content.swallow.clip";
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "base";
+			relative: 0.0 0.0; 
+			offset: 4 0; 
+		}
+
+		rel2 { 
+			to: "base";
+			relative: 1.0 1.0; 
+			offset: -4 -3; 
+		}
+	}
+}
+
+part {
 	name: "e.swallow.content";
 	type: SWALLOW;
+	clip_to: "content.swallow.clip";
 
 	description {
 		state: "default" 0.0; //~ this state corresponds to the top
