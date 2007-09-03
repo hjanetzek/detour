@@ -31,19 +31,3 @@ program {
 	target: "outline";
 }
 
-program {
-	name: "focus";
-	signal: "focus,in";
-	source: "EWL";
-	action: STATE_SET "active" 0.0; 
-	target: "focus";
-}
-
-program {
-	name: "unfocus";
-	signal: "focus,out";
-	source: "EWL";
-	action: STATE_SET "default" 0.0;
-	target: "focus";
-}
-
