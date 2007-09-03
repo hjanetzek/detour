@@ -1,27 +1,5 @@
 
 part {
-	name: "focus";
-	type: IMAGE;
-
-	description {
-		state: "default" 0.0;
-		min: 0 0;
-		max: 9999 20;
-		visible: 0;
-
-		image.normal: "menu_item_select.png";
-		image.border: 5 5 5 5;
-	} 
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		color: 225 255 255 229;
-		visible: 1;
-	}
-}
-
-part {
 	name: "check";
 	mouse_events: 0;
 
