@@ -155,7 +155,7 @@ data {
 	//~ item: "/shadow/group" "ewl/shadow";
 
 	/* spacer */
-	//~ item: "/spacer/group" "ewl/spacer";
+	item: "/spacer/group" "ewl/spacer";
 
 	/* spinner */
 	//~ item: "/spinner/controls/decrement/group" "ewl/spinner/decrement";

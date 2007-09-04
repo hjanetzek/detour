@@ -29,7 +29,6 @@ group {
 			description {
 				state: "default" 0.0;
 				min: 18 0;
-				max: 9999 20;
 				visible: 0;
 				color: 255 255 255 0;
 				image.normal: "menu_item_select.png";

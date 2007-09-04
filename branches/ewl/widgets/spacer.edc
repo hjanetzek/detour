@@ -2,6 +2,10 @@
 group {
 	name: "ewl/spacer";
 
+	data {
+		item: "inset" 5;
+	}
+
 	parts {
 		#include "spacer_main.edc"
 	}

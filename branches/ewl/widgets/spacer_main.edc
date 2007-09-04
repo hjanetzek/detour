@@ -1,21 +1,24 @@
 		
 part {
 	name: "base";
-	type: RECT;
 
 	description {
-		state: "default" 0.0;
-		color: 255 0 0 255;
-
+        	state: "default" 0.0;
 		rel1 {
 			relative: 0.0 0.0;
-			offset: 0 0;
+			offset: -1 -1;
 		}
-
 		rel2 {
 			relative: 1.0 1.0;
 			offset: -1 -1;
 		}
+            	image {
+               		normal: "dialog_separator.png";
+               		border: 0 0 0 3;
+            	}
+            	fill {
+               		smooth: 0;
+            	}
 	}
 }
 
