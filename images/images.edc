@@ -1,6 +1,7 @@
 
 //~ dialog
 image: "dialog_bg.png" COMP;
+image: "dialog_separator.png" COMP;
 
 //~ button
 image: "button.png" COMP;

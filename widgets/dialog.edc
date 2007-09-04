@@ -9,7 +9,7 @@ group {
 
 group {
 	name: "ewl/dialog/actionarea";
-	min: 317 12;
+	min: 317 12; 
 	
 	data {
 		item: "inset/top" 10;
