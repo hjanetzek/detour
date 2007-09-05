@@ -34,8 +34,18 @@ part {
 	}
 
 	description {
+		state: "semi-clicked" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "check01.png";
+		}
+	}
+
+	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 128;
 	}
 }
+
