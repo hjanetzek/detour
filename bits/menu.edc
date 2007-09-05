@@ -43,9 +43,9 @@ group {
 	}
 
 	programs {
-#if VISIBLE_CONTEXT_MENU_TITLE == 0
-#else
-#if VISIBLE_CONTEXT_MENU_TITLE == 1
+	#if VISIBLE_CONTEXT_MENU_TITLE == 0
+	#else
+	#if VISIBLE_CONTEXT_MENU_TITLE == 1
 	program {
 		name: "on";
 		signal: "e,action,show,title";
@@ -61,8 +61,8 @@ group {
 		action: STATE_SET "default" 0.0;
 		target: "e.text.title";
 	}
-#endif
-#endif
+	#endif
+	#endif
 	}
 }
 
