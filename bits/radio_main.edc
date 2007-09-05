@@ -32,7 +32,7 @@ part {
 }
 
 part {
-	name: "outline";
+	name: "radio";
 	mouse_events: 0;
 
 	description {
@@ -58,33 +58,8 @@ part {
 	}
 
 	description {
-		state: "disabled" 0.0;
+		state: "active" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 128;
-	}
-}
- 
-part {
-	name: "radio";
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 20 18;
-		max: 20 18;
-		fixed: 1 1;
-		align: 0.0 0.5;
-		visible: 0;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 2 2; 
-		}
-
-		rel2 { 
-			relative: 0.0 1.0; 
-			offset: 2 -3; 
-		}
 
 		image {
 			normal: "radio1.png";
@@ -92,9 +67,9 @@ part {
 	}
 
 	description {
-		state: "active" 0.0;
+		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-		visible: 1;
+		color: 255 255 255 128;
 	}
 }
 
@@ -146,23 +121,6 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-
-/*
-		text {
-			text: "Check Button";
-			font: "Edje-Vera-Bold";
-			size: 10;
-			min: 0 0;
-			align: 0.0 0.5;
-			#if ENABLE_TEXT_CLASSES == 0
-				text_class: "";
-			#else
-			#if ENABLE_TEXT_CLASSES == 1
-				text_class: "radio_button";
-			#endif
-			#endif
-		}
-*/
 	}
 }
 
