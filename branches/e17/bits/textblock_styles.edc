@@ -101,12 +101,11 @@ style {
 
 style {
 	name: "textblock_style";
-	base: "font=Edje-Vera font_size=9 align=left color=#3c3c3c";
+	base: "font=Edje-Vera font_size=11 align=left color=#070707";
       
 	tag:  "br" "\n";
 	tag:  "hilight" "+ font=Edje-Vera-Bold color=#3c3c3c";
 	tag:  "b" "+ font=Edje-Vera-Bold";
-	//tag:  "title" "+ font_size=12 font=Edje-Vera-Bold style=soft_shadow color=#fff shadow_color=#00000020";
 	tag:  "/title" "- \n \n";
 }
 
