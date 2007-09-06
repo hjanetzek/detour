@@ -60,8 +60,8 @@ data {
 
 	/* menu/statusbar related groups */
 	item: "/menu/group" "ewl/menu";
-	item: "/menu_item/body/label/group" "ewl/menu/item";
-	item: "/menu/vbox/menu_container/body/label/group" "ewl/menu/subitem";
+	item: "/menu_item/body/group" "ewl/menu/item";
+	item: "/menu/vbox/menu_container/body/group" "ewl/menu/subitem";
 	item: "/menubar/group" "ewl/menu";
 	item: "/statusbar/group" "ewl/menu";
 
@@ -205,7 +205,7 @@ collections {
 #include "widgets/scrollpane.edc"
 #include "widgets/seeker.edc"
 #include "widgets/separator.edc"
-//~ #include "widgets/menu.edc"
+#include "widgets/menu.edc"
 //~ #include "widgets/progress.edc"
 //~ #include "widgets/scrollbar.edc"
 //~ #include "widgets/seeker.edc"

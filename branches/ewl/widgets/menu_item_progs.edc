@@ -1,0 +1,30 @@
+
+program {
+	name: "go_active_pre";
+	signal: "mouse,in";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	target: "highlight";
+	after: "go_active_highlight";
+}
+
+program {
+	name: "go_active_highlight";
+	action: STATE_SET "active" 0.0;
+	target: "highlight";
+}
+
+program {
+	name: "go_passive_pre";
+	signal: "mouse,out";
+	source: "*";
+	action: STATE_SET "active" 0.0;
+	target: "highlight";
+	after: "go_passive";
+}
+
+program {
+	name: "go_passive";
+	action: STATE_SET "default" 0.0;
+	target: "highlight";
+}

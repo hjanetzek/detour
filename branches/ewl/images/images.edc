@@ -95,3 +95,7 @@ image: "separator_v.png" COMP;
 //~ menu
 image: "menu_select.png" COMP;
 image: "menu_item_select.png" COMP;
+image: "menu_item_arrow_dark.png" COMP;
+image: "menu_item_arrow_light.png" COMP;
+image: "menu_bg.png" COMP;
+image: "menu_separator.png" COMP;
