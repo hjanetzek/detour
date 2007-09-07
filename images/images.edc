@@ -99,3 +99,9 @@ image: "menu_item_arrow_dark.png" COMP;
 image: "menu_item_arrow_light.png" COMP;
 image: "menu_bg.png" COMP;
 image: "menu_separator.png" COMP;
+
+//~ spinner
+image: "spinner_base.png" COMP;
+image: "spinner_down.png" COMP;
+image: "spinner_up.png" COMP;
+

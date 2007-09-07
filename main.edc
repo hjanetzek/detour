@@ -158,8 +158,8 @@ data {
 	item: "/spacer/group" "ewl/spacer";
 
 	/* spinner */
-	//~ item: "/spinner/controls/decrement/group" "ewl/spinner/decrement";
-	//~ item: "/spinner/controls/increment/group" "ewl/spinner/increment";
+	item: "/spinner/controls/decrement/group" "ewl/spinner/decrement";
+	item: "/spinner/controls/increment/group" "ewl/spinner/increment";
 
 	/* toolbar */
 	//~ item: "/htoolbar/group" "ewl/menu";
@@ -210,7 +210,7 @@ collections {
 //~ #include "widgets/scrollbar.edc"
 //~ #include "widgets/seeker.edc"
 //~ #include "widgets/shadow.edc"
-//~ #include "widgets/spinner.edc"
+#include "widgets/spinner.edc"
 //~ #include "widgets/toolbar.edc"
 //~ #include "widgets/combo.edc"
 //~ #include "widgets/cursor.edc"
