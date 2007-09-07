@@ -1,0 +1,124 @@
+
+program {
+	name: "init";
+	signal: "load";
+	source: "";
+	script {
+		set_int(disable_check, 0);
+	}
+}
+
+program {
+	name: "go1";
+	signal: "load";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	transition: LINEAR 1.0;
+	target: "busy_clip";
+}
+
+program {
+	name: "go2";
+	signal: "load";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 1.0;
+	target: "busy";
+	after: "go2";
+}
+
+program { 
+	name: "load.splash.screen";
+	signal: "load"; 
+	source: "";
+	action: STATE_SET "visible" 0.0; 
+	transition: DECELERATE 0.1;
+	target: "splash.clip"; in: 1.5 0.0;
+	after: "load.panel"; in: 1.5 0.0;
+}
+
+program { 
+	name: "load.panel";
+	signal: ""; 
+	source: "";
+	action: STATE_SET "active" 0.0; 
+	transition: DECELERATE 0.5;
+	target: "e.text.title"; in: 1.25 0.0;
+	target: "e.text.status"; in: 1.75 0.0;
+	target: "e.text.version"; in: 1.75 0.0;
+	target: "disable_text"; in: 1.75 0.0;
+	target: "disable_check"; in: 1.75 0.0;
+	after: "stop1"; in: 3.0 0.0;
+}
+
+program {
+	name: "disable.check.toggle"; 
+	signal, "mouse,up,1"; 
+	source, "disable_check";
+	script {	
+		if(get_int(disable_check) == 0)
+			{
+				set_int(disable_check, 1);
+				emit("initscreen,disabled", ""); 
+			}
+
+			else {
+				set_int(disable_check, 0);
+				emit("initscreen,enabled", ""); 
+			}
+		}
+	}
+
+program {
+	name: "disabled.initscreen"; 
+	signal: "initscreen,disabled"; 
+	source: "";
+	action: STATE_SET "on" 0.0;
+	target: "disable_check";
+	after: "disable_on";
+}
+
+program {
+	name: "enable.initscreen"; 
+	signal: "initscreen,enabled"; 
+	source: "";
+	action: STATE_SET "active" 0.0;
+	target: "disable_check";
+	after: "disable_off";
+} 
+
+program {
+	name: "disable_on";
+	action: SIGNAL_EMIT "e,action,init,disable" "e";
+}
+
+program {
+	name: "disable_off";
+	action: SIGNAL_EMIT "e,action,init,enable" "e";
+}
+
+//
+
+program {
+	name: "stop1";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: SINUSOIDAL 2.0;
+	target: "busy_clip";
+	after: "stop2";
+	after: "done";
+}
+
+program {
+	name: "stop2";
+	action: ACTION_STOP;
+	target: "go2";
+}
+
+program {
+	name: "done";
+	action: SIGNAL_EMIT "e,state,done_ok" "e";
+	in: 1.25 0.0;
+}
+

@@ -1,0 +1,53 @@
+
+/* init edje for detour */
+
+fonts {                            
+font: "fonts/Vera.ttf" "Edje-Vera";
+font: "fonts/VeraBd.ttf" "Edje-Vera-Bold";
+}    
+
+#define version 0.6.9    
+
+spectra {
+	spectrum { 
+		name: "radial_gradient"; 
+		color: 239 239 239 255 1;
+		color: 139 157 180 255 1; 
+	}
+}                          
+
+images {
+image: "check0.png" COMP;
+image: "check1.png" COMP;
+image: "splash_bg.png" COMP;
+image: "entry.png" COMP;
+image: "busy_1.png" COMP;
+image: "busy_2.png" COMP;
+}
+
+collections {
+
+	group {
+		name: "e/init/splash";
+
+		script {
+			public disable_check;
+		}
+
+		parts {
+			#include "splash.edc"
+		}
+
+		programs {
+			#include "splash_programs.edc"
+		}
+	}
+
+	group {
+		name: "e/init/extra_screen";
+
+		parts {
+			#include "extra.edc"
+		}
+	}
+}	
