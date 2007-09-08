@@ -21,6 +21,7 @@ part {
 		fill.origin.relative: 0.5 0.5;
 	}
 }
+
 part { 
 	name: "over";
 	type: RECT;
@@ -41,7 +42,7 @@ part {
 		min: 313 303;
 		max: 313 303;
 		fixed: 1 1;
-		color: 255 255 255 0;
+		visible: 0;
 
 		rel1 { 
 			to: "background_image"; 
@@ -59,7 +60,7 @@ part {
 	description {
 		state: "visible" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 255;
+		visible: 1;
 	}
 }
 
@@ -92,6 +93,7 @@ part {
 part {	 
 	name: "text.area";
 	type: RECT;
+	clip_to: "splash.clip";
 	mouse_events: 0;
 
 	description {
@@ -142,7 +144,7 @@ part {
 		}
 
 		text {
-			text: "fuckin' $hit";
+			text: "Enlightenment";
 			font: "Edje-Vera-Bold";
 			size: 12;
 			min:  1 1;
@@ -183,10 +185,11 @@ part {
 		}
 
 		text {
-			text: "Starting Enlightenment. Please wait...";
+			text: "Starting Enlightenment. Please wait.";
 			font: "Edje-Vera";
 			size: 11;
-			min:  0 1;
+			min: 0 1;
+			// text_class: "init_text"; 
 		}
 	}
 
@@ -201,7 +204,6 @@ part {
 	name: "e.text.version";
 	type: TEXT;
 	effect: SHADOW;
-	clip_to: "splash.clip";
 
 	description {
 		state: "default" 0.0;
@@ -220,11 +222,12 @@ part {
 		}
 
 		text {
-			text: "0.0.1";
+			text: "0.17.0";
 			font: "Edje-Vera-Bold";
 			size: 10;
 			min:  1 1;
 			align: 0.0 0.0;
+			// text_class: "init_version";
 		}
 	}
 
@@ -331,7 +334,7 @@ part {
 }
 
 part {	 
-	name: "disable_text";
+	name: "e.text.disable_text";
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
@@ -361,6 +364,7 @@ part {
 			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
+			// text_class: "init_text";
 		}
     	}
 }
