@@ -59,7 +59,6 @@ program {
 	signal: "show";
 	source: "";
 	action: STATE_SET "visible" 0.0;
-	in: 2.0 0.0;
 	target: "busy_clip";
 }
 
