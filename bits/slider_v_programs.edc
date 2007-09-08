@@ -26,8 +26,8 @@ program {\
 	target: TARGET;\
 }
 
-PROG("down", "mouse,down,1", "e.dragable.slider", "clicked", "slider_image")
 PROG("up", "mouse,up,1", "e.dragable.slider", "default", "slider_image")
+PROG("down", "mouse,down,1", "e.dragable.slider", "clicked", "slider_image")
 
 # ifdef PROG
 #  undef PROG
@@ -69,6 +69,7 @@ program {
 	target: "slider_image";
 }
 
+/*
 program {
 	name: "focused";
 	signal: "e,state,focused";
@@ -88,4 +89,5 @@ program {
 		set_state(PART:"focus", "default", 0.0);
 	}
 }
+*/
 
