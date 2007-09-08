@@ -9,52 +9,9 @@ program {
 }
 
 program {
-	name: "go1";
-	signal: "load";
-	source: "";
-	action: STATE_SET "visible" 0.0;
-	transition: LINEAR 1.0;
-	target: "busy_clip";
-}
-
-program {
-	name: "go2";
-	signal: "load";
-	source: "";
-	action: STATE_SET "default" 0.0;
-	transition: LINEAR 1.0;
-	target: "busy";
-	after: "go2";
-}
-
-program { 
-	name: "load.splash.screen";
-	signal: "load"; 
-	source: "";
-	action: STATE_SET "visible" 0.0; 
-	transition: DECELERATE 0.1;
-	target: "splash.clip"; in: 1.5 0.0;
-	after: "load.panel"; in: 1.5 0.0;
-}
-
-program { 
-	name: "load.panel";
-	signal: ""; 
-	source: "";
-	action: STATE_SET "active" 0.0; 
-	transition: DECELERATE 0.5;
-	target: "e.text.title"; in: 1.25 0.0;
-	target: "e.text.status"; in: 1.75 0.0;
-	target: "e.text.version"; in: 1.75 0.0;
-	target: "disable_text"; in: 1.75 0.0;
-	target: "disable_check"; in: 1.75 0.0;
-	after: "stop1"; in: 3.0 0.0;
-}
-
-program {
 	name: "disable.check.toggle"; 
-	signal, "mouse,up,1"; 
-	source, "disable_check";
+	signal: "mouse,up,1"; 
+	source: "disable_check";
 	script {	
 		if(get_int(disable_check) == 0)
 			{
@@ -97,28 +54,78 @@ program {
 	action: SIGNAL_EMIT "e,action,init,enable" "e";
 }
 
-//
+program {
+	name: "go1";
+	signal: "show";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	in: 2.0 0.0;
+	target: "busy_clip";
+}
 
 program {
-	name: "stop1";
-	signal: "";
+	name: "go2";
+	signal: "show";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: SINUSOIDAL 2.0;
-	target: "busy_clip";
-	after: "stop2";
-	after: "done";
+	transition: LINEAR 1.0;
+	target: "busy";
+	after: "go2";
+}
+
+program { 
+	name: "load.splash.screen";
+	signal: "show";
+	source: "";
+	action: STATE_SET "visible" 0.0; 
+	transition: DECELERATE 2.0; in: 2.5 0.0;
+	target: "splash.clip";
+	after: "load.panel"; 
+}
+
+program { 
+	name: "load.panel";
+	signal: ""; 
+	source: "";
+	action: STATE_SET "active" 0.0; 
+	transition: DECELERATE 1.5;
+	target: "e.text.title";
+	target: "e.text.status";
+	target: "e.text.version";
+	target: "e.text.disable_text"; 
+	target: "disable_check";
+	after: "stop2"; 
 }
 
 program {
 	name: "stop2";
-	action: ACTION_STOP;
-	target: "go2";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 1.0;
+	target: "busy_clip"; 
+	after: "done0";
 }
 
 program {
-	name: "done";
+	name: "done0";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 2.5;
+	target: "splash.clip";
+	after: "done1";
+}
+
+program {
+	name: "done1";
+	signal: "e,state,done";
+	source: "e";
+	after: "done2"; in: 11.0 0.0;
+}
+
+program {
+	name: "done2";
 	action: SIGNAL_EMIT "e,state,done_ok" "e";
-	in: 1.25 0.0;
 }
 
