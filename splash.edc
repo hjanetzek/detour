@@ -125,8 +125,9 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 100 20;
-		max: 100 20;
+		//min: 100 20;
+		//max: 100 20;
+		align: 0.5 0.0;
 		color: 7 7 7 255;
 		color3: 0 0 0 32;
 		visible: 0;
@@ -147,7 +148,9 @@ part {
 			text: "Enlightenment";
 			font: "Edje-Vera-Bold";
 			size: 12;
-			min:  1 1;
+			min: 1 1;
+			align: 0.5 0.5;
+			// text_class: "init_title";
 		}
 	}
 
