@@ -26,7 +26,7 @@ part {
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 255;
+		color: 255 255 255 0;
 	}
 }
 
@@ -51,7 +51,9 @@ part {
 		}
 
 		image {
-			normal: "filename_select.png";
+			// normal: "filename_select.png";
+			// border: 8 8 8 8;
+			normal: "menu_select.png";
 			border: 8 8 8 8;
 		}       
 	}
@@ -59,7 +61,7 @@ part {
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 192;
+		color: 255 255 255 255;
 	}
 }
 
@@ -74,18 +76,18 @@ part {
 		rel1 {
 			to: "icon_box";
 			relative: 0.0 0.0;
-			offset: -1 -1;
+			offset: -3 -3;
 		}
 
 		rel2 {
 			to: "icon_box";
 			relative: 1.0 1.0;
-			offset: 2 2;
+			offset: 3 3;
 		}
 
 		image {
 			normal: "fileman_shadow.png";
-			border: 6 6 6 6;
+			border: 6 6 7 7;
 		}
 	}
 
@@ -149,7 +151,6 @@ part {
 
 		image {
 			normal: "fileman_thumb_bg.png";
-
 		}	    	       
 		
 		fill {	    
