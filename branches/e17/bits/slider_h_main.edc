@@ -1,4 +1,5 @@
 
+/*
 part {
 	name: "focus";
 	type: IMAGE;
@@ -30,7 +31,8 @@ part {
 		inherit: "default" 0.0;
 		visible: 1;
 	}
-} 
+}
+*/
 
 part {
 	name: "slider_base";
