@@ -1,9 +1,51 @@
 
 group
 {
+	name: "ewl/spinner/controls/";
+	min: 19 28;
+
+	parts
+	{
+		part
+		{
+			name: "background";
+			mouse_events: 0;
+
+			description
+			{
+				state: "default" 0.0;
+				color: 255 255 255 229;
+				min: 19 28;
+				max: 19 28;
+				fixed: 1 1;
+
+				rel1
+				{
+					relative: 0.0 0.0;
+					offset: 0 0;
+				}
+	
+				rel2
+				{
+					relative: 1.0 1.0;
+					offset: 0 0;
+				}
+
+				image
+				{
+					normal: "spinner_base.png";
+				}
+			}
+		}
+	}
+}
+
+
+group
+{
 	name: "ewl/spinner/decrement";
 	min: 17 14;
-	max: 17 14;
+
 	parts
 	{
 		part
@@ -15,9 +57,10 @@ group
 			{
 				state: "default" 0.0;
 				color: 255 255 255 255;
-				align: 0.5 0.5;
-				aspect: 1.0 1.0;
-	
+				min: 17 14;
+				max: 17 14;
+				fixed: 1 1;
+					
 				rel1
 				{
 					relative: 0.0 0.0;
@@ -49,6 +92,7 @@ group
 			signal: "mouse,down,*";
 			source: "EWL";
 			action: STATE_SET "clicked" 0.0;
+			transition: DECELERATE 0.15;
 			target: "button";
 		}
 		program
@@ -57,6 +101,7 @@ group
 			signal: "mouse,up,*";
 			source: "EWL";
 			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.15;
 			target: "button";
 		}
 	}
@@ -66,7 +111,7 @@ group
 {
 	name: "ewl/spinner/increment";
 	min: 17 14;
-	max: 17 14;
+
 	parts
 	{
 		part
@@ -78,8 +123,9 @@ group
 			{
 				state: "default" 0.0;
 				color: 255 255 255 255;
-				align: 0.5 0.5;
-				aspect: 1.0 1.0;
+				min: 17 14;
+				max: 17 14;
+				fixed: 1 1;
 	
 				rel1
 				{
@@ -112,6 +158,7 @@ group
 			signal: "mouse,down,*";
 			source: "EWL";
 			action: STATE_SET "clicked" 0.0;
+			transition: DECELERATE 0.15;
 			target: "button";
 		}
 		program
@@ -120,6 +167,7 @@ group
 			signal: "mouse,up,*";
 			source: "EWL";
 			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.15;
 			target: "button";
 		}
 	}

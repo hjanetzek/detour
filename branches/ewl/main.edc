@@ -158,6 +158,7 @@ data {
 	item: "/spacer/group" "ewl/spacer";
 
 	/* spinner */
+	item: "/spinner/controls/group" "ewl/spinner/controls/";
 	item: "/spinner/controls/decrement/group" "ewl/spinner/decrement";
 	item: "/spinner/controls/increment/group" "ewl/spinner/increment";
 
