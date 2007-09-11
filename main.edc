@@ -163,10 +163,10 @@ data {
 	item: "/spinner/controls/increment/group" "ewl/spinner/increment";
 
 	/* toolbar */
-	//~ item: "/htoolbar/group" "ewl/menu";
-	//~ item: "/vtoolbar/group" "ewl/menu";
-	//~ item: "/htoolbar/hbox/icon/group" "ewl/toolbar/icon";
-	//~ item: "/vtoolbar/vbox/icon/group" "ewl/toolbar/icon";
+	item: "/htoolbar/group" "ewl/menu";
+	item: "/vtoolbar/group" "ewl/menu";
+	item: "/htoolbar/hbox/icon/group" "ewl/toolbar/icon";
+	item: "/vtoolbar/vbox/icon/group" "ewl/toolbar/icon";
 
 	/* scrollbar h */
 	item: "/hscrollbar/hseeker/group" "ewl/scrollbar/hrunner";
@@ -185,8 +185,8 @@ data {
 	//~ item: "/grabber/horizontal/group" "ewl/separator/horizontal";
 
 	/* progressbar */
-	//~ item: "/progressbar/group" "ewl/progressbar";
-	//~ item: "/progressbar_bar/group" "ewl/progressbar/bar";
+	item: "/progressbar/group" "ewl/progressbar";
+	item: "/progressbar_bar/group" "ewl/progressbar/bar";
 }
 
 collections {
@@ -207,11 +207,11 @@ collections {
 #include "widgets/seeker.edc"
 #include "widgets/separator.edc"
 #include "widgets/menu.edc"
+#include "widgets/spinner.edc"
+#include "widgets/toolbar.edc"
 //~ #include "widgets/progress.edc"
 //~ #include "widgets/scrollbar.edc"
-//~ #include "widgets/seeker.edc"
 //~ #include "widgets/shadow.edc"
-#include "widgets/spinner.edc"
 //~ #include "widgets/toolbar.edc"
 //~ #include "widgets/combo.edc"
 //~ #include "widgets/cursor.edc"
