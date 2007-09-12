@@ -105,9 +105,13 @@ image: "spinner_base.png" COMP;
 image: "spinner_down.png" COMP;
 image: "spinner_up.png" COMP;
 
+//~ paned
+image: "paned_h_handle.png" COMP;
+image: "paned_v_handle.png" COMP;
+
 //~ progressbar
-image: "progress_trough.png" COMP;
-image: "progress_bar_fill_0.png" COMP;
-image: "progress_bar_left.png" COMP;
-image: "progress_bar_right.png" COMP;
+//image: "progress_trough.png" COMP;
+//image: "progress_bar_fill_0.png" COMP;
+//image: "progress_bar_left.png" COMP;
+//image: "progress_bar_right.png" COMP;
 

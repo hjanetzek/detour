@@ -27,7 +27,7 @@ group
 				image
 				{
 					normal: "separator_h.png";
-					border: 3 3 0 0;
+					border: 0 0 0 0;
 				}
 				fill
 				{
