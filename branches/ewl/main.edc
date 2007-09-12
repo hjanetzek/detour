@@ -181,12 +181,12 @@ data {
 	item: "/vscrollbar/decrement/group" "ewl/scrollbar/vdecrement";
 
 	/* paned */
-	//~ item: "/grabber/vertical/group" "ewl/separator/vertical";
-	//~ item: "/grabber/horizontal/group" "ewl/separator/horizontal";
+	item: "/grabber/vertical/group" "ewl/paned/hseperator";
+	item: "/grabber/horizontal/group" "ewl/paned/vseperator";
 
 	/* progressbar */
-	item: "/progressbar/group" "ewl/progressbar";
-	item: "/progressbar_bar/group" "ewl/progressbar/bar";
+	//item: "/progressbar/group" "ewl/progressbar";
+	//item: "/progressbar_bar/group" "ewl/progressbar/bar";
 }
 
 collections {
@@ -209,6 +209,7 @@ collections {
 #include "widgets/menu.edc"
 #include "widgets/spinner.edc"
 #include "widgets/toolbar.edc"
+#include "widgets/paned.edc"
 //~ #include "widgets/progress.edc"
 //~ #include "widgets/scrollbar.edc"
 //~ #include "widgets/shadow.edc"
