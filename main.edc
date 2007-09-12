@@ -63,7 +63,7 @@ data {
 	item: "/menu_item/body/group" "ewl/menu/item";
 	item: "/menu/vbox/menu_container/body/group" "ewl/menu/subitem";
 	item: "/menubar/group" "ewl/menu";
-	item: "/statusbar/group" "ewl/menu";
+	item: "/statusbar/group" "ewl/statusbar";
 
 	/* notebook */
 	item: "/notebook/pages/group" "ewl/notebook/pages";
@@ -210,8 +210,8 @@ collections {
 #include "widgets/spinner.edc"
 #include "widgets/toolbar.edc"
 #include "widgets/paned.edc"
+#include "widgets/statusbar.edc"
 //~ #include "widgets/progress.edc"
-//~ #include "widgets/scrollbar.edc"
 //~ #include "widgets/shadow.edc"
 //~ #include "widgets/toolbar.edc"
 //~ #include "widgets/combo.edc"

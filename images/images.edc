@@ -109,6 +109,9 @@ image: "spinner_up.png" COMP;
 image: "paned_h_handle.png" COMP;
 image: "paned_v_handle.png" COMP;
 
+//~ statusbar
+image: "status_bar.png" COMP;
+
 //~ progressbar
 //image: "progress_trough.png" COMP;
 //image: "progress_bar_fill_0.png" COMP;
