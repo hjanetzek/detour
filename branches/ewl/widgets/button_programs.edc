@@ -5,6 +5,9 @@ program {
 	source: "EWL";
 	action: STATE_SET "clicked" 0.0;
 	target: "button";
+	target: "button_shadow";
+	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
@@ -13,6 +16,9 @@ program {
 	source: "EWL";
 	action: STATE_SET "default" 0.0;
 	target: "button";
+	target: "button_shadow";
+	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
@@ -21,6 +27,9 @@ program {
 	source: "EWL";
 	action: STATE_SET "disabled" 0.0;
 	target: "button";
+	target: "button_shadow";
+	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
@@ -29,6 +38,9 @@ program {
 	source: "EWL";
 	action: STATE_SET "default" 0.0;
 	target: "button";
+	target: "button_shadow";
+	target: "button_shadow_overlay";
+	target: "minimum.size.hack";
 }
 
 program {
