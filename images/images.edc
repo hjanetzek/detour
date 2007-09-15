@@ -6,6 +6,8 @@ images {
    image: "button_outline.png" COMP;
    image: "button_on.png" COMP;
    image: "button_on_disabled.png" COMP;
+   image: "button_shadow_overlay.png" COMP;
+   image: "button_shadow.png" COMP;
    image: "check0.png" COMP;
    image: "check1.png" COMP;
    image: "combobox_button.png" COMP;
