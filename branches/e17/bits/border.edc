@@ -34,6 +34,7 @@ group {
 group {
 	name: "e/widgets/border/dialog/border";
 	alias: "e/widgets/border/urgent/border";
+	alias: "e/widgets/border/noresize/border";
 
 	data {
 		// item: "shaped" "0";
@@ -162,3 +163,4 @@ FULL_SIZE_BORDER_BUTTON("stack_below")
 FULL_SIZE_BORDER_BUTTON("properties")
 FULL_SIZE_BORDER_BUTTON("skip")
 FULL_SIZE_BORDER_BUTTON("skip_pager")
+

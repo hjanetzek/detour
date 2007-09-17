@@ -188,12 +188,10 @@ part {
 
 		rel1 { 
 			to: "button_clip"; 
-			//to: "button_enabled"; 
 		}
 
 		rel2 { 
 			to: "button_clip"; 
-			//to: "button_enabled"; 
 		}
 
 		image.normal: "button_disabled.png";
@@ -363,7 +361,6 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 0 0 0 0;
 	}
 
 	description {
