@@ -2,12 +2,12 @@
 part {
 	name: "base";
 	mouse_events: 0;
-	// type: IMAGE;
+	//type: IMAGE;
 	type: RECT;
 
 	description {
 		state: "default" 0.0;
-		color: 251 251 251 255;
+		//color: 251 251 251 255;
 
 /*
 		image {

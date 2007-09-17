@@ -5,8 +5,7 @@ program {
 	source: "e"; 
 	action: STATE_SET "active" 0.0;
 	target: "e.text.label"; 
-	target: "icon_overlay";
-	target: "filename_overlay";
+	target: "filename_overlay_clip";
 } 
 
 program { 
@@ -15,8 +14,7 @@ program {
 	source: "e"; 
 	action: STATE_SET "default" 0.0;	 
 	target: "e.text.label";
-	target: "icon_overlay";	
-	target: "filename_overlay"; 
+	target: "filename_overlay_clip"; 
 }  
 
 program {
@@ -51,31 +49,31 @@ program {
 program {
 	name: "thumb_gen3";
 	action: STATE_SET "max" 0.0;
-	target: "icon";
 	transition: DECELERATE 0.2;
+	target: "icon";
 	after: "thumb_gen4";
 }
 
 program {
 	name: "thumb_gen4";
 	action: STATE_SET "default" 0.0;
-	target: "icon";
 	transition: SINUSOIDAL 0.1;
+	target: "icon";
 	after: "thumb_gen5";
 }
 
 program {
 	name: "thumb_gen5";
 	action: STATE_SET "max2" 0.0;
-	target: "icon";
 	transition: SINUSOIDAL 0.2;
+	target: "icon";
 	after: "thumb_gen6";
 }
 
 program {
 	name: "thumb_gen6";
 	action: STATE_SET "default" 0.0;
-	target: "icon";
 	transition: SINUSOIDAL 0.3;
+	target: "icon";
 }
 
