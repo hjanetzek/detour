@@ -46,7 +46,7 @@ part {
 		}
 
 		image {
-			normal:   "e17_logo_small.png";
+			normal: "e17_logo_small.png";
 		}
     	}
 }
@@ -77,7 +77,7 @@ part {
 		}
 
 		image {
-			normal:   "e17_logo_small.png";
+			normal: "e17_logo_small.png";
 		}
 	}
 
@@ -97,23 +97,24 @@ part {
 		}
 
 		image {
-			normal:   "e17_logo_small.png";
+			normal: "e17_logo_small.png";
 		}
 	}
 }
 */
 #else
 #if BACKGROUND_TYPE == 1
-part { 
-	name: "background_image";
-	type: RECT;
+	part { 
+		name: "background_image";
+		type: RECT;
 
-	description {
-		state: "default" 0.0;
-		//color: 139 157 180 255;
-		color: 76 76 76 255;
+		description {
+			state: "default" 0.0;
+			//color: 139 157 180 255;
+			color: 76 76 76 255;
+		}
 	}
-}
 #endif
 #endif
 version_clip()
+

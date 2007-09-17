@@ -97,7 +97,6 @@ image: "arrow_dark.png" COMP;
 image: "menu_bg.png" COMP;
 image: "menu_separator.png" COMP;
 image: "menu_select.png" COMP;
-image: "filename_select.png" COMP;
 
 //~ entry
 image: "entry.png" COMP;
