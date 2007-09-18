@@ -113,6 +113,15 @@ image: "paned_v_handle.png" COMP;
 //~ statusbar
 image: "status_bar.png" COMP;
 
+//~ combo
+image: "combo_arrow.png" COMP;
+image: "combo_arrow2.png" COMP;
+image: "combo_arrows.png" COMP;
+image: "combobox_button.png" COMP;
+image: "combobox_button_clicked.png" COMP;
+image: "combobox_button_disabled.png" COMP;
+image: "combobox_focus.png" COMP;
+
 //~ progressbar
 //image: "progress_trough.png" COMP;
 //image: "progress_bar_fill_0.png" COMP;
