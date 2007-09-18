@@ -113,7 +113,7 @@ part {
 
 		text {
 			text: "100%";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 9;
 			min: 1 1;
 			align: 1.0 0.0;
