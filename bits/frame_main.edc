@@ -85,7 +85,7 @@ part {
 
 		text {
 			text: "Frame Label";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 10;
 			min: 1 1;
 			max: 1 1;

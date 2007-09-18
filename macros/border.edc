@@ -229,11 +229,11 @@ part { \
 \
 		text { \
 			text: ""; \
-			font: "Edje-Vera-Bold"; \
+			font: "Sans:style=Bold,Edje-Vera-Bold"; \
 			size: 10; \
 			min: 0 1; \
 			align: 0.0 0.5; \
-			text_class: ""; \
+			text_class: "title_bar"; \
 		} \
 	} \
 \

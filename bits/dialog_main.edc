@@ -94,7 +94,6 @@ part {
 	}
 }
 
-
 part {
 	name: "e.swallow.buttons";
 	type: SWALLOW;
@@ -117,3 +116,4 @@ part {
 		}
 	}
 }
+

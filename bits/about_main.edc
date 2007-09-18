@@ -228,7 +228,7 @@ part {
 
 		text {
 			text: "Enlightenment";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 16;
 			min: 1 1;
 			align: 0.5 0.5;
@@ -620,7 +620,7 @@ part {
 
 		text {
 			text: "Exit";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 10;
 			min: 1 1;
 			align: 0.5 0.55;
