@@ -137,12 +137,12 @@ data {
 	item: "/blank/group" "ewl/blank";
 
 	/* combo */
-	//~ item: "/combo/group" "ewl/combo";
-	//~ item: "/combo/cell/group" "ewl/combo/contents";
-	//~ item: "/combo/popup/group" "ewl/menu";
-	//~ item: "/combo_cell/group" "ewl/combo/popup/contents";
-	//~ item: "/combo_menu/body/group" "ewl/combo/popup/submenu";
-	//~ item: "/combo/button/group" "ewl/combo/button";
+	item: "/combo/group" "ewl/combo";
+	item: "/combo/cell/group" "ewl/combo/contents";
+	item: "/combo/popup/group" "ewl/menu";
+	item: "/combo_cell/group" "ewl/combo/popup/contents";
+	item: "/combo_menu/body/group" "ewl/combo/popup/submenu";
+	item: "/combo/button/group" "ewl/combo/button";
 
 	/* dnd groups */
 	//~ item: "/dndcursor/group" "ewl/sphere-cursor";
@@ -211,10 +211,10 @@ collections {
 #include "widgets/toolbar.edc"
 #include "widgets/paned.edc"
 #include "widgets/statusbar.edc"
+#include "widgets/combo.edc"
 //~ #include "widgets/progress.edc"
 //~ #include "widgets/shadow.edc"
 //~ #include "widgets/toolbar.edc"
-//~ #include "widgets/combo.edc"
 //~ #include "widgets/cursor.edc"
 }
 
