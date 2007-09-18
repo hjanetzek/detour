@@ -6,7 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 255; // fallback color
+		color: 255 255 255 255; /* fallback color */
 	}
 }
  
@@ -146,11 +146,17 @@ part {
 
 		text {
 			text: "Enlightenment";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 12;
 			min: 1 1;
 			align: 0.5 0.5;
-			// text_class: "init_title";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "init_title";
+			#endif
+			#endif
 		}
 	}
 
@@ -192,7 +198,13 @@ part {
 			font: "Edje-Vera";
 			size: 11;
 			min: 0 1;
-			// text_class: "init_text"; 
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "init_text"; 
+			#endif
+			#endif
 		}
 	}
 
@@ -226,11 +238,17 @@ part {
 
 		text {
 			text: "0.17.0";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 10;
 			min:  1 1;
 			align: 0.0 0.0;
-			// text_class: "init_version";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "init_version";
+			#endif
+			#endif
 		}
 	}
 
@@ -363,11 +381,17 @@ part {
 
 		text {
 			text: "Disable this splash screen in future.";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 10;
 			min: 1 1;
 			align: 0.0 0.5;
-			// text_class: "init_text";
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "init_text";
+			#endif
+			#endif
 		}
     	}
 }
