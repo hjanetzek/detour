@@ -1,6 +1,7 @@
 
 part {
 	name: "content";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
@@ -47,3 +48,4 @@ part {
 		}
 	} 
 }
+

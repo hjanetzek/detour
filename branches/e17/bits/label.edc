@@ -3,6 +3,41 @@ group {
 	name: "e/widgets/label";
 
 	parts {
-		#include "label_main.edc"
+		part {
+			name: "e.text.label";
+			type: TEXT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 60 60 60 255;
+
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 2 4; 
+				}
+
+				rel2 { 
+					relative: 1.0 1.0; 
+					offset: -3 -5; 
+				}
+
+				text {
+					text: "Label";
+					font: "Edje-Vera";
+					size: 10;
+					min: 1 1;
+					align: 0.0 0.5;
+					#if ENABLE_TEXT_CLASSES == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASSES == 1
+						text_class: "label";
+					#endif
+					#endif
+				}
+			}
+		}
 	}
 }
+

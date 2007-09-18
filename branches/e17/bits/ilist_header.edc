@@ -54,7 +54,7 @@ part {
 
 		text {
 			text: "ilist item";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 11;
 			min: 1 1;
 			align: 0 0.5;

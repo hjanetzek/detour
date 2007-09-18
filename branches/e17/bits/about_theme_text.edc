@@ -24,7 +24,7 @@ part {
 
 		text {
 			text: "detour (seek)";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 12;
 			min: 1 1;
 			align: 0.5 0.5;
@@ -116,7 +116,7 @@ part {
 
 part {
 	name: "entry_clip";
-//~ this part is responsible for the scrolling textblock
+/* this part is responsible for the scrolling textblock */
 	type: RECT;
 	mouse_events: 0;
 	clip_to: "container";
