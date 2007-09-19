@@ -312,7 +312,6 @@ group {
    script {
       public toggled = 0;
       public disabled = 0;
-      
       public update_state() {
          if (get_int(toggled) == 0) {
             if (get_int(disabled) == 0)
@@ -320,25 +319,26 @@ group {
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
-	    }
-            else
+	    } 
+            else {
                set_state(PART:"button", "disabled", 0.0);
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
             }
-         else {
-            if (get_int(disabled) == 0)
+            else {
+            if (get_int(disabled) == 0) {
                set_state(PART:"button", "toggled", 0.0);
                set_state(PART:"button_shadow", "clicked", 0.0);
                set_state(PART:"button_shadow_overlay", "clicked", 0.0);
                set_state(PART:"minimum.size.hack", "clicked", 0.0);
-            }
-            else
+            } 
+	    else {
                set_state(PART:"button", "disabled-toggled", 0.0);
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
+            }
          }
       }
    }
