@@ -314,7 +314,7 @@ group {
       public disabled = 0;
       public update_state() {
          if (get_int(toggled) == 0) {
-            if (get_int(disabled) == 0)
+            if (get_int(disabled) == 0) {
                set_state(PART:"button", "default", 0.0);
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
@@ -338,7 +338,6 @@ group {
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
-            }
          }
       }
    }
