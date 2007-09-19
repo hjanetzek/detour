@@ -319,30 +319,28 @@ group {
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
-	    } 
-            else {
+	    } else {
                set_state(PART:"button", "disabled", 0.0);
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
-            }
-            else {
+               }
+            } else {
             if (get_int(disabled) == 0) {
                set_state(PART:"button", "toggled", 0.0);
                set_state(PART:"button_shadow", "clicked", 0.0);
                set_state(PART:"button_shadow_overlay", "clicked", 0.0);
                set_state(PART:"minimum.size.hack", "clicked", 0.0);
-            } 
-	    else {
+            } else {
                set_state(PART:"button", "disabled-toggled", 0.0);
                set_state(PART:"button_shadow", "default", 0.0);
                set_state(PART:"button_shadow_overlay", "default", 0.0);
                set_state(PART:"minimum.size.hack", "default", 0.0);
+	    }
          }
       }
    }
 }
-
 /**
  * group "etk/toggle_button/label"
  * -----------------------
@@ -481,3 +479,4 @@ group {
       }
    }
 }
+
