@@ -16,7 +16,7 @@ part { \
 		rel1 { \
 			to: NAME"_bg"; \
 			relative: 0.0 0.0; \
-			offset: 0 0; \
+			offset: 1 0; \
 		} \
 \
 		rel2 { \
