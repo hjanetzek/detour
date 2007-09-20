@@ -325,3 +325,50 @@ group {
 	}
 }
 
+group {
+	name: "e/fileman/default/rubberband";
+
+	parts {
+		part {
+			name: "base";
+			mouse_events: 0;
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				color: 104 108 111 128;
+
+				image {
+					normal: "fileman_rubberband.png";
+					border: 2 2 2 2;
+					middle: 0;
+				}
+			}
+		}
+
+		part {
+			name: "middle";
+			mouse_events: 0;
+			type: RECT;
+
+			description {
+				state: "default" 0.0;
+				color: 138 171 225 64;
+
+				rel1 {
+					to: "base";
+					relative: 0.0 0.0;
+					offset: 1 1;
+				}
+
+				rel2 {
+					to: "base";
+					relative: 1.0 1.0;
+					offset: -2 -2;
+				}
+			}
+		}
+	}
+}
+
+
