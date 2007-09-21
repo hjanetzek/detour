@@ -353,7 +353,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 138 171 225 64;
+				color: 75 115 199 64;
 
 				rel1 {
 					to: "base";

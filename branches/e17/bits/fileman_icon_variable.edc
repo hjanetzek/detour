@@ -281,7 +281,7 @@ part {
 		text {
 			text: "No Title";
 			size: 10;
-			font: "Edje-Vera";
+			font: "Edje-Vera-Bold";
 			#if TRUNCATE_EFM_ICON_FILENAME == 0
 				min: 1 1;
 			#else
