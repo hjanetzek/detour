@@ -228,7 +228,7 @@ group {
          clip_to: "button_clip";
          description {
             state: "default" 0.0;
-            min: 88 24;
+            min: 24 24;
             color: 0 0 0 0;
             rel1 {
                to: "button_clip";

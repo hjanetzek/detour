@@ -75,7 +75,23 @@ group {
          }
       }
       part {
+         name: "radio_disable";
+         mouse_events: 0;
+         repeat_events: 1;
+         type: RECT;
+         description {
+            state: "default" 0.0;
+            color: 255 255 255 255;
+         }
+         description {
+            state: "disabled" 0.0;
+            inherit: "default" 0.0;
+            color: 255 255 255 128;
+         }
+      }
+      part {
          name: "radio";
+         clip_to: "radio_disable";
          mouse_events: 0;
          description {
             state: "default" 0.0;
@@ -100,11 +116,6 @@ group {
             state: "on" 0.0;
             inherit: "default" 0.0;
             visible: 1;
-         }
-         description {
-            state: "disabled" 0.0;
-            inherit: "default" 0.0;
-            color: 255 255 255 128;
          }
       }
       part {
@@ -154,9 +165,9 @@ group {
          name: "radio_enable";
          signal: "etk,state,enabled";
          source: "etk";
-         action: STATE_SET "enabled" 0.0;
+         action: STATE_SET "default" 0.0;
          target: "outline";
-         target: "radio";
+         target: "radio_disable";
          target: "event";
       }
       program {
@@ -165,7 +176,7 @@ group {
          source: "etk";
          action: STATE_SET "disabled" 0.0;
          target: "outline";
-         target: "radio";
+         target: "radio_disable";
          target: "event";
       }
    }
