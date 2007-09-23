@@ -5,7 +5,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 24 24;
+		min: 16 16;
 		aspect: 1.0 1.0;
 		align: 0.5 0.5;
 

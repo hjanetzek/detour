@@ -5,7 +5,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 9999 26;
+		max: 9999 24;
 		visible: 0;
 
 		rel1 { 
@@ -36,7 +36,7 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.0 0.0;
-		min: 25 25;
+		min: 16 16;
 		
 		rel1 { 
 			relative: 0.0 0.0; 
