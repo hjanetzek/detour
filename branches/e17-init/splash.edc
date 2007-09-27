@@ -13,6 +13,7 @@ part {
 part { 
 	name: "background_image";
 	type: GRADIENT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -25,6 +26,7 @@ part {
 part { 
 	name: "over";
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -34,8 +36,8 @@ part {
 
 part {
 	name: "splash.clip";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -65,7 +67,7 @@ part {
 }
 
 part {
-	name: "splash";
+	name: "splash_bg";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "splash.clip";
@@ -86,6 +88,32 @@ part {
 
 		image {
 			normal: "splash_bg.png";
+		}
+    	}
+}
+
+part {
+	name: "splash";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "splash.clip";
+
+	description {
+		state: "default" 0.0;
+		min: 313 303;
+		max: 313 303;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "splash.clip"; 
+		}
+
+		rel2 { 
+			to: "splash.clip"; 
+		}
+
+		image {
+			normal: "splash.png";
 		}
     	}
 }
@@ -125,12 +153,9 @@ part {
 
 	description {
 		state: "default" 0.0;
-		//min: 100 20;
-		//max: 100 20;
 		align: 0.5 0.0;
 		color: 7 7 7 255;
 		color3: 0 0 0 32;
-		visible: 0;
 
 		rel1 { 
 			to: "text.area"; 
@@ -159,12 +184,6 @@ part {
 			#endif
 		}
 	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
 }
 
 part {	 
@@ -176,10 +195,8 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		min: 279 16;
 		color: 7 7 7 255;
 		color3: 0 0 0 32;
-		visible: 0;
 
 		rel1 { 
 			to: "e.text.title"; 
@@ -197,7 +214,8 @@ part {
 			text: "Starting Enlightenment. Please wait.";
 			font: "Edje-Vera";
 			size: 11;
-			min: 0 1;
+			min: 1 1;
+			align: 0.5 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
 				text_class: "";
 			#else
@@ -206,12 +224,6 @@ part {
 			#endif
 			#endif
 		}
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
 	}
 }
 
@@ -250,12 +262,6 @@ part {
 			#endif
 			#endif
 		}
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
 	}
 }
 
@@ -297,26 +303,26 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 279 34;
-		max: 279 34;
-		align: 0.0 0.0;
+		//min: 279 34;
+		//max: 279 34;
+		//align: 0.0 0.0;
 
 		rel1 { 
 			to: "entry_widget"; 
-			relative: 0.0 0.5; 
-			offset: 7 -16; 
+			relative: 0.0 0.0; 
+			offset: 4 4; 
 		}
 
 		rel2 { 
 			to: "entry_widget"; 
-			relative: 1.0 0.5; 
-			offset: -1 -1; 
+			relative: 1.0 1.0; 
+			offset: -5 -5; 
 		}
 	}
 }
 
 part {
-	name: "disable_check";
+	name: "check_widget";
 	type: IMAGE;
 	mouse_events: 1;
 	clip_to: "splash.clip";
@@ -368,13 +374,13 @@ part {
 		color3: 0 0 0 32;
 
 		rel1 { 
-			to: "disable_check"; 
+			to: "check_widget"; 
 			relative: 1.0 0.0; 
-			offset: 4 4; 
+			offset: 4 5; 
 		}
 
 		rel2 { 
-			to: "disable_check"; 
+			to: "check_widget"; 
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
@@ -399,7 +405,7 @@ part {
 part {
 	name: "busy";
 	clip_to: "busy_clip";
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
