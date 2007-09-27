@@ -269,7 +269,7 @@ part {
 		align: 0.5 1.0;
 		fixed: 0 1;
 		color: 255 255 255 255;
-		color3: 7 7 7 32;
+		color3: 7 7 7 16;
 
 		rel1 { 
 			relative: 0.0 1.0; 
