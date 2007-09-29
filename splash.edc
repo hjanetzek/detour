@@ -41,8 +41,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 313 303;
-		max: 313 303;
+		min: 313 97;
+		max: 313 97;
 		fixed: 1 1;
 		visible: 0;
 
@@ -67,15 +67,15 @@ part {
 }
 
 part {
-	name: "splash_bg";
+	name: "splash";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "splash.clip";
 
 	description {
 		state: "default" 0.0;
-		min: 313 303;
-		max: 313 303;
+		min: 313 97;
+		max: 313 97;
 		fixed: 1 1;
 
 		rel1 { 
@@ -93,27 +93,32 @@ part {
 }
 
 part {
-	name: "splash";
+	name: "entry_widget";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "splash.clip";
 
 	description {
 		state: "default" 0.0;
-		min: 313 303;
-		max: 313 303;
+		min: 293 49;
+		max: 293 49;
 		fixed: 1 1;
 
 		rel1 { 
 			to: "splash.clip"; 
+			relative: 0.0 1.0; 
+			offset: 0 -126; 
 		}
 
 		rel2 { 
-			to: "splash.clip"; 
+			to: "splash.clip";  
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
 		}
 
 		image {
-			normal: "splash.png";
+			normal: "entry.png";
+			border: 7 7 8 8;
 		}
     	}
 }
@@ -126,19 +131,19 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 279 34;
-		max: 279 34;
+		min: 279 40;
+		max: 279 40;
 		color: 255 255 255 255;
 
 		rel1 { 
-			to: "splash"; 
-			relative: 0.0 0.5; 
-			offset: 0 82; 
+			to: "entry_widget"; 
+			relative: 0.0 0.0; 
+			offset: 0 6; 
 		}
 
 		rel2 { 
-			to: "splash"; 
-			relative: 1.0 0.5; 
+			to: "entry_widget"; 
+			relative: 1.0 1.0; 
 			offset: 0 0; 
 		}
 	}
@@ -165,7 +170,7 @@ part {
 
 		rel2 { 
 			to: "text.area"; 
-			relative: 1.0 1.0; 
+			relative: 1.0 0.0; 
 			offset: 0 -10; 
 		}
 
@@ -265,37 +270,7 @@ part {
 	}
 }
 
-part {
-	name: "entry_widget";
-	type: IMAGE;
-	mouse_events: 0;
-	clip_to: "splash.clip";
-
-	description {
-		state: "default" 0.0;
-		min: 293 49;
-		max: 293 49;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "splash.clip"; 
-			relative: 0.0 1.0; 
-			offset: 0 -126; 
-		}
-
-		rel2 { 
-			to: "splash.clip";  
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "entry.png";
-			border: 7 7 8 8;
-		}
-    	}
-}
-
+/*
 part {	 
 	name: "e.swallow.icons";
 	type: SWALLOW;
@@ -320,6 +295,7 @@ part {
 		}
 	}
 }
+*/
 
 part {
 	name: "check_widget";
@@ -417,15 +393,15 @@ part {
 		aspect_preference: BOTH;
 
 		rel1 { 
-			to: "splash.clip"; 
+			to: "background"; 
 			relative: 0.5 1.0; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "splash.clip"; 
+			to: "background"; 
 			relative: 0.5 1.0; 
-			offset: -1 40; 
+			offset: -1 -40; 
 		}
 
 		image {
