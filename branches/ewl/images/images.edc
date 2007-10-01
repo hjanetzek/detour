@@ -122,6 +122,9 @@ image: "combobox_button_clicked.png" COMP;
 image: "combobox_button_disabled.png" COMP;
 image: "combobox_focus.png" COMP;
 
+//~ shadow
+image: "shadow.png" COMP;
+
 //~ progressbar
 //image: "progress_trough.png" COMP;
 //image: "progress_bar_fill_0.png" COMP;
