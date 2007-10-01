@@ -152,7 +152,7 @@ data {
 	item: "/vseparator/group" "ewl/separator/vertical";
 
 	/* shadow */
-	//~ item: "/shadow/group" "ewl/shadow";
+	item: "/shadow/group" "ewl/shadow";
 
 	/* spacer */
 	item: "/spacer/group" "ewl/spacer";
@@ -213,7 +213,7 @@ collections {
 #include "widgets/statusbar.edc"
 #include "widgets/combo.edc"
 //~ #include "widgets/progress.edc"
-//~ #include "widgets/shadow.edc"
+#include "widgets/shadow.edc"
 //~ #include "widgets/toolbar.edc"
 //~ #include "widgets/cursor.edc"
 }
