@@ -23,7 +23,7 @@ part {
 		}
 
 		text {
-			text: "detour (seek)";
+			text: "detour (europa)";
 			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 12;
 			min: 1 1;
