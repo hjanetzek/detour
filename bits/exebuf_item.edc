@@ -1,6 +1,7 @@
 
 part {
 	name: "title_bar";
+	type: IMAGE;
 	mouse_events: 0;
 	
 	description {
@@ -84,12 +85,12 @@ part {
 		rel1 {
 			to_x: "e.swallow.icons"; 
 			relative: 1.0 0.0; 
-			offset: 9 6; 
+			offset: 9 7; 
 		}
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -8 -6; 
+			offset: -8 -8; 
 		}
 
 		text {
@@ -116,7 +117,7 @@ part {
 		text {
 			text: "Item Label";
 			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 11;
+			size: 10;
 			min: 0 0;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
@@ -136,18 +137,17 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 22 22;
-		aspect: 1.0 1.0;
+		min: 24 24;
+		max: 24 24;
+		fixed: 1 1;
 		align: 0.0 0.5;
-		aspect_preference: VERTICAL;
 		
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 0 8; 
+			offset: 0 -1; 
 		}
 
 		rel2 { 
-			to_y: "title2"; 
 			relative: 0.0 1.0; 
 			offset: -1 -1; 
 		}
