@@ -1,6 +1,7 @@
 
 part {
 	name: "title_bar";
+	type: IMAGE;
 	mouse_events: 0;
 	
 	description {
@@ -89,9 +90,9 @@ part {
 		} 
 		
 		rel2 { 
-			to_x: "type"; 
-			relative: 0.0 1.0; 
-			offset: -8 -6; 
+			to_x: "title_bar"; 
+			relative: 1.0 1.0; 
+			offset: -20 -6; 
 		}
 
 		text {
@@ -115,12 +116,10 @@ part {
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
 
-		rel2.offset: -4 -5;
-
 		text {
 			text: "Item Label";
 			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 11;
+			size: 10;
 			min: 0 0;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
@@ -140,10 +139,10 @@ part {
 
 	description {
 		state: "default" 0.0;
-		
-		aspect: 1.0 1.0;
+		min: 24 24;
+		max: 24 24;
+		fixed: 1 1;
 		align: 0.0 0.5;
-		aspect_preference: VERTICAL;
 
 		rel1 { 
 			relative: 0.0 0.0; 
@@ -161,6 +160,7 @@ part {
 part {
 	name: "type";
 	type: IMAGE;
+	mouse_events: 0;
 	
 	description {
 		state: "default" 0.0;
@@ -174,9 +174,9 @@ part {
 		}
 
 		rel2 { 
-			to_y: "title2"; 
+			to_y: "title_bar"; 
 			relative: 1.0 1.0; 
-			offset: -1 4; 
+			offset: -1 -1; 
 		}
 
 		image {
@@ -191,7 +191,7 @@ part {
 
 		image {
 			normal: "pager_window_iconified.png";
-			border: 23 4 26 3;
+			border: 14 3 26 3;
 		}
 	}
 
@@ -219,7 +219,7 @@ part {
 part {
 	name: "e.event.winlist.item";
 	type: SWALLOW;
-	mouse_events: 1;
+	// mouse_events: 1;
 
 	description {
 		state: "default" 0.0;
