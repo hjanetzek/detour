@@ -1,13 +1,5 @@
 
 program {
-	name: "icon_visible";
-	signal: "e,action,show,icon";
-	source: "e";
-	action: STATE_SET "visible" 0.0;
-	target: "e.swallow.icon";
-}
-
-program {
 	name: "button_unclick";
 	signal: "mouse,up,1";
 	source: "button_enabled";
@@ -17,13 +9,6 @@ program {
 	target: "e.text.label";
 	target: "button_shadow_overlay";
 	target: "minimum.size.hack";
-}
-
-program {
-	name: "button_clicked";
-	signal: "mouse,clicked,1";
-	source: "button_enabled";
-	action: SIGNAL_EMIT "e,action,click" "";
 }
 
 program {
@@ -42,6 +27,53 @@ program {
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
 	target: "focus_clip";
+}
+
+program {
+	name: "button_click";
+	signal: "mouse,down,1";
+	source: "button_enabled";
+	script {
+		set_state(PART:"button_enabled", "clicked", 0.0);
+		set_state(PART:"e.text.label", "clicked", 0.0);
+		set_state(PART:"button_shadow", "clicked", 0.0);
+		set_state(PART:"button_shadow_overlay", "clicked", 0.0);
+		set_state(PART:"minimum.size.hack", "clicked", 0.0);
+	}
+}
+
+program {
+	name: "button_clicked";
+	signal: "mouse,clicked,1";
+	source: "button_enabled";
+	action: SIGNAL_EMIT "e,action,click" "";
+}
+
+program {
+	name: "icon_state";
+	signal: "e,state,icon";
+	source: "e";
+	action: STATE_SET "icon" 0.0;
+	target: "e.swallow.icon";
+	target: "e.text.label";
+}
+
+program {
+	name: "text_state";
+	signal: "e,state,text";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "e.swallow.icon";
+	target: "e.text.label";
+}
+
+program {
+	name: "combo_state";
+	signal: "e,state,combo";
+	source: "e";
+	action: STATE_SET "combo" 0.0;
+	target: "e.swallow.icon";
+	target: "e.text.label";
 }
 
 program {
@@ -70,26 +102,5 @@ program {
 	target: "e.text.label"; 
 	target: "button_shadow_overlay";
 	target: "minimum.size.hack";
-}
-
-program {
-	name: "button_click";
-	signal: "mouse,down,1";
-	source: "button_enabled";
-	script {
-		set_state(PART:"button_enabled", "clicked", 0.0);
-		set_state(PART:"e.text.label", "clicked", 0.0);
-		set_state(PART:"button_shadow", "clicked", 0.0);
-		set_state(PART:"button_shadow_overlay", "clicked", 0.0);
-		set_state(PART:"minimum.size.hack", "clicked", 0.0);
-	}
-}
-
-program {
-	name: "icon_invisible";
-	signal: "e,action,hide,icon";
-	source: "e";
-	action: STATE_SET "default" 0.0;
-	target: "e.swallow.icon";
 }
 

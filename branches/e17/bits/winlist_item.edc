@@ -223,8 +223,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 14 14;
-		
+		min: 14 14;	
 		visible: 1;
 
 		rel1 {
