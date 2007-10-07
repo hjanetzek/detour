@@ -175,7 +175,7 @@ part {
 		}
 
 		text {
-			text: "Enlightenment";
+			text: "Welcome to Enlightenment";
 			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 12;
 			min: 1 1;
@@ -426,6 +426,22 @@ part {
 		state: "visible" 0.0;
 		color: 255 255 255 255;
 		visible: 1;
+	}
+}
+ 
+part {
+	name: "black";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+	}
+
+	description {
+		state: "visible" 0.0;
+		color: 0 0 0 255;
 	}
 }
 
