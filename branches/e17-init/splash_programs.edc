@@ -69,8 +69,8 @@ program {
 
 program {
 	name: "done1";
-	signal: "exquisite";
-	source: "exit";
+	signal: "";
+	source: "";
 	action: STATE_SET "visible" 0.0;
 	target: "black";
 	transition: LINEAR 0.5;

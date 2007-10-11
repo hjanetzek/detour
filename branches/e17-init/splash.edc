@@ -428,7 +428,7 @@ part {
 		visible: 1;
 	}
 }
- 
+
 part {
 	name: "black";
 	type: RECT;
