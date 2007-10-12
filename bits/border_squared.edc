@@ -50,7 +50,7 @@ BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 5 0, "bottom-right", 0.0 1.0, 0 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 19 19, 19 19, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
-TITLE("e.text.title", "title.area.clip", 0.0, "title.area.clip", 0.0 0.5, 23 5, "title.area.clip", 1.0 0.5, -5 0, 60 60 60 255, 170 168 169 128, 0.1, 95 95 93 255, 170 168 169 128)
+TITLE("e.text.title", "title.area.clip", 0.0, "title.area.clip", 0.0 0.5, 23 4, "title.area.clip", 1.0 0.5, -5 0, 60 60 60 255, 170 168 169 128, 0.1, 95 95 93 255, 170 168 169 128)
 MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
 PART_EVENT_MAP("e.event.resize.t", 1, "resize_t")
 PART_EVENT_MAP("e.event.titlebar", 1, "move-window")
