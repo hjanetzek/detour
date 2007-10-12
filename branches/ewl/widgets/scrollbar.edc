@@ -1,7 +1,7 @@
 group {
 	name: "ewl/scrollbar/hrunner";
 
-	min: 17 17;
+	min: 38 17;
 	max: 99999 17;
 
 	parts {
@@ -12,8 +12,8 @@ group {
 group {
         name: "ewl/scrollbar/vrunner";
 
-        min: 17 17;
-        max: 17 99999;
+        min: 17 38;
+	max: 17 99999;
 
         parts {
                 #include "scrollbar_vrunner.edc"
@@ -25,7 +25,7 @@ group {
         name: "ewl/scrollbar/hbutton";
 
         min: 36 17;
-        max: 99999 17;
+	max: 99999 17;
 
         parts {
                 #include "scrollbar_hbutton.edc"
@@ -62,7 +62,7 @@ group {
         name: "ewl/scrollbar/vbutton";
 
         min: 17 36;
-        max: 17 99999;
+	max: 17 99999;
 
         parts {
                 #include "scrollbar_vbutton.edc"
