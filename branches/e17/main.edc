@@ -20,6 +20,7 @@
 #define BACKGROUND_TYPE 0
 #define ENABLE_DETROIT_SHELF_STYLE 0
 #define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 
+#define ENABLE_CUSTOM_ICONS 1
 
 fonts {
 font: "fonts/Vera.ttf" "Edje-Vera";
