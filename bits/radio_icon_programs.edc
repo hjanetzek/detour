@@ -6,7 +6,6 @@ program {
 	action: STATE_SET "label_visible" 0.0;
 	target: "e.swallow.icon";
 	target: "label_clip";
-	// target: "focus";
 }
 
 program {
@@ -37,8 +36,7 @@ program {
 	signal: "e,state,focused";
 	source: "e";
 	script {
-		// set_state(PART:"focus", "active", 0.0);
-		// set_state(PART:"e.text.label", "active", 0.0);
+		set_state(PART:"radio_shadow", "focused", 0.0);
 	}
 }
 
@@ -47,8 +45,7 @@ program {
 	signal: "e,state,unfocused";
 	source: "e";
 	script {
-		// set_state(PART:"focus", "default", 0.0);
-		// set_state(PART:"e.text.label", "default", 0.0);
+		set_state(PART:"radio_shadow", "default", 0.0);
 	}
 }
 
@@ -57,9 +54,11 @@ program {
 	signal: "e,state,enabled";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	target: "outline";
+	target: "radio_base";
+	target: "radio_outline";
 	target: "event";
 	target: "e.text.label";
+	target: "radio_shadow";
 	target: "icon_clip";
 }
 
@@ -68,9 +67,11 @@ program {
 	signal: "e,state,disabled";
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
-	target: "outline";
+	target: "radio_base";
+	target: "radio_outline";
 	target: "event";
 	target: "e.text.label";
+	target: "radio_shadow";
 	target: "icon_clip";
 }
 

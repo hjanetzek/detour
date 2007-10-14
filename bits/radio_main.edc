@@ -1,38 +1,78 @@
 
 part {
-	name: "focus";
+	name: "radio_base";
 	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		min: 0 0;
-		max: 9999 20;
-		visible: 0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
 
 		rel1 { 
-			offset: 1 0; 
+			relative: 0.0 0.0; 
+			offset: 2 2; 
 		}
 
 		rel2 { 
-			to_x: "e.text.label"; 
-			offset: 1 -1; 
+			relative: 0.0 1.0; 
+			offset: 2 -3; 
 		}
 
-		image.normal: "menu_select.png";
-		image.border: 5 5 5 5;
+		image {
+			normal: "radio_base.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+part {
+	name: "radio_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 2 2; 
+		}
+
+		rel2 { 
+			relative: 0.0 1.0; 
+			offset: 2 -3; 
+		}
+
+		image.normal: "radio_shadow.png";
 	} 
 
 	description {
-		state: "active" 0.0;
+		state: "focused" 0.0;
 		inherit: "default" 0.0;
-		visible: 1;
-		image.normal: "menu_select.png";
-		image.border: 5 5 5 5;
+		image.normal: "radio_focus.png";
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
 	}
 }
 
 part {
 	name: "radio";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -115,12 +155,6 @@ part {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 60 60 60 128;
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
 	}
 }
 

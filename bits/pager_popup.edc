@@ -243,8 +243,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 11 11;
-		max: 11 11;
+		min: 15 11;
+		max: 15 11;
 
 		rel1 { 
 			to: "pager"; 
@@ -259,7 +259,7 @@ part {
 		}
 
 		image {
-			normal: "dot.png";
+			normal: "dot2.png";
 		}
     	}
 }
