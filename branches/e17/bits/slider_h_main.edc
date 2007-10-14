@@ -330,41 +330,6 @@ part {
 	}
 }
 
-/*
-part {
-	name: "focus";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 9999 20;
-		visible: 0;
-
-		rel1 { 
-			to: "slider_image"; 
-			offset: -2 -3; 
-		}
-
-		rel2 { 
-			to: "slider_image"; 
-			offset: -1 2; 
-		}
-
-		image {
-			normal: "slider_horiz_focus.png";
-			border: 5 5 5 5;
-		}
-	} 
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-}
-*/
-
 part {
 	name: "slider_image_shadow";
 	type: IMAGE;
