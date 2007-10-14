@@ -14,6 +14,10 @@ group {
 group {
 	name: "e/widgets/slider_horizontal";
 
+	script {
+		public focus;
+	}
+
 	parts {
 		#include "slider_h_main.edc"
 	}

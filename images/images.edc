@@ -15,12 +15,16 @@ image: "button_disabled.png" COMP;
 image: "button_shadow_overlay.png" COMP;
 
 //~ slider
-image: "slider_0.png" COMP;
 image: "slider_1.png" COMP;
 image: "slider_2.png" COMP;
-image: "slider_vert0.png" COMP;
 image: "slider_vert1.png" COMP;
 image: "slider_vert2.png" COMP;
+image: "slider_h_focus.png" COMP;
+image: "slider_h_shadow.png" COMP;
+image: "slider_vert_focus.png" COMP;
+image: "slider_vert_shadow.png" COMP;
+
+//~ runner
 image: "sb_runnerh.png" COMP;
 image: "sb_runnerh_disabled.png" COMP;
 image: "sb_runnerv.png" COMP;
@@ -33,7 +37,6 @@ image: "sb_runnerv_bot_disabled.png" COMP;
 image: "sb_runnerv_disabled.png" COMP;
 image: "sb_runnerh_left_disabled.png" COMP;
 image: "sb_runnerh_right_disabled.png" COMP;
-image: "slider_focus.png" COMP;
 
 //~ border default
 image: "tl.png" COMP;
