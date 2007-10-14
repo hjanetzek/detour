@@ -1,39 +1,4 @@
 
-/*
-part {
-	name: "focus";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 9999 20;
-		visible: 0;
-
-		rel1 { 
-			to: "slider_base"; 
-			offset: -1 3; 
-		}
-
-		rel2 { 
-			to: "slider_base"; 
-			offset: 0 -2; 
-		}
-
-		image {
-			normal: "slider_focus.png";
-			border: 5 5 5 5;
-		}
-	} 
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-}
-*/
-
 part {
 	name: "slider_base";
 	type: RECT;
@@ -365,8 +330,97 @@ part {
 	}
 }
 
+/*
+part {
+	name: "focus";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 9999 20;
+		visible: 0;
+
+		rel1 { 
+			to: "slider_image"; 
+			offset: -2 -3; 
+		}
+
+		rel2 { 
+			to: "slider_image"; 
+			offset: -1 2; 
+		}
+
+		image {
+			normal: "slider_horiz_focus.png";
+			border: 5 5 5 5;
+		}
+	} 
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+}
+*/
+
+part {
+	name: "slider_image_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 192;
+
+		rel1 { 
+			to: "slider_image"; 
+			offset: -1 -1; 
+		}
+
+		rel2 { 
+			to: "slider_image"; 
+			offset: -2 -1; 
+		}
+
+		image {
+			normal: "slider_h_shadow.png";
+			border: 7 8 7 7;
+		}
+	}
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "slider_image"; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "slider_image"; 
+			offset: -2 0; 
+		}
+
+		image {
+			normal: "slider_h_focus.png";
+			border: 7 8 7 7;
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
 part {
 	name: "slider_image";
+	type: IMAGE;
 	mouse_events: 0;
 	//clip_to: "clip";
 
@@ -385,17 +439,13 @@ part {
 		}
 
 		image {
-			normal: "slider_0.png";
+			normal: "slider_1.png";
 		}
 	}
 
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "slider_1.png";
-		}
 	}
 
 	description {

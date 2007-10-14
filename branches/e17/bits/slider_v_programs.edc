@@ -69,14 +69,12 @@ program {
 	target: "slider_image";
 }
 
-/*
 program {
 	name: "focused";
 	signal: "e,state,focused";
 	source: "e";
-	action: STATE_SET "focused" 0.0;
 	script {
-		set_state(PART:"focus", "active", 0.0);
+		set_state(PART:"slider_image_shadow", "focused", 0.0);
 	}
 }
 
@@ -84,10 +82,8 @@ program {
 	name: "unfocus";
 	signal: "e,state,unfocused";
 	source: "e";
-	action: STATE_SET "default" 0.0;
 	script {
-		set_state(PART:"focus", "default", 0.0);
+		set_state(PART:"slider_image_shadow", "default", 0.0);
 	}
 }
-*/
 
