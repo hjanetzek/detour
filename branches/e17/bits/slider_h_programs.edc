@@ -57,6 +57,7 @@ program {
 	target: "runner_right";
 	target: "slider_runner";
 	target: "slider_image";
+	target: "slider_image_shadow";
 }
 
 program {
@@ -67,6 +68,7 @@ program {
 	target: "clip";
 	target: "catch";
 	target: "slider_image";
+	target: "slider_image_shadow";
 }
 
 program {
