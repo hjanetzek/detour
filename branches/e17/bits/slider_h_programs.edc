@@ -71,12 +71,44 @@ program {
 
 /*
 program {
+	name: "set_focus";
+	signal: "e,state,focused";
+	source: "e";
+	script {
+		set_int(focus, 1);
+	}
+}
+
+program {
+	name: "unset_focus";
+	signal: "e,state,unfocused";
+	source: "e";
+	script {
+		set_int(focus, 0);
+	}
+}
+
+program {
+	name: "";
+	signal: "";
+	source: "";
+	script {
+		new val;       
+		val = get_int(focus);
+		if (val == 1)
+			run_program(PROGRAM:"");
+		else
+			run_program(PROGRAM:"");
+	}
+}
+*/
+
+program {
 	name: "focused";
 	signal: "e,state,focused";
 	source: "e";
-	action: STATE_SET "focused" 0.0;
 	script {
-		set_state(PART:"focus", "active", 0.0);
+		set_state(PART:"slider_image_shadow", "focused", 0.0);
 	}
 }
 
@@ -84,10 +116,8 @@ program {
 	name: "unfocus";
 	signal: "e,state,unfocused";
 	source: "e";
-	action: STATE_SET "default" 0.0;
 	script {
-		set_state(PART:"focus", "default", 0.0);
+		set_state(PART:"slider_image_shadow", "default", 0.0);
 	}
 }
-*/
 
