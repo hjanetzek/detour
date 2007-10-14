@@ -40,6 +40,7 @@ program {
 	target: "check";
 	target: "check_base";
 	target: "e.text.label";
+	target: "check_shadow";
 	target: "event";
 }
 
@@ -51,6 +52,7 @@ program {
 	target: "check";
 	target: "check_base";
 	target: "e.text.label";
+	target: "check_shadow";
 	target: "event";
 }
 

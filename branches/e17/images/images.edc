@@ -120,6 +120,9 @@ image: "check1.png" COMP;
 //~ radio
 image: "radio0.png" COMP;
 image: "radio1.png" COMP;
+image: "radio_base.png" COMP;
+image: "radio_focus.png" COMP;
+image: "radio_shadow.png" COMP;
 
 //~ preview
 image: "preview_bg_over.png" COMP;

@@ -63,6 +63,12 @@ part {
 		inherit: "default" 0.0;
 		image.normal: "check_focus.png";
 	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
 }
 
 part {
