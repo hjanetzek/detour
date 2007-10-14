@@ -38,7 +38,25 @@ group {
 	}
 
 	programs {
-		#include "ibar_drop_programs.edc"
+		program {
+			name: "blink";
+			signal: "load";
+			source: "";
+			action: STATE_SET "visible" 0.0;
+			transition: DECELERATE 0.5;
+			target: "drop_clip";
+			after: "unblink";
+		}
+
+		program {
+			name: "unblink";
+			signal: "";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "drop_clip";
+			after: "blink";
+		}
 	}
 }
 
