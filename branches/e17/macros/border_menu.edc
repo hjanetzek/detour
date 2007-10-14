@@ -22,7 +22,7 @@ part { \
 		rel2 { \
 			to: NAME"_bg"; \
 			relative: 1.0 1.0; \
-			offset: -1 1; \
+			offset: -1 0; \
 		} \
 \
 		image { \
@@ -55,7 +55,7 @@ part { \
 		rel2 { \
 			to: NAME; \
 			relative: 1.0 1.0; \
-			offset: -1 -1; \
+			offset: -1 -2; \
 		} \
 \
 		image { \
