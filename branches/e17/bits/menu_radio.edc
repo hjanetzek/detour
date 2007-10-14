@@ -1,4 +1,72 @@
 
+
+part {
+	name: "radio_base";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
+
+		image {
+			normal: "radio_base.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+part {
+	name: "radio_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
+
+		image.normal: "radio_shadow.png";
+	} 
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		image.normal: "radio_focus.png";
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
 part {
 	name: "radio";
 	mouse_events: 0;
