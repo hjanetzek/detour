@@ -1,4 +1,55 @@
    
+
+part {
+	name: "check_base";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: -1 1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
+
+		image {
+			normal: "check_base.png";
+		}
+	}
+}
+
+part {
+	name: "check_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: -1 1; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -2 -2; 
+		}
+
+		image.normal: "check_shadow.png";
+	} 
+}
+
 part {
 	name: "check";
 	mouse_events: 0;
@@ -38,7 +89,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "check01.png";
+			normal: "check-.png";
 		}
 	}
 

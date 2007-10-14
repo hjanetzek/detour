@@ -110,9 +110,12 @@ image: "separator.png" COMP;
 image: "dialog_bg.png" COMP;
 
 //~ check
+image: "check_base.png" COMP;
+image: "check_shadow.png" COMP;
+image: "check_focus.png" COMP;
 image: "check0.png" COMP;
+image: "check-.png" COMP;
 image: "check1.png" COMP;
-image: "check01.png" COMP;
 
 //~ radio
 image: "radio0.png" COMP;
