@@ -45,7 +45,7 @@ part {
 			min: 0 0;
 			align: 0.5 0.5;
 			elipsis: 1.0;
-			// text_class: "fileman_typebuf";
+			text_class: "fileman_typebuf";
 		}
 	}
 }
@@ -93,26 +93,27 @@ part {
 		align: 1.0 0.5;
 		color: 255 255 255 255;
 		color3: 7 7 7 32;
+		max: 9999 32;
 
-		rel1 { 
-			to: "busy"; 
-			relative: 0.0 0.0; 
-			offset: -1 0; 
+		rel1 {
+			to: "busy";
+			relative: 0.0 0.0;
+			offset: -1 0;
 		}
 
-		rel2 { 
-			to: "busy"; 
-			relative: 0.0 1.0; 
-			offset: -1 -1; 
+		rel2 {
+			to: "busy";
+			relative: 0.0 1.0;
+			offset: -1 -5;
 		}
 
 		text {
 			text: "";
-			font: "Edje-Vera-Bold";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 10;
 			min:  1 1;
-			align: 1.0 0.5;
-			// text_class: "fileman_notice";
+			align: 1.0 1.0;
+			text_class: "fileman_notice";
 		}
 	}
 }
