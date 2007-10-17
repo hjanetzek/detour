@@ -126,6 +126,7 @@ data {
 	item: "/tooltip/voffset" 10;
 	item: "/tooltip/hoffset" 10;
 	item: "/tooltip/delay" "0.5";
+	item: "/tooltip/tolerance" "3";
 
 	item: "/context_menu/voffset" 1;
 	item: "/context_menu/hoffset" 1;
