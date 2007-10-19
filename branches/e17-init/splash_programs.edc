@@ -42,8 +42,28 @@ program {
 	signal: ""; 
 	source: "";
 	action: STATE_SET "active" 0.0; 
-	transition: DECELERATE 1.5;
+	transition: DECELERATE 1.0;
 	target: "text.area";
+	after: "load.icon.clip1"; 
+}
+
+program { 
+	name: "load.icon.clip1";
+	signal: ""; 
+	source: "";
+	action: STATE_SET "visible" 0.0; 
+	transition: DECELERATE 0.25;
+	target: "icon_clip1";
+	after: "load.icon.clip2"; 
+}
+
+program { 
+	name: "load.icon.clip2";
+	signal: ""; 
+	source: "";
+	action: STATE_SET "visible" 0.0; 
+	transition: DECELERATE 0.25;
+	target: "icon_clip2";
 	after: "stop2"; 
 }
 
