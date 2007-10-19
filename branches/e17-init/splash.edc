@@ -41,8 +41,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 313 97;
-		max: 313 97;
+		min: 313 303;
+		max: 313 303;
 		fixed: 1 1;
 		visible: 0;
 
@@ -74,8 +74,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 313 97;
-		max: 313 97;
+		min: 313 303;
+		max: 313 303;
 		fixed: 1 1;
 
 		rel1 { 
@@ -87,7 +87,37 @@ part {
 		}
 
 		image {
-			normal: "splash_bg.png";
+			normal: "splash.png";
+		}
+    	}
+}
+
+part {
+	name: "insignia";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "splash.clip";
+
+	description {
+		state: "default" 0.0;
+		min: 112 108;
+		max: 112 108;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "splash"; 
+			relative: 0.0 0.0; 
+			offset: 0 60; 
+		}
+
+		rel2 { 
+			to: "splash";  
+			relative: 1.0 0.5; 
+			offset: -1 -1; 
+		}
+
+		image {
+			normal: "insignia.png";
 		}
     	}
 }
@@ -136,15 +166,16 @@ part {
 		color: 255 255 255 255;
 
 		rel1 { 
-			to: "entry_widget"; 
-			relative: 0.0 0.0; 
-			offset: 0 6; 
+			to_x: "splash";
+			to_y: "insignia"; 
+			relative: 0.0 1.0; 
+			offset: 0 20; 
 		}
 
 		rel2 { 
 			to: "entry_widget"; 
-			relative: 1.0 1.0; 
-			offset: 0 0; 
+			relative: 1.0 0.0; 
+			offset: -1 -1; 
 		}
 	}
 }
@@ -426,6 +457,91 @@ part {
 		state: "visible" 0.0;
 		color: 255 255 255 255;
 		visible: 1;
+	}
+}
+
+# ifdef ICON_CLIP
+#  undef ICON_CLIP
+# endif
+#define ICON_CLIP(NAME) \
+part { \
+	name: NAME; \
+	type: RECT; \
+	mouse_events: 0; \
+	clip_to: "splash.clip"; \
+\
+	description { \
+		state: "default" 0.0; \
+		color: 255 255 255 0; \
+		visible: 0; \
+	} \
+\
+	description { \
+		state: "visible" 0.0; \
+		color: 255 255 255 255; \
+		visible: 1; \
+	} \
+}
+
+ICON_CLIP("icon_clip1")
+ICON_CLIP("icon_clip2")
+
+part {
+	name: "e/icons/enlightenment/system";
+	clip_to: "icon_clip1";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 36 36;
+		max: 36 36;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		rel1 { 
+			to: "entry_widget"; 
+			relative: 0.0 0.0; 
+			offset: 8 2; 
+		}
+
+		rel2 { 
+			to: "entry_widget"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image {
+			normal: "preferences-system-session.png";
+		}
+	}
+}
+
+part {
+	name: "e/icons/enlightenment/run";
+	clip_to: "icon_clip2";
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 36 36;
+		max: 36 36;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "e/icons/enlightenment/system"; 
+			relative: 1.0 0.0; 
+			offset: 40 0; 
+		}
+
+		rel2 { 
+			to: "e/icons/enlightenment/system"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image {
+			normal: "applications-system.png";
+		}
 	}
 }
 
