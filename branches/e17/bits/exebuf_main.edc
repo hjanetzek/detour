@@ -278,10 +278,10 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 1 12;
-		max: 1 12;
+		min: 1 14;
+		max: 1 14;
 		fixed: 1 1;
-		align: 0.0 0.9;
+		align: 0.0 1.0;
 		color: 7 7 7 0;
 
 		rel1 { 
@@ -293,7 +293,7 @@ part {
 		rel2 {
 			to: "e.text.label"; 
 			relative: 1.0 1.0; 
-			offset: 0 -1; 
+			offset: 0 -2; 
 		}
 	}
 
