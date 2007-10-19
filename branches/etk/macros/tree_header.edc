@@ -15,7 +15,7 @@ group { \
             } \
             rel2 { \
                relative: 1.0 1.0; \
-               offset: -1 0; \
+               offset: -1 2; \
             } \
             image { \
                normal: image_file; \
