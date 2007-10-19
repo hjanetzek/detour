@@ -21,11 +21,13 @@ spectra {
 images {
 	image: "check0.png" COMP;
 	image: "check1.png" COMP;
-	image: "splash_bg.png" COMP;
 	image: "splash.png" COMP;
 	image: "entry.png" COMP;
 	image: "busy_1.png" COMP;
 	image: "busy_2.png" COMP;
+	image: "insignia.png" COMP;
+	image: "preferences-system-session.png" COMP;
+	image: "applications-system.png" COMP;
 }
 
 collections {
