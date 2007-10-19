@@ -52,7 +52,7 @@ group {
 			}
 
 			image {
-				normal: "tree_route.png";
+				normal: "insignia.png";
 			}
 		}
 	}
