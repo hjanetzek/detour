@@ -33,17 +33,18 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 20 18;
-		max: 20 18;
+		color: 255 255 255 128;
 
 		rel1 { 
+			to: "check";
 			relative: 0.0 0.0; 
-			offset: -1 1; 
+			offset: 0 -1; 
 		}
 
 		rel2 { 
+			to: "check";
 			relative: 1.0 1.0; 
-			offset: -2 -2; 
+			offset: -1 -1; 
 		}
 
 		image.normal: "check_shadow.png";
@@ -84,6 +85,7 @@ part {
 		}
 	}
 
+/*
 	description {
 		state: "semi-clicked" 0.0;
 		inherit: "default" 0.0;
@@ -98,5 +100,6 @@ part {
 		inherit: "default" 0.0;
 		color: 255 255 255 128;
 	}
+*/
 }
 

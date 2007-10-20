@@ -40,27 +40,40 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 20 18;
-		max: 20 18;
-		fixed: 1 1;
-		align: 0.0 0.5;
+		color: 255 255 255 128;
 
 		rel1 { 
+			to: "check";
 			relative: 0.0 0.0; 
-			offset: 2 2; 
+			offset: 0 1; 
 		}
 
 		rel2 { 
-			relative: 0.0 1.0; 
-			offset: 2 -3; 
+			to: "check";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
 		}
 
 		image.normal: "check_shadow.png";
 	} 
 
 	description {
-		state: "default" 0.0;
+		state: "focused" 0.0;
 		inherit: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "check";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "check";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
 		image.normal: "check_focus.png";
 	}
 
