@@ -124,13 +124,6 @@ image: "radio_base.png" COMP;
 image: "radio_focus.png" COMP;
 image: "radio_shadow.png" COMP;
 
-//~ radio big
-image: "radio0_big.png" COMP;
-image: "radio1_big.png" COMP;
-image: "radio_base_big.png" COMP;
-image: "radio_focus_big.png" COMP;
-image: "radio_shadow_big.png" COMP;
-
 //~ preview
 image: "preview_bg_over.png" COMP;
 image: "preview_bg.png" COMP;
