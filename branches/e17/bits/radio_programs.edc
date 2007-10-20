@@ -1,6 +1,6 @@
 
 program {
-	name: "turn_on1";
+	name: "turn_on";
 	signal: "e,state,on";
 	source: "e";
 	action: STATE_SET "active" 0.0;
@@ -8,7 +8,7 @@ program {
 }
 
 program {
-	name: "turn_off1";
+	name: "turn_off";
 	signal: "e,state,off";
 	source: "e";
 	action: STATE_SET "default" 0.0;
@@ -46,7 +46,7 @@ program {
 	source: "e";
 	action: STATE_SET "default" 0.0;
 	target: "radio_base";
-	target: "radio";
+	target: "radio_outline";
 	target: "event";
 	target: "e.text.label";
 	target: "radio_shadow";
@@ -58,7 +58,7 @@ program {
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
 	target: "radio_base";
-	target: "radio";
+	target: "radio_outline";
 	target: "event";
 	target: "e.text.label";
 	target: "radio_shadow";
