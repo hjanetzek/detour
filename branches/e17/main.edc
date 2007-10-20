@@ -6,10 +6,10 @@
 #include "macros/sys.edc"
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.7.0 (europa) for Enlightenment 0.16.999.041 or later
+ * detour version 0.7.1 (europa) for Enlightenment 0.16.999.041 or later
  */
 
-#define version 0.7.0
+#define version 0.7.1
 
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
