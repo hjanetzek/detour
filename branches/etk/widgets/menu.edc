@@ -293,31 +293,113 @@ group {
    name: "etk/menu/menu_item/checkbox";
    parts {
       part {
-         name: "check";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            min: 20 18;
-            max: 20 18;
-            image {
-               normal: "check0.png";
-            }
-         }
-         description {
-            state: "checked" 0.0;
-            inherit: "default" 0.0;
-            image {
-               normal: "check1.png";
-            }
-         }
-      }
+	name: "check_base";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		image {
+			normal: "check_base.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+
+part {
+	name: "check_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 128;
+
+		rel1 { 
+			to: "check";
+			relative: 0.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			to: "check";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image.normal: "check_shadow.png";
+	} 
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "check";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "check";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image.normal: "check_focus.png";
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+    
+part {
+	name: "check";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		image {
+			normal: "check0.png";
+		}
+	}
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "check1.png";
+		}
+	}
+}
    }
    programs {
       program {
          name: "menu_check_activate";
          signal: "etk,state,on";
          source: "etk";
-         action: STATE_SET "checked" 0.0;
+         action: STATE_SET "active" 0.0;
          target: "check";
       }
       program {
@@ -334,43 +416,136 @@ group {
 group {
    name: "etk/menu/menu_item/radiobox";
    parts {
-      part {
-         name: "base";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            min: 20 18;
-            max: 20 18;
-            image {
-               normal: "radio0.png";
-            }
-         }
-      }
-      part {
-         name: "radio";
-         mouse_events: 0;
-         description {
-            state: "default" 0.0;
-            min: 20 18;
-            max: 20 18;
-	    visible: 0;
-            image {
-               normal: "radio1.png";
-            }
-         }
-         description {
-            state: "on" 0.0;
-            inherit: "default" 0.0;
-	    visible: 1;
-         }
-      }
+part {
+	name: "radio_base";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		image {
+			normal: "radio_base.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+
+part {
+	name: "radio_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 128;
+
+		rel1 { 
+			to: "radio";
+			relative: 0.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			to: "radio";
+			relative: 1.0 1.0; 
+			offset: -1 0; 
+		}
+
+		image.normal: "radio_shadow.png";
+	} 
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "radio";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "radio";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image.normal: "radio_focus.png";
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
+part {
+	name: "radio_outline";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+
+		image {
+			normal: "radio0.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+
+part {
+	name: "radio";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+		visible: 0;
+
+		image {
+			normal: "radio1.png";
+		}
+	}
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+}
    }
    programs {
       program {
          name: "menu_radio_activate";
          signal: "etk,state,on";
          source: "etk";
-         action: STATE_SET "on" 0.0;
+         action: STATE_SET "active" 0.0;
          target: "radio";
       }
       program {
