@@ -6,8 +6,6 @@ fonts {
 	font: "fonts/VeraBd.ttf" "Edje-Vera-Bold";
 }    
 
-#define version 0.0.5    
-
 #define ENABLE_TEXT_CLASSES 1
 
 spectra {
