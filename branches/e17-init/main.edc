@@ -25,9 +25,8 @@ images {
 	image: "entry.png" COMP;
 	image: "busy_1.png" COMP;
 	image: "busy_2.png" COMP;
-	image: "insignia.png" COMP;
-	image: "preferences-system-session.png" COMP;
-	image: "applications-system.png" COMP;
+	image: "preferences-desktop.png" COMP;
+	image: "user-desktop.png" COMP;
 }
 
 collections {
