@@ -33,7 +33,7 @@ part {
 
 		image {
 			normal: "tree_over.png";
-			border: 6 6 6 7;
+			border: 1 1 2 2;
 			middle: 0;
 		}
 
