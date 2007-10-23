@@ -41,8 +41,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 313 303;
-		max: 313 303;
+		min: 295 244;
+		max: 295 244;
 		fixed: 1 1;
 		visible: 0;
 
@@ -74,8 +74,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 313 303;
-		max: 313 303;
+		min: 295 244;
+		max: 295 244;
 		fixed: 1 1;
 
 		rel1 { 
@@ -94,7 +94,7 @@ part {
 
 part {
 	name: "insignia";
-	type: IMAGE;
+	type: RECT;
 	mouse_events: 0;
 	clip_to: "splash.clip";
 
@@ -103,6 +103,7 @@ part {
 		min: 112 108;
 		max: 112 108;
 		fixed: 1 1;
+		color: 255 255 255 0;
 
 		rel1 { 
 			to: "splash"; 
@@ -115,29 +116,26 @@ part {
 			relative: 1.0 0.5; 
 			offset: -1 -1; 
 		}
-
-		image {
-			normal: "insignia.png";
-		}
     	}
 }
 
 part {
 	name: "entry_widget";
-	type: IMAGE;
+	type: RECT;
 	mouse_events: 0;
 	clip_to: "splash.clip";
 
 	description {
 		state: "default" 0.0;
-		min: 293 49;
-		max: 293 49;
+		min: 274 32;
+		max: 274 32;
 		fixed: 1 1;
+		color: 255 255 255 0;
 
 		rel1 { 
 			to: "splash.clip"; 
 			relative: 0.0 1.0; 
-			offset: 0 -126; 
+			offset: 2 -90; 
 		}
 
 		rel2 { 
@@ -146,11 +144,13 @@ part {
 			offset: -1 -1; 
 		}
 
+/*
 		image {
 			normal: "entry.png";
 			border: 7 7 8 8;
 		}
-    	}
+*/
+	}
 }
 
 part {	 
@@ -161,10 +161,11 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 279 40;
-		max: 279 40;
+		min: 265 40;
+		max: 265 40;
 		color: 255 255 255 255;
 
+/*
 		rel1 { 
 			to_x: "splash";
 			to_y: "insignia"; 
@@ -175,7 +176,20 @@ part {
 		rel2 { 
 			to: "entry_widget"; 
 			relative: 1.0 0.0; 
-			offset: -1 -1; 
+			offset: -1 -8; 
+		}
+*/
+
+		rel1 { 
+			to: "splash.clip"; 
+			relative: 0.0 1.0; 
+			offset: 0 -80; 
+		}
+
+		rel2 { 
+			to: "splash.clip"; 
+			relative: 1.0 1.0; 
+			offset: 0 -1; 
 		}
 	}
 }
@@ -189,8 +203,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		align: 0.5 0.0;
-		color: 7 7 7 255;
+		align: 0.0 0.0;
+		color: 60 60 60 255;
 		color3: 0 0 0 32;
 
 		rel1 { 
@@ -202,15 +216,15 @@ part {
 		rel2 { 
 			to: "text.area"; 
 			relative: 1.0 0.0; 
-			offset: 0 -10; 
+			offset: 0 -14; 
 		}
 
 		text {
 			text: "Welcome to Enlightenment";
 			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 12;
+			size: 14;
 			min: 1 1;
-			align: 0.5 0.5;
+			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
 				text_class: "";
 			#else
@@ -231,27 +245,27 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		color: 7 7 7 255;
+		color: 60 60 60 255;
 		color3: 0 0 0 32;
 
 		rel1 { 
-			to: "e.text.title"; 
+			to: "e.text.title";
 			relative: 0.0 1.0; 
-			offset: 0 5; 
+			offset: 0 6; 
 		}
 
 		rel2 { 
-			to: "e.text.title"; 
+			to: "e.text.title";
 			relative: 1.0 1.0; 
-			offset: 0 5; 
+			offset: -1 -1; 
 		}
 
 		text {
 			text: "Starting Enlightenment. Please wait.";
-			font: "Edje-Vera";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
 			size: 11;
 			min: 1 1;
-			align: 0.5 0.5;
+			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
 				text_class: "";
 			#else
@@ -271,7 +285,7 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 1.0 1.0;
-		color: 7 7 7 255;
+		color: 60 60 60 255;
 		color3: 0 0 0 32;
 	
 		rel1 { 
@@ -468,7 +482,6 @@ part { \
 	name: NAME; \
 	type: RECT; \
 	mouse_events: 0; \
-	clip_to: "splash.clip"; \
 \
 	description { \
 		state: "default" 0.0; \
@@ -493,25 +506,27 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 36 36;
-		max: 36 36;
+		min: 22 22;
+		max: 22 22;
 		fixed: 1 1;
-		align: 0.0 0.5;
+		aspect: 1.0 1.0;
+		align: 0.0 1.0;
+		aspect_preference: BOTH;
 
 		rel1 { 
-			to: "entry_widget"; 
-			relative: 0.0 0.0; 
-			offset: 8 2; 
+			to: "background"; 
+			relative: 0.0 1.0; 
+			offset: 8 0; 
 		}
 
 		rel2 { 
-			to: "entry_widget"; 
+			to: "background"; 
 			relative: 1.0 1.0; 
-			offset: -1 -1; 
+			offset: -1 -8; 
 		}
 
 		image {
-			normal: "preferences-system-session.png";
+			normal: "preferences-desktop.png";
 		}
 	}
 }
@@ -523,14 +538,14 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 36 36;
-		max: 36 36;
+		min: 22 22;
+		max: 22 22;
 		fixed: 1 1;
 
 		rel1 { 
 			to: "e/icons/enlightenment/system"; 
 			relative: 1.0 0.0; 
-			offset: 40 0; 
+			offset: 30 0; 
 		}
 
 		rel2 { 
@@ -540,7 +555,7 @@ part {
 		}
 
 		image {
-			normal: "applications-system.png";
+			normal: "user-desktop.png";
 		}
 	}
 }
