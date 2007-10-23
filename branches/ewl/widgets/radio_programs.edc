@@ -20,6 +20,8 @@ program {
 	signal: "disabled";
 	source: "EWL";
 	action: STATE_SET "disabled" 0.0;
+	target: "radio_base";
+	target: "radio_shadow";
 	target: "outline";
 }
 
@@ -28,6 +30,8 @@ program {
 	signal: "enabled";
 	source: "EWL";
 	action: STATE_SET "default" 0.0;
+	target: "radio_base";
+	target: "radio_shadow";
 	target: "outline";
 }
 

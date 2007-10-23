@@ -1,5 +1,58 @@
 
 part {
+	name: "slider_image_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 128;
+
+		rel1 { 
+			to: "drag"; 
+			offset: 1 -1; 
+		}
+
+		rel2 { 
+			to: "drag"; 
+			offset: -2 -1; 
+		}
+
+		image {
+			normal: "slider_h_shadow.png";
+			border: 7 8 7 7;
+		}
+	}
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "drag"; 
+			offset: 0 -1; 
+		}
+
+		rel2 { 
+			to: "drag"; 
+			offset: -1 -1; 
+		}
+
+		image {
+			normal: "slider_h_focus.png";
+			border: 7 8 7 7;
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
+part {
 	name: "drag";
 
 	description {
@@ -16,7 +69,7 @@ part {
 		}
 
 		image {
-			normal: "slider_h_btn_up.png";
+			normal: "slider_h_btn.png";
 		}
 
 		fill {
@@ -27,10 +80,6 @@ part {
 	description {
 		state: "down" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "slider_h_btn_down.png";
-		}
 	}
 
 	description {
@@ -38,7 +87,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "slider_h_btn_disabled.png";
+			normal: "slider_h_disabled.png";
 		}
 	}
 }
