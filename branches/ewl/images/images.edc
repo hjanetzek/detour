@@ -14,10 +14,17 @@ image: "button_shadow_overlay.png" COMP;
 //~ radio
 image: "radio0.png" COMP;
 image: "radio1.png" COMP;
+image: "radio_base.png" COMP;
+image: "radio_focus.png" COMP;
+image: "radio_shadow.png" COMP;
 
 //~ check
 image: "check0.png" COMP;
 image: "check1.png" COMP;
+image: "check-.png" COMP;
+image: "check_base.png" COMP;
+image: "check_focus.png" COMP;
+image: "check_shadow.png" COMP;
 
 //~ frame
 image: "frame_outline.png" COMP;
@@ -60,9 +67,11 @@ image: "slider_h_right_disabled.png" COMP;
 image: "slider_h_trough.png" COMP;
 image: "slider_h_trough_left.png" COMP;
 image: "slider_h_trough_right.png" COMP;
-image: "slider_h_btn_up.png" COMP;
-image: "slider_h_btn_down.png" COMP;
+image: "slider_h_btn.png" COMP;
 image: "slider_h_btn_disabled.png" COMP;
+image: "slider_h_focus.png" COMP;
+image: "slider_h_shadow.png" COMP;
+
 
 //~ slider v
 image: "slider_v_disabled.png" COMP;
@@ -71,9 +80,10 @@ image: "slider_v_top_disabled.png" COMP;
 image: "slider_v_trough.png" COMP;
 image: "slider_v_trough_up.png" COMP;
 image: "slider_v_trough_down.png" COMP;
-image: "slider_v_btn_up.png" COMP;
-image: "slider_v_btn_down.png" COMP;
+image: "slider_v_btn.png" COMP;
 image: "slider_v_btn_disabled.png" COMP;
+image: "slider_vert_focus.png" COMP;
+image: "slider_vert_shadow.png" COMP;
 
 //~ menu
 image: "menu_item_select.png" COMP;

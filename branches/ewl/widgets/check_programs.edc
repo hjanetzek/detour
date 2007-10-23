@@ -20,6 +20,8 @@ program {
 	signal: "disabled";
 	source: "EWL";
 	action: STATE_SET "disabled" 0.0;
+	target: "check_base";
+	target: "check_shadow";
 	target: "check";
 }
 
@@ -28,6 +30,8 @@ program {
 	signal: "enabled";
 	source: "EWL";
 	action: STATE_SET "default" 0.0;
+	target: "check_base";
+	target: "check_shadow";
 	target: "check";
 }
 
