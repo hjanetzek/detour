@@ -136,15 +136,6 @@ image: "shelf_default_bg_v2.png" COMP;
 image: "shelf_default_r_bg_v.png" COMP;
 image: "shelf_default_r_bg_v2.png" COMP;
 image: "shelf_default_inset_bg.png" COMP;
-image: "shelf_alternate_bg.png" COMP;
-image: "shelf_alternate_over.png" COMP;
-image: "shelf_alternate_bg_t.png" COMP;
-image: "shelf_alternate_bg_l.png" COMP;
-image: "shelf_alternate_bg_r.png" COMP;
-image: "shelf_alternate_over_t.png" COMP;
-image: "shelf_alternate_over_l.png" COMP;
-image: "shelf_alternate_over_r.png" COMP;
-image: "shelf_alternate_inset.png" COMP;
 image: "shelf_invisible_inset_bg.png" COMP;
 
 //~ scrollbar
