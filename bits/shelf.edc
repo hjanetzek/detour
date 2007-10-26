@@ -38,7 +38,6 @@ group {
 group {
 	name: "e/shelf/alternate/base";
 
-#if ENABLE_DETROIT_SHELF_STYLE == 0
 	data {
 		// item: "shaped" "0";
 		item: "hidden_state_size" "9";
@@ -46,46 +45,20 @@ group {
 	}
 
 	parts {
-		#include "shelf_alternate_style2.edc"
+		#include "shelf_alternate_base.edc"
 	}
 
 	programs {
 		#include "shelf_base_programs.edc"
 	}
-#else
-#if ENABLE_DETROIT_SHELF_STYLE == 1
-	data {
-		item: "shaped" "1";
-		item: "hidden_state_size" "9";
-		// item: "instant_delay" "60.0";
-	}
-
-	parts {
-		#include "shelf_alternate_style.edc"
-	}
-
-	programs {
-		#include "shelf_alternate_programs.edc"
-	}
-#endif
-#endif
-
 }
 
 group {
 	name: "e/shelf/alternate/inset";
 
-#if ENABLE_DETROIT_SHELF_STYLE == 0
 	parts {
 		#include "shelf_default_inset.edc"
 	}
-#else
-#if ENABLE_DETROIT_SHELF_STYLE == 1
-	parts {
-		#include "shelf_alternate_inset.edc"
-	}
-#endif
-#endif
 }
 
 group {
@@ -95,8 +68,6 @@ group {
 		#include "shelf_default_plain.edc"
 	}
 }
-
-/**/
 
 group {
 	name: "e/shelf/invisible/base";
@@ -128,3 +99,4 @@ group {
 		#include "shelf_invisible_plain.edc"
 	}
 }
+
