@@ -19,9 +19,7 @@ image: "slider_1.png" COMP;
 image: "slider_2.png" COMP;
 image: "slider_vert1.png" COMP;
 image: "slider_vert2.png" COMP;
-image: "slider_h_focus.png" COMP;
 image: "slider_h_shadow.png" COMP;
-image: "slider_vert_focus.png" COMP;
 image: "slider_vert_shadow.png" COMP;
 
 //~ runner
