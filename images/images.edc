@@ -74,6 +74,7 @@ image: "tr-dialog.png" COMP;
 image: "bl-dialog.png" COMP;
 image: "bb-dialog.png" COMP;
 image: "br-dialog.png" COMP;
+image: "bb-dialog2.png" COMP;
 
 //~ border container
 image: "bl-shaped.png" COMP;
