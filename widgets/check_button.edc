@@ -261,9 +261,6 @@ group {
          description {
             state: "focused" 0.0;
             inherit: "default" 0.0;
-            text {
-               style: "Check Focused";
-            }
          }
          description {
             state: "disabled" 0.0;
