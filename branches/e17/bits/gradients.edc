@@ -11,6 +11,12 @@ spectrum {
 	color: 139 157 180 255 1; 
 }
 
+spectrum { 
+	name: "linear_gradient"; 
+	color: 139 157 180 128 1; 
+	color: 239 239 239 255 1;
+}
+
 spectrum {
 	name: "black_to_trans";
 	color: 0 0 0 255 1;

@@ -7,25 +7,5 @@ group {
 	}
 
 	programs {
-		show_version();
-/*
-		program {
-			name: "go_pulse";
-			signal: "show";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			target: "e_pulsate"; 
-			after: "go_pulse2"; in: 5.0 0.0;
-		}
-
-		program {
-			name: "go_pulse2";
-			signal: "";
-			source: "";
-			action: STATE_SET "pulsate" 0.0;
-			transition: DECELERATE 0.75;
-			target: "e_pulsate";  
-		}
-*/
 	}
 }
