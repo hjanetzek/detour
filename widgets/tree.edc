@@ -368,6 +368,7 @@ group {
       }
    }
    programs {
+/* tree expander needs focus too */
       program {
          name: "expander_fold";
          signal: "etk,action,fold";
