@@ -1,4 +1,6 @@
 images {
+
+//~ button
    image: "button.png" COMP;
    image: "button_clicked.png" COMP;
    image: "button_disabled.png" COMP;
@@ -8,11 +10,15 @@ images {
    image: "button_on_disabled.png" COMP;
    image: "button_shadow_overlay.png" COMP;
    image: "button_shadow.png" COMP;
+
+//~ check
    image: "check_base.png" COMP;
    image: "check_shadow.png" COMP;
    image: "check_focus.png" COMP;
    image: "check0.png" COMP;
    image: "check1.png" COMP;
+
+//~ combobox
    image: "combobox_button.png" COMP;
    image: "combobox_button2.png" COMP;
    image: "combobox_button_clicked.png" COMP;
@@ -22,42 +28,66 @@ images {
    image: "combobox_focus.png" COMP;
    image: "combo_arrow.png" COMP;
    image: "combo_arrow2.png" COMP;
+
+//~ color dialog
    image: "cp_box.png" COMP;
    image: "cp_slider_drag.png" COMP;
    image: "cp_slider_trough.png" COMP;
    image: "cp_slider_trough_left.png" COMP;
    image: "cp_slider_trough_right.png" COMP;
+
+//~ dialog 
    image: "dialog_bg.png" COMP;
    image: "dialog_separator.png" COMP;
+
+//~ drag
    image: "drag_default.png" COMP;
+
+//~ entry widget
    image: "entry.png" COMP;
    image: "entry_focus.png" COMP;
+
+//~ frame
    image: "frame_outline.png" COMP;
+
+//~ iconbox
    image: "iconbox_bg.png" COMP;
    image: "iconbox_focus.png" COMP;
    image: "iconbox_label_bg.png" COMP;
    image: "iconbox_over.png" COMP;
    image: "iconbox_rubberband.png" COMP;
+
+//~ menu and context
    image: "menu_bg.png" COMP;
    image: "menu_item_arrow_dark.png" COMP;
    image: "menu_item_arrow_light.png" COMP;
    image: "menu_item_select.png" COMP;
    image: "menu_separator.png" COMP;
+
+//~ notebook
    image: "notebook_tab.png" COMP;
    image: "notebook_frame.png" COMP;
    image: "notebook_tab_hint.png" COMP;
    image: "notebook_tab_shadow.png" COMP;
+
+//~ panned
    image: "paned_h_handle.png" COMP;
    image: "paned_v_handle.png" COMP;
+
+//~ progress bar
    image: "progress_bar_fill_0.png" COMP;
    image: "progress_bar_left.png" COMP;
    image: "progress_bar_right.png" COMP;
    image: "progress_trough.png" COMP;
+
+//~ radio widget
    image: "radio0.png" COMP;
    image: "radio1.png" COMP;
    image: "radio_base.png" COMP;
    image: "radio_focus.png" COMP;
    image: "radio_shadow.png" COMP;
+
+//~ scrollbar
    image: "scrollbar_h_arrow_left.png" COMP;
    image: "scrollbar_h_arrow_right.png" COMP;
    image: "scrollbar_h_bar.png" COMP;
@@ -72,8 +102,12 @@ images {
    image: "scrollbar_v_trough.png" COMP;
    image: "scrollbar_v_trough_down.png" COMP;
    image: "scrollbar_v_trough_up.png" COMP;
+
+//~ separator
    image: "separator_h.png" COMP;
    image: "separator_v.png" COMP;
+
+//~ slider horiz
    image: "slider_h_focus.png" COMP;
    image: "slider_h_shadow.png" COMP;
    image: "slider_label_bg.png" COMP;
@@ -85,6 +119,8 @@ images {
    image: "slider_h_trough.png" COMP;
    image: "slider_h_trough_left.png" COMP;
    image: "slider_h_trough_right.png" COMP;
+
+//~ slider vert
    image: "slider_v_bot_disabled.png" COMP;
    image: "slider_v_btn.png" COMP;
    image: "slider_v_btn_disabled.png" COMP;
@@ -95,13 +131,21 @@ images {
    image: "slider_v_trough_down.png" COMP;
    image: "slider_vert_shadow.png" COMP;
    image: "slider_vert_focus.png" COMP;
+
+//~ spinner
    image: "spinner_base.png" COMP;
    image: "spinner_up.png" COMP;
    image: "spinner_down.png" COMP;
+
+//~ status bar
    image: "status_bar.png" COMP;
    image: "status_resize.png" COMP;
+
+//~ tree widget
    image: "tree_arrow1.png" COMP;
    image: "tree_arrow2.png" COMP;
+   image: "tree_arrow_expand1.png" COMP;
+   image: "tree_arrow_expand2.png" COMP;
    image: "tree_bg.png" COMP;
    image: "tree_focus.png" COMP;
    image: "tree_header_first2.png" COMP;

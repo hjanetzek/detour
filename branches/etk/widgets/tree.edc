@@ -359,7 +359,7 @@ group {
             min: 16 13;
             max: 16 13;
             image {
-               normal: "tree_arrow2.png";
+               normal: "tree_arrow_expand1.png";
             }
             fill {
                smooth: 0;
