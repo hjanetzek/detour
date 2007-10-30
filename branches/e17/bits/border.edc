@@ -32,6 +32,44 @@ group {
 }
 
 group {
+	name: "e/widgets/border/dialog_wm/border";
+
+	data {
+		item: "shaped" "0";
+	}
+
+	parts {
+
+/* disabling this border style for now
+ */
+
+		//~ #include "border_blend.edc"
+
+		#include "border_noresizefull_dialog.edc"
+	}
+
+	programs {
+		#include "border_default_programs.edc"
+	}
+}
+
+group {
+	name: "e/widgets/border/dialog_app/border";
+
+	data {
+		item: "shaped" "0";
+	}
+
+	parts {
+		#include "border_app.edc"
+	}
+
+	programs {
+		#include "border_default_programs.edc"
+	}
+}
+
+group {
 	name: "e/widgets/border/dialog/border";
 	alias: "e/widgets/border/urgent/border";
 	alias: "e/widgets/border/noresize/border";
@@ -115,44 +153,6 @@ group {
 
 	parts {
 		#include "border_terminal.edc"
-	}
-
-	programs {
-		#include "border_default_programs.edc"
-	}
-}
-
-group {
-	name: "e/widgets/border/dialog_container/border";
-
-	data {
-		item: "shaped" "0";
-	}
-
-	parts {
-
-/* disabling this border style for now
- */
-
-		//~ #include "border_blend.edc"
-
-		#include "border_noresizefull_dialog.edc"
-	}
-
-	programs {
-		#include "border_default_programs.edc"
-	}
-}
-
-group {
-	name: "e/widgets/border/dialog_app/border";
-
-	data {
-		item: "shaped" "0";
-	}
-
-	parts {
-		#include "border_app.edc"
 	}
 
 	programs {
