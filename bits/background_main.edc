@@ -30,6 +30,10 @@ part {
 		image {
 			normal: "wallpaper.png";
 		}
+
+		fill {
+			smooth: 0;
+		}
 	}
 }
 part {
@@ -56,6 +60,10 @@ part {
 
 		image {
 			normal: "shadow.png";
+		}
+
+		fill {
+			smooth: 0;
 		}
     	}
 }
