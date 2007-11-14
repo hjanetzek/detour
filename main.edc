@@ -9,13 +9,15 @@
  * detour version 0.7.0+2 (europa) for Enlightenment 0.16.999.041 or later
  */
 
+/* @@ TODO slider/h/v */
+
 #define version 0.7.0+2
 
 #define USE_ANIMATED_CURSOR 1
 #define USE_TANGO_ICONS 1
 #define VISIBLE_CONTEXT_MENU_TITLE 0
 #define FADE_IBAR_ICONS 0
-#define TRUNCATE_DESKTOP_ICON_FILENAME 0
+#define TRUNCATE_DESKTOP_ICON_FILENAME 1
 #define TRUNCATE_EFM_ICON_FILENAME 1
 #define BACKGROUND_TYPE 0
 #define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 

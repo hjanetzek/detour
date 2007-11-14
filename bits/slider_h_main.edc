@@ -436,10 +436,6 @@ part {
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "slider_2.png";
-		}
 	}
 }
 
