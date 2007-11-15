@@ -75,8 +75,7 @@ part {
 
 		description {
 			state: "default" 0.0;
-			//color: 139 157 180 255;
-			color: 76 76 76 255;
+			color: 139 157 180 255;
 		}
 	}
 #endif

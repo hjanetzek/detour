@@ -1,10 +1,12 @@
 
 part {
 	name: "bg";
-	mouse_events:  0;
+	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
+		min: 36 32;
 
 		rel1 { 
 			relative: 0.0 0.0; 
@@ -28,26 +30,76 @@ part {
 }
 
 part {
-	name: "e.text.label";
-	type: TEXTBLOCK;
+	name: "icon";
+	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
+		min: 24 24;
+		max: 24 24;
+		fixed: 1 1;
 
 		rel1 { 
+			to: "bg";
 			relative: 0.0 0.0; 
-			offset: 5 7.5; 
+			offset: 0 0; 
 		}
 
 		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -5 -7.5; 
+			to: "bg";
+			relative: 0.35 1.0; 
+			offset: -1 -1; 
 		}
 
-		text {
-			style: "move";
-			text: "X Y";
-			min: 1 1;
+		image { 
+			normal: "dialog-information.png"; 
+
+		}
+
+		fill {
+			smooth: 0;
 		}
 	}
 }
+
+part {
+	name: "e.text.label";
+	type: TEXT;
+	effect: SHADOW;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 60 60 60 255;
+		color3: 170 168 169 128;
+
+		rel1 { 
+			to: "icon";
+			relative: 1.0 0.0; 
+			offset: 0 4; 
+		}
+
+		rel2 { 
+			to: "bg";
+			relative: 1.0 1.0; 
+			offset: -10 -5; 
+		}
+
+		text {
+			text: "X Y";
+			font: "Sans:style=Bold,Edje-Vera-Bold";
+			size: 11;
+			min: 1 1;
+			max: 1 1;
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "move_text";
+			#endif
+			#endif
+		}
+	}
+}
+
