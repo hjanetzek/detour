@@ -100,6 +100,7 @@ image: "applications-office.png" COMP;
 image: "gnome-devel.png" COMP;
 image: "image-loading.png" COMP;
 image: "stock_select-all.png" COMP;
+image: "dialog-information.png" COMP;
 
 //~ e
 image: "e17_icon_e_0.png" COMP;
