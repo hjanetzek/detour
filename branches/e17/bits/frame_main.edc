@@ -14,7 +14,7 @@ part {
 		image.border: 9 8 8 8;
 
 		fill {
-			smooth: 1;
+			smooth: 0;
 		}
 	}
 }
