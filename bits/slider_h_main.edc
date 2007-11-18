@@ -60,7 +60,7 @@ part {
 		}
 	
 		fill {
-			smooth: 1;
+			smooth: 0;
 		}
 	}
 
