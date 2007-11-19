@@ -14,17 +14,35 @@ program {
 }
 
 program {
-	name: "grid.toggle"; 
-	signal: "mouse,down,1"; 
+	name: "click";
+	signal: "mouse,down,1";
 	source: "grid.check.button";
 	action: SIGNAL_EMIT "elicit,grid,toggle" "";
+}
+
+program {
+	name: "focus_in";
+	signal: "mouse,in";
+	source: "grid.check.button";
+	script {
+		set_state(PART:"check_shadow", "focused", 0.0);
+	}
+}
+
+program {
+	name: "focus_out";
+	signal: "mouse,out";
+	source: "grid.check.button";
+	script {
+		set_state(PART:"check_shadow", "default", 0.0);
+	}
 }
 
 program {
 	name: "button.check"; 
 	signal: "check,button"; 
 	source: "";
-	action: STATE_SET "enabled" 0.0;
+	action: STATE_SET "active" 0.0;
 	target: "grid.check.button";
 }
 
@@ -35,3 +53,4 @@ program {
 	action: STATE_SET "default" 0.0;
 	target: "grid.check.button";
 }
+

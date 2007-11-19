@@ -39,3 +39,4 @@ program {
 	target: "shot.overlay";
 	after: "set.shot.focus";
 }
+
