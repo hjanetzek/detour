@@ -32,6 +32,7 @@ part {
 	}
 }
 
+/*
 part {
 	name: "swatch.wipe.clip.container";
 	type: RECT;
@@ -88,6 +89,7 @@ part {
 		}
 	}
 }
+*/
 
 part {
 	name: "swatch.overlay";
@@ -142,3 +144,4 @@ part {
 		color: 255 255 255 0;
 	}
 }
+
