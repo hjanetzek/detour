@@ -12,6 +12,7 @@ CONTROLS("export2", "shot.overlay", "elicit,shot,edit")
 CONTROLS("save.palette1", "picker", "elicit,swatch,save")
 CONTROLS("save.palette2", "swatch.overlay", "elicit,swatch,save")
 
+/*
 program {
 	name: "shot.window.clicked"; 
 	signal: "mouse,clicked,3"; 
@@ -49,3 +50,4 @@ program {
 	transition: ACCELERATE 0.5;
 	target: "swatch.wipe.clip";
 }
+*/
