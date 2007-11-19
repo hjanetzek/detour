@@ -294,7 +294,7 @@ part {
 			#else
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 1
 				min: 0 1;
-				elipsis: 0.0;
+				elipsis: 1.0;
 			#endif
 			#endif
 			align: 0.5 1.0; 
