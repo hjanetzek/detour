@@ -1,7 +1,7 @@
 
 group {
 	name: "ewl/entry";
-	min: 21 21;
+	min: 18 18;
 	//~ max: 9999 21;
 /*
  * The entry widget is re-used in other areas like the
@@ -13,8 +13,9 @@ group {
 
 
 	data {
-		item: "inset/top" 6;
+		item: "inset" 4;
 		item: "inset/left" 6;
+		item: "inset/top" 6;
 	}
 
 	parts {
