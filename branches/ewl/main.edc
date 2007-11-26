@@ -29,11 +29,9 @@ data {
 	item: "/button/group" "ewl/button";
 	
 	/* radio widget */
-	item: "/radiobutton/group" "ewl/button/other";
 	item: "/radio/group" "ewl/button/radio/item";
 
 	/* check widget */
-	item: "/checkbutton/group" "ewl/button/other";
 	item: "/check/group" "ewl/button/check/item";
 
 	/* text */

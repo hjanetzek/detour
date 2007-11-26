@@ -16,6 +16,22 @@ program {
 }
 
 program {
+	name: "focus,in";
+	signal: "focus,in";
+	source: "*";
+	action: STATE_SET "focused" 0.0;
+	target: "radio_shadow";
+}
+
+program {
+	name: "focus,out";
+	signal: "focus,out";
+	source: "*";
+	action: STATE_SET "default" 0.0;
+	target: "radio_shadow";
+}
+
+program {
 	name: "diable";
 	signal: "disabled";
 	source: "EWL";
