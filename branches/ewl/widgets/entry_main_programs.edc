@@ -21,7 +21,7 @@ program {
 	source: "*";
 	action: STATE_SET "focused" 0.0;
 	transition: DECELERATE 0.5;
-	target: "focus_clip";
+	target: "entry_focus";
 }
 
 program {
@@ -30,6 +30,6 @@ program {
 	source: "*";
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
-	target: "focus_clip";
+	target: "entry_focus";
 }
 
