@@ -4,7 +4,7 @@ CC		= edje_cc
 SRC		= main.edc
 OUT		= detour-ewl.edj
 COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
-PATH_INSTALL    = $(HOME)/.e/ewl/themes
+PATH_INSTALL    = $(HOME)/.ewl/themes
 
 EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/
 
