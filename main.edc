@@ -124,7 +124,7 @@ data {
 	item: "/tooltip/voffset" 10;
 	item: "/tooltip/hoffset" 10;
 	item: "/tooltip/delay" "0.5";
-	item: "/tooltip/tolerance" "3";
+	item: "/tooltip/tolerance" "99999";
 
 	item: "/context_menu/voffset" 1;
 	item: "/context_menu/hoffset" 1;
@@ -184,7 +184,7 @@ data {
 	item: "/grabber/horizontal/group" "ewl/paned/vseperator";
 
 	/* progressbar */
-	//item: "/progressbar/group" "ewl/progressbar";
+	item: "/progressbar/group" "ewl/progressbar";
 	//item: "/progressbar_bar/group" "ewl/progressbar/bar";
 }
 
@@ -211,7 +211,7 @@ collections {
 #include "widgets/paned.edc"
 #include "widgets/statusbar.edc"
 #include "widgets/combo.edc"
-//~ #include "widgets/progress.edc"
+#include "widgets/progressbar.edc"
 #include "widgets/shadow.edc"
 //~ #include "widgets/toolbar.edc"
 //~ #include "widgets/cursor.edc"
