@@ -185,7 +185,7 @@ data {
 
 	/* progressbar */
 	item: "/progressbar/group" "ewl/progressbar";
-	//item: "/progressbar_bar/group" "ewl/progressbar/bar";
+	item: "/progressbar_bar/group" "ewl/progressbar/bar";
 }
 
 collections {
