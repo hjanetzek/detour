@@ -255,7 +255,7 @@ part {
 		rel1 {
 			to: "button_image";
 			relative: 0.0 0.0;
-			offset: 8 6;
+			offset: 10 6;
 		}
 
 		rel2 {
@@ -281,7 +281,7 @@ part {
 			to_x: "e.swallow.icon";
 			to_y: "button_image";
 			relative: 1.0 0.0;
-			offset: 0 6;
+			offset: 4 6;
 		}
 
 		rel2 {
@@ -292,8 +292,8 @@ part {
 
 		text {
 			text: "";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			min: 1 1;
 			align: 0.5 0.5;
 			#if ENABLE_TEXT_CLASSES == 0

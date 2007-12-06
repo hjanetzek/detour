@@ -286,8 +286,8 @@ part {
 
 		text {
 			text: "No Title";
-			size: 10;
-			font: "Sans:style=Bold,Edje-Vera-Bold";
+			size: 11;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
 				min: 1 1;
 				elipsis: 0.0;

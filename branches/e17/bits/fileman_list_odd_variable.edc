@@ -247,8 +247,8 @@ part {
 
 		text {
 			text: "Item Label";
-			font: "Edje-Vera";
-			size: 10;
+			font: "DejaVuSans";
+			size: 11;
 			// min: 1 1;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0

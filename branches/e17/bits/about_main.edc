@@ -228,7 +228,7 @@ part {
 
 		text {
 			text: "Enlightenment";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 16;
 			min: 1 1;
 			align: 0.5 0.5;
@@ -268,7 +268,7 @@ part {
 
 		text {
 			text: "0.17.0.000";
-			font: "Edje-Vera";
+			font: "DejaVuSans";
 			size: 12;
 			min: 1 1;
 			align: 0.5 0.5;
@@ -620,8 +620,8 @@ part {
 
 		text {
 			text: "Exit";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			min: 1 1;
 			align: 0.5 0.55;
 			#if ENABLE_TEXT_CLASSES == 0

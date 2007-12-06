@@ -40,8 +40,8 @@ part {
 
 		text {
 			text: "";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			min: 0 0;
 			align: 0.5 0.5;
 			elipsis: 1.0;
@@ -108,8 +108,8 @@ part {
 
 		text {
 			text: "";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			min:  1 1;
 			align: 1.0 1.0;
 			#if ENABLE_TEXT_CLASSES == 0

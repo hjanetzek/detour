@@ -98,7 +98,7 @@ part {
 
 		text {
 			text: "99^C";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 9;
 			min: 1 1;
 			align: 0.0 0.0;

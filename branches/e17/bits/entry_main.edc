@@ -5,6 +5,8 @@ part {
 
 	description {
 		state: "default" 0.0;
+		min: 22 24;
+		max: 9999 24;
 
 		image {
 			normal: "entry.png";
@@ -37,6 +39,8 @@ part {
 
 	description {
 		state: "default" 0.0;
+		min: 22 24;
+		max: 9999 24;
 		image.normal: "entry_focus.png";
 		image.border: 7 7 8 7;
 	}

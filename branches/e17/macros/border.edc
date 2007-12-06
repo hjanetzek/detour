@@ -229,8 +229,8 @@ part { \
 \
 		text { \
 			text: ""; \
-			font: "Sans:style=Bold,Edje-Vera-Bold"; \
-			size: 10; \
+			font: "Sans:style=Bold,DejaVuSans-Bold"; \
+			size: 11; \
 			min: 0 1; \
 			align: 0.0 0.5; \
 			text_class: "title_bar"; \
