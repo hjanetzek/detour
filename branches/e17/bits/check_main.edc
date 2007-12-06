@@ -149,7 +149,7 @@ part {
 		rel1 { 
 			to_x: "check"; 
 			relative: 1.0 0.0; 
-			offset: 5 3; 
+			offset: 5 1; 
 		}
 
 		rel2 { 
@@ -159,8 +159,8 @@ part {
 
 		text {
 			text: "Check Button";
-			font: "Edje-Vera";
-			size: 10;
+			font: "DejaVuSans";
+			size: 11;
 			min: 1 1;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0

@@ -132,8 +132,8 @@ part {
 
 		text {
 			text: "Please enter your unlock password";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			align: 0.0 0.5;
 			min: 1 1;
 			// text_class: "desklock_title";	
@@ -189,7 +189,7 @@ part {
 
 		text {
 			text: "****";
-			font: "Edje-Vera";
+			font: "DejaVuSans";
 			size: 11;
 			align: 0.0 0.5;
 			min: 1 1;

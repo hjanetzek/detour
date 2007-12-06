@@ -21,8 +21,8 @@ part {
 
 		text {
 			text: "Item Label";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			min: 1 1;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0

@@ -23,8 +23,8 @@ group {
 
 				text {
 					text: "Font Preview";
-					font: "Edje-Vera";
-					size: 10;
+					font: "DejaVuSans";
+					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
 					#if ENABLE_TEXT_CLASSES == 0

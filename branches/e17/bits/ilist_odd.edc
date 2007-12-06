@@ -10,7 +10,7 @@ part {
 
 	description {
 		state: "active" 0.0;
-		color: 166 191 218 255;
+		color: 138 171 225 255;
 	}
 }
 
@@ -56,7 +56,7 @@ part {
 
 		text {
 			text: "ilist item";
-			font: "Edje-Vera";
+			font: "DejaVuSans";
 			size: 11;
 			min: 1 1;
 			align: 0.0 0.5;
