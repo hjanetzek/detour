@@ -71,12 +71,15 @@ part {
 #if BACKGROUND_TYPE == 1
 	part { 
 		name: "background_image";
-		type: RECT;
+		type: GRADIENT;
+	
+		description { 
+			state: "default" 0.0; 
 
-		description {
-			state: "default" 0.0;
-			color: 139 157 180 255;
-		}
+			gradient {
+				spectrum: "developer";
+			}
+    		}
 	}
 #endif
 #endif
