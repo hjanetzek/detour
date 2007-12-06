@@ -1,0 +1,12 @@
+
+group {
+	name: "e/toolbar/default/base";
+
+	parts {
+		#include "toolbar_main.edc"
+	}
+
+	programs {
+		#include "toolbar_programs.edc"
+	}
+}

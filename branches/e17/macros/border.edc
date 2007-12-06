@@ -230,7 +230,7 @@ part { \
 		text { \
 			text: ""; \
 			font: "Sans:style=Bold,Edje-Vera-Bold"; \
-			size: 11; \
+			size: 10; \
 			min: 0 1; \
 			align: 0.0 0.5; \
 			text_class: "title_bar"; \

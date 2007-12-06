@@ -1,0 +1,118 @@
+
+part {
+	name: "base";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+		visible: 0;
+	}
+}
+
+part {
+	name: "bd";
+	mouse_events: 0;
+	type: RECT;
+
+	description {
+		state: "default" 0.0;
+		color: 104 108 111 229;
+	}
+}
+
+part {
+	name: "bg";
+	mouse_events: 0;
+	type: IMAGE;
+
+	description {
+		state: "default" 0.0;
+		max: 99999 48;
+		align: 0.5 0.0;
+
+		rel1 {
+			offset: 0 0;
+			to: "base";
+		}
+
+		rel2 {
+			offset: -1 -2;
+			to: "base";
+		}
+
+		image {
+			normal: "menu_bg.png";
+			border: 2 2 2 2;
+		}
+	}
+
+	description {
+		state: "bottom" 0.0;
+		inherit: "default" 0.0;
+
+		rel1 {
+			to: "base";
+			offset: 0 1;
+		}
+
+		rel2 {
+			to: "base";
+			offset: -1 -1;
+		}
+	}
+
+	description {
+		state: "left" 0.0; // unused
+		inherit: "default" 0.0;
+
+		fill {
+			origin.offset: -6 -16;
+			size.offset: 6 16;
+		}
+	}
+
+	description {
+		state: "right" 0.0; // unused
+		inherit: "default" 0.0;
+
+		fill {
+			origin.offset: 0 0;
+			size.offset: 6 0;
+		}
+	}
+}
+
+part {
+	name: "e.swallow.content";
+	type: SWALLOW;
+
+	description {
+		state: "default" 0.0;
+		rel1.offset: 2 2;
+		rel2.offset: -3 -3;
+	}
+
+	description {
+		state: "bottom" 0.0;
+		inherit: "default" 0.0;
+		rel1.offset: 2 2;
+		rel2.offset: -3 -3;
+	}
+
+	description {
+		state: "left" 0.0; // unused
+		inherit: "default" 0.0;
+		rel1.offset: 2 2;
+		rel2.offset: -3 -3;
+	}
+
+	description {
+		state: "right" 0.0; // unused
+		inherit: "default" 0.0;
+		rel1.offset: 2 2;
+		rel2.offset: -3 -3;
+	}
+}
+
