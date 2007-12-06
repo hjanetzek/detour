@@ -95,8 +95,8 @@ part {
 
 		text {
 			text: "Item Label";
-			font: "Edje-Vera";
-			size: 10;
+			font: "DejaVuSans";
+			size: 11;
 			min: 0 1;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
@@ -116,8 +116,8 @@ part {
 
 		text {
 			text: "Item Label";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
-			size: 10;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			min: 0 0;
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASSES == 0

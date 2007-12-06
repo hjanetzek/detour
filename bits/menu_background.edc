@@ -96,7 +96,7 @@ part {
 
 		text {
 			text: "Menu Title";
-			font: "Sans:style=Bold,Edje-Vera-Bold";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 0 0;
 			align: 0.5 0.0;

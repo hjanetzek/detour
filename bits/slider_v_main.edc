@@ -80,8 +80,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 27 22;
-		max: 9999 22;
+		min: 27 24;
+		max: 9999 24;
 		visible: 0;
 
 		image {
@@ -92,8 +92,8 @@ part {
 
 	description {
 		state: "active" 0.0;
-		min: 27 22;
-		max: 9999 22;
+		min: 27 24;
+		max: 9999 24;
 		visible: 1;
 
 		rel1 { 
@@ -125,8 +125,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 27 22;
-		max: 9999 22;
+		min: 27 24;
+		max: 9999 24;
 		visible: 0;
 
 		rel1 { 
@@ -182,8 +182,8 @@ part {
 
 		text {
 			text: "00.00";
-			font: "Edje-Vera";
-			size: 10;
+			font: "DejaVuSans";
+			size: 11;
 			min: 1 1;
 			align: 0.5 0.5;
 			#if ENABLE_TEXT_CLASSES == 0

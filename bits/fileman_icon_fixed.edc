@@ -272,7 +272,7 @@ part {
 		text {
 			text: "No Title";
 			size: 11;
-			font: "Edje-Vera";
+			font: "DejaVuSans";
 			min: 0 1;
 			align: 0.5 1.0;
 			elipsis: 0.0;
