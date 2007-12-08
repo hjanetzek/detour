@@ -133,7 +133,7 @@ part {
 		text {
 			text: "Please enter your unlock password";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 11;
+			size: 10;
 			align: 0.0 0.5;
 			min: 1 1;
 			// text_class: "desklock_title";	
