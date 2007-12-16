@@ -485,6 +485,7 @@ part {
 
 	description {
 		state: "default" 0.0;
+		min: 44 24;
 
 		rel1 { 
 			to: "button_clip"; 
@@ -610,7 +611,7 @@ part {
 		rel1 {
 			to_x: "icon_swallow";
 			to_y: "button_image";
-			relative: 1.0 0.0; offset: 4 0;
+			relative: 1.0 0.0; offset: 4 2;
 		}
 
 		rel2 {
