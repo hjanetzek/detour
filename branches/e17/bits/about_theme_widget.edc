@@ -72,7 +72,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 200 30;
+		min: 200 32;
 		color: 255 255 255 255;
 
 		rel1 { 
@@ -97,8 +97,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 98 26;
-		max: 98 26;
+		min: 98 28;
+		max: 98 28;
 		fixed: 1 1;
 
 		rel1 { 
@@ -208,7 +208,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 86 26;
 		color: 255 255 255 0;
 
 		rel1 { 
@@ -342,7 +342,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 86 26;
 		color: 255 255 255 0;
 
 		rel1 { 
