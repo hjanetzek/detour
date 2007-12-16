@@ -75,7 +75,7 @@ part {
 
 		rel1 { 
 			to: "items_area"; 
-			offset: 8 5; 
+			offset: 8 2; 
 		}
 
 		rel2 { 
