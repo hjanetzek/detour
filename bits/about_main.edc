@@ -385,8 +385,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 98 26;
-		max: 98 26;
+		min: 98 30;
+		max: 98 30;
 		fixed: 1 1;
 		color: 255 255 255 255;
 		align: 0.5 1.0;
@@ -411,8 +411,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 98 26;
-		max: 98 26;
+		min: 98 28;
+		max: 98 28;
 		fixed: 1 1;
 
 		rel1 { 
@@ -485,7 +485,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 44 24;
+		min: 44 26;
 
 		rel1 { 
 			to: "button_clip"; 
@@ -523,7 +523,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 86 26;
 		color: 255 255 255 0;
 
 		rel1 { 
@@ -658,7 +658,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 86 24;
+		min: 86 26;
 		color: 255 255 255 0;
 
 		rel1 { 
