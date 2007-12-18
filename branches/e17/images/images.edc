@@ -166,8 +166,6 @@ image: "sf_bl1_over.png" COMP;
 image: "sf_br1_over.png" COMP;
 
 //~ background
-image: "wallpaper.png" LOSSY 90%;
-image: "shadow.png" LOSSY 90%;
 
 //~ error
 image: "error-dialog_bg.png" COMP;

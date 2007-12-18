@@ -1,72 +1,17 @@
 
 #if BACKGROUND_TYPE == 0
-part { 
-	name: "background";
-	type: RECT;
+	part { 
+		name: "background_image";
+		type: GRADIENT;
+	
+		description { 
+			state: "default" 0.0; 
 
-	description {
-		state: "default" 0.0;
-		color: 0 0 0 255;
+			gradient {
+				spectrum: "backdrop";
+			}
+    		}
 	}
-}
-part { 
-	name: "background_image";
-	type: IMAGE;
-
-	description {
-		state: "default" 0.0;
-		// color: 139 157 180 255;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "wallpaper.png";
-		}
-
-		fill {
-			smooth: 0;
-		}
-	}
-}
-part {
-	name: "shadow";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state:"default" 0.0;
-		align: 0.5 0.5;
-		color: 255 255 255 36;
-
-		rel1 { 
-			to: "background"; 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "background";
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "shadow.png";
-		}
-
-		fill {
-			smooth: 0;
-		}
-    	}
-}
 #else
 #if BACKGROUND_TYPE == 1
 	part { 
