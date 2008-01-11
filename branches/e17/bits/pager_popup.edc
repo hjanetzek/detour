@@ -20,6 +20,7 @@ part {
 	}
 }
 
+
 part {
 	name: "base";
 	mouse_events: 0;
@@ -39,7 +40,7 @@ part {
 		}
 
 		image {
-			normal: "menu_bg.png";
+                        normal: "menu_bg.png";
 			border: 2 2 2 2;
 		}
 
@@ -91,7 +92,7 @@ part {
 }
 
 part {
-	name: "text";
+	name: "e.text.label";
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
@@ -141,13 +142,13 @@ part {
 		color: 0 0 0 0;
 
 		rel1{
-			to_y: "text"; 
+			to_y: "e.text.label"; 
 			relative: 0.0 0.0; 
 			offset: 16 -7; 
 		}
 
 		rel2 { 
-			to_y: "text";
+			to_y: "e.text.label";
 			relative: 1.0 1.0; 
 			offset: -17 6; 
 		}
@@ -195,7 +196,7 @@ part {
 }
 
 part {
-	name: "pager";
+	name: "e.swallow.content";
 	type: SWALLOW;
 	clip_to: "items_clip";
 
@@ -204,7 +205,7 @@ part {
 		
 		rel1 { 
 			to: "overlay"; 
-			offset: 4 4; 
+			offset: 4 2; 
 		}
 
 		rel2 { 
@@ -227,7 +228,7 @@ part {
 		rel1 { 
 			to_y: "title_overlay"; 
 			relative: 0.0 1.0; 
-			offset: 16 6; 
+			offset: 16 0; 
 		}
 
 		rel2 { 
@@ -247,13 +248,13 @@ part {
 		max: 15 11;
 
 		rel1 { 
-			to: "pager"; 
+			to: "e.swallow.content"; 
 			relative: 0.0 1.0; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "pager"; 
+			to: "e.swallow.content"; 
 			relative: 1.0 1.0; 
 			offset: 0 17; 
 		}
