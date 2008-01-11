@@ -62,7 +62,7 @@ part {
 }
 
 part {
-	name: "items";
+	name: "e.swallow.content";
 	type: SWALLOW;
 	clip_to: "clip";
 

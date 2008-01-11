@@ -87,7 +87,7 @@ part {
 }
 
 part {
-	name: "icon";
+	name: "e.swallow.icon";
 	type: SWALLOW;
 
 	description {

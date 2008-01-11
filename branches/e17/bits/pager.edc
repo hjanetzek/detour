@@ -1,7 +1,12 @@
 
 group {
-	name: "e/widgets/pager/popup";
-	
+	name: "e/modules/pager/popup";
+       data {
+       item: "shaped" "1";
+    
+       }
+  
+
 	parts {
 		#include "pager_popup.edc"
 	}
