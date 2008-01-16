@@ -463,4 +463,8 @@ image: "fileman_drop.png" COMP;
 image: "fileman_rubberband.png" COMP;
 image: "busy_1.png" COMP;
 image: "busy_2.png" COMP;
+
+//~ notification
+image: "module_notification.png" COMP;
+
    
