@@ -1,7 +1,5 @@
 /* The combobox can't be set to the same size as etk as ewl/combo/contents can
- * have an entry which is too large.  Also, ewl only allows ewl/combo/button to
- * receive the event, so a way to get ewl/combo to act needs to be implemented
- * (beyond my current knownledge of edje).
+ * have an entry which is too large.
  */
 
 group {
@@ -9,26 +7,10 @@ group {
 
 	parts {
 		#include "combo_parts.edc"
-			}
+	}
 
 	programs {
-		program {
-			name: "disable";
-			signal: "disabled";
-			source: "EWL";
-			action: STATE_SET "disabled" 0.0;
-			target: "combo_button";
-		}
-
-		program
-		{
-			name: "enable";
-			signal: "enabled";
-			source: "EWL";
-			action: STATE_SET "default" 0.0;
-			target: "combo_button";
-			target: "combo_button";
-		}
+		#include "combo_programs.edc"
 	}
 }
 
