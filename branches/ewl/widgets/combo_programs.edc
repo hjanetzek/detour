@@ -1,0 +1,50 @@
+program {
+	name: "disable";
+	signal: "disabled";
+	source: "EWL";
+	action: STATE_SET "disabled" 0.0;
+	target: "combo_button";
+}
+
+program {
+	name: "enable";
+	signal: "enabled";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	target: "combo_button";
+}
+
+program {
+	name: "focus";
+	signal: "focus,in";
+	source: "EWL";
+	action: STATE_SET "visible" 0.0;
+	transition: DECELERATE 0.5; 
+	target: "focus_clip";
+}
+
+program {
+	name: "unfocus";
+	signal: "focus,out";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "focus_clip";
+}
+
+program {
+	name: "expanded";
+	signal: "expanded";
+	source: "EWL";
+	action: STATE_SET "clicked" 0.0;
+	target: "combo_button";
+}
+
+program {
+	name: "collapsed";
+	signal: "collapsed";
+	source: "EWL";
+	action: STATE_SET "default" 0.0;
+	target: "combo_button";
+}
+
