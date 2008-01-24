@@ -60,7 +60,7 @@ group {
 				}
 
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 195 193 194 128;
 				
 				text {
 					text: "text";
