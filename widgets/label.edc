@@ -40,3 +40,76 @@ group {
 	}
 }
 
+group {
+	name: "ewl/label/bold";
+
+	parts {
+		part {
+			name: "ewl/label/text";
+			type: TEXT;
+			effect: SHADOW;
+
+			description {
+				state: "default" 0.0;
+				align: 0.0 0.5;
+				color: 60 60 60 255;
+				color3: 195 193 194 128;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 2 4;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -2 -4;
+				}
+
+				text {
+					text: "text";
+					font: "ewl/default/bold";
+					size: 10;
+					min: 1 1;
+					align: 0.5 0.5;
+				}
+			}
+		}
+	}
+}
+
+group {
+	name: "ewl/label/bold/tree_header";
+
+	parts {
+		part {
+			name: "ewl/label/text";
+			type: TEXT;
+			effect: SHADOW;
+
+			description {
+				state: "default" 0.0;
+				color: 60 60 60 255;
+				color3: 195 193 194 128;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 1 1;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 0 0;
+				}
+
+				text {
+					text: "text";
+					font: "ewl/default/bold";
+					size: 10;
+					min: 1 1;
+					align: 0.5 0.5;
+				}
+			}
+		}
+	}
+}
+

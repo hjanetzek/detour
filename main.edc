@@ -27,6 +27,7 @@ data {
 
 	/* button widget */
 	item: "/button/group" "ewl/button";
+	item: "/button/body/label/group" "ewl/label/bold";
 	
 	/* radio widget */
 	item: "/radio/group" "ewl/button/radio/item";
@@ -65,6 +66,7 @@ data {
 
 	/* notebook */
 	item: "/notebook/pages/group" "ewl/notebook/pages";
+	item: "/notebook/top/tabbar/tab/label/group" "ewl/label/bold";
 	item: "/notebook/top/tabbar/group" "ewl/notebook/top";
 	item: "/notebook/bottom/tabbar/group" "ewl/notebook/top";
 	item: "/notebook/left/tabbar/group" "ewl/notebook/left";
@@ -89,16 +91,14 @@ data {
 
 	/* tree */
 	item: "/tree/group" "ewl/tree";
-	item: "/tree/scrollpane/group" "ewl/tree/vbox";
-
-	item: "/tree2/group" "ewl/tree";
-	item: "/tree2/vbox/group" "ewl/tree/vbox";
-	item: "/tree2/vbox/scrollpane/group" "ewl/tree/scrollpane/background";
+	item: "/tree/vbox/group" "ewl/tree/vbox";
+	item: "/tree/scrollpane/group" "ewl/tree/scrollpane/background";
 
 	item: "/tree_header/group" "ewl/tree/header";
 	item: "/tree_header/button/group" "ewl/tree/header/button";
 	item: "/tree_header/grabber/vertical/group" "ewl/separator/vertical";
 	item: "/tree_header/header/button/group" "ewl/tree/header/button";
+	item: "/tree_header/header/label/group" "ewl/label/bold/tree_header";
 
 	item: "/row/group" "ewl/row";
 	item: "/node/check/group" "ewl/tree/expansion";
