@@ -5,6 +5,10 @@
 group {
 	name: "ewl/combo";
 
+	data {
+		item: "pad" "1 1 1 1";
+	}
+
 	parts {
 		#include "combo_parts.edc"
 	}
