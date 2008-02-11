@@ -1,11 +1,12 @@
 
 part {
 	name: "temperature_base";
+	type: IMAGE;
 	clip_to: "pulse_clip";
 
 	description {
-		max: 11 68;
 		state: "default" 0.0;
+		max: 11 9999;
 		aspect: 1.0 1.0;
 		align: 0.5 0.0;
 
@@ -21,21 +22,22 @@ part {
 
 		image {
 			normal: "temperature-base.png";
-			border: 2 2 5 2;
+			border: 3 3 5 3;
 		}
 	}
 }
 
 part {
 	name: "temperature";
+	type: IMAGE;
 	clip_to: "pulse_clip";
 
 	description {
-		max: 11 68;
 		state: "default" 0.0;
+		max: 11 9999;
 		aspect: 1.0 1.0;
 		align: 0.5 0.0;
-		color: 255 255 255 229;
+		// color: 255 255 255 229;
 
 		rel1 { 
 			to: "temperature_base"; 
@@ -51,7 +53,7 @@ part {
 
 		image {
 			normal: "temperature-0.png";
-			border: 4 2 4 4;
+			border: 6 3 61 4;
 		}
 	}
 
