@@ -6,7 +6,7 @@
 #include "macros/sys.edc"
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.7.2 (europa) for Enlightenment 0.16.999.041 or later
+ * detour version 0.7.2 (technotitlan) for Enlightenment 0.16.999.042 or later
  */
 
 #define version 0.7.2
