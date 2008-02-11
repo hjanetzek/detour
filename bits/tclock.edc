@@ -2,11 +2,6 @@
 group {
 	name: "modules/tclock/main";
 
-/* 
- * TODO: date and time could be repositioned
- * when either one is not visible
- */
-
 	parts {
 		#include "tclock_main.edc"
 	}
@@ -15,3 +10,13 @@ group {
 		#include "tclock_programs.edc" 
 	}
 }
+
+group {
+	name: "modules/tclock/tip";
+	data.item: "shaped" "0";
+
+	parts {
+		#include "tclock_tooltip.edc"
+	}
+}
+
