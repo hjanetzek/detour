@@ -1,5 +1,16 @@
 
 part {
+	name: "base";
+	type: RECT;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		color: 0 0 0 0;
+	}
+}
+
+part {
 	name: "temperature_base";
 	type: IMAGE;
 	clip_to: "pulse_clip";
@@ -37,7 +48,6 @@ part {
 		max: 11 9999;
 		aspect: 1.0 1.0;
 		align: 0.5 0.0;
-		// color: 255 255 255 229;
 
 		rel1 { 
 			to: "temperature_base"; 
