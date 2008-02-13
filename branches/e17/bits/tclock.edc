@@ -15,9 +15,9 @@ group {
 	name: "modules/tclock/tip";
 	data.item: "shaped" "0";
 
-  //	parts {
-  //		#include "tclock_tooltip.edc"
-  //	       }
+	parts {
+  		#include "tclock_tooltip.edc"
+	}
 }
 
   

@@ -1,8 +1,8 @@
 
 part {
 	name: "base3";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -22,8 +22,8 @@ part {
 
 part {
 	name: "border";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -44,6 +44,7 @@ part {
 
 part {
 	name: "base";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
