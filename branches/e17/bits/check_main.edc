@@ -6,23 +6,23 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 20 18;
-		max: 20 18;
+		min: 20 20;
+		max: 20 20;
 		fixed: 1 1;
 		align: 0.0 0.5;
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 2 2; 
+			offset: 2 8; 
 		}
 
 		rel2 { 
 			relative: 0.0 1.0; 
-			offset: 2 -3; 
+			offset: 2 -9; 
 		}
 
 		image {
-			normal: "check_base.png";
+			normal: "check_base_alt.png";
 		}
 	}
 
