@@ -71,13 +71,14 @@ program {
 	target: "slider_image_shadow";
 }
 
+/*
 program {
 	name: "focused";
 	signal: "e,state,focused";
 	source: "e";
 	script {
 		//~ set_state(PART:"slider_image_shadow", "focused", 0.0);
-		set_state(PART:"label_focus", "active", 0.0);
+		//~ set_state(PART:"label_focus", "active", 0.0);
 	}
 }
 
@@ -87,7 +88,9 @@ program {
 	source: "e";
 	script {
 		//~ set_state(PART:"slider_image_shadow", "default", 0.0);
-		set_state(PART:"label_focus", "default", 0.0);
+		//~ set_state(PART:"label_focus", "default", 0.0);
 	}
 }
+*/
+
 
