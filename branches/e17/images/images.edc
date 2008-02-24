@@ -110,7 +110,6 @@ image: "dialog_bg.png" COMP;
 
 //~ check
 image: "check_base.png" COMP;
-image: "check_base_alt.png" COMP;
 image: "check_shadow.png" COMP;
 image: "check_focus.png" COMP;
 image: "check0.png" COMP;

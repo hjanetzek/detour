@@ -37,7 +37,7 @@ program {
 	signal: "e,state,disabled";
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
-	target: "check_base";
+	target: "base";
 	target: "check";
 	target: "e.text.label";
 	target: "check_shadow";
@@ -49,7 +49,7 @@ program {
 	signal: "e,state,enabled";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	target: "check_base";
+	target: "base";
 	target: "check";
 	target: "e.text.label";
 	target: "check_shadow";

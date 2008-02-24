@@ -1,6 +1,6 @@
 
 part {
-	name: "radio_base";
+	name: "base";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -163,17 +163,16 @@ part {
 		min: 17 17;
 		color: 60 60 60 255;
 
-		rel1 { 
-			to_x: "radio"; 
-			relative: 1.0 0.0; 
-			offset: 5 1; 
+		rel1 {
+			to_x: "radio";
+			relative: 1.0 0.0;
+			offset: 5 2;
 		}
 
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
+		rel2 {
+			relative: 1.0 1.0;
+			offset: -5 -2;
 		}
-
 
 		text {
 			text: "Check Button";
