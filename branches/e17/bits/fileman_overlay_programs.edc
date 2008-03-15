@@ -23,7 +23,7 @@ program {
 	signal: "e,state,busy,stop";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	transition: LINEAR 2.0;
+	transition: ACCELERATE 2.0;
 	target: "busy_clip";
 	after: "stop2";
 }
