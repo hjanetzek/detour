@@ -461,8 +461,10 @@ image: "fileman_thumb_bg.png" COMP;
 image: "fileman_shadow.png" COMP;
 image: "fileman_drop.png" COMP;
 image: "fileman_rubberband.png" COMP;
-image: "busy_1.png" COMP;
-image: "busy_2.png" COMP;
+image: "busy.cursor.00.png" COMP;
+image: "busy.cursor.01.png" COMP;
+image: "busy.cursor.02.png" COMP;
+image: "busy.cursor.03.png" COMP;
 
 //~ notification
 image: "module_notification.png" COMP;

@@ -57,8 +57,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 26 26;
-		max: 26 26;
+		min: 42 42;
+		max: 42 42;
 		fixed: 1 1;
 		aspect: 1.0 1.0;
 		align: 1.0 1.0;
@@ -75,8 +75,14 @@ part {
 		}
 
 		image {
-			normal: "busy_1.png";
-			tween:  "busy_2.png";
+			normal: "busy.cursor.00.png";
+			tween:  "busy.cursor.01.png";
+			tween:  "busy.cursor.02.png";
+			tween:  "busy.cursor.03.png";
+			normal: "busy.cursor.00.png";
+			tween:  "busy.cursor.01.png";
+			tween:  "busy.cursor.02.png";
+			tween:  "busy.cursor.03.png";
 		}
 	}
 }
