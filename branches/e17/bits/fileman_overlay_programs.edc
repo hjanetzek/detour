@@ -49,13 +49,14 @@ program {
 	signal: "e,state,typebuf,stop";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	transition: SINUSOIDAL 2.0;
+	// transition: SINUSOIDAL 2.0;
 	target: "typebuf_clip";
 	target: "overlay";
 	after: "stop2";
 }
 
-/* FIXME: implement this to show drop in the blank areas      
+/* FIXME: implement this to show drop in the blank areas  */
+
 program {
 	name: "goc1";
 	signal: "e,state,drop,start";
@@ -74,5 +75,4 @@ program {
 	target: "typebuf_clip";
 	after: "stop2";
 }
-*/
 

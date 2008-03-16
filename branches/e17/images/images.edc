@@ -465,6 +465,7 @@ image: "busy.cursor.00.png" COMP;
 image: "busy.cursor.01.png" COMP;
 image: "busy.cursor.02.png" COMP;
 image: "busy.cursor.03.png" COMP;
+image: "typebuf_clip.png" COMP;
 
 //~ notification
 image: "module_notification.png" COMP;
