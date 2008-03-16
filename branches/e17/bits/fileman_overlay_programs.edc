@@ -6,6 +6,7 @@ program {
 	action: STATE_SET "active" 0.0;
 	transition: LINEAR 1.0;
 	target: "busy_clip";
+	target: "busy.overlay";
 }
 
 program {
@@ -25,6 +26,7 @@ program {
 	action: STATE_SET "default" 0.0;
 	transition: ACCELERATE 2.0;
 	target: "busy_clip";
+	target: "busy.overlay";
 	after: "stop2";
 }
 
@@ -49,7 +51,6 @@ program {
 	signal: "e,state,typebuf,stop";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	// transition: SINUSOIDAL 2.0;
 	target: "typebuf_clip";
 	target: "overlay";
 	after: "stop2";
