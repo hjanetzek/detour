@@ -13,10 +13,20 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				image {
-					normal: "folder.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder.png";
+					}
+				#endif
+				#endif
 			}
+
+/* TODO: create open folder icon */
 
 			description {
 				state: "clicked" 0.0;
@@ -24,9 +34,17 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				image {
-					normal: "folder-open.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -91,10 +109,20 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				image {
-					normal: "text-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-x-generic.png";
+					}
+				#endif
+				#endif
 			}
+
+/* TODO: create open file icon */
 
 			description {
 				state: "clicked" 0.0;
@@ -102,9 +130,17 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				image {
-					normal: "folder-open.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {

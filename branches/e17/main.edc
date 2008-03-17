@@ -19,7 +19,7 @@
 #define TRUNCATE_EFM_ICON_FILENAME 1
 #define BACKGROUND_TYPE 1
 #define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 
-#define ENABLE_CUSTOM_ICONS 1 /* tricky */
+#define ENABLE_CUSTOM_ICONS 1 /* work in progress */
 
 fonts {
 font: "fonts/DejaVuSans.ttf" "DejaVuSans";
@@ -49,6 +49,17 @@ collections {
 #include "bits/background.edc"
 #include "bits/border.edc"
 #include "bits/ibar.edc"
+#include "bits/fileman.edc"
+#if USE_TANGO_ICONS == 0
+#else
+#if USE_TANGO_ICONS == 1
+	#include "bits/icons.edc"
+	#include "bits/fileman_actions.edc"
+	#include "bits/fileman_icon.edc"
+	#include "bits/fileman_icon_clickable.edc"
+	#include "bits/fileman_mime.edc"
+#endif
+#endif
 #include "bits/menu.edc"
 #include "bits/resize.edc"
 #include "bits/move.edc"
@@ -77,17 +88,6 @@ collections {
 #include "bits/tlist.edc"
 #include "bits/winlist.edc"
 #include "bits/about.edc"
-#include "bits/fileman.edc"
-#if USE_TANGO_ICONS == 0
-#else
-#if USE_TANGO_ICONS == 1
-	#include "bits/icons.edc"
-	#include "bits/fileman_actions.edc"
-	#include "bits/fileman_icon.edc"
-	#include "bits/fileman_icon_clickable.edc"
-	#include "bits/fileman_mime.edc"
-#endif
-#endif
 #include "bits/color_well.edc"
 #include "bits/cslider.edc"
 #include "bits/spectrum.edc"

@@ -129,3 +129,14 @@ image: "gnome-session-logout.png" COMP;
 image: "gnome-session-suspend.png" COMP;
 image: "gnome-lost-window-menu.png" COMP;
 image: "gnome-run.png" COMP;
+
+//~ custom
+image: "cd_document.png" COMP;
+image: "cd_folder.png" COMP;
+image: "cd_folder_tar.png" COMP;
+image: "cd_font-x-generic.png" COMP;
+image: "cd_gnome-mime-application-pdf.png" COMP;
+image: "cd_image-x-generic.png" COMP;
+image: "cd_text-html.png" COMP;
+image: "cd_text-x-generic.png" COMP;
+

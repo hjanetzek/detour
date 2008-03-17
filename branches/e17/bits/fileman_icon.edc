@@ -192,6 +192,7 @@ group {
 	}
 }
 
+/*
 #if ENABLE_CUSTOM_ICONS == 0
 #else
 #if ENABLE_CUSTOM_ICONS == 1
@@ -244,4 +245,5 @@ group {
 }
 #endif
 #endif
+*/
 
