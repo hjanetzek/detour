@@ -6,6 +6,7 @@ program {
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
 	target: "clip.color";
+	target: "inactive.shadow";
 } 
 
 program {
@@ -15,6 +16,7 @@ program {
 	action: STATE_SET "default" 0.1;
 	transition: DECELERATE 0.5;
 	target: "clip.color";
+	target: "inactive.shadow";
 }
 
 program {
@@ -88,3 +90,4 @@ program {
 	transition: DECELERATE 0.5;
 	target: "min-clip";
 }
+

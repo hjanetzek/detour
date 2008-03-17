@@ -47,6 +47,7 @@ image: "lb.png" COMP;
 image: "rb.png" COMP;
 image: "lb-blend.png" COMP;
 image: "rb-blend.png" COMP;
+image: "tb-shadow.png" COMP;
 
 //~ border buttons
 image: "bt.png" COMP;

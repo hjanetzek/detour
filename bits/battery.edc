@@ -1,7 +1,7 @@
 
 group {
 	name: "e/modules/battery/main";
-	max: 128 128;
+	max: 85 85;
 
 		script {
 			public message(Msg_Type:type, id, ...) {

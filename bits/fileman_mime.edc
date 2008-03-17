@@ -34,9 +34,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
+				#if ENABLE_CUSTOM_ICONS == 0
 				image {
 					normal: "gnome-mime-application-pdf.png";
 				}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+				image {
+					normal: "cd_gnome-mime-application-pdf.png";
+				}
+				#endif
+				#endif
 			}
 
 			description {
@@ -194,9 +202,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
+				#if ENABLE_CUSTOM_ICONS == 0
 				image {
 					normal: "image-x-generic.png";
 				}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+				image {
+					normal: "cd_image-x-generic.png";
+				}
+				#endif
+				#endif
 			}
 
 			description {
@@ -226,9 +242,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
+				#if ENABLE_CUSTOM_ICONS == 0
 				image {
 					normal: "image-x-generic.png";
 				}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+				image {
+					normal: "cd_image-x-generic.png";
+				}
+				#endif
+				#endif
 			}
 
 			description {
@@ -322,9 +346,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
+				#if ENABLE_CUSTOM_ICONS == 0
 				image {
 					normal: "image-x-generic.png";
 				}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+				image {
+					normal: "cd_image-x-generic.png";
+				}
+				#endif
+				#endif
 			}
 
 			description {
@@ -450,9 +482,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "document.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "document.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_document.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -514,9 +554,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "text-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -546,9 +594,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -578,9 +634,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -610,9 +674,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "font-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "font-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_font-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -642,9 +714,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "font-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "font-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_font-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -674,9 +754,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "font-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "font-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_font-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -706,9 +794,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "text-html.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-html.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-html.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -738,9 +834,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "text-html.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-html.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-html.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -770,9 +874,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "text-html.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-html.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-html.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -802,9 +914,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -834,9 +954,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -866,9 +994,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -898,9 +1034,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -930,9 +1074,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -962,9 +1114,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -1058,9 +1218,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "text-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "text-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_text-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -1090,9 +1258,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "image-x-generic.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "image-x-generic.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_image-x-generic.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
@@ -1154,9 +1330,17 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				image {
-					normal: "folder_tar.png";
-				}
+				#if ENABLE_CUSTOM_ICONS == 0
+					image {
+						normal: "folder_tar.png";
+					}
+				#else
+				#if ENABLE_CUSTOM_ICONS == 1
+					image {
+						normal: "cd_folder_tar.png";
+					}
+				#endif
+				#endif
 			}
 
 			description {
