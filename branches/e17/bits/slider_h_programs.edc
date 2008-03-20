@@ -23,6 +23,7 @@ program {\
 	signal: SIGNAL;\
 	source: SRC;\
 	action: STATE_SET ACT 0.0;\
+	transition: DECELERATE 0.25; \
 	target: TARGET;\
 }
 

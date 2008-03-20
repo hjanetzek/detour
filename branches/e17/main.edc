@@ -19,7 +19,7 @@
 #define TRUNCATE_EFM_ICON_FILENAME 1
 #define BACKGROUND_TYPE 1
 #define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 
-#define ENABLE_CUSTOM_ICONS 1 /* work in progress */
+#define ENABLE_CUSTOM_ICONS 0 /* work in progress */
 
 fonts {
 font: "fonts/DejaVuSans.ttf" "DejaVuSans";
