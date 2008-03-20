@@ -414,6 +414,7 @@ part {
 		min: 29 17;
 		max: 29 17;
 		fixed: 1 1;
+		color: 255 255 255 255;
 
 		rel1 { 
 			to: "e.dragable.slider"; 
@@ -431,6 +432,7 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
+		color: 235 235 235 255;
 	}
 
 	description {
