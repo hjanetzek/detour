@@ -295,7 +295,7 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 215 215 215 255;
+		color: 235 235 235 255;
 	}
 }
 
