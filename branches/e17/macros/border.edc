@@ -371,6 +371,11 @@ part { \
 			normal: IMG; \
 		} \
 	} \
+	description { \
+		state: "default" 0.1; \
+		inherit: "default" 0.0; \
+		color: 255 255 255 128; \
+	} \
 }
 
 #define RESIZE_TOP(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) \

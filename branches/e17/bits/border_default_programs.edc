@@ -6,7 +6,10 @@ program {
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
 	target: "clip.color";
-	target: "inactive.shadow";
+	//target: "inactive.shadow";
+	target: "button-min";
+	target: "button-max";
+	target: "button-close";
 } 
 
 program {
@@ -16,7 +19,10 @@ program {
 	action: STATE_SET "default" 0.1;
 	transition: DECELERATE 0.5;
 	target: "clip.color";
-	target: "inactive.shadow";
+	//target: "inactive.shadow";
+	target: "button-min";
+	target: "button-max";
+	target: "button-close";
 }
 
 program {
