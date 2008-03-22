@@ -374,7 +374,7 @@ part { \
 	description { \
 		state: "default" 0.1; \
 		inherit: "default" 0.0; \
-		color: 255 255 255 128; \
+		color: 255 255 255 164; \
 	} \
 }
 
