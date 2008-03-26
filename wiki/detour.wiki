@@ -1,1 +1,1 @@
-#summary Detour is a graphical interface edje for the Enlightenment Foundation Libraries
+#summary Where is this project heading?
