@@ -1,8 +1,8 @@
-#summary detour
+#summary Detour is a graphical interface edje for the Enlightenment Foundation Libraries
 
 = Introduction =
 
-Add your content here.
+The purpose of this project is to create a consistent Edje _GUI interface_ among the *Enlightenment 0.17.0* desktop, the *Enlightened Widget Library* (ewl), and the *Enlightened Toolkit Library* (etk).
 
 
 = Details =
