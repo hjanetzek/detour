@@ -1,16 +1,1 @@
 #summary Detour is a graphical interface edje for the Enlightenment Foundation Libraries
-
-= Introduction =
-
-The purpose of this project is to create a consistent Edje _GUI interface_ among the *Enlightenment 0.17.0* desktop, the *Enlightened Widget Library* (ewl), and the *Enlightened Toolkit Library* (etk).
-
-
-= Details =
-
-The project is divided into various branches, such as:
-
-* e17 branch refers to the Enlightenment 0.17 branch
-* ewl branch refers to the Enlightened Widget Library branch
-* etk branch refers to the Enlightened Toolkit Library branch
-* e17-init branch refers to the E17 Init screen
-* elicit branch refers to the Elicit detour edje branch
