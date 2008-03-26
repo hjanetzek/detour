@@ -210,7 +210,7 @@ part {
 
 		text {
 			style: "about_this_theme";
-			text: "Greetings to the <bold>Enlightenment.org</bold> crew (past and present). <br><br><bold>detour</bold> is distributed under the terms of the BSD Artistic License. All derivative works, compound produced from, or related to, shall retain the original license. See <bold>LICENSE</bold> for more information.<br><br>Visit: <underline>http://cored.org/</underline> for more information regarding Icon and Font Licenses.<br><br><br><br><br><br><br><bold>detour</bold> is a conservative theme, designed and developed by Alberto Castro with help from Hannes Janetzek (jeffdameth), and others (see AUTHORS).<br><br><center>Enjoy!</center><br><br><br><br><center>http://cored.org</center><br><center><subliminal>(the Tricks of the Guild. 2007)</subliminal></center>";
+			text: "Designed and developed by Alberto Castro with help from Hannes Janetzek, et al.<br><br>detour is distributed under the terms of the <bold>BSD Artistic License</b>. <br><br><subliminal>[cored.org] - Tricks of the Guild. [2008]</subliminal>";
 		}
     	}
 }
