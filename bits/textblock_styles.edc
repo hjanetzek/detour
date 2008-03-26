@@ -9,7 +9,7 @@ style {
 	tag: "mono" "+ font=DejaVuSans-Mono";
 	tag: "center" "+ align=middle";
 	tag: "square" "+ font=DejaVuSans backing_color=#d3e4fb backing=on";
-	tag: "subliminal" "+ color=#f0f0f0";
+	tag: "subliminal" "+ color=#e0e0e0";
 	tag: "red" "+ color=#cc0000";
 	tag: "underline" "+ underline=on underline_color=#3c3c3c";
 }

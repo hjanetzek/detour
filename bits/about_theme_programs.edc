@@ -1,7 +1,8 @@
 
+/*
 program {
 	name: "go";
-	/* scrolling textblock begin */
+	// scrolling textblock begin
 	signal: "load";
 	source: "";
 	action: STATE_SET "default" 0.1;
@@ -35,7 +36,7 @@ program {
 
 program {
 	name: "return";
-	/* to the first state */
+	// to the first state
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.0;
@@ -44,4 +45,5 @@ program {
 	target: "entry_clip";
 	after: "go"; 
 }
+*/
 
