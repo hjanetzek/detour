@@ -7,7 +7,10 @@ The purpose of this project is to create a consistent Edje _GUI interface_ among
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+The project is divided into various branches, such as:
+
+* e17 branch refers to the Enlightenment 0.17 branch
+* ewl branch refers to the Enlightened Widget Library branch
+* etk branch refers to the Enlightened Toolkit Library branch
+* e17-init branch refers to the E17 Init screen
+* elicit branch refers to the Elicit detour edje branch
