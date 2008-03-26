@@ -24,16 +24,16 @@ program {
 	signal: "e,state,busy,stop";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	transition: ACCELERATE 2.0;
+	transition: ACCELERATE 0.5;
 	target: "busy_clip";
 	target: "busy.overlay";
-	after: "stop2";
+	after: "stop2"; in: 2.0 0.0;
 }
 
 program {
 	name: "stop2";
 	action: ACTION_STOP;
-	target: "go2";
+	target: "go2"; 
 }
 
 program {
