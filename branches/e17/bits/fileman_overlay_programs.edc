@@ -4,7 +4,7 @@ program {
 	signal: "e,state,busy,start";
 	source: "e";
 	action: STATE_SET "active" 0.0;
-	transition: LINEAR 1.0;
+	transition: LINEAR 0.25;
 	target: "busy_clip";
 	target: "busy.overlay";
 }

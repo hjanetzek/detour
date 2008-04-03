@@ -6,6 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
+		min: 0 26;
 		max: 199 26;
 		align: 0.5 0.5;
 		color: 0 0 0 0;
@@ -19,7 +20,7 @@ part {
 		rel2 {
 			to: "e.text.typebuf_label";
 			relative: 1.0 1.0;
-			offset: 4 0;
+			offset: 4 -2;
 		}
 
 		image {
@@ -44,7 +45,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		align: 0.5 0.5;
+		align: 0.5 1.0;
 		color: 255 255 255 255;
 		max: 120 26;
 
@@ -55,12 +56,12 @@ part {
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -5 -5; 
+			offset: -5 -35; 
 		}
 
 		text {
 			text: "";
-			font: "DejaVuSans";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 0 0;
 			elipsis: 0.5;

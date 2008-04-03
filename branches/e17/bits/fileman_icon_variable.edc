@@ -17,6 +17,7 @@ part {
 
 part {      
 	name: "filename_overlay";
+	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "filename_overlay_clip";
 
@@ -44,6 +45,7 @@ part {
 
 part {
 	name: "icon_box_shadow";
+	type: IMAGE;
 	mouse_events: 0;
 	
 	description {
@@ -108,6 +110,7 @@ part {
            
 part {
 	name: "icon_box_bg";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -281,7 +284,8 @@ part {
 		text {
 			text: "No Title";
 			size: 11;
-			font: "DejaVuSans-Bold";
+			//font: "Sans:style=Bold,DejaVuSans-Bold";
+			font: "DejaVuSans";
 			#if TRUNCATE_EFM_ICON_FILENAME == 0
 				min: 1 1;
 			#else
