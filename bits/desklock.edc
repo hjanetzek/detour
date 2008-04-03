@@ -12,12 +12,9 @@ group  {
 				color: 139 157 180 255;
 			}
 		}
-
-		version_clip()
 	}
 
 	programs {
-		show_version();
 	}
 }
 

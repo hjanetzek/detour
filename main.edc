@@ -6,20 +6,23 @@
 #include "macros/sys.edc"
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.7.3 (technotitlan) for Enlightenment 0.16.999.042 or later
+ * detour version 0.7.3 \\(x) for Enlightenment 0.16.999.042 or later
  */
 
-#define version 0.7.3
+ /* set the current version */
+#define VERSION_STRING 0.7.3
 
-#define USE_ANIMATED_CURSOR 1
-#define USE_TANGO_ICONS 1
-#define VISIBLE_CONTEXT_MENU_TITLE 0
-#define FADE_IBAR_ICONS 0
-#define TRUNCATE_DESKTOP_ICON_FILENAME 1
-#define TRUNCATE_EFM_ICON_FILENAME 1
-#define BACKGROUND_TYPE 1
+/* edje options */
+#define USE_ANIMATED_CURSOR 1 /* enable animated cursor */
+#define USE_TANGO_ICONS 1 /* use tango icons instead of the default icons */
+#define VISIBLE_CONTEXT_MENU_TITLE 0 /* display menu title */
+#define FADE_IBAR_ICONS 0 /* set ibar-ibox icons to rgba: 255 255 255 164 */
+#define TRUNCATE_DESKTOP_ICON_FILENAME 1 /* truncate desktop icon filename */
+#define TRUNCATE_EFM_ICON_FILENAME 1 /* truncate efm icon filename */
+#define BACKGROUND_TYPE 1 /* set the background style */
 #define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
+#define ENABLE_IBAR_LABEL_OVERLAY 1 /* display ibar-ibox label overlay */
 
 fonts {
 font: "fonts/DejaVuSans.ttf" "DejaVuSans";
@@ -100,6 +103,8 @@ collections {
 #include "bits/toolbar.edc"
 #include "bits/gadman.edc"
 #include "bits/module_notification.edc"
+#include "bits/toolbar.edc" /* work in progress */
+//~ #include "bits/slidesel.edc"
 //~ #include "bits/transitions.edc"
 //~ #include "bits/cpufreq.edc"
 }
