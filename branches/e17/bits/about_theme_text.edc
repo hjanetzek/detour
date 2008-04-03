@@ -23,7 +23,7 @@ part {
 		}
 
 		text {
-			text: "detour (technotitlan)";
+			text: " \\detour ";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			min: 1 1;
@@ -55,7 +55,7 @@ part {
 		}
 
 		text {
-			text: "version "version"";
+			text: "Version "VERSION_STRING"";
 			font: "DejaVuSans";
 			size: 11;
 			min: 1 1;

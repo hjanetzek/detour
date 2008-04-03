@@ -1,0 +1,13 @@
+
+group {
+	name: "e/widgets/slidesel";
+
+	parts {
+		#include "slidesel_main.edc"
+	}
+
+	programs {
+		#include "slidesel_programs.edc"
+	}
+}
+

@@ -40,7 +40,7 @@ part { \
 		} \
 \
 		text { \
-			text: "version "version""; \
+			text: "version "VERSION_STRING""; \
 			font: "DejaVuSans-Bold"; \
 			size: 11; \
 			min:  1 1; \
