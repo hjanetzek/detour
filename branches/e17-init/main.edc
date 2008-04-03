@@ -2,8 +2,8 @@
 /* init edje for detour */
 
 fonts {                            
-	font: "fonts/Vera.ttf" "Edje-Vera";
-	font: "fonts/VeraBd.ttf" "Edje-Vera-Bold";
+font: "fonts/DejaVuSans.ttf" "DejaVuSans";
+font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
 }    
 
 #define ENABLE_TEXT_CLASSES 1
@@ -21,8 +21,10 @@ images {
 	image: "check1.png" COMP;
 	image: "splash.png" COMP;
 	image: "entry.png" COMP;
-	image: "busy_1.png" COMP;
-	image: "busy_2.png" COMP;
+	image: "busy.cursor.00.png" COMP;
+	image: "busy.cursor.01.png" COMP;
+	image: "busy.cursor.02.png" COMP;
+	image: "busy.cursor.03.png" COMP;
 	image: "preferences-desktop.png" COMP;
 	image: "user-desktop.png" COMP;
 }

@@ -22,7 +22,7 @@ program {
 	signal: "show";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: LINEAR 1.0;
+	transition: ACCELERATE 1.0;
 	target: "busy";
 	after: "go2"; /* loop */
 }
@@ -72,7 +72,7 @@ program {
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: LINEAR 1.0;
+	transition: LINEAR 0.25;
 	target: "busy_clip"; /* hide busy anim */
 	after: "done0"; /* get ready to hide the splash */
 }
