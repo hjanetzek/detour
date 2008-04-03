@@ -6,7 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 255;	/* fallback color */
+		color: 0 0 0 255;	/* fallback color */
 	}
 }
  
