@@ -2,34 +2,34 @@
 # ifdef buttons
 #  undef buttons
 # endif
-#define buttons()\
-program { \
-	name: "button_click"; \
-	signal: "mouse,down,1"; \
-	source: "button_enabled"; \
-	script { \
-		set_state(PART:"button_enabled", "clicked", 0.0); \
-		set_state(PART:"button_clip", "clicked", 0.0); \
-		set_state(PART:"button_shadow", "clicked", 0.0); \
-		set_state(PART:"button_text", "clicked", 0.0); \
-		set_state(PART:"button_shadow_overlay", "clicked", 0.0); \
-	} \
-} \
-program { \
-	name: "button_unclick"; \
-	signal: "mouse,up,1"; \
-	source: "button_enabled"; \
-	action: STATE_SET "default" 0.0; \
-	target: "button_enabled"; \
-	target: "button_shadow"; \
-	target: "button_clip"; \
-	target: "button_text"; \
-	target: "button_shadow_overlay"; \
-} \
-program { \
-	name: "button_clicked"; \
-	signal: "mouse,clicked,1"; \
-	source: "button_enabled"; \
-	action: SIGNAL_EMIT "e,action,close" ""; \
+#define buttons()								\
+program { 									\
+	name: "button_click"; 							\
+	signal: "mouse,down,1"; 						\
+	source: "button_enabled"; 						\
+	script { 								\
+		set_state(PART:"button_enabled", "clicked", 0.0); 		\
+		set_state(PART:"button_clip", "clicked", 0.0); 			\
+		set_state(PART:"button_shadow", "clicked", 0.0); 		\
+		set_state(PART:"button_text", "clicked", 0.0); 			\
+		set_state(PART:"button_shadow_overlay", "clicked", 0.0); 	\
+	} 									\
+} 										\
+program { 									\
+	name: "button_unclick"; 			\
+	signal: "mouse,up,1"; 				\
+	source: "button_enabled";			\
+	action: STATE_SET "default" 0.0; 		\
+	target: "button_enabled"; 			\
+	target: "button_shadow"; 			\
+	target: "button_clip"; 				\
+	target: "button_text"; 				\
+	target: "button_shadow_overlay"; 		\
+} 							\
+program { 						\
+	name: "button_clicked"; 			\
+	signal: "mouse,clicked,1"; 			\
+	source: "button_enabled"; 			\
+	action: SIGNAL_EMIT "e,action,close" ""; 	\
 }
 
