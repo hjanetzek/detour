@@ -23,7 +23,7 @@ part {
 		}
 
 		text {
-			text: " \\detour ";
+			text: "detour [subliminal $hit!]";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			min: 1 1;
