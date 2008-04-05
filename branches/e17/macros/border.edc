@@ -1,129 +1,129 @@
 
-#define COLOR_CLIP(COL1,COL2) \
-part { \
-	name: "clip.color"; \
-	type: RECT; \
-\
-	description { \
-		state: "default" 0.0; \
-		color: COL1; \
-\
-		rel1 { \
-			relative: 0.0 0.0; \
-			offset: 0 0; \
-		} \
-\
-		rel2 { \
-			relative: 1.0 1.0; \
-			offset: -1 -1; \
-		} \
-	} \
-\
-	description { \
-		state: "default" 0.1; \
-		inherit: "default" 0.0; \
-		color: COL2; \
-	} \
+#define COLOR_CLIP(COL1,COL2) 			\
+part { 						\
+	name: "clip.color"; 			\
+	type: RECT; 				\
+						\
+	description { 				\
+		state: "default" 0.0; 		\
+		color: COL1; 			\
+						\
+		rel1 { 				\
+			relative: 0.0 0.0; 	\
+			offset: 0 0; 		\
+		} 				\
+						\
+		rel2 { 				\
+			relative: 1.0 1.0; 	\
+			offset: -1 -1; 		\
+		} 				\
+	} 					\
+						\
+	description { 				\
+		state: "default" 0.1; 		\
+		inherit: "default" 0.0; 	\
+		color: COL2; 			\
+	} 					\
 }
 
-#define BORDER(NAME, INDEX1, MIN, MAX, REL1, OFF1, REL2, OFF2, IMG1, INDEX2, IMG2) \
-part { \
-	name: NAME; \
-	clip_to: "clip.color"; \
-	mouse_events: 0; \
-\
-	description { \
-		state: "default" INDEX1; \
-		min: MIN; \
-		max: MAX; \
-\
-		rel1 { \
-			relative: REL1; \
-			offset: OFF1; \
-		} \
-\
-		rel2 { \
-			relative: REL2; \
-			offset: OFF2; \
-		} \
-\
-		image { \
-			normal: IMG1; \
-		} \
-	} \
-\
-	description { \
-		state: "default" INDEX2; \
-		inherit: "default" 0.0; \
-\
-		image { \
-			normal: IMG2; \
-		} \
-	} \
+#define BORDER(NAME, INDEX1, MIN, MAX, REL1, OFF1, REL2, OFF2, IMG1, INDEX2, IMG2) 	\
+part { 											\
+	name: NAME; 									\
+	clip_to: "clip.color"; 								\
+	mouse_events: 0; 								\
+											\
+	description { 									\
+		state: "default" INDEX1; 						\
+		min: MIN; 								\
+		max: MAX; 								\
+											\
+		rel1 { 									\
+			relative: REL1; 						\
+			offset: OFF1; 							\
+		}									\
+											\
+		rel2 { 									\
+			relative: REL2; 						\
+			offset: OFF2; 							\
+		} 									\
+											\
+		image { 								\
+			normal: IMG1; 							\
+		} 									\
+	} 										\
+											\
+	description { 									\
+		state: "default" INDEX2; 						\
+		inherit: "default" 0.0; 						\
+											\
+		image { 								\
+			normal: IMG2; 							\
+		} 									\
+	} 										\
 }
 
-#define BORDER2(NAME,TO1,REL1,OFF1,TO2,REL2,OFF2) \
-part { \
-	name: NAME; \
-	type: RECT; \
-	clip_to: "clip.color"; \
-\
-	description { \
-		state: "default" 0.0; \
-		min: 1 1; \
-		max: 1 9999; \
-		color: 104 108 111 255; \
-\
-		rel1 { \
-			to: TO1; \
-			relative: REL1; \
-			offset: OFF1; \
-		} \
-\
-		rel2 { \
-			to: TO2; \
-			relative: REL2; \
-			offset: OFF2; \
-		} \
-	} \
+#define BORDER2(NAME,TO1,REL1,OFF1,TO2,REL2,OFF2) 	\
+part { 							\
+	name: NAME; 					\
+	type: RECT; 					\
+	clip_to: "clip.color"; 				\
+							\
+	description { 					\
+		state: "default" 0.0; 			\
+		min: 1 1; 				\
+		max: 1 9999; 				\
+		color: 104 108 111 255; 		\
+							\
+		rel1 { 					\
+			to: TO1; 			\
+			relative: REL1; 		\
+			offset: OFF1; 			\
+		} 					\
+							\
+		rel2 { 					\
+			to: TO2; 			\
+			relative: REL2; 		\
+			offset: OFF2; 			\
+		} 					\
+	} 						\
 }
 
-#define BORDER3(NAME, INDEX1, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, IMG1, INDEX2, IMG2) \
-part { \
-	name: NAME; \
-	clip_to: "clip.color"; \
-	mouse_events: 0; \
-\
-	description { \
-		state: "default" INDEX1; \
-		min: MIN; \
-		max: MAX; \
-\
-		rel1 { \
-			to: TO1; \
-			relative: REL1; \
-			offset: OFF1; \
-		} \
-\
-		rel2 { \
-			to: TO2; \
-			relative: REL2; \
-			offset: OFF2; \
-		} \
-\
-		image { \
-			normal: IMG1; \
-		} \
-	} \
-\
-	description { \
-		state: "default" INDEX2; \
-		inherit: "default" 0.0; \
-\
-		image { \
-			normal: IMG2; \
-		} \
-	} \
+#define BORDER3(NAME, INDEX1, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, IMG1, INDEX2, IMG2) 	\
+part { 												\
+	name: NAME; 										\
+	clip_to: "clip.color"; 									\
+	mouse_events: 0; 									\
+												\
+	description { 										\
+		state: "default" INDEX1; 							\
+		min: MIN; 									\
+		max: MAX; 									\
+												\
+		rel1 { 										\
+			to: TO1; 								\
+			relative: REL1; 							\
+			offset: OFF1; 								\
+		} 										\
+												\
+		rel2 { 										\
+			to: TO2; 								\
+			relative: REL2; 							\
+			offset: OFF2; 								\
+		} 										\
+												\
+		image { 									\
+			normal: IMG1; 								\
+		}										\
+	} 											\
+												\
+	description { 										\
+		state: "default" INDEX2; 							\
+		inherit: "default" 0.0; 							\
+												\
+		image { 									\
+			normal: IMG2; 								\
+		} 										\
+	} 											\
 }
 
 #define E_SWALLOW_CLIENT(NAME, TO1, REL1, OFF1, TO2, REL2, OFF2) \
