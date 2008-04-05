@@ -122,7 +122,7 @@ part {
 			}
 
 			image {
-				normal: "ibarbuf_clip.png";
+				normal: "typebuf_clip.png";
 				border: 5 5 5 5;
 			}
 		}
