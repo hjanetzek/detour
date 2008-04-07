@@ -146,7 +146,7 @@ part {
 		#else
 		#if ENABLE_IBAR_LABEL_OVERLAY == 1
 			color: 255 255 255 255;
-			color3: 0 0 0 48;
+			color3: 0 0 0 0;
 		#endif
 		#endif
 		
