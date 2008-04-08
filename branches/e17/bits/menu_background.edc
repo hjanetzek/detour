@@ -82,7 +82,7 @@ part {
 		state: "default" 0.0;
 		fixed: 0 1;
 		color: 60 60 60 255;
-		color3: 170 168 169 128;
+		color3: 170 168 169 0;
 		visible: 0;
 
 		rel1 { 
