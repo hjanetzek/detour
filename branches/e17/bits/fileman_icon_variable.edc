@@ -22,18 +22,19 @@ part {
 	clip_to: "filename_overlay_clip";
 
 	description {
-		state: "default" 0.0;	
+		state: "default" 0.0;
+		max: 9999 18;
 
 		rel1 {
 			to: "e.text.label";
 			relative: 0.0 0.0; 
-			offset: -2 -2; 
+			offset: -4 0; 
 		}
 
 		rel2 {
 			to: "e.text.label";
 			relative: 1.0 1.0; 
-			offset: 1 0; 
+			offset: 0 1; 
 		}
 
 		image {
