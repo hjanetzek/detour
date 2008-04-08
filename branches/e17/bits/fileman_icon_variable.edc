@@ -23,7 +23,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 9999 18;
+		max: 9999 19;
+		align: 0.5 0.5;	
 
 		rel1 {
 			to: "e.text.label";
@@ -34,7 +35,7 @@ part {
 		rel2 {
 			to: "e.text.label";
 			relative: 1.0 1.0; 
-			offset: 0 1; 
+			offset: 0 0; 
 		}
 
 		image {
