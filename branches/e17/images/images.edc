@@ -185,7 +185,12 @@ image: "pager_lid_l.png" COMP;
 image: "pager_lid_r.png" COMP;
 
 //~ about_theme
-image: "insignia.png" COMP;
+image: "logo.png" COMP;
+image: "tab_sep.png" COMP;
+image: "notebook_tab.png" COMP;
+image: "notebook_tab2.png" COMP;
+image: "notebook_tab_shadow.png" COMP;
+image: "notebook_tab_hint.png" COMP;
 
 //~ clock
 image: "hour.cursor.00.png" COMP;
@@ -471,4 +476,12 @@ image: "typebuf_clip.png" COMP;
 //~ notification
 image: "module_notification.png" COMP;
 
-   
+//~ gadman
+image: "e17_ibar_handle_h.png" COMP;
+image: "e17_ibar_handle_h2.png" COMP;
+image: "e17_ibar_handle_thumb_h.png" COMP;
+image: "e17_ibar_handle_thumb_v.png" COMP;
+image: "e17_ibar_handle_v.png" COMP;
+image: "e17_ibar_handle_v2.png" COMP;
+image: "gadman_indicator.png" COMP;
+
