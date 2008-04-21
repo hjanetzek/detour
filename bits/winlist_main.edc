@@ -1,8 +1,8 @@
 
 part {
 	name: "base3";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -22,8 +22,8 @@ part {
 
 part {
 	name: "base2";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -44,6 +44,7 @@ part {
 
 part {
 	name: "base";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -74,6 +75,7 @@ part {
 part {
 	name: "list";
 	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -100,6 +102,7 @@ part {
 part {
 	name: "list_inset";
 	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -126,6 +129,7 @@ part {
 part {
 	name: "list_overlay";
 	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -150,6 +154,7 @@ part {
 part {
 	name: "list_clip";
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -233,6 +238,7 @@ part {
 
 part {      
 	name: "icon_bg";
+	type: IMAGE;
 	mouse_events: 1;
 
 	description {
@@ -259,6 +265,7 @@ part {
 
 part {
 	name: "separator";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -289,6 +296,7 @@ part {
 
 part {   
 	name: "title_overlay";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -385,6 +393,7 @@ part {
 
 part {
 	name: "dot";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {

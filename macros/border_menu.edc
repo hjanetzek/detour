@@ -4,7 +4,8 @@ BORDER_BUTTON_ADV(NAME,TYPE,REL1X,REL1Y,OFF1X,OFF1Y,TO1,TO1,REL2X,REL2Y,OFF2X,OF
 
 #define BORDER_BUTTON_ADV(NAME, TYPE, REL1X, REL1Y, OFF1X, OFF1Y, TO1X, TO1Y, REL2X, REL2Y, OFF2X, OFF2Y, TO2X, TO2Y) 	\
 part { 															\
-	name: NAME"_base"; 												\
+	name: NAME"_base";												\
+	type: IMAGE;													\
 	mouse_events: 0; 												\
 															\
 	description {													\
@@ -38,6 +39,7 @@ part { 															\
 } 															\
 part { 															\
 	name: NAME"_bg"; 												\
+	type: IMAGE;													\
 	mouse_events:  0; 												\
 															\
 	description { 													\
@@ -66,6 +68,7 @@ part { 															\
 } 															\
 part { 															\
 	name: NAME"_detail"; 												\
+	type: IMAGE;													\
 	mouse_events: 0; 												\
 															\
 	description { 													\
