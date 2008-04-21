@@ -1,87 +1,53 @@
 
 part {
-	name: "project_name";
-	type: TEXT;
-	effect: SHADOW;
+	name: "tab2_clip";
+	type: RECT;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		color: 7 7 7 255;
-		color3: 170 168 169 128;
+		color: 255 255 255 255;
+		visible: 0;
 
 		rel1 { 
-			to: "insignia";
-			relative: 0.5 1.0; 
-			offset: 0 0; 
+			to: "tab_separator"; 
+			relative: 0.0 0.0; 
+			offset: 0 6; 
 		}
-	
+		
 		rel2 { 
-			to: "insignia"; 
-			relative: 0.5 1.0; 
-			offset: -1 31; 
-		}
-
-		text {
-			text: "detour 潜在意識";
-			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 12;
-			min: 1 1;
-			align: 0.5 0.5;
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: -1 -50; 
 		}
     	}
-}
-
-part {
-	name: "project_version";
-	type: TEXT;
-	effect: NONE;
-	mouse_events: 0;
 
 	description {
-		state: "default" 0.0;
-		color: 60 60 60 255;
-
-		rel1 { 
-			to: "project_name"; 
-			relative: 0.5 1.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "project_name"; 
-			relative: 0.5 1.0; 
-			offset: -1 8; 
-		}
-
-		text {
-			text: "Version "VERSION_STRING"";
-			font: "DejaVuSans";
-			size: 11;
-			min: 1 1;
-			align: 0.5 0.5;
-		}
-    	}
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
 }
 
 part {
 	name: "entry_about";
+	type: IMAGE;
 	mouse_events: 0;
+	clip_to: "tab2_clip";
 
 	description {
 		state: "default" 0.0;
 
 		rel1 { 
-			to_y: "project_version"; 
-			to_x: "background"; 
-			relative: 0.0 1.0; 
-			offset: 4 5; 
+			to: "tab2_clip"; 
+			relative: 0.0 0.0; 
+			offset: 4 0; 
 		}
 
 		rel2 { 
-			to: "separator"; 
-			relative: 1.0 0.0; 
-			offset: -7 5; 
+			to: "tab2_clip"; 
+			relative: 1.0 1.0; 
+			offset: -5 -1; 
 		}
 
 		image {
@@ -95,6 +61,7 @@ part {
 	name: "container";
 	type: RECT;
 	mouse_events: 0;
+	clip_to: "tab2_clip";
 
 	description {
 		state: "default" 0.0;
@@ -116,7 +83,6 @@ part {
 
 part {
 	name: "entry_clip";
-/* this part is responsible for the scrolling textblock */
 	type: RECT;
 	mouse_events: 0;
 	clip_to: "container";
@@ -135,57 +101,6 @@ part {
 			to: "entry_about"; 
 			relative: 1.0 1.0; 
 			offset: -5 -4; 
-		}
-	}
-
-	description {
-		state: "default" 0.1;
-		color: 255 255 255 255;
-	
-		rel1 { 
-			to: "entry_about"; 
-			relative: 0.0 0.0; 
-			offset: 7 -116; 
-		}
-
-		rel2 { 
-			to: "entry_about"; 
-			relative: 1.0 1.0; 
-			offset: -5 -4; 
-		}
-	}
-
-	description {
-		state: "default" 0.2;
-		color: 255 255 255 255;
-
-		rel1 { 
-			to: "entry_about"; 
-			relative: 0.0 0.0; 
-			offset: 7 -236; 
-		}
-
-		rel2 { 
-			to: "entry_about"; 
-			relative: 1.0 1.0; 
-			offset: -5 -5; 
-		}
-	}
-
-	description {
-		state: "default" 0.3;
-		color: 255 255 255 255;
-
-		rel1 { 
-			to: "entry_about"; 
-			relative: 0.0 0.0; 
-			offset: 7 -358; 
-		}
-		
-		rel2 { 
-			to: "entry_about"; 
-			relative: 1.0 1.0; 
-			offset: -5 -5; 
 		}
 	}
 }

@@ -1,18 +1,14 @@
 
 main.edc: build time options
 
+There are various user options inside the main.edc file, example:
+
 This options disables or enables mouse pointer pulsating animation
 	#define USE_ANIMATED_CURSOR (0/1)
 
-Set this option to 1 to lower ibar icons opacity
-	#define FADE_BAR_ICONS (0/1)
-
-This options enables or disables the view of context menu title
-	#define SEE_CONTEXT_MENUTITLE (0/1)
-
 COMPILING and INSTALLING:
 
-To compile and install:
+To compile and install or rebuild:
 	make
 
 To uninstall:

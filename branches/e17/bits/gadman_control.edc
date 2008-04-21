@@ -1,0 +1,361 @@
+
+part {
+	name: "hclip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 0 0 128;
+		visible: 1;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -80 -80;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 79 79;
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		visible : 0;
+	}
+}
+
+part {
+	name: "vclip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 155 0 60 128;
+		visible: 1;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -80 -80;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 79 79;
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		visible : 0;
+	}
+}
+
+part {
+	name: "overlay";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 94;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: 0 0;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: -1 0;
+		}
+
+		image {
+			normal: "typebuf_clip.png";
+			border: 5 5 5 5;
+		}
+	}
+}
+
+part {
+	name: "indicator";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 19 19;
+		aspect: 1.0 1.0;
+		aspect_preference: BOTH;
+		color: 255 255 255 128;
+
+		image {
+			normal: "gadman_indicator.png";
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		visible: 0;
+	}
+}
+  
+part {
+	name: "h1";
+	mouse_events: 1;
+	clip_to: "hclip";
+	
+	description {
+		state: "default" 0.0;
+		align: 1.0 0.5;
+		min: 18 36;
+		max: 18 96;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -9 0;
+		}
+
+		rel2 {
+			relative: 0.0 1.0;
+			offset: -9 -1;
+		}
+
+		image {
+			normal: "e17_ibar_handle_h.png";
+			border: 0 0 19 19;
+		}
+	}
+
+	description {
+		state: "default2" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "e17_ibar_handle_h2.png";
+		}
+	}
+}
+
+      part {
+	 name:          "h1th";
+	 mouse_events:  0;
+	 clip_to:       "hclip";
+	 description {
+	    state:    "default" 0.0;
+	    max:      6 16;
+	    rel1 {
+	       offset:   -1    -1;
+	       to: "h1";
+	    }
+	    rel2 {
+	       offset:   -2    -2;
+	       to: "h1";
+	    }
+	    image {
+	       normal: "e17_ibar_handle_thumb_h.png";
+	    }
+	 }
+         description {
+	    state:    "default2" 0.0;
+	    inherit: "default" 0.0;
+	    rel1 {
+	       offset:   0    0;
+	    }
+	    rel2 {
+	       offset:   -1   -1;
+	    }
+	 }
+      }
+
+      part {
+	 name:          "h2";
+	 mouse_events:  1;
+	 clip_to:       "hclip";
+	 description {
+	    state: "default" 0.0;
+	    align: 0.0 0.5;
+	    min: 18 36;
+	    max: 18 96;
+	    rel1 {
+	       relative: 1.0  0.0;
+	       offset:   8    0;
+	    }
+	    rel2 {
+	       relative: 1.0  1.0;
+	       offset:   0    -1;
+	    }
+	    image {
+	       normal: "e17_ibar_handle_h.png";
+	       border: 0 0 19 19;
+	    }
+	 }
+	 description {
+	    state: "default2" 0.0;
+	    inherit: "default" 0.0;
+	    image {
+	       normal: "e17_ibar_handle_h2.png";
+	    }
+	 }
+      }
+
+      part {
+	 name:          "h2th";
+	 mouse_events:  0;
+	 clip_to:       "hclip";
+	 description {
+	    state:    "default" 0.0;
+	    max:      6 16;
+	    rel1 {
+	       offset:   -1    -1;
+	       to: "h2";
+	    }
+	    rel2 {
+	       offset:   -2    -2;
+	       to: "h2";
+	    }
+	    image {
+	       normal: "e17_ibar_handle_thumb_h.png";
+	    }
+	 }
+         description {
+	    state:    "default2" 0.0;
+	    inherit: "default" 0.0;
+	    rel1 {
+	       offset:   0    0;
+	    }
+	    rel2 {
+	       offset:   -1   -1;
+	    }
+	 }
+      }
+
+      part {
+	 name:          "v1";
+	 mouse_events:  1;
+	 clip_to:       "vclip";
+	 description {
+	    state: "default" 0.0;
+	    align: 0.5 1.0;
+	    min: 36 18;
+	    max: 96 18;
+	    rel1 {
+	       relative: 0.0  0.0;
+	       offset:   0    -9;
+	    }
+	    rel2 {
+	       relative: 1.0  0.0;
+	       offset:   -1   -9;
+	    }
+	    image {
+	       normal: "e17_ibar_handle_v.png";
+	       border: 19 19 0 0;
+	    }
+	 }
+	 description {
+	    state: "default2" 0.0;
+	    inherit: "default" 0.0;
+	    image {
+	       normal: "e17_ibar_handle_v2.png";
+	    }
+	 }
+      }
+
+      part {
+	 name:          "v1th";
+	 mouse_events:  0;
+	 clip_to:       "vclip";
+	 description {
+	    state:    "default" 0.0;
+	    max:      16 6;
+	    rel1 {
+	       offset:   -1    -1;
+	       to: "v1";
+	    }
+	    rel2 {
+	       offset:   -2    -2;
+	       to: "v1";
+	    }
+	    image {
+	       normal: "e17_ibar_handle_thumb_v.png";
+	    }
+	 }
+         description {
+	    state:    "default2" 0.0;
+	    inherit: "default" 0.0;
+	    rel1 {
+	       offset:   0    0;
+	    }
+	    rel2 {
+	       offset:   -1   -1;
+	    }
+	 }
+      }
+
+      part {
+	 name:          "v2";
+	 mouse_events:  1;
+	 clip_to:       "vclip";
+	 description {
+	    state: "default" 0.0;
+	    align: 0.5 0.0;
+	    min: 36 18;
+	    max: 96 18;
+	    rel1 {
+	       relative: 0.0  1.0;
+	       offset:   0    8;
+	    }
+	    rel2 {
+	       relative: 1.0  1.0;
+	       offset:   -1   8;
+	    }
+	    image {
+	       normal: "e17_ibar_handle_v.png";
+	       border: 19 19 0 0;
+	    }
+	 }
+	 description {
+	    state: "default2" 0.0;
+	    inherit: "default" 0.0;
+	    image {
+	       normal: "e17_ibar_handle_v2.png";
+	    }
+	 }
+      }
+
+      part {
+	 name:          "v2th";
+	 mouse_events:  0;
+	 clip_to:       "vclip";
+	 description {
+	    state:    "default" 0.0;
+	    max:      16 6;
+	    rel1 {
+	       offset:   -1    -1;
+	       to: "v2";
+	    }
+	    rel2 {
+	       offset:   -2    -2;
+	       to: "v2";
+	    }
+	    image {
+	       normal: "e17_ibar_handle_thumb_v.png";
+	    }
+	 }
+         description {
+	    state:    "default2" 0.0;
+	    inherit: "default" 0.0;
+	    rel1 {
+	       offset:   0    0;
+	    }
+	    rel2 {
+	       offset:   -1   -1;
+	    }
+	 }
+      }
+

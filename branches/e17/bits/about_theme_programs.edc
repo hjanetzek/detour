@@ -1,49 +1,35 @@
 
-/*
 program {
-	name: "go";
-	// scrolling textblock begin
-	signal: "load";
-	source: "";
-	action: STATE_SET "default" 0.1;
-	transition: DECELERATE 1.0; 
-	in: 10.0 0.0;
-	target: "entry_clip";
-	after: "go2";
+	name: "prev-tab"; 
+	signal: "mouse,down,*"; 
+	source: "tab_active_rect";
+	script {
+		set_int(tab_focus, 1);
+		set_state(PART:"tab1_clip", "default", 0.0);
+		set_state(PART:"tab2_clip", "hidden", 0.0);
+		set_state(PART:"tab_hint", "default", 0.0);
+		set_state(PART:"tab_shadow", "default", 0.0);
+		set_state(PART:"tab_active", "default", 0.0);
+		set_state(PART:"tab_inactive", "default", 0.0);
+		set_state(PART:"tab_active_text", "default", 0.0);
+		set_state(PART:"tab_inactive_text", "default", 0.0);
+	}
 }
 
 program {
-	name: "go2";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.2;
-	transition: DECELERATE 0.75; 
-	in: 10.0 0.0;
-	target: "entry_clip";
-	after: "go3";
+	name: "next-tab"; 
+	signal: "mouse,down,*"; 
+	source: "tab_inactive_rect";
+	script {
+		set_int(tab_focus, 0);
+		set_state(PART:"tab1_clip", "hidden", 0.0);
+		set_state(PART:"tab2_clip", "visible", 0.0);
+		set_state(PART:"tab_hint", "switch", 0.0);
+		set_state(PART:"tab_shadow", "switch", 0.0);
+		set_state(PART:"tab_active", "switch", 0.0);
+		set_state(PART:"tab_inactive", "switch", 0.0);
+		set_state(PART:"tab_active_text", "switch", 0.0);
+		set_state(PART:"tab_inactive_text", "switch", 0.0);
+	}
 }
-
-program {
-	name: "go3";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.3;
-	transition: DECELERATE 0.75; 
-	in: 10.0 0.0;
-	target: "entry_clip";
-	after: "return";
-}
-
-program {
-	name: "return";
-	// to the first state
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 1.0; 
-	in: 10.0 0.0;
-	target: "entry_clip";
-	after: "go"; 
-}
-*/
 
