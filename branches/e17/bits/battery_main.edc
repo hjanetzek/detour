@@ -7,7 +7,7 @@ part {
 		state: "default" 0.0;
 		max: 85 85;
 		aspect: 1.0 1.0;
-	    	// aspect_preference: BOTH; //~ enabling this hides the module??
+	    	aspect_preference: BOTH;
 		align: 0.0 0.5;
 
 		rel1 { 
