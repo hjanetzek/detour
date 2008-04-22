@@ -23,6 +23,7 @@
 #define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
 #define ENABLE_IBAR_LABEL_OVERLAY 1 /* display ibar-ibox label overlay */
+#define ENABLE_EDJ_CREDITS 1 /* display credits */
 
 fonts {
 font: "fonts/DejaVuSans.ttf" "DejaVuSans";

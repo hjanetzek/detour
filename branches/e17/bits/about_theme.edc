@@ -4,10 +4,6 @@ group {
 	min: 299 341;
 	max: 299 341;
 
-	script {
-		public tab_focus = 1;
-	}
-
 	parts {
 		part {
 			name: "background";
