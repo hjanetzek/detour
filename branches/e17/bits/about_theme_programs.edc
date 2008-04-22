@@ -1,29 +1,23 @@
 
-program {
-	name: "prev-tab"; 
-	signal: "mouse,up,1"; 
-	source: "tab_active_rect";
-	script {
-		set_int(tab_focus, 1);
-		set_state(PART:"tab1_clip", "default", 0.0);
-		set_state(PART:"tab2_clip", "hidden", 0.0);
-		set_state(PART:"tab_hint", "default", 0.0);
-		set_state(PART:"tab_active_text", "default", 0.0);
-		set_state(PART:"tab_inactive_text", "default", 0.0);
+#if ENABLE_EDJ_CREDITS == 0
+#else
+#if ENABLE_EDJ_CREDITS == 1
+	program {
+		name: "active"; 
+		signal: "mouse,in"; 
+		source: "button_enabled";
+		action: STATE_SET "visible" 0.0;
+		target: "about_bubble";
+		target: "about_text";
+	} 
+	program {
+		name: "inactive"; 
+		signal: "mouse,out"; 
+		source: "button_enabled";
+		action: STATE_SET "default" 0.0;
+		target: "about_bubble";
+		target: "about_text";
 	}
-}
-
-program {
-	name: "next-tab"; 
-	signal: "mouse,up,1"; 
-	source: "tab_inactive_rect";
-	script {
-		set_int(tab_focus, 0);
-		set_state(PART:"tab1_clip", "hidden", 0.0);
-		set_state(PART:"tab2_clip", "visible", 0.0);
-		set_state(PART:"tab_hint", "switch", 0.0);
-		set_state(PART:"tab_active_text", "switch", 0.0);
-		set_state(PART:"tab_inactive_text", "switch", 0.0);
-	}
-}
+#endif
+#endif
 

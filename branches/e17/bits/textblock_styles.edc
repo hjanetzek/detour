@@ -1,17 +1,15 @@
 
 style {
 	name: "about_this_theme";
-	base: "font=DejaVuSans font_size=10 color=#070707 wrap=word";
+	base: "font=DejaVuSans-Mono-Bold font_size=10 color=#ffffff wrap=word";
 
-	tag: "big" "+ font_size=12";
 	tag: "br" "\n";
-	tag: "bold" "+ font=DejaVuSans-Bold";
+	tag: "bold" "+ font=DejaVuSans-Bold color=#070707";
 	tag: "mono" "+ font=DejaVuSans-Mono";
-	tag: "center" "+ align=middle";
-	tag: "square" "+ font=DejaVuSans backing_color=#d3e4fb backing=on";
 	tag: "subliminal" "+ color=#e0e0e0";
-	tag: "red" "+ color=#cc0000";
 	tag: "underline" "+ underline=on underline_color=#3c3c3c";
+	tag: "right" "+ align=right font=DejaVuSans-Bold";
+	tag: "soft" "+ color: #ffffff80";
 }
 
 style {
@@ -74,7 +72,13 @@ style {
 
 style {
 	name: "sys_style";
-	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word"; // text_class=tb_large
+	#if ENABLE_TEXT_CLASSES == 0
+	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word";
+	#else
+	#if ENABLE_TEXT_CLASSES == 1
+	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word text_class=tb_large";
+	#endif
+	#endif
 
 	tag: "br" "\n";
 
