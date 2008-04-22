@@ -1,6 +1,7 @@
 
 group {
 	name: "e/modules/clock/main";
+	min: 1 1;
 
 	script {
 		public clock_cb(val) {
@@ -44,3 +45,4 @@ group {
 		}
 	}
 }
+
