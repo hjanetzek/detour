@@ -35,12 +35,11 @@ part {
 
 	description {
 		state: "default" 0.0;
-		rel1.offset: 6 6;
-		rel2.offset: -5 -5;
 		align: 0.5 0.5;
 		color: 7 7 7 255;
 		color3: 170 168 169 128;
-		color_class: "module_label";
+		rel1.offset: 6 6;
+		rel2.offset: -5 -5;
 
 		text {
 			text: "";
@@ -48,6 +47,13 @@ part {
 			size: 11;
 			min: 1 1;
 			align: 0.5 0.5;
+			#if ENABLE_TEXT_CLASSES == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASSES == 1
+				text_class: "module_normal";
+			#endif
+			#endif
 		}
 	}
 }

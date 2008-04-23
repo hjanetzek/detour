@@ -15,12 +15,10 @@ image: "button_disabled.png" COMP;
 image: "button_shadow_overlay.png" COMP;
 
 //~ slider
-image: "slider_1.png" COMP;
-image: "slider_2.png" COMP;
-image: "slider_vert1.png" COMP;
-image: "slider_vert2.png" COMP;
-image: "slider_h_shadow.png" COMP;
-image: "slider_vert_shadow.png" COMP;
+image: "slider_h.png" COMP;
+image: "slider_v.png" COMP;
+image: "slider_hshadow.png" COMP;
+image: "slider_vshadow.png" COMP;
 
 //~ runner
 image: "sb_runnerh.png" COMP;

@@ -22,7 +22,7 @@ part {
 
 		image {
 			normal: "bubble.png";
-			border: 12 29 11 23;
+			border: 12 36 11 23;
 		}
 	}
 

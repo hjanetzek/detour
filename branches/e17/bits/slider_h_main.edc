@@ -369,6 +369,7 @@ part {
 	name: "slider_image_shadow";
 	type: IMAGE;
 	mouse_events: 0;
+	//clip_to: "clip";
 
 	description {
 		state: "default" 0.0;
@@ -385,7 +386,7 @@ part {
 		}
 
 		image {
-			normal: "slider_h_shadow.png";
+			normal: "slider_hshadow.png";
 			border: 7 8 7 7;
 		}
 	}
@@ -393,13 +394,13 @@ part {
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
-		//~ color: 255 255 255 255;
+		//color: 255 255 255 255;
 	}
 
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 0;
+		color: 255 255 255 128;
 	}
 }
 
@@ -407,14 +408,13 @@ part {
 	name: "slider_image";
 	type: IMAGE;
 	mouse_events: 0;
-	// clip_to: "clip";
+	//clip_to: "clip";
 
 	description {
 		state: "default" 0.0;
 		min: 29 17;
 		max: 29 17;
 		fixed: 1 1;
-		color: 255 255 255 255;
 
 		rel1 { 
 			to: "e.dragable.slider"; 
@@ -425,7 +425,7 @@ part {
 		}
 
 		image {
-			normal: "slider_1.png";
+			normal: "slider_h.png";
 		}
 	}
 
