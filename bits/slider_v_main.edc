@@ -384,7 +384,7 @@ part {
 		}
 
 		image {
-			normal: "slider_vert_shadow.png";
+			normal: "slider_vshadow.png";
 			border: 7 7 7 7;
 		}
 	} 
@@ -392,13 +392,13 @@ part {
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
-		//~ color: 255 255 255 255;
+		//color: 255 255 255 255;
 	}
 
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 0;
+		color: 255 255 255 128;
 	}
 }
     
@@ -406,14 +406,13 @@ part {
 	name: "slider_image";
 	type: IMAGE;
 	mouse_events: 0;
-	// clip_to: "clip";
+	//clip_to: "clip";
 
 	description {
 		state: "default" 0.0;
 		min: 17 29;
 		max: 17 29;
 		fixed: 1 1;
-		color: 255 255 255 255;
 
 		rel1 { 
 			to: "e.dragable.slider"; 
@@ -424,7 +423,7 @@ part {
 		}
 
 		image {
-			normal: "slider_vert1.png";
+			normal: "slider_v.png";
 		}
 	}
 
@@ -437,10 +436,6 @@ part {
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-	
-		image {
-			normal: "slider_vert2.png";
-		}
 	}
 }
 

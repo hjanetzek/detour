@@ -17,7 +17,7 @@ all: version clean build install
 
 version:
 	@echo ""
-	cat main.edc | head -9 | tail -1
+	cat main.edc | head -12 | tail -1
 
 clean:
 	@echo ""
