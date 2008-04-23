@@ -1,4 +1,4470 @@
-2008-04-23 Alberto Castro alberto@cored.org
+------------------------------------------------------------------------
+r429 | alberto.castro.leiva | 2008-04-23 01:27:05 -0500 (Wed, 23 Apr 2008) | 3 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/bits/tclock_tooltip.edc
+   M /branches/e17/images/bubble.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/sf_bl1.png
+   M /branches/e17/images/sf_br1.png
+   M /branches/e17/images/sf_btd1.png
+   M /branches/e17/images/sf_btu1.png
+   M /branches/e17/images/shelf_default_bg_t.png
+   M /branches/e17/images/shelf_default_bg_t2.png
+   D /branches/e17/images/slider_1.png
+   D /branches/e17/images/slider_2.png
+   A /branches/e17/images/slider_h.png
+   D /branches/e17/images/slider_h_shadow.png
+   A /branches/e17/images/slider_hshadow.png
+   A /branches/e17/images/slider_v.png
+   D /branches/e17/images/slider_vert1.png
+   D /branches/e17/images/slider_vert2.png
+   D /branches/e17/images/slider_vert_shadow.png
+   A /branches/e17/images/slider_vshadow.png
+   M /branches/e17/main.edc
 
-	* Upgraded DejaVu Fonts to v. 2.24
-	* Font License update
+Rename slider images.
+Remove round edges from scrollbars.
+
+------------------------------------------------------------------------
+r428 | alberto.castro.leiva | 2008-04-23 00:14:46 -0500 (Wed, 23 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/images/bubble.png
+   D /branches/e17/images/e17_gadman_indicator.png
+   D /branches/e17/images/e17_gadman_overlay.png
+   D /branches/e17/images/e17_ibar_arrow_d.png
+   D /branches/e17/images/e17_ibar_arrow_l.png
+   D /branches/e17/images/e17_ibar_arrow_r.png
+   D /branches/e17/images/e17_ibar_arrow_u.png
+   M /branches/e17/main.edc
+
+Fixes
+
+------------------------------------------------------------------------
+r427 | alberto.castro.leiva | 2008-04-22 03:04:33 -0500 (Tue, 22 Apr 2008) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_logo.edc
+   R /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/textblock_styles.edc
+   A /branches/e17/images/bubble.png
+   D /branches/e17/images/clock-bg.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/notebook_tab.png
+   D /branches/e17/images/notebook_tab_hint.png
+   D /branches/e17/images/tab_sep.png
+   M /branches/e17/main.edc
+
+More work on about .edj dialog.
+
+
+------------------------------------------------------------------------
+r426 | alberto.castro.leiva | 2008-04-21 23:53:02 -0500 (Mon, 21 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/temperature.edc
+
+Remove comment.
+
+------------------------------------------------------------------------
+r425 | alberto.castro.leiva | 2008-04-21 23:49:30 -0500 (Mon, 21 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_logo.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/clock.edc
+
+clock.edc, battery.edc: min: 1 1; fix.
+
+------------------------------------------------------------------------
+r424 | alberto.castro.leiva | 2008-04-21 01:50:35 -0500 (Mon, 21 Apr 2008) | 4 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/notebook_tab2.png
+   D /branches/e17/images/notebook_tab_shadow.png
+
+Simply tab on about_theme_widget.ed (still needs some polishing)
+
+r423: COPYING, INSTALL, README update.
+
+------------------------------------------------------------------------
+r423 | alberto.castro.leiva | 2008-04-21 01:38:18 -0500 (Mon, 21 Apr 2008) | 8 lines
+Changed paths:
+   M /branches/e17/COPYING
+   M /branches/e17/INSTALL
+   M /branches/e17/Makefile
+   M /branches/e17/README
+   M /branches/e17/bits/about_theme.edc
+   A /branches/e17/bits/about_theme_logo.edc
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/gadman.edc
+   A /branches/e17/bits/gadman_control.edc
+   A /branches/e17/bits/gadman_control_programs.edc
+   A /branches/e17/bits/gadman_popup.edc
+   M /branches/e17/bits/winlist.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/images/bl-dialog.png
+   M /branches/e17/images/br-dialog.png
+   A /branches/e17/images/gadman_indicator.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/insignia.png
+   A /branches/e17/images/logo.png
+   A /branches/e17/images/notebook_tab.png
+   A /branches/e17/images/notebook_tab2.png
+   A /branches/e17/images/notebook_tab_hint.png
+   A /branches/e17/images/notebook_tab_shadow.png
+   A /branches/e17/images/tab_sep.png
+   M /branches/e17/macros/border.edc
+   M /branches/e17/macros/border_menu.edc
+   M /branches/e17/main.edc
+
+gadman.edc: in planning stages
+
+about_theme_widget.edc: tabs (nasty) also didn't put much 
+thought into the edc logic, but they were quite simple.
+
+Fixes to border pixels.
+
+
+------------------------------------------------------------------------
+r422 | alberto.castro.leiva | 2008-04-08 01:46:06 -0500 (Tue, 08 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/main.edc
+
+Update
+
+------------------------------------------------------------------------
+r421 | alberto.castro.leiva | 2008-04-08 01:40:31 -0500 (Tue, 08 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+
+Much better.
+
+------------------------------------------------------------------------
+r420 | alberto.castro.leiva | 2008-04-08 01:34:22 -0500 (Tue, 08 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+
+Improve the size of the icon filename selection box.
+
+------------------------------------------------------------------------
+r419 | alberto.castro.leiva | 2008-04-07 00:34:39 -0500 (Mon, 07 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/main.edc
+
+0.7.3
+
+------------------------------------------------------------------------
+r418 | alberto.castro.leiva | 2008-04-06 23:24:15 -0500 (Sun, 06 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/ibar_icon_overlay.edc
+
+Remove shadow from text.
+
+------------------------------------------------------------------------
+r417 | alberto.castro.leiva | 2008-04-05 01:45:46 -0600 (Sat, 05 Apr 2008) | 1 line
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+
+------------------------------------------------------------------------
+r416 | alberto.castro.leiva | 2008-04-05 01:35:14 -0600 (Sat, 05 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/images/images.edc
+
+Remove unused filename.
+
+------------------------------------------------------------------------
+r415 | alberto.castro.leiva | 2008-04-05 01:34:23 -0600 (Sat, 05 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   D /branches/e17/images/ibarbuf_clip.png
+   A /branches/e17/images/typebuf_clip.png
+
+Revert name change.
+
+------------------------------------------------------------------------
+r414 | alberto.castro.leiva | 2008-04-05 01:31:54 -0600 (Sat, 05 Apr 2008) | 5 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   A /branches/e17/images/ibarbuf_clip.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/typebuf_clip.png
+   M /branches/e17/macros/background.edc
+   M /branches/e17/macros/border_menu.edc
+   M /branches/e17/macros/buttons.edc
+   M /branches/e17/macros/fileman_list.edc
+   M /branches/e17/macros/sys.edc
+
+Simplify reading macros.
+
+Misc. cosmetics.
+
+
+------------------------------------------------------------------------
+r412 | alberto.castro.leiva | 2008-04-03 02:51:29 -0600 (Thu, 03 Apr 2008) | 8 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/ibar_drop.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   A /branches/e17/bits/slidesel.edc
+   A /branches/e17/bits/slidesel_main.edc
+   A /branches/e17/bits/slidesel_programs.edc
+   A /branches/e17/custom/cd_folder_tar.xcf
+   M /branches/e17/images/insignia.png
+   M /branches/e17/macros/background.edc
+   M /branches/e17/main.edc
+
+Various improvements.
+
+[NEW]
+#define ENABLE_IBAR_LABEL_OVERLAY 0/1  
+displays ibar & ibox label overlay 
+ON by default
+
+
+------------------------------------------------------------------------
+r410 | alberto.castro.leiva | 2008-03-26 06:13:42 -0600 (Wed, 26 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay_programs.edc
+
+Better, faster, something
+
+------------------------------------------------------------------------
+r402 | alberto.castro.leiva | 2008-03-26 02:03:44 -0600 (Wed, 26 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/images/menu_separator.png
+   M /branches/e17/images/typebuf_clip.png
+
+misc. update
+
+------------------------------------------------------------------------
+r401 | alberto.castro.leiva | 2008-03-22 00:54:18 -0600 (Sat, 22 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/macros/border.edc
+
+255 255 255 164; buttons inactive.
+
+------------------------------------------------------------------------
+r400 | alberto.castro.leiva | 2008-03-22 00:53:25 -0600 (Sat, 22 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_default_programs.edc
+   M /branches/e17/macros/border.edc
+
+Hannes didn't like the Border Shadow, so let's revert it.
+
+------------------------------------------------------------------------
+r399 | alberto.castro.leiva | 2008-03-20 01:29:21 -0600 (Thu, 20 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/scrollbar_hbar.edc
+   M /branches/e17/bits/scrollbar_vbar.edc
+
+Apply the same updates to the EFM scrollbars.
+
+------------------------------------------------------------------------
+r398 | alberto.castro.leiva | 2008-03-20 01:27:16 -0600 (Thu, 20 Mar 2008) | 7 lines
+Changed paths:
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_vbar.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/main.edc
+
+Disable custom icons for now. They look like shit.
+
+Apply a better transitional overlay color for the scrollframe. 
+Apply the same overlay color for sliders with a delayed 
+transition.
+
+
+------------------------------------------------------------------------
+r397 | alberto.castro.leiva | 2008-03-18 01:08:35 -0600 (Tue, 18 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/custom/cd_folder_tar.png
+
+Testing nothing but..
+
+------------------------------------------------------------------------
+r396 | alberto.castro.leiva | 2008-03-17 03:34:07 -0600 (Mon, 17 Mar 2008) | 8 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_default_programs.edc
+   M /branches/e17/bits/fileman_icon.edc
+   M /branches/e17/bits/fileman_icon_clickable.edc
+   M /branches/e17/bits/fileman_mime.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   A /branches/e17/custom/cd_document.png
+   A /branches/e17/custom/cd_folder.png
+   A /branches/e17/custom/cd_folder_open.png
+   A /branches/e17/custom/cd_folder_tar.png
+   A /branches/e17/custom/cd_font-x-generic.png
+   A /branches/e17/custom/cd_gnome-mime-application-pdf.png
+   A /branches/e17/custom/cd_image-x-generic.png
+   A /branches/e17/custom/cd_text-html.png
+   A /branches/e17/custom/cd_text-x-generic.png
+   M /branches/e17/icons/icons.edc
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/tb-shadow.png
+   M /branches/e17/images/temperature-0.png
+   M /branches/e17/images/temperature-20.png
+   M /branches/e17/images/temperature-40.png
+   M /branches/e17/images/tl.png
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+Battery module is fucked up?? why.
+
+Re-adding custom icons. We'll re-start working on the folder 
+icon, since its butt ugly.
+
+Inactive border transition.
+
+
+------------------------------------------------------------------------
+r395 | alberto.castro.leiva | 2008-03-15 23:21:47 -0600 (Sat, 15 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_mime.edc
+
+Add missing e/icons/fileman/mime/application/x-rar icon.
+
+------------------------------------------------------------------------
+r394 | alberto.castro.leiva | 2008-03-15 21:02:59 -0600 (Sat, 15 Mar 2008) | 5 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   M /branches/e17/main.edc
+
+Improve busy text label.
+Note: if there are no files in the directory, overlay will be 
+visible!
+
+
+------------------------------------------------------------------------
+r393 | alberto.castro.leiva | 2008-03-15 20:48:45 -0600 (Sat, 15 Mar 2008) | 3 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/typebuf_clip.png
+
+Improve the typebuffer clip.
+
+
+------------------------------------------------------------------------
+r392 | alberto.castro.leiva | 2008-03-15 04:00:17 -0600 (Sat, 15 Mar 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+
+Fix text color and aligments.
+
+------------------------------------------------------------------------
+r391 | alberto.castro.leiva | 2008-03-15 02:04:19 -0600 (Sat, 15 Mar 2008) | 5 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   A /branches/e17/images/busy.cursor.00.png
+   A /branches/e17/images/busy.cursor.01.png
+   A /branches/e17/images/busy.cursor.02.png
+   A /branches/e17/images/busy.cursor.03.png
+   D /branches/e17/images/busy_1.png
+   D /branches/e17/images/busy_2.png
+   M /branches/e17/images/images.edc
+
+Let's show some rotating skills.
+
+Hannes: why are the battery & clock modules so screwed up? any 
+ideas.
+
+------------------------------------------------------------------------
+r389 | alberto.castro.leiva | 2008-02-23 23:27:36 -0600 (Sat, 23 Feb 2008) | 3 lines
+Changed paths:
+   M /branches/e17/bits/check.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   D /branches/e17/images/check_base_alt.png
+   M /branches/e17/images/images.edc
+
+Fix padding for check and radio widgets.
+Simplify slider(s).
+
+------------------------------------------------------------------------
+r388 | alberto.castro.leiva | 2008-02-18 20:08:30 -0600 (Mon, 18 Feb 2008) | 7 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+
+default size on dtr 0.7.1  was 88px.
+
+http://cored.org/tmp/check-radio-font-issue.png
+This has been a problem for quite some time. The radio and check 
+widget (their bases) are touching.
+
+
+------------------------------------------------------------------------
+r386 | alberto.castro.leiva | 2008-02-12 22:04:44 -0600 (Tue, 12 Feb 2008) | 1 line
+Changed paths:
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/module_notification.edc
+   A /branches/e17/bits/module_notification_main.edc
+   A /branches/e17/bits/module_notification_programs.edc
+   M /branches/e17/bits/tclock.edc
+   A /branches/e17/bits/tclock_tooltip.edc
+   M /branches/e17/bits/textblock_styles.edc
+   A /branches/e17/images/check_base_alt.png
+   M /branches/e17/images/images.edc
+
+
+------------------------------------------------------------------------
+r385 | hannes.janetzek | 2008-02-12 19:01:23 -0600 (Tue, 12 Feb 2008) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/module_notification.edc
+
+- the notification module icon wasnt needed
+- fixed my name
+
+------------------------------------------------------------------------
+r384 | hannes.janetzek | 2008-02-12 18:48:21 -0600 (Tue, 12 Feb 2008) | 6 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/tclock.edc
+
+fixes for the mixer
+- made the button minimum width a bit smaller
+- flip the slider to increase the level to the top
+
+!!! tclock tooltip is missing, commented out for now  !!! 
+
+------------------------------------------------------------------------
+r383 | alberto.castro.leiva | 2008-02-11 13:34:46 -0600 (Mon, 11 Feb 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/temperature_main.edc
+
+Context menu pop up / mouse grab fixes.
+
+------------------------------------------------------------------------
+r382 | alberto.castro.leiva | 2008-02-11 13:15:17 -0600 (Mon, 11 Feb 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/images/temperature-0.png
+
+TClock module fixes.
+
+------------------------------------------------------------------------
+r381 | alberto.castro.leiva | 2008-02-11 10:50:15 -0600 (Mon, 11 Feb 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/module_notification.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/images/temperature-0.png
+   M /branches/e17/images/temperature-20.png
+   M /branches/e17/images/temperature-40.png
+   M /branches/e17/main.edc
+
+Image (edge_scaling) fixes for temperature module.
+
+------------------------------------------------------------------------
+r380 | alberto.castro.leiva | 2008-02-08 01:09:00 -0600 (Fri, 08 Feb 2008) | 2 lines
+Changed paths:
+   M /branches/e17/main.edc
+
+++
+
+------------------------------------------------------------------------
+r379 | alberto.castro.leiva | 2008-02-08 01:08:28 -0600 (Fri, 08 Feb 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+
++
+
+------------------------------------------------------------------------
+r378 | hannes.janetzek | 2008-02-07 07:08:14 -0600 (Thu, 07 Feb 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/shelf.edc
+
+this is a workaround for the issue that the bg of the invisible shelf becomes black... i looked through the shelf code in e and it's pretty complicated to fix. hope this is ok for now
+
+------------------------------------------------------------------------
+r372 | hannes.janetzek | 2008-01-16 14:31:46 -0600 (Wed, 16 Jan 2008) | 2 lines
+Changed paths:
+   A /branches/e17/bits/module_notification.edc
+   A /branches/e17/icons/module_notification.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+added theme for loks notification module
+
+------------------------------------------------------------------------
+r371 | hannes.janetzek | 2008-01-11 07:58:47 -0600 (Fri, 11 Jan 2008) | 3 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+
+oh, i added this for my customized theme. didnt hurt here, but it's  not needed.
+btw the desklock_dialog_bg looks nice when having composite :)
+
+------------------------------------------------------------------------
+r370 | hannes.janetzek | 2008-01-11 07:33:19 -0600 (Fri, 11 Jan 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pager_window.edc
+
+update to recent pager theme changes
+
+------------------------------------------------------------------------
+r369 | alberto.castro.leiva | 2008-01-03 11:39:11 -0600 (Thu, 03 Jan 2008) | 2 lines
+Changed paths:
+   M /branches/e17/main.edc
+
+TrickY
+
+------------------------------------------------------------------------
+r368 | alberto.castro.leiva | 2007-12-18 02:01:01 -0600 (Tue, 18 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/shadow.png
+   D /branches/e17/images/wallpaper.png
+
+Now with reduced fat.
+
+------------------------------------------------------------------------
+r367 | alberto.castro.leiva | 2007-12-15 22:01:44 -0600 (Sat, 15 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+
+Fix this too.
+
+------------------------------------------------------------------------
+r366 | alberto.castro.leiva | 2007-12-15 21:46:42 -0600 (Sat, 15 Dec 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/main.edc
+
+Frame: text title alignment.
+Version oops!
+
+------------------------------------------------------------------------
+r365 | alberto.castro.leiva | 2007-12-15 00:44:21 -0600 (Sat, 15 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/icons/computer.png
+
+If #icon
+
+------------------------------------------------------------------------
+r364 | alberto.castro.leiva | 2007-12-09 18:51:45 -0600 (Sun, 09 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_icon.edc
+
+Tweak icon size.
+
+------------------------------------------------------------------------
+r363 | alberto.castro.leiva | 2007-12-08 18:26:50 -0600 (Sat, 08 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/entry_cursor.edc
+
+Fix the size of the entry_cursor.
+
+------------------------------------------------------------------------
+r362 | alberto.castro.leiva | 2007-12-08 16:15:35 -0600 (Sat, 08 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/desklock_main.edc
+
+Revert this.
+
+------------------------------------------------------------------------
+r361 | alberto.castro.leiva | 2007-12-06 17:02:35 -0600 (Thu, 06 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/font_preview.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/move_main.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   A /branches/e17/fonts/DejaVuSans-Bold.ttf
+   A /branches/e17/fonts/DejaVuSans-Oblique.ttf
+   A /branches/e17/fonts/DejaVuSans.ttf
+   A /branches/e17/fonts/DejaVuSansMono-Bold.ttf
+   A /branches/e17/fonts/DejaVuSansMono.ttf
+   D /branches/e17/fonts/Vera.ttf
+   D /branches/e17/fonts/VeraBd.ttf
+   D /branches/e17/fonts/VeraIt.ttf
+   D /branches/e17/fonts/VeraMoBd.ttf
+   D /branches/e17/fonts/VeraMono.ttf
+   M /branches/e17/macros/background.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+More rationalized font sizes.
+
+------------------------------------------------------------------------
+r360 | alberto.castro.leiva | 2007-12-05 23:12:36 -0600 (Wed, 05 Dec 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+   A /branches/e17/bits/gadman.edc
+   M /branches/e17/bits/gradients.edc
+   A /branches/e17/bits/toolbar.edc
+   A /branches/e17/bits/toolbar_main.edc
+   A /branches/e17/bits/toolbar_programs.edc
+   A /branches/e17/images/e17_gadman_indicator.png
+   A /branches/e17/images/e17_gadman_overlay.png
+   A /branches/e17/images/e17_ibar_arrow_d.png
+   A /branches/e17/images/e17_ibar_arrow_l.png
+   A /branches/e17/images/e17_ibar_arrow_r.png
+   A /branches/e17/images/e17_ibar_arrow_u.png
+   A /branches/e17/images/e17_ibar_handle_h.png
+   A /branches/e17/images/e17_ibar_handle_h2.png
+   A /branches/e17/images/e17_ibar_handle_thumb_h.png
+   A /branches/e17/images/e17_ibar_handle_thumb_v.png
+   A /branches/e17/images/e17_ibar_handle_v.png
+   A /branches/e17/images/e17_ibar_handle_v2.png
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+Adding: toolbar.edc
+
+------------------------------------------------------------------------
+r353 | alberto.castro.leiva | 2007-11-18 19:29:32 -0600 (Sun, 18 Nov 2007) | 6 lines
+Changed paths:
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+
+Set the elipsis to: 1.0, this way you can see the beginning of 
+the filename, if filename is small enough and the file 
+extension. This isn't perfect, we really need good textblock 
+here.
+
+
+------------------------------------------------------------------------
+r351 | alberto.castro.leiva | 2007-11-18 17:46:52 -0600 (Sun, 18 Nov 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+
+Disable smooth filling.
+
+------------------------------------------------------------------------
+r350 | alberto.castro.leiva | 2007-11-14 20:02:17 -0600 (Wed, 14 Nov 2007) | 4 lines
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/move_main.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   A /branches/e17/icons/dialog-information.png
+   M /branches/e17/icons/icons.edc
+   M /branches/e17/main.edc
+
+Added a dialog information icon to the move & resize group.
+Deskpreview padding fixes.
+
+
+------------------------------------------------------------------------
+r349 | alberto.castro.leiva | 2007-11-14 02:00:25 -0600 (Wed, 14 Nov 2007) | 2 lines
+Changed paths:
+   D /branches/e17/TODO
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/main.edc
+
+e,state,mouse,idle is so sweet!
+
+------------------------------------------------------------------------
+r348 | alberto.castro.leiva | 2007-11-01 22:26:47 -0600 (Thu, 01 Nov 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+
+fill { smooth: 0 }
+
+------------------------------------------------------------------------
+r347 | alberto.castro.leiva | 2007-10-30 11:45:17 -0600 (Tue, 30 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/images/bl-dialog.png
+   M /branches/e17/images/br-dialog.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/insignia.png
+   A /branches/e17/images/shadow.png
+   A /branches/e17/images/wallpaper.png
+   M /branches/e17/main.edc
+
+Fix this Version issue.
+
+------------------------------------------------------------------------
+r343 | alberto.castro.leiva | 2007-10-27 12:16:50 -0500 (Sat, 27 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   A /branches/e17/bits/border_app.edc
+   A /branches/e17/images/bb-dialog2.png
+   M /branches/e17/images/bld-shaped.png
+   M /branches/e17/images/brd-shaped.png
+   M /branches/e17/images/dialog_bg.png
+   M /branches/e17/images/images.edc
+
+Dialog updates.
+
+------------------------------------------------------------------------
+r339 | alberto.castro.leiva | 2007-10-26 09:53:04 -0500 (Fri, 26 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/images/entry_focus.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/slider_h_focus.png
+   D /branches/e17/images/slider_vert_focus.png
+
+Todo: fix button_main.edc
+
+------------------------------------------------------------------------
+r338 | alberto.castro.leiva | 2007-10-25 23:31:37 -0500 (Thu, 25 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/shelf.edc
+   A /branches/e17/bits/shelf_alternate_base.edc
+   D /branches/e17/bits/shelf_alternate_inset.edc
+   D /branches/e17/bits/shelf_alternate_programs.edc
+   D /branches/e17/bits/shelf_alternate_style.edc
+   D /branches/e17/bits/shelf_alternate_style2.edc
+   M /branches/e17/images/arrow_dark.png
+   M /branches/e17/images/button_detail_fullscreen.png
+   M /branches/e17/images/button_detail_properties.png
+   M /branches/e17/images/button_detail_shade.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/shelf_alternate_bg.png
+   D /branches/e17/images/shelf_alternate_bg_l.png
+   D /branches/e17/images/shelf_alternate_bg_r.png
+   D /branches/e17/images/shelf_alternate_bg_t.png
+   D /branches/e17/images/shelf_alternate_inset.png
+   D /branches/e17/images/shelf_alternate_over.png
+   D /branches/e17/images/shelf_alternate_over_l.png
+   D /branches/e17/images/shelf_alternate_over_r.png
+   D /branches/e17/images/shelf_alternate_over_t.png
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+Unused stuff.
+
+------------------------------------------------------------------------
+r334 | alberto.castro.leiva | 2007-10-23 07:52:05 -0500 (Tue, 23 Oct 2007) | 2 lines
+Changed paths:
+   A /branches/e17/images/clock-bg.png
+
+Backup
+
+------------------------------------------------------------------------
+r332 | simon.treny | 2007-10-22 13:06:47 -0500 (Mon, 22 Oct 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/temperature.edc
+
+* Fix temperature module
+
+
+------------------------------------------------------------------------
+r329 | boykot.tokyo | 2007-10-20 07:57:26 -0500 (Sat, 20 Oct 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/scrollframe_main.edc
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/radio0_big.png
+   D /branches/e17/images/radio1_big.png
+   D /branches/e17/images/radio_base_big.png
+   D /branches/e17/images/radio_focus_big.png
+   D /branches/e17/images/radio_shadow_big.png
+
+Scrollframe fixes. 
+Remove those radio images, they won't be used after all.
+
+------------------------------------------------------------------------
+r328 | boykot.tokyo | 2007-10-20 07:34:00 -0500 (Sat, 20 Oct 2007) | 4 lines
+Changed paths:
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/images/check_focus.png
+   M /branches/e17/images/check_shadow.png
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/radio0_big.png
+   A /branches/e17/images/radio1_big.png
+   M /branches/e17/images/radio_base.png
+   A /branches/e17/images/radio_base_big.png
+   M /branches/e17/images/radio_focus.png
+   A /branches/e17/images/radio_focus_big.png
+   A /branches/e17/images/radio_shadow_big.png
+   M /branches/e17/images/slider_1.png
+   M /branches/e17/images/slider_2.png
+   M /branches/e17/images/slider_h_focus.png
+   M /branches/e17/images/slider_h_shadow.png
+   M /branches/e17/images/slider_vert1.png
+   M /branches/e17/images/slider_vert2.png
+   M /branches/e17/images/slider_vert_focus.png
+   M /branches/e17/images/slider_vert_shadow.png
+   M /branches/e17/main.edc
+
+Radio, Check and Slider widget updates.
+Fix radio enable/disable logic.
+v. 0.7.1 we're getting there :)
+
+------------------------------------------------------------------------
+r323 | boykot.tokyo | 2007-10-19 00:47:04 -0500 (Fri, 19 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/insignia.png
+   D /branches/e17/images/tree_route.png
+
+Rename.
+
+------------------------------------------------------------------------
+r322 | boykot.tokyo | 2007-10-19 00:36:12 -0500 (Fri, 19 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border_blend.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_noresize_dialog.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+
+Proper border icon fixes ?
+
+------------------------------------------------------------------------
+r321 | boykot.tokyo | 2007-10-19 00:26:25 -0500 (Fri, 19 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/frame_main.edc
+
+Exebuf cursor fixes.
+
+------------------------------------------------------------------------
+r320 | boykot.tokyo | 2007-10-19 00:06:56 -0500 (Fri, 19 Oct 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/images/tree_route.png
+   M /branches/e17/main.edc
+
+Text style fixes.
+Updated logo.
+
+------------------------------------------------------------------------
+r318 | boykot.tokyo | 2007-10-16 04:13:11 -0500 (Tue, 16 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+
+#if ENABLED....
+
+------------------------------------------------------------------------
+r317 | boykot.tokyo | 2007-10-16 04:11:31 -0500 (Tue, 16 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+
+That was a bad call, revert!
+
+------------------------------------------------------------------------
+r315 | boykot.tokyo | 2007-10-14 05:36:37 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   A /branches/e17/custom
+   A /branches/e17/custom/document.png
+   A /branches/e17/custom/folder.png
+   A /branches/e17/custom/folder_tar.png
+   A /branches/e17/custom/font-x-generic.png
+   A /branches/e17/custom/gnome-mime-application-pdf.png
+   A /branches/e17/custom/image-x-generic.png
+   A /branches/e17/custom/text-html.png
+   A /branches/e17/custom/text-x-generic.png
+   M /branches/e17/icons/document.png
+   M /branches/e17/icons/folder.png
+   M /branches/e17/icons/folder_tar.png
+   M /branches/e17/icons/font-x-generic.png
+   M /branches/e17/icons/gnome-mime-application-pdf.png
+   M /branches/e17/icons/image-x-generic.png
+   M /branches/e17/icons/text-html.png
+   M /branches/e17/icons/text-x-generic.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/radio0.png
+   M /branches/e17/images/radio1.png
+   A /branches/e17/images/radio_base.png
+   A /branches/e17/images/radio_focus.png
+   A /branches/e17/images/radio_shadow.png
+   M /branches/e17/macros/background.edc
+
+Radio widget updates.
+
+------------------------------------------------------------------------
+r314 | boykot.tokyo | 2007-10-14 04:08:52 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/menu_check.edc
+   A /branches/e17/images/check-.png
+   M /branches/e17/images/check0.png
+   D /branches/e17/images/check01.png
+   M /branches/e17/images/check1.png
+   A /branches/e17/images/check_base.png
+   A /branches/e17/images/check_focus.png
+   A /branches/e17/images/check_shadow.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/macros/border_menu.edc
+
+Check widget focus updates.
+
+------------------------------------------------------------------------
+r313 | boykot.tokyo | 2007-10-14 03:05:06 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/ibar_drop.edc
+   D /branches/e17/bits/ibar_drop_programs.edc
+   M /branches/e17/bits/ibox.edc
+   M /branches/e17/images/ibar_drop.png
+   M /branches/e17/images/shelf_default_bg_t.png
+   M /branches/e17/images/shelf_default_bg_t2.png
+
+Ibar drop updates.
+
+------------------------------------------------------------------------
+r312 | boykot.tokyo | 2007-10-14 02:40:28 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider.edc
+
+Remove unused variable
+
+------------------------------------------------------------------------
+r311 | boykot.tokyo | 2007-10-14 02:39:04 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider_v_programs.edc
+
+(untested) Slider disabled state for vertical slider.
+
+------------------------------------------------------------------------
+r310 | boykot.tokyo | 2007-10-14 02:37:38 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   A /branches/e17/images/slider_h_focus.png
+   A /branches/e17/images/slider_h_shadow.png
+   A /branches/e17/images/slider_vert_focus.png
+   A /branches/e17/images/slider_vert_shadow.png
+
+Thanks catalyst. I always forget to add images.
+
+------------------------------------------------------------------------
+r309 | boykot.tokyo | 2007-10-14 02:29:16 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider_h_programs.edc
+
+Fix disabled state.
+
+------------------------------------------------------------------------
+r308 | boykot.tokyo | 2007-10-14 02:27:17 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+
+Remove commented stuff
+
+------------------------------------------------------------------------
+r307 | boykot.tokyo | 2007-10-14 02:26:18 -0500 (Sun, 14 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/icons/wallpaper_screen_center.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/slider_0.png
+   M /branches/e17/images/slider_1.png
+   D /branches/e17/images/slider_focus.png
+   D /branches/e17/images/slider_vert0.png
+
+Re-enable slider focus.
+
+------------------------------------------------------------------------
+r306 | boykot.tokyo | 2007-10-12 03:24:06 -0500 (Fri, 12 Oct 2007) | 1 line
+Changed paths:
+   M /branches/e17/icons/folder_tar.png
+
+
+------------------------------------------------------------------------
+r305 | boykot.tokyo | 2007-10-12 01:30:19 -0500 (Fri, 12 Oct 2007) | 1 line
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/border_blend.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_noresize_dialog.edc
+   M /branches/e17/bits/border_noresizefull_dialog.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/fileman_icon.edc
+   M /branches/e17/images/tree_route.png
+   M /branches/e17/main.edc
+
+
+------------------------------------------------------------------------
+r301 | boykot.tokyo | 2007-10-06 04:43:15 -0500 (Sat, 06 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/winlist_item.edc
+
+Update to Winlist and Fixes for the Button widget.
+
+------------------------------------------------------------------------
+r300 | boykot.tokyo | 2007-10-01 04:29:17 -0500 (Mon, 01 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/images/pager_window_iconified.png
+
+WinList icon/text fixes.
+
+------------------------------------------------------------------------
+r299 | boykot.tokyo | 2007-10-01 03:55:11 -0500 (Mon, 01 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/main.edc
+
+Exebuf icon/text fixes.
+
+------------------------------------------------------------------------
+r296 | boykot.tokyo | 2007-09-29 05:27:09 -0500 (Sat, 29 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/icons/document.png
+   M /branches/e17/icons/folder.png
+   M /branches/e17/icons/text-html.png
+   M /branches/e17/icons/text-x-generic.png
+   M /branches/e17/main.edc
+
+Updates
+
+------------------------------------------------------------------------
+r293 | boykot.tokyo | 2007-09-27 00:17:13 -0500 (Thu, 27 Sep 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/icons/document.png
+   M /branches/e17/icons/font-x-generic.png
+   M /branches/e17/icons/gnome-mime-application-pdf.png
+   M /branches/e17/icons/image-x-generic.png
+   M /branches/e17/icons/text-html.png
+   M /branches/e17/icons/text-x-generic.png
+
+Icon updates. Let's slow start flushing out all of the Tango 
+icons.
+
+------------------------------------------------------------------------
+r292 | boykot.tokyo | 2007-09-23 00:29:02 -0500 (Sun, 23 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+
+Tweak
+
+------------------------------------------------------------------------
+r291 | boykot.tokyo | 2007-09-22 02:39:35 -0500 (Sat, 22 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+
+Another patch by lok
+
+------------------------------------------------------------------------
+r290 | boykot.tokyo | 2007-09-21 05:49:06 -0500 (Fri, 21 Sep 2007) | 2 lines
+Changed paths:
+   A /branches/e17/fonts/VeraIt.ttf
+
+Ooops. Thanks catalyst.
+
+------------------------------------------------------------------------
+r289 | boykot.tokyo | 2007-09-20 21:35:48 -0500 (Thu, 20 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/main.edc
+
+Normalize the bold font.
+
+------------------------------------------------------------------------
+r287 | boykot.tokyo | 2007-09-19 23:16:35 -0500 (Wed, 19 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/macros/border_menu.edc
+
+Fix
+
+------------------------------------------------------------------------
+r286 | boykot.tokyo | 2007-09-19 21:13:11 -0500 (Wed, 19 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+   A /branches/e17/images/fileman_rubberband.png
+   M /branches/e17/images/images.edc
+
+Rubberband.
+
+------------------------------------------------------------------------
+r285 | boykot.tokyo | 2007-09-19 02:10:44 -0500 (Wed, 19 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+
+main menu icons are now 24x24
+
+------------------------------------------------------------------------
+r279 | boykot.tokyo | 2007-09-17 19:46:59 -0500 (Mon, 17 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/dialog_text.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/font_preview.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/label.edc
+   D /branches/e17/bits/label_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/macros/sys.edc
+   M /branches/e17/main.edc
+
+Text updates.
+
+------------------------------------------------------------------------
+r278 | boykot.tokyo | 2007-09-16 21:29:26 -0500 (Sun, 16 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable_programs.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/images/fileman_thumb_bg.png
+   D /branches/e17/images/filename_select.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+Updates
+
+------------------------------------------------------------------------
+r266 | boykot.tokyo | 2007-09-08 06:37:38 -0500 (Sat, 08 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+
+tweak
+
+------------------------------------------------------------------------
+r265 | boykot.tokyo | 2007-09-08 06:33:26 -0500 (Sat, 08 Sep 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/images/fileman_shadow.png
+
+- efm tweaks
+- disabling slider widget focus
+
+------------------------------------------------------------------------
+r264 | boykot.tokyo | 2007-09-08 02:34:42 -0500 (Sat, 08 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/scrollframe_vbar.edc
+
+Scrollframe fixes for more-un-len-err-uxs stupid add ons
+
+------------------------------------------------------------------------
+r262 | boykot.tokyo | 2007-09-08 02:17:54 -0500 (Sat, 08 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/scrollframe_vbar.edc
+
+?
+
+------------------------------------------------------------------------
+r254 | boykot.tokyo | 2007-09-04 22:59:28 -0500 (Tue, 04 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/textblock_styles.edc
+
+Module description box, fix.
+
+------------------------------------------------------------------------
+r253 | boykot.tokyo | 2007-09-04 22:30:32 -0500 (Tue, 04 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/radio01.png
+
+Radio and check fixes.
+
+------------------------------------------------------------------------
+r251 | boykot.tokyo | 2007-09-03 17:36:11 -0500 (Mon, 03 Sep 2007) | 2 lines
+Changed paths:
+   A /branches/e17/images/radio01.png
+
+Sorry Catalyst
+
+------------------------------------------------------------------------
+r249 | boykot.tokyo | 2007-09-03 13:51:29 -0500 (Mon, 03 Sep 2007) | 2 lines
+Changed paths:
+   A /branches/e17/images/check01.png
+
+Thanks Catalyst
+
+------------------------------------------------------------------------
+r248 | boykot.tokyo | 2007-09-03 02:32:17 -0500 (Mon, 03 Sep 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/shelf_base.edc
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/radio1.png
+
+Experimental to fix for the shelves.
+Not sure about the rest.
+
+------------------------------------------------------------------------
+r243 | boykot.tokyo | 2007-08-29 03:28:36 -0500 (Wed, 29 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/textblock_styles.edc
+
+Textblock fixes.
+
+------------------------------------------------------------------------
+r242 | boykot.tokyo | 2007-08-29 00:44:00 -0500 (Wed, 29 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/textblock_styles.edc
+
+Does this fix the module description textblock ?
+
+------------------------------------------------------------------------
+r241 | boykot.tokyo | 2007-08-26 00:54:20 -0500 (Sun, 26 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/main.edc
+
+Oops!
+
+------------------------------------------------------------------------
+r240 | boykot.tokyo | 2007-08-26 00:53:33 -0500 (Sun, 26 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/main.edc
+
+Bug: module text description
+
+------------------------------------------------------------------------
+r239 | boykot.tokyo | 2007-08-26 00:21:05 -0500 (Sun, 26 Aug 2007) | 4 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/images/button_focus.png
+
+Fix for the minimum size button.
+Fixes the Desktop Entry editor.
+
+
+------------------------------------------------------------------------
+r238 | boykot.tokyo | 2007-08-26 00:01:49 -0500 (Sun, 26 Aug 2007) | 7 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/scrollframe_main.edc
+   M /branches/e17/images/button_focus.png
+   D /branches/e17/images/button_original.png
+   M /branches/e17/images/button_shadow_overlay.png
+   M /branches/e17/images/error-dialog_bg.png
+   M /branches/e17/images/menu_bg.png
+   M /branches/e17/images/menu_separator.png
+   M /branches/e17/main.edc
+
+Fixing one of the most annoying bugs ever.
+
+The scrollframe content is relative to:
+to_x: "sb_vbar"; to_y: "sb_hbar"; 
+not to the border.
+
+
+------------------------------------------------------------------------
+r237 | boykot.tokyo | 2007-08-22 01:48:20 -0500 (Wed, 22 Aug 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/icons.edc
+
+Grrr! no wonder. 
+Missing icon entry.
+
+------------------------------------------------------------------------
+r236 | boykot.tokyo | 2007-08-20 06:51:14 -0500 (Mon, 20 Aug 2007) | 2 lines
+Changed paths:
+   A /branches/e17/images/button_original.png
+   D /branches/e17/images/button_originial.png
+
+Damn it!
+
+------------------------------------------------------------------------
+r235 | boykot.tokyo | 2007-08-20 06:05:19 -0500 (Mon, 20 Aug 2007) | 2 lines
+Changed paths:
+   A /branches/e17/images/button_originial.png
+   A /branches/e17/images/filename_select.png
+
+Oops! thanks Catalyst.
+
+------------------------------------------------------------------------
+r234 | boykot.tokyo | 2007-08-20 05:29:45 -0500 (Mon, 20 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/images/button.png
+   M /branches/e17/images/slider_0.png
+   M /branches/e17/images/slider_1.png
+
+Button icon fixes.
+
+------------------------------------------------------------------------
+r233 | boykot.tokyo | 2007-08-20 04:29:15 -0500 (Mon, 20 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/images/bb-dialog.png
+   M /branches/e17/images/dialog_bg.png
+
+Border fixes.
+
+------------------------------------------------------------------------
+r232 | boykot.tokyo | 2007-08-20 04:00:00 -0500 (Mon, 20 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable_programs.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/images/frame_outline.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+Icon/Desktop updates.
+
+------------------------------------------------------------------------
+r231 | boykot.tokyo | 2007-08-16 04:51:02 -0500 (Thu, 16 Aug 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+
+Fix for the 'button' too wide scenario.
+
+------------------------------------------------------------------------
+r228 | boykot.tokyo | 2007-07-27 07:38:12 -0500 (Fri, 27 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+
+Odd!
+
+------------------------------------------------------------------------
+r227 | boykot.tokyo | 2007-07-19 20:02:13 -0500 (Thu, 19 Jul 2007) | 2 lines
+Changed paths:
+   A /branches/e17/icons/computer.png
+
+Forgot this file.
+
+------------------------------------------------------------------------
+r226 | boykot.tokyo | 2007-07-17 19:29:54 -0500 (Tue, 17 Jul 2007) | 1 line
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/fileman_icon.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/icons/icons.edc
+   M /branches/e17/images/fileman_drop.png
+
+
+------------------------------------------------------------------------
+r225 | hannes.janetzek | 2007-07-15 23:49:20 -0500 (Sun, 15 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/preview_main.edc
+
+small fix: now it aligns better with the other frames
+
+------------------------------------------------------------------------
+r224 | hannes.janetzek | 2007-07-14 14:58:48 -0500 (Sat, 14 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/shelf_invisible_base.edc
+
+remove this: seems not to be the solution for issue #3
+
+------------------------------------------------------------------------
+r223 | hannes.janetzek | 2007-07-10 15:35:05 -0500 (Tue, 10 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/shelf_invisible_base.edc
+
+e17: just a test, if this fixes the garbled invisible shelf problem
+
+------------------------------------------------------------------------
+r221 | boykot.tokyo | 2007-07-08 01:41:52 -0500 (Sun, 08 Jul 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/border_blend.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_noresize_dialog.edc
+   M /branches/e17/bits/border_noresizefull_dialog.edc
+   M /branches/e17/bits/border_pixel.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/images/button.png
+   D /branches/e17/images/button_clicked.png
+   M /branches/e17/images/button_outline.png
+   A /branches/e17/images/button_shadow.png
+   A /branches/e17/images/button_shadow_overlay.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/macros/buttons.edc
+
+0.6.8
+
+THIS IS A WORK IN PROGRESS.
+
+
+------------------------------------------------------------------------
+r220 | hannes.janetzek | 2007-07-07 21:43:23 -0500 (Sat, 07 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/color_well_main.edc
+   M /branches/e17/bits/configure_main.edc
+   M /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ibox_base.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/pointer_mono.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/bits/scrollframe_main.edc
+   M /branches/e17/bits/shelf_alternate_inset.edc
+   M /branches/e17/bits/shelf_default_inset.edc
+   M /branches/e17/bits/shelf_default_plain.edc
+   M /branches/e17/bits/shelf_invisible_inset.edc
+   M /branches/e17/bits/shelf_invisible_plain.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/spectrum_main.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+
+e17: removed color: 0 0 0 0; from swallow parts. i hope i got them all right
+
+------------------------------------------------------------------------
+r219 | boykot.tokyo | 2007-07-03 17:33:47 -0500 (Tue, 03 Jul 2007) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/images/menu_bg.png
+
+Pixel discrepency.
+
+
+------------------------------------------------------------------------
+r209 | boykot.tokyo | 2007-06-29 14:03:47 -0500 (Fri, 29 Jun 2007) | 4 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/fileman_actions.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+Some text_classes were missing. Still incomplete if you count the 
+title_bar.
+
+
+------------------------------------------------------------------------
+r208 | boykot.tokyo | 2007-06-29 12:22:51 -0500 (Fri, 29 Jun 2007) | 7 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label_main.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/images/cursor.svg
+   M /branches/e17/images/cursor_mono.png
+   M /branches/e17/images/pager_focus.png
+   M /branches/e17/main.edc
+
+Support for text_classes is in. Although, I haven't yet test 
+them. 
+
+You can enable them by setting ENABLE_TEXT_CLASS to 1 on 
+main.edc
+
+
+------------------------------------------------------------------------
+r199 | boykot.tokyo | 2007-06-24 02:51:55 -0500 (Sun, 24 Jun 2007) | 6 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/images/button_detail_properties.png
+   A /branches/e17/images/button_detail_skip.png
+   A /branches/e17/images/button_detail_skip_pager.png
+   M /branches/e17/images/button_focus.png
+   A /branches/e17/images/dot2.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+Adding missing images for window border menu.
+Skip, Pager_Skip
+
+Adding small dotted decorations to exebuf and winlist.
+
+
+------------------------------------------------------------------------
+r198 | boykot.tokyo | 2007-06-20 04:13:46 -0500 (Wed, 20 Jun 2007) | 12 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/entry_cursor.edc
+   M /branches/e17/bits/entry_main.edc
+   D /branches/e17/bits/entry_programs.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/fileman_actions.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_drop.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/shelf.edc
+   A /branches/e17/bits/shelf_alternate_style2.edc
+   M /branches/e17/bits/shelf_base.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/spectrum_main.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/icons/icons.edc
+   A /branches/e17/icons/stock_select-all.png
+   M /branches/e17/images/button_focus.png
+   M /branches/e17/images/entry.png
+   M /branches/e17/images/entry_focus.png
+   A /branches/e17/images/fileman_drop.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/sb_br1.png
+   M /branches/e17/images/sb_btd1.png
+   A /branches/e17/images/shelf_default_bg_t2.png
+   A /branches/e17/images/shelf_default_bg_v2.png
+   A /branches/e17/images/shelf_default_r_bg_v2.png
+   M /branches/e17/macros/buttons.edc
+   M /branches/e17/main.edc
+
+0.6.7
+
+-alternate shelf style update
+-entry text focus update (colorschme)
+-button focus update (colorscheme)
+-somewhat improve winlist, exebuf ?
+-formatting
+-efm: updated drag and drop animation (still need a separate 
+animation for fwin)
+-ibar: drop needs a redo, check TODO hah
+
+
+------------------------------------------------------------------------
+r191 | boykot.tokyo | 2007-06-08 01:59:00 -0500 (Fri, 08 Jun 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/images/busy_1.png
+   M /branches/e17/images/busy_2.png
+   D /branches/e17/images/fileman_button_shadow2.png
+   A /branches/e17/images/fileman_shadow.png
+   M /branches/e17/images/fileman_thumb_bg.png
+   M /branches/e17/images/images.edc
+
+Color updates to the fwin busy animation.
+Text / format fixes to exebuf and winlist.
+
+------------------------------------------------------------------------
+r189 | boykot.tokyo | 2007-06-04 00:41:46 -0500 (Mon, 04 Jun 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   A /branches/e17/images/busy_1.png
+   A /branches/e17/images/busy_2.png
+   M /branches/e17/images/cursor_mono.png
+   D /branches/e17/images/e17_busy-1.png
+   D /branches/e17/images/e17_busy-2.png
+   D /branches/e17/images/e17_busy-3.png
+   D /branches/e17/images/e17_busy-4.png
+   D /branches/e17/images/e17_busy-5.png
+   D /branches/e17/images/e17_busy-6.png
+   D /branches/e17/images/e17_busy-7.png
+   D /branches/e17/images/e17_busy-8.png
+   D /branches/e17/images/e17_busy-9.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/shelf_default_bg_h.png
+   M /branches/e17/images/shelf_default_bg_t.png
+
+Some overdue fixes and some not so new.
+
+Adding a simple busy animation.
+
+
+------------------------------------------------------------------------
+r188 | boykot.tokyo | 2007-06-03 18:19:39 -0500 (Sun, 03 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman.edc
+
+Last minute fixes.
+
+------------------------------------------------------------------------
+r187 | boykot.tokyo | 2007-06-03 17:59:50 -0500 (Sun, 03 Jun 2007) | 11 lines
+Changed paths:
+   M /branches/e17/INSTALL
+   M /branches/e17/Makefile
+   M /branches/e17/README
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/exebuf_item.edc
+   D /branches/e17/bits/exebuf_item_programs.edc
+   M /branches/e17/bits/exebuf_main.edc
+   D /branches/e17/bits/exebuf_main_programs.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/fileman_actions.edc
+   A /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_clickable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   D /branches/e17/bits/fileman_list_fixed_programs.edc
+   D /branches/e17/bits/fileman_list_odd_programs.edc
+   M /branches/e17/bits/fileman_mime.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/scrollbar_hbar.edc
+   M /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/shelf_invisible_inset.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/images/cursor.png
+   M /branches/e17/images/cursor2.png
+   M /branches/e17/images/entry.png
+   M /branches/e17/images/entry_focus.png
+   M /branches/e17/images/shelf_invisible_inset_bg.png
+   M /branches/e17/macros/background.edc
+   A /branches/e17/macros/fileman_list.edc
+   M /branches/e17/main.edc
+
+detour 0.6.6
+
+exebuf: much better, this time icons are moronically shrinked 
+and they fit better, etc.
+
+Desktop icon labels are now separated from fwin.
+Fixing fwin scrollbar alignment.
+Fixed pulsating pointer animation getting cut-off.
+And more.
+
+
+------------------------------------------------------------------------
+r185 | boykot.tokyo | 2007-05-27 07:37:38 -0500 (Sun, 27 May 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   D /branches/e17/images/e17_fileman_thumb_bg.png
+   D /branches/e17/images/e17_mini_button_shadow2.png
+   A /branches/e17/images/fileman_button_shadow2.png
+   A /branches/e17/images/fileman_thumb_bg.png
+   M /branches/e17/images/images.edc
+
+Currently the e/fileman/icon/variable group controls the aspect 
+of both the desktop and the efm win icon labels. This is a 
+work-around for dark colored backgrounds.
+
+
+------------------------------------------------------------------------
+r184 | boykot.tokyo | 2007-05-27 01:13:37 -0500 (Sun, 27 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   D /branches/e17/images/e17_wallpaper_center.png
+   D /branches/e17/images/e17_wallpaper_center_flat.png
+   D /branches/e17/images/e17_wallpaper_grad_screen.png
+   D /branches/e17/images/e17_wallpaper_screen.png
+   M /branches/e17/images/scrollframe_inset.png
+
+...And desktop icon filenames are no longer truncated!
+
+------------------------------------------------------------------------
+r182 | boykot.tokyo | 2007-05-26 01:57:07 -0500 (Sat, 26 May 2007) | 7 lines
+Changed paths:
+   M /branches/e17/INSTALL
+   M /branches/e17/README
+   M /branches/e17/TODO
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/battery_programs.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/textblock_styles.edc
+
+Formatting the dialog_style hilite.
+Reverted exebuf's dialog (this needs to be reworked again)
+Centering the entry text of sliders.
+Modified the battery module to only display text when working on 
+battery.
+
+
+------------------------------------------------------------------------
+r180 | boykot.tokyo | 2007-05-24 03:05:12 -0500 (Thu, 24 May 2007) | 6 lines
+Changed paths:
+   M /branches/e17/AUTHORS
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_theme_text.edc
+
+Its only fair that I add unixtitan, after his macros are a 
+little more flexible.
+
+Testing the new logo.
+
+
+------------------------------------------------------------------------
+r178 | boykot.tokyo | 2007-05-24 02:51:52 -0500 (Thu, 24 May 2007) | 3 lines
+Changed paths:
+   M /branches/e17/README
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pointer_mono.edc
+   M /branches/e17/icons/battery-charge.png
+   A /branches/e17/icons/display-size.png
+   M /branches/e17/icons/icon_shelf_bottom.png
+   M /branches/e17/icons/icon_shelf_bottom_desk.png
+   M /branches/e17/icons/icon_shelf_bottom_left.png
+   M /branches/e17/icons/icon_shelf_bottom_right.png
+   M /branches/e17/icons/icon_shelf_dock.png
+   M /branches/e17/icons/icon_shelf_left.png
+   M /branches/e17/icons/icon_shelf_left_bottom.png
+   M /branches/e17/icons/icon_shelf_left_top.png
+   M /branches/e17/icons/icon_shelf_menu_bar.png
+   M /branches/e17/icons/icon_shelf_panel.png
+   M /branches/e17/icons/icon_shelf_right.png
+   M /branches/e17/icons/icon_shelf_right_bottom.png
+   M /branches/e17/icons/icon_shelf_right_top.png
+   M /branches/e17/icons/icon_shelf_top.png
+   M /branches/e17/icons/icon_shelf_top_desk.png
+   M /branches/e17/icons/icon_shelf_top_left.png
+   M /branches/e17/icons/icon_shelf_top_right.png
+   M /branches/e17/icons/icons.edc
+   D /branches/e17/icons/view-fullscreen.png
+   M /branches/e17/icons/wallpaper_screen_center.png
+   M /branches/e17/icons/wallpaper_screen_grad.png
+   M /branches/e17/icons/wallpaper_screen_in.png
+   M /branches/e17/icons/wallpaper_screen_out.png
+   M /branches/e17/icons/wallpaper_screen_stretch.png
+   M /branches/e17/icons/wallpaper_screen_tile.png
+   A /branches/e17/images/cursor.svg
+   M /branches/e17/images/sb_bl1.png
+   M /branches/e17/images/sb_br1.png
+   M /branches/e17/images/sb_btd1.png
+   M /branches/e17/images/sb_btu1.png
+   M /branches/e17/images/scrollframe_focus.png
+   M /branches/e17/images/scrollframe_inset.png
+   M /branches/e17/images/sf_bl1.png
+   M /branches/e17/images/sf_br1.png
+   M /branches/e17/images/sf_btd1.png
+   M /branches/e17/images/sf_btu1.png
+   M /branches/e17/images/sf_hb_runner.png
+   M /branches/e17/images/sf_vb_runner.png
+   M /branches/e17/images/tree_route.png
+   M /branches/e17/main.edc
+
+Contrast for a few elements.
+
+
+------------------------------------------------------------------------
+r176 | boykot.tokyo | 2007-05-22 04:01:21 -0500 (Tue, 22 May 2007) | 6 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/configure_main.edc
+   M /branches/e17/bits/fileman_actions.edc
+   M /branches/e17/bits/fileman_icon.edc
+   M /branches/e17/bits/fileman_mime.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/icons/application-x-executable.png
+   M /branches/e17/icons/applications-office.png
+   M /branches/e17/icons/applications-other.png
+   M /branches/e17/icons/applications-system.png
+   M /branches/e17/icons/audio-x-generic.png
+   M /branches/e17/icons/document-new.png
+   M /branches/e17/icons/document-open.png
+   M /branches/e17/icons/document-properties.png
+   M /branches/e17/icons/document.png
+   M /branches/e17/icons/drive-harddisk.png
+   M /branches/e17/icons/edit-copy.png
+   M /branches/e17/icons/edit-cut.png
+   M /branches/e17/icons/edit-delete.png
+   M /branches/e17/icons/edit-paste.png
+   M /branches/e17/icons/emblem-favorite.png
+   M /branches/e17/icons/filesaveas.png
+   M /branches/e17/icons/folder-new.png
+   M /branches/e17/icons/folder-open.png
+   M /branches/e17/icons/folder.png
+   M /branches/e17/icons/folder_tar.png
+   A /branches/e17/icons/font-x-generic.png
+   M /branches/e17/icons/gnome-devel.png
+   D /branches/e17/icons/gnome-fs-desktop.png
+   M /branches/e17/icons/gnome-mime-application-pdf.png
+   D /branches/e17/icons/gnome-mime-application-x-font.png
+   M /branches/e17/icons/go-down.png
+   M /branches/e17/icons/go-next.png
+   M /branches/e17/icons/go-up.png
+   M /branches/e17/icons/icons.edc
+   M /branches/e17/icons/image-x-generic.png
+   M /branches/e17/icons/input-mouse.png
+   M /branches/e17/icons/shellscript.png
+   M /branches/e17/icons/text-html.png
+   M /branches/e17/icons/text-x-generic.png
+   A /branches/e17/icons/user-desktop.png
+   M /branches/e17/icons/user-home.png
+   A /branches/e17/icons/user-trash.png
+   M /branches/e17/icons/video-x-generic.png
+   M /branches/e17/icons/view-refresh.png
+   M /branches/e17/images/tb.png
+   M /branches/e17/images/tl.png
+   M /branches/e17/images/tr.png
+   M /branches/e17/macros/background.edc
+   M /branches/e17/macros/border_menu.edc
+   M /branches/e17/main.edc
+
+
+0.6.5
+File manager context menu icons fixes.
+Hushing some edje fixed size complaints.
+
+
+------------------------------------------------------------------------
+r175 | boykot.tokyo | 2007-05-21 04:36:01 -0500 (Mon, 21 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/macros/background.edc
+
+Fun with the desktop backdrop.
+
+------------------------------------------------------------------------
+r172 | boykot.tokyo | 2007-05-20 21:23:00 -0500 (Sun, 20 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/README
+   M /branches/e17/TODO
+
+0.6.4 
+
+------------------------------------------------------------------------
+r171 | boykot.tokyo | 2007-05-20 20:40:15 -0500 (Sun, 20 May 2007) | 13 lines
+Changed paths:
+   M /branches/e17/INSTALL
+   M /branches/e17/README
+   M /branches/e17/TODO
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ibox.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/bits/scrollbar_hbar.edc
+   M /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_vbar.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/shelf_alternate_inset.edc
+   M /branches/e17/bits/shelf_alternate_style.edc
+   M /branches/e17/bits/shelf_base.edc
+   M /branches/e17/bits/shelf_default_inset.edc
+   M /branches/e17/bits/shelf_default_plain.edc
+   M /branches/e17/bits/shelf_invisible_inset.edc
+   M /branches/e17/bits/shelf_invisible_plain.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+
+Edje group aliases are great!
+Fixing the last of the formating changes.
+Add support to e/fileman/scrollframe/desktop
+
+Exebuf: anyone wanting to re-design exebuf ?
+
+Simon: i'm glad you spoted the ibar icon fade, the reason why 
+they are fade is so that the overlay Icon Label text description 
+is easier to read, but there is no reason for them to be faded if 
+the user had the Icon Labels disabled. Should we just set the 
+opacity to 255 255 255 255 ? Its up for grabs.
+ 
+
+------------------------------------------------------------------------
+r169 | simon.treny | 2007-05-20 11:32:41 -0500 (Sun, 20 May 2007) | 4 lines
+Changed paths:
+   M /branches/e17/INSTALL
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/main.edc
+
+* Add an option "FADE_BAR_ICONS" to set whether or not the icons of the 
+ibar/ibox should fade
+
+
+------------------------------------------------------------------------
+r168 | boykot.tokyo | 2007-05-19 19:09:35 -0500 (Sat, 19 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman_list_fixed_programs.edc
+   M /branches/e17/bits/fileman_list_odd_programs.edc
+
+I totally butchered that one up!
+
+------------------------------------------------------------------------
+r165 | boykot.tokyo | 2007-05-19 14:33:17 -0500 (Sat, 19 May 2007) | 9 lines
+Changed paths:
+   M /branches/e17/COPYING
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/fileman.edc
+   A /branches/e17/bits/fileman_actions.edc
+   M /branches/e17/bits/fileman_icon_clickable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_fixed_programs.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_programs.edc
+   M /branches/e17/bits/fileman_mime.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/menu_separator.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/scrollbar_hbar.edc
+   M /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/sys.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/textblock_styles.edc
+   A /branches/e17/icons/document-new.png
+   M /branches/e17/icons/document-open.png
+   A /branches/e17/icons/document-properties.png
+   A /branches/e17/icons/edit-copy.png
+   A /branches/e17/icons/edit-cut.png
+   A /branches/e17/icons/edit-delete.png
+   A /branches/e17/icons/edit-paste.png
+   A /branches/e17/icons/filesaveas.png
+   A /branches/e17/icons/folder-new.png
+   M /branches/e17/icons/icons.edc
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/menu_separator.png
+   M /branches/e17/macros/background.edc
+   D /branches/e17/macros/fileman.edc
+   M /branches/e17/main.edc
+
+- bouncing efm icons are back =)
+- efm context menu icons are in (actions) (some are missing)
+- efm scrollbar is now properly aligned (somewhat, just look at\ 
+efm's typebuffer, something is off)
+- file names are no longer cut off (full length)
+- drag and drop animation needs some ideas
+- menu label / separator refactoring
+
+
+------------------------------------------------------------------------
+r164 | hannes.janetzek | 2007-05-19 13:36:50 -0500 (Sat, 19 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/images/e17_logo_small.png
+
+a little bit more contrast for the logo. I hope this is ok. it looks better imo  
+
+------------------------------------------------------------------------
+r163 | hannes.janetzek | 2007-05-19 13:31:35 -0500 (Sat, 19 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/icons.edc
+
+make the e logo zoom nicely in itask 
+
+------------------------------------------------------------------------
+r162 | hannes.janetzek | 2007-05-15 10:54:18 -0500 (Tue, 15 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/icons.edc
+
+make e's internal border icons zoom correctly in itask
+
+------------------------------------------------------------------------
+r161 | boykot.tokyo | 2007-05-14 03:39:03 -0500 (Mon, 14 May 2007) | 2 lines
+Changed paths:
+   D /branches/e17/bits/fileman_macros.edc
+
+Be gone!
+
+------------------------------------------------------------------------
+r160 | boykot.tokyo | 2007-05-14 03:38:02 -0500 (Mon, 14 May 2007) | 8 lines
+Changed paths:
+   M /branches/e17/INSTALL
+   M /branches/e17/README
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/fileman.edc
+   A /branches/e17/bits/fileman_icon.edc
+   A /branches/e17/bits/fileman_icon_clickable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_fixed_programs.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable_programs.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   A /branches/e17/bits/fileman_mime.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   A /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/ibar_drop_programs.edc
+   A /branches/e17/bits/scrollbar_hbar.edc
+   A /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/sys.edc
+   A /branches/e17/icons/audio-x-generic.png
+   A /branches/e17/icons/document-open.png
+   A /branches/e17/icons/document.png
+   A /branches/e17/icons/drive-harddisk.png
+   A /branches/e17/icons/folder-open.png
+   A /branches/e17/icons/folder.png
+   A /branches/e17/icons/folder_tar.png
+   A /branches/e17/icons/gnome-fs-desktop.png
+   A /branches/e17/icons/gnome-mime-application-pdf.png
+   A /branches/e17/icons/gnome-mime-application-x-font.png
+   A /branches/e17/icons/image-x-generic.png
+   A /branches/e17/icons/shellscript.png
+   A /branches/e17/icons/text-html.png
+   A /branches/e17/icons/user-home.png
+   A /branches/e17/icons/video-x-generic.png
+   M /branches/e17/images/cursor_mono.png
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/sb_bl1.png
+   A /branches/e17/images/sb_br1.png
+   A /branches/e17/images/sb_btd1.png
+   A /branches/e17/images/sb_btu1.png
+   M /branches/e17/macros/background.edc
+   M /branches/e17/macros/border_menu.edc
+   A /branches/e17/macros/fileman.edc
+   M /branches/e17/main.edc
+
+Fileman stuff.
+Bumping version to 0.6.3
+
+Beware the fileman.edc stuff is very young just like efm itself.
+Just a simple framework, for example scrollbars don't align 
+properly and the typebuffer isn't correcntly implemented.
+
+
+------------------------------------------------------------------------
+r155 | boykot.tokyo | 2007-05-10 05:43:39 -0500 (Thu, 10 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/macros/background.edc
+   M /branches/e17/main.edc
+
+0.6.2
+
+------------------------------------------------------------------------
+r154 | boykot.tokyo | 2007-05-10 05:41:29 -0500 (Thu, 10 May 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main_programs.edc
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/background.edc
+   D /branches/e17/bits/background_macros.edc
+   M /branches/e17/bits/border.edc
+   D /branches/e17/bits/border_macros.edc
+   D /branches/e17/bits/border_menu.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/sys.edc
+   D /branches/e17/bits/sys_macros.edc
+   A /branches/e17/macros
+   A /branches/e17/macros/background.edc
+   A /branches/e17/macros/border.edc
+   A /branches/e17/macros/border_menu.edc
+   A /branches/e17/macros/buttons.edc
+   A /branches/e17/macros/sys.edc
+   M /branches/e17/main.edc
+
+-Add a transition for button release, just like on etk.
+-Moved macros into their own folder.
+
+0.6.2
+
+------------------------------------------------------------------------
+r150 | boykot.tokyo | 2007-05-08 03:41:06 -0500 (Tue, 08 May 2007) | 2 lines
+Changed paths:
+   A /branches/e17/TODO
+   A /branches/e17/Tango.COPYING
+   A /branches/e17/Vera.COPYING
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/spectrum_main.edc
+   D /branches/e17/fonts/Vera.COPYING
+   D /branches/e17/icons/tango.COPYING
+   A /branches/e17/images/button_focus.png
+   D /branches/e17/images/button_focus_bottom.png
+   D /branches/e17/images/button_focus_bottom2.png
+   M /branches/e17/images/color_slider.png
+   M /branches/e17/images/images.edc
+
+Button focus is back. Removed the pulsating animation for now.
+
+------------------------------------------------------------------------
+r149 | boykot.tokyo | 2007-05-07 00:30:41 -0500 (Mon, 07 May 2007) | 4 lines
+Changed paths:
+   M /branches/e17/bits/cslider_main.edc
+   M /branches/e17/bits/cslider_programs.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/spectrum_main.edc
+   D /branches/e17/icons/dialog-information.png
+   A /branches/e17/icons/e17_icon_e_0.png
+   A /branches/e17/icons/e17_icon_e_glow_0.png
+   M /branches/e17/icons/icons.edc
+   M /branches/e17/images/button_detail_shade.png
+   A /branches/e17/images/color_slider.png
+   A /branches/e17/images/color_slider_x.png
+   A /branches/e17/images/color_slider_y.png
+   A /branches/e17/images/cp_slider_trough.png
+   A /branches/e17/images/cp_slider_trough_left.png
+   A /branches/e17/images/cp_slider_trough_right.png
+   M /branches/e17/images/images.edc
+
+- the Color Selector needs a total redo, its pretty fucked. It's 
+too complicated, and the layout geometry isn't symetrically 
+correct :/ hah
+
+------------------------------------------------------------------------
+r148 | boykot.tokyo | 2007-05-06 05:23:15 -0500 (Sun, 06 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+
+raster once said the separator looked cut off :/
+
+------------------------------------------------------------------------
+r147 | boykot.tokyo | 2007-05-06 05:12:21 -0500 (Sun, 06 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background_macros.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/shadow.png
+
+Formatting.
+
+------------------------------------------------------------------------
+r143 | boykot.tokyo | 2007-05-06 01:49:37 -0500 (Sun, 06 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/main.edc
+
+0.16.999.038
+
+------------------------------------------------------------------------
+r142 | boykot.tokyo | 2007-05-06 00:17:11 -0500 (Sun, 06 May 2007) | 15 lines
+Changed paths:
+   M /branches/e17/AUTHORS
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/battery_main.edc
+   A /branches/e17/bits/font_preview.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/bits/ibox_base.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_submenu.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/sys.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/icons/icons.edc
+   A /branches/e17/icons/wallpaper_screen_center.png
+   A /branches/e17/icons/wallpaper_screen_grad.png
+   A /branches/e17/icons/wallpaper_screen_in.png
+   A /branches/e17/icons/wallpaper_screen_out.png
+   A /branches/e17/icons/wallpaper_screen_stretch.png
+   A /branches/e17/icons/wallpaper_screen_tile.png
+   D /branches/e17/images/arrow_blank.png
+   M /branches/e17/images/button_detail_fullscreen.png
+   M /branches/e17/images/button_detail_locks.png
+   M /branches/e17/images/button_detail_properties.png
+   M /branches/e17/images/button_detail_remember.png
+   M /branches/e17/images/button_detail_stick.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+Disable context menu arrow blink animation, its not consistent 
+wit the rest of the interface.
+
+Wallpaper stretch, fill, gradients icons.
+I might redo the gradient side eventually, remove the entry 
+image.
+
+More formating text fixes and disabling text_classes continue.
+
+Urgent hint / ibox / text update.
+
+I want to see if i can position the sliders text a little more 
+properly.. hah
+
+
+------------------------------------------------------------------------
+r141 | boykot.tokyo | 2007-05-03 00:21:42 -0500 (Thu, 03 May 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+
+Header has to be the same size or larger than the items.
+
+------------------------------------------------------------------------
+r140 | boykot.tokyo | 2007-05-02 23:35:24 -0500 (Wed, 02 May 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/background_macros.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/configure_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_check.edc
+   D /branches/e17/bits/menu_check_signals.edc
+   M /branches/e17/bits/menu_radio.edc
+   D /branches/e17/bits/menu_radio_signals.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/textblock.edc
+   A /branches/e17/bits/textblock_styles.edc
+   A /branches/e17/images/check0.png
+   A /branches/e17/images/check1.png
+   D /branches/e17/images/check_base.png
+   D /branches/e17/images/check_blank.png
+   D /branches/e17/images/check_mark.png
+   D /branches/e17/images/e17_dialog_watermark.png
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/radio0.png
+   A /branches/e17/images/radio1.png
+   D /branches/e17/images/radio_blank.png
+   D /branches/e17/images/radio_check.png
+   D /branches/e17/images/radio_outline.png
+   M /branches/e17/images/slider_0.png
+   M /branches/e17/images/slider_1.png
+   M /branches/e17/images/slider_2.png
+   M /branches/e17/images/tree_route.png
+   M /branches/e17/main.edc
+
+Simplified check and radio images.
+Working towards 0.6.1
+
+------------------------------------------------------------------------
+r139 | tokyo.boycott | 2007-04-27 15:44:12 -0500 (Fri, 27 Apr 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background_macros.edc
+
+I'm also disabling all text_classes for now.
+
+------------------------------------------------------------------------
+r138 | tokyo.boycott | 2007-04-27 15:32:34 -0500 (Fri, 27 Apr 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_blend.edc
+   M /branches/e17/bits/border_macros.edc
+   M /branches/e17/bits/border_menu.edc
+   M /branches/e17/bits/border_noresize_dialog.edc
+   M /branches/e17/bits/border_noresizefull_dialog.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/clock_main.edc
+   M /branches/e17/bits/color_well_main.edc
+   M /branches/e17/bits/configure_main.edc
+   M /branches/e17/bits/cslider_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/dialog_text.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_drop.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ibox_base.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label_main.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/menu_submenu.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/move_main.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/pointer_mono.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/scrollframe_main.edc
+   M /branches/e17/bits/spectrum_main.edc
+   M /branches/e17/bits/sys_macros.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/temperature_main.edc
+
+Formatting
+
+------------------------------------------------------------------------
+r137 | tokyo.boycott | 2007-04-26 01:20:12 -0500 (Thu, 26 Apr 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button_main.edc
+
+oops! this is still a work in progress
+
+------------------------------------------------------------------------
+r135 | tokyo.boycott | 2007-04-26 01:13:05 -0500 (Thu, 26 Apr 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/background_macros.edc
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/desklock_main.edc
+   R /branches/e17/bits/gradients.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/winlist_main.edc
+   A /branches/e17/icons/icons.edc
+   D /branches/e17/icons.edc
+   M /branches/e17/images/button_clicked.png
+   M /branches/e17/images/button_focus_bottom.png
+   A /branches/e17/images/button_focus_bottom2.png
+   D /branches/e17/images/check.png
+   M /branches/e17/images/check_base.png
+   M /branches/e17/images/check_blank.png
+   M /branches/e17/images/check_mark.png
+   A /branches/e17/images/images.edc
+   D /branches/e17/images/radio0.png
+   D /branches/e17/images/radio1.png
+   D /branches/e17/images/radio2.png
+   A /branches/e17/images/radio_blank.png
+   A /branches/e17/images/radio_check.png
+   A /branches/e17/images/radio_outline.png
+   A /branches/e17/images/shadow.png
+   D /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+I plan to simply the radio and check buttons to only use two 
+images, but it will have to wait.
+
+------------------------------------------------------------------------
+r133 | tokyo.boycott | 2007-04-23 04:45:57 -0500 (Mon, 23 Apr 2007) | 14 lines
+Changed paths:
+   M /branches/e17/README
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_main_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/background.edc
+   A /branches/e17/bits/background_macros.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/desklock_main_programs.edc
+   M /branches/e17/bits/entry_cursor.edc
+   M /branches/e17/bits/entry_selection.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_desk_programs.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/icons/icon_shelf_bottom.png
+   M /branches/e17/icons/icon_shelf_bottom_desk.png
+   M /branches/e17/icons/icon_shelf_bottom_left.png
+   M /branches/e17/icons/icon_shelf_bottom_right.png
+   M /branches/e17/icons/icon_shelf_dock.png
+   M /branches/e17/icons/icon_shelf_left.png
+   M /branches/e17/icons/icon_shelf_left_bottom.png
+   M /branches/e17/icons/icon_shelf_left_top.png
+   M /branches/e17/icons/icon_shelf_menu_bar.png
+   M /branches/e17/icons/icon_shelf_panel.png
+   M /branches/e17/icons/icon_shelf_right.png
+   M /branches/e17/icons/icon_shelf_right_bottom.png
+   M /branches/e17/icons/icon_shelf_right_top.png
+   M /branches/e17/icons/icon_shelf_top.png
+   M /branches/e17/icons/icon_shelf_top_desk.png
+   M /branches/e17/icons/icon_shelf_top_left.png
+   M /branches/e17/icons/icon_shelf_top_right.png
+   M /branches/e17/images/button_detail_stick.png
+   M /branches/e17/images/pager_lid_l.png
+   M /branches/e17/images/pager_lid_r.png
+   M /branches/e17/images/pager_window_ds.png
+   M /branches/e17/images/pager_window_iconified.png
+   M /branches/e17/images/pager_window_winlist.png
+   M /branches/e17/images/shelf_alternate_inset.png
+   M /branches/e17/main.edc
+
+desklock: fixing rephorm's latest hicup :)
+
+radio: focus hint /w icon is a bitch to set properly, round 2 
+will resume when I make some icons for the Fill & Strech Options
+
+winlist: let e render the icon's dimensions
+
+text: disabled text color consistency
+
+pager: desk animation color update
+
+Added E's watermark on the ABOUT E dialog.
+
+
+------------------------------------------------------------------------
+r132 | simon.treny | 2007-04-19 11:25:33 -0500 (Thu, 19 Apr 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/pointer_color.edc
+
+* Fix pointer's hotspot when pointer has a different size than 32x32
+
+
+------------------------------------------------------------------------
+r131 | tokyo.boycott | 2007-04-19 05:38:02 -0500 (Thu, 19 Apr 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   D /branches/e17/detour-e17.edj
+   D /branches/e17/images/button_clicked2.png
+   A /branches/e17/images/e17_dialog_watermark.png
+   M /branches/e17/images.edc
+   D /branches/e17/svn-commit.tmp
+
+the newly added modueles are a work in progress, most don't look 
+very good. The clock was re-introduced, original design from the 
+detour-pre3 stages.
+
+
+------------------------------------------------------------------------
+r130 | tokyo.boycott | 2007-04-19 05:27:14 -0500 (Thu, 19 Apr 2007) | 4 lines
+Changed paths:
+   M /branches/e17/AUTHORS
+   M /branches/e17/COPYING
+   M /branches/e17/INSTALL
+   M /branches/e17/Makefile
+   M /branches/e17/README
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/background_main.edc
+   A /branches/e17/bits/battery.edc
+   A /branches/e17/bits/battery_main.edc
+   A /branches/e17/bits/battery_programs.edc
+   M /branches/e17/bits/border.edc
+   A /branches/e17/bits/border_blend.edc
+   D /branches/e17/bits/border_container.edc
+   D /branches/e17/bits/border_container_programs.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_default_programs.edc
+   D /branches/e17/bits/border_dialog-noresize.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_dialog_programs.edc
+   A /branches/e17/bits/border_macros.edc
+   M /branches/e17/bits/border_menu.edc
+   M /branches/e17/bits/border_modal.edc
+   A /branches/e17/bits/border_noresize_dialog.edc
+   A /branches/e17/bits/border_noresizefull_dialog.edc
+   M /branches/e17/bits/border_pixel.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_shaped_programs.edc
+   D /branches/e17/bits/border_sq_container.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_squared_programs.edc
+   M /branches/e17/bits/border_terminal.edc
+   D /branches/e17/bits/border_urgent.edc
+   D /branches/e17/bits/border_urgent_programs.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   A /branches/e17/bits/clock.edc
+   A /branches/e17/bits/clock_main.edc
+   M /branches/e17/bits/color_well_main.edc
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/configure_main.edc
+   D /branches/e17/bits/cpufreq.edc
+   D /branches/e17/bits/cpufreq_main.edc
+   D /branches/e17/bits/cpufreq_programs.edc
+   D /branches/e17/bits/cpufreq_script.edc
+   M /branches/e17/bits/cslider_main.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/dialog_text.edc
+   M /branches/e17/bits/entry_cursor.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/entry_programs.edc
+   M /branches/e17/bits/entry_selection.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/error_programs.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_fixed_programs.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable_programs.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_fixed_programs.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_programs.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_odd_variable_programs.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/bits/fileman_list_variable_programs.edc
+   M /branches/e17/bits/fileman_macros.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/fileman_overlay_programs.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/ibar_drop.edc
+   M /branches/e17/bits/ibar_drop_programs.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ibar_icon_programs.edc
+   M /branches/e17/bits/ibox.edc
+   M /branches/e17/bits/ibox_base.edc
+   M /branches/e17/bits/ibox_base_programs.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/ilist.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/menu_separator.edc
+   M /branches/e17/bits/menu_submenu.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/move_main.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_desk_programs.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/pointer_mono.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_hbar_progs.edc
+   M /branches/e17/bits/scrollframe_main.edc
+   M /branches/e17/bits/scrollframe_vbar.edc
+   M /branches/e17/bits/scrollframe_vbar_progs.edc
+   M /branches/e17/bits/shelf.edc
+   A /branches/e17/bits/shelf_alternate_inset.edc
+   A /branches/e17/bits/shelf_alternate_programs.edc
+   A /branches/e17/bits/shelf_alternate_style.edc
+   M /branches/e17/bits/shelf_base.edc
+   M /branches/e17/bits/shelf_base_programs.edc
+   M /branches/e17/bits/shelf_default_inset.edc
+   M /branches/e17/bits/shelf_default_plain.edc
+   M /branches/e17/bits/shelf_invisible_inset.edc
+   M /branches/e17/bits/shelf_invisible_plain.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/bits/spectrum_main.edc
+   M /branches/e17/bits/sys_macros.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/tclock_main.edc
+   A /branches/e17/bits/temperature.edc
+   A /branches/e17/bits/temperature_main.edc
+   A /branches/e17/bits/temperature_programs.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   A /branches/e17/detour-e17.edj
+   A /branches/e17/icons/applications-other2.png
+   A /branches/e17/icons/battery-0.png
+   A /branches/e17/icons/battery-100.png
+   A /branches/e17/icons/battery-20.png
+   A /branches/e17/icons/battery-40.png
+   A /branches/e17/icons/battery-60.png
+   A /branches/e17/icons/battery-80.png
+   A /branches/e17/icons/battery-charge.png
+   D /branches/e17/icons/devices-cpu-48.png
+   A /branches/e17/icons/gnome-dev-keyboard-mouse.png
+   D /branches/e17/icons/gnome-dev-keyboard.png
+   A /branches/e17/icons/gnome-devel.png
+   A /branches/e17/icons/image-loading.png
+   A /branches/e17/icons/power-management.png
+   D /branches/e17/icons/start-here.png
+   M /branches/e17/icons.edc
+   D /branches/e17/images/bt-close_h.png
+   D /branches/e17/images/bt-max_h.png
+   D /branches/e17/images/bt-min_h.png
+   M /branches/e17/images/button_clicked.png
+   A /branches/e17/images/button_clicked2.png
+   M /branches/e17/images/button_detail_fullscreen.png
+   M /branches/e17/images/button_detail_kill.png
+   M /branches/e17/images/button_detail_locks.png
+   M /branches/e17/images/button_detail_properties.png
+   M /branches/e17/images/button_detail_shade.png
+   M /branches/e17/images/button_detail_stack_below.png
+   M /branches/e17/images/button_detail_stick.png
+   M /branches/e17/images/button_focus_bottom.png
+   D /branches/e17/images/button_focus_top.png
+   A /branches/e17/images/clock_bg.png
+   D /branches/e17/images/cpu_meter.png
+   D /branches/e17/images/cpu_meter1.png
+   D /branches/e17/images/cpu_meter10.png
+   D /branches/e17/images/cpu_meter2.png
+   D /branches/e17/images/cpu_meter3.png
+   D /branches/e17/images/cpu_meter4.png
+   D /branches/e17/images/cpu_meter5.png
+   D /branches/e17/images/cpu_meter6.png
+   D /branches/e17/images/cpu_meter7.png
+   D /branches/e17/images/cpu_meter8.png
+   D /branches/e17/images/cpu_meter9.png
+   M /branches/e17/images/cursor.png
+   M /branches/e17/images/cursor2.png
+   M /branches/e17/images/dialog_bg.png
+   A /branches/e17/images/e17_busy-1.png
+   A /branches/e17/images/e17_busy-2.png
+   A /branches/e17/images/e17_busy-3.png
+   A /branches/e17/images/e17_busy-4.png
+   A /branches/e17/images/e17_busy-5.png
+   A /branches/e17/images/e17_busy-6.png
+   A /branches/e17/images/e17_busy-7.png
+   A /branches/e17/images/e17_busy-8.png
+   A /branches/e17/images/e17_busy-9.png
+   D /branches/e17/images/frame_outline2.png
+   A /branches/e17/images/hour.cursor.00.png
+   A /branches/e17/images/hour.cursor.01.png
+   A /branches/e17/images/hour.cursor.02.png
+   A /branches/e17/images/hour.cursor.03.png
+   A /branches/e17/images/hour.cursor.04.png
+   A /branches/e17/images/hour.cursor.05.png
+   A /branches/e17/images/hour.cursor.06.png
+   A /branches/e17/images/hour.cursor.07.png
+   A /branches/e17/images/hour.cursor.08.png
+   A /branches/e17/images/hour.cursor.09.png
+   A /branches/e17/images/hour.cursor.10.png
+   A /branches/e17/images/hour.cursor.11.png
+   A /branches/e17/images/hour.cursor.12.png
+   A /branches/e17/images/hour.cursor.13.png
+   A /branches/e17/images/hour.cursor.14.png
+   A /branches/e17/images/hour.cursor.15.png
+   A /branches/e17/images/hour.cursor.16.png
+   A /branches/e17/images/hour.cursor.17.png
+   A /branches/e17/images/hour.cursor.18.png
+   A /branches/e17/images/hour.cursor.19.png
+   A /branches/e17/images/hour.cursor.20.png
+   A /branches/e17/images/hour.cursor.21.png
+   A /branches/e17/images/hour.cursor.22.png
+   A /branches/e17/images/hour.cursor.23.png
+   A /branches/e17/images/hour.cursor.24.png
+   A /branches/e17/images/hour.cursor.25.png
+   A /branches/e17/images/hour.cursor.26.png
+   A /branches/e17/images/hour.cursor.27.png
+   A /branches/e17/images/hour.cursor.28.png
+   A /branches/e17/images/hour.cursor.29.png
+   A /branches/e17/images/hour.cursor.30.png
+   A /branches/e17/images/hour.cursor.31.png
+   A /branches/e17/images/hour.cursor.32.png
+   A /branches/e17/images/hour.cursor.33.png
+   A /branches/e17/images/hour.cursor.34.png
+   A /branches/e17/images/hour.cursor.35.png
+   A /branches/e17/images/hour.cursor.36.png
+   A /branches/e17/images/hour.cursor.37.png
+   A /branches/e17/images/hour.cursor.38.png
+   A /branches/e17/images/hour.cursor.39.png
+   A /branches/e17/images/hour.cursor.40.png
+   A /branches/e17/images/hour.cursor.41.png
+   A /branches/e17/images/hour.cursor.42.png
+   A /branches/e17/images/hour.cursor.43.png
+   A /branches/e17/images/hour.cursor.44.png
+   A /branches/e17/images/hour.cursor.45.png
+   A /branches/e17/images/hour.cursor.46.png
+   A /branches/e17/images/hour.cursor.47.png
+   A /branches/e17/images/hour.cursor.48.png
+   A /branches/e17/images/hour.cursor.49.png
+   A /branches/e17/images/hour.cursor.50.png
+   A /branches/e17/images/hour.cursor.51.png
+   A /branches/e17/images/hour.cursor.52.png
+   A /branches/e17/images/hour.cursor.53.png
+   A /branches/e17/images/hour.cursor.54.png
+   A /branches/e17/images/hour.cursor.55.png
+   A /branches/e17/images/hour.cursor.56.png
+   A /branches/e17/images/hour.cursor.57.png
+   A /branches/e17/images/hour.cursor.58.png
+   A /branches/e17/images/hour.cursor.59.png
+   M /branches/e17/images/ibar_drop.png
+   A /branches/e17/images/lb-blend.png
+   M /branches/e17/images/lb.png
+   M /branches/e17/images/menu_separator.png
+   A /branches/e17/images/minutes.cursor.00.png
+   A /branches/e17/images/minutes.cursor.01.png
+   A /branches/e17/images/minutes.cursor.02.png
+   A /branches/e17/images/minutes.cursor.03.png
+   A /branches/e17/images/minutes.cursor.04.png
+   A /branches/e17/images/minutes.cursor.05.png
+   A /branches/e17/images/minutes.cursor.06.png
+   A /branches/e17/images/minutes.cursor.07.png
+   A /branches/e17/images/minutes.cursor.08.png
+   A /branches/e17/images/minutes.cursor.09.png
+   A /branches/e17/images/minutes.cursor.10.png
+   A /branches/e17/images/minutes.cursor.11.png
+   A /branches/e17/images/minutes.cursor.12.png
+   A /branches/e17/images/minutes.cursor.13.png
+   A /branches/e17/images/minutes.cursor.14.png
+   A /branches/e17/images/minutes.cursor.15.png
+   A /branches/e17/images/minutes.cursor.16.png
+   A /branches/e17/images/minutes.cursor.17.png
+   A /branches/e17/images/minutes.cursor.18.png
+   A /branches/e17/images/minutes.cursor.19.png
+   A /branches/e17/images/minutes.cursor.20.png
+   A /branches/e17/images/minutes.cursor.21.png
+   A /branches/e17/images/minutes.cursor.22.png
+   A /branches/e17/images/minutes.cursor.23.png
+   A /branches/e17/images/minutes.cursor.24.png
+   A /branches/e17/images/minutes.cursor.25.png
+   A /branches/e17/images/minutes.cursor.26.png
+   A /branches/e17/images/minutes.cursor.27.png
+   A /branches/e17/images/minutes.cursor.28.png
+   A /branches/e17/images/minutes.cursor.29.png
+   A /branches/e17/images/minutes.cursor.30.png
+   A /branches/e17/images/minutes.cursor.31.png
+   A /branches/e17/images/minutes.cursor.32.png
+   A /branches/e17/images/minutes.cursor.33.png
+   A /branches/e17/images/minutes.cursor.34.png
+   A /branches/e17/images/minutes.cursor.35.png
+   A /branches/e17/images/minutes.cursor.36.png
+   A /branches/e17/images/minutes.cursor.37.png
+   A /branches/e17/images/minutes.cursor.38.png
+   A /branches/e17/images/minutes.cursor.39.png
+   A /branches/e17/images/minutes.cursor.40.png
+   A /branches/e17/images/minutes.cursor.41.png
+   A /branches/e17/images/minutes.cursor.42.png
+   A /branches/e17/images/minutes.cursor.43.png
+   A /branches/e17/images/minutes.cursor.44.png
+   A /branches/e17/images/minutes.cursor.45.png
+   A /branches/e17/images/minutes.cursor.46.png
+   A /branches/e17/images/minutes.cursor.47.png
+   A /branches/e17/images/minutes.cursor.48.png
+   A /branches/e17/images/minutes.cursor.49.png
+   A /branches/e17/images/minutes.cursor.50.png
+   A /branches/e17/images/minutes.cursor.51.png
+   A /branches/e17/images/minutes.cursor.52.png
+   A /branches/e17/images/minutes.cursor.53.png
+   A /branches/e17/images/minutes.cursor.54.png
+   A /branches/e17/images/minutes.cursor.55.png
+   A /branches/e17/images/minutes.cursor.56.png
+   A /branches/e17/images/minutes.cursor.57.png
+   A /branches/e17/images/minutes.cursor.58.png
+   A /branches/e17/images/minutes.cursor.59.png
+   M /branches/e17/images/pager_focus.png
+   D /branches/e17/images/pager_lid_bl.png
+   D /branches/e17/images/pager_lid_br.png
+   A /branches/e17/images/pager_lid_l.png
+   A /branches/e17/images/pager_lid_r.png
+   D /branches/e17/images/pager_lid_tl.png
+   D /branches/e17/images/pager_lid_tr.png
+   A /branches/e17/images/rb-blend.png
+   M /branches/e17/images/rb.png
+   M /branches/e17/images/sb_runnerv.png
+   A /branches/e17/images/seconds.cursor.00.png
+   A /branches/e17/images/seconds.cursor.01.png
+   A /branches/e17/images/seconds.cursor.02.png
+   A /branches/e17/images/seconds.cursor.03.png
+   A /branches/e17/images/seconds.cursor.04.png
+   A /branches/e17/images/seconds.cursor.05.png
+   A /branches/e17/images/seconds.cursor.06.png
+   A /branches/e17/images/seconds.cursor.07.png
+   A /branches/e17/images/seconds.cursor.08.png
+   A /branches/e17/images/seconds.cursor.09.png
+   A /branches/e17/images/seconds.cursor.10.png
+   A /branches/e17/images/seconds.cursor.11.png
+   A /branches/e17/images/seconds.cursor.12.png
+   A /branches/e17/images/seconds.cursor.13.png
+   A /branches/e17/images/seconds.cursor.14.png
+   A /branches/e17/images/seconds.cursor.15.png
+   A /branches/e17/images/seconds.cursor.16.png
+   A /branches/e17/images/seconds.cursor.17.png
+   A /branches/e17/images/seconds.cursor.18.png
+   A /branches/e17/images/seconds.cursor.19.png
+   A /branches/e17/images/seconds.cursor.20.png
+   A /branches/e17/images/seconds.cursor.21.png
+   A /branches/e17/images/seconds.cursor.22.png
+   A /branches/e17/images/seconds.cursor.23.png
+   A /branches/e17/images/seconds.cursor.24.png
+   A /branches/e17/images/seconds.cursor.25.png
+   A /branches/e17/images/seconds.cursor.26.png
+   A /branches/e17/images/seconds.cursor.27.png
+   A /branches/e17/images/seconds.cursor.28.png
+   A /branches/e17/images/seconds.cursor.29.png
+   A /branches/e17/images/seconds.cursor.30.png
+   A /branches/e17/images/seconds.cursor.31.png
+   A /branches/e17/images/seconds.cursor.32.png
+   A /branches/e17/images/seconds.cursor.33.png
+   A /branches/e17/images/seconds.cursor.34.png
+   A /branches/e17/images/seconds.cursor.35.png
+   A /branches/e17/images/seconds.cursor.36.png
+   A /branches/e17/images/seconds.cursor.37.png
+   A /branches/e17/images/seconds.cursor.38.png
+   A /branches/e17/images/seconds.cursor.39.png
+   A /branches/e17/images/seconds.cursor.40.png
+   A /branches/e17/images/seconds.cursor.41.png
+   A /branches/e17/images/seconds.cursor.42.png
+   A /branches/e17/images/seconds.cursor.43.png
+   A /branches/e17/images/seconds.cursor.44.png
+   A /branches/e17/images/seconds.cursor.45.png
+   A /branches/e17/images/seconds.cursor.46.png
+   A /branches/e17/images/seconds.cursor.47.png
+   A /branches/e17/images/seconds.cursor.48.png
+   A /branches/e17/images/seconds.cursor.49.png
+   A /branches/e17/images/seconds.cursor.50.png
+   A /branches/e17/images/seconds.cursor.51.png
+   A /branches/e17/images/seconds.cursor.52.png
+   A /branches/e17/images/seconds.cursor.53.png
+   A /branches/e17/images/seconds.cursor.54.png
+   A /branches/e17/images/seconds.cursor.55.png
+   A /branches/e17/images/seconds.cursor.56.png
+   A /branches/e17/images/seconds.cursor.57.png
+   A /branches/e17/images/seconds.cursor.58.png
+   A /branches/e17/images/seconds.cursor.59.png
+   M /branches/e17/images/sf_bl1_over.png
+   M /branches/e17/images/sf_br1_over.png
+   M /branches/e17/images/sf_btd1_over.png
+   M /branches/e17/images/sf_btu1_over.png
+   A /branches/e17/images/shelf_alternate_bg.png
+   A /branches/e17/images/shelf_alternate_bg_l.png
+   A /branches/e17/images/shelf_alternate_bg_r.png
+   A /branches/e17/images/shelf_alternate_bg_t.png
+   A /branches/e17/images/shelf_alternate_inset.png
+   A /branches/e17/images/shelf_alternate_over.png
+   A /branches/e17/images/shelf_alternate_over_l.png
+   A /branches/e17/images/shelf_alternate_over_r.png
+   A /branches/e17/images/shelf_alternate_over_t.png
+   D /branches/e17/images/shelf_detroit_inset_bg.png
+   D /branches/e17/images/shelf_detroit_inset_bg_left.png
+   D /branches/e17/images/shelf_detroit_inset_bg_right.png
+   D /branches/e17/images/shelf_detroit_inset_bg_top.png
+   D /branches/e17/images/shelf_detroit_inset_overlay.png
+   D /branches/e17/images/shelf_detroit_inset_overlay_left.png
+   D /branches/e17/images/shelf_detroit_inset_overlay_right.png
+   D /branches/e17/images/shelf_detroit_inset_overlay_top.png
+   A /branches/e17/images/shelf_invisible_inset_bg.png
+   A /branches/e17/images/temperature-0.png
+   A /branches/e17/images/temperature-100.png
+   A /branches/e17/images/temperature-20.png
+   A /branches/e17/images/temperature-40.png
+   A /branches/e17/images/temperature-60.png
+   A /branches/e17/images/temperature-80.png
+   A /branches/e17/images/temperature-base.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+   A /branches/e17/svn-commit.tmp
+
+Two weeks of work, here goes.
+
+workk in progress v. 0.6.
+
+------------------------------------------------------------------------
+r129 | tokyo.boycott | 2007-04-04 19:39:06 -0500 (Wed, 04 Apr 2007) | 3 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/shelf_default_plain.edc
+
+Oops -- without this you won't be able to click on modules if you 
+remove the inset.
+
+------------------------------------------------------------------------
+r128 | tokyo.boycott | 2007-04-04 17:45:41 -0500 (Wed, 04 Apr 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/border_container.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog-noresize.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_menu.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_pixel.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_sq_container.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/border_urgent.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/color_well_main.edc
+   M /branches/e17/bits/cpufreq_main.edc
+   M /branches/e17/bits/cslider_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   D /branches/e17/bits/deskpreview_desk.edc
+   M /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/dialog_text.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/bits/fileman_macros.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ibox_base.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/pointer_mono.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_main.edc
+   M /branches/e17/bits/shelf_base.edc
+   M /branches/e17/bits/shelf_default_inset.edc
+   M /branches/e17/bits/shelf_invisible_base.edc
+   M /branches/e17/bits/shelf_invisible_inset.edc
+   M /branches/e17/bits/shelf_invisible_plain.edc
+   M /branches/e17/bits/spectrum_main.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+
+Looks like swallowed objects will now inherit the parents 
+behaviour regarding mouse events.
+
+Update strongly advised!
+
+------------------------------------------------------------------------
+r126 | tokyo.boycott | 2007-04-02 06:31:36 -0500 (Mon, 02 Apr 2007) | 6 lines
+Changed paths:
+   M /branches/e17/bits/deskpreview.edc
+   A /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/preview_main.edc
+   M /branches/e17/images/arrow_dark.png
+   M /branches/e17/images/bt-close.png
+   M /branches/e17/images/button_detail_borderless.png
+   M /branches/e17/images/button_wm0.png
+   M /branches/e17/images/sb_runnerv.png
+   M /branches/e17/images/slider_vert0.png
+   M /branches/e17/images/slider_vert1.png
+   M /branches/e17/images/slider_vert2.png
+
+The arrow image had the wrong color scheme.
+
+The vertical slider's runner white bevel line was on the wrong 
+side of the fence sleeping with the fishes....
+
+
+------------------------------------------------------------------------
+r117 | tokyo.boycott | 2007-03-26 23:16:41 -0600 (Mon, 26 Mar 2007) | 13 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_main_programs.edc
+   M /branches/e17/bits/about_theme.edc
+   D /branches/e17/bits/about_theme_bg.edc
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/images/cursor.png
+   M /branches/e17/images/cursor2.png
+   M /branches/e17/images/entry_focus.png
+   D /branches/e17/images/entry_focus2.png
+   M /branches/e17/images/pager_focus.png
+   D /branches/e17/images/pager_focus2.png
+
+I noticed that the 1px was getting cut off on some of the 
+border styles, specially the default style. As long as we 
+separate the program window from the border window this will 
+continue to happen. hopefully one day we can ditch the default 
+border style and move to the border style known as container, 
+where both the client and the window border are symbian to each 
+other, act as one. hah 
+
+Various menu fixes, the menu item/label was not properly 
+organized, among widgets, icons, etc.
+
+Redid the animated mouse pointer with a much simpler animation.
+
+------------------------------------------------------------------------
+r105 | tokyo.boycott | 2007-03-18 02:07:03 -0600 (Sun, 18 Mar 2007) | 2 lines
+Changed paths:
+   D /branches/e17/images/scrollframe_bg2.png
+   D /branches/e17/images/scrollframe_inset2.png
+
+Be gone!
+
+------------------------------------------------------------------------
+r102 | tokyo.boycott | 2007-03-18 00:49:17 -0600 (Sun, 18 Mar 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_container.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog-noresize.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_sq_container.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/border_urgent.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/images/cursor.png
+   M /branches/e17/images/sb_runnerv.png
+   M /branches/e17/images/sb_runnerv_bot.png
+   M /branches/e17/images/sb_runnerv_top.png
+   D /branches/e17/images/widget_focus.png
+
+Some edc suffling.
+
+Modified the vertical slider's gradient to be proper.
+ 
+
+------------------------------------------------------------------------
+r98 | tokyo.boycott | 2007-03-14 23:44:11 -0600 (Wed, 14 Mar 2007) | 46 lines
+Changed paths:
+   M /branches/e17/AUTHORS
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_container.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog-noresize.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_pixel.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_sq_container.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/border_urgent.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/configure_main.edc
+   M /branches/e17/bits/cpufreq_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/deskpreview_desk.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/entry_cursor.edc
+   M /branches/e17/bits/entry_selection.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/bits/ibar_icon.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_desk_programs.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/images/arrow_dark.png
+   M /branches/e17/images/arrow_light.png
+   M /branches/e17/images/button_detail_kill.png
+   M /branches/e17/images/button_detail_locks.png
+   M /branches/e17/images/button_detail_properties.png
+   M /branches/e17/images/button_detail_remember.png
+   M /branches/e17/images/button_detail_sendto.png
+   M /branches/e17/images/button_detail_skip_winlist.png
+   M /branches/e17/images/button_detail_stack_below.png
+   M /branches/e17/images/button_detail_stack_normal.png
+   M /branches/e17/images/button_detail_stack_on_top.png
+   M /branches/e17/images/button_detail_stacking.png
+   M /branches/e17/images/button_detail_stick.png
+   M /branches/e17/images/cursor.png
+   A /branches/e17/images/cursor2.png
+   M /branches/e17/images/cursor_mono.png
+   D /branches/e17/images/dialog_bg.png.bak
+   M /branches/e17/images/frame_outline.png
+   A /branches/e17/images/frame_outline2.png
+   M /branches/e17/images/pager_window.png
+   M /branches/e17/images/pager_window_iconified.png
+   M /branches/e17/images/pager_window_shaded.png
+   A /branches/e17/images/pager_window_winlist.png
+   M /branches/e17/images/sb_runnerh.png
+   M /branches/e17/images/shelf_default_bg_t.png
+   D /branches/e17/images/shelf_default_bg_t2.png
+   A /branches/e17/images/slider_focus.png
+   M /branches/e17/images/slider_vert0.png
+   M /branches/e17/images/slider_vert1.png
+   M /branches/e17/images/slider_vert2.png
+   D /branches/e17/images/tb-dialog-xcm.png
+   D /branches/e17/images/tl-dialog-xcm.png
+   D /branches/e17/images/tr-dialog-xcm.png
+   M /branches/e17/images/tree_route.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Unofficially 0.5.3, here are the details:
+***
+
+These are the biggest changes to detour's interface since
+version 0.4 came out. 
+
+Right now you have 3 options when you build detour. If you look
+at "main.edc" you'll notice:
+
+#define USE_ANIMATED_CURSOR 0/1 (boolean)
+#define USE_TANGO_ICONS 0/1
+#define USE_CONTEXT_TILE 0/1 
+
+If you set USE_ANIMATED_CURSOR to 1, you'll get a pulsating 
+cursor (interval 5 secs), if you prefer and use E's internal 
+cursor. (Original SVG cursor by rrs)
+
+If you set USE_TANGO_ICONS to 1, (self-explanatory) detour will
+use it's Tango Icon set. If you set it to 0, it will use the
+default theme's icons.
+
+USE_CONTEXT_TITLE, defines whether or not you want the content
+menu title visible. 
+
+As far as the interface goes, it is a little more subtle and
+minimalistic. 
+
+* WinList and exebuf have been updated for consistency.
+* The entry widget has been modified to better accommodate its 
+text. The selection is now drawn on the background instead of 
+the foreground.
+* The frame widget received a cosmetic change (Hannes, I know 
+you might not totally agree on this one)
+* Deskpreview also received a cosmetic change.
+* Focus hints for radio and check buttons have been modified for 
+interface consistency.  
+* Same goes for horiz. and vert. sliders, although these are 
+more simple.
+* Text: dialog color scheme has been modified in favor of a 
+more delicate look.
+* Dialog separator has been removed, making dialogs more subtle 
+and minimalistic.
+
+Enjoy!
+
+
+------------------------------------------------------------------------
+r94 | tokyo.boycott | 2007-03-07 22:49:37 -0600 (Wed, 07 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/e17/images/shelf_default_bg_h.png
+   M /branches/e17/images/shelf_default_bg_t.png
+   M /branches/e17/images/shelf_default_bg_v.png
+   M /branches/e17/images/shelf_default_r_bg_v.png
+
+LoonixTitan's proposition 187.
+
+------------------------------------------------------------------------
+r92 | tokyo.boycott | 2007-03-07 16:09:27 -0600 (Wed, 07 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/main.edc
+
+bump version up to 0.5.2
+
+------------------------------------------------------------------------
+r91 | tokyo.boycott | 2007-03-07 15:40:01 -0600 (Wed, 07 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/background_main.edc
+
+detour e17 v. 0.5.2
+
+------------------------------------------------------------------------
+r88 | tokyo.boycott | 2007-03-07 15:32:55 -0600 (Wed, 07 Mar 2007) | 8 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/menu_submenu.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_desk_programs.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/shelf_default_inset.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   A /branches/e17/images/arrow_blank.png
+   M /branches/e17/images/arrow_light.png
+   M /branches/e17/images/dialog_bg.png
+   A /branches/e17/images/dialog_bg.png.bak
+   M /branches/e17/images/entry_focus.png
+   A /branches/e17/images/entry_focus2.png
+   M /branches/e17/images/pager_focus.png
+   A /branches/e17/images/pager_focus2.png
+   M /branches/e17/images/pager_window_ds.png
+   M /branches/e17/images/pager_window_shaded.png
+   M /branches/e17/images/preview_bg.png
+   M /branches/e17/images/preview_bg_over.png
+   M /branches/e17/images/scrollframe_bg.png
+   A /branches/e17/images/scrollframe_bg2.png
+   M /branches/e17/images/scrollframe_inset.png
+   A /branches/e17/images/scrollframe_inset2.png
+   M /branches/e17/images/shelf_default_bg_h.png
+   M /branches/e17/images/shelf_default_bg_t.png
+   A /branches/e17/images/shelf_default_bg_t2.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Updating images. 
+
+Removing unsued IFDEF(s)
+
+New entry focus hint.
+
+Improved exebuf and winlist cosmetically.
+
+------------------------------------------------------------------------
+r85 | tokyo.boycott | 2007-03-04 12:53:12 -0600 (Sun, 04 Mar 2007) | 6 lines
+Changed paths:
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_separator.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_vbar.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/winlist_main.edc
+   D /branches/e17/images/bb-xcm.png
+   D /branches/e17/images/bl-xcm.png
+   D /branches/e17/images/br-xcm.png
+   R /branches/e17/images/cursor.png
+   R /branches/e17/images/cursor_mono.png
+   M /branches/e17/images/dialog_bg.png
+   D /branches/e17/images/night_sky.png
+   D /branches/e17/images/night_sky_moon.png
+   D /branches/e17/images/night_sky_sk.png
+   D /branches/e17/images/night_sky_ss1.png
+   D /branches/e17/images/night_sky_ss2.png
+   D /branches/e17/images/night_sky_ss3.png
+   D /branches/e17/images/night_sky_ss4.png
+   D /branches/e17/images/night_sky_ss5.png
+   D /branches/e17/images/night_sky_ss6.png
+   D /branches/e17/images/night_sky_ss7.png
+   D /branches/e17/images/night_sky_ss8.png
+   D /branches/e17/images/sf_barh1_h.png
+   D /branches/e17/images/sf_barh_thumb_h.png
+   D /branches/e17/images/sf_barv1_h.png
+   D /branches/e17/images/sf_barv_thumb_h.png
+   D /branches/e17/images/tb-xcm.png
+   D /branches/e17/images/tl-xcm.png
+   D /branches/e17/images/tr-xcm.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Removing unused images.
+
+detour-e17.edj now weighs 752kb (aprox)
+
+Reverted the mouse cursors.
+
+------------------------------------------------------------------------
+r84 | tokyo.boycott | 2007-03-04 11:14:56 -0600 (Sun, 04 Mar 2007) | 1 line
+Changed paths:
+   M /branches/e17/images/cursor.png
+   M /branches/e17/images/cursor_mono.png
+
+
+------------------------------------------------------------------------
+r83 | tokyo.boycott | 2007-03-03 17:46:17 -0600 (Sat, 03 Mar 2007) | 7 lines
+Changed paths:
+   M /branches/e17/bits/button_programs.edc
+   M /branches/e17/bits/pager_desk_programs.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/shelf_base.edc
+   M /branches/e17/bits/shelf_base_programs.edc
+   M /branches/e17/images/cursor.png
+   M /branches/e17/images/cursor_mono.png
+
+Added support for AUTO_HIDE, but beware it has nasty issues 
+with COMPOSITE, it leaves garbage on your screen.
+
+Added support for something that devilhorns added..
+
+Catalyst: i hope these cursors ......
+
+------------------------------------------------------------------------
+r56 | tokyo.boycott | 2007-02-27 05:03:40 -0600 (Tue, 27 Feb 2007) | 1 line
+Changed paths:
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/images/entry.png
+   M /branches/e17/images/pager_lid_bl.png
+   M /branches/e17/images/pager_lid_br.png
+   M /branches/e17/images/pager_lid_tl.png
+   M /branches/e17/images/pager_lid_tr.png
+   D /branches/e17/images/tclock_overlay.png
+   M /branches/e17/images.edc
+
+
+------------------------------------------------------------------------
+r42 | tokyo.boycott | 2007-02-22 05:39:23 -0600 (Thu, 22 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/color_well_main.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   D /branches/e17/images/check_focus.png
+   D /branches/e17/images/focus_grid.png
+   D /branches/e17/images/radio_select.png
+   M /branches/e17/images/shelf_default_bg_t.png
+   M /branches/e17/images.edc
+
+Remove focus grid, simon says its not effective.
+
+------------------------------------------------------------------------
+r30 | tokyo.boycott | 2007-02-18 12:21:30 -0600 (Sun, 18 Feb 2007) | 20 lines
+Changed paths:
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_icon_programs.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/bits/pointer_mono.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_icon_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/images/arrow_light.png
+   A /branches/e17/images/cursor.png
+   A /branches/e17/images/cursor_mono.png
+   A /branches/e17/images/focus_grid.png
+   D /branches/e17/images/focus_rect.png
+   D /branches/e17/images/pointer.png
+   D /branches/e17/images/pointer_mono.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+It is now possible to select whether the 'main menu' title is 
+visible.
+
+#define SHOW_MENU_TITLE 1
+
+Select whether to use a shadow effect for the labels and text 
+buttons.
+
+#define LABEL_TEXT_SHADOW 0
+#define BUTTON_TEXT_SHADOW 0
+
+You can also choose to use the Tango icon set or the default 
+e17 set.
+
+#define USE_TANGO_ICONS 1
+
+Some cosmetic fixes to the slider focus hints. New cursor 
+pointers. The radio icon widet still needs fixing.
+
+
+------------------------------------------------------------------------
+r29 | tokyo.boycott | 2007-02-18 08:36:38 -0600 (Sun, 18 Feb 2007) | 8 lines
+Changed paths:
+   A /branches/e17/AUTHORS
+   M /branches/e17/COPYING
+   M /branches/e17/INSTALL
+   M /branches/e17/Makefile
+   M /branches/e17/README
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_container.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog-noresize.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_modal.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_sq_container.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   D /branches/e17/bits/border_test.edc
+   M /branches/e17/bits/border_urgent.edc
+   M /branches/e17/bits/menu_label.edc
+   A /branches/e17/fonts/Vera.COPYING
+   D /branches/e17/fonts/bitstream.COPYING
+   D /branches/e17/fonts.edc
+   M /branches/e17/icons/tango.COPYING
+   M /branches/e17/images/shelf_default_bg_t.png
+   M /branches/e17/main.edc
+
+I realized its silly to ship COPYING Licenses inside a binary 
+file. Therefore they have been removed, since they are included 
+within the source tree.
+
+--disabled menu_item textclass
+--disabled tible_bar textclass
+
+
+------------------------------------------------------------------------
+r28 | tokyo.boycott | 2007-02-12 03:26:37 -0600 (Mon, 12 Feb 2007) | 2 lines
+Changed paths:
+   D /branches/e17/images/frame_outline2.png
+
+unused
+
+------------------------------------------------------------------------
+r27 | tokyo.boycott | 2007-02-12 03:25:49 -0600 (Mon, 12 Feb 2007) | 2 lines
+Changed paths:
+   D /branches/e17/images/focus_rect2.png
+   D /branches/e17/images/focus_rect_over.png
+   D /branches/e17/images/focus_rect_over2.png
+   M /branches/e17/images.edc
+
+removing unused images
+
+------------------------------------------------------------------------
+r26 | tokyo.boycott | 2007-02-12 00:06:52 -0600 (Mon, 12 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+
+cosmetic fixes
+
+------------------------------------------------------------------------
+r25 | tokyo.boycott | 2007-02-11 21:22:51 -0600 (Sun, 11 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+
+matching focus hints for the sliders
+
+------------------------------------------------------------------------
+r24 | tokyo.boycott | 2007-02-11 18:15:05 -0600 (Sun, 11 Feb 2007) | 8 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_desk_programs.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/images/focus_rect.png
+   M /branches/e17/images/pager_focus.png
+   M /branches/e17/images/pager_lid_bl.png
+   M /branches/e17/images/pager_lid_br.png
+   M /branches/e17/images/pager_lid_tl.png
+   M /branches/e17/images/pager_lid_tr.png
+   M /branches/e17/images/slider_1.png
+   M /branches/e17/images/slider_2.png
+   M /branches/e17/images/tclock_overlay.png
+   M /branches/e17/main.edc
+
+new google code project website:
+http://code.google.com/p/detour/
+tells you how to get the new code
+
+pager cosmetics
+tclock cosmetics
+focus hints for radio and check buttons
+
+------------------------------------------------------------------------
+r21 | tokyo.boycott | 2007-02-09 19:36:29 -0600 (Fri, 09 Feb 2007) | 5 lines
+Changed paths:
+   M /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/check_programs.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/radio_programs.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_h_programs.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slider_v_programs.edc
+   M /branches/e17/images/arrow_dark.png
+   M /branches/e17/images/arrow_light.png
+   M /branches/e17/images/focus_rect.png
+   A /branches/e17/images/focus_rect2.png
+   M /branches/e17/images/frame_outline.png
+   A /branches/e17/images/frame_outline2.png
+   M /branches/e17/images/radio0.png
+   A /branches/e17/images/sb_runnerh_disabled.png
+   A /branches/e17/images/sb_runnerh_left_disabled.png
+   A /branches/e17/images/sb_runnerh_right_disabled.png
+   A /branches/e17/images/sb_runnerv_bot_disabled.png
+   A /branches/e17/images/sb_runnerv_disabled.png
+   A /branches/e17/images/sb_runnerv_top_disabled.png
+   A /branches/e17/images/slider_2.png
+   A /branches/e17/images/slider_vert2.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+So after speaking to my main man in Sweden I decided on a how 
+to approach the focus hints for radio and check buttons. 
+Various changes on this 0.5.1 release, mostly cosmetic changes: 
+sliders and disabled sliders.
+
+------------------------------------------------------------------------
+r19 | tokyo.boycott | 2007-02-04 22:54:03 -0600 (Sun, 04 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/e17/icons/gnome-dev-keyboard.png
+   M /branches/e17/icons/icon_shelf_bottom.png
+   M /branches/e17/images/slider_vert0.png
+   M /branches/e17/images/slider_vert1.png
+
+small fixes
+
+------------------------------------------------------------------------
+r18 | tokyo.boycott | 2007-02-03 18:45:34 -0600 (Sat, 03 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/e17/fonts.edc
+
+test
+
+------------------------------------------------------------------------
+r17 | tokyo.boycott | 2007-02-03 18:42:41 -0600 (Sat, 03 Feb 2007) | 1 line
+Changed paths:
+   A /branches/e17
+   A /branches/e17/COPYING
+   A /branches/e17/INSTALL
+   A /branches/e17/Makefile
+   A /branches/e17/README
+   A /branches/e17/bits
+   A /branches/e17/bits/about.edc
+   A /branches/e17/bits/about_main.edc
+   A /branches/e17/bits/about_main_programs.edc
+   A /branches/e17/bits/about_theme.edc
+   A /branches/e17/bits/about_theme_bg.edc
+   A /branches/e17/bits/about_theme_programs.edc
+   A /branches/e17/bits/about_theme_text.edc
+   A /branches/e17/bits/about_theme_widget.edc
+   A /branches/e17/bits/background.edc
+   A /branches/e17/bits/background_main.edc
+   A /branches/e17/bits/border.edc
+   A /branches/e17/bits/border_container.edc
+   A /branches/e17/bits/border_container_programs.edc
+   A /branches/e17/bits/border_default.edc
+   A /branches/e17/bits/border_default_programs.edc
+   A /branches/e17/bits/border_dialog-noresize.edc
+   A /branches/e17/bits/border_dialog.edc
+   A /branches/e17/bits/border_dialog_programs.edc
+   A /branches/e17/bits/border_menu.edc
+   A /branches/e17/bits/border_modal.edc
+   A /branches/e17/bits/border_pixel.edc
+   A /branches/e17/bits/border_shaped.edc
+   A /branches/e17/bits/border_shaped_programs.edc
+   A /branches/e17/bits/border_sq_container.edc
+   A /branches/e17/bits/border_squared.edc
+   A /branches/e17/bits/border_squared_programs.edc
+   A /branches/e17/bits/border_terminal.edc
+   A /branches/e17/bits/border_test.edc
+   A /branches/e17/bits/border_urgent.edc
+   A /branches/e17/bits/border_urgent_programs.edc
+   A /branches/e17/bits/button.edc
+   A /branches/e17/bits/button_main.edc
+   A /branches/e17/bits/button_programs.edc
+   A /branches/e17/bits/check.edc
+   A /branches/e17/bits/check_icon.edc
+   A /branches/e17/bits/check_icon_programs.edc
+   A /branches/e17/bits/check_main.edc
+   A /branches/e17/bits/check_programs.edc
+   A /branches/e17/bits/color_well.edc
+   A /branches/e17/bits/color_well_main.edc
+   A /branches/e17/bits/color_well_programs.edc
+   A /branches/e17/bits/configure.edc
+   A /branches/e17/bits/configure_main.edc
+   A /branches/e17/bits/cpufreq.edc
+   A /branches/e17/bits/cpufreq_main.edc
+   A /branches/e17/bits/cpufreq_programs.edc
+   A /branches/e17/bits/cpufreq_script.edc
+   A /branches/e17/bits/cslider.edc
+   A /branches/e17/bits/cslider_main.edc
+   A /branches/e17/bits/cslider_programs.edc
+   A /branches/e17/bits/desklock.edc
+   A /branches/e17/bits/desklock_main.edc
+   A /branches/e17/bits/desklock_main_programs.edc
+   A /branches/e17/bits/deskpreview.edc
+   A /branches/e17/bits/deskpreview_desk.edc
+   A /branches/e17/bits/dialog.edc
+   A /branches/e17/bits/dialog_main.edc
+   A /branches/e17/bits/dialog_text.edc
+   A /branches/e17/bits/entry.edc
+   A /branches/e17/bits/entry_cursor.edc
+   A /branches/e17/bits/entry_cursor_programs.edc
+   A /branches/e17/bits/entry_main.edc
+   A /branches/e17/bits/entry_programs.edc
+   A /branches/e17/bits/entry_selection.edc
+   A /branches/e17/bits/entry_text.edc
+   A /branches/e17/bits/error.edc
+   A /branches/e17/bits/error_main.edc
+   A /branches/e17/bits/error_programs.edc
+   A /branches/e17/bits/exebuf.edc
+   A /branches/e17/bits/exebuf_item.edc
+   A /branches/e17/bits/exebuf_item_programs.edc
+   A /branches/e17/bits/exebuf_main.edc
+   A /branches/e17/bits/exebuf_main_programs.edc
+   A /branches/e17/bits/fileman.edc
+   A /branches/e17/bits/fileman_icon_fixed.edc
+   A /branches/e17/bits/fileman_icon_fixed_programs.edc
+   A /branches/e17/bits/fileman_icon_variable.edc
+   A /branches/e17/bits/fileman_icon_variable_programs.edc
+   A /branches/e17/bits/fileman_list_fixed.edc
+   A /branches/e17/bits/fileman_list_fixed_programs.edc
+   A /branches/e17/bits/fileman_list_odd.edc
+   A /branches/e17/bits/fileman_list_odd_programs.edc
+   A /branches/e17/bits/fileman_list_odd_variable.edc
+   A /branches/e17/bits/fileman_list_odd_variable_programs.edc
+   A /branches/e17/bits/fileman_list_variable.edc
+   A /branches/e17/bits/fileman_list_variable_programs.edc
+   A /branches/e17/bits/fileman_macros.edc
+   A /branches/e17/bits/fileman_overlay.edc
+   A /branches/e17/bits/fileman_overlay_programs.edc
+   A /branches/e17/bits/frame.edc
+   A /branches/e17/bits/frame_main.edc
+   A /branches/e17/bits/gradients.edc
+   A /branches/e17/bits/ibar.edc
+   A /branches/e17/bits/ibar_drop.edc
+   A /branches/e17/bits/ibar_drop_programs.edc
+   A /branches/e17/bits/ibar_icon.edc
+   A /branches/e17/bits/ibar_icon_overlay.edc
+   A /branches/e17/bits/ibar_icon_overlay_programs.edc
+   A /branches/e17/bits/ibar_icon_programs.edc
+   A /branches/e17/bits/ibox.edc
+   A /branches/e17/bits/ibox_base.edc
+   A /branches/e17/bits/ibox_base_programs.edc
+   A /branches/e17/bits/icons.edc
+   A /branches/e17/bits/ilist.edc
+   A /branches/e17/bits/ilist_header.edc
+   A /branches/e17/bits/ilist_ilist.edc
+   A /branches/e17/bits/ilist_odd.edc
+   A /branches/e17/bits/label.edc
+   A /branches/e17/bits/label_main.edc
+   A /branches/e17/bits/menu.edc
+   A /branches/e17/bits/menu_background.edc
+   A /branches/e17/bits/menu_check.edc
+   A /branches/e17/bits/menu_check_signals.edc
+   A /branches/e17/bits/menu_icon.edc
+   A /branches/e17/bits/menu_item_bg.edc
+   A /branches/e17/bits/menu_label.edc
+   A /branches/e17/bits/menu_radio.edc
+   A /branches/e17/bits/menu_radio_signals.edc
+   A /branches/e17/bits/menu_separator.edc
+   A /branches/e17/bits/menu_submenu.edc
+   A /branches/e17/bits/menu_submenu_bg.edc
+   A /branches/e17/bits/move.edc
+   A /branches/e17/bits/move_main.edc
+   A /branches/e17/bits/pager.edc
+   A /branches/e17/bits/pager_desk.edc
+   A /branches/e17/bits/pager_desk_programs.edc
+   A /branches/e17/bits/pager_popup.edc
+   A /branches/e17/bits/pager_window.edc
+   A /branches/e17/bits/pointer.edc
+   A /branches/e17/bits/pointer_color.edc
+   A /branches/e17/bits/pointer_mono.edc
+   A /branches/e17/bits/preview.edc
+   A /branches/e17/bits/preview_main.edc
+   A /branches/e17/bits/radio.edc
+   A /branches/e17/bits/radio_icon.edc
+   A /branches/e17/bits/radio_icon_programs.edc
+   A /branches/e17/bits/radio_main.edc
+   A /branches/e17/bits/radio_programs.edc
+   A /branches/e17/bits/resize.edc
+   A /branches/e17/bits/resize_main.edc
+   A /branches/e17/bits/scrollframe.edc
+   A /branches/e17/bits/scrollframe_hbar.edc
+   A /branches/e17/bits/scrollframe_hbar_progs.edc
+   A /branches/e17/bits/scrollframe_main.edc
+   A /branches/e17/bits/scrollframe_vbar.edc
+   A /branches/e17/bits/scrollframe_vbar_progs.edc
+   A /branches/e17/bits/shelf.edc
+   A /branches/e17/bits/shelf_base.edc
+   A /branches/e17/bits/shelf_base_programs.edc
+   A /branches/e17/bits/shelf_default_inset.edc
+   A /branches/e17/bits/shelf_default_plain.edc
+   A /branches/e17/bits/shelf_invisible_base.edc
+   A /branches/e17/bits/shelf_invisible_inset.edc
+   A /branches/e17/bits/shelf_invisible_plain.edc
+   A /branches/e17/bits/slider.edc
+   A /branches/e17/bits/slider_h_main.edc
+   A /branches/e17/bits/slider_h_programs.edc
+   A /branches/e17/bits/slider_v_main.edc
+   A /branches/e17/bits/slider_v_programs.edc
+   A /branches/e17/bits/spectrum.edc
+   A /branches/e17/bits/spectrum_main.edc
+   A /branches/e17/bits/sys.edc
+   A /branches/e17/bits/sys_macros.edc
+   A /branches/e17/bits/tclock.edc
+   A /branches/e17/bits/tclock_main.edc
+   A /branches/e17/bits/tclock_programs.edc
+   A /branches/e17/bits/textblock.edc
+   A /branches/e17/bits/tlist.edc
+   A /branches/e17/bits/tlist_main.edc
+   A /branches/e17/bits/tlist_odd.edc
+   A /branches/e17/bits/transitions.edc
+   A /branches/e17/bits/winlist.edc
+   A /branches/e17/bits/winlist_item.edc
+   A /branches/e17/bits/winlist_main.edc
+   A /branches/e17/fonts
+   A /branches/e17/fonts/Vera.ttf
+   A /branches/e17/fonts/VeraBd.ttf
+   A /branches/e17/fonts/VeraMoBd.ttf
+   A /branches/e17/fonts/VeraMono.ttf
+   A /branches/e17/fonts/bitstream.COPYING
+   A /branches/e17/fonts.edc
+   A /branches/e17/icons
+   A /branches/e17/icons/alacarte.png
+   A /branches/e17/icons/application-x-executable.png
+   A /branches/e17/icons/applications-accessories.png
+   A /branches/e17/icons/applications-graphics.png
+   A /branches/e17/icons/applications-office.png
+   A /branches/e17/icons/applications-other.png
+   A /branches/e17/icons/applications-system.png
+   A /branches/e17/icons/devices-cpu-48.png
+   A /branches/e17/icons/dialog-error.png
+   A /branches/e17/icons/dialog-information.png
+   A /branches/e17/icons/dialog-warning.png
+   A /branches/e17/icons/emblem-favorite.png
+   A /branches/e17/icons/gnome-dev-keyboard.png
+   A /branches/e17/icons/gnome-dev-mouse-optical.png
+   A /branches/e17/icons/gnome-lost-window-menu.png
+   A /branches/e17/icons/gnome-panel-window-list.png
+   A /branches/e17/icons/gnome-run.png
+   A /branches/e17/icons/gnome-session-halt.png
+   A /branches/e17/icons/gnome-session-hibernate.png
+   A /branches/e17/icons/gnome-session-logout.png
+   A /branches/e17/icons/gnome-session-reboot.png
+   A /branches/e17/icons/gnome-session-suspend.png
+   A /branches/e17/icons/go-down.png
+   A /branches/e17/icons/go-next.png
+   A /branches/e17/icons/go-up.png
+   A /branches/e17/icons/icon_shelf_bottom.png
+   A /branches/e17/icons/icon_shelf_bottom_desk.png
+   A /branches/e17/icons/icon_shelf_bottom_left.png
+   A /branches/e17/icons/icon_shelf_bottom_right.png
+   A /branches/e17/icons/icon_shelf_custom.png
+   A /branches/e17/icons/icon_shelf_dock.png
+   A /branches/e17/icons/icon_shelf_left.png
+   A /branches/e17/icons/icon_shelf_left_bottom.png
+   A /branches/e17/icons/icon_shelf_left_top.png
+   A /branches/e17/icons/icon_shelf_menu_bar.png
+   A /branches/e17/icons/icon_shelf_panel.png
+   A /branches/e17/icons/icon_shelf_right.png
+   A /branches/e17/icons/icon_shelf_right_bottom.png
+   A /branches/e17/icons/icon_shelf_right_top.png
+   A /branches/e17/icons/icon_shelf_top.png
+   A /branches/e17/icons/icon_shelf_top_desk.png
+   A /branches/e17/icons/icon_shelf_top_left.png
+   A /branches/e17/icons/icon_shelf_top_right.png
+   A /branches/e17/icons/input-mouse.png
+   A /branches/e17/icons/preferences-desktop-font.png
+   A /branches/e17/icons/preferences-desktop-keyboard-shortcuts.png
+   A /branches/e17/icons/preferences-desktop-locale.png
+   A /branches/e17/icons/preferences-desktop-peripherals.png
+   A /branches/e17/icons/preferences-desktop-screensaver.png
+   A /branches/e17/icons/preferences-desktop-theme.png
+   A /branches/e17/icons/preferences-desktop-wallpaper.png
+   A /branches/e17/icons/preferences-desktop.png
+   A /branches/e17/icons/preferences-system-session.png
+   A /branches/e17/icons/preferences-system-windows.png
+   A /branches/e17/icons/preferences-system.png
+   A /branches/e17/icons/preferences-windows-list.png
+   A /branches/e17/icons/screen_around.png
+   A /branches/e17/icons/screen_hflip.png
+   A /branches/e17/icons/screen_left.png
+   A /branches/e17/icons/screen_normal.png
+   A /branches/e17/icons/screen_right.png
+   A /branches/e17/icons/screen_vflip.png
+   A /branches/e17/icons/start-here.png
+   A /branches/e17/icons/system-file-manager.png
+   A /branches/e17/icons/system-lock-screen.png
+   A /branches/e17/icons/system-search.png
+   A /branches/e17/icons/system-shutdown.png
+   A /branches/e17/icons/tango.COPYING
+   A /branches/e17/icons/text-x-generic.png
+   A /branches/e17/icons/video-display.png
+   A /branches/e17/icons/view-colors.png
+   A /branches/e17/icons/view-fullscreen.png
+   A /branches/e17/icons/view-refresh.png
+   A /branches/e17/icons/window-new.png
+   A /branches/e17/icons/wmtweaks.png
+   A /branches/e17/icons/workspace-switcher.png
+   A /branches/e17/icons.edc
+   A /branches/e17/images
+   A /branches/e17/images/arrow_dark.png
+   A /branches/e17/images/arrow_light.png
+   A /branches/e17/images/bb-dialog.png
+   A /branches/e17/images/bb-xcm.png
+   A /branches/e17/images/bb.png
+   A /branches/e17/images/bl-dialog.png
+   A /branches/e17/images/bl-full.png
+   A /branches/e17/images/bl-shaped.png
+   A /branches/e17/images/bl-xcm.png
+   A /branches/e17/images/bl.png
+   A /branches/e17/images/bld-shaped.png
+   A /branches/e17/images/br-dialog.png
+   A /branches/e17/images/br-full.png
+   A /branches/e17/images/br-shaped.png
+   A /branches/e17/images/br-xcm.png
+   A /branches/e17/images/br.png
+   A /branches/e17/images/brd-shaped.png
+   A /branches/e17/images/bt-close.png
+   A /branches/e17/images/bt-close_h.png
+   A /branches/e17/images/bt-max.png
+   A /branches/e17/images/bt-max_h.png
+   A /branches/e17/images/bt-min.png
+   A /branches/e17/images/bt-min_h.png
+   A /branches/e17/images/bt.png
+   A /branches/e17/images/button.png
+   A /branches/e17/images/button_clicked.png
+   A /branches/e17/images/button_detail_borderless.png
+   A /branches/e17/images/button_detail_close.png
+   A /branches/e17/images/button_detail_fullscreen.png
+   A /branches/e17/images/button_detail_kill.png
+   A /branches/e17/images/button_detail_locks.png
+   A /branches/e17/images/button_detail_maximize.png
+   A /branches/e17/images/button_detail_minimize.png
+   A /branches/e17/images/button_detail_properties.png
+   A /branches/e17/images/button_detail_remember.png
+   A /branches/e17/images/button_detail_sendto.png
+   A /branches/e17/images/button_detail_shade.png
+   A /branches/e17/images/button_detail_skip_winlist.png
+   A /branches/e17/images/button_detail_stack_below.png
+   A /branches/e17/images/button_detail_stack_normal.png
+   A /branches/e17/images/button_detail_stack_on_top.png
+   A /branches/e17/images/button_detail_stacking.png
+   A /branches/e17/images/button_detail_stick.png
+   A /branches/e17/images/button_disabled.png
+   A /branches/e17/images/button_focus_bottom.png
+   A /branches/e17/images/button_focus_top.png
+   A /branches/e17/images/button_outline.png
+   A /branches/e17/images/button_wm0.png
+   A /branches/e17/images/check.png
+   A /branches/e17/images/check_base.png
+   A /branches/e17/images/check_blank.png
+   A /branches/e17/images/check_focus.png
+   A /branches/e17/images/check_mark.png
+   A /branches/e17/images/cpu_meter.png
+   A /branches/e17/images/cpu_meter1.png
+   A /branches/e17/images/cpu_meter10.png
+   A /branches/e17/images/cpu_meter2.png
+   A /branches/e17/images/cpu_meter3.png
+   A /branches/e17/images/cpu_meter4.png
+   A /branches/e17/images/cpu_meter5.png
+   A /branches/e17/images/cpu_meter6.png
+   A /branches/e17/images/cpu_meter7.png
+   A /branches/e17/images/cpu_meter8.png
+   A /branches/e17/images/cpu_meter9.png
+   A /branches/e17/images/cs_box.png
+   A /branches/e17/images/desklock_dialog_bg.png
+   A /branches/e17/images/dialog_bg.png
+   A /branches/e17/images/dot.png
+   A /branches/e17/images/e17_fileman_thumb_bg.png
+   A /branches/e17/images/e17_logo_small.png
+   A /branches/e17/images/e17_logo_small_p1.png
+   A /branches/e17/images/e17_logo_small_p2.png
+   A /branches/e17/images/e17_logo_small_p21.png
+   A /branches/e17/images/e17_logo_small_p22.png
+   A /branches/e17/images/e17_logo_small_p23.png
+   A /branches/e17/images/e17_logo_small_p24.png
+   A /branches/e17/images/e17_logo_small_p25.png
+   A /branches/e17/images/e17_logo_small_p26.png
+   A /branches/e17/images/e17_logo_small_p27.png
+   A /branches/e17/images/e17_logo_small_p28.png
+   A /branches/e17/images/e17_logo_small_p29.png
+   A /branches/e17/images/e17_logo_small_p3.png
+   A /branches/e17/images/e17_logo_small_p4.png
+   A /branches/e17/images/e17_logo_small_p5.png
+   A /branches/e17/images/e17_logo_small_p6.png
+   A /branches/e17/images/e17_logo_small_p7.png
+   A /branches/e17/images/e17_logo_small_p8.png
+   A /branches/e17/images/e17_logo_small_p9.png
+   A /branches/e17/images/e17_mini_button_shadow2.png
+   A /branches/e17/images/e17_wallpaper_center.png
+   A /branches/e17/images/e17_wallpaper_center_flat.png
+   A /branches/e17/images/e17_wallpaper_grad_screen.png
+   A /branches/e17/images/e17_wallpaper_screen.png
+   A /branches/e17/images/entry.png
+   A /branches/e17/images/entry_focus.png
+   A /branches/e17/images/error-dialog_bg.png
+   A /branches/e17/images/focus_rect.png
+   A /branches/e17/images/focus_rect_over.png
+   A /branches/e17/images/focus_rect_over2.png
+   A /branches/e17/images/frame_outline.png
+   A /branches/e17/images/ibar_drop.png
+   A /branches/e17/images/lb.png
+   A /branches/e17/images/menu_bg.png
+   A /branches/e17/images/menu_select.png
+   A /branches/e17/images/menu_separator.png
+   A /branches/e17/images/night_sky.png
+   A /branches/e17/images/night_sky_moon.png
+   A /branches/e17/images/night_sky_sk.png
+   A /branches/e17/images/night_sky_ss1.png
+   A /branches/e17/images/night_sky_ss2.png
+   A /branches/e17/images/night_sky_ss3.png
+   A /branches/e17/images/night_sky_ss4.png
+   A /branches/e17/images/night_sky_ss5.png
+   A /branches/e17/images/night_sky_ss6.png
+   A /branches/e17/images/night_sky_ss7.png
+   A /branches/e17/images/night_sky_ss8.png
+   A /branches/e17/images/pager_desk.png
+   A /branches/e17/images/pager_focus.png
+   A /branches/e17/images/pager_lid_bl.png
+   A /branches/e17/images/pager_lid_br.png
+   A /branches/e17/images/pager_lid_tl.png
+   A /branches/e17/images/pager_lid_tr.png
+   A /branches/e17/images/pager_window.png
+   A /branches/e17/images/pager_window_ds.png
+   A /branches/e17/images/pager_window_iconified.png
+   A /branches/e17/images/pager_window_shaded.png
+   A /branches/e17/images/pointer.png
+   A /branches/e17/images/pointer_mono.png
+   A /branches/e17/images/preview_bg.png
+   A /branches/e17/images/preview_bg_over.png
+   A /branches/e17/images/radio0.png
+   A /branches/e17/images/radio1.png
+   A /branches/e17/images/radio2.png
+   A /branches/e17/images/radio_select.png
+   A /branches/e17/images/rb.png
+   A /branches/e17/images/resize-dialog_bg.png
+   A /branches/e17/images/sb_hdrag.png
+   A /branches/e17/images/sb_runnerh.png
+   A /branches/e17/images/sb_runnerh_left.png
+   A /branches/e17/images/sb_runnerh_right.png
+   A /branches/e17/images/sb_runnerv.png
+   A /branches/e17/images/sb_runnerv_bot.png
+   A /branches/e17/images/sb_runnerv_top.png
+   A /branches/e17/images/sb_vdrag.png
+   A /branches/e17/images/scrollframe_bg.png
+   A /branches/e17/images/scrollframe_focus.png
+   A /branches/e17/images/scrollframe_inset.png
+   A /branches/e17/images/separator.png
+   A /branches/e17/images/sf_barh1.png
+   A /branches/e17/images/sf_barh1_h.png
+   A /branches/e17/images/sf_barh_thumb.png
+   A /branches/e17/images/sf_barh_thumb_h.png
+   A /branches/e17/images/sf_barv1.png
+   A /branches/e17/images/sf_barv1_h.png
+   A /branches/e17/images/sf_barv_thumb.png
+   A /branches/e17/images/sf_barv_thumb_h.png
+   A /branches/e17/images/sf_bl1.png
+   A /branches/e17/images/sf_bl1_over.png
+   A /branches/e17/images/sf_br1.png
+   A /branches/e17/images/sf_br1_over.png
+   A /branches/e17/images/sf_btd1.png
+   A /branches/e17/images/sf_btd1_over.png
+   A /branches/e17/images/sf_btu1.png
+   A /branches/e17/images/sf_btu1_over.png
+   A /branches/e17/images/sf_hb_runner.png
+   A /branches/e17/images/sf_vb_runner.png
+   A /branches/e17/images/shelf_default_bg_h.png
+   A /branches/e17/images/shelf_default_bg_t.png
+   A /branches/e17/images/shelf_default_bg_v.png
+   A /branches/e17/images/shelf_default_inset_bg.png
+   A /branches/e17/images/shelf_default_r_bg_v.png
+   A /branches/e17/images/shelf_detroit_inset_bg.png
+   A /branches/e17/images/shelf_detroit_inset_bg_left.png
+   A /branches/e17/images/shelf_detroit_inset_bg_right.png
+   A /branches/e17/images/shelf_detroit_inset_bg_top.png
+   A /branches/e17/images/shelf_detroit_inset_overlay.png
+   A /branches/e17/images/shelf_detroit_inset_overlay_left.png
+   A /branches/e17/images/shelf_detroit_inset_overlay_right.png
+   A /branches/e17/images/shelf_detroit_inset_overlay_top.png
+   A /branches/e17/images/slider_0.png
+   A /branches/e17/images/slider_1.png
+   A /branches/e17/images/slider_vert0.png
+   A /branches/e17/images/slider_vert1.png
+   A /branches/e17/images/tb-dialog-xcm.png
+   A /branches/e17/images/tb-dialog.png
+   A /branches/e17/images/tb-shaped.png
+   A /branches/e17/images/tb-xcm.png
+   A /branches/e17/images/tb.png
+   A /branches/e17/images/tclock_overlay.png
+   A /branches/e17/images/tl-dialog-xcm.png
+   A /branches/e17/images/tl-dialog.png
+   A /branches/e17/images/tl-full.png
+   A /branches/e17/images/tl-shaped.png
+   A /branches/e17/images/tl-xcm.png
+   A /branches/e17/images/tl.png
+   A /branches/e17/images/tld-shaped.png
+   A /branches/e17/images/tr-dialog-xcm.png
+   A /branches/e17/images/tr-dialog.png
+   A /branches/e17/images/tr-full.png
+   A /branches/e17/images/tr-shaped.png
+   A /branches/e17/images/tr-xcm.png
+   A /branches/e17/images/tr.png
+   A /branches/e17/images/transition_vswipe.png
+   A /branches/e17/images/trd-shaped.png
+   A /branches/e17/images/tree_route.png
+   A /branches/e17/images/widget_focus.png
+   A /branches/e17/images.edc
+   A /branches/e17/main.edc
+
+version
+------------------------------------------------------------------------
