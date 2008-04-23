@@ -51,6 +51,8 @@ fonts {
 	font:"fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
 	font:"fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
 	font:"fonts/DejaVuSans-Oblique.ttf" "DejaVuSans-Oblique";
+	font:"fonts/DejaVuSerif.ttf" "DejaVuSerif";
+	font:"fonts/DejaVuSerif-Bold.ttf" "DejaVuSerif-Bold";
 }
 
 spectra {
