@@ -6,7 +6,7 @@
 #include "macros/sys.edc"
 
 /* by cored.org et al (see AUTHORS)
- * detour version 0.7.3 潜在意識 for Enlightenment 0.16.999.042 or later
+ * detour version 0.7.4 (dtr) for Enlightenment 0.16.999.042 or later
  */
 
  /* set the current version */
@@ -26,86 +26,86 @@
 #define ENABLE_EDJ_CREDITS 1 /* display credits */
 
 fonts {
-font: "fonts/DejaVuSans.ttf" "DejaVuSans";
-font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
-font: "fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
-font: "fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
-font: "fonts/DejaVuSans-Oblique.ttf" "DejaVuSans-Oblique";
+	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
+	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
+	font: "fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
+	font: "fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
+	font: "fonts/DejaVuSans-Oblique.ttf" "DejaVuSans-Oblique";
 }
 
 spectra {
-#include "bits/gradients.edc"
+	#include "bits/gradients.edc"
 }
 
 styles {
-#include "bits/textblock_styles.edc"
+	#include "bits/textblock_styles.edc"
 }
 
 images {
-#include "icons/icons.edc"
-#include "images/images.edc"
+	#include "icons/icons.edc"
+	#include "images/images.edc"
 }
 
 data {
 }
 
 collections {
-#include "bits/background.edc"
-#include "bits/border.edc"
-#include "bits/ibar.edc"
-#include "bits/fileman.edc"
-#if USE_TANGO_ICONS == 0
-#else
-#if USE_TANGO_ICONS == 1
-	#include "bits/icons.edc"
-	#include "bits/fileman_actions.edc"
-	#include "bits/fileman_icon.edc"
-	#include "bits/fileman_icon_clickable.edc"
-	#include "bits/fileman_mime.edc"
-#endif
-#endif
-#include "bits/menu.edc"
-#include "bits/resize.edc"
-#include "bits/move.edc"
-#include "bits/dialog.edc"
-#include "bits/configure.edc"
-#include "bits/pointer.edc"
-#include "bits/entry.edc"
-#include "bits/check.edc"
-#include "bits/radio.edc"
-#include "bits/frame.edc"
-#include "bits/button.edc"
-#include "bits/label.edc"
-#include "bits/slider.edc"
-#include "bits/desklock.edc"
-#include "bits/textblock.edc"
-#include "bits/shelf.edc"
-#include "bits/preview.edc"
-#include "bits/error.edc"
-#include "bits/pager.edc"
-#include "bits/about_theme.edc"
-#include "bits/tclock.edc"
-#include "bits/ibox.edc"
-#include "bits/clock.edc"
-#include "bits/scrollframe.edc"
-#include "bits/ilist.edc"
-#include "bits/tlist.edc"
-#include "bits/winlist.edc"
-#include "bits/about.edc"
-#include "bits/color_well.edc"
-#include "bits/cslider.edc"
-#include "bits/spectrum.edc"
-#include "bits/exebuf.edc"
-#include "bits/deskpreview.edc"
-#include "bits/sys.edc"
-#include "bits/battery.edc"
-#include "bits/temperature.edc"
-#include "bits/font_preview.edc"
-#include "bits/gadman.edc"
-#include "bits/module_notification.edc"
-#include "bits/toolbar.edc" /* work in progress */
-//~ #include "bits/slidesel.edc"
-//~ #include "bits/transitions.edc"
-//~ #include "bits/cpufreq.edc"
+	#include "bits/background.edc"
+	#include "bits/border.edc"
+	#include "bits/ibar.edc"
+	#include "bits/fileman.edc"
+	#if USE_TANGO_ICONS == 0
+	#else
+	#if USE_TANGO_ICONS == 1
+		#include "bits/icons.edc"
+		#include "bits/fileman_actions.edc"
+		#include "bits/fileman_icon.edc"
+		#include "bits/fileman_icon_clickable.edc"
+		#include "bits/fileman_mime.edc"
+	#endif
+	#endif
+	#include "bits/menu.edc"
+	#include "bits/resize.edc"
+	#include "bits/move.edc"
+	#include "bits/dialog.edc"
+	#include "bits/configure.edc"
+	#include "bits/pointer.edc"
+	#include "bits/entry.edc"
+	#include "bits/check.edc"
+	#include "bits/radio.edc"
+	#include "bits/frame.edc"
+	#include "bits/button.edc"
+	#include "bits/label.edc"
+	#include "bits/slider.edc"
+	#include "bits/desklock.edc"
+	#include "bits/textblock.edc"
+	#include "bits/shelf.edc"
+	#include "bits/preview.edc"
+	#include "bits/error.edc"
+	#include "bits/pager.edc"
+	#include "bits/about_theme.edc"
+	#include "bits/tclock.edc"
+	#include "bits/ibox.edc"
+	#include "bits/clock.edc"
+	#include "bits/scrollframe.edc"
+	#include "bits/ilist.edc"
+	#include "bits/tlist.edc"
+	#include "bits/winlist.edc"
+	#include "bits/about.edc"
+	#include "bits/color_well.edc"
+	#include "bits/cslider.edc"
+	#include "bits/spectrum.edc"
+	#include "bits/exebuf.edc"
+	#include "bits/deskpreview.edc"
+	#include "bits/sys.edc"
+	#include "bits/battery.edc"
+	#include "bits/temperature.edc"
+	#include "bits/font_preview.edc"
+	#include "bits/gadman.edc"
+	//~ #include "bits/module_notification.edc"
+	#include "bits/toolbar.edc" /* work in progress */
+	//~ #include "bits/slidesel.edc"
+	//~ #include "bits/transitions.edc"
+	//~ #include "bits/cpufreq.edc"
 }
 
