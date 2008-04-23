@@ -5,32 +5,52 @@
 #include "macros/fileman_list.edc"
 #include "macros/sys.edc"
 
+//Set the current version
+#define VERSION_STRING 0.7.4
+
 /* by cored.org et al (see AUTHORS)
  * detour version 0.7.4 (dtr) for Enlightenment 0.16.999.042 or later
  */
 
- /* set the current version */
-#define VERSION_STRING 0.7.4
+//Enable animated cursor
+#define USE_ANIMATED_CURSOR 1
 
-/* edje options */
-#define USE_ANIMATED_CURSOR 1 /* enable animated cursor */
-#define USE_TANGO_ICONS 1 /* use tango icons instead of the default icons */
-#define VISIBLE_CONTEXT_MENU_TITLE 0 /* display main menu title */
-#define FADE_IBAR_ICONS 0 /* set ibar-ibox icons to rgba: 255 255 255 164 */
-#define TRUNCATE_DESKTOP_ICON_FILENAME 1 /* truncate desktop icon filename */
-#define TRUNCATE_EFM_ICON_FILENAME 1 /* truncate efm icon filename */
-#define BACKGROUND_TYPE 1 /* set the background style */
-#define ENABLE_TEXT_CLASSES 1 /* (border always on by default) */ 
-#define ENABLE_CUSTOM_ICONS 0 /* work in progress */
-#define ENABLE_IBAR_LABEL_OVERLAY 1 /* display ibar-ibox label overlay */
-#define ENABLE_EDJ_CREDITS 1 /* display credits */
+//Use tango icons instead of the default icons 
+#define USE_TANGO_ICONS 1
+
+//Display main menu title
+#define VISIBLE_CONTEXT_MENU_TITLE 0
+
+//Set ibar-ibox icons to rgba: 255 255 255 164
+#define FADE_IBAR_ICONS 0
+
+//Truncate desktop icon filename
+#define TRUNCATE_DESKTOP_ICON_FILENAME 1
+
+//Truncate efm icon filename
+#define TRUNCATE_EFM_ICON_FILENAME 1
+
+//Set the background style
+#define BACKGROUND_TYPE 1
+
+//Enable custom text classes
+#define ENABLE_TEXT_CLASSES 1 	/* border always on by default */
+
+//Enable custom icons
+#define ENABLE_CUSTOM_ICONS 0 	/* work in progress */
+
+//Display ibar-ibox label overlay
+#define ENABLE_IBAR_LABEL_OVERLAY 1
+
+//Display credits
+#define ENABLE_EDJ_CREDITS 1
 
 fonts {
-	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
-	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
-	font: "fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
-	font: "fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
-	font: "fonts/DejaVuSans-Oblique.ttf" "DejaVuSans-Oblique";
+	font:"fonts/DejaVuSans.ttf" "DejaVuSans";
+	font:"fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
+	font:"fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
+	font:"fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
+	font:"fonts/DejaVuSans-Oblique.ttf" "DejaVuSans-Oblique";
 }
 
 spectra {
@@ -103,7 +123,7 @@ collections {
 	#include "bits/font_preview.edc"
 	#include "bits/gadman.edc"
 	//~ #include "bits/module_notification.edc"
-	#include "bits/toolbar.edc" /* work in progress */
+	#include "bits/toolbar.edc" 	/* work in progress */
 	//~ #include "bits/slidesel.edc"
 	//~ #include "bits/transitions.edc"
 	//~ #include "bits/cpufreq.edc"
