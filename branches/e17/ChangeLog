@@ -1,4 +1,52 @@
 ------------------------------------------------------------------------
+r434 | alberto.castro.leiva | 2008-04-23 02:15:08 -0500 (Wed, 23 Apr 2008) | 2 lines
+Changed paths:
+   D /branches/e17/fonts/DejaVuSerif-Bold.ttf
+   D /branches/e17/fonts/DejaVuSerif.ttf
+   M /branches/e17/main.edc
+
+Remove unused fonts.
+
+------------------------------------------------------------------------
+r433 | alberto.castro.leiva | 2008-04-23 02:11:51 -0500 (Wed, 23 Apr 2008) | 2 lines
+Changed paths:
+   D /branches/e17/test
+
+remove
+
+------------------------------------------------------------------------
+r432 | alberto.castro.leiva | 2008-04-23 02:10:47 -0500 (Wed, 23 Apr 2008) | 2 lines
+Changed paths:
+   A /branches/e17/test
+
+test
+
+------------------------------------------------------------------------
+r431 | alberto.castro.leiva | 2008-04-23 02:04:47 -0500 (Wed, 23 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+
+svn log -v > ChangeLog
+
+------------------------------------------------------------------------
+r430 | alberto.castro.leiva | 2008-04-23 02:01:30 -0500 (Wed, 23 Apr 2008) | 3 lines
+Changed paths:
+   A /branches/e17/ChangeLog
+   A /branches/e17/DejaVu.COPYING
+   D /branches/e17/Vera.COPYING
+   M /branches/e17/fonts/DejaVuSans-Bold.ttf
+   M /branches/e17/fonts/DejaVuSans-Oblique.ttf
+   M /branches/e17/fonts/DejaVuSans.ttf
+   M /branches/e17/fonts/DejaVuSansMono-Bold.ttf
+   M /branches/e17/fonts/DejaVuSansMono.ttf
+   A /branches/e17/fonts/DejaVuSerif-Bold.ttf
+   A /branches/e17/fonts/DejaVuSerif.ttf
+   M /branches/e17/main.edc
+
+Upgraded DejaVu fonts to v. 2.24
+Updated Font License.
+
+------------------------------------------------------------------------
 r429 | alberto.castro.leiva | 2008-04-23 01:27:05 -0500 (Wed, 23 Apr 2008) | 3 lines
 Changed paths:
    M /branches/e17/Makefile
