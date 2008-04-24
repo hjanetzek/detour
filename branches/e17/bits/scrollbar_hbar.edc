@@ -301,9 +301,10 @@ part {
 
 part {
 	name: "hbar_stipple";
+	type: IMAGE;
+	mouse_events: 0;
 	clip_to: "sb_hbar";
 	clip_to: "e.dragable.hbar.clip";
-	mouse_events: 0;
 	
 	description {
 		state: "default" 0.0;

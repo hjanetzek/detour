@@ -21,7 +21,7 @@
 //Display main menu title
 #define VISIBLE_CONTEXT_MENU_TITLE 0
 
-//Set ibar-ibox icons to rgba: 255 255 255 164
+//Set ibar icons to rgba: 255 255 255 164
 #define FADE_IBAR_ICONS 0
 
 //Truncate desktop icon filename
@@ -29,9 +29,6 @@
 
 //Truncate efm icon filename
 #define TRUNCATE_EFM_ICON_FILENAME 1
-
-//Set the background style
-#define BACKGROUND_TYPE 1
 
 //Enable custom text classes
 #define ENABLE_TEXT_CLASSES 1 	/* border always on by default */
@@ -42,8 +39,8 @@
 //Display ibar-ibox label overlay
 #define ENABLE_IBAR_LABEL_OVERLAY 1
 
-//Display credits
-#define ENABLE_EDJ_CREDITS 1
+//Set the background style
+#define BACKGROUND_TYPE 1
 
 fonts {
 	font:"fonts/DejaVuSans.ttf" "DejaVuSans";
