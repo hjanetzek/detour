@@ -1,67 +1,29 @@
 
 part {
-	name: "about_bubble";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 0;
-
-		rel1 { 
-			to: "about_text"; 
-			relative: 0.0 0.0; 
-			offset: -12 -8; 
-		}
-
-		rel2 { 
-			to: "about_text"; 
-			relative: 1.0 1.0; 
-			offset: 6 24; 
-		}
-
-		image {
-			normal: "bubble.png";
-			border: 12 36 11 23;
-		}
-	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 245;
-	}
-}
-
-part {
-	name: "about_text";
+	name: "authors";
 	type: TEXTBLOCK;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 0;
+		align: 0.5 0.0;
 
 		rel1 { 
-			to: "button_enabled"; 
-			offset: -60 -165; 
+			to: "background"; 
+			relative: 0.0 0.0;
+			offset: 0 24; 
 		}
 
 		rel2 { 
-			to: "button_enabled";
-			offset: 26 -46;
+			to: "logo";
+			relative: 1.0 0.0;
+			offset: -1 8;
 		}
 
 		text {
 			style: "about_this_theme";
-			text: "Designed and developed by <soft>Alberto Castro</soft> with help from <soft>Hannes Janetzek</soft>, et al. <br><br><bold>detour</bold> is distributed under the terms of the <bold>BSD Artistic License</bold><br><br><right>Enjoy!</right>";
+			text: "Designed and developed by Alberto Castro with help from Hannes Janetzek, et al.";
 		}
     	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
 }
 
