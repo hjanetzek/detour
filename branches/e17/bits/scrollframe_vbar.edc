@@ -285,14 +285,15 @@ part {
 
 part {
 	name: "vbar_stipple";
+	type: IMAGE;
+	mouse_events: 0;
 	clip_to: "sb_vbar";
 	clip_to: "e.dragable.vbar.clip";
-	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		min: 7 13;
-		max: 7 13;
+		min: 7 11;
+		max: 7 11;
 		fixed: 1 1;
 
 		rel1 { 

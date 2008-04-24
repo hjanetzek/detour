@@ -1,18 +1,5 @@
 
 style {
-	name: "about_this_theme";
-	base: "font=DejaVuSans-Mono-Bold font_size=10 color=#ffffff wrap=word";
-
-	tag: "br" "\n";
-	tag: "bold" "+ font=DejaVuSans-Bold color=#070707";
-	tag: "mono" "+ font=DejaVuSans-Mono";
-	tag: "subliminal" "+ color=#e0e0e0";
-	tag: "underline" "+ underline=on underline_color=#3c3c3c";
-	tag: "right" "+ align=right font=DejaVuSans-Bold";
-	tag: "soft" "+ color: #ffffff80";
-}
-
-style {
 	name: "about_style";
 	#if ENABLE_TEXT_CLASSES == 0
 		base: "font=DejaVuSans font_size=10 align=center color=#070707 wrap=word";

@@ -184,7 +184,6 @@ image: "pager_lid_r.png" COMP;
 
 //~ about_theme
 image: "logo.png" COMP;
-image: "bubble.png" COMP;
 
 //~ clock
 image: "hour.cursor.00.png" COMP;

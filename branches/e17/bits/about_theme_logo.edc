@@ -11,13 +11,13 @@ part {
 
 		rel1 { 
 			to: "base"; 
-			relative: 0.5 0.35; 
+			relative: 0.5 0.25; 
 			offset: 0 0; 
 		}
 		
 		rel2 { 
 			to: "base"; 
-			relative: 0.5 0.35; 
+			relative: 0.5 0.25; 
 			offset: -1 -1; 
 		}
 
@@ -51,7 +51,7 @@ part {
 		}
 
 		text {
-			text: "detour (dtr) 潜在意識";
+			text: "detour (dtr)";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			min: 1 1;
@@ -93,14 +93,14 @@ part {
 }
 
 part {
-	name: "project_subliminal_url";
+	name: "project_authors_pt1";
 	type: TEXT;
 	effect: NONE;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		color: 60 60 60 32;
+		color: 60 60 60 255;
 
 		rel1 { 
 			to: "project_version"; 
@@ -111,7 +111,105 @@ part {
 		rel2 { 
 			to: "project_version"; 
 			relative: 0.5 1.0; 
-			offset: -1 16; 
+			offset: -1 60; 
+		}
+
+		text {
+			text: "Designed and developed by Alberto Castro";
+			font: "DejaVuSans";
+			size: 11;
+			min: 1 1;
+			align: 0.5 0.5;
+		}
+    	}
+}
+
+part {
+	name: "project_authors_pt2";
+	type: TEXT;
+	effect: NONE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 60 60 60 255;
+
+		rel1 { 
+			to: "project_version"; 
+			relative: 0.5 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "project_version"; 
+			relative: 0.5 1.0; 
+			offset: -1 92; 
+		}
+
+		text {
+			text: "with help from Hannes Janetzek, et al.";
+			font: "DejaVuSans";
+			size: 11;
+			min: 1 1;
+			align: 0.5 0.5;
+		}
+    	}
+}
+
+
+part {
+	name: "project_license";
+	type: TEXT;
+	effect: NONE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 60 60 60 255;
+
+		rel1 { 
+			to: "project_version"; 
+			relative: 0.5 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "project_version"; 
+			relative: 0.5 1.0; 
+			offset: -1 132; 
+		}
+
+		text {
+			text: "Released under the BSD Artistic License";
+			font: "DejaVuSans";
+			size: 10;
+			min: 1 1;
+			align: 0.5 0.5;
+		}
+    	}
+}
+
+part {
+	name: "project_subliminal_url";
+	type: TEXT;
+	effect: NONE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 60 60 60 32;
+
+
+		rel1 { 
+			to: "project_version"; 
+			relative: 0.5 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "project_version"; 
+			relative: 0.5 1.0; 
+			offset: -1 162; 
 		}
 
 		text {
