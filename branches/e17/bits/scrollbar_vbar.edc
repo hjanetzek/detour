@@ -43,8 +43,8 @@ part {
 part {
 	name: "sb_vbar_base";
 	type: RECT;
-	clip_to: "sb_vbar";
 	mouse_events: 0;
+	clip_to: "sb_vbar";
 
 	description {
 		state: "default" 0.0;
@@ -67,8 +67,8 @@ part {
 part {
 	name: "sb_vbar_p1";
 	type: RECT;
-	clip_to: "sb_vbar";
 	mouse_events: 0;
+	clip_to: "sb_vbar";
 
 	description {
 		state: "default" 0.0;
@@ -91,8 +91,8 @@ part {
 part {
 	name: "sb_vbar_p2";
 	type: RECT;
-	clip_to: "sb_vbar";
 	mouse_events: 1;
+	clip_to: "sb_vbar";
 
 	description {
 		state: "default" 0.0;
@@ -114,6 +114,7 @@ part {
 
 part {
 	name: "sb_vbar_runner";
+	type: IMAGE;
 	clip_to: "sb_vbar";
 	mouse_events: 0;
 
@@ -207,6 +208,7 @@ part {
 
 part {
 	name: "e.dragable.vbar.clip";
+	type: RECT;
 	clip_to: "sb_vbar";
 	mouse_events: 0;
 
@@ -232,15 +234,16 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 215 215 215 255;
+		color: 235 235 235 255;
 	}
 }
 
 part {
 	name: "e.dragable.vbar";
+	type: IMAGE;
+	mouse_events: 1;
 	clip_to: "sb_vbar";
 	clip_to: "e.dragable.vbar.clip";
-	mouse_events: 1;
 
 	dragable {
 		x: 0 0 0;
@@ -252,7 +255,6 @@ part {
 		state: "default" 0.0;
 		min: 13 36;
 		max: 13 9999;
-		color: 255 255 255 255;
 
 		rel1 { 
 			to: "sb_vbar_base"; 
@@ -275,7 +277,6 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 235 235 235 255;
 	}
 }
 
