@@ -42,8 +42,8 @@ part {
 part {
 	name: "sb_hbar_base";
 	type: RECT;
-	clip_to: "sb_hbar";
 	mouse_events: 1;
+	clip_to: "sb_hbar";
 
 	description {
 		state: "default" 0.0;
@@ -68,8 +68,8 @@ part {
 	name: "sb_hbar_p1";
 	// type: GRADIENT
 	type: RECT;
-	clip_to: "sb_hbar";
 	mouse_events: 0;
+	clip_to: "sb_hbar";
 
 	description {
 		state: "default" 0.0;
@@ -101,10 +101,10 @@ part {
 
 part {
 	name: "sb_hbar_p2";
-	// type: GRADIENT
+	//type: GRADIENT
 	type: RECT;
-	clip_to: "sb_hbar";
 	mouse_events: 0;
+	clip_to: "sb_hbar";
 
 	description {
 		state: "default" 0.0;
@@ -134,8 +134,9 @@ part {
 
 part {
 	name: "sb_hbar_runner";
-	clip_to: "sb_hbar";
+	type: IMAGE;
 	mouse_events: 0;
+	clip_to: "sb_hbar";
 
 	description {
 		state: "default" 0.0;
@@ -227,8 +228,9 @@ part {
 
 part {
 	name: "e.dragable.hbar.clip";
-	clip_to: "sb_hbar";
+	type: IMAGE;
 	mouse_events: 0;
+	clip_to: "sb_hbar";
 
 	description {
 		state: "default" 0.0;
@@ -253,15 +255,16 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 215 215 215 255;
+		color: 235 235 235 255;
 	}
 }
 
 part {
 	name: "e.dragable.hbar";
+	type: IMAGE;
+	mouse_events: 1;
 	clip_to: "sb_hbar";
 	clip_to: "e.dragable.hbar.clip";
-	mouse_events: 1;
 
 	dragable {
 		x: 1 1 0;
@@ -274,7 +277,6 @@ part {
 		min: 36 13;
 		max: 72 13;
 		fixed: 1 1;
-		color: 255 255 255 255;
 
 		rel1 { 
 			to: "sb_hbar_base"; 
@@ -295,7 +297,6 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 235 235 235 255;
 	}
 }
 
@@ -331,7 +332,6 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-		color: 215 215 215 255;
 	}
 }
 
