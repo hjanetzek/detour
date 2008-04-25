@@ -1,10 +1,11 @@
 
 part {
 	name: "content";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
-		max: 9999 24;
+		max: 9999 22;
 		visible: 0;
 
 		rel1 { 
@@ -48,3 +49,4 @@ part {
 		}
 	} 
 }
+
