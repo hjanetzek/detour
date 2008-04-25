@@ -3,13 +3,14 @@
 fonts 		= fonts
 images 		= images
 icons		= icons
+clock		= clock
 custom_icons	= custom
 CC 		= edje_cc
 SRC		= main.edc
 OUT		= detour-e17.edj
 COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
 
-EDJE_CC_FLAGS  = -fd $(fonts)/ -id $(images)/ -id $(icons) -id $(custom_icons)
+EDJE_CC_FLAGS  = -fd $(fonts)/ -id $(images)/ -id $(icons) -id $(custom_icons) -id $(clock)
 
 .SILENT :
 
