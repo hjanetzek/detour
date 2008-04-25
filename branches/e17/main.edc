@@ -20,7 +20,7 @@
 #define TANGO_ICONS 1
 
 //Display main menu title
-#define VISIBLE_MENU_TITLE 1
+#define VISIBLE_MENU_TITLE 0
 
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
