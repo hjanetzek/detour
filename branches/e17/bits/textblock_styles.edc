@@ -2,7 +2,7 @@
 style {
 	name: "about_style";
 	#if ENABLE_TEXT_CLASSES == 0
-		base: "font=DejaVuSans font_size=10 align=center color=#070707 wrap=word";
+		base: "font=DejaVuSans font_size=9 align=center color=#070707 wrap=word";
 		tag:  "hilight" "+ font=DejaVuSans-Bold";
 		tag:  "title" "+ font_size=11 font=DejaVuSans";
 	#else
