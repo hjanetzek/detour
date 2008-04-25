@@ -8,6 +8,7 @@ part {
 		state: "default" 0.0;
 		min: 172 108;
 		max: 172 108;
+		fixed: 1 1;
 
 		rel1 { 
 			to: "base"; 
@@ -176,7 +177,7 @@ part {
 		rel2 { 
 			to: "project_version"; 
 			relative: 0.5 1.0; 
-			offset: -1 132; 
+			offset: -1 128; 
 		}
 
 		text {

@@ -1,8 +1,8 @@
 
 part {
 	name: "base3";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -22,8 +22,8 @@ part {
 
 part {
 	name: "base2";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -44,6 +44,7 @@ part {
 
 part {
 	name: "base";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -72,8 +73,8 @@ part {
 
 part {
 	name: "middle";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -97,10 +98,12 @@ part {
 
 part {
 	name: "about_bg";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
+		visible: 0;
 
 		rel1 { 
 			to: "e.textblock.about"; 
@@ -121,10 +124,12 @@ part {
 
 part {
 	name: "authors_bg";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
+		visible: 0;
 
 		rel1 { 
 			to: "e.textblock.authors"; 
@@ -250,20 +255,20 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 7 7 7 255;
+		color: 60 60 60 255;
 		fixed: 0 1;
 		align: 0.5 0.0;
 
 		rel1 { 
 			to: "e.text.title"; 
 			relative: 0.0 1.0; 
-			offset: 6 2; 
+			offset: 6 1; 
 		}
 
 		rel2 { 
 			to: "e.text.title"; 
 			relative: 1.0  1.0; 
-			offset: -7 2; 
+			offset: -7 1; 
 		}
 
 		text {
