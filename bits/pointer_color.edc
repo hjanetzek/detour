@@ -32,52 +32,52 @@ part {
 	}
 }
 
-#if USE_ANIMATED_CURSOR == 0
+#if ANIMATED_CURSOR == 0
 #else
-#if USE_ANIMATED_CURSOR == 1
-part {
-	name: "pointer";
-	type: IMAGE;
-	mouse_events: 0;
+#if ANIMATED_CURSOR == 1
+	part {
+		name: "pointer";
+		type: IMAGE;
+		mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 255;
+		description {
+			state: "default" 0.0;
+			color: 255 255 255 255;
 
-		rel1 { 
-			to: "base"; 
+			rel1 { 
+				to: "base"; 
+			}
+
+			rel2 { 
+				to: "base"; 
+			}
+
+			image {
+				normal: "cursor.png";
+			}
 		}
 
-		rel2 { 
-			to: "base"; 
-		}
+		description {
+			state: "pulsate" 0.0;
+			color: 255 255 255 0;
 
-		image {
-			normal: "cursor.png";
+			rel1 { 
+				to: "base"; 
+				relative: -0.5 -0.5;
+			}
+
+			rel2 { 
+				to: "base"; 
+				relative: 1.5 1.5; 
+			}
+
+			image {
+				normal: "cursor2.png";
+			}
 		}
 	}
-
-	description {
-		state: "pulsate" 0.0;
-		color: 255 255 255 0;
-
-		rel1 { 
-			to: "base"; 
-			relative: -0.5 -0.5;
-		}
-
-		rel2 { 
-			to: "base"; 
-			relative: 1.5 1.5; 
-		}
-
-		image {
-			normal: "cursor2.png";
-		}
-	}
-}
-#endif
-#endif
+	#endif
+	#endif
 
 part {
 	name: "e.swallow.hotspot";

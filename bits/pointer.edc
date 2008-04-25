@@ -7,9 +7,9 @@ group {
 	}
 
 	programs {
-		#if USE_ANIMATED_CURSOR == 0
+		#if ANIMATED_CURSOR == 0
 		#else
-		#if USE_ANIMATED_CURSOR == 1
+		#if ANIMATED_CURSOR == 1
 			program {
 				name: "go_active";
 				signal: "e,state,mouse,idle";
@@ -59,3 +59,4 @@ group {
 		#include "pointer_mono.edc"
 	}
 }
+

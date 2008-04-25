@@ -8,36 +8,38 @@
 //Set the current version
 #define VERSION_STRING 0.7.4
 
-/* by cored.org et al (see AUTHORS)
+/* 
+ * cored.org et al (see AUTHORS)
  * detour version 0.7.4 (dtr) for Enlightenment 0.16.999.042 or later
  */
 
-//Enable animated cursor
-#define USE_ANIMATED_CURSOR 1
+//Set the pointer to pulsating mode
+#define ANIMATED_CURSOR 1
 
-//Use tango icons instead of the default icons 
-#define USE_TANGO_ICONS 1
+//Display Tango Icons
+#define TANGO_ICONS 1
 
 //Display main menu title
-#define VISIBLE_CONTEXT_MENU_TITLE 0
+#define VISIBLE_MENU_TITLE 1
 
-//Set ibar icons to rgba: 255 255 255 164
-#define FADE_IBAR_ICONS 0
-
-//Truncate desktop icon filename
+//Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
 
-//Truncate efm icon filename
+//Truncate efm icons filename
 #define TRUNCATE_EFM_ICON_FILENAME 1
 
 //Enable custom text classes
-#define ENABLE_TEXT_CLASSES 1 	/* border always on by default */
+#define ENABLE_TEXT_CLASSES 1 	
+/* window border always on due to macro dependency */
 
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 	/* work in progress */
 
-//Display ibar-ibox label overlay
+//Display ibar & ibox label overlay
 #define ENABLE_IBAR_LABEL_OVERLAY 1
+
+//Set ibar icons to rgba: 255 255 255 164
+#define FADE_IBAR_ICONS 0
 
 //Set the background style
 #define BACKGROUND_TYPE 1
@@ -71,9 +73,9 @@ collections {
 	#include "bits/border.edc"
 	#include "bits/ibar.edc"
 	#include "bits/fileman.edc"
-	#if USE_TANGO_ICONS == 0
+	#if TANGO_ICONS == 0
 	#else
-	#if USE_TANGO_ICONS == 1
+	#if TANGO_ICONS == 1
 		#include "bits/icons.edc"
 		#include "bits/fileman_actions.edc"
 		#include "bits/fileman_icon.edc"
@@ -115,7 +117,7 @@ collections {
 	#include "bits/exebuf.edc"
 	#include "bits/deskpreview.edc"
 	#include "bits/sys.edc"
-	#include "bits/battery.edc"
+	#include "bits/battery.edc" 	/* must fix text alignment */
 	#include "bits/temperature.edc"
 	#include "bits/font_preview.edc"
 	#include "bits/gadman.edc"
@@ -124,5 +126,6 @@ collections {
 	//~ #include "bits/slidesel.edc"
 	#include "bits/transitions.edc"
 	//~ #include "bits/cpufreq.edc"
+	//~ #include "bits/start.edc"
 }
 
