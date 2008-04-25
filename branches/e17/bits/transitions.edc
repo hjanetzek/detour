@@ -5,17 +5,15 @@ group {
 	parts {
 		part {
 			name: "bg";
+			type: RECT;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
-		/* dimension agnostic? */
+				/* dimension agnostic? */
 				//~ aspect: 1.0 1.0;
 				//~ aspect_preference: BOTH;
-
-				image {
-					normal: "night_sky.png";
-				}
+				color: 255 0 0 255;
 			}
 		}
 	}
@@ -24,88 +22,23 @@ group {
 group {
 	name: "e/transpreview/1";
 
-parts {
-	part {
-		name: "bg";
-		mouse_events: 0;
+	parts {
+		part {
+			name: "bg";
+			type: RECT;
+			mouse_events: 0;
 
-		description {
-			state: "default" 0.0;
-		/* dimension agnostic? */
-			//~ aspect: 1.0 1.0;
-			//~ aspect_preference: BOTH;
-			
-			image {
-				normal: "night_sky.png";
-			}
-		}
-	}
-
-	part {
-		name: "spark";
-		type: IMAGE;
-		mouse_events: 0;
-		clip_to: "spark_clip";
-
-		description {
-			state: "default" 0.0;
-
-			image {
-				normal: "night_sky_sk.png";
-			}
-		}
-	}
-
-	part {
-		name: "spark_clip";
-		type: RECT;
-		mouse_events: 0;
-
-		description {
-			state: "default" 0.0;
-			color: 255 255 255 0;
-		}
-
-		description {
-			state: "default" 0.1;
-			color: 255 255 255 255;
-		}
-	}
-
-	part {
-		name: "moon";
-		type: IMAGE;
-		mouse_events: 0;
-	
-		description {
-			state: "default" 0.0;
-	
-				image {
-					normal: "night_sky_moon.png";
-				}
+			description {
+				state: "default" 0.0;
+				/* dimension agnostic? */
+				//~ aspect: 1.0 1.0;
+				//~ aspect_preference: BOTH;
+				color: 0 255 0 255;
 			}
 		}
 	}
 
 	programs {
-		program {
-			name: "spark1";
-			signal: "load";
-			source: "";
-			action: STATE_SET "default" 0.1; in: 2.0 0.0;
-			transition: SINUSOIDAL 1.0;
-			target: "spark_clip";
-			after: "spark2";
-		}
-
-		program {
-			name: "spark2";
-			signal: "";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			transition: DECELERATE 1.0;
-			target: "spark_clip";
-		}
 	}
 }
 
@@ -133,9 +66,9 @@ group {
 		}
 
 		part {
-			name:          "bg_new_clip";
-			type:          RECT;
-			mouse_events:  0;
+			name: "bg_new_clip";
+			type: RECT;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -188,7 +121,7 @@ group {
 			clip_to: "bg_new_clip";
 
 			description {
-					state: "default" 0.0;
+				state: "default" 0.0;
 			}
 		}
 
@@ -264,6 +197,7 @@ group {
 
 		part {
 			name: "swipe_gap";
+			type: IMAGE;
 			mouse_events: 0;
 
 			description {

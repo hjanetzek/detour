@@ -8,6 +8,7 @@ part {
 		min: 0 34;
 		max: 9999 34;
 		color: 75 115 199 255;
+		color: 60 60 60 255;
 	}
 }
 
@@ -45,7 +46,7 @@ part {
 		rel1 { 
 			to_x: "e.swallow.icon"; 
 			relative: 0.0 0.0; 
-			offset: 5 5; 
+			offset: 5 4; 
 		}
 
 		rel2 { 
