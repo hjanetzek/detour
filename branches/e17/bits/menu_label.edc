@@ -2,21 +2,20 @@
 part {
 	name: "e.text.label";
 	type: TEXT;
-	effect: SHADOW;
+	effect: NONE;
       
 	description {
         	state: "default" 0.0;
 		color: 60 60 60 255;
-		color3: 0 0 0 0;
         
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 5 4; 
+			offset: 5 2; 
 		}
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -6 -2; 
+			offset: -6 -3; 
 		}
 
 		text {
@@ -39,7 +38,6 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-		color3: 0 0 0 0;
 	}
 }
 

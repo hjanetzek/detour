@@ -53,20 +53,6 @@ part {
 
 		image.normal: "radio_shadow.png";
 	} 
-
-/*
-	description {
-		state: "focused" 0.0;
-		inherit: "default" 0.0;
-		image.normal: "radio_focus.png";
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 0;
-	}
-*/
 }
 
 part {
@@ -103,3 +89,4 @@ part {
 		}
 	}
 }
+

@@ -1,6 +1,7 @@
 
 part {
 	name: "arrow";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -26,4 +27,5 @@ part {
 		inherit: "default" 0.0;
 	        image.normal: "arrow_light.png";
 	}
-} 
+}
+
