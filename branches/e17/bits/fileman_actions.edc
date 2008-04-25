@@ -1,7 +1,7 @@
 
-#if USE_TANGO_ICONS == 0
+#if TANGO_ICONS == 0
 #else
-#if USE_TANGO_ICONS == 1
+#if TANGO_ICONS == 1
 group {
 	name: "e/fileman/default/button/open";
 

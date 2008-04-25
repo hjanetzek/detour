@@ -1,16 +1,20 @@
 # Makefile for seek
 
-fonts 		= fonts
-images 		= images
-icons		= icons
-clock		= clock
-custom_icons	= custom
-CC 		= edje_cc
-SRC		= main.edc
-OUT		= detour-e17.edj
-COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
+IMAGES 	= images
+ICONS	= icons
+CUSTOM	= custom
+CLOCK	= clock
 
-EDJE_CC_FLAGS  = -fd $(fonts)/ -id $(images)/ -id $(icons) -id $(custom_icons) -id $(clock)
+EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
+-id $(IMAGES) \
+-id $(ICONS) \
+-id $(CUSTOM) \
+-id $(CLOCK)
+
+CC 	= edje_cc
+COMPILE = $(CC) $(EDJE_CC_FLAGS)
+SRC	= main.edc
+OUT	= detour-e17.edj
 
 .SILENT :
 
@@ -18,19 +22,17 @@ all: version clean build install
 
 version:
 	@echo ""
-	cat main.edc | head -12 | tail -1
-
-clean:
-	@echo ""
-	@echo "make clean"
-	if [ -e $(OUT) ]; then rm $(OUT); fi
+	cat main.edc | head -13 | tail -1
 
 build: main.edc
-	@echo "make"
+	@echo "Running make..."
 	$(COMPILE) $(SRC) -o $(OUT)
 
+verbose: main.edc
+	$(COMPILE) -v $(SRC) -o $(OUT)
+
 install: detour-e17.edj
-	@echo "make install"
+	@echo "Running make install..."
 	if [ -e $(OUT) ]; then cp $? $(HOME)/.e/e/themes/; fi
 	@echo
 	@echo --------------------------------------------------
@@ -38,6 +40,11 @@ install: detour-e17.edj
 	@echo $(HOME)/.e/e/themes/ directory.
 	@echo --------------------------------------------------
 	@echo
+
+clean:
+	@echo ""
+	@echo "Running make clean..."
+	if [ -e $(OUT) ]; then rm -rf $(OUT); fi
 
 uninstall: detour-e17.edj
 	@echo ""

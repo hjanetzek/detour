@@ -7,8 +7,9 @@ part {
 		state: "default" 0.0;
 		min: 0 34;
 		max: 9999 34;
-		color: 75 115 199 255;
-		color: 60 60 60 255;
+		/* oh lawd, what colour shall it be! */
+		//color: 76 76 76 255;
+		color: 68 108 172 255;
 	}
 }
 
@@ -58,7 +59,7 @@ part {
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 1 1;
-			align: 0 0.5;
+			align: 0.5 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
 				text_class: "";
 			#else
