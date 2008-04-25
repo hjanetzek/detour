@@ -170,6 +170,7 @@ image: "sf_br1_over.png" COMP;
 image: "error-dialog_bg.png" COMP;
 
 //~ transitions
+image: "transition_vswipe.png" COMP;
 
 //~ ilist
 
