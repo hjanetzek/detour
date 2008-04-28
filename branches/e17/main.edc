@@ -29,8 +29,11 @@
 #define TRUNCATE_EFM_ICON_FILENAME 1
 
 //Enable custom text classes
-#define ENABLE_TEXT_CLASSES 1 	
+#define ENABLE_TEXT_CLASS 1 	
 /* window border always on due to macro dependency */
+
+//Enable custom color classes
+#define ENABLE_COLOR_CLASS 1
 
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 	/* work in progress */

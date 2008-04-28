@@ -136,10 +136,10 @@ part {
 			size: 10;
 			align: 0.0 0.5;
 			min: 1 1;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "desklock_title";
 			#endif
 			#endif
@@ -199,10 +199,10 @@ part {
 			size: 11;
 			align: 0.0 0.5;
 			min: 1 1;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "desklock_passwd"; 
 			#endif
 			#endif
