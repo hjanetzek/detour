@@ -1,12 +1,12 @@
 
 style {
 	name: "about_style";
-	#if ENABLE_TEXT_CLASSES == 0
+	#if ENABLE_TEXT_CLASS == 0
 		base: "font=DejaVuSans font_size=9 align=center color=#070707 wrap=word";
 		tag:  "hilight" "+ font=DejaVuSans-Bold";
 		tag:  "title" "+ font_size=11 font=DejaVuSans";
 	#else
-	#if ENABLE_TEXT_CLASSES == 1
+	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans font_size=10 align=center color=#070707 wrap=word text_class=tb_plain";
 	tag:  "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
 	tag:  "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
@@ -29,11 +29,11 @@ style {
 
 style {
 	name: "dialog_style";
-	#if ENABLE_TEXT_CLASSES == 0
+	#if ENABLE_TEXT_CLASS == 0
 		base: "font=DejaVuSans-Bold font_size=10 align=center color=#3c3c3c wrap=word"; 
 		tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d";
 	#else
-	#if ENABLE_TEXT_CLASSES == 1
+	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans-Bold font_size=10 align=center color=#3c3c3c wrap=word text_class=tb_plain";
 	tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d text_class=tb_light"; 
 	#endif
@@ -44,11 +44,11 @@ style {
 
 style {
 	name: "error_style";
-	#if ENABLE_TEXT_CLASSES == 0
+	#if ENABLE_TEXT_CLASS == 0
 		base: "font=DejaVuSans font_size=10 align=left color=#3c3c3c wrap=word";
 		tag:  "hilight" "+ font=DejaVuSans font_size=10 color=#2d2d2d"; 
 	#else
-	#if ENABLE_TEXT_CLASSES == 1
+	#if ENABLE_TEXT_CLASS == 1
       		base: "font=DejaVuSans font_size=10 align=left color=#3c3c3c wrap=word text_class=tb_plain";
 		tag:  "hilight" "+ font=DejaVuSans font_size=10 color=#2d2d2d text_class=tb_light"; 
 	#endif
@@ -59,20 +59,20 @@ style {
 
 style {
 	name: "sys_style";
-	#if ENABLE_TEXT_CLASSES == 0
+	#if ENABLE_TEXT_CLASS == 0
 	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word";
 	#else
-	#if ENABLE_TEXT_CLASSES == 1
+	#if ENABLE_TEXT_CLASS == 1
 	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word text_class=tb_large";
 	#endif
 	#endif
 
 	tag: "br" "\n";
 
-	#if ENABLE_TEXT_CLASSES == 0
+	#if ENABLE_TEXT_CLASS == 0
 		tag: "hilight" "+ font=DejaVuSans-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14";
 	#else
-	#if ENABLE_TEXT_CLASSES == 1
+	#if ENABLE_TEXT_CLASS == 1
 		tag: "hilight" "+ font=DejaVuSans-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14 text_class=tb_large_light";
 	#endif
 	#endif

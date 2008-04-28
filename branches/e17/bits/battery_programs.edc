@@ -52,3 +52,4 @@ program {
 	action: STATE_SET "default" 0.0;
 	target: "pulse_clip";
 }
+

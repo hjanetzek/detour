@@ -65,10 +65,10 @@ part {
 			size: 11;
 			min: 0 0;
 			elipsis: 0.5;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "fileman_typebuf";
 			#endif
 			#endif
@@ -181,10 +181,10 @@ part {
 			size: 11;
 			min:  1 1;
 			align: 1.0 1.0;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "fileman_notice";
 			#endif
 			#endif  

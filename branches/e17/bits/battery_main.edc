@@ -8,7 +8,7 @@ part {
 		max: 85 85;
 		aspect: 1.0 1.0;
 	    	aspect_preference: BOTH;
-		align: 0.0 0.5;
+		align: 0.5 0.5;
 
 		rel1 { 
 			relative: 0.0 0.0; 
@@ -73,12 +73,13 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 0;
+		color: 255 255 255 255;
+		visible: 0;
 
 		rel1 { 
 			to: "battery"; 
 			relative: 0.0 0.0; 
-			offset: 1 1; 
+			offset: 0 0; 
 		}
 
 		rel2 { 
@@ -92,36 +93,36 @@ part {
 part {
 	name: "e.text.reading";
 	type: TEXT;
-	effect: SHADOW;
+	effect: NONE;
 	clip_to: "text_fade_clip";
 
 	description {
 		state: "default" 0.0;
 		color: 7 7 7 255;
-		color3: 170 168 169 128;
+		align: 0.5 0.5;
 
 		rel1 { 
 			to: "text_clip"; 
-			relative: 0.5 0.55; 
+			relative: 0.5 0.5; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
 			to: "text_clip"; 
-			relative: 0.5 0.55; 
+			relative: 0.5 0.5; 
 			offset: -1 -1; 
 		}
 
 		text {
 			text: "100%";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 9;
+			size: 10;
 			min: 1 1;
-			align: 1.0 0.0;
-			#if ENABLE_TEXT_CLASSES == 0
+			align: 0.5 0.5;
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "module_small";
 			#endif
 			#endif  
@@ -132,36 +133,36 @@ part {
 part {
 	name: "e.text.time";
 	type: TEXT;
-	effect: SHADOW;
+	effect: NONE;
 	clip_to: "text_fade_clip";
 
 	description {
 		state: "default" 0.0;
 		color: 7 7 7 255;
-		color3: 170 168 169 128;
+		align: 0.5 0.5;
 
 		rel1 { 
-			to_y: "text_clip"; 
-			relative: 0.5 0.8; 
-			offset: 0 0; 
+			to: "text_clip"; 
+			relative: 0.0 0.5; 
+			offset: 0 4; 
 		}
 
 		rel2 { 
-			to_x: "e.text.reading"; 
-			relative: 0.5 1.0; 
+			to: "text_clip"; 
+			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
 
 		text {
 			text: "00:00";
 			font: "DejaVuSans";
-			size: 8;
+			size: 9;
 			min: 1 1;
-			align: 1.0 0.0;
-			#if ENABLE_TEXT_CLASSES == 0
+			align: 0.5 0.5;
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "module_small";
 			#endif
 			#endif
@@ -176,7 +177,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 200;
+		color: 255 255 255 192;
 	}
 
 	description {
