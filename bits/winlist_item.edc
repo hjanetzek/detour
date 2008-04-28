@@ -62,10 +62,10 @@ part {
 			text_source: "e.text.label";
 			source: "e.text.label";
 			min: 0 1;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "title_bar";
 			#endif
 			#endif
@@ -101,10 +101,10 @@ part {
 			size: 11;
 			min: 0 1;
 			align: 0.0 0.5;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "winlist_title";
 			#endif
 			#endif	       
@@ -122,10 +122,10 @@ part {
 			size: 11;
 			min: 0 0;
 			align: 0.0 0.5;
-			#if ENABLE_TEXT_CLASSES == 0
+			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
-			#if ENABLE_TEXT_CLASSES == 1
+			#if ENABLE_TEXT_CLASS == 1
 				text_class: "winlist_title";
 			#endif
 			#endif	       
