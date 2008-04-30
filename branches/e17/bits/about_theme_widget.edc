@@ -68,6 +68,7 @@ part {
 		min: 98 28;
 		max: 98 28;
 		fixed: 1 1;
+		//color: 255 255 255 215;
 
 		rel1 { 
 			to: "button.area"; 
@@ -86,12 +87,6 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
 	}
 }
 
@@ -121,13 +116,6 @@ part {
 	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 0;
-		visible: 0;
 	}
 }
 
@@ -160,12 +148,6 @@ part {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
 	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
 }
 
 part {
@@ -195,12 +177,6 @@ part {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
 	}
 }
 
@@ -287,13 +263,6 @@ part {
 	}
 
 	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 96 96 96 255;
-		color3: 170 168 169 255;
-	}
-
-	description {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
 		color: 60 60 60 229;
@@ -328,12 +297,6 @@ part {
 		state: "clicked" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
 	}
 }
 
