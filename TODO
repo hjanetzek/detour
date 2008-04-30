@@ -1,0 +1,10 @@
+== Bugfix ==
+-Battery e.text.time e.text.reading
+
+== Global ==
+*Comple all Groups
+*Complete wallpaper
+
+== Compile ==
+edje_decc: directory structure
+EDJE_CC_FLAGS: /custom before /icons ends in /custom being used
