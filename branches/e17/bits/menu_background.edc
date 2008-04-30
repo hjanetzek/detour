@@ -151,7 +151,7 @@ part {
 			rel1 { 
 				to_y: "e.text.title"; 
 				relative: 0.0 1.0; 
-				offset: 2 2; 
+				offset: 2 3; 
 			}
 		#endif
 		#endif

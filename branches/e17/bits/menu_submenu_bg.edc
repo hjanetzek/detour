@@ -8,10 +8,19 @@ part {
 		max: 9999 22;
 		visible: 0;
 
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 0 -2; 
-		}
+		#if VISIBLE_MENU_TITLE == 0
+			rel1 { 
+				relative: 0.0 0.0; 
+				offset: 0 -2; 
+			}
+		#else
+		#if VISIBLE_MENU_TITLE == 1
+			rel1 { 
+				relative: 0.0 0.0; 
+				offset: 2 -2; 
+			}
+		#endif
+		#endif
 
 		rel2 { 
 			relative: 1.0 1.0; 
@@ -36,16 +45,25 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.0 0.0;
-		min: 16 16;
+		//min: 16 16;
 		
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 2 2; 
-		}
+		#if VISIBLE_MENU_TITLE == 0
+			rel1 { 
+				relative: 0.0 0.0; 
+				offset: 2 2; 
+			}
+		#else
+		#if VISIBLE_MENU_TITLE == 1
+			rel1 { 
+				relative: 0.0 0.0; 
+				offset: 2 2; 
+			}
+		#endif
+		#endif
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -1 -2; 
+			offset: -1 -2;
 		}
 	} 
 }
