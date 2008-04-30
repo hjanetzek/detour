@@ -180,8 +180,7 @@ part {
 		}
 
 		image {
-			normal: "pager_window_winlist.png";
-			border: 6 13 7 5;
+			normal: "gnome-window-manager.png";
 		}
 	}
 
@@ -190,19 +189,14 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "pager_window_iconified.png";
-			border: 14 3 26 3;
+			normal: "xfce4-taskbar.png";
 		}
 	}
 
 	description {
 		state: "invisible" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "pager_desk.png";
-			border: 4 4 7 5;
-		}
+		visible: 0;
 	}
 
 	description {
@@ -210,8 +204,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "pager_window_shaded.png";
-			border: 6 13 7 5;
+			normal: "gnome-window-manager.png";
 		}
 	}
 }
@@ -219,7 +212,6 @@ part {
 part {
 	name: "e.event.winlist.item";
 	type: SWALLOW;
-	//~ mouse_events: 1;
 
 	description {
 		state: "default" 0.0;
