@@ -68,7 +68,7 @@ part {
 		min: 98 28;
 		max: 98 28;
 		fixed: 1 1;
-		//color: 255 255 255 215;
+		color: 255 255 255 178;
 
 		rel1 { 
 			to: "button.area"; 

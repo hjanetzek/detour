@@ -163,7 +163,7 @@ part {
 
 		text {
 			style: "about_this_theme";
-text: "Designed and Developed by Alberto Castro with help from Hannes Janetzek, et al.<br><br>Released under the BSD Artistic License.<br><underline>3</underline><br><-><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal></->";
+text: "Designed and developed by Alberto Castro with help from Hannes Janetzek, et al.<br><br>Released under the BSD Artistic License.<br><br><-><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal></->";
 		}
     	}
 }
