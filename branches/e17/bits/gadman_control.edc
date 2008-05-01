@@ -6,7 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 0 0 128;
+		color: 255 255 255 255;
 		visible: 1;
 
 		rel1 {
@@ -34,7 +34,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 155 0 60 128;
+		color: 255 255 255 255;
 		visible: 1;
 
 		rel1 {
@@ -62,21 +62,21 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 94;
+		color: 255 255 255 255;
 
 		rel1 {
 			relative: 0.0 0.0;
-			offset: 0 0;
+			offset: -2 -2;
 		}
 
 		rel2 {
 			relative: 1.0 1.0;
-			offset: -1 0;
+			offset: 1 2;
 		}
 
 		image {
-			normal: "typebuf_clip.png";
-			border: 5 5 5 5;
+			normal: "gadman_control.png";
+			border: 12 12 12 12;
 		}
 	}
 }
@@ -106,15 +106,17 @@ part {
 }
   
 part {
-	name: "h1";
+	name: "h1"; // right
+	type: IMAGE;
 	mouse_events: 1;
 	clip_to: "hclip";
 	
 	description {
 		state: "default" 0.0;
+		min: 22 22;
+		max: 22 22;
+		color: 255 255 255 255;
 		align: 1.0 0.5;
-		min: 18 36;
-		max: 18 96;
 
 		rel1 {
 			relative: 0.0 0.0;
@@ -127,235 +129,169 @@ part {
 		}
 
 		image {
-			normal: "e17_ibar_handle_h.png";
-			border: 0 0 19 19;
+			normal: "gadman_hl1.png";
+			border: 10 10 10 10;
 		}
 	}
 
 	description {
 		state: "default2" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "e17_ibar_handle_h2.png";
-		}
+		color: 255 255 255 128;
 	}
 }
 
-      part {
-	 name:          "h1th";
-	 mouse_events:  0;
-	 clip_to:       "hclip";
-	 description {
-	    state:    "default" 0.0;
-	    max:      6 16;
-	    rel1 {
-	       offset:   -1    -1;
-	       to: "h1";
-	    }
-	    rel2 {
-	       offset:   -2    -2;
-	       to: "h1";
-	    }
-	    image {
-	       normal: "e17_ibar_handle_thumb_h.png";
-	    }
-	 }
-         description {
-	    state:    "default2" 0.0;
-	    inherit: "default" 0.0;
-	    rel1 {
-	       offset:   0    0;
-	    }
-	    rel2 {
-	       offset:   -1   -1;
-	    }
-	 }
-      }
+/*
+part {
+	name: "h1_pulsate"; // right
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "hclip";
+	
+	description {
+		state: "default" 0.0;
+		min: 22 22;
+		max: 22 22;
+		color: 255 255 255 255;
 
-      part {
-	 name:          "h2";
-	 mouse_events:  1;
-	 clip_to:       "hclip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.0 0.5;
-	    min: 18 36;
-	    max: 18 96;
-	    rel1 {
-	       relative: 1.0  0.0;
-	       offset:   8    0;
-	    }
-	    rel2 {
-	       relative: 1.0  1.0;
-	       offset:   0    -1;
-	    }
-	    image {
-	       normal: "e17_ibar_handle_h.png";
-	       border: 0 0 19 19;
-	    }
-	 }
-	 description {
-	    state: "default2" 0.0;
-	    inherit: "default" 0.0;
-	    image {
-	       normal: "e17_ibar_handle_h2.png";
-	    }
-	 }
-      }
+		rel1 {
+			to: "h1";
+		}
 
-      part {
-	 name:          "h2th";
-	 mouse_events:  0;
-	 clip_to:       "hclip";
-	 description {
-	    state:    "default" 0.0;
-	    max:      6 16;
-	    rel1 {
-	       offset:   -1    -1;
-	       to: "h2";
-	    }
-	    rel2 {
-	       offset:   -2    -2;
-	       to: "h2";
-	    }
-	    image {
-	       normal: "e17_ibar_handle_thumb_h.png";
-	    }
-	 }
-         description {
-	    state:    "default2" 0.0;
-	    inherit: "default" 0.0;
-	    rel1 {
-	       offset:   0    0;
-	    }
-	    rel2 {
-	       offset:   -1   -1;
-	    }
-	 }
-      }
+		rel2 {
+			to: "h1";
+		}
 
-      part {
-	 name:          "v1";
-	 mouse_events:  1;
-	 clip_to:       "vclip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 1.0;
-	    min: 36 18;
-	    max: 96 18;
-	    rel1 {
-	       relative: 0.0  0.0;
-	       offset:   0    -9;
-	    }
-	    rel2 {
-	       relative: 1.0  0.0;
-	       offset:   -1   -9;
-	    }
-	    image {
-	       normal: "e17_ibar_handle_v.png";
-	       border: 19 19 0 0;
-	    }
-	 }
-	 description {
-	    state: "default2" 0.0;
-	    inherit: "default" 0.0;
-	    image {
-	       normal: "e17_ibar_handle_v2.png";
-	    }
-	 }
-      }
+		image {
+			normal: "gadman_hl1.png";
+			border: 10 10 10 10;
+		}
+	}
 
-      part {
-	 name:          "v1th";
-	 mouse_events:  0;
-	 clip_to:       "vclip";
-	 description {
-	    state:    "default" 0.0;
-	    max:      16 6;
-	    rel1 {
-	       offset:   -1    -1;
-	       to: "v1";
-	    }
-	    rel2 {
-	       offset:   -2    -2;
-	       to: "v1";
-	    }
-	    image {
-	       normal: "e17_ibar_handle_thumb_v.png";
-	    }
-	 }
-         description {
-	    state:    "default2" 0.0;
-	    inherit: "default" 0.0;
-	    rel1 {
-	       offset:   0    0;
-	    }
-	    rel2 {
-	       offset:   -1   -1;
-	    }
-	 }
-      }
+	description {
+		state: "pulsate" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
 
-      part {
-	 name:          "v2";
-	 mouse_events:  1;
-	 clip_to:       "vclip";
-	 description {
-	    state: "default" 0.0;
-	    align: 0.5 0.0;
-	    min: 36 18;
-	    max: 96 18;
-	    rel1 {
-	       relative: 0.0  1.0;
-	       offset:   0    8;
-	    }
-	    rel2 {
-	       relative: 1.0  1.0;
-	       offset:   -1   8;
-	    }
-	    image {
-	       normal: "e17_ibar_handle_v.png";
-	       border: 19 19 0 0;
-	    }
-	 }
-	 description {
-	    state: "default2" 0.0;
-	    inherit: "default" 0.0;
-	    image {
-	       normal: "e17_ibar_handle_v2.png";
-	    }
-	 }
-      }
+		rel1 {
+			to: "h1";
+			relative: -0.5 -0.5;
+			offset: 0 0;
+		}
 
-      part {
-	 name:          "v2th";
-	 mouse_events:  0;
-	 clip_to:       "vclip";
-	 description {
-	    state:    "default" 0.0;
-	    max:      16 6;
-	    rel1 {
-	       offset:   -1    -1;
-	       to: "v2";
-	    }
-	    rel2 {
-	       offset:   -2    -2;
-	       to: "v2";
-	    }
-	    image {
-	       normal: "e17_ibar_handle_thumb_v.png";
-	    }
-	 }
-         description {
-	    state:    "default2" 0.0;
-	    inherit: "default" 0.0;
-	    rel1 {
-	       offset:   0    0;
-	    }
-	    rel2 {
-	       offset:   -1   -1;
-	    }
-	 }
-      }
+		rel2 {
+			to: "h1";
+			relative: 1.5 1.5;
+			offset: -1 -1;
+		}
+	}
+}
+*/
+
+part {
+	name: "h2"; // left
+	type: IMAGE;
+	mouse_events: 1;
+	clip_to: "hclip";
+	
+	description {
+		state: "default" 0.0;
+		min: 22 22;
+		max: 22 22;
+		color: 255 255 255 255;
+		align: 0.0 0.5;
+
+		rel1 {
+			relative: 1.0 0.0;
+			offset: 8 0;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 0 -1;
+		}
+
+		image {
+			normal: "gadman_hr1.png";
+			border: 10 10 10 10;
+		}
+	}
+
+	description {
+		state: "default2" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+
+part {
+	name: "v1"; // top
+	type: IMAGE;
+	mouse_events: 1;
+	clip_to: "vclip";
+
+	description {
+		state: "default" 0.0;
+		min: 22 22;
+		max: 22 88;
+		color: 255 255 255 255;
+		align: 0.5 1.0;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: 0 -9;
+		}
+
+		rel2 {
+			relative: 1.0  0.0;
+			offset: -1 -9;
+		}
+
+		image {
+			normal: "gadman_vt1.png";
+			border: 10 10 10 10;
+		}
+	}
+	description {
+		state: "default2" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+
+part {
+	name: "v2"; // bottom
+	type: IMAGE;
+	mouse_events: 1;
+	clip_to: "vclip";
+
+	description {
+		state: "default" 0.0;
+		min: 22 22;
+		max: 22 88;
+		color: 255 255 255 255;
+		align: 0.5 0.0;
+
+		rel1 {
+			relative: 0.0 1.0;
+			offset: 0 8;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: -1 8;
+		}
+
+		image {
+			normal: "gadman_vb1.png";
+			border: 10 10 10 10;
+		}
+	}
+
+	description {
+		state: "default2" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
 

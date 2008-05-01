@@ -15,6 +15,7 @@ group {
 	name: "e/gadman/popup";
 
 	parts {
+		//~ this shit is not edje friendly
         	#include "gadman_popup.edc"
 	}
 }
