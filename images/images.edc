@@ -468,14 +468,13 @@ image: "busy.cursor.03.png" COMP;
 image: "typebuf_clip.png" COMP;
 
 //~ notification
-image: "module_notification.png" COMP;
+//~ image: "module_notification.png" COMP;
 
 //~ gadman
-image: "e17_ibar_handle_h.png" COMP;
-image: "e17_ibar_handle_h2.png" COMP;
-image: "e17_ibar_handle_thumb_h.png" COMP;
-image: "e17_ibar_handle_thumb_v.png" COMP;
-image: "e17_ibar_handle_v.png" COMP;
-image: "e17_ibar_handle_v2.png" COMP;
+image: "gadman_hl1.png" COMP;
+image: "gadman_hr1.png" COMP;
+image: "gadman_vt1.png" COMP;
+image: "gadman_vb1.png" COMP;
 image: "gadman_indicator.png" COMP;
+image: "gadman_control.png" COMP;
 

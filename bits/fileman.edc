@@ -147,6 +147,7 @@ group {
 	parts {
 		part {
 			name: "bg";
+			type: IMAGE;
 			mouse_events: 0;
 
 			description {
@@ -216,6 +217,7 @@ group {
 	parts {
 		part {
 			name: "bg";
+			type: IMAGE;
 			mouse_events: 0;
 
 			description {

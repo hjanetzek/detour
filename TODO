@@ -1,10 +1,16 @@
 == Bugfix ==
 -Battery e.text.time e.text.reading
 
+== Improve ==
+-Active & Inactive Window Decorations (borders)
+-Gadman Controls
+
 == Global ==
-*Complete all Groups
-*Complete wallpaper
+*Complete Start Group
+*Complete CPUFreq Group
+*Develop wallpapers
 
 == Compile ==
-edje_decc: directory structure
-EDJE_CC_FLAGS: /custom before /icons ends in /custom being used
+Improve edje_decc: directory structure
+
+[Bug] EDJE_CC_FLAGS: /custom before /icons ends in /custom being used
