@@ -4,11 +4,16 @@
 == Improve ==
 -Active & Inactive Window Decorations (borders)
 -Gadman Controls
+-toolbar.edc
+-battery.edc: reposition text
 
 == Global ==
-*Complete Start Group
-*Complete CPUFreq Group
+*Complete start.edc
+*Complete cpufreq.edc
+*Complete transitions.edc
+*Revamp about.edc
 *Develop wallpapers
+*Add color_classes
 
 == Compile ==
 Improve edje_decc: directory structure
