@@ -11,12 +11,12 @@ part {
 
 		#if VISIBLE_MENU_TITLE == 0
 			rel1 { 
-				offset: 0 0; 
+				offset: -1 0; 
 			}
 		#else
 		#if VISIBLE_MENU_TITLE == 1
 			rel1 { 
-				offset: 3 0; 
+				offset: 2 0; 
 			}
 		#endif
 		#endif

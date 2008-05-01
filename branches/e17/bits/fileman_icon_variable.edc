@@ -313,41 +313,6 @@ part {
 	}
 }
 
-/*
-part {
-	name: "icon_move_overlay";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 22 22;
-		max: 22 22;
-		visible: 0;
-
-		rel1 { 
-			to: "icon"; 
-		}
-
-		rel2 { 
-			to: "icon"; 
-		}
-
-
-		image {
-			normal: "";
-
-		}
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-}
-*/	 
-
 part {
 	name: "icon_event";
 	type: RECT;

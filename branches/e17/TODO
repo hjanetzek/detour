@@ -6,6 +6,7 @@
 -Gadman Controls
 -toolbar.edc
 -battery.edc: reposition text
+-temperature.edc: graphics
 
 == Global ==
 *Complete start.edc

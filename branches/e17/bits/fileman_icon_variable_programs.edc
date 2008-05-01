@@ -6,7 +6,6 @@ program {
 	action: STATE_SET "active" 0.0;
 	target: "e.text.label"; 
 	target: "filename_overlay_clip";
-	//target: "icon_move_overlay";
 } 
 
 program { 
@@ -16,7 +15,6 @@ program {
 	action: STATE_SET "default" 0.0;	 
 	target: "e.text.label";
 	target: "filename_overlay_clip"; 
-	//target: "icon_move_overlay";
 }  
 
 program {
