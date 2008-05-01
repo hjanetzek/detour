@@ -10,7 +10,7 @@
 
 /* 
  * cored.org et al (see AUTHORS)
- * detour version 0.7.4 (dtr) for Enlightenment 0.16.999.042 or later
+ * detour version 0.7.4 (DTR) for Enlightenment 0.16.999.042 or later
  */
 
 //Set the pointer to pulsating mode
@@ -75,6 +75,7 @@ collections {
 	#include "bits/background.edc"
 	#include "bits/border.edc"
 	#include "bits/ibar.edc"
+	//~ #include "bits/filesel.edc" /* obsolete */
 	#include "bits/fileman.edc"
 	#if TANGO_ICONS == 0
 	#else
@@ -106,7 +107,6 @@ collections {
 	#include "bits/error.edc"
 	#include "bits/pager.edc"
 	#include "bits/about_theme.edc"
-	#include "bits/tclock.edc"
 	#include "bits/ibox.edc"
 	#include "bits/clock.edc"
 	#include "bits/scrollframe.edc"
@@ -120,15 +120,17 @@ collections {
 	#include "bits/exebuf.edc"
 	#include "bits/deskpreview.edc"
 	#include "bits/sys.edc"
-	#include "bits/battery.edc" 	/* must fix text alignment */
+	#include "bits/battery.edc"
 	#include "bits/temperature.edc"
 	#include "bits/font_preview.edc"
 	#include "bits/gadman.edc"
-	//~ #include "bits/module_notification.edc"
-	#include "bits/toolbar.edc" 	/* work in progress */
-	//~ #include "bits/slidesel.edc"
-	#include "bits/transitions.edc"
+	#include "bits/toolbar.edc"
+	#include "bits/transitions.edc" /* incomplete */
+	#include "bits/tclock.edc"
 	//~ #include "bits/cpufreq.edc"
 	//~ #include "bits/start.edc"
+	//~ #include "bits/slidesel.edc"
+	//~ #include "bits/module_notification.edc"
+	//~ #include "bits/wizard.edc"
 }
 
