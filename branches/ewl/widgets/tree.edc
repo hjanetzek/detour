@@ -102,3 +102,53 @@ group {
 	}
 }
 
+group {
+	name: "ewl/tree/cell";
+
+	parts {
+		part {
+			name: "selected";
+			mouse_events: 0;
+			type: RECT;
+
+			description {
+				state: "default" 0.0;
+				color: 166 191 218 255;
+				visible: 0;
+
+				rel1 {
+					offset: -4 -4;
+				}
+
+				rel2 {
+					offset: 3 3;
+				}
+			}
+
+			description {
+				state: "selected" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
+		}
+	}
+
+	programs {
+		program {
+			name: "select";
+			signal: "selected";
+			source: "*";
+			action: STATE_SET "selected" 0.0;
+			target: "selected";
+		}
+
+		program {
+			name: "un-select";
+			signal: "deselect";
+			source: "*";
+			action: STATE_SET "default" 0.0;
+			target: "selected";
+		}
+	}
+}
+

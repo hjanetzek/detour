@@ -53,15 +53,15 @@ data {
 	item: "/entry/cursor/group" "ewl/entry/cursor";
 	item: "/selection_area/group" "ewl/entry/selection";
 
-	/* highlight group */
-	item: "/highlight/group" "ewl/highlight";
-
 	/* menu/statusbar related groups */
 	item: "/menu/group" "ewl/menu";
 	item: "/menu_item/body/group" "ewl/menu/item";
 	item: "/menu/vbox/menu_container/body/group" "ewl/menu/subitem";
 	item: "/menubar/group" "ewl/menu";
 	item: "/statusbar/group" "ewl/statusbar";
+
+	/* cell */
+	item: "/cell/group" "ewl/tree/cell";
 
 	/* notebook */
 	item: "/notebook/pages/group" "ewl/notebook/pages";
