@@ -195,7 +195,6 @@ collections {
 #include "widgets/check.edc"
 #include "widgets/entry.edc"
 #include "widgets/dialog.edc"
-#include "widgets/highlight.edc"
 #include "widgets/label.edc"
 #include "widgets/tree.edc"
 #include "widgets/notebook.edc"
