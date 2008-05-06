@@ -1,0 +1,39 @@
+
+part {
+	name: "power_button";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		min: 30 30;
+		max: 30 30;
+		align: 0.0 0.5;
+
+		rel1 {
+			to: "bottom.panel";
+			relative: 0.0 0.0;
+			offset: 8 9;
+		}
+
+		rel2 {
+			to: "bottom.panel";
+			relative: 1.0 1.0;
+			offset: -1 -1;
+		}
+
+		image {
+			normal: "power_button_0.png";
+		}
+	}
+
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
+		
+		image {
+			normal: "power_button_1.png";
+		}
+	}
+}
+
