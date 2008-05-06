@@ -112,7 +112,7 @@ style {
 
 style {
 	name: "about_this_theme";
-	base: "font=DejaVuSans font_size=10 color=#070707 wrap=word";
+	base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
 
 	tag: "-" "+ font_size=9";
 	tag: "b" "+ font=DejaVuSans-Bold";
