@@ -1,0 +1,115 @@
+
+fonts {
+	font: "fonts/DejaVuSans.ttf" "Edje-DejaVuSans";
+	font: "fonts/DejaVuSans-Bold.ttf" "Edje-DejaVuSans-Bold";
+}
+
+images {
+image: "user_ok.png" COMP;
+image: "pass_ok.png" COMP;
+image: "panel.png" COMP;
+image: "entry.png" COMP;
+image: "entry_focus.png" COMP;
+image: "side-panel.png" COMP;
+image: "side-panel_shadow.png" COMP;
+image: "power_button_0.png" COMP;
+image: "power_button_1.png" COMP;
+image: "reset_button_0.png" COMP;
+image: "reset_button_1.png" COMP;
+image: "default_preview.png" COMP;
+image: "button.png" COMP;
+image: "button_base.png" COMP;
+image: "button_clicked.png" COMP;
+image: "panel_bottom.png" COMP;
+image: "bg.png" COMP;
+image: "main_window.png" COMP;
+image: "logo.png" COMP;
+image: "dot.png" COMP;
+image: "dot-wide.png" COMP;
+}
+
+collections {
+	group {
+		name: "Background";
+
+		parts {
+			#include "background.edc"
+		}
+	}
+
+	group {
+		name: "Main";
+
+		script {
+			public sessions_visible;
+
+			public clock_cb(val) {
+				new buf[11];
+				new year, month, day, yearday, weekday, hour, minute;
+				new Float:second;
+				new v;
+	    
+				date(year, month, day, yearday, weekday, hour, minute, second);
+				v = round(second);
+				timer(1.0 - (second - v), "clock_cb", 1);
+				buf[0] = 0;
+				if (v < 10) {snprintf(buf, 10, "0%i", v);}
+				else {snprintf(buf, 10, "%i", v);}
+				set_state(PART:"seconds", buf, 0.0);
+				v = minute;
+				buf[0] = 0;
+				if (v < 10) {snprintf(buf, 10, "0%i", v);}
+				else {snprintf(buf, 10, "%i", v);}
+				set_state(PART:"minutes", buf, 0.0);
+				v = ((hour % 12) * 5) + ((minute * 5) / 60);
+				buf[0] = 0;
+				if (v < 10) {snprintf(buf, 10, "0%i", v);}
+				else {snprintf(buf, 10, "%i", v);}
+				set_state(PART:"hour", buf, 0.0);
+			}
+		}
+
+		parts {
+			#include "main_window.edc"
+			//#include "power_button.edc"
+			//#include "reset_button.edc"
+		}
+
+		programs {
+			#include "main_window_programs.edc"
+		}
+	}
+
+	group {
+		name: "Session";
+		min: 110 28;
+
+		parts {
+			//#include "session.edc"
+		}
+
+		programs {
+			//#include "session_programs.edc"
+		}
+	}
+
+	group {
+		name: "Preview";
+		min: 320 240;
+		max: 320 240; 
+
+		parts {
+			#include "preview.edc"
+		}
+
+		programs {
+			program {
+				name: "PreviewClicked";
+				signal: "mouse,clicked,1";
+				source: "img";
+				action: SIGNAL_EMIT "PreviewSelected" "";
+			}
+		}
+	}
+}
+
