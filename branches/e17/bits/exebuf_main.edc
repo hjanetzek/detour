@@ -437,7 +437,7 @@ part {
 		}
 	
 		image {
-			normal: "dot2.png";
+			normal: "dot-wide.png";
 		}
 	}
 }

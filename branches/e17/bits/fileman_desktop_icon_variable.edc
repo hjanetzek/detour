@@ -293,14 +293,15 @@ part {
 			font: "DejaVuSans";
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
 				min: 1 1;
-				elipsis: 0.0;
+				//elipsis: 0.0;
 			#else
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 1
 				min: 0 1;
-				elipsis: 1.0;
+				//elipsis: 1.0;
 			#endif
 			#endif
 			align: 0.5 1.0; 
+			elipsis: 0.0;
 			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
@@ -314,8 +315,6 @@ part {
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
-		//color: 255 255 255 255;
-		//color3: 0 0 0 0;
 		color: 0 0 0 255;
 		color3: 7 7 7 0;
 	}

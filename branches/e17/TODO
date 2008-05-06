@@ -7,6 +7,7 @@
 -toolbar.edc
 -battery.edc: reposition text
 -temperature.edc: graphics
+-check menu icon y: -1
 
 == Global ==
 *Complete start.edc
