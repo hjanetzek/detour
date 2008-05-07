@@ -1,0 +1,1443 @@
+------------------------------------------------------------------------
+r346 | alberto.castro.leiva | 2007-10-30 07:29:50 -0600 (Tue, 30 Oct 2007) | 18 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   M /branches/etk/images/tree_arrow2.png
+   A /branches/etk/images/tree_arrow_expand1.png
+   A /branches/etk/images/tree_arrow_expand2.png
+   M /branches/etk/widgets/tree.edc
+
+Simon: I was reading the comments on the etk/tree/expander 
+group. But I realized the (tree) row does not gain focus when 
+the arrows are pressed. This will have visual setbacks. What I 
+want to see is the arrow switch color on mouse,in and return to 
+its default color on mouse,out. But if the row is not focused, a 
+white arrow will look miserable. I think the tree row should 
+gain focus when the arrow is pressed (even if the arrow is not a 
+widget). This brings me to my second point. Looks like the 
+arrow/expander part will have to be divided into two parts. One 
+for the fold and one for the unfold, for the mouse,in,out 
+signals/states to work.
+
+Another thing, the tree header column separator. Why do tree 
+headers change state when the column separtor is pressed ? 
+
+Let me know what you think.
+
+
+------------------------------------------------------------------------
+r345 | alberto.castro.leiva | 2007-10-30 06:52:33 -0600 (Tue, 30 Oct 2007) | 6 lines
+Changed paths:
+   M /branches/etk/widgets/tree.edc
+
+MoOm: we need to give the tree/arrow expander focus.
+
+1. On mouse over (both fold and unfold)
+2. On selected row (the arrow should switch color)
+
+
+------------------------------------------------------------------------
+r342 | alberto.castro.leiva | 2007-10-27 12:15:23 -0500 (Sat, 27 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/dialog_bg.png
+   M /branches/etk/images/tree_arrow1.png
+   M /branches/etk/images/tree_arrow2.png
+
+Dialog Updates.
+
+------------------------------------------------------------------------
+r341 | alberto.castro.leiva | 2007-10-27 10:25:59 -0500 (Sat, 27 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/check_button.edc
+
+Fix active/focus check & radio label.
+
+------------------------------------------------------------------------
+r340 | alberto.castro.leiva | 2007-10-26 09:54:25 -0500 (Fri, 26 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/entry_focus.png
+
+Entry focus.
+
+------------------------------------------------------------------------
+r331 | boykot.tokyo | 2007-10-21 00:41:43 -0500 (Sun, 21 Oct 2007) | 4 lines
+Changed paths:
+   M /branches/etk/widgets/menu.edc
+
+Forgot to modify the menu/context/menu radio and check widgets. 
+The images still need to be aligned properly.
+
+
+------------------------------------------------------------------------
+r330 | boykot.tokyo | 2007-10-20 12:52:24 -0500 (Sat, 20 Oct 2007) | 23 lines
+Changed paths:
+   M /branches/etk/images/check0.png
+   M /branches/etk/images/check1.png
+   A /branches/etk/images/check_base.png
+   A /branches/etk/images/check_focus.png
+   A /branches/etk/images/check_shadow.png
+   M /branches/etk/images/iconbox_focus.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/images/radio0.png
+   M /branches/etk/images/radio1.png
+   A /branches/etk/images/radio_base.png
+   A /branches/etk/images/radio_focus.png
+   A /branches/etk/images/radio_shadow.png
+   M /branches/etk/images/scrollbar_h_trough_left.png
+   M /branches/etk/images/scrollbar_h_trough_right.png
+   M /branches/etk/images/scrollbar_v_trough_down.png
+   M /branches/etk/images/scrollbar_v_trough_up.png
+   D /branches/etk/images/slider_focus.png
+   A /branches/etk/images/slider_h_btn.png
+   M /branches/etk/images/slider_h_btn_disabled.png
+   D /branches/etk/images/slider_h_btn_down.png
+   D /branches/etk/images/slider_h_btn_up.png
+   A /branches/etk/images/slider_h_focus.png
+   A /branches/etk/images/slider_h_shadow.png
+   A /branches/etk/images/slider_v_btn.png
+   M /branches/etk/images/slider_v_btn_disabled.png
+   D /branches/etk/images/slider_v_btn_down.png
+   D /branches/etk/images/slider_v_btn_up.png
+   A /branches/etk/images/slider_vert_focus.png
+   A /branches/etk/images/slider_vert_shadow.png
+   M /branches/etk/images/tree_focus.png
+   M /branches/etk/images/tree_header_first.png
+   M /branches/etk/images/tree_header_first2.png
+   M /branches/etk/images/tree_header_last.png
+   M /branches/etk/images/tree_header_last2.png
+   M /branches/etk/images/tree_header_middle.png
+   M /branches/etk/images/tree_header_middle2.png
+   M /branches/etk/images/tree_header_over.png
+   M /branches/etk/images/tree_header_unique.png
+   M /branches/etk/images/tree_header_unique2.png
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/radio_button.edc
+   M /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/tree.edc
+
+Updates to the tree images. 
+
+Note: the tree header label (text) needs to be centered 
+properly. The tree headers expand based on the location of the 
+header label (text). I didn't have time to go back and edit the 
+tree_header macros, not sure if setting the size of the headers 
+to fixed is such a good idea.
+
+Slider, Radio and Check widget updates (matching detour-e17's 
+latest updates) I didn't have the patience to format the code, 
+sorry about that.
+
+The scrollbars have been modified to fit with the tree widget.
+
+Simon: radio and check widgets now have a different style of 
+focus, their labels no longer need to change color. I forgot 
+where to edit this.
+
+Another note, the scrollbar have a discrepency when both are 
+visible. Please see the following url: 
+http://www.cored.org/tmp/scrollb_vis.png
+
+
+------------------------------------------------------------------------
+r327 | simon.treny | 2007-10-19 18:33:02 -0500 (Fri, 19 Oct 2007) | 7 lines
+Changed paths:
+   M /branches/etk/widgets/tree.edc
+
+* Make the focus cover the headers by moving the "focus" part to the 
+"etk/tree" group (which contains the scrolled-view and the headers)
+
+Tokyo: I really like the new tree's look now, it looks much better imho! 
+Good job! :)
+
+
+------------------------------------------------------------------------
+r326 | boykot.tokyo | 2007-10-19 08:27:18 -0500 (Fri, 19 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/entry_focus.png
+
+Image:0
+
+------------------------------------------------------------------------
+r325 | boykot.tokyo | 2007-10-19 08:24:39 -0500 (Fri, 19 Oct 2007) | 6 lines
+Changed paths:
+   M /branches/etk/images/iconbox_bg.png
+   M /branches/etk/images/iconbox_over.png
+   M /branches/etk/images/iconbox_rubberband.png
+   M /branches/etk/images/tree_bg.png
+   M /branches/etk/images/tree_header_first.png
+   M /branches/etk/images/tree_header_last.png
+   M /branches/etk/images/tree_header_middle.png
+   M /branches/etk/images/tree_header_unique.png
+   M /branches/etk/images/tree_over.png
+   M /branches/etk/macros/tree_header.edc
+   M /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/tree.edc
+
+Tree and Iconbox updates.
+
+MoOm: I still need to finish this, but notice how we now have a 
+problem with the tree's focus. Perhaps the focus should cover 
+the tree headers too ?
+
+------------------------------------------------------------------------
+r316 | simon.treny | 2007-10-14 16:01:47 -0500 (Sun, 14 Oct 2007) | 5 lines
+Changed paths:
+   M /branches/etk/images/tree_over.png
+
+* [Etk-Tree] The shadow in the tree-widget looks too dark imho. I 
+removed it for now. Tokyo, what do you think? You can revert this change 
+if you prefer the previous look.
+
+
+------------------------------------------------------------------------
+r288 | boykot.tokyo | 2007-09-20 21:32:53 -0500 (Thu, 20 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/etk/AUTHORS
+   M /branches/etk/macros/toolbar.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/radio_button.edc
+   M /branches/etk/widgets/slider.edc
+
+Lok's patches are in.
+
+------------------------------------------------------------------------
+r284 | boykot.tokyo | 2007-09-19 01:49:54 -0500 (Wed, 19 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/toggle_button.edc
+
+Fixed!
+
+------------------------------------------------------------------------
+r283 | boykot.tokyo | 2007-09-19 01:45:02 -0500 (Wed, 19 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/toggle_button.edc
+
+Borked x2
+
+------------------------------------------------------------------------
+r282 | boykot.tokyo | 2007-09-19 01:44:03 -0500 (Wed, 19 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/toggle_button.edc
+
+Borked!
+
+------------------------------------------------------------------------
+r275 | boykot.tokyo | 2007-09-15 17:01:24 -0500 (Sat, 15 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/frame_outline.png
+
+Updates
+
+------------------------------------------------------------------------
+r274 | boykot.tokyo | 2007-09-15 16:33:57 -0500 (Sat, 15 Sep 2007) | 2 lines
+Changed paths:
+   A /branches/etk/images/button_shadow.png
+   A /branches/etk/images/button_shadow_overlay.png
+
+Don't forget the overlay shadows.
+
+------------------------------------------------------------------------
+r273 | boykot.tokyo | 2007-09-15 16:33:28 -0500 (Sat, 15 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/button.png
+   M /branches/etk/images/button_focus.png
+   M /branches/etk/images/button_outline.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/toggle_button.edc
+
+Updates
+
+------------------------------------------------------------------------
+r230 | simon.treny | 2007-08-14 15:41:50 -0500 (Tue, 14 Aug 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/scrollbar.edc
+
+* Fix warnings
+
+
+------------------------------------------------------------------------
+r229 | boykot.tokyo | 2007-07-27 07:49:20 -0500 (Fri, 27 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/slider.edc
+
+an update.
+
+------------------------------------------------------------------------
+r222 | hannes.janetzek | 2007-07-10 09:47:21 -0500 (Tue, 10 Jul 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/tree.edc
+
+detour-etk: patch from lok adds treeview progrssbar
+
+------------------------------------------------------------------------
+r212 | boykot.tokyo | 2007-06-29 16:32:10 -0500 (Fri, 29 Jun 2007) | 4 lines
+Changed paths:
+   M /branches/etk/AUTHORS
+   M /branches/etk/COPYING
+   M /branches/etk/README
+   A /branches/etk/images/combobox_button2.png
+   A /branches/etk/images/combobox_button_clicked2.png
+   M /branches/etk/images/combobox_button_disabled.png
+   A /branches/etk/images/combobox_button_disabled2.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/main.edc
+   A /branches/etk/widgets/combobox_entry.edc
+
+Combobox entry widget. Why not just recycle ?
+Popup still suffers from the same bugs as the combobox.
+
+
+------------------------------------------------------------------------
+r202 | hannes.janetzek | 2007-06-25 13:01:40 -0500 (Mon, 25 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/etk/macros/toolbar.edc
+
+give the buttons a bit more space, looks better in emphasis for now
+
+------------------------------------------------------------------------
+r201 | hannes.janetzek | 2007-06-25 12:54:13 -0500 (Mon, 25 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/toolbar.edc
+
+the toolbar buttons are now useable, not designed though
+
+------------------------------------------------------------------------
+r200 | hannes.janetzek | 2007-06-25 12:52:11 -0500 (Mon, 25 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/etk/macros/toolbar.edc
+
+stripped down the original toolbar.edc macro so that it builds with detour
+
+------------------------------------------------------------------------
+r197 | boykot.tokyo | 2007-06-20 04:06:55 -0500 (Wed, 20 Jun 2007) | 4 lines
+Changed paths:
+   M /branches/etk/images/button_focus.png
+   M /branches/etk/images/combobox_focus.png
+   M /branches/etk/images/entry.png
+   M /branches/etk/images/entry_focus.png
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/spinner.edc
+
+Entry focus image update, along with button focus.
+This meant updating the spinner and anything that uses the focus 
+colorscheme.
+
+------------------------------------------------------------------------
+r195 | boykot.tokyo | 2007-06-14 19:36:12 -0500 (Thu, 14 Jun 2007) | 6 lines
+Changed paths:
+   M /branches/etk/images/notebook_frame.png
+   M /branches/etk/images/notebook_tab.png
+   M /branches/etk/images/notebook_tab_shadow.png
+   M /branches/etk/widgets/notebook.edc
+
+Apparently I missed these changes ?
+
+MoOm: This is what I am aiming for:
+http://www.cored.org/tmp/tab_mockup.png
+
+
+------------------------------------------------------------------------
+r194 | boykot.tokyo | 2007-06-09 00:39:52 -0500 (Sat, 09 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/iconbox_bg.png
+   M /branches/etk/images/iconbox_label_bg.png
+   A /branches/etk/images/iconbox_rubberband.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/images/tree_arrow1.png
+   M /branches/etk/images/tree_arrow2.png
+   M /branches/etk/images/tree_header_unique.png
+   A /branches/etk/macros/toolbar.edc
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/scrollbar.edc
+   A /branches/etk/widgets/toolbar.edc
+
+Updates and fixes.
+
+------------------------------------------------------------------------
+r193 | boykot.tokyo | 2007-06-08 17:39:56 -0500 (Fri, 08 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/notebook_frame.png
+   M /branches/etk/images/notebook_tab_shadow.png
+   M /branches/etk/widgets/notebook.edc
+
+Unused signals.
+
+------------------------------------------------------------------------
+r192 | boykot.tokyo | 2007-06-08 16:06:48 -0500 (Fri, 08 Jun 2007) | 5 lines
+Changed paths:
+   M /branches/etk/widgets/menu.edc
+   M /branches/etk/widgets/notebook.edc
+
+Formating and a comment. I wasn't notified of the previous 
+commit. I committed notebook tabs yesterday. They still need 
+some work. This is what I would like to see: 
+http://www.cored.org/tmp/tab_mockup.png
+
+------------------------------------------------------------------------
+r190 | boykot.tokyo | 2007-06-07 22:54:42 -0500 (Thu, 07 Jun 2007) | 9 lines
+Changed paths:
+   M /branches/etk/INSTALL
+   M /branches/etk/Makefile
+   M /branches/etk/README
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/notebook_frame.png
+   A /branches/etk/images/notebook_tab.png
+   A /branches/etk/images/notebook_tab_hint.png
+   A /branches/etk/images/notebook_tab_shadow.png
+   M /branches/etk/images/progress_bar_fill_0.png
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/label.edc
+   A /branches/etk/widgets/notebook.edc
+
+And the TAB widget is in. First of all, this is what i was 
+aiming for: http://www.cored.org/tmp/tab_mockup.png
+Hmm, i'd like to be able to overlay the tab button over the top 
+part of the notebook frame so that the two could somehow be 
+merged.. i don't know. maybe its just the way i implemented the 
+design, but either way, this is not how i expected it to look. 
+the tab separator should merge with the button. long day... 
+
+
+------------------------------------------------------------------------
+r186 | boykot.tokyo | 2007-05-30 17:26:03 -0500 (Wed, 30 May 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/progress_bar.edc
+
+lok noticed an issue with emphasis and the progress bar
+this seems to fix it
+
+------------------------------------------------------------------------
+r181 | boykot.tokyo | 2007-05-24 12:33:11 -0500 (Thu, 24 May 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/combobox.edc
+   M /branches/etk/widgets/menu.edc
+
+menu item selector = > 21
+
+------------------------------------------------------------------------
+r177 | boykot.tokyo | 2007-05-24 02:49:30 -0500 (Thu, 24 May 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/iconbox_focus.png
+   M /branches/etk/images/iconbox_over.png
+   M /branches/etk/images/scrollbar_h_trough.png
+   M /branches/etk/images/scrollbar_h_trough_left.png
+   M /branches/etk/images/scrollbar_h_trough_right.png
+   M /branches/etk/images/scrollbar_v_trough.png
+   M /branches/etk/images/scrollbar_v_trough_down.png
+   M /branches/etk/images/scrollbar_v_trough_up.png
+   M /branches/etk/images/tree_focus.png
+   M /branches/etk/images/tree_over.png
+
+Adding more contrast to the scrollframe/scrollbar.
+
+
+------------------------------------------------------------------------
+r174 | boykot.tokyo | 2007-05-21 00:44:53 -0500 (Mon, 21 May 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/tree_arrow1.png
+   M /branches/etk/images/tree_arrow2.png
+
+Updating tree arrows, they looked too thick.
+
+------------------------------------------------------------------------
+r173 | boykot.tokyo | 2007-05-21 00:35:52 -0500 (Mon, 21 May 2007) | 4 lines
+Changed paths:
+   M /branches/etk/images/paned_v_handle.png
+   M /branches/etk/images/tree_header_first.png
+   M /branches/etk/images/tree_header_first2.png
+   M /branches/etk/images/tree_header_last.png
+   M /branches/etk/images/tree_header_last2.png
+   M /branches/etk/images/tree_header_middle.png
+   M /branches/etk/images/tree_header_middle2.png
+   M /branches/etk/images/tree_header_over.png
+   M /branches/etk/images/tree_header_unique.png
+   M /branches/etk/images/tree_header_unique2.png
+   M /branches/etk/macros/tree_header.edc
+
+First stab at the tree_header images. "I think they suck." So 
+expect a revision soon.
+
+
+------------------------------------------------------------------------
+r170 | boykot.tokyo | 2007-05-20 20:30:42 -0500 (Sun, 20 May 2007) | 4 lines
+Changed paths:
+   M /branches/etk/macros/tree_header.edc
+   M /branches/etk/widgets/label.edc
+
+Setting the tree_header labels to bold.
+Gave the tree header labels their own group. See label.edc
+
+
+------------------------------------------------------------------------
+r167 | boykot.tokyo | 2007-05-19 16:59:24 -0500 (Sat, 19 May 2007) | 2 lines
+Changed paths:
+   M /branches/etk/widgets/label.edc
+
+I forget this. Does it even work ? disabled tree header labels.
+
+------------------------------------------------------------------------
+r166 | boykot.tokyo | 2007-05-19 16:38:02 -0500 (Sat, 19 May 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/menu_separator.png
+   M /branches/etk/widgets/label.edc
+   M /branches/etk/widgets/menu.edc
+
+Updating menu separator to reflect detour-e17's changes.
+Adding support: tree header text labels (still needs themeing)
+
+------------------------------------------------------------------------
+r159 | boykot.tokyo | 2007-05-12 01:52:58 -0500 (Sat, 12 May 2007) | 3 lines
+Changed paths:
+   A /branches/etk/images/progress_bar_fill_0.png
+
+It was part of the plan.
+
+
+------------------------------------------------------------------------
+r158 | boykot.tokyo | 2007-05-12 01:49:25 -0500 (Sat, 12 May 2007) | 11 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   D /branches/etk/images/progress_bar_fill_0.png
+   D /branches/etk/images/progress_bar_fill_1.png
+   D /branches/etk/images/progress_bar_fill_10.png
+   D /branches/etk/images/progress_bar_fill_11.png
+   D /branches/etk/images/progress_bar_fill_12.png
+   D /branches/etk/images/progress_bar_fill_13.png
+   D /branches/etk/images/progress_bar_fill_14.png
+   D /branches/etk/images/progress_bar_fill_15.png
+   D /branches/etk/images/progress_bar_fill_16.png
+   D /branches/etk/images/progress_bar_fill_17.png
+   D /branches/etk/images/progress_bar_fill_18.png
+   D /branches/etk/images/progress_bar_fill_19.png
+   D /branches/etk/images/progress_bar_fill_2.png
+   D /branches/etk/images/progress_bar_fill_20.png
+   D /branches/etk/images/progress_bar_fill_21.png
+   D /branches/etk/images/progress_bar_fill_22.png
+   D /branches/etk/images/progress_bar_fill_23.png
+   D /branches/etk/images/progress_bar_fill_24.png
+   D /branches/etk/images/progress_bar_fill_25.png
+   D /branches/etk/images/progress_bar_fill_26.png
+   D /branches/etk/images/progress_bar_fill_27.png
+   D /branches/etk/images/progress_bar_fill_28.png
+   D /branches/etk/images/progress_bar_fill_29.png
+   D /branches/etk/images/progress_bar_fill_3.png
+   D /branches/etk/images/progress_bar_fill_30.png
+   D /branches/etk/images/progress_bar_fill_31.png
+   D /branches/etk/images/progress_bar_fill_32.png
+   D /branches/etk/images/progress_bar_fill_4.png
+   D /branches/etk/images/progress_bar_fill_5.png
+   D /branches/etk/images/progress_bar_fill_6.png
+   D /branches/etk/images/progress_bar_fill_7.png
+   D /branches/etk/images/progress_bar_fill_8.png
+   D /branches/etk/images/progress_bar_fill_9.png
+   A /branches/etk/images/tree_arrow1.png
+   A /branches/etk/images/tree_arrow2.png
+   A /branches/etk/images/tree_header_first.png
+   A /branches/etk/images/tree_header_first2.png
+   A /branches/etk/images/tree_header_last.png
+   A /branches/etk/images/tree_header_last2.png
+   A /branches/etk/images/tree_header_middle.png
+   A /branches/etk/images/tree_header_middle2.png
+   A /branches/etk/images/tree_header_over.png
+   A /branches/etk/images/tree_header_unique.png
+   A /branches/etk/images/tree_header_unique2.png
+   M /branches/etk/macros/tree_header.edc
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/tree.edc
+
+progress bar: remove animation for now.
+
+tree expander: done!
+ 
+imported the default theme's tree headers. i will be working 
+on this during the next couple of days.
+
+Simon: where is the tree header title (text) defined ? 
+it is currently there are blank.
+
+
+------------------------------------------------------------------------
+r153 | simon.treny | 2007-05-09 16:05:42 -0500 (Wed, 09 May 2007) | 4 lines
+Changed paths:
+   A /branches/etk/images/drag_default.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/main.edc
+   A /branches/etk/widgets/drag.edc
+
+* Add etk/drag/default in prevision to the new dnd code that will come 
+in the following days
+
+
+------------------------------------------------------------------------
+r152 | boykot.tokyo | 2007-05-08 04:23:12 -0500 (Tue, 08 May 2007) | 5 lines
+Changed paths:
+   A /branches/etk/images/button_focus.png
+   D /branches/etk/images/button_focus_bottom.png
+   D /branches/etk/images/button_focus_top.png
+   A /branches/etk/images/combobox_focus.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/combobox.edc
+   M /branches/etk/widgets/toggle_button.edc
+
+Button focus is back.
+Added toggle and combo box focus.
+Combobox still not working properly.
+
+
+------------------------------------------------------------------------
+r151 | boykot.tokyo | 2007-05-08 03:44:00 -0500 (Tue, 08 May 2007) | 6 lines
+Changed paths:
+   A /branches/etk/macros/tree_header.edc
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/spinner.edc
+   M /branches/etk/widgets/tree.edc
+
+Added disabled states for the entry and the spinner widget.
+
+I'll start working on the tree widget soon, so if you notice 
+anything unusual, just remember its a wip.
+
+
+------------------------------------------------------------------------
+r146 | boykot.tokyo | 2007-05-06 04:53:06 -0500 (Sun, 06 May 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/slider.edc
+
+slider: forgot to add disabled state for the text.
+
+
+------------------------------------------------------------------------
+r145 | boykot.tokyo | 2007-05-06 04:46:19 -0500 (Sun, 06 May 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/slider_h_disabled.png
+   A /branches/etk/images/slider_h_left_disabled.png
+   A /branches/etk/images/slider_h_right_disabled.png
+   A /branches/etk/images/slider_v_bot_disabled.png
+   A /branches/etk/images/slider_v_disabled.png
+   A /branches/etk/images/slider_v_top_disabled.png
+   M /branches/etk/widgets/radio_button.edc
+   M /branches/etk/widgets/slider.edc
+
+* slider: disabled states (i still have to go back and rename 
+the images). 
+
+------------------------------------------------------------------------
+r144 | boykot.tokyo | 2007-05-06 04:22:23 -0500 (Sun, 06 May 2007) | 6 lines
+Changed paths:
+   A /branches/etk/images/check0.png
+   A /branches/etk/images/check1.png
+   D /branches/etk/images/check_base.png
+   D /branches/etk/images/check_blank.png
+   D /branches/etk/images/check_mark.png
+   M /branches/etk/images/images.edc
+   D /branches/etk/images/menu_item_arrow_blank.png
+   M /branches/etk/images/paned_h_handle.png
+   M /branches/etk/images/paned_v_handle.png
+   A /branches/etk/images/radio0.png
+   A /branches/etk/images/radio1.png
+   D /branches/etk/images/radio_blank.png
+   D /branches/etk/images/radio_check.png
+   D /branches/etk/images/radio_outline.png
+   M /branches/etk/images/slider_v_btn_disabled.png
+   M /branches/etk/images/slider_v_btn_down.png
+   M /branches/etk/images/slider_v_btn_up.png
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/menu.edc
+   M /branches/etk/widgets/radio_button.edc
+
+* Panned handles image update.
+* Radio and Check image simplification.
+* Menu updates to reflect radio, check and arrow updates.
+* Slider handle image update.
+ 
+
+------------------------------------------------------------------------
+r136 | tokyo.boycott | 2007-04-26 01:15:40 -0500 (Thu, 26 Apr 2007) | 4 lines
+Changed paths:
+   M /branches/etk/images/check_base.png
+   M /branches/etk/images/check_blank.png
+   M /branches/etk/images/check_mark.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/radio_blank.png
+   A /branches/etk/images/radio_check.png
+   D /branches/etk/images/radio_disabled.png
+   D /branches/etk/images/radio_off.png
+   D /branches/etk/images/radio_on.png
+   A /branches/etk/images/radio_outline.png
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/menu.edc
+   M /branches/etk/widgets/radio_button.edc
+
+I plan to simplify the check/radio buttons to use 2 images each 
+instead of three.
+
+
+------------------------------------------------------------------------
+r134 | tokyo.boycott | 2007-04-24 06:07:32 -0500 (Tue, 24 Apr 2007) | 15 lines
+Changed paths:
+   M /branches/etk/images/button_clicked.png
+   M /branches/etk/images/button_on.png
+   M /branches/etk/images/button_on_disabled.png
+   M /branches/etk/images/combo_arrow2.png
+   M /branches/etk/images/combobox_button_clicked.png
+   A /branches/etk/images/combobox_button_disabled.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/styles.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/combobox.edc
+   M /branches/etk/widgets/toggle_button.edc
+
+Disabled focus hints momentarily, working out on a new design.
+
+This is a quick commit.
+
+Updating buttons to reflect detour-e17's latest changes.
+
+Radio/Check buttons disabled state needs to be updated and check 
+that disabled text actually matches.... nvm
+
+Simon: i copied the toggle code over to the combobox and updated 
+it to reflect the combo box, yet the toggle doesn't seem to work 
+properly. I went over it for a while, and the problem seems to 
+start on Line:190 -- it beats me.
+
+
+------------------------------------------------------------------------
+r125 | tokyo.boycott | 2007-04-02 06:29:29 -0500 (Mon, 02 Apr 2007) | 5 lines
+Changed paths:
+   D /branches/etk/images/background.png
+   D /branches/etk/images/border.png
+
+Simon: looking more closely at the combo box, I noticed that the 
+popup window is not reading the EDC code. From what I 
+gathered the "etk/combobox/window" is not affected by any 
+changes. Can you confirm this ?
+
+------------------------------------------------------------------------
+r124 | tokyo.boycott | 2007-04-02 06:27:21 -0500 (Mon, 02 Apr 2007) | 19 lines
+Changed paths:
+   A /branches/etk/images/background.png
+   A /branches/etk/images/border.png
+   M /branches/etk/images/combobox_button.png
+   M /branches/etk/images/combobox_button_clicked.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/menu_item_arrow_blank.png
+   M /branches/etk/images/menu_item_arrow_dark.png
+   M /branches/etk/images/paned_h_handle.png
+   M /branches/etk/images/paned_v_handle.png
+   M /branches/etk/images/slider_v_trough.png
+   M /branches/etk/images/spinner_base.png
+   M /branches/etk/widgets/combobox.edc
+   M /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/menu.edc
+   M /branches/etk/widgets/paned.edc
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/spinner.edc
+   M /branches/etk/widgets/statusbar.edc
+   M /branches/etk/widgets/tree.edc
+
+Simon: looks like the panned/separators are reversed in the EDC 
+code. Vertical corresponds to horizontal and vice versa.
+
+I left some comments on combobox.edc 
+I added an embryo toggle but afte two hours of getting mixed 
+results I gave up. Its confusing because the signals get emitted 
+by ETK and not the button itself. Also we have two deal with 4 
+signals, I'm only used to dealing with 2.
+
+I added an image called 'menu_item_arrow_blank.png' if you look 
+closely to an updated detour-e17, you'll noticed the arrow 
+blinks from light to blank, the arrow_dark image is never shown. 
+Its an automatic swithc. I was going to work on the menu but I'm 
+too tired right about now.
+
+I separated the combo box from the entry. How does it look ?
+
+I also made the combo box button smaller by 2 pixels.
+
+------------------------------------------------------------------------
+r123 | simon.treny | 2007-04-01 14:00:17 -0500 (Sun, 01 Apr 2007) | 4 lines
+Changed paths:
+   M /branches/etk/styles.edc
+   M /branches/etk/widgets/toggle_button.edc
+
+* Change the text-color of the toggled-button in the "toggled-disabled" 
+state
+
+
+------------------------------------------------------------------------
+r122 | simon.treny | 2007-04-01 09:28:11 -0500 (Sun, 01 Apr 2007) | 4 lines
+Changed paths:
+   A /branches/etk/images/button_on.png
+   A /branches/etk/images/button_on_disabled.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/main.edc
+   M /branches/etk/styles.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/menu.edc
+   M /branches/etk/widgets/radio_button.edc
+   A /branches/etk/widgets/toggle_button.edc
+
+* Add the toggle-button. We would need an image for the "toggled" and 
+the "toggled-disabled" states though.
+
+
+------------------------------------------------------------------------
+r120 | tokyo.boycott | 2007-03-29 19:50:35 -0600 (Thu, 29 Mar 2007) | 15 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   D /branches/etk/images/progress_bar.png
+   A /branches/etk/images/progress_bar_fill_0.png
+   A /branches/etk/images/progress_bar_fill_1.png
+   A /branches/etk/images/progress_bar_fill_10.png
+   A /branches/etk/images/progress_bar_fill_11.png
+   A /branches/etk/images/progress_bar_fill_12.png
+   A /branches/etk/images/progress_bar_fill_13.png
+   A /branches/etk/images/progress_bar_fill_14.png
+   A /branches/etk/images/progress_bar_fill_15.png
+   A /branches/etk/images/progress_bar_fill_16.png
+   A /branches/etk/images/progress_bar_fill_17.png
+   A /branches/etk/images/progress_bar_fill_18.png
+   A /branches/etk/images/progress_bar_fill_19.png
+   A /branches/etk/images/progress_bar_fill_2.png
+   A /branches/etk/images/progress_bar_fill_20.png
+   A /branches/etk/images/progress_bar_fill_21.png
+   A /branches/etk/images/progress_bar_fill_22.png
+   A /branches/etk/images/progress_bar_fill_23.png
+   A /branches/etk/images/progress_bar_fill_24.png
+   A /branches/etk/images/progress_bar_fill_25.png
+   A /branches/etk/images/progress_bar_fill_26.png
+   A /branches/etk/images/progress_bar_fill_27.png
+   A /branches/etk/images/progress_bar_fill_28.png
+   A /branches/etk/images/progress_bar_fill_29.png
+   A /branches/etk/images/progress_bar_fill_3.png
+   A /branches/etk/images/progress_bar_fill_30.png
+   A /branches/etk/images/progress_bar_fill_31.png
+   A /branches/etk/images/progress_bar_fill_32.png
+   A /branches/etk/images/progress_bar_fill_4.png
+   A /branches/etk/images/progress_bar_fill_5.png
+   A /branches/etk/images/progress_bar_fill_6.png
+   A /branches/etk/images/progress_bar_fill_7.png
+   A /branches/etk/images/progress_bar_fill_8.png
+   A /branches/etk/images/progress_bar_fill_9.png
+   M /branches/etk/images/progress_bar_left.png
+   M /branches/etk/images/progress_bar_right.png
+   M /branches/etk/widgets/progress_bar.edc
+
+Animated progress bar.
+
+Simon: a few months ago Codewarrior and I tried to created an animated 
+progress bar, and the results varied a lot. The animation was always 
+jerky and we couldn't figure it out (well maybe I should speak for 
+myself). Anyways here is an another attempt, it is much better than the 
+previous attemps, but it still is not in sync. 
+
+What could it be? missing a fill ? Too many images ? (yeah 32 total) 
+will this consume too much CPU ?
+
+Even if we manage to fix it and decide that we don't want to use it, 
+maybe we could leave in as an #define if/else logic for those that want 
+the animation.
+
+------------------------------------------------------------------------
+r119 | tokyo.boycott | 2007-03-29 04:45:22 -0600 (Thu, 29 Mar 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/progress_bar.png
+   M /branches/etk/images/progress_bar_left.png
+   M /branches/etk/images/progress_bar_right.png
+   M /branches/etk/images/progress_trough.png
+   M /branches/etk/widgets/progress_bar.edc
+
+Time to upgrade the progress bar.
+Next up will be to try to make it twirl (animation).
+
+------------------------------------------------------------------------
+r118 | tokyo.boycott | 2007-03-26 23:17:52 -0600 (Mon, 26 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/etk/Makefile
+   M /branches/etk/images/entry_focus.png
+
+Updating the entry focus image to match detour-e17.
+
+------------------------------------------------------------------------
+r107 | simon.treny | 2007-03-18 10:47:53 -0600 (Sun, 18 Mar 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/slider.edc
+
+The focus hint no longer receives mouse events
+
+
+------------------------------------------------------------------------
+r106 | simon.treny | 2007-03-18 09:35:43 -0600 (Sun, 18 Mar 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/spinner.edc
+   M /branches/etk/widgets/tree.edc
+
+* Fix the position of the text inside the entry and the spinner
+
+
+------------------------------------------------------------------------
+r104 | tokyo.boycott | 2007-03-18 02:04:35 -0600 (Sun, 18 Mar 2007) | 10 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/status_bar.png
+   A /branches/etk/images/status_resize.png
+   M /branches/etk/main.edc
+   A /branches/etk/widgets/statusbar.edc
+   M /branches/etk/widgets/tree.edc
+
+Added status bar widget. Very simple, could be improved. Any 
+ideas?
+
+Simon: Tree widget row was overlapping the tree_over image, so 
+i had to move it -1 to the left (see Line: 216 tree.edc), this 
+leaves as 1px space between the scrollbar and the tree, 
+I don't know if this is acceptable but whatever (only visible 
+when the scrollbar kicks in). The other solution is to redraw 
+the over image.
+
+------------------------------------------------------------------------
+r103 | tokyo.boycott | 2007-03-18 01:22:17 -0600 (Sun, 18 Mar 2007) | 12 lines
+Changed paths:
+   M /branches/etk/images/separator_h.png
+   M /branches/etk/images/separator_v.png
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/separator.edc
+   A /branches/etk/widgets/text_view.edc
+
+Changes to the vertical and horizontal separators.
+
+Simon: I added the text view widget. It's very simple.
+If you think it would look better using images like the 
+iconbox_bg, iconbox_over, let me know. Besides I don't 
+if you have plans for it.
+
+Btw, on the spinner/text commit, i meant, the text should
+be ALIGNED_LEFT like the rest.... i re-read and it sounded
+sort of confusing.
+
+
+------------------------------------------------------------------------
+r101 | tokyo.boycott | 2007-03-18 00:46:59 -0600 (Sun, 18 Mar 2007) | 13 lines
+Changed paths:
+   M /branches/etk/images/combo_arrow.png
+   M /branches/etk/images/combo_arrow2.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/slider_focus.png
+   M /branches/etk/images/slider_h_btn_disabled.png
+   M /branches/etk/images/slider_h_btn_down.png
+   M /branches/etk/images/slider_h_btn_up.png
+   M /branches/etk/images/slider_v_btn_disabled.png
+   M /branches/etk/images/slider_v_btn_down.png
+   M /branches/etk/images/slider_v_btn_up.png
+   M /branches/etk/images/slider_v_trough.png
+   M /branches/etk/images/slider_v_trough_down.png
+   M /branches/etk/images/slider_v_trough_up.png
+   A /branches/etk/images/spinner_base.png
+   M /branches/etk/images/spinner_down.png
+   D /branches/etk/images/spinner_focus.png
+   D /branches/etk/images/spinner_textbox.png
+   M /branches/etk/images/spinner_up.png
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/radio_button.edc
+   M /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/spinner.edc
+
+Updated focus hints for Radio, Check and Slider Widgets.
+
+Simon: I have modified the spinner button's color scheme.
+You might be aware that the spinner text is not aligned 
+properly (LEFT_JUSTIFIED). This could have been fixed by
+editing the etk.swallow.content part, but I didn't think 
+this was the proper solution. Currently the text overlaps
+the spinner buttons.
+
+I also added a note on entry.edc, regarding text selection.
+Line:121
+
+
+------------------------------------------------------------------------
+r99 | tokyo.boycott | 2007-03-17 02:23:49 -0600 (Sat, 17 Mar 2007) | 9 lines
+Changed paths:
+   M /branches/etk/images/frame_outline.png
+   M /branches/etk/images/menu_item_arrow_dark.png
+   M /branches/etk/images/menu_item_arrow_light.png
+   M /branches/etk/styles.edc
+   M /branches/etk/widgets/colorpicker.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/frame.edc
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/slider.edc
+
+Changes to reflect the recent branches/e17 commits.
+
+Simon: I still have to work on the progress_bar and the
+stuff you mentioned about the spinner. ( i haven't forgotten )
+
+The focus_hints for radio, check, and slider widgets still need 
+to be updated.
+ 
+
+------------------------------------------------------------------------
+r97 | simon.treny | 2007-03-11 13:53:02 -0600 (Sun, 11 Mar 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/entry.edc
+
+* Update the entry for recent Etk changes
+
+
+------------------------------------------------------------------------
+r96 | tokyo.boycott | 2007-03-09 22:04:10 -0600 (Fri, 09 Mar 2007) | 5 lines
+Changed paths:
+   R /branches/etk/images/tree_bg.png
+
+wrong command lead me to delete 'tree_bg.png' but the source
+of the culprit is: http://cored.org/tmp/tree_bg.png
+-- i think i can fix it soon, but i've been busy
+
+
+------------------------------------------------------------------------
+r95 | simon.treny | 2007-03-09 16:41:47 -0600 (Fri, 09 Mar 2007) | 15 lines
+Changed paths:
+   M /branches/etk/macros/style.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/tree.edc
+   M /branches/etk/widgets/windows.edc
+
+* Fix the dialog separator
+* Make the background of the tree a bit darker. It looks better when the 
+tree is almost empty imho (the contrast is lower)
+* Lower the entry's text by 1px
+* Remove text-classes for now since they makes edje-object loading 
+really slow (Bug in Edje probably)
+
+Note for Alberto: please don't revert your spinner changes, I start to 
+get used to it and I have to say I really like it now :) Only thing is, 
+the background of the spinner is darker than the background of the 
+entry, and it may look bad if those two widgets are close. See this 
+screenshot: http://mtreny.free.fr/detour_entry_spinner.png . Don't know 
+which of the entry or of the spinner should be changed.
+
+
+------------------------------------------------------------------------
+r87 | tokyo.boycott | 2007-03-07 15:29:01 -0600 (Wed, 07 Mar 2007) | 4 lines
+Changed paths:
+   M /branches/etk/images/combo_arrow.png
+   M /branches/etk/images/combo_arrow2.png
+   M /branches/etk/images/entry.png
+   M /branches/etk/images/entry_focus.png
+   M /branches/etk/images/iconbox_over.png
+   M /branches/etk/images/tree_over.png
+   M /branches/etk/widgets/combobox.edc
+
+Updating images.
+
+Updating the Combobox.
+
+------------------------------------------------------------------------
+r55 | tokyo.boycott | 2007-02-27 04:39:41 -0600 (Tue, 27 Feb 2007) | 1 line
+Changed paths:
+   M /branches/etk/images/paned_h_handle.png
+   M /branches/etk/images/paned_v_handle.png
+   M /branches/etk/widgets/spinner.edc
+
+
+------------------------------------------------------------------------
+r54 | tokyo.boycott | 2007-02-27 02:53:20 -0600 (Tue, 27 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   D /branches/etk/images/spinner.png
+   A /branches/etk/images/spinner_down.png
+   D /branches/etk/images/spinner_down_pressed.png
+   A /branches/etk/images/spinner_textbox.png
+   A /branches/etk/images/spinner_up.png
+   D /branches/etk/images/spinner_up_pressed.png
+   M /branches/etk/widgets/spinner.edc
+
+Spinner totally re-designed. Comments?
+
+------------------------------------------------------------------------
+r52 | tokyo.boycott | 2007-02-26 03:54:39 -0600 (Mon, 26 Feb 2007) | 26 lines
+Changed paths:
+   M /branches/etk/AUTHORS
+   M /branches/etk/Makefile
+   M /branches/etk/images/images.edc
+   M /branches/etk/images/progress_bar.png
+   M /branches/etk/images/progress_bar_left.png
+   M /branches/etk/images/progress_bar_right.png
+   M /branches/etk/images/spinner.png
+   M /branches/etk/images/spinner_down_pressed.png
+   M /branches/etk/images/spinner_focus.png
+   M /branches/etk/images/spinner_up_pressed.png
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/spinner.edc
+
+progress_bar: updated the color scheme, but i have to admit it 
+does looks kinda boring.
+
+spinner: re-did the spinner widget for various reasons. 
+I think it was too cramped, trying to do too much for its $2.00 
+dollars. 
+
+I still don't like its 'image' implementation. We shouldn't 
+have to draw the spinner and then still have the buttons above 
+it. I believe the spinner and the entry box should be drawn 
+separate, thus allowing more flexibility. 
+
+Simon, you said the entry box in the spinner should be the same 
+size as the entry widget. I know you are working on the entry 
+widget so that the size gets calculated by the library and 
+not defined by the theme. Another reason, why I re-did the 
+widget. I think no matter the outcome the up/down buttons in 
+the spinner will still be too small.
+
+I still plan to redo the buttons on the spinner, I borrowed 
+these from an elicit theme, which uses an outdated gradient 
+color scheme. Perhaps redo the spinner completely so the 
+buttons are not part of 'spinner.png'. And again, Simon, if you 
+don't like the spinner let me know ASAP and we'll do something 
+else. 
+
+------------------------------------------------------------------------
+r51 | simon.treny | 2007-02-24 04:18:39 -0600 (Sat, 24 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/main.edc
+
+Enable the compbobox in the main.edc
+
+
+------------------------------------------------------------------------
+r50 | tokyo.boycott | 2007-02-24 03:52:57 -0600 (Sat, 24 Feb 2007) | 10 lines
+Changed paths:
+   A /branches/etk/images/combo_arrow.png
+   A /branches/etk/images/combo_arrow2.png
+   A /branches/etk/images/combobox_button.png
+   A /branches/etk/images/combobox_button_clicked.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/widgets/combobox.edc
+   M /branches/etk/widgets/menu.edc
+
+
+Adding 'combobox.edc'
+
+Simon: I couldn't figure out the combobox press/released logic 
+with pure edje, not without using embryo conditionals. 
+
+The combox window doesn't have a border? It just won't show up.
+
+Modified 'menu.edc' so that the separator touches each end. 
+
+------------------------------------------------------------------------
+r49 | simon.treny | 2007-02-23 16:24:55 -0600 (Fri, 23 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/menu_bg.png
+   A /branches/etk/images/menu_item_arrow_dark.png
+   A /branches/etk/images/menu_item_arrow_light.png
+   A /branches/etk/images/menu_item_select.png
+   A /branches/etk/images/menu_separator.png
+   M /branches/etk/main.edc
+   A /branches/etk/widgets/menu.edc
+
+* Quick implementation of the menu
+
+
+------------------------------------------------------------------------
+r48 | simon.treny | 2007-02-23 11:17:40 -0600 (Fri, 23 Feb 2007) | 3 lines
+Changed paths:
+   D /branches/etk/images/cp_bg.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/spinner_down_pressed.png
+   A /branches/etk/images/spinner_up_pressed.png
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/radio_button.edc
+   M /branches/etk/widgets/spinner.edc
+
+* The spinner is now complete
+
+
+------------------------------------------------------------------------
+r47 | simon.treny | 2007-02-23 09:56:18 -0600 (Fri, 23 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/colorpicker.edc
+
+* Document the colorpicker
+
+
+------------------------------------------------------------------------
+r46 | simon.treny | 2007-02-23 08:58:20 -0600 (Fri, 23 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/colorpicker.edc
+
+* Fix the colorpicker for the latest Etk changes
+
+
+------------------------------------------------------------------------
+r45 | simon.treny | 2007-02-22 11:25:05 -0600 (Thu, 22 Feb 2007) | 5 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/spinner.png
+   A /branches/etk/images/spinner_focus.png
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/label.edc
+   A /branches/etk/widgets/spinner.edc
+
+* Add the start base of the spinner widget
+* Move the label 5px to the right so it looks aligned with the button 
+widgets
+
+
+------------------------------------------------------------------------
+r44 | simon.treny | 2007-02-22 06:22:16 -0600 (Thu, 22 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/tree.edc
+
+* Make the vscrollbar looks better inside the scrolled-view frame
+
+
+------------------------------------------------------------------------
+r43 | tokyo.boycott | 2007-02-22 05:40:23 -0600 (Thu, 22 Feb 2007) | 2 lines
+Changed paths:
+   M /branches/etk/styles.edc
+
+update: the button press text does not have a shadow
+
+------------------------------------------------------------------------
+r41 | tokyo.boycott | 2007-02-22 04:52:36 -0600 (Thu, 22 Feb 2007) | 3 lines
+Changed paths:
+   A /branches/etk/AUTHORS
+   A /branches/etk/COPYING
+   A /branches/etk/INSTALL
+   M /branches/etk/Makefile
+   M /branches/etk/README
+   A /branches/etk/images/cp_box.png
+   M /branches/etk/images/cp_slider_drag.png
+   M /branches/etk/images/cp_slider_trough.png
+   M /branches/etk/images/cp_slider_trough_left.png
+   M /branches/etk/images/cp_slider_trough_right.png
+   M /branches/etk/images/iconbox_over.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/widgets/colorpicker.edc
+   M /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/tree.edc
+
+color_picker update: new images -- comments?
+and small fixes here and there.
+
+------------------------------------------------------------------------
+r40 | simon.treny | 2007-02-21 06:38:33 -0600 (Wed, 21 Feb 2007) | 3 lines
+Changed paths:
+   A /branches/etk/images/cp_bg.png
+   A /branches/etk/images/cp_slider_drag.png
+   A /branches/etk/images/cp_slider_trough.png
+   A /branches/etk/images/cp_slider_trough_left.png
+   A /branches/etk/images/cp_slider_trough_right.png
+   A /branches/etk/images/iconbox_bg.png
+   A /branches/etk/images/iconbox_focus.png
+   A /branches/etk/images/iconbox_label_bg.png
+   A /branches/etk/images/iconbox_over.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/paned_h_handle.png
+   A /branches/etk/images/paned_v_handle.png
+   M /branches/etk/main.edc
+   M /branches/etk/styles.edc
+   A /branches/etk/widgets/colorpicker.edc
+   A /branches/etk/widgets/paned.edc
+   M /branches/etk/widgets/slider.edc
+
+* [Etk-Theme] Start working on the colorpicker and fix building
+
+
+------------------------------------------------------------------------
+r39 | simon.treny | 2007-02-20 12:09:05 -0600 (Tue, 20 Feb 2007) | 4 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/slider_label_bg.png
+   M /branches/etk/main.edc
+   M /branches/etk/styles.edc
+   A /branches/etk/widgets/iconbox.edc
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/tree.edc
+
+* [Etk-Theme] Support slider's label and add a quick'n'dirty support for 
+the iconbox
+
+
+------------------------------------------------------------------------
+r38 | simon.treny | 2007-02-20 10:55:00 -0600 (Tue, 20 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/windows.edc
+
+* [Etk-Theme] Document the progress-bar group
+
+
+------------------------------------------------------------------------
+r37 | simon.treny | 2007-02-19 05:45:26 -0600 (Mon, 19 Feb 2007) | 4 lines
+Changed paths:
+   D /branches/etk/images/focus_rect.png
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/progress_bar.png
+   A /branches/etk/images/progress_bar_left.png
+   A /branches/etk/images/progress_bar_right.png
+   A /branches/etk/images/progress_trough.png
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/check_button.edc
+   A /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/radio_button.edc
+
+* [Etk theme] Add support of the progress-bar and remove focus_rect.png 
+because it's no more used
+
+
+------------------------------------------------------------------------
+r36 | simon.treny | 2007-02-18 17:08:08 -0600 (Sun, 18 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/slider_h_btn_disabled.png
+   A /branches/etk/images/slider_h_btn_down.png
+   A /branches/etk/images/slider_h_btn_up.png
+   A /branches/etk/images/slider_h_trough.png
+   A /branches/etk/images/slider_h_trough_left.png
+   A /branches/etk/images/slider_h_trough_right.png
+   A /branches/etk/images/slider_v_btn_disabled.png
+   A /branches/etk/images/slider_v_btn_down.png
+   A /branches/etk/images/slider_v_btn_up.png
+   A /branches/etk/images/slider_v_trough.png
+   A /branches/etk/images/slider_v_trough_down.png
+   A /branches/etk/images/slider_v_trough_up.png
+   M /branches/etk/main.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/check_button.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/frame.edc
+   M /branches/etk/widgets/label.edc
+   M /branches/etk/widgets/radio_button.edc
+   M /branches/etk/widgets/scrollbar.edc
+   M /branches/etk/widgets/separator.edc
+   A /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/tree.edc
+
+* [Etk theme] Add the sliders
+
+
+------------------------------------------------------------------------
+r35 | simon.treny | 2007-02-18 15:44:03 -0600 (Sun, 18 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/tree_bg.png
+   A /branches/etk/images/tree_focus.png
+   A /branches/etk/images/tree_over.png
+   M /branches/etk/main.edc
+   M /branches/etk/styles.edc
+   A /branches/etk/widgets/tree.edc
+
+* [Etk theme] Start working on the tree widget
+
+
+------------------------------------------------------------------------
+r34 | simon.treny | 2007-02-18 14:23:42 -0600 (Sun, 18 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/widgets/scrollbar.edc
+
+* [Etk-Scrollbar] Add documentation and support iconbox/tree scrollbars
+
+
+------------------------------------------------------------------------
+r33 | simon.treny | 2007-02-18 14:03:45 -0600 (Sun, 18 Feb 2007) | 3 lines
+Changed paths:
+   M /branches/etk/images/images.edc
+   A /branches/etk/images/scrollbar_h_arrow_left.png
+   A /branches/etk/images/scrollbar_h_arrow_right.png
+   A /branches/etk/images/scrollbar_h_bar.png
+   A /branches/etk/images/scrollbar_h_thumb.png
+   A /branches/etk/images/scrollbar_h_trough.png
+   A /branches/etk/images/scrollbar_h_trough_left.png
+   A /branches/etk/images/scrollbar_h_trough_right.png
+   A /branches/etk/images/scrollbar_v_arrow_down.png
+   A /branches/etk/images/scrollbar_v_arrow_up.png
+   A /branches/etk/images/scrollbar_v_bar.png
+   A /branches/etk/images/scrollbar_v_thumb.png
+   A /branches/etk/images/scrollbar_v_trough.png
+   A /branches/etk/images/scrollbar_v_trough_down.png
+   A /branches/etk/images/scrollbar_v_trough_up.png
+   M /branches/etk/main.edc
+   A /branches/etk/widgets/scrollbar.edc
+
+* Add the scrollbar
+
+
+------------------------------------------------------------------------
+r32 | simon.treny | 2007-02-18 12:49:56 -0600 (Sun, 18 Feb 2007) | 4 lines
+Changed paths:
+   A /branches/etk
+   A /branches/etk/Makefile
+   A /branches/etk/README
+   A /branches/etk/colors.edc
+   A /branches/etk/fonts
+   A /branches/etk/fonts/Vera.ttf
+   A /branches/etk/fonts/VeraBI.ttf
+   A /branches/etk/fonts/VeraBd.ttf
+   A /branches/etk/fonts/VeraIt.ttf
+   A /branches/etk/fonts/VeraMoBd.ttf
+   A /branches/etk/fonts/VeraMono.ttf
+   A /branches/etk/fonts/bitstream.COPYING
+   A /branches/etk/images
+   A /branches/etk/images/button.png
+   A /branches/etk/images/button_clicked.png
+   A /branches/etk/images/button_disabled.png
+   A /branches/etk/images/button_focus_bottom.png
+   A /branches/etk/images/button_focus_top.png
+   A /branches/etk/images/button_outline.png
+   A /branches/etk/images/check_base.png
+   A /branches/etk/images/check_blank.png
+   A /branches/etk/images/check_mark.png
+   A /branches/etk/images/dialog_bg.png
+   A /branches/etk/images/dialog_separator.png
+   A /branches/etk/images/entry.png
+   A /branches/etk/images/entry_focus.png
+   A /branches/etk/images/focus_rect.png
+   A /branches/etk/images/frame_outline.png
+   A /branches/etk/images/images.edc
+   A /branches/etk/images/radio_disabled.png
+   A /branches/etk/images/radio_off.png
+   A /branches/etk/images/radio_on.png
+   A /branches/etk/images/separator_h.png
+   A /branches/etk/images/separator_v.png
+   A /branches/etk/macros
+   A /branches/etk/macros/style.edc
+   A /branches/etk/main.edc
+   A /branches/etk/styles.edc
+   A /branches/etk/widgets
+   A /branches/etk/widgets/button.edc
+   A /branches/etk/widgets/check_button.edc
+   A /branches/etk/widgets/entry.edc
+   A /branches/etk/widgets/frame.edc
+   A /branches/etk/widgets/label.edc
+   A /branches/etk/widgets/radio_button.edc
+   A /branches/etk/widgets/separator.edc
+   A /branches/etk/widgets/windows.edc
+
+First commit. Only a few widgets are supported for now. It also requires 
+the latest Etk
+
+
+------------------------------------------------------------------------
