@@ -6,24 +6,33 @@ part {
 	description {
 		state: "default" 0.0;
 		//min: 16 16;
-		aspect: 1.0 1.0;
+		#if VISIBLE_MENU_TITLE == 0
+		#else
+		#if VISIBLE_MENU_TITLE == 1
+			aspect: 1.0 1.0;
+		#endif
+		#endif
 		align: 0.5 0.5;
 
 		#if VISIBLE_MENU_TITLE == 0
 			rel1 { 
 				offset: -1 0; 
 			}
+
+			rel2 { 
+				offset: -2 -2;
+			}
 		#else
 		#if VISIBLE_MENU_TITLE == 1
 			rel1 { 
 				offset: 2 0; 
 			}
-		#endif
-		#endif
 
-		rel2 { 
-			offset: -1 -2;
-		}
+			rel2 { 
+				offset: -1 -2;
+			}
+		#endif
+		#endif
 	}
 }
 

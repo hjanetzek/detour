@@ -5,9 +5,8 @@
 -Active & Inactive Window Decorations (borders)
 -Gadman Controls
 -toolbar.edc
--battery.edc: reposition text
+-battery.edc: reposition text, popup (from cvs)
 -temperature.edc: graphics
--check menu icon y: -1
 
 == Global ==
 *Complete start.edc
