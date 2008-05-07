@@ -1,8 +1,0 @@
-== e17 ==
-http://detour.googlecode.com/svn/branches/web/example.png
-
-== etk ==
-http://detour.googlecode.com/svn/branches/web/example3.png
-
-== elicit ==
-http://detour.googlecode.com/svn/branches/web/elicit.png
