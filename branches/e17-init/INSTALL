@@ -1,0 +1,9 @@
+
+COMPILING and INSTALLING:
+
+To compile and install or rebuild:
+	make
+
+To uninstall:
+	make uninstall
+

@@ -1,0 +1,111 @@
+------------------------------------------------------------------------
+r324 | boykot.tokyo | 2007-10-19 01:56:06 -0500 (Fri, 19 Oct 2007) | 2 lines
+Changed paths:
+   A /branches/e17-init/images/applications-system.png
+   A /branches/e17-init/images/insignia.png
+   A /branches/e17-init/images/preferences-system-session.png
+   R /branches/e17-init/images/splash.png
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+   M /branches/e17-init/splash_programs.edc
+
+Updates
+
+------------------------------------------------------------------------
+r303 | boykot.tokyo | 2007-10-11 02:49:31 -0500 (Thu, 11 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/splash.edc
+   M /branches/e17-init/splash_programs.edc
+
+Oops!
+
+------------------------------------------------------------------------
+r302 | boykot.tokyo | 2007-10-07 04:23:18 -0500 (Sun, 07 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/splash.edc
+   M /branches/e17-init/splash_programs.edc
+
+yoot!
+
+------------------------------------------------------------------------
+r295 | boykot.tokyo | 2007-09-28 23:54:21 -0500 (Fri, 28 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/images/splash_bg.png
+   M /branches/e17-init/splash.edc
+
+Update
+
+------------------------------------------------------------------------
+r294 | boykot.tokyo | 2007-09-27 00:45:15 -0500 (Thu, 27 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/extra.edc
+   A /branches/e17-init/images/splash.png
+   M /branches/e17-init/images/splash_bg.png
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+   M /branches/e17-init/splash_programs.edc
+
+Reworked the programs to make it more efficient.
+
+------------------------------------------------------------------------
+r280 | boykot.tokyo | 2007-09-17 19:51:23 -0500 (Mon, 17 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+
+Text updates.
+
+------------------------------------------------------------------------
+r263 | boykot.tokyo | 2007-09-08 02:24:57 -0500 (Sat, 08 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/splash.edc
+
+text fixes
+
+------------------------------------------------------------------------
+r261 | boykot.tokyo | 2007-09-08 02:06:59 -0500 (Sat, 08 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/splash_programs.edc
+
+busy animation!
+
+------------------------------------------------------------------------
+r260 | boykot.tokyo | 2007-09-08 01:12:53 -0500 (Sat, 08 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/splash.edc
+   M /branches/e17-init/splash_programs.edc
+
+Beautiful! (although, not finished yet!)
+
+------------------------------------------------------------------------
+r259 | boykot.tokyo | 2007-09-07 16:45:42 -0500 (Fri, 07 Sep 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/extra.edc
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+
+Nothing here.
+
+------------------------------------------------------------------------
+r258 | boykot.tokyo | 2007-09-07 16:42:23 -0500 (Fri, 07 Sep 2007) | 2 lines
+Changed paths:
+   A /branches/e17-init
+   A /branches/e17-init/Makefile
+   A /branches/e17-init/extra.edc
+   A /branches/e17-init/fonts
+   A /branches/e17-init/fonts/Vera.ttf
+   A /branches/e17-init/fonts/VeraBd.ttf
+   A /branches/e17-init/images
+   A /branches/e17-init/images/busy_1.png
+   A /branches/e17-init/images/busy_2.png
+   A /branches/e17-init/images/check0.png
+   A /branches/e17-init/images/check1.png
+   A /branches/e17-init/images/entry.png
+   A /branches/e17-init/images/splash_bg.png
+   A /branches/e17-init/main.edc
+   A /branches/e17-init/splash.edc
+   A /branches/e17-init/splash_programs.edc
+
+Import of Init. (wip)
+
+------------------------------------------------------------------------
