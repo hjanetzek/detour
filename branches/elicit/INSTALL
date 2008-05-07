@@ -1,4 +1,9 @@
 
-INSTALL:
+COMPILING and INSTALLING:
 
-To build the project run: make
+To compile and install or rebuild:
+	make
+
+To uninstall:
+	make uninstall
+

@@ -1,0 +1,167 @@
+------------------------------------------------------------------------
+r179 | boykot.tokyo | 2007-05-24 02:53:31 -0500 (Thu, 24 May 2007) | 2 lines
+Changed paths:
+   M /branches/elicit/images/scrollframe_focus.png
+   M /branches/elicit/images/scrollframe_inset.png
+
+Better contrast. 
+
+------------------------------------------------------------------------
+r127 | tokyo.boycott | 2007-04-02 06:35:16 -0500 (Mon, 02 Apr 2007) | 2 lines
+Changed paths:
+   M /branches/elicit/bits/spinner.edc
+   M /branches/elicit/images/spinner_base.png
+
+Updating the spinner (consistency).
+
+------------------------------------------------------------------------
+r121 | tokyo.boycott | 2007-03-29 19:55:21 -0600 (Thu, 29 Mar 2007) | 2 lines
+Changed paths:
+   D /branches/elicit/images/swatch-shadow.png
+   M /branches/elicit/swatch/parts.edc
+
+Added drop shadows to the saved color palettes.
+
+------------------------------------------------------------------------
+r116 | tokyo.boycott | 2007-03-26 01:19:11 -0600 (Mon, 26 Mar 2007) | 3 lines
+Changed paths:
+   M /branches/elicit/programs/grid_button.edc
+
+Patch by rephorm that fixes the grid button problem.
+You will need the latest elicit from cvs for this to work.
+
+------------------------------------------------------------------------
+r115 | tokyo.boycott | 2007-03-24 02:34:47 -0600 (Sat, 24 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/elicit/bits/swatch.edc
+
+Swatch wipe animation had the wrong color.
+
+------------------------------------------------------------------------
+r114 | tokyo.boycott | 2007-03-23 03:41:27 -0600 (Fri, 23 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/elicit/programs/focus.edc
+   M /branches/elicit/programs/shot_window.edc
+   M /branches/elicit/programs/swatch.edc
+
+Focus consistency.
+
+------------------------------------------------------------------------
+r113 | tokyo.boycott | 2007-03-23 03:35:01 -0600 (Fri, 23 Mar 2007) | 2 lines
+Changed paths:
+   M /branches/elicit/README
+   M /branches/elicit/bits/swatch.edc
+
+Small oops on the color palette (swatch) window.
+
+------------------------------------------------------------------------
+r112 | tokyo.boycott | 2007-03-23 00:42:08 -0600 (Fri, 23 Mar 2007) | 22 lines
+Changed paths:
+   M /branches/elicit/bits/background.edc
+   M /branches/elicit/bits/grid_button.edc
+   M /branches/elicit/bits/hex.edc
+   M /branches/elicit/bits/shot_window.edc
+   M /branches/elicit/bits/swatch.edc
+   D /branches/elicit/images/check0.png
+   M /branches/elicit/images/picker.png
+   M /branches/elicit/images/shot.png
+   A /branches/elicit/images/vswipe.png
+   M /branches/elicit/images.edc
+   M /branches/elicit/main.edc
+   A /branches/elicit/programs/controls.edc
+   M /branches/elicit/programs/focus.edc
+   M /branches/elicit/programs/hex.edc
+   M /branches/elicit/programs/shot_window.edc
+   M /branches/elicit/programs/spinner.edc
+   M /branches/elicit/swatch/programs.edc
+
+Here is what I added:
+
+When you click either the screenshot or the color palette 
+window a screen wipe effect appears. For this to work
+you right click on either window. Or right click on the 
+window icon (color picker, etc)
+
+Right clicking on the screenshot window will send the 
+screenshot to the gimp via gimp-remote or open the gimp
+for you if you don't currently have the gimp open.
+
+I have a 7 button mouse, so the map pointers may not be the 
+same for everybody. For example, "mouse,clicked,3" is the 
+right button on my mouse. 
+
+If you click on the hex trippled (#123456) it will copy the 
+value into the clipboard. 
+
+Right click on color paletes to delete them.
+
+Enjoy!
+
+------------------------------------------------------------------------
+r110 | tokyo.boycott | 2007-03-21 20:52:55 -0600 (Wed, 21 Mar 2007) | 3 lines
+Changed paths:
+   M /branches/elicit/README
+
+I'm adding an edje theme based on detour for Elicit.
+Enjoy!
+
+------------------------------------------------------------------------
+r109 | tokyo.boycott | 2007-03-21 20:47:00 -0600 (Wed, 21 Mar 2007) | 1 line
+Changed paths:
+   A /branches/elicit
+   A /branches/elicit/AUTHORS
+   A /branches/elicit/COPYING
+   A /branches/elicit/INSTALL
+   A /branches/elicit/Makefile
+   A /branches/elicit/README
+   A /branches/elicit/bits
+   A /branches/elicit/bits/background.edc
+   A /branches/elicit/bits/grid_button.edc
+   A /branches/elicit/bits/hex.edc
+   A /branches/elicit/bits/shot_window.edc
+   A /branches/elicit/bits/sliders.edc
+   A /branches/elicit/bits/spinner.edc
+   A /branches/elicit/bits/swatch.edc
+   A /branches/elicit/bits/swatches.edc
+   A /branches/elicit/fonts
+   A /branches/elicit/fonts/Vera.COPYING
+   A /branches/elicit/fonts/Vera.ttf
+   A /branches/elicit/fonts/VeraBd.ttf
+   A /branches/elicit/images
+   A /branches/elicit/images/base.png
+   A /branches/elicit/images/check0.png
+   A /branches/elicit/images/check1.png
+   A /branches/elicit/images/check2.png
+   A /branches/elicit/images/cp_slider_drag.png
+   A /branches/elicit/images/cp_slider_trough.png
+   A /branches/elicit/images/cp_slider_trough_left.png
+   A /branches/elicit/images/cp_slider_trough_right.png
+   A /branches/elicit/images/entry.png
+   A /branches/elicit/images/entry_focus.png
+   A /branches/elicit/images/picker.png
+   A /branches/elicit/images/scrollframe_bg.png
+   A /branches/elicit/images/scrollframe_focus.png
+   A /branches/elicit/images/scrollframe_inset.png
+   A /branches/elicit/images/shot.png
+   A /branches/elicit/images/spinner_base.png
+   A /branches/elicit/images/spinner_down.png
+   A /branches/elicit/images/spinner_up.png
+   A /branches/elicit/images/swatch-shadow.png
+   A /branches/elicit/images/swatch_shadow.png
+   A /branches/elicit/images/swatches_box.png
+   A /branches/elicit/images.edc
+   A /branches/elicit/macros
+   A /branches/elicit/main.edc
+   A /branches/elicit/programs
+   A /branches/elicit/programs/focus.edc
+   A /branches/elicit/programs/grid_button.edc
+   A /branches/elicit/programs/hex.edc
+   A /branches/elicit/programs/shot_window.edc
+   A /branches/elicit/programs/spinner.edc
+   A /branches/elicit/programs/swatch.edc
+   A /branches/elicit/swatch
+   A /branches/elicit/swatch/parts.edc
+   A /branches/elicit/swatch/programs.edc
+
+testing
+------------------------------------------------------------------------
