@@ -1,0 +1,81 @@
+
+program {
+	name: "power_button_in";
+	signal: "mouse,in";
+	source: "power_button_rect";
+	action: STATE_SET "visible" 0.0;
+	target: "shutdown_text";
+}
+
+program {
+	name: "power_button_out";
+	signal: "mouse,out";
+	source: "power_button_rect";
+	action: STATE_SET "default" 0.0;
+	target: "shutdown_text";
+}
+
+program {
+	name: "power_button_down";
+	signal: "mouse,down,1";
+	source: "power_button_rect";
+	action: STATE_SET "clicked" 0.0;
+	target: "power_button";
+}
+
+program {
+	name: "power_button_up";
+	signal: "mouse,up,1";
+	source: "power_button_rect";
+	action: STATE_SET "default" 0.0;
+	target: "power_button";
+}
+
+program {
+	name: "power_button_clicked";
+	signal: "mouse,clicked,1";
+	source: "power_button_rect";
+	action: SIGNAL_EMIT "entrance,system,halt" "";
+	in: 4.0 0.0;
+}
+
+program {
+	name: "reset_button_in";
+	signal: "mouse,in";
+	source: "reset_button_rect";
+	action: STATE_SET "visible" 0.0;
+	target: "reboot_text";
+}
+
+program {
+	name: "reset_button_out";
+	signal: "mouse,out";
+	source: "reset_button_rect";
+	action: STATE_SET "default" 0.0;
+	target: "reboot_text";
+}	 
+	 
+program {
+	name: "reset_button_down";
+	signal: "mouse,down,1";
+	source: "reset_button_rect";
+	action: STATE_SET "clicked" 0.0;
+	target: "reset_button";
+}
+
+program {
+	name: "reset_button_up";
+	signal: "mouse,up,1";
+	source: "reset_button_rect";
+	action: STATE_SET "default" 0.0;
+	target: "reset_button";
+}
+
+program {
+	name: "reset_button_clicked";
+	signal: "mouse,clicked,1";
+	source: "reset_button_rect";
+	action: SIGNAL_EMIT "entrance,system,reboot" "";
+	in: 4.0 0.0;
+}	 
+
