@@ -1,0 +1,14 @@
+== Bugfix ==
+-
+
+== Improve ==
+-Move over to DejaVu fonts.
+
+
+== Global ==
+*
+
+
+== Compile ==
+Improve edje_decc: directory structure
+
