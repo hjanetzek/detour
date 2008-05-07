@@ -1,9 +1,14 @@
-/**
- * @page TODO
- *
- * @section 
- *
+== Bugfix ==
+-
 
-- Add as you go.
+== Improve ==
+-
 
- */
+
+== Global ==
+*
+
+
+== Compile ==
+Improve edje_decc: directory structure
+
