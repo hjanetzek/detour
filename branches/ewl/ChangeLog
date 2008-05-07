@@ -1,0 +1,548 @@
+------------------------------------------------------------------------
+r319 | avi.thomas | 2007-10-17 14:13:59 -0500 (Wed, 17 Oct 2007) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+
+Added tolerance for the tooltip
+------------------------------------------------------------------------
+r304 | avi.thomas | 2007-10-11 20:32:19 -0500 (Thu, 11 Oct 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/scrollbar.edc
+
+Minor fixes for scrollbar, was previously getting cut off
+------------------------------------------------------------------------
+r298 | avi.thomas | 2007-09-30 19:19:57 -0500 (Sun, 30 Sep 2007) | 1 line
+Changed paths:
+   A /branches/ewl/widgets/shadow.edc
+
+add shadow.edc
+------------------------------------------------------------------------
+r297 | avi.thomas | 2007-09-30 19:19:09 -0500 (Sun, 30 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/combo.edc
+
+added ewl/shadow and fixed combo warning
+------------------------------------------------------------------------
+r281 | avi.thomas | 2007-09-18 18:41:14 -0500 (Tue, 18 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/combo.edc
+   A /branches/ewl/widgets/combo_parts.edc
+
+Combobox looks better than before, but has some issues - see combo.edc
+------------------------------------------------------------------------
+r277 | avi.thomas | 2007-09-15 23:26:10 -0500 (Sat, 15 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/border.edc
+   M /branches/ewl/widgets/menu_item_parts.edc
+
+Hooray for borders
+------------------------------------------------------------------------
+r276 | boykot.tokyo | 2007-09-15 17:23:19 -0500 (Sat, 15 Sep 2007) | 17 lines
+Changed paths:
+   M /branches/ewl/images/button.png
+   D /branches/ewl/images/button_clicked.png
+   M /branches/ewl/images/button_focus.png
+   D /branches/ewl/images/button_focus_bottom.png
+   D /branches/ewl/images/button_focus_top.png
+   D /branches/ewl/images/button_on.png
+   D /branches/ewl/images/button_on_disabled.png
+   M /branches/ewl/images/button_outline.png
+   A /branches/ewl/images/button_shadow.png
+   A /branches/ewl/images/button_shadow_overlay.png
+   A /branches/ewl/images/check01.png
+   D /branches/ewl/images/check2.png
+   M /branches/ewl/images/frame_outline.png
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/widgets/button_main.edc
+   M /branches/ewl/widgets/button_programs.edc
+   M /branches/ewl/widgets/toolbar.edc
+   A /branches/ewl/widgets/toolbar_main.edc
+   A /branches/ewl/widgets/toolbar_progs.edc
+
+Button widget:
+- deleted unused images
+- split shadow images into separate parts
+
+Frame:
+- image update
+
+Check widget:
+Imported semi-check image (not in use)
+	* Check (detour-e17 check widget)
+
+Toolbar: 
+- button consistency
+- split parts and programs into separate files
+- formatting ( sorry about this Jaime, bad habit ) 
+
+
+------------------------------------------------------------------------
+r271 | avi.thomas | 2007-09-12 18:42:15 -0500 (Wed, 12 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/spacer_main.edc
+
+Change this back, bad idea
+------------------------------------------------------------------------
+r270 | avi.thomas | 2007-09-12 15:47:04 -0500 (Wed, 12 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/statusbar.edc
+
+Add statusbar.edc, the old way of using ewl/menu didn't look good
+------------------------------------------------------------------------
+r269 | avi.thomas | 2007-09-11 20:00:31 -0500 (Tue, 11 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/paned.edc
+   M /branches/ewl/widgets/separator.edc
+
+Add paned.edc
+------------------------------------------------------------------------
+r268 | avi.thomas | 2007-09-11 18:29:57 -0500 (Tue, 11 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/toolbar.edc
+
+Added ewl/toolbar/icon
+------------------------------------------------------------------------
+r267 | avi.thomas | 2007-09-11 17:03:40 -0500 (Tue, 11 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/spinner.edc
+
+Ewl spinner is looking better
+------------------------------------------------------------------------
+r257 | avi.thomas | 2007-09-06 20:16:17 -0500 (Thu, 06 Sep 2007) | 1 line
+Changed paths:
+   A /branches/ewl/widgets/spinner.edc
+
+And here's the actual file
+------------------------------------------------------------------------
+r256 | avi.thomas | 2007-09-06 20:15:49 -0500 (Thu, 06 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/AUTHORS
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+
+Add most of /ewl/spinner, still needs work, added myself to authors
+------------------------------------------------------------------------
+r255 | avi.thomas | 2007-09-05 19:01:16 -0500 (Wed, 05 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/menu.edc
+   A /branches/ewl/widgets/menu_item_parts.edc
+   A /branches/ewl/widgets/menu_item_progs.edc
+
+Added ew/menu, ewl/menu/item, and ew/menu/subitem
+------------------------------------------------------------------------
+r252 | avi.thomas | 2007-09-04 16:09:27 -0500 (Tue, 04 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/button.edc
+   M /branches/ewl/widgets/dialog.edc
+   M /branches/ewl/widgets/spacer.edc
+   M /branches/ewl/widgets/spacer_main.edc
+
+Fix ewl/spacer so we get proper image instead of red line
+------------------------------------------------------------------------
+r250 | avi.thomas | 2007-09-03 17:01:44 -0500 (Mon, 03 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/widgets/button.edc
+   M /branches/ewl/widgets/check_main.edc
+   M /branches/ewl/widgets/check_programs.edc
+   M /branches/ewl/widgets/radio_main.edc
+   M /branches/ewl/widgets/radio_programs.edc
+
+Move the focus parts and programs to ewl/button/other where they should be
+------------------------------------------------------------------------
+r247 | avi.thomas | 2007-09-02 23:42:36 -0500 (Sun, 02 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/button.edc
+   M /branches/ewl/widgets/button_main.edc
+
+Fix issue in Ephoto with images in button overlapping edges
+------------------------------------------------------------------------
+r246 | avi.thomas | 2007-09-02 23:38:33 -0500 (Sun, 02 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/button_main.edc
+
+Add vertical and horizontal separators
+------------------------------------------------------------------------
+r245 | avi.thomas | 2007-09-02 23:36:41 -0500 (Sun, 02 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/separator.edc
+
+Add vertical and horizontal separators
+------------------------------------------------------------------------
+r244 | avi.thomas | 2007-09-02 22:55:41 -0500 (Sun, 02 Sep 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/scrollbar_h_progs.edc
+   M /branches/ewl/widgets/scrollbar_v_progs.edc
+
+Added missing transitions in scrollbar_*_progs to be in line with etk and e17
+------------------------------------------------------------------------
+r218 | UnixTitan | 2007-06-29 18:47:54 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/widgets/scrollbar.edc
+   A /branches/ewl/widgets/scrollbar_h_progs.edc
+   D /branches/ewl/widgets/scrollbar_hbutton_progs.edc
+   M /branches/ewl/widgets/scrollbar_hdecrement.edc
+   M /branches/ewl/widgets/scrollbar_hincrement.edc
+   A /branches/ewl/widgets/scrollbar_v_progs.edc
+   D /branches/ewl/widgets/scrollbar_vbutton_progs.edc
+   M /branches/ewl/widgets/scrollbar_vdecrement.edc
+   M /branches/ewl/widgets/scrollbar_vincrement.edc
+
+More fixes/renames. I am done.
+
+------------------------------------------------------------------------
+r217 | UnixTitan | 2007-06-29 18:27:59 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/scrollbar.edc
+   A /branches/ewl/widgets/scrollbar_hbutton.edc
+   A /branches/ewl/widgets/scrollbar_hbutton_progs.edc
+   A /branches/ewl/widgets/scrollbar_vbutton.edc
+   A /branches/ewl/widgets/scrollbar_vbutton_progs.edc
+
+Almost complete!
+
+------------------------------------------------------------------------
+r216 | UnixTitan | 2007-06-29 17:50:27 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/scrollbar.edc
+   M /branches/ewl/widgets/scrollbar_hdecrement.edc
+   M /branches/ewl/widgets/scrollbar_hincrement.edc
+   M /branches/ewl/widgets/scrollbar_vdecrement.edc
+   A /branches/ewl/widgets/scrollbar_vincrement.edc
+
+More scrollbar work
+
+------------------------------------------------------------------------
+r215 | boykot.tokyo | 2007-06-29 17:26:10 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/Makefile
+   D /branches/ewl/images.edc
+
+Duplicate file be gone.
+
+------------------------------------------------------------------------
+r214 | UnixTitan | 2007-06-29 17:18:15 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/scrollbar.edc
+   A /branches/ewl/widgets/scrollbar_hdecrement.edc
+   A /branches/ewl/widgets/scrollbar_hincrement.edc
+   M /branches/ewl/widgets/scrollbar_hrunner.edc
+   A /branches/ewl/widgets/scrollbar_vdecrement.edc
+   M /branches/ewl/widgets/scrollpane.edc
+   M /branches/ewl/widgets/tree.edc
+
+More work on scrollbars. Fix the scrollpane and tree.
+
+------------------------------------------------------------------------
+r213 | UnixTitan | 2007-06-29 16:41:48 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/widgets/scrollbar_hrunner.edc
+   M /branches/ewl/widgets/scrollbar_vrunner.edc
+
+Fixes
+
+------------------------------------------------------------------------
+r211 | UnixTitan | 2007-06-29 16:07:50 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/Makefile
+   M /branches/ewl/images/images.edc
+   D /branches/ewl/images/sb_hdrag.png
+   D /branches/ewl/images/sb_runnerh.png
+   D /branches/ewl/images/sb_runnerh_left.png
+   D /branches/ewl/images/sb_runnerh_right.png
+   D /branches/ewl/images/sb_runnerv.png
+   D /branches/ewl/images/sb_runnerv_bot.png
+   D /branches/ewl/images/sb_runnerv_top.png
+   D /branches/ewl/images/sb_vdrag.png
+   D /branches/ewl/images/sf_barh1.png
+   D /branches/ewl/images/sf_barh_thumb.png
+   D /branches/ewl/images/sf_barv1.png
+   D /branches/ewl/images/sf_barv_thumb.png
+   D /branches/ewl/images/sf_bl1.png
+   D /branches/ewl/images/sf_bl1_over.png
+   D /branches/ewl/images/sf_br1.png
+   D /branches/ewl/images/sf_br1_over.png
+   D /branches/ewl/images/sf_btd1.png
+   D /branches/ewl/images/sf_btd1_over.png
+   D /branches/ewl/images/sf_btu1.png
+   D /branches/ewl/images/sf_btu1_over.png
+   D /branches/ewl/images/sf_hb_runner.png
+   D /branches/ewl/images/sf_vb_runner.png
+   M /branches/ewl/main.edc
+   A /branches/ewl/widgets/scrollbar.edc
+   A /branches/ewl/widgets/scrollbar_hrunner.edc
+   A /branches/ewl/widgets/scrollbar_vrunner.edc
+
+Start work on scrollbars, remove annoying junk.
+
+------------------------------------------------------------------------
+r210 | boykot.tokyo | 2007-06-29 15:05:34 -0500 (Fri, 29 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/widgets/button_programs.edc
+
+No need for a transition/delay.
+
+------------------------------------------------------------------------
+r207 | boykot.tokyo | 2007-06-29 12:19:33 -0500 (Fri, 29 Jun 2007) | 3 lines
+Changed paths:
+   M /branches/ewl/TODO
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/notebook_page.edc
+   A /branches/ewl/widgets/scrollpane.edc
+   A /branches/ewl/widgets/scrollpane_bg.edc
+   A /branches/ewl/widgets/seeker.edc
+   A /branches/ewl/widgets/seeker_horiz_button.edc
+   A /branches/ewl/widgets/seeker_htrough.edc
+   A /branches/ewl/widgets/seeker_vertical_button.edc
+   A /branches/ewl/widgets/seeker_vtrough.edc
+
+Seeker widget is in, albeit not perfect. Needs fixing.
+
+
+------------------------------------------------------------------------
+r206 | boykot.tokyo | 2007-06-28 10:23:08 -0500 (Thu, 28 Jun 2007) | 2 lines
+Changed paths:
+   M /branches/ewl/README
+   M /branches/ewl/main.edc
+   D /branches/ewl/svn-commit.tmp
+
+.
+
+------------------------------------------------------------------------
+r205 | boykot.tokyo | 2007-06-28 10:19:15 -0500 (Thu, 28 Jun 2007) | 1 line
+Changed paths:
+   A /branches/ewl
+   A /branches/ewl/AUTHORS
+   A /branches/ewl/COPYING
+   A /branches/ewl/INSTALL
+   A /branches/ewl/Makefile
+   A /branches/ewl/README
+   A /branches/ewl/TODO
+   A /branches/ewl/Vera.COPYING
+   A /branches/ewl/fonts
+   A /branches/ewl/fonts/Vera.ttf
+   A /branches/ewl/fonts/VeraBI.ttf
+   A /branches/ewl/fonts/VeraBd.ttf
+   A /branches/ewl/fonts/VeraIt.ttf
+   A /branches/ewl/fonts/VeraMoBI.ttf
+   A /branches/ewl/fonts/VeraMoBd.ttf
+   A /branches/ewl/fonts/VeraMoIt.ttf
+   A /branches/ewl/fonts/VeraMono.ttf
+   A /branches/ewl/fonts/bitstream.COPYING
+   A /branches/ewl/images
+   A /branches/ewl/images/arrow_dark.png
+   A /branches/ewl/images/arrow_dark_down.png
+   A /branches/ewl/images/arrow_light.png
+   A /branches/ewl/images/button.png
+   A /branches/ewl/images/button_clicked.png
+   A /branches/ewl/images/button_detail_down.png
+   A /branches/ewl/images/button_detail_up.png
+   A /branches/ewl/images/button_disabled.png
+   A /branches/ewl/images/button_focus.png
+   A /branches/ewl/images/button_focus_bottom.png
+   A /branches/ewl/images/button_focus_top.png
+   A /branches/ewl/images/button_on.png
+   A /branches/ewl/images/button_on_disabled.png
+   A /branches/ewl/images/button_outline.png
+   A /branches/ewl/images/check0.png
+   A /branches/ewl/images/check1.png
+   A /branches/ewl/images/check2.png
+   A /branches/ewl/images/combo_arrow.png
+   A /branches/ewl/images/combo_arrow2.png
+   A /branches/ewl/images/combo_arrows.png
+   A /branches/ewl/images/combobox_button.png
+   A /branches/ewl/images/combobox_button_clicked.png
+   A /branches/ewl/images/combobox_button_disabled.png
+   A /branches/ewl/images/combobox_focus.png
+   A /branches/ewl/images/cp_box.png
+   A /branches/ewl/images/cp_slider_drag.png
+   A /branches/ewl/images/cp_slider_trough.png
+   A /branches/ewl/images/cp_slider_trough_left.png
+   A /branches/ewl/images/cp_slider_trough_right.png
+   A /branches/ewl/images/dialog_bg.png
+   A /branches/ewl/images/dialog_separator.png
+   A /branches/ewl/images/drag_default.png
+   A /branches/ewl/images/entry.png
+   A /branches/ewl/images/entry_focus.png
+   A /branches/ewl/images/frame_outline.png
+   A /branches/ewl/images/hseparator.png
+   A /branches/ewl/images/iconbox_bg.png
+   A /branches/ewl/images/iconbox_focus.png
+   A /branches/ewl/images/iconbox_label_bg.png
+   A /branches/ewl/images/iconbox_over.png
+   A /branches/ewl/images/iconbox_rubberband.png
+   A /branches/ewl/images/images.edc
+   A /branches/ewl/images/menu_bg.png
+   A /branches/ewl/images/menu_item_arrow_dark.png
+   A /branches/ewl/images/menu_item_arrow_light.png
+   A /branches/ewl/images/menu_item_select.png
+   A /branches/ewl/images/menu_select.png
+   A /branches/ewl/images/menu_separator.png
+   A /branches/ewl/images/notebook_frame.png
+   A /branches/ewl/images/notebook_tab.png
+   A /branches/ewl/images/notebook_tab2.png
+   A /branches/ewl/images/notebook_tab_hint.png
+   A /branches/ewl/images/notebook_tab_shadow.png
+   A /branches/ewl/images/paned_h_handle.png
+   A /branches/ewl/images/paned_v_handle.png
+   A /branches/ewl/images/progress_bar_fill_0.png
+   A /branches/ewl/images/progress_bar_left.png
+   A /branches/ewl/images/progress_bar_right.png
+   A /branches/ewl/images/progress_trough.png
+   A /branches/ewl/images/radio0.png
+   A /branches/ewl/images/radio1.png
+   A /branches/ewl/images/radio2.png
+   A /branches/ewl/images/sb_hdrag.png
+   A /branches/ewl/images/sb_runnerh.png
+   A /branches/ewl/images/sb_runnerh_left.png
+   A /branches/ewl/images/sb_runnerh_right.png
+   A /branches/ewl/images/sb_runnerv.png
+   A /branches/ewl/images/sb_runnerv_bot.png
+   A /branches/ewl/images/sb_runnerv_top.png
+   A /branches/ewl/images/sb_vdrag.png
+   A /branches/ewl/images/scrollbar_h_arrow_left.png
+   A /branches/ewl/images/scrollbar_h_arrow_right.png
+   A /branches/ewl/images/scrollbar_h_bar.png
+   A /branches/ewl/images/scrollbar_h_thumb.png
+   A /branches/ewl/images/scrollbar_h_trough.png
+   A /branches/ewl/images/scrollbar_h_trough_left.png
+   A /branches/ewl/images/scrollbar_h_trough_right.png
+   A /branches/ewl/images/scrollbar_v_arrow_down.png
+   A /branches/ewl/images/scrollbar_v_arrow_up.png
+   A /branches/ewl/images/scrollbar_v_bar.png
+   A /branches/ewl/images/scrollbar_v_thumb.png
+   A /branches/ewl/images/scrollbar_v_trough.png
+   A /branches/ewl/images/scrollbar_v_trough_down.png
+   A /branches/ewl/images/scrollbar_v_trough_up.png
+   A /branches/ewl/images/scrollframe_bg.png
+   A /branches/ewl/images/scrollframe_focus.png
+   A /branches/ewl/images/scrollframe_inset.png
+   A /branches/ewl/images/separator.png
+   A /branches/ewl/images/separator_h.png
+   A /branches/ewl/images/separator_v.png
+   A /branches/ewl/images/sf_barh1.png
+   A /branches/ewl/images/sf_barh_thumb.png
+   A /branches/ewl/images/sf_barv1.png
+   A /branches/ewl/images/sf_barv_thumb.png
+   A /branches/ewl/images/sf_bl1.png
+   A /branches/ewl/images/sf_bl1_over.png
+   A /branches/ewl/images/sf_br1.png
+   A /branches/ewl/images/sf_br1_over.png
+   A /branches/ewl/images/sf_btd1.png
+   A /branches/ewl/images/sf_btd1_over.png
+   A /branches/ewl/images/sf_btu1.png
+   A /branches/ewl/images/sf_btu1_over.png
+   A /branches/ewl/images/sf_hb_runner.png
+   A /branches/ewl/images/sf_vb_runner.png
+   A /branches/ewl/images/shadow.png
+   A /branches/ewl/images/slider_focus.png
+   A /branches/ewl/images/slider_h_btn_disabled.png
+   A /branches/ewl/images/slider_h_btn_down.png
+   A /branches/ewl/images/slider_h_btn_up.png
+   A /branches/ewl/images/slider_h_disabled.png
+   A /branches/ewl/images/slider_h_left_disabled.png
+   A /branches/ewl/images/slider_h_right_disabled.png
+   A /branches/ewl/images/slider_h_trough.png
+   A /branches/ewl/images/slider_h_trough_left.png
+   A /branches/ewl/images/slider_h_trough_right.png
+   A /branches/ewl/images/slider_label_bg.png
+   A /branches/ewl/images/slider_v_bot_disabled.png
+   A /branches/ewl/images/slider_v_btn_disabled.png
+   A /branches/ewl/images/slider_v_btn_down.png
+   A /branches/ewl/images/slider_v_btn_up.png
+   A /branches/ewl/images/slider_v_disabled.png
+   A /branches/ewl/images/slider_v_top_disabled.png
+   A /branches/ewl/images/slider_v_trough.png
+   A /branches/ewl/images/slider_v_trough_down.png
+   A /branches/ewl/images/slider_v_trough_up.png
+   A /branches/ewl/images/spinner_base.png
+   A /branches/ewl/images/spinner_down.png
+   A /branches/ewl/images/spinner_up.png
+   A /branches/ewl/images/status_bar.png
+   A /branches/ewl/images/status_resize.png
+   A /branches/ewl/images/tree_arrow1.png
+   A /branches/ewl/images/tree_arrow2.png
+   A /branches/ewl/images/tree_bg.png
+   A /branches/ewl/images/tree_focus.png
+   A /branches/ewl/images/tree_header_first.png
+   A /branches/ewl/images/tree_header_first2.png
+   A /branches/ewl/images/tree_header_last.png
+   A /branches/ewl/images/tree_header_last2.png
+   A /branches/ewl/images/tree_header_middle.png
+   A /branches/ewl/images/tree_header_middle2.png
+   A /branches/ewl/images/tree_header_over.png
+   A /branches/ewl/images/tree_header_unique.png
+   A /branches/ewl/images/tree_header_unique2.png
+   A /branches/ewl/images/tree_over.png
+   A /branches/ewl/images/vseparator.png
+   A /branches/ewl/images/widget_focus.png
+   A /branches/ewl/images.edc
+   A /branches/ewl/main.edc
+   A /branches/ewl/svn-commit.tmp
+   A /branches/ewl/widgets
+   A /branches/ewl/widgets/border.edc
+   A /branches/ewl/widgets/button.edc
+   A /branches/ewl/widgets/button_main.edc
+   A /branches/ewl/widgets/button_programs.edc
+   A /branches/ewl/widgets/check.edc
+   A /branches/ewl/widgets/check_main.edc
+   A /branches/ewl/widgets/check_programs.edc
+   A /branches/ewl/widgets/dialog.edc
+   A /branches/ewl/widgets/dialog_actionarea.edc
+   A /branches/ewl/widgets/dialog_main.edc
+   A /branches/ewl/widgets/entry.edc
+   A /branches/ewl/widgets/entry_cursor.edc
+   A /branches/ewl/widgets/entry_cursor_programs.edc
+   A /branches/ewl/widgets/entry_main.edc
+   A /branches/ewl/widgets/entry_main_programs.edc
+   A /branches/ewl/widgets/highlight.edc
+   A /branches/ewl/widgets/label.edc
+   A /branches/ewl/widgets/notebook.edc
+   A /branches/ewl/widgets/notebook_bot_tab.edc
+   A /branches/ewl/widgets/notebook_left_tab.edc
+   A /branches/ewl/widgets/notebook_page.edc
+   A /branches/ewl/widgets/notebook_right_tab.edc
+   A /branches/ewl/widgets/notebook_top_tab.edc
+   A /branches/ewl/widgets/radio.edc
+   A /branches/ewl/widgets/radio_main.edc
+   A /branches/ewl/widgets/radio_programs.edc
+   A /branches/ewl/widgets/spacer.edc
+   A /branches/ewl/widgets/spacer_main.edc
+   A /branches/ewl/widgets/tree.edc
+   A /branches/ewl/widgets/tree_bg.edc
+   A /branches/ewl/widgets/tree_expansion.edc
+   A /branches/ewl/widgets/tree_expansion_programs.edc
+   A /branches/ewl/widgets/tree_header.edc
+   A /branches/ewl/widgets/tree_header_button.edc
+   A /branches/ewl/widgets/tree_header_button_programs.edc
+   A /branches/ewl/widgets/tree_header_normal.edc
+   A /branches/ewl/widgets/tree_header_normal_programs.edc
+   A /branches/ewl/widgets/window.edc
+
+Need to start somewhere
+------------------------------------------------------------------------
