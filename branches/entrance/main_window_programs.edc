@@ -9,60 +9,6 @@ program {
 	}
 }
 
-/*
-program {
-	name: "power_button_down";
-	signal: "mouse,down,1";
-	source: "power_button";
-	action: STATE_SET "clicked" 0.0;
-	transition: LINEAR 0.0;
-	target: "power_button";
-}
-
-program {
-	name: "power_button_up";
-	signal: "mouse,up,1";
-	source: "power_button";
-	action: STATE_SET "default" 0.0;
-	transition: LINEAR 0.0;
-	target: "power_button";
-}
-
-program {
-	name: "power_button_clicked";
-	signal: "mouse,clicked,1";
-	source: "power_button";
-	action: SIGNAL_EMIT "entrance,system,halt" "";
-	in: 4.0 0.0;
-}	 
-	 
-program {
-	name: "reset_button_down";
-	signal: "mouse,down,1";
-	source: "reset_button";
-	action: STATE_SET "clicked" 0.0;
-	transition: LINEAR 0.0;
-	target: "reset_button";
-}
-
-program {
-	name: "reset_button_up";
-	signal: "mouse,up,1";
-	source: "reset_button";
-	action: STATE_SET "default" 0.0;
-	transition: LINEAR 0.0;
-	target: "reset_button";
-}
-
-program {
-	name: "reset_button_clicked";
-	signal: "mouse,clicked,1";
-	source: "reset_button";
-	action: SIGNAL_EMIT "entrance,system,reboot" "";
-	in: 4.0 0.0;
-}
-*/	 
-
 program {
 	name: "user_active";
 	signal: "user";
@@ -119,7 +65,6 @@ program {
 	after: "pass.cursor.stop";
 }
 
-/* 
 program {
 	name: "user_ok_1";
 	signal: "entrance,user,success";
@@ -137,7 +82,7 @@ program {
 program {
 	name: "user_ok_3";
 	action: STATE_SET "active" 0.0;
-	target: "user";
+	target: "user_pass_status_icon";
 }
 
 program {
@@ -145,15 +90,15 @@ program {
 	signal: "entrance,user,fail";
 	source: "";
 	action: STATE_SET "wrong" 0.0;
-	target: "user";
+	target: "user_pass_status_icon";
 	after: "user_fail_2";
 }
 
 program {
 	name: "user_fail_2";
 	action: STATE_SET "default" 0.0;
-	transition: SINUSOIDAL 2.0;
-	target: "user";
+	transition: LINEAR 2.0;
+	target: "user_pass_status_icon";
 }
 
 program {
@@ -173,24 +118,23 @@ program {
 program {
 	name: "pass_fail_3";
 	action: STATE_SET "default" 0.0;
-	target: "user";
+	target: "user_pass_status_icon";
 	after: "pass_fail_4";
 }
 
 program {
 	name: "pass_fail_4";
 	action: STATE_SET "wrong" 0.0;
-	target: "password";
+	target: "user_pass_status_icon";
 	after: "pass_fail_5";
 }
 
 program {
 	name: "pass_fail_5";
 	action: STATE_SET "default" 0.0;
-	transition: SINUSOIDAL 2.0;
-	target: "password";
+	transition: LINEAR 2.0;
+	target: "user_pass_status_icon";
 }
-*/
 
 /* when auth is successful */
 
@@ -200,8 +144,8 @@ program {
 	signal: "entrance,user,auth,success";
 	source: "";
 	action: STATE_SET "hidden" 0.0;
-	transition: SINUSOIDAL 1.0;
-	target: "all_clip";
+	transition: LINEAR 0.5;
+	target: "all_clip"; in: 1.0 0.0;
 	after: "on_successful_authentication_2";
 }
 
@@ -251,7 +195,6 @@ program {
 	transition: ACCELERATE 0.5;
 	target: "sessions_clip";
 }
-*/
 
 /* cursor */
 
