@@ -27,6 +27,7 @@ images {
 	image: "busy.cursor.03.png" COMP;
 	image: "preferences-desktop.png" COMP;
 	image: "user-desktop.png" COMP;
+	image: "bg.png" COMP;
 }
 
 collections {
