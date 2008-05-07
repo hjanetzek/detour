@@ -21,7 +21,7 @@ part {
 		}
 
 		image {
-			normal: "default_preview.png";
+			normal: "preview.png";
 		}
 	}
 }
