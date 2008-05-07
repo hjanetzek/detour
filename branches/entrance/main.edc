@@ -1,27 +1,29 @@
 
+/* entrance edje for detour */
+
 fonts {
 	font: "fonts/DejaVuSans.ttf" "Edje-DejaVuSans";
 	font: "fonts/DejaVuSans-Bold.ttf" "Edje-DejaVuSans-Bold";
 }
 
 images {
-image: "entry.png" COMP;
-image: "entry_focus.png" COMP;
-image: "side-panel.png" COMP;
-image: "side-panel_shadow.png" COMP;
-image: "power_button.png" COMP;
-image: "reset_button.png" COMP;
-image: "preview.png" COMP;
-image: "button.png" COMP;
-image: "button_base.png" COMP;
-image: "button_clicked.png" COMP;
-image: "bg.png" COMP;
-image: "main_window.png" COMP;
-image: "logo.png" COMP;
-image: "dot.png" COMP;
-image: "dot-wide.png" COMP;
-image: "instruct_overlay.png" COMP;
-image: "dialog-error.png" COMP;
+	image: "entry.png" COMP;
+	image: "entry_focus.png" COMP;
+	image: "side-panel.png" COMP;
+	image: "side-panel_shadow.png" COMP;
+	image: "power_button.png" COMP;
+	image: "reset_button.png" COMP;
+	image: "preview.png" COMP;
+	image: "button.png" COMP;
+	image: "button_base.png" COMP;
+	image: "button_clicked.png" COMP;
+	image: "bg.png" COMP;
+	image: "main_window.png" COMP;
+	image: "logo.png" COMP;
+	image: "dot.png" COMP;
+	image: "dot-wide.png" COMP;
+	image: "instruct_overlay.png" COMP;
+	image: "dialog-error.png" COMP;
 }
 
 collections {
