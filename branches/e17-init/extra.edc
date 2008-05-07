@@ -12,25 +12,22 @@ part {
  
 part { 
 	name: "background_image";
-	type: GRADIENT;
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		gradient.spectrum: "radial_gradient";
-		gradient.type: "radial";
-		fill.origin.relative: 0.5 0.5;
-	}
-}
 
-part { 
-	name: "over";
-	type: RECT;
-	mouse_events: 0;
+		image {
+			normal: "bg.png";
+		}
 
-	description {
-		state: "default" 0.0;
-		color: 7 7 7 255;
+		fill {
+			size {
+				relative: 0 0;
+				offset: 24 24;
+			}
+	       }
 	}
 }
 
