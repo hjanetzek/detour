@@ -448,13 +448,13 @@ part {
 		rel1 {
 			to: "entrance.entry.user";
 			relative: 1.0 0.5;
-			offset: 0 1;
+			offset: 0 0;
 		}
 
 		rel2 {
 			to: "entrance.entry.user";
 			relative: 1.0 0.5;
-			offset: 4 0;
+			offset: 4 -1;
 		}
 	}
 
@@ -706,16 +706,17 @@ part {
 		min: 22 22;
 		max: 22 22;
 		fixed: 1 1;
+		align: 0.0 1.0;
 		color: 255 255 255 128;
 
-		rel1 {
-			relative: 0.0 1.0;
-			offset: 0 0;
+		rel1 { 
+			relative: 0.0 1.0; 
+			offset: 8 0; 
 		}
 
-		rel2 {
-			relative: 0.0 1.0;
-			offset: 30 -30;
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -8; 
 		}
 
 		image {
