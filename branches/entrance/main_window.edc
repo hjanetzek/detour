@@ -22,6 +22,7 @@ part { \
 	name: NAME; \
 	type: RECT; \
 	mouse_events: 0; \
+	clip_to: "all_clip"; \
 	description { \
 		state: "default" 0.0; \
 		color: 0 0 0 0; \
@@ -215,8 +216,8 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		min: 89 120;
-		max: 89 129;
+		min: 96 126;
+		max: 96 126;
 		align: 0.5 0.0;
 
 		rel1 {
@@ -241,25 +242,26 @@ part {
 	name: "entrance.hostname";
 	type: TEXT;
 	effect: SHADOW;
+	mouse_events: 0;
 	clip_to: "all_clip";
 
 	description {
 		state: "default" 0.0;
-		color: 7 7 7 255;
+		color: 56 56 56 255;
 		color3: 0 0 0 32;
 
 		rel1 {
-			relative: 0.0 1.0;
-			offset: 0 10;
 			to_x: "main_window";
 			to_y: "logo";
+			relative: 0.0 1.0;
+			offset: 0 7;
 		}
 
 		rel2 {
-			relative: 1.0 1.0;
-			offset: -1 10;
 			to_x: "main_window";
 			to_y: "logo";
+			relative: 1.0 1.0;
+			offset: -1 7;
 		}
 
 		text {
@@ -275,12 +277,12 @@ part {
 part {
 	name: "request";
 	type: TEXT;
-	clip_to: "all_clip";
 	mouse_events: 0;
+	clip_to: "all_clip";
 
 	description {
 		state: "default" 0.0;
-		color: 7 7 7 255;
+		color: 56 56 56 255;
     
 		rel1 {
 			to: "entrance.hostname";
@@ -291,105 +293,15 @@ part {
 		rel2 {
 			to: "entrance.hostname";
 			relative: 1.0 1.0;
-			offset: -1 10;
+			offset: -1 6;
 		}
 
 		text {
 			text: "Please enter your Username";
-			font: "DejaVuSans-Bold";
+			font: "DejaVuSans";
 			size: 11;
 			min: 1 1;
 		}
-	}
-}
-
-part {
-	name: "user";
-	type: IMAGE;
-	mouse_events: 1;
-	clip_to: "all_clip";
-
-	description {
-		state: "default" 0.0;
-		min: 22 27;
-		max: 22 27;
-		fixed: 1 1;
-		align: 1.0 1.0;
-		color: 255 255 255 128;
-		visible: 0;
-
-		rel1 {
-			relative: 1.0 1.0;
-			offset: -5 -8;
-			to: "main_window";
-		}
-
-		rel2 {
-			relative: 1.0 1.0;
-			offset: -5 -5;
-			to: "main_window";
-		}
-
-		image {
-			normal: "user_ok.png";
-		}
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
-
-	description {
-		state: "wrong" 0.0;
-		inherit: "default" 0.0;
-		color: 255 48 48 255;
-	}
-}
-
-part {
-	name: "password";
-	type: IMAGE;
-	mouse_events: 1;
-	clip_to: "all_clip";
-
-	description {
-		state: "default" 0.0;
-		min: 22 27;
-		max: 22 27;
-		fixed: 1 1;
-		align: 1.0 1.0;
-		color: 255 255 255 128;
-		visible: 0;
-		
-		rel1 {
-			relative: 0.0 1.0;
-			offset: -6 -1;
-			to: "user";
-		}
-
-		rel2 {
-			relative: 0.0 1.0;
-			offset: -6 0;
-			to: "user";
-		}
-
-		image {
-			normal: "pass_ok.png";
-		}
-	}
-
-	description {
-		state: "active" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
-
-	description {
-		state: "wrong" 0.0;
-		inherit: "default" 0.0;
-		color: 255 48 48 255;
 	}
 }
 
@@ -512,7 +424,7 @@ part {
 
 		text {
 			text: "";
-			font: "DejaVuSans-Bold";
+			font: "DejaVuSans";
 			size: 11;
 			min: 1 0;
 			align: 0.0 0.5;
@@ -528,21 +440,21 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 1 9;
-		max: 1 9;
+		min: 1 11;
+		max: 1 11;
 		fixed: 1 1;
 		color: 0 0 0 0;
 
 		rel1 {
-			relative: 1.0 0.5;
-			offset: 0 0;
 			to: "entrance.entry.user";
+			relative: 1.0 0.5;
+			offset: 0 1;
 		}
 
 		rel2 {
+			to: "entrance.entry.user";
 			relative: 1.0 0.5;
 			offset: 4 0;
-			to: "entrance.entry.user";
 		}
 	}
 
@@ -650,7 +562,8 @@ part {
 part {
 	name: "entrance.entry.pass";
 	type: TEXT;
-	effect: SOFT_OUTLINE;
+	effect: NONE;
+	mouse_events: 0;
 	clip_to: "pass_entry_clip";
 
 	description {
@@ -668,15 +581,15 @@ part {
 
 		rel2 {
 			to: "pass_entry_clip";
-			relative: 0.0  1.0;
-			offset: -5 -2;
+			relative: 0.0 1.0;
+			offset: -5 1;
 		}
 
 		text {
 			text: "";
-			font: "DejaVuSans-Bold";
-			size: 12;
-			min: 1 0;
+			font: "DejaVuSans";
+			size: 11;
+			min: 1 1;
 			align: 0.0 0.5;
 		}
 	}
@@ -690,21 +603,21 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		min: 1 9;
-		max: 1 9;
+		min: 1 11;
+		max: 1 11;
 		fixed: 1 1;
 		color: 0 0 0 0;
 
 		rel1 {
 			to: "entrance.entry.pass";
 			relative: 1.0 0.5;
-			offset: 0 0;
+			offset: 0 -1;
 		}
 
 		rel2 {
 			to: "entrance.entry.pass";
 			relative: 1.0 0.5;
-			offset: 4 0;
+			offset: 4 -2;
 		}
 	}
 
@@ -719,6 +632,7 @@ part {
 	name: "entrance.date";
 	type: TEXT;
 	effect: SHADOW;
+	clip_to: "all_clip";
 
 	description {
 		state: "default" 0.0;
@@ -739,7 +653,7 @@ part {
 
 		text {
 			text: "";
-			font: "DejaVuSans-Bold";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			align: 0.5 0.5;
 			min: 1 1;
@@ -752,6 +666,7 @@ part {
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
+	clip_to: "all_clip";
 
 	description {
 		state: "default" 0.0;
@@ -772,11 +687,52 @@ part {
 
 		text {
 			text: "";
-			font: "DejaVuSans-Bold";
-			size: 12;
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 11;
 			align: 0.5 0.5;
 			min: 1 1;
 		}
+	}
+}
+
+part {
+	name: "user_pass_status_icon";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "all_clip";
+
+	description {
+		state: "default" 0.0;
+		min: 22 22;
+		max: 22 22;
+		fixed: 1 1;
+		color: 255 255 255 128;
+
+		rel1 {
+			relative: 0.0 1.0;
+			offset: 0 0;
+		}
+
+		rel2 {
+			relative: 0.0 1.0;
+			offset: 30 -30;
+		}
+
+		image {
+			normal: "dialog-error.png";
+		}
+	}
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+
+	description {
+		state: "wrong" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
 	}
 }
 
