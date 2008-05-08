@@ -316,7 +316,7 @@ group {
             color: 7 7 7 255;
             text {
                text: "Entry";
-               font: "Vera";
+               font: "DejaVuSans";
                size: 10;
                min: 1 1;
                align: 0.0 0.5;
