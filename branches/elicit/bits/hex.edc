@@ -9,8 +9,17 @@ part {
 		min: 60 20;
 		max: 9999 20;
 
-	r1 { to: "grid.rect"; relative, 1.0 0.0; offset: -2 3; }
-	r2 { to: "entry"; relative, 0.0 1.0; offset: 0 -1; }
+		rel1 { 
+			to: "grid.rect"; 
+			relative: 1.0 0.0; 
+			offset: -2 3; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 0.0 1.0; 
+			offset: 0 -1; 
+		}
 
 		image {
 			normal, "entry.png";
@@ -26,11 +35,19 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 255;
 
-	r1 { to: "hex_entry"; relative, 0.0 0.0; offset, 4 5; }
-	r2 { to: "hex_entry"; relative, 1.0 1.0; offset, -5 -5; }
+		rel1 { 
+			to: "hex_entry"; 
+			relative: 0.0 0.0; 
+			offset: 4 5; 
+		}
 
-	color: 255 255 255 255;
+		rel2 { 
+			to: "hex_entry"; 
+			relative: 1.0 1.0; 
+			offset: -5 -5; 
+		}
 	}
 }
 
@@ -40,16 +57,24 @@ part {
 	clip_to: "hex-val_rect";
 
 	description {
-		state, "default" 0.0;
+		state: "default" 0.0;
+		color: 60 60 60 255;
 
-	r1 { to: "hex-val_rect"; relative, 0.0 0.0; offset, 0 0; }
-	r2 { to: "hex-val_rect"; relative, 1.0 1.0; offset, 0 0; }
+		rel1 { 
+			to: "hex-val_rect"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 
-	color: 60 60 60 255;
+		rel2 { 
+			to: "hex-val_rect"; 
+			relative: 1.0 1.0; 
+			offset: 0 0; 
+		}
 
 		text {
 			text: "#000000";
-			font: "Edje-Vera";
+			font: "DejaVuSans";
 			size: 11;
 			fit: 0 0;
 			min: 0 0;
@@ -58,8 +83,9 @@ part {
     	}
 
 	description {
-		state, "fade" 0.0;
+		state: "fade" 0.0;
 		inherit: "default" 0.0;
 		color: 60 60 60 32;
 	}
 }
+

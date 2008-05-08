@@ -6,8 +6,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "body.rect"; relative, 0.0 0.0; offset: 0 0; }
-	r2 { to: "body.rect"; relative, 0.5 1.0; offset: -48 -1; }
+		rel1 { 
+			to: "body.rect"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "body.rect"; 
+			relative: 0.5 1.0; 
+			offset: -48 -1; 
+		}
 
 		image {
 		       normal: "scrollframe_bg.png";
@@ -27,69 +36,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "swatch.overlay"; offset: 1 2; }
-	r2 { to: "swatch.overlay"; offset: -2 -3; }
-	}
-}
+		rel1 { 
+			to: "swatch.overlay"; 
+			offset: 1 2; 
+		}
 
-/*
-part {
-	name: "swatch.wipe.clip.container";
-	type: RECT;
-
-	description {
-		state, "default" 0.0;
-
-	r1 { to: "swatch.bg"; offset: 1 1; }
-	r2 { to: "swatch.bg"; offset: -2 -2; }
-
-	color: 255 255 255 255;
-	}
-}
-
-part {
-	name: "swatch.wipe.clip";
-	type: RECT;
-	mouse_events: 0;
-	clip_to: "swatch.wipe.clip.container";
-
-	description {
-	    state: "default" 0.0;
-
-	r1 { to: "swatch.overlay"; relative: 0.0 0.0; offset: 0 -31; }
-	r2 { to: "swatch.overlay"; relative: 1.0 1.0; offset: -1 -1; }
-	}
-
-	description {
-		state: "wipe" 0.0;
-		inherit: "default" 0.0;
-
-	r1 { to: "swatch.overlay"; relative: 0.0 1.0; offset: 0 0; }
-	r2 { to: "swatch.overlay"; relative: 1.0 1.0; offset: -1 31; }
-	}
-}
-
-part {
-	name: "swatch.swipe_gap";
-	type: IMAGE;
-	mouse_events: 0;
-	clip_to: "swatch.wipe.clip";
-
-	description {
-		state: "default" 0.0;
-		min: 192 8;
-		max: 99999 8;
-		fixed: 1 1;
-
-	r1 { to: "swatch.wipe.clip"; relative: 0.0 0.0; offset: 0 32; }
-	r2 { to: "swatch.wipe.clip"; relative: 1.0 0.0; offset: -1 -1; }
-
-		image {
-			normal: "vswipe.png";
+		rel2 { 
+			to: "swatch.overlay"; 
+			offset: -2 -3; 
 		}
 	}
 }
-*/
 
 part {
 	name: "swatch.overlay";
@@ -99,24 +56,33 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "swatch.bg"; relative: 0.0 0.0; offset: 0 0;}
-	r2 { to: "swatch.bg"; relative: 1.0 1.0; offset: -1 -1;}
+		rel1 { 
+			to: "swatch.bg"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
 
-	image {
-		normal: "scrollframe_inset.png";
-		border: 5 5 5 6;
+		rel2 { 
+			to: "swatch.bg"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image {
+			normal: "scrollframe_inset.png";
+			border: 5 5 5 6;
+		}
 	}
-    }
 
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
 
-	image {
-		normal: "scrollframe_focus.png";
-		border: 5 5 5 6;
+		image {
+			normal: "scrollframe_focus.png";
+			border: 5 5 5 6;
+		}
 	}
-    }
 }
 
 part {
@@ -130,13 +96,22 @@ part {
 		max: 19 19;
 		fixed: 1 1;
 
-	r1 { to: "swatch.overlay"; relative, 0.5 0.5; offset, 0 0; }
-	r2 { to: "swatch.overlay"; relative, 0.5 0.5; offset, 0 0; }
+		rel1 { 
+			to: "swatch.overlay"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
 
-	image {
-		normal: "picker.png";
+		rel2 { 
+			to: "swatch.overlay"; 
+			relative: 0.5 0.5; 
+			offset: 0 0; 
+		}
+
+		image {
+			normal: "picker.png";
+		}
 	}
-    }
 
 	description {
 		state: "clicked" 0.0;

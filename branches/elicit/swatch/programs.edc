@@ -13,9 +13,9 @@ PRG("out", "mouse,out", "default", "border")
 PRG("down", "mouse,downn,1", "down", "border")
 
 program {
+	name: "load";
 	signal: "mouse,clicked,1";
 	source: "grabber";
-	name: "load";
 	action: SIGNAL_EMIT "elicit,swatch,load" "";
 }
 
@@ -25,3 +25,4 @@ program {
 	source: "grabber";
 	action: SIGNAL_EMIT "elicit,swatch,del" "";
 }
+

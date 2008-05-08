@@ -1,16 +1,16 @@
 
 program {
-	name, "capture-on";
-        signal, "mouse,down,1";
-        source, "target";
-        action, SIGNAL_EMIT "elicit,shoot,start" "";
+	name: "capture-on";
+        signal: "mouse,down,1";
+        source: "target";
+        action: SIGNAL_EMIT "elicit,shoot,start" "";
 }
 
 program {
-	name, "capture-off";
-        signal, "mouse,up,1";
-        source, "target";
-        action, SIGNAL_EMIT "elicit,shoot,stop" "";;
+	name: "capture-off";
+        signal: "mouse,up,1";
+        source: "target";
+        action: SIGNAL_EMIT "elicit,shoot,stop" "";;
 }
 
 program {

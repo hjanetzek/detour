@@ -10,13 +10,13 @@ part {
 		max: 50 20;
 		color: 255 0 0 0;
 
-		r1 { 
+		rel1 { 
 			to: "shot.bg"; 
 			relative: 0.0 1.0; 
 			offset: 50 27; 
 		}
 
-		r2 { 
+		rel2 { 
 			to: "shot.bg"; 
 			relative: 0.0 1.0; 
 			offset: -1 -1; 
@@ -35,13 +35,13 @@ part {
 		max: 20 18;
 		fixed: 1 1;
 
-		r1 { 
+		rel1 { 
 			to: "grid.rect"; 
 			relative: 0.0 0.0; 
 			offset: 24 4; 
 		}
 
-		r2 { 
+		rel2 { 
 			to: "grid.rect"; 
 			relative: 0.0 1.0; 
 			offset: -1 -1; 
@@ -121,13 +121,13 @@ part {
 		max: 20 18;
 		fixed: 1 1;
 
-		r1 { 
+		rel1 { 
 			to: "grid.rect"; 
 			relative: 0.0 0.0; 
 			offset: 24 4; 
 		}
 
-		r2 { 
+		rel2 { 
 			to: "grid.rect"; 
 			relative: 0.0 1.0; 
 			offset: -1 -1; 
@@ -172,15 +172,23 @@ part {
 		state: "default" 0.0;
 		min: 47 12;
 		max: 47 12;
+		color, 60 60 60 255;
 
-	r1 { to: "grid.check.button"; relative, 1.0 0.0; offset: 28 4; }
-	r2 { to: "grid.check.button"; relative, 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "grid.check.button"; 
+			relative: 1.0 0.0; 
+			offset: 28 4; 
+		}
 
-	color, 60 60 60 255;
+		rel2 { 
+			to: "grid.check.button"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		text {
 			text: "Grid";
-			font: "Edje-VeraBd";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 10;
 		}
 	}
@@ -194,13 +202,13 @@ part {
 		state: "default" 0.0;
 		color: 0 0 0 0;
 
-		r1 { 
+		rel1 { 
 			to: "grid.rect"; 
 			relative: 0.0 0.0; 
 			offset: 24 4; 
 		}
 
-		r2 { 
+		rel2 { 
 			to: "grid.rect"; 
 			relative: 0.0 1.0; 
 			offset: -1 -1; 
@@ -213,3 +221,4 @@ part {
 		visible: 0;
 	}
 }
+

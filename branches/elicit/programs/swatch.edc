@@ -1,31 +1,31 @@
 
 program {
-	name, "color-on";
-        signal, "mouse,down,1";
-        source, "picker";
-        action, SIGNAL_EMIT "elicit,pick,start" "";
+	name: "color-on";
+        signal: "mouse,down,1";
+        source: "picker";
+        action: SIGNAL_EMIT "elicit,pick,start" "";
 }
 
 program {
-	name, "color-off";
-        signal, "mouse,up,1";
-        source, "picker";
-        action, SIGNAL_EMIT "elicit,pick,stop" "";
+	name: "color-off";
+        signal: "mouse,up,1";
+        source: "picker";
+        action: SIGNAL_EMIT "elicit,pick,stop" "";
 }
 
 program {
-	name, "inactive2"; 
-	signal, "elicit,pick,start"; 
-	source, "";
+	name: "inactive2"; 
+	signal: "elicit,pick,start"; 
+	source: "";
 	action: STATE_SET "clicked" 0.0;
 	transition: DECELERATE 0.5;
 	target: "picker";
 }
 
 program {
-	name, "active2"; 
-	signal, "elicit,pick,stop"; 
-	source, "";
+	name: "active2"; 
+	signal: "elicit,pick,stop"; 
+	source: "";
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
 	target: "picker";
@@ -39,3 +39,4 @@ program {
 	target: "swatch.overlay";
 	after: "set.swatch.focus";
 }
+
