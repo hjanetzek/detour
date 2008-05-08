@@ -10,5 +10,7 @@
 
 
 == Compile ==
-Improve edje_decc: directory structure
+Not everyone uses /usr/local/share/entrance/
+Correct INSTALL permissions
+Add "make uninstall"
 
