@@ -1,5 +1,12 @@
 
-/* entrance edje for detour */
+//Set the current version
+#define VERSION_STRING 0.0.1
+
+/* 
+ * cored.org
+ * detour version 0.0.1 (entrance) for Entrance.
+ */
+
 
 fonts {
 	font: "fonts/DejaVuSans.ttf" "Edje-DejaVuSans";
@@ -7,23 +14,7 @@ fonts {
 }
 
 images {
-	image: "entry.png" COMP;
-	image: "entry_focus.png" COMP;
-	image: "side-panel.png" COMP;
-	image: "side-panel_shadow.png" COMP;
-	image: "power_button.png" COMP;
-	image: "reset_button.png" COMP;
-	image: "preview.png" COMP;
-	image: "button.png" COMP;
-	image: "button_base.png" COMP;
-	image: "button_clicked.png" COMP;
-	image: "bg.png" COMP;
-	image: "main_window.png" COMP;
-	image: "logo.png" COMP;
-	image: "dot.png" COMP;
-	image: "dot-wide.png" COMP;
-	image: "instruct_overlay.png" COMP;
-	image: "dialog-error.png" COMP;
+	#include "images/images.edc"
 }
 
 collections {
@@ -31,7 +22,7 @@ collections {
 		name: "Background";
 
 		parts {
-			#include "background.edc"
+			#include "bits/background.edc"
 		}
 	}
 
@@ -68,13 +59,13 @@ collections {
 		}
 
 		parts {
-			#include "main_window.edc"
-			#include "instructables.edc"
+			#include "bits/main_window.edc"
+			#include "bits/instructables.edc"
 		}
 
 		programs {
-			#include "main_window_programs.edc"
-			#include "instructables_programs.edc"
+			#include "bits/main_window_programs.edc"
+			#include "bits/instructables_programs.edc"
 		}
 	}
 
@@ -97,7 +88,7 @@ collections {
 		max: 320 240; 
 
 		parts {
-			#include "preview.edc"
+			#include "bits/preview.edc"
 		}
 
 		programs {
