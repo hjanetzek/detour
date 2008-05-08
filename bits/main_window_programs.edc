@@ -1,0 +1,257 @@
+
+program {
+	name: "init";
+	signal: "load";
+	source: "";
+	script {
+		clock_cb(0);
+		set_int(sessions_visible, 0);
+	}
+}
+
+program {
+	name: "user_active";
+	signal: "user";
+	source: "on";
+	action: STATE_SET "active" 0.0;
+	target: "user_entry";
+	target: "user_entry_cursor";
+	after: "user.cursor.blink";
+}
+
+program {
+	name: "user_active2";
+	signal: "user";
+	source: "on";
+	action: STATE_SET "default" 0.0;
+	target: "request";
+}
+
+program {
+	name: "user_inactive";
+	signal: "user";
+	source: "off";
+	action: STATE_SET "default" 0.0;
+	target: "user_entry";
+	target: "user_entry_cursor";
+	after: "user.cursor.stop";
+}
+
+program {
+	name: "pass_active";
+	signal: "pass";
+	source: "on";
+	action: STATE_SET "active" 0.0;
+	target: "pass_entry";
+	target: "pass_entry_cursor";
+	after: "pass.cursor.blink";
+}
+
+program {
+	name: "pass_active2";
+	signal: "pass";
+	source: "on";
+	action: STATE_SET "enter_pass" 0.0;
+	target: "request";
+}
+
+program {
+	name: "pass_inactive";
+	signal: "pass";
+	source: "off";
+	action: STATE_SET "default" 0.0;
+	target: "pass_entry";
+	target: "pass_entry_cursor";
+	after: "pass.cursor.stop";
+}
+
+program {
+	name: "user_ok_1";
+	signal: "entrance,user,success";
+	source: "";
+	action: SIGNAL_EMIT "user" "off";
+	after: "user_ok_2";
+	after: "user_ok_3";
+}
+
+program {
+	name: "user_ok_2";
+	action: SIGNAL_EMIT "pass" "on";
+}
+
+program {
+	name: "user_ok_3";
+	action: STATE_SET "active" 0.0;
+	target: "user_pass_status_icon";
+}
+
+program {
+	name: "user_fail_1";
+	signal: "entrance,user,fail";
+	source: "";
+	action: STATE_SET "wrong" 0.0;
+	target: "user_pass_status_icon";
+	after: "user_fail_2";
+}
+
+program {
+	name: "user_fail_2";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 0.75;
+	target: "user_pass_status_icon";
+}
+
+program {
+	name: "pass_fail_1";
+	signal: "entrance,user,auth,fail";
+	source: "";
+	action: SIGNAL_EMIT "pass" "off";
+	after: "pass_fail_2";
+}
+
+program {
+	name: "pass_fail_2";
+	action: SIGNAL_EMIT "user" "on";
+	after: "pass_fail_3";
+}
+
+program {
+	name: "pass_fail_3";
+	action: STATE_SET "default" 0.0;
+	target: "user_pass_status_icon";
+	after: "pass_fail_4";
+}
+
+program {
+	name: "pass_fail_4";
+	action: STATE_SET "wrong" 0.0;
+	target: "user_pass_status_icon";
+	after: "pass_fail_5";
+}
+
+program {
+	name: "pass_fail_5";
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 0.75;
+	target: "user_pass_status_icon";
+}
+
+/*
+program {
+	name: "session_selected";
+	signal: "entrance,xsession,selected";
+	source: "";
+	script {
+		new vis = get_int(sessions_visible);
+		if (vis == 1) {
+			emit("sessions_hide", "");
+			set_int(sessions_visible, 0);
+		}
+
+		else if (vis == 0) {
+			emit("sessions_show", "");
+			set_int(sessions_visible, 1);
+		}
+
+		else {
+			set_int(sessions_visible, 0);
+		}
+	}
+}
+
+program {
+	name: "sessions_show";
+	signal: "sessions_show";
+	source: "";
+	action: STATE_SET "visible" 0.0;
+	transition: DECELERATE 0.5;
+	target: "sessions_clip";
+}
+
+program {
+	name: "sessions_hide";
+	signal: "sessions_hide";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: ACCELERATE 0.5;
+	target: "sessions_clip";
+}
+*/
+
+/* cursor */
+
+program {
+	name: "user.cursor.blink";
+	signal: "";
+	source: "";
+	action: STATE_SET "active" 0.0;
+	transition: LINEAR 0.5;
+	target: "user_entry_cursor";
+	after: "user.cursor.unblink";
+}
+
+program {
+	name: "user.cursor.unblink";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: ACCELERATE 0.25;
+	target: "user_entry_cursor";
+	after: "user.cursor.blink";
+}
+
+program {
+	name: "pass.cursor.blink";
+	signal: "";
+	source: "";
+	action: STATE_SET "active" 0.0;
+	transition: LINEAR 0.5;
+	target: "pass_entry_cursor";
+	after: "pass.cursor.unblink";
+}
+
+program {
+	name: "pass.cursor.unblink";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	transition: ACCELERATE 0.25;
+	target: "pass_entry_cursor";
+	after: "pass.cursor.blink";
+}
+
+program {
+	name: "user.cursor.stop";
+	signal: "";
+	source: "";
+	action: ACTION_STOP;
+	target: "user.cursor.unblink";
+}
+
+program {
+	name: "pass.cursor.stop";
+	signal: "";
+	source: "";
+	action: ACTION_STOP;
+	target: "pass.cursor.unblink";
+}
+
+/* when auth is successful */
+
+program {
+	name: "on_successful_authentication";
+	signal: "entrance,user,auth,success";
+	source: "";
+	action: STATE_SET "hidden" 0.0;
+	target: "all_clip";
+	after: "on_successful_authentication_2";
+}
+
+program {
+	name: "on_successful_authentication_2";
+	signal: "";
+	source: "";
+	action: SIGNAL_EMIT "entrance,user,auth,success,done" "";
+	in: 1.0 0.0;
+}
+
