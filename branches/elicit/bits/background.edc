@@ -10,8 +10,15 @@ part {
 		max: 9999 9999;
 		color: 255 0 0 255;
 
-		r1 { relative, 0.0 0.0; offset, 0 0; }
-		r2 { relative, 1.0 1.0; offset, -1 -1; }
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 	}
 }
 
@@ -23,8 +30,17 @@ part {
 	description {
 		state: "default" 0.0;
 
-	r1 { to: "base"; relative: 0.0 0.0; offset: 0 0; }
-	r2 { to: "base"; relative: 1.0 1.0; offset: -1 -1; }
+		rel1 { 
+			to: "base"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "base"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
 
 		image {
 			normal: "base.png";
@@ -43,7 +59,17 @@ part {
 		min: 192 56;
 		color: 255 0 0 0;
 
-	r1 { to: "grid.rect"; relative, 0.0 1.0; offset, 2 15; }
-	r2 {  to_x: "main_bg"; relative: 1.0 1.0; offset: -5 -30; }
+		rel1 { 
+			to: "grid.rect"; 
+			relative: 0.0 1.0; 
+			offset: 2 15; 
+		}
+
+		rel2 { 
+			to_x: "main_bg"; 
+			relative: 1.0 1.0; 
+			offset: -5 -30; 
+		}
 	}
 }
+
