@@ -49,7 +49,7 @@ uninstall: detour-elicit.edj
 	@echo ""
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
-	@echo $(HOME)/.e/apps/elicit/themes/ directory.
+	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo ""
 
