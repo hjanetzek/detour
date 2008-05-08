@@ -1,27 +1,26 @@
-fonts 	= fonts
-images 	= images
+# Makefile for detour-init
+
 CC 	= edje_cc
+COMPILE = $(CC) $(EDJE_CC_FLAGS)
 SRC	= main.edc
 OUT	= detour-init.edj
-COMPILE = $(CC) $(EDJE_CC_FLAGS)
 
-EDJE_CC_FLAGS  = -fd $(fonts)/ -id $(images)/
+EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
+-id images
 
 .SILENT :
 
-all: clean build install
+all: version clean build install
 
-clean:
-	@echo ""
-	@echo "make clean"
-	if [ -e $(OUT) ]; then rm $(OUT); fi
+verbose: main.edc
+	$(COMPILE) -v $(SRC) -o $(OUT)
 
 build: main.edc
-	@echo "make"
+	@echo "Running make..."
 	$(COMPILE) $(SRC) -o $(OUT)
 
 install: detour-init.edj
-	@echo "make install"
+	@echo "Running make install..."
 	if [ -e $(OUT) ]; then cp $? $(HOME)/.e/e/init/; fi
 	@echo
 	@echo --------------------------------------------------
@@ -30,6 +29,15 @@ install: detour-init.edj
 	@echo --------------------------------------------------
 	@echo
 
+version:
+	@echo ""
+	cat main.edc | head -8 | tail -1
+
+clean:
+	@echo ""
+	@echo "Checking..."
+	if [ -e $(OUT) ]; then rm -rf $(OUT); fi
+
 uninstall: detour-init.edj
 	@echo ""
 	@echo "Removing" $(OUT)
@@ -37,7 +45,7 @@ uninstall: detour-init.edj
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
-	@echo $(HOME)/e/e/init/ directory.
+	@echo $(HOME)/.e/e/init/ directory.
 	@echo --------------------------------------------------
 	@echo
 

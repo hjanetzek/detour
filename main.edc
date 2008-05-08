@@ -1,33 +1,23 @@
+#include "macros/bg.edc"
 
-/* init edje for detour */
+//Set the current version
+#define VERSION_STRING 0.1.1
+
+/* 
+ * cored.org
+ * detour version 0.1.1 (init) for Enlightenment 0.16.999.042 or later
+ */
+
+//Enable custom text classes
+#define ENABLE_TEXT_CLASS 1 
 
 fonts {                            
-font: "fonts/DejaVuSans.ttf" "DejaVuSans";
-font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
-}    
-
-#define ENABLE_TEXT_CLASSES 1
-
-spectra {
-	spectrum { 
-		name: "radial_gradient"; 
-		color: 239 239 239 255 1;
-		color: 139 157 180 255 1; 
-	}
-}                          
+	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
+	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
+} 
 
 images {
-	image: "check0.png" COMP;
-	image: "check1.png" COMP;
-	image: "splash.png" COMP;
-	image: "entry.png" COMP;
-	image: "busy.cursor.00.png" COMP;
-	image: "busy.cursor.01.png" COMP;
-	image: "busy.cursor.02.png" COMP;
-	image: "busy.cursor.03.png" COMP;
-	image: "preferences-desktop.png" COMP;
-	image: "user-desktop.png" COMP;
-	image: "bg.png" COMP;
+	#include "images/images.edc"
 }
 
 collections {
@@ -40,11 +30,12 @@ collections {
 		}
 
 		parts {
-			#include "splash.edc"
+			background()
+			#include "bits/splash.edc"
 		}
 
 		programs {
-			#include "splash_programs.edc"
+			#include "bits/splash_programs.edc"
 		}
 	}
 
@@ -52,7 +43,7 @@ collections {
 		name: "e/init/extra_screen";
 
 		parts {
-			#include "extra.edc"
+			background()
 		}
 	}
 }
