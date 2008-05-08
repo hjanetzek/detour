@@ -1,4 +1,4 @@
-# Makefile for seek
+# Makefile for detour-e17
 
 CC 	= edje_cc
 COMPILE = $(CC) $(EDJE_CC_FLAGS)
@@ -48,7 +48,7 @@ uninstall: detour-e17.edj
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
-	@echo $(HOME)/e/e/themes/ directory.
+	@echo $(HOME)/.e/e/themes/ directory.
 	@echo --------------------------------------------------
 	@echo
 
