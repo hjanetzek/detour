@@ -11,7 +11,7 @@ part {						\
 	}					\
 }						\
 						\
-part { 						\
+part {						\
 	name: "background_image";		\
 	type: IMAGE;				\
 	mouse_events: 0;			\
