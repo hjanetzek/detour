@@ -7,7 +7,6 @@
  * detour version 0.0.1 (entrance) for Entrance.
  */
 
-
 fonts {
 	font: "fonts/DejaVuSans.ttf" "Edje-DejaVuSans";
 	font: "fonts/DejaVuSans-Bold.ttf" "Edje-DejaVuSans-Bold";
