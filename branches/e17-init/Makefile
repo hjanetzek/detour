@@ -1,9 +1,10 @@
 # Makefile for detour-init
 
-CC 	= edje_cc
-COMPILE = $(CC) $(EDJE_CC_FLAGS)
-SRC	= main.edc
-OUT	= detour-init.edj
+CC		= edje_cc
+COMPILE		= $(CC) $(EDJE_CC_FLAGS)
+SRC		= main.edc
+OUT		= detour-init.edj
+PATH_INSTALL    = $(HOME)/.e/e/init
 
 EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
 -id images
@@ -25,7 +26,7 @@ install: detour-init.edj
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was installed in your
-	@echo $(HOME)/.e/e/init/ directory.
+	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo
 
@@ -45,7 +46,7 @@ uninstall: detour-init.edj
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
-	@echo $(HOME)/.e/e/init/ directory.
+	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo
 
