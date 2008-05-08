@@ -1,0 +1,28 @@
+
+part {
+	name: "img";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		min: 320 240;
+		max: 320 240; 
+		visible: 1;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: 2 2;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: -2 -2;
+		}
+
+		image {
+			normal: "preview.png";
+		}
+	}
+}
+
