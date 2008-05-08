@@ -66,7 +66,7 @@ group {
             }
             text {
                text: "Frame Label";
-               font: "Vera-Bold";
+               font: "DejaVuSans-Bold";
                size: 10;
                min: 1 1;
                align: 0.0 0.5;

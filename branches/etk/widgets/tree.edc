@@ -827,7 +827,7 @@ group {
             }
             text {
                text: "Text";
-               font: "Vera-Bold";
+               font: "DejaVuSans-Bold";
                size:  10;
                align: 0.5 0.5;
             }

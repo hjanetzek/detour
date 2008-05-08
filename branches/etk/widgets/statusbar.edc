@@ -73,7 +73,7 @@ group {
             }
             text {
                text: "Message";
-               font: "Vera";
+               font: "DejaVuSans";
                size: 10;
                min: 1 1;
                align: 0.0 0.5;
