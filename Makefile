@@ -1,9 +1,10 @@
 # Makefile for detour-e17
 
-CC 	= edje_cc
-COMPILE = $(CC) $(EDJE_CC_FLAGS)
-SRC	= main.edc
-OUT	= detour-e17.edj
+CC		= edje_cc
+COMPILE		= $(CC) $(EDJE_CC_FLAGS)
+SRC		= main.edc
+OUT		= detour-e17.edj
+PATH_INSTALL    = $(HOME)/.e/e/themes
 
 EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
 -id images \
@@ -28,7 +29,7 @@ install: detour-e17.edj
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was installed in your
-	@echo $(HOME)/.e/e/themes/ directory.
+	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo
 
@@ -44,11 +45,11 @@ clean:
 uninstall: detour-e17.edj
 	@echo ""
 	@echo "Removing" $(OUT)
-	rm $(HOME)/.e/e/themes/$(OUT)
+	rm -rf $(PATH_INSTALL)/$(OUT)
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
-	@echo $(HOME)/.e/e/themes/ directory.
+	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo
 
