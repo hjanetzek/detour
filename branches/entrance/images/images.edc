@@ -21,7 +21,6 @@ image: "logo.png" COMP;
 
 ## decorations
 image: "dot.png" COMP;
-image: "dot-wide-bt.png" COMP;
 
 ## icon
 image: "dialog-error.png" COMP;
