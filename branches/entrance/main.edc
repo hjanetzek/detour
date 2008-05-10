@@ -30,6 +30,7 @@ collections {
 
 		script {
 			public sessions_visible;
+			public panel_visible;
 
 			public clock_cb(val) {
 				new buf[11];
@@ -70,19 +71,20 @@ collections {
 
 	group {
 		name: "Session";
-		min: 110 28;
+		min: 266 136;
+		max: 266 236;
 
 		parts {
-			//#include "session.edc"
+			#include "bits/session.edc"
 		}
 
 		programs {
-			//#include "session_programs.edc"
+			#include "bits/session_programs.edc"
 		}
 	}
 
 	group {
-		name: "Preview";
+		name: "Preview"; /* how does this work ? */
 		min: 320 240;
 		max: 320 240; 
 

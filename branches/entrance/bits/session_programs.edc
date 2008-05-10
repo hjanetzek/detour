@@ -4,8 +4,7 @@ program {
 	signal: "mouse,down,1";
 	source: "event_rect";
 	action: STATE_SET "clicked" 0.0;
-	target: "entrance.xsession.title";
-	target: "button_enabled";
+	target: "sessions-clip";
 }
 
 program {
@@ -13,8 +12,7 @@ program {
 	signal: "mouse,up,1";
 	source: "event_rect";
 	action: STATE_SET "default" 0.0;
-	target: "entrance.xsession.title";
-	target: "button_enabled";
+	target: "sessions-clip";
 }
 
 program {
@@ -23,3 +21,13 @@ program {
 	source: "event_rect";
 	action: SIGNAL_EMIT "entrance,xsession,selected" "";
 }
+
+/*
+program {
+	name: "session_sel4";
+	signal: "mouse,clicked,1";
+	source: "event_rect";
+	action: SIGNAL_EMIT "entrance,xsession,selected" "";
+}
+*/
+

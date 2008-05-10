@@ -6,6 +6,29 @@ program {
 	script {
 		clock_cb(0);
 		set_int(sessions_visible, 0);
+		set_int(panel_visible, 0);
+	}
+}
+
+
+
+program {
+	name: "user_active_set";
+	signal: "user";
+	source: "on";
+	script {
+		set_state(PART:"user_entry_clip", "active", 0.0);
+		set_state(PART:"password_entry_clip", "default", 0.0);
+	}
+}
+
+program {
+	name: "user_active_unset";
+	signal: "user";
+	source: "off";
+	script {
+		set_state(PART:"user_entry_clip", "default", 0.0);
+		set_state(PART:"password_entry_clip", "active", 0.0);
 	}
 }
 
@@ -14,9 +37,7 @@ program {
 	signal: "user";
 	source: "on";
 	action: STATE_SET "active" 0.0;
-	target: "user_entry";
 	target: "user_entry_cursor";
-	after: "user.cursor.blink";
 }
 
 program {
@@ -32,7 +53,6 @@ program {
 	signal: "user";
 	source: "off";
 	action: STATE_SET "default" 0.0;
-	target: "user_entry";
 	target: "user_entry_cursor";
 	after: "user.cursor.stop";
 }
@@ -42,9 +62,7 @@ program {
 	signal: "pass";
 	source: "on";
 	action: STATE_SET "active" 0.0;
-	target: "pass_entry";
-	target: "pass_entry_cursor";
-	after: "pass.cursor.blink";
+	target: "user_entry_cursor";
 }
 
 program {
@@ -60,8 +78,7 @@ program {
 	signal: "pass";
 	source: "off";
 	action: STATE_SET "default" 0.0;
-	target: "pass_entry";
-	target: "pass_entry_cursor";
+	target: "user_entry_cursor";
 	after: "pass.cursor.stop";
 }
 
@@ -136,7 +153,8 @@ program {
 	target: "user_pass_status_icon";
 }
 
-/*
+/* session */
+
 program {
 	name: "session_selected";
 	signal: "entrance,xsession,selected";
@@ -176,14 +194,13 @@ program {
 	transition: ACCELERATE 0.5;
 	target: "sessions_clip";
 }
-*/
 
 /* cursor */
 
 program {
 	name: "user.cursor.blink";
-	signal: "";
-	source: "";
+	signal: "user";
+	source: "on";
 	action: STATE_SET "active" 0.0;
 	transition: LINEAR 0.5;
 	target: "user_entry_cursor";
@@ -202,11 +219,11 @@ program {
 
 program {
 	name: "pass.cursor.blink";
-	signal: "";
-	source: "";
+	signal: "pass";
+	source: "on";
 	action: STATE_SET "active" 0.0;
 	transition: LINEAR 0.5;
-	target: "pass_entry_cursor";
+	target: "password_entry_cursor";
 	after: "pass.cursor.unblink";
 }
 
@@ -216,22 +233,22 @@ program {
 	source: "";
 	action: STATE_SET "default" 0.0;
 	transition: ACCELERATE 0.25;
-	target: "pass_entry_cursor";
+	target: "password_entry_cursor";
 	after: "pass.cursor.blink";
 }
 
 program {
 	name: "user.cursor.stop";
-	signal: "";
-	source: "";
+	signal: "user";
+	source: "off";
 	action: ACTION_STOP;
 	target: "user.cursor.unblink";
 }
 
 program {
 	name: "pass.cursor.stop";
-	signal: "";
-	source: "";
+	signal: "pass";
+	source: "off";
 	action: ACTION_STOP;
 	target: "pass.cursor.unblink";
 }
@@ -252,6 +269,6 @@ program {
 	signal: "";
 	source: "";
 	action: SIGNAL_EMIT "entrance,user,auth,success,done" "";
-	in: 1.0 0.0;
+	in: 1.75 0.0;
 }
 
