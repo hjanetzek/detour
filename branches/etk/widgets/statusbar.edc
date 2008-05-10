@@ -74,7 +74,7 @@ group {
             text {
                text: "Message";
                font: "DejaVuSans";
-               size: 10;
+               size: 11;
                min: 1 1;
                align: 0.0 0.5;
             }
