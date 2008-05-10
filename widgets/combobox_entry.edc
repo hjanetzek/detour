@@ -317,7 +317,7 @@ group {
             text {
                text: "Entry";
                font: "DejaVuSans";
-               size: 10;
+               size: 11;
                min: 1 1;
                align: 0.0 0.5;
                text_class: "entry";

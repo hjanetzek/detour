@@ -108,12 +108,9 @@ images {
    image: "separator_v.png" COMP;
 
 //~ slider horiz
-   image: "slider_h_focus.png" COMP;
    image: "slider_h_shadow.png" COMP;
    image: "slider_label_bg.png" COMP;
    image: "slider_h_btn.png" COMP;
-   image: "slider_h_btn_disabled.png" COMP;
-   image: "slider_h_disabled.png" COMP;
    image: "slider_h_left_disabled.png" COMP;
    image: "slider_h_right_disabled.png" COMP;
    image: "slider_h_trough.png" COMP;
@@ -121,16 +118,12 @@ images {
    image: "slider_h_trough_right.png" COMP;
 
 //~ slider vert
-   image: "slider_v_bot_disabled.png" COMP;
    image: "slider_v_btn.png" COMP;
-   image: "slider_v_btn_disabled.png" COMP;
-   image: "slider_v_disabled.png" COMP;
    image: "slider_v_top_disabled.png" COMP;
    image: "slider_v_trough.png" COMP;
    image: "slider_v_trough_up.png" COMP;
    image: "slider_v_trough_down.png" COMP;
    image: "slider_vert_shadow.png" COMP;
-   image: "slider_vert_focus.png" COMP;
 
 //~ spinner
    image: "spinner_base.png" COMP;
