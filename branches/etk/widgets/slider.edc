@@ -139,22 +139,7 @@ part {
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 255;
-
-		rel1 { 
-			to: "etk.dragable.slider"; 
-			offset: 0 -1; 
-		}
-
-		rel2 { 
-			to: "etk.dragable.slider"; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "slider_h_focus.png";
-			border: 7 7 7 7;
-		}
+		//~color: 255 255 255 255;
 	}
 
 	description {
@@ -182,13 +167,11 @@ part {
          description {
             state: "down" 0.0;
             inherit: "default" 0.0;
+	    color: 235 235 235 255;
          }
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_h_btn_disabled.png";
-            }
          }
       }
       part {
@@ -278,7 +261,7 @@ part {
             text {
                text: "0.0";
                font: "DejaVuSans";
-               size: 10;
+               size: 11;
                min: 1 1;
             }
          }
@@ -503,28 +486,13 @@ group {
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 255;
-
-		rel1 { 
-			to: "etk.dragable.slider"; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "etk.dragable.slider"; 
-			offset: -1 0; 
-		}
-
-		image {
-			normal: "slider_vert_focus.png";
-			border: 7 7 7 7;
-		}
+		//~color: 255 255 255 255;
 	}
 
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 0;
+		color: 255 255 255 128;
 	}
 }
       part {
@@ -545,13 +513,11 @@ group {
          description {
             state: "down" 0.0;
             inherit: "default" 0.0;
+	    color: 235 235 235 255;
          }
          description {
             state: "disabled" 0.0;
             inherit: "default" 0.0;
-            image {
-               normal: "slider_v_btn_disabled.png";
-            }
          }
       }
       part {
@@ -641,7 +607,7 @@ group {
             text {
                text: "0.0";
                font: "DejaVuSans";
-               size: 10;
+               size: 11;
                min: 1 1;
             }
          }
