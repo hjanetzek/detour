@@ -23,11 +23,12 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 16 16;
+		max: 9999 16;
 		color: 60 60 60 255;
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 8 4; 
+			offset: 8 3; 
 		}
 
 		rel2 { 
