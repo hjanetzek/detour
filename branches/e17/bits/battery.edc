@@ -23,3 +23,13 @@ group {
 	}
 }
 
+group {
+	name: "e/modules/battery/popup";
+	min:  240 64;
+	max:  420 96;
+
+	parts {
+		#include "battery_popup.edc"
+	}
+}
+
