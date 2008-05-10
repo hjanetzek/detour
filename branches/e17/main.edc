@@ -33,7 +33,7 @@
 /* window border always on due to macro dependency */
 
 //Enable custom color classes
-#define ENABLE_COLOR_CLASS 1
+#define ENABLE_COLOR_CLASS 1 /* incomplete */
 
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 	/* work in progress */

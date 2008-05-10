@@ -1,5 +1,5 @@
 
-//~ desklock
+## desklock
 image: "desklock_dialog_bg.png" COMP;
 image: "dot.png" COMP;
 

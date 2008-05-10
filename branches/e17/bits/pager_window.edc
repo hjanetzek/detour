@@ -27,6 +27,7 @@ part {
 
 part {
 	name: "pager_window";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
@@ -50,6 +51,7 @@ part {
 
 part {
 	name: "overlay";
+	type: IMAGE;
 
 	description {
 		state: "default" 0.0;
