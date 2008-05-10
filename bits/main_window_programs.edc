@@ -202,7 +202,7 @@ program {
 	signal: "user";
 	source: "on";
 	action: STATE_SET "active" 0.0;
-	transition: LINEAR 0.5;
+	transition: DECELERATE 0.5;
 	target: "user_entry_cursor";
 	after: "user.cursor.unblink";
 }
@@ -212,7 +212,7 @@ program {
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: ACCELERATE 0.25;
+	transition: DECELERATE 0.5;
 	target: "user_entry_cursor";
 	after: "user.cursor.blink";
 }
@@ -222,7 +222,7 @@ program {
 	signal: "pass";
 	source: "on";
 	action: STATE_SET "active" 0.0;
-	transition: LINEAR 0.5;
+	transition: DECELERATE 0.5;
 	target: "password_entry_cursor";
 	after: "pass.cursor.unblink";
 }
@@ -232,7 +232,7 @@ program {
 	signal: "";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: ACCELERATE 0.25;
+	transition: DECELERATE 0.5;
 	target: "password_entry_cursor";
 	after: "pass.cursor.blink";
 }
