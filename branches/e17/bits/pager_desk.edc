@@ -74,7 +74,7 @@ part {
 		}
 
 		rel2 { 
-			offset: -7 -9; 
+			offset: -6 -9; 
 		}
 	}
 }

@@ -13,7 +13,6 @@ program {
 	signal: "e,action,show,label";
 	source: "e";
 	action: STATE_SET "visible" 0.0;
-/* transition disabled */
 	target: "label.clip";
 }
 
@@ -22,7 +21,6 @@ program {
 	signal: "e,action,hide,label";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-/* transition disabled */
 	target: "label.clip";
 }
 
@@ -94,3 +92,4 @@ program {
 	signal: "e,action,stop";
 	source: "e";
 }
+

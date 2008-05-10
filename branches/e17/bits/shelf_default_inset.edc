@@ -36,7 +36,7 @@ part {
 		rel2 { 
 			to: "background"; 
 			relative: 1.0 1.0; 
-			offset: -5 -4; 
+			offset: -6 -4; 
 		}
 	}
 }
@@ -58,3 +58,4 @@ part {
 		}
 	}
 }
+

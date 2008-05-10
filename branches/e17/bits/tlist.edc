@@ -12,18 +12,6 @@ program { \
 	target: "e.text.label"; \
 } 
 
-styles {
-	style {
-		name: "tlist_style";
-		base: "font=DejaVuSans font_size=10 align=left color=#3c3c3c wrap=word";
-
-		tag:  "br" "\n";
-		tag:  "hilight" "+ font=DejaVuSans-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14";
-		tag:  "title" "+ font_size=12 font=DejaVuSans-Bold style=soft_shadow color=#fff shadow_color=#00000020";
-		tag:  "/title" "- \n \n";
-	}
-}
-
 group {
 	name: "e/widgets/tlist";
 	
@@ -49,3 +37,4 @@ group {
 		PROG("deactivate", "e,state,unselected", "default")
 	}
 }
+

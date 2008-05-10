@@ -228,7 +228,7 @@ part { 														\
 		} 												\
 														\
 		text { 												\
-			text: ""; 										\
+			text: "";										\
 			font: "Sans:style=Bold,DejaVuSans-Bold"; 						\
 			size: 11; 										\
 			min: 0 1; 										\
