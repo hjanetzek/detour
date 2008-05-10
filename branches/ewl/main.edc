@@ -1,20 +1,24 @@
-/* (see AUTHORS)
- * detour for the Enlightened Widget Library
+//Set the current version
+#define VERSION_STRING 0.0.1
+
+/* 
+ * cored.org et al (see AUTHORS)
+ * detour version 0.0.1 (ewl) for the Enlightened Widget Library.
  */
 
 fonts {
-font: "fonts/Vera.ttf" "ewl/default";
-font: "fonts/VeraBd.ttf" "ewl/default/bold";
-font: "fonts/VeraIt.ttf" "ewl/default/italic";
-font: "fonts/VeraBI.ttf" "ewl/default/bold-italic";
-font: "fonts/VeraMono.ttf" "ewl/monospace";
-font: "fonts/VeraMoBd.ttf" "ewl/monospace/bold";
-font: "fonts/VeraMoIt.ttf" "ewl/monospace/italic";
-font: "fonts/VeraMoBI.ttf" "ewl/monospace/bold-italic";
+	font: "fonts/Vera.ttf" "ewl/default";
+	font: "fonts/VeraBd.ttf" "ewl/default/bold";
+	font: "fonts/VeraIt.ttf" "ewl/default/italic";
+	font: "fonts/VeraBI.ttf" "ewl/default/bold-italic";
+	font: "fonts/VeraMono.ttf" "ewl/monospace";
+	font: "fonts/VeraMoBd.ttf" "ewl/monospace/bold";
+	font: "fonts/VeraMoIt.ttf" "ewl/monospace/italic";
+	font: "fonts/VeraMoBI.ttf" "ewl/monospace/bold-italic";
 }
 
 images {
-#include "images/images.edc"
+	#include "images/images.edc"
 }
 
 data {
@@ -188,30 +192,30 @@ data {
 }
 
 collections {
-#include "widgets/window.edc"
-#include "widgets/border.edc"
-#include "widgets/button.edc"
-#include "widgets/radio.edc"
-#include "widgets/check.edc"
-#include "widgets/entry.edc"
-#include "widgets/dialog.edc"
-#include "widgets/label.edc"
-#include "widgets/tree.edc"
-#include "widgets/notebook.edc"
-#include "widgets/spacer.edc"
-#include "widgets/scrollbar.edc"
-#include "widgets/scrollpane.edc"
-#include "widgets/seeker.edc"
-#include "widgets/separator.edc"
-#include "widgets/menu.edc"
-#include "widgets/spinner.edc"
-#include "widgets/toolbar.edc"
-#include "widgets/paned.edc"
-#include "widgets/statusbar.edc"
-#include "widgets/combo.edc"
-#include "widgets/progressbar.edc"
-#include "widgets/shadow.edc"
-//~ #include "widgets/toolbar.edc"
-//~ #include "widgets/cursor.edc"
+	#include "widgets/window.edc"
+	#include "widgets/border.edc"
+	#include "widgets/button.edc"
+	#include "widgets/radio.edc"
+	#include "widgets/check.edc"
+	#include "widgets/entry.edc"
+	#include "widgets/dialog.edc"
+	#include "widgets/label.edc"
+	#include "widgets/tree.edc"
+	#include "widgets/notebook.edc"
+	#include "widgets/spacer.edc"
+	#include "widgets/scrollbar.edc"
+	#include "widgets/scrollpane.edc"
+	#include "widgets/seeker.edc"
+	#include "widgets/separator.edc"
+	#include "widgets/menu.edc"
+	#include "widgets/spinner.edc"
+	#include "widgets/toolbar.edc"
+	#include "widgets/paned.edc"
+	#include "widgets/statusbar.edc"
+	#include "widgets/combo.edc"
+	#include "widgets/progressbar.edc"
+	#include "widgets/shadow.edc"
+	//~ #include "widgets/toolbar.edc"
+	//~ #include "widgets/cursor.edc"
 }
 
