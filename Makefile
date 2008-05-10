@@ -1,12 +1,13 @@
-fonts 	        = fonts
-images 	        = images
+# Makefile for detour-ewl
+
 CC		= edje_cc
+COMPILE		= $(CC) $(EDJE_CC_FLAGS)
 SRC		= main.edc
 OUT		= detour-ewl.edj
-COMPILE 	= $(CC) $(EDJE_CC_FLAGS)
 PATH_INSTALL    = $(HOME)/.ewl/themes
 
-EDJE_CC_FLAGS = -fd $(fonts)/ -id $(images)/
+EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
+-id images
 
 .SILENT :
 
@@ -14,7 +15,7 @@ all: version checkdir clean build install
 
 version:
 	@echo ""
-	cat main.edc | head -3 | tail -1
+	cat main.edc | head -6 | tail -1
 
 checkdir:
 	if [ ! -d $(PATH_INSTALL) ]; then mkdir -p $(PATH_INSTALL); fi
@@ -45,7 +46,7 @@ uninstall: detour-ewl.edj
 	@echo ""
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
-	@echo $(HOME)/.ewl/themes/ directory.
+	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo ""
 
