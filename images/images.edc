@@ -1,19 +1,28 @@
-
+## entry widget
 image: "entry.png" COMP;
-image: "entry_focus.png" COMP;
-image: "side-panel.png" COMP;
-image: "side-panel_shadow.png" COMP;
+
+## instructables
+image: "instruct_overlay.png" COMP;
 image: "power_button.png" COMP;
 image: "reset_button.png" COMP;
+
+## preview thumbnail
 image: "preview.png" COMP;
-image: "button.png" COMP;
-image: "button_base.png" COMP;
-image: "button_clicked.png" COMP;
+
+## background
 image: "bg.png" COMP;
+
+## windows
 image: "main_window.png" COMP;
+image: "sliding_panel.png" COMP;
+
+## enlightenment logo
 image: "logo.png" COMP;
+
+## decorations
 image: "dot.png" COMP;
-image: "dot-wide.png" COMP;
-image: "instruct_overlay.png" COMP;
+image: "dot-wide-bt.png" COMP;
+
+## icon
 image: "dialog-error.png" COMP;
 
