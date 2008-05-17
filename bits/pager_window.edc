@@ -19,7 +19,7 @@ part {
 		}
 
 		image {
-			normal: "pager_window_ds.png";
+			normal: "pager_icon_window_ds.png";
 			border: 1 1 1 1;
 		}
     	}
@@ -43,7 +43,7 @@ part {
 		}
 
 		image {
-			normal: "pager_window.png";
+			normal: "pager_icon_window.png";
 			border: 4 4 6 4;
 		}
 	}
@@ -68,7 +68,7 @@ part {
 		}
 
 		image {
-			normal: "pager_window.png";
+			normal: "pager_icon_window.png";
 			border: 4 4 6 4;
 		}
 	}

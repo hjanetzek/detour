@@ -32,27 +32,31 @@
 #define ENABLE_TEXT_CLASS 1 	
 /* window border always on due to macro dependency */
 
-//Enable custom color classes
-#define ENABLE_COLOR_CLASS 1 /* incomplete */
-
-//Enable custom icons
-#define ENABLE_CUSTOM_ICONS 0 	/* work in progress */
-
 //Display ibar & ibox label overlay
 #define ENABLE_IBAR_LABEL_OVERLAY 1
 
 //Set ibar icons to rgba: 255 255 255 164
 #define FADE_IBAR_ICONS 0
 
+## testing grounds 
+
+//Enable custom color classes
+#define ENABLE_COLOR_CLASS 0 /* incomplete */
+
+//Enable custom icons
+#define ENABLE_CUSTOM_ICONS 0 /* work in progress */
+
 //Set the background style
 #define BACKGROUND_TYPE 1
+
+//Use an RGBA for the Shelf
+#define USES_X_COMPOSITE 1
 
 fonts {
 	font:"fonts/DejaVuSans.ttf" "DejaVuSans";
 	font:"fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
 	font:"fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
 	font:"fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
-	font:"fonts/DejaVuSans-Oblique.ttf" "DejaVuSans-Oblique";
 }
 
 spectra {

@@ -3,7 +3,7 @@ group {
 	name: "e/shelf/default/base";
 
 	data {
-		item: "shaped" "1";
+		item: "shaped" "0";
 		item: "hidden_state_size" "9";
 		// item: "instant_delay" "60.0";
 	}
@@ -45,7 +45,13 @@ group {
 	}
 
 	parts {
-		#include "shelf_alternate_base.edc"
+		#if USES_X_COMPOSITE == 0
+			#include "shelf_alternate_base.edc"
+		#else
+		#if USES_X_COMPOSITE == 1
+			#include "shelf_alternate_base_x.edc"
+		#endif
+		#endif
 	}
 
 	programs {

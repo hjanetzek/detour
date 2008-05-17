@@ -274,14 +274,14 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 60 60 60 255;
-		color3: 170 168 169 128;
 		#if ENABLE_COLOR_CLASS == 0
 		#else
 		#if ENABLE_COLOR_CLASS == 1
 			color_class: "button_text";
 		#endif
 		#endif
+		color: 60 60 60 255;
+		color3: 170 168 169 128;
 
 		rel1 {
 			to_x: "e.swallow.icon";
@@ -322,14 +322,14 @@ part {
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-		color: 96 96 96 255;
-		color3: 170 168 169 128;
 		#if ENABLE_COLOR_CLASS == 0
 		#else
 		#if ENABLE_COLOR_CLASS == 1
 			color_class: "button_text_disabled";
 		#endif
 		#endif
+		color: 96 96 96 255;
+		color3: 170 168 169 128;
 	}
 
 	description {

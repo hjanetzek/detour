@@ -12,7 +12,7 @@ part {
 			aspect: 1.0 1.0;
 		#endif
 		#endif
-		align: 0.5 0.5;
+		//align: 0.5 0.5;
 
 		#if VISIBLE_MENU_TITLE == 0
 			rel1 { 

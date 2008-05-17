@@ -16,7 +16,7 @@ part {
 		}
 
 		image {
-			normal: "pager_desk.png";
+			normal: "deskpreview_bg.png";
 			border: 4 4 7 5;
 		}
 

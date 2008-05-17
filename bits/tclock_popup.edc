@@ -1,6 +1,6 @@
 
 part {
-	name: "bd";
+	name: "bg";
 	type: RECT;
 	mouse_events: 0;
 

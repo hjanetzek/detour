@@ -1,12 +1,12 @@
 == Bugfix ==
--Battery e.text.time e.text.reading
 
 == Improve ==
 -Active & Inactive Window Decorations (borders)
--Gadman Controls
+-gadman controls
 -toolbar.edc
--battery.edc: reposition text, popup (from cvs)
 -temperature.edc: graphics
+-battery e.text.time e.text.reading
+-borders.edc are a mess
 
 == Global ==
 *Complete start.edc
@@ -17,6 +17,4 @@
 *Add color_classes
 
 == Compile ==
-Improve edje_decc: directory structure
 
-[Bug] EDJE_CC_FLAGS: /custom before /icons ends in /custom being used

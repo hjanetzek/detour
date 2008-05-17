@@ -37,6 +37,12 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.5;
+		#if ENABLE_COLOR_CLASS == 0
+		#else
+		#if ENABLE_COLOR_CLASS == 1
+			color_class: "";
+		#endif
+		#endif
 		color: 7 7 7 255;
 		visible: 0;
 
@@ -54,7 +60,7 @@ part {
 
 		text {
 			text: "";
-		/* the following line does not seem to set the Mono font */
+			/* fixme */
 			font: "Sans:style=Bold,DejaVuSansMono-Bold";
 			size: 11;
 			min: 1 1;
@@ -90,6 +96,12 @@ part {
 	description {
 		state: "default" 0.0;
 		align: 0.5 0.5;
+		#if ENABLE_COLOR_CLASS == 0
+		#else
+		#if ENABLE_COLOR_CLASS == 1
+			color_class: "";
+		#endif
+		#endif
 		color: 7 7 7 255;
 		visible: 0;
 
@@ -107,6 +119,7 @@ part {
 
 		text {
 			text: "";
+			/* fixme */
 			font: "Sans:style=Bold,DejaVuSansMono-Bold";
 			size: 9;
 			min: 1 1;

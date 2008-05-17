@@ -2,7 +2,7 @@
 part {
 	name: "background";
 	type: RECT;
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -63,6 +63,7 @@ part {
 
 part {
 	name: "overlay";
+	type: IMAGE;
 	mouse_events: 0;
 	
 	description {
@@ -110,7 +111,7 @@ part {
 		}
 
 		image {
-			normal: "color_slider.png";
+			normal: "color_slider_cursor.png";
 		}
 	}
 }
