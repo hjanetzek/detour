@@ -7,6 +7,9 @@
 -temperature.edc: graphics
 -battery e.text.time e.text.reading
 -borders.edc are a mess
+-about enlightenment dialog
+-windows rememeber icon (replace)
+-icons()
 
 == Global ==
 *Complete start.edc

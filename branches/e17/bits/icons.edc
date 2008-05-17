@@ -79,6 +79,7 @@ ICON("e/icons/enlightenment/startup", "system-shutdown.png")
 ICON("e/icons/enlightenment/behavior", "gnome-dev-keyboard-mouse.png")
 ICON("e/icons/enlightenment/extensions", "gnome-run.png")
 ICON("e/icons/enlightenment/run", "applications-system.png")
+ICON("e/icons/enlightenment/window_remembers", "window-new.png") /* fixme */
 
 # ifdef ICON
 #  undef ICON
