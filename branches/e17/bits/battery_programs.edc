@@ -5,7 +5,22 @@ program {
 	source: "e";
 	action: STATE_SET "default" 0.0;
 	target: "fade_clip";
-	target: "text_fade_clip";
+}
+
+program {
+	name: "battery-charge";
+	signal: "e,state,charging";
+	source: "e";
+	action: STATE_SET "active" 0.0;
+	target: "battery-charge";
+}
+
+program {
+	name: "battery-discharge";
+	signal: "e,state,discharging";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "battery-charge";
 }
 
 program {
@@ -14,7 +29,6 @@ program {
 	source: "e";
 	action: STATE_SET "charging" 0.0;
 	target: "fade_clip";
-	target: "text_fade_clip";
 }
 
 program {
@@ -23,7 +37,6 @@ program {
 	source: "e";
 	action: STATE_SET "faded" 0.0;
 	target: "fade_clip";
-	target: "text_fade_clip";
 }
 
 program {
@@ -31,7 +44,7 @@ program {
 	signal: "e,action,pulse,start";
 	source: "e";
 	action: STATE_SET "faded" 0.0;
-	transition: ACCELERATE 0.3;
+	transition: DECELERATE 0.5;
 	target: "pulse_clip";
 	after: "pulse2";
 }
@@ -41,7 +54,7 @@ program {
 	signal: "pulse2";
 	source: "e";
 	action: STATE_SET "faded" 1.0;
-	transition: ACCELERATE 0.1;
+	transition: DECELERATE 0.25;
 	target: "pulse_clip";
 }
 

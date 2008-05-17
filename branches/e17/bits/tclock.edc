@@ -13,11 +13,13 @@ group {
 
 group {
 	name: "modules/tclock/tip";
-	data.item: "shaped" "0";
+
+	data {
+		//item: "shaped" "0";
+	}
 
 	parts {
-  		#include "tclock_tooltip.edc"
+  		#include "tclock_popup.edc"
 	}
 }
-
   

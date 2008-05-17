@@ -16,7 +16,7 @@ group {
 	name: "e/widgets/ilist";
 
 	parts {
-		#include "ilist_ilist.edc"
+		#include "ilist_even.edc"
 	}
 
 	programs {
