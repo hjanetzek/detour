@@ -1,4 +1,764 @@
 ------------------------------------------------------------------------
+r492 | alberto.castro.leiva | 2008-05-10 12:25:32 -0500 (Sat, 10 May 2008) | 3 lines
+Changed paths:
+   M /branches/e17/README
+   M /branches/e17/bits/battery.edc
+   A /branches/e17/bits/battery_popup.edc
+
+Add battery_popup.edc
+
+
+------------------------------------------------------------------------
+r488 | alberto.castro.leiva | 2008-05-10 11:15:19 -0500 (Sat, 10 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/ibar_icon_overlay_programs.edc
+   M /branches/e17/bits/move.edc
+   M /branches/e17/bits/move_main.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/resize.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/shelf_default_inset.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/images/images.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+Fix pixel offsets and remove unneed lines.
+
+------------------------------------------------------------------------
+r481 | alberto.castro.leiva | 2008-05-08 01:55:28 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/Makefile
+
+Update Makefile
+
+------------------------------------------------------------------------
+r477 | alberto.castro.leiva | 2008-05-08 01:16:03 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/AUTHORS
+   M /branches/e17/main.edc
+
+Update
+
+------------------------------------------------------------------------
+r473 | alberto.castro.leiva | 2008-05-07 23:19:16 -0500 (Wed, 07 May 2008) | 3 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/menu_icon.edc
+
+Correct location.
+Fix menu_icon.
+
+------------------------------------------------------------------------
+r472 | alberto.castro.leiva | 2008-05-07 03:45:22 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/menu_icon.edc
+
+* Fix menu icons aspect.
+
+------------------------------------------------------------------------
+r456 | alberto.castro.leiva | 2008-05-06 00:55:45 -0500 (Tue, 06 May 2008) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/winlist_main.edc
+   A /branches/e17/images/dot-wide.png
+   D /branches/e17/images/dot2.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+random commit
+
+
+------------------------------------------------------------------------
+r452 | alberto.castro.leiva | 2008-05-01 01:05:49 -0500 (Thu, 01 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable_programs.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/main.edc
+
+Cosmetic fixes.
+
+------------------------------------------------------------------------
+r451 | alberto.castro.leiva | 2008-05-01 00:34:25 -0500 (Thu, 01 May 2008) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/cslider.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable_programs.edc
+   M /branches/e17/main.edc
+
+We're only 3 Global Groups away from completing this bitch!
+
+
+------------------------------------------------------------------------
+r450 | alberto.castro.leiva | 2008-05-01 00:08:44 -0500 (Thu, 01 May 2008) | 6 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_logo.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/gadman.edc
+   M /branches/e17/bits/gadman_control.edc
+   M /branches/e17/bits/gadman_control_programs.edc
+   M /branches/e17/bits/gadman_popup.edc
+   M /branches/e17/bits/textblock_styles.edc
+   D /branches/e17/images/e17_ibar_handle_h.png
+   D /branches/e17/images/e17_ibar_handle_h2.png
+   D /branches/e17/images/e17_ibar_handle_thumb_h.png
+   D /branches/e17/images/e17_ibar_handle_thumb_v.png
+   D /branches/e17/images/e17_ibar_handle_v.png
+   D /branches/e17/images/e17_ibar_handle_v2.png
+   A /branches/e17/images/gadman_control.png
+   A /branches/e17/images/gadman_hl1.png
+   A /branches/e17/images/gadman_hr1.png
+   M /branches/e17/images/gadman_indicator.png
+   A /branches/e17/images/gadman_vb1.png
+   A /branches/e17/images/gadman_vt1.png
+   M /branches/e17/images/ibar_drop.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/main.edc
+
+* Update button outline rgba.
+* Introducing gadman.edc
+	Lots of work is still there to do.
+	This is just a simple test.
+
+
+------------------------------------------------------------------------
+r449 | alberto.castro.leiva | 2008-04-30 00:51:30 -0500 (Wed, 30 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/main.edc
+
+I swear, there are days when I hate myself.
+
+------------------------------------------------------------------------
+r448 | alberto.castro.leiva | 2008-04-30 00:36:46 -0500 (Wed, 30 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_icon.edc
+
+Much better
+
+------------------------------------------------------------------------
+r447 | alberto.castro.leiva | 2008-04-30 00:25:44 -0500 (Wed, 30 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/images/button.png
+   M /branches/e17/images/button_outline.png
+
+Remove some unneeded descriptions.
+
+------------------------------------------------------------------------
+r446 | alberto.castro.leiva | 2008-04-30 00:06:33 -0500 (Wed, 30 Apr 2008) | 1 line
+Changed paths:
+   A /branches/e17/TODO
+
+
+------------------------------------------------------------------------
+r445 | alberto.castro.leiva | 2008-04-30 00:05:48 -0500 (Wed, 30 Apr 2008) | 5 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/about_theme_logo.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/menu_separator.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/winlist_item.edc
+   A /branches/e17/icons/gnome-window-manager.png
+   M /branches/e17/icons/icons.edc
+   A /branches/e17/icons/xfce4-taskbar.png
+   M /branches/e17/macros/border_menu.edc
+
+* Fixes for IF VISIBLE_MENU_TITLE
+* Restore about_this_edj dialog
+* Testing WinList Icon_States
+
+
+------------------------------------------------------------------------
+r444 | alberto.castro.leiva | 2008-04-28 00:38:16 -0500 (Mon, 28 Apr 2008) | 6 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme_logo.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/battery_programs.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/entry_main.edc
+   M /branches/e17/bits/entry_selection.edc
+   M /branches/e17/bits/entry_text.edc
+   M /branches/e17/bits/error_main.edc
+   M /branches/e17/bits/exebuf_item.edc
+   M /branches/e17/bits/exebuf_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_fixed.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/bits/fileman_list_odd_variable.edc
+   M /branches/e17/bits/fileman_list_variable.edc
+   M /branches/e17/bits/fileman_overlay.edc
+   M /branches/e17/bits/font_preview.edc
+   M /branches/e17/bits/frame_main.edc
+   M /branches/e17/bits/ibar_icon_overlay.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/label.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/move_main.edc
+   M /branches/e17/bits/pager_popup.edc
+   M /branches/e17/bits/radio_icon.edc
+   M /branches/e17/bits/radio_main.edc
+   M /branches/e17/bits/resize_main.edc
+   M /branches/e17/bits/slider_h_main.edc
+   M /branches/e17/bits/slider_v_main.edc
+   M /branches/e17/bits/slidesel_main.edc
+   M /branches/e17/bits/tclock_main.edc
+   M /branches/e17/bits/tclock_tooltip.edc
+   M /branches/e17/bits/temperature_main.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/bits/tlist_main.edc
+   M /branches/e17/bits/tlist_odd.edc
+   M /branches/e17/bits/winlist_item.edc
+   M /branches/e17/bits/winlist_main.edc
+   M /branches/e17/main.edc
+
+* Rename some DEFINES to a more consist namestyle.
+* Update battery module to only display text on discharge
+  & charging ? (forgot to check)
+* Update text_entry_selection size.
+
+
+------------------------------------------------------------------------
+r443 | alberto.castro.leiva | 2008-04-25 13:12:08 -0500 (Fri, 25 Apr 2008) | 4 lines
+Changed paths:
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_logo.edc
+   D /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_separator.edc
+   M /branches/e17/bits/textblock_styles.edc
+
+* Preparing to redo ABOUT_E dialog.
+* More menu and context menu fixes.
+
+
+------------------------------------------------------------------------
+r442 | alberto.castro.leiva | 2008-04-25 12:57:19 -0500 (Fri, 25 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_separator.edc
+
+A much improved menu & context menu.
+
+------------------------------------------------------------------------
+r441 | alberto.castro.leiva | 2008-04-25 12:40:32 -0500 (Fri, 25 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/menu_submenu.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/main.edc
+
+* A much more compact menu and context menus.
+
+------------------------------------------------------------------------
+r440 | alberto.castro.leiva | 2008-04-25 12:19:45 -0500 (Fri, 25 Apr 2008) | 6 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/Makefile
+   M /branches/e17/bits/fileman_actions.edc
+   M /branches/e17/bits/ilist.edc
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/ilist_odd.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/pointer_color.edc
+   M /branches/e17/main.edc
+
+* Rename various #DEFINES
+* Switch the ILIST colors around
+* IList Header update
+* Makefile verbose option
+
+
+------------------------------------------------------------------------
+r439 | alberto.castro.leiva | 2008-04-25 09:57:25 -0500 (Fri, 25 Apr 2008) | 1 line
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/bits/ilist_header.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/transitions.edc
+   A /branches/e17/clock
+   A /branches/e17/clock/clock_bg.png
+   A /branches/e17/clock/hour.cursor.00.png
+   A /branches/e17/clock/hour.cursor.01.png
+   A /branches/e17/clock/hour.cursor.02.png
+   A /branches/e17/clock/hour.cursor.03.png
+   A /branches/e17/clock/hour.cursor.04.png
+   A /branches/e17/clock/hour.cursor.05.png
+   A /branches/e17/clock/hour.cursor.06.png
+   A /branches/e17/clock/hour.cursor.07.png
+   A /branches/e17/clock/hour.cursor.08.png
+   A /branches/e17/clock/hour.cursor.09.png
+   A /branches/e17/clock/hour.cursor.10.png
+   A /branches/e17/clock/hour.cursor.11.png
+   A /branches/e17/clock/hour.cursor.12.png
+   A /branches/e17/clock/hour.cursor.13.png
+   A /branches/e17/clock/hour.cursor.14.png
+   A /branches/e17/clock/hour.cursor.15.png
+   A /branches/e17/clock/hour.cursor.16.png
+   A /branches/e17/clock/hour.cursor.17.png
+   A /branches/e17/clock/hour.cursor.18.png
+   A /branches/e17/clock/hour.cursor.19.png
+   A /branches/e17/clock/hour.cursor.20.png
+   A /branches/e17/clock/hour.cursor.21.png
+   A /branches/e17/clock/hour.cursor.22.png
+   A /branches/e17/clock/hour.cursor.23.png
+   A /branches/e17/clock/hour.cursor.24.png
+   A /branches/e17/clock/hour.cursor.25.png
+   A /branches/e17/clock/hour.cursor.26.png
+   A /branches/e17/clock/hour.cursor.27.png
+   A /branches/e17/clock/hour.cursor.28.png
+   A /branches/e17/clock/hour.cursor.29.png
+   A /branches/e17/clock/hour.cursor.30.png
+   A /branches/e17/clock/hour.cursor.31.png
+   A /branches/e17/clock/hour.cursor.32.png
+   A /branches/e17/clock/hour.cursor.33.png
+   A /branches/e17/clock/hour.cursor.34.png
+   A /branches/e17/clock/hour.cursor.35.png
+   A /branches/e17/clock/hour.cursor.36.png
+   A /branches/e17/clock/hour.cursor.37.png
+   A /branches/e17/clock/hour.cursor.38.png
+   A /branches/e17/clock/hour.cursor.39.png
+   A /branches/e17/clock/hour.cursor.40.png
+   A /branches/e17/clock/hour.cursor.41.png
+   A /branches/e17/clock/hour.cursor.42.png
+   A /branches/e17/clock/hour.cursor.43.png
+   A /branches/e17/clock/hour.cursor.44.png
+   A /branches/e17/clock/hour.cursor.45.png
+   A /branches/e17/clock/hour.cursor.46.png
+   A /branches/e17/clock/hour.cursor.47.png
+   A /branches/e17/clock/hour.cursor.48.png
+   A /branches/e17/clock/hour.cursor.49.png
+   A /branches/e17/clock/hour.cursor.50.png
+   A /branches/e17/clock/hour.cursor.51.png
+   A /branches/e17/clock/hour.cursor.52.png
+   A /branches/e17/clock/hour.cursor.53.png
+   A /branches/e17/clock/hour.cursor.54.png
+   A /branches/e17/clock/hour.cursor.55.png
+   A /branches/e17/clock/hour.cursor.56.png
+   A /branches/e17/clock/hour.cursor.57.png
+   A /branches/e17/clock/hour.cursor.58.png
+   A /branches/e17/clock/hour.cursor.59.png
+   A /branches/e17/clock/minutes.cursor.00.png
+   A /branches/e17/clock/minutes.cursor.01.png
+   A /branches/e17/clock/minutes.cursor.02.png
+   A /branches/e17/clock/minutes.cursor.03.png
+   A /branches/e17/clock/minutes.cursor.04.png
+   A /branches/e17/clock/minutes.cursor.05.png
+   A /branches/e17/clock/minutes.cursor.06.png
+   A /branches/e17/clock/minutes.cursor.07.png
+   A /branches/e17/clock/minutes.cursor.08.png
+   A /branches/e17/clock/minutes.cursor.09.png
+   A /branches/e17/clock/minutes.cursor.10.png
+   A /branches/e17/clock/minutes.cursor.11.png
+   A /branches/e17/clock/minutes.cursor.12.png
+   A /branches/e17/clock/minutes.cursor.13.png
+   A /branches/e17/clock/minutes.cursor.14.png
+   A /branches/e17/clock/minutes.cursor.15.png
+   A /branches/e17/clock/minutes.cursor.16.png
+   A /branches/e17/clock/minutes.cursor.17.png
+   A /branches/e17/clock/minutes.cursor.18.png
+   A /branches/e17/clock/minutes.cursor.19.png
+   A /branches/e17/clock/minutes.cursor.20.png
+   A /branches/e17/clock/minutes.cursor.21.png
+   A /branches/e17/clock/minutes.cursor.22.png
+   A /branches/e17/clock/minutes.cursor.23.png
+   A /branches/e17/clock/minutes.cursor.24.png
+   A /branches/e17/clock/minutes.cursor.25.png
+   A /branches/e17/clock/minutes.cursor.26.png
+   A /branches/e17/clock/minutes.cursor.27.png
+   A /branches/e17/clock/minutes.cursor.28.png
+   A /branches/e17/clock/minutes.cursor.29.png
+   A /branches/e17/clock/minutes.cursor.30.png
+   A /branches/e17/clock/minutes.cursor.31.png
+   A /branches/e17/clock/minutes.cursor.32.png
+   A /branches/e17/clock/minutes.cursor.33.png
+   A /branches/e17/clock/minutes.cursor.34.png
+   A /branches/e17/clock/minutes.cursor.35.png
+   A /branches/e17/clock/minutes.cursor.36.png
+   A /branches/e17/clock/minutes.cursor.37.png
+   A /branches/e17/clock/minutes.cursor.38.png
+   A /branches/e17/clock/minutes.cursor.39.png
+   A /branches/e17/clock/minutes.cursor.40.png
+   A /branches/e17/clock/minutes.cursor.41.png
+   A /branches/e17/clock/minutes.cursor.42.png
+   A /branches/e17/clock/minutes.cursor.43.png
+   A /branches/e17/clock/minutes.cursor.44.png
+   A /branches/e17/clock/minutes.cursor.45.png
+   A /branches/e17/clock/minutes.cursor.46.png
+   A /branches/e17/clock/minutes.cursor.47.png
+   A /branches/e17/clock/minutes.cursor.48.png
+   A /branches/e17/clock/minutes.cursor.49.png
+   A /branches/e17/clock/minutes.cursor.50.png
+   A /branches/e17/clock/minutes.cursor.51.png
+   A /branches/e17/clock/minutes.cursor.52.png
+   A /branches/e17/clock/minutes.cursor.53.png
+   A /branches/e17/clock/minutes.cursor.54.png
+   A /branches/e17/clock/minutes.cursor.55.png
+   A /branches/e17/clock/minutes.cursor.56.png
+   A /branches/e17/clock/minutes.cursor.57.png
+   A /branches/e17/clock/minutes.cursor.58.png
+   A /branches/e17/clock/minutes.cursor.59.png
+   A /branches/e17/clock/seconds.cursor.00.png
+   A /branches/e17/clock/seconds.cursor.01.png
+   A /branches/e17/clock/seconds.cursor.02.png
+   A /branches/e17/clock/seconds.cursor.03.png
+   A /branches/e17/clock/seconds.cursor.04.png
+   A /branches/e17/clock/seconds.cursor.05.png
+   A /branches/e17/clock/seconds.cursor.06.png
+   A /branches/e17/clock/seconds.cursor.07.png
+   A /branches/e17/clock/seconds.cursor.08.png
+   A /branches/e17/clock/seconds.cursor.09.png
+   A /branches/e17/clock/seconds.cursor.10.png
+   A /branches/e17/clock/seconds.cursor.11.png
+   A /branches/e17/clock/seconds.cursor.12.png
+   A /branches/e17/clock/seconds.cursor.13.png
+   A /branches/e17/clock/seconds.cursor.14.png
+   A /branches/e17/clock/seconds.cursor.15.png
+   A /branches/e17/clock/seconds.cursor.16.png
+   A /branches/e17/clock/seconds.cursor.17.png
+   A /branches/e17/clock/seconds.cursor.18.png
+   A /branches/e17/clock/seconds.cursor.19.png
+   A /branches/e17/clock/seconds.cursor.20.png
+   A /branches/e17/clock/seconds.cursor.21.png
+   A /branches/e17/clock/seconds.cursor.22.png
+   A /branches/e17/clock/seconds.cursor.23.png
+   A /branches/e17/clock/seconds.cursor.24.png
+   A /branches/e17/clock/seconds.cursor.25.png
+   A /branches/e17/clock/seconds.cursor.26.png
+   A /branches/e17/clock/seconds.cursor.27.png
+   A /branches/e17/clock/seconds.cursor.28.png
+   A /branches/e17/clock/seconds.cursor.29.png
+   A /branches/e17/clock/seconds.cursor.30.png
+   A /branches/e17/clock/seconds.cursor.31.png
+   A /branches/e17/clock/seconds.cursor.32.png
+   A /branches/e17/clock/seconds.cursor.33.png
+   A /branches/e17/clock/seconds.cursor.34.png
+   A /branches/e17/clock/seconds.cursor.35.png
+   A /branches/e17/clock/seconds.cursor.36.png
+   A /branches/e17/clock/seconds.cursor.37.png
+   A /branches/e17/clock/seconds.cursor.38.png
+   A /branches/e17/clock/seconds.cursor.39.png
+   A /branches/e17/clock/seconds.cursor.40.png
+   A /branches/e17/clock/seconds.cursor.41.png
+   A /branches/e17/clock/seconds.cursor.42.png
+   A /branches/e17/clock/seconds.cursor.43.png
+   A /branches/e17/clock/seconds.cursor.44.png
+   A /branches/e17/clock/seconds.cursor.45.png
+   A /branches/e17/clock/seconds.cursor.46.png
+   A /branches/e17/clock/seconds.cursor.47.png
+   A /branches/e17/clock/seconds.cursor.48.png
+   A /branches/e17/clock/seconds.cursor.49.png
+   A /branches/e17/clock/seconds.cursor.50.png
+   A /branches/e17/clock/seconds.cursor.51.png
+   A /branches/e17/clock/seconds.cursor.52.png
+   A /branches/e17/clock/seconds.cursor.53.png
+   A /branches/e17/clock/seconds.cursor.54.png
+   A /branches/e17/clock/seconds.cursor.55.png
+   A /branches/e17/clock/seconds.cursor.56.png
+   A /branches/e17/clock/seconds.cursor.57.png
+   A /branches/e17/clock/seconds.cursor.58.png
+   A /branches/e17/clock/seconds.cursor.59.png
+   D /branches/e17/images/clock_bg.png
+   D /branches/e17/images/hour.cursor.00.png
+   D /branches/e17/images/hour.cursor.01.png
+   D /branches/e17/images/hour.cursor.02.png
+   D /branches/e17/images/hour.cursor.03.png
+   D /branches/e17/images/hour.cursor.04.png
+   D /branches/e17/images/hour.cursor.05.png
+   D /branches/e17/images/hour.cursor.06.png
+   D /branches/e17/images/hour.cursor.07.png
+   D /branches/e17/images/hour.cursor.08.png
+   D /branches/e17/images/hour.cursor.09.png
+   D /branches/e17/images/hour.cursor.10.png
+   D /branches/e17/images/hour.cursor.11.png
+   D /branches/e17/images/hour.cursor.12.png
+   D /branches/e17/images/hour.cursor.13.png
+   D /branches/e17/images/hour.cursor.14.png
+   D /branches/e17/images/hour.cursor.15.png
+   D /branches/e17/images/hour.cursor.16.png
+   D /branches/e17/images/hour.cursor.17.png
+   D /branches/e17/images/hour.cursor.18.png
+   D /branches/e17/images/hour.cursor.19.png
+   D /branches/e17/images/hour.cursor.20.png
+   D /branches/e17/images/hour.cursor.21.png
+   D /branches/e17/images/hour.cursor.22.png
+   D /branches/e17/images/hour.cursor.23.png
+   D /branches/e17/images/hour.cursor.24.png
+   D /branches/e17/images/hour.cursor.25.png
+   D /branches/e17/images/hour.cursor.26.png
+   D /branches/e17/images/hour.cursor.27.png
+   D /branches/e17/images/hour.cursor.28.png
+   D /branches/e17/images/hour.cursor.29.png
+   D /branches/e17/images/hour.cursor.30.png
+   D /branches/e17/images/hour.cursor.31.png
+   D /branches/e17/images/hour.cursor.32.png
+   D /branches/e17/images/hour.cursor.33.png
+   D /branches/e17/images/hour.cursor.34.png
+   D /branches/e17/images/hour.cursor.35.png
+   D /branches/e17/images/hour.cursor.36.png
+   D /branches/e17/images/hour.cursor.37.png
+   D /branches/e17/images/hour.cursor.38.png
+   D /branches/e17/images/hour.cursor.39.png
+   D /branches/e17/images/hour.cursor.40.png
+   D /branches/e17/images/hour.cursor.41.png
+   D /branches/e17/images/hour.cursor.42.png
+   D /branches/e17/images/hour.cursor.43.png
+   D /branches/e17/images/hour.cursor.44.png
+   D /branches/e17/images/hour.cursor.45.png
+   D /branches/e17/images/hour.cursor.46.png
+   D /branches/e17/images/hour.cursor.47.png
+   D /branches/e17/images/hour.cursor.48.png
+   D /branches/e17/images/hour.cursor.49.png
+   D /branches/e17/images/hour.cursor.50.png
+   D /branches/e17/images/hour.cursor.51.png
+   D /branches/e17/images/hour.cursor.52.png
+   D /branches/e17/images/hour.cursor.53.png
+   D /branches/e17/images/hour.cursor.54.png
+   D /branches/e17/images/hour.cursor.55.png
+   D /branches/e17/images/hour.cursor.56.png
+   D /branches/e17/images/hour.cursor.57.png
+   D /branches/e17/images/hour.cursor.58.png
+   D /branches/e17/images/hour.cursor.59.png
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/minutes.cursor.00.png
+   D /branches/e17/images/minutes.cursor.01.png
+   D /branches/e17/images/minutes.cursor.02.png
+   D /branches/e17/images/minutes.cursor.03.png
+   D /branches/e17/images/minutes.cursor.04.png
+   D /branches/e17/images/minutes.cursor.05.png
+   D /branches/e17/images/minutes.cursor.06.png
+   D /branches/e17/images/minutes.cursor.07.png
+   D /branches/e17/images/minutes.cursor.08.png
+   D /branches/e17/images/minutes.cursor.09.png
+   D /branches/e17/images/minutes.cursor.10.png
+   D /branches/e17/images/minutes.cursor.11.png
+   D /branches/e17/images/minutes.cursor.12.png
+   D /branches/e17/images/minutes.cursor.13.png
+   D /branches/e17/images/minutes.cursor.14.png
+   D /branches/e17/images/minutes.cursor.15.png
+   D /branches/e17/images/minutes.cursor.16.png
+   D /branches/e17/images/minutes.cursor.17.png
+   D /branches/e17/images/minutes.cursor.18.png
+   D /branches/e17/images/minutes.cursor.19.png
+   D /branches/e17/images/minutes.cursor.20.png
+   D /branches/e17/images/minutes.cursor.21.png
+   D /branches/e17/images/minutes.cursor.22.png
+   D /branches/e17/images/minutes.cursor.23.png
+   D /branches/e17/images/minutes.cursor.24.png
+   D /branches/e17/images/minutes.cursor.25.png
+   D /branches/e17/images/minutes.cursor.26.png
+   D /branches/e17/images/minutes.cursor.27.png
+   D /branches/e17/images/minutes.cursor.28.png
+   D /branches/e17/images/minutes.cursor.29.png
+   D /branches/e17/images/minutes.cursor.30.png
+   D /branches/e17/images/minutes.cursor.31.png
+   D /branches/e17/images/minutes.cursor.32.png
+   D /branches/e17/images/minutes.cursor.33.png
+   D /branches/e17/images/minutes.cursor.34.png
+   D /branches/e17/images/minutes.cursor.35.png
+   D /branches/e17/images/minutes.cursor.36.png
+   D /branches/e17/images/minutes.cursor.37.png
+   D /branches/e17/images/minutes.cursor.38.png
+   D /branches/e17/images/minutes.cursor.39.png
+   D /branches/e17/images/minutes.cursor.40.png
+   D /branches/e17/images/minutes.cursor.41.png
+   D /branches/e17/images/minutes.cursor.42.png
+   D /branches/e17/images/minutes.cursor.43.png
+   D /branches/e17/images/minutes.cursor.44.png
+   D /branches/e17/images/minutes.cursor.45.png
+   D /branches/e17/images/minutes.cursor.46.png
+   D /branches/e17/images/minutes.cursor.47.png
+   D /branches/e17/images/minutes.cursor.48.png
+   D /branches/e17/images/minutes.cursor.49.png
+   D /branches/e17/images/minutes.cursor.50.png
+   D /branches/e17/images/minutes.cursor.51.png
+   D /branches/e17/images/minutes.cursor.52.png
+   D /branches/e17/images/minutes.cursor.53.png
+   D /branches/e17/images/minutes.cursor.54.png
+   D /branches/e17/images/minutes.cursor.55.png
+   D /branches/e17/images/minutes.cursor.56.png
+   D /branches/e17/images/minutes.cursor.57.png
+   D /branches/e17/images/minutes.cursor.58.png
+   D /branches/e17/images/minutes.cursor.59.png
+   M /branches/e17/images/scrollframe_focus.png
+   M /branches/e17/images/scrollframe_inset.png
+   D /branches/e17/images/seconds.cursor.00.png
+   D /branches/e17/images/seconds.cursor.01.png
+   D /branches/e17/images/seconds.cursor.02.png
+   D /branches/e17/images/seconds.cursor.03.png
+   D /branches/e17/images/seconds.cursor.04.png
+   D /branches/e17/images/seconds.cursor.05.png
+   D /branches/e17/images/seconds.cursor.06.png
+   D /branches/e17/images/seconds.cursor.07.png
+   D /branches/e17/images/seconds.cursor.08.png
+   D /branches/e17/images/seconds.cursor.09.png
+   D /branches/e17/images/seconds.cursor.10.png
+   D /branches/e17/images/seconds.cursor.11.png
+   D /branches/e17/images/seconds.cursor.12.png
+   D /branches/e17/images/seconds.cursor.13.png
+   D /branches/e17/images/seconds.cursor.14.png
+   D /branches/e17/images/seconds.cursor.15.png
+   D /branches/e17/images/seconds.cursor.16.png
+   D /branches/e17/images/seconds.cursor.17.png
+   D /branches/e17/images/seconds.cursor.18.png
+   D /branches/e17/images/seconds.cursor.19.png
+   D /branches/e17/images/seconds.cursor.20.png
+   D /branches/e17/images/seconds.cursor.21.png
+   D /branches/e17/images/seconds.cursor.22.png
+   D /branches/e17/images/seconds.cursor.23.png
+   D /branches/e17/images/seconds.cursor.24.png
+   D /branches/e17/images/seconds.cursor.25.png
+   D /branches/e17/images/seconds.cursor.26.png
+   D /branches/e17/images/seconds.cursor.27.png
+   D /branches/e17/images/seconds.cursor.28.png
+   D /branches/e17/images/seconds.cursor.29.png
+   D /branches/e17/images/seconds.cursor.30.png
+   D /branches/e17/images/seconds.cursor.31.png
+   D /branches/e17/images/seconds.cursor.32.png
+   D /branches/e17/images/seconds.cursor.33.png
+   D /branches/e17/images/seconds.cursor.34.png
+   D /branches/e17/images/seconds.cursor.35.png
+   D /branches/e17/images/seconds.cursor.36.png
+   D /branches/e17/images/seconds.cursor.37.png
+   D /branches/e17/images/seconds.cursor.38.png
+   D /branches/e17/images/seconds.cursor.39.png
+   D /branches/e17/images/seconds.cursor.40.png
+   D /branches/e17/images/seconds.cursor.41.png
+   D /branches/e17/images/seconds.cursor.42.png
+   D /branches/e17/images/seconds.cursor.43.png
+   D /branches/e17/images/seconds.cursor.44.png
+   D /branches/e17/images/seconds.cursor.45.png
+   D /branches/e17/images/seconds.cursor.46.png
+   D /branches/e17/images/seconds.cursor.47.png
+   D /branches/e17/images/seconds.cursor.48.png
+   D /branches/e17/images/seconds.cursor.49.png
+   D /branches/e17/images/seconds.cursor.50.png
+   D /branches/e17/images/seconds.cursor.51.png
+   D /branches/e17/images/seconds.cursor.52.png
+   D /branches/e17/images/seconds.cursor.53.png
+   D /branches/e17/images/seconds.cursor.54.png
+   D /branches/e17/images/seconds.cursor.55.png
+   D /branches/e17/images/seconds.cursor.56.png
+   D /branches/e17/images/seconds.cursor.57.png
+   D /branches/e17/images/seconds.cursor.58.png
+   D /branches/e17/images/seconds.cursor.59.png
+   M /branches/e17/main.edc
+
+
+------------------------------------------------------------------------
+r438 | alberto.castro.leiva | 2008-04-25 02:00:25 -0500 (Fri, 25 Apr 2008) | 4 lines
+Changed paths:
+   M /branches/e17/bits/ilist_header.edc
+
+Either redo the scrollframe border shadow or update the HEADER 
+color. Run:1
+
+
+------------------------------------------------------------------------
+r437 | alberto.castro.leiva | 2008-04-24 14:24:23 -0500 (Thu, 24 Apr 2008) | 4 lines
+Changed paths:
+   M /branches/e17/bits/scrollbar_hbar.edc
+   M /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_vbar.edc
+
+Scrollbar: no need to color multiply when the clip has already 
+been set. Color mixed up fixes.
+
+
+------------------------------------------------------------------------
+r436 | alberto.castro.leiva | 2008-04-24 02:59:09 -0500 (Thu, 24 Apr 2008) | 7 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_logo.edc
+   D /branches/e17/bits/about_theme_programs.edc
+   M /branches/e17/bits/about_theme_text.edc
+   M /branches/e17/bits/scrollbar_hbar.edc
+   M /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/scrollframe_hbar.edc
+   M /branches/e17/bits/scrollframe_vbar.edc
+   M /branches/e17/bits/textblock_styles.edc
+   D /branches/e17/images/bubble.png
+   M /branches/e17/images/check1.png
+   M /branches/e17/images/images.edc
+   M /branches/e17/images/sf_barh_thumb.png
+   M /branches/e17/images/sf_barv_thumb.png
+   M /branches/e17/images/sf_bl1_over.png
+   M /branches/e17/images/sf_br1_over.png
+   M /branches/e17/images/sf_btd1.png
+   M /branches/e17/images/sf_btd1_over.png
+   M /branches/e17/images/sf_btu1.png
+   M /branches/e17/images/sf_btu1_over.png
+   M /branches/e17/images/slider_h.png
+   M /branches/e17/images/slider_v.png
+   M /branches/e17/main.edc
+
+Updating ChangeLog
+
+About this Edje: still playing with ideas.
+
+Removed various pixel distortion from various images.
+
+
+------------------------------------------------------------------------
+r435 | alberto.castro.leiva | 2008-04-23 02:15:55 -0500 (Wed, 23 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+
+Updating ChangeLog, this is silly!!
+
+------------------------------------------------------------------------
 r434 | alberto.castro.leiva | 2008-04-23 02:15:08 -0500 (Wed, 23 Apr 2008) | 2 lines
 Changed paths:
    D /branches/e17/fonts/DejaVuSerif-Bold.ttf
