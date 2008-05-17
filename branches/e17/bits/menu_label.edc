@@ -6,6 +6,12 @@ part {
       
 	description {
         	state: "default" 0.0;
+		#if ENABLE_COLOR_CLASS == 0
+		#else
+		#if ENABLE_COLOR_CLASS == 1
+			color_class: "menu_item";
+		#endif
+		#endif
 		color: 60 60 60 255;
         
 		rel1 { 

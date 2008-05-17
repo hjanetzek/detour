@@ -13,8 +13,8 @@ program { \
 }
 
 #define sel() \
-	ITEM_SEL("go_passive", "e,state,unselected", "default", 0.0, DECELERATE, 0.0, "content") \
-	ITEM_SEL("go_active", "e,state,selected", "active", 0.0, DECELERATE, 0.0, "content")
+	ITEM_SEL("go_passive", "e,state,unselected", "default", 0.0, DECELERATE, 0.0, "item_hilight") \
+	ITEM_SEL("go_active", "e,state,selected", "active", 0.0, DECELERATE, 0.0, "item_hilight")
 
 # ifdef ITEM_TOGGLE
 #  undef ITEM_TOGGLE
@@ -43,25 +43,25 @@ group {
 	}
 
 	programs {
-	#if VISIBLE_MENU_TITLE == 0
-	#else
-	#if VISIBLE_MENU_TITLE == 1
-		program {
-			name: "on";
-			signal: "e,action,show,title";
-			source: "e";
-			action: STATE_SET "active" 0.0;
-			target: "e.text.title";
-		}
-		program {
-			name: "off";
-			signal: "e,action,hide,title";
-			source: "e";
-			action: STATE_SET "default" 0.0;
-			target: "e.text.title";
-		}
-	#endif
-	#endif
+		#if VISIBLE_MENU_TITLE == 0
+		#else
+		#if VISIBLE_MENU_TITLE == 1
+			program {
+				name: "on";
+				signal: "e,action,show,title";
+				source: "e";
+				action: STATE_SET "active" 0.0;
+				target: "e.text.title";
+			}
+			program {
+				name: "off";
+				signal: "e,action,hide,title";
+				source: "e";
+				action: STATE_SET "default" 0.0;
+				target: "e.text.title";
+			}
+		#endif
+		#endif
 	}
 }
 
@@ -78,7 +78,7 @@ group {
 			signal: "e,state,selected";
 			source: "e";
 			action: STATE_SET "active" 0.0;
-			target: "arrow";
+			target: "menu_arrow";
 		}
 
 		program {
@@ -86,7 +86,7 @@ group {
 			signal: "e,state,unselected";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			target: "arrow";
+			target: "menu_arrow";
 		}
 	}
 }

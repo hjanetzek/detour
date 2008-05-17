@@ -5,10 +5,11 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 85 85;
+		//max: 85 85;
+		max: 85 127;
 		aspect: 1.0 1.0;
 	    	aspect_preference: BOTH;
-		align: 0.5 0.5;
+		align: 0.0 0.5;
 
 		rel1 { 
 			relative: 0.0 0.0; 
@@ -46,14 +47,21 @@ part {
 
 part {
 	name: "battery-charge";
-	clip_to: "pulse_clip";
+	clip_to: "fade_clip";
 	
 	description {
 		state: "default" 0.0;
 		max: 35 35;
 		aspect: 1 1;
-		align: 1.0 0.5;
+		align: 1.0 1.0;
 		visible: 0;
+
+	    rel1 {
+	       relative: 0.5  0.5;
+	    }
+	    rel2 {
+	       relative: 1.0  1.0;
+	    }
 
 		image {
 			normal: "battery-charge.png";
@@ -67,6 +75,7 @@ part {
 	}
 }
 
+/*
 part {
 	name: "text_clip";
 	type: RECT;
@@ -89,18 +98,20 @@ part {
 		}
 	}
 }
+*/
 
 part {
 	name: "e.text.reading";
 	type: TEXT;
-	effect: NONE;
-	clip_to: "text_fade_clip";
+	mouse_events: 0;
+	clip_to: "fade_clip";
 
 	description {
 		state: "default" 0.0;
 		color: 7 7 7 255;
-		align: 0.5 0.5;
+		align: 1.0 0.0;
 
+/*
 		rel1 { 
 			to: "text_clip"; 
 			relative: 0.5 0.5; 
@@ -112,13 +123,22 @@ part {
 			relative: 0.5 0.5; 
 			offset: -1 -1; 
 		}
+*/
+
+	    rel1 {
+	       relative: 1.0  0.0;
+	       to_x:     "battery";
+	    }
+	    rel2 {
+	       relative: 1.0  0.0;
+	    }
 
 		text {
 			text: "100%";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 10;
 			min: 1 1;
-			align: 0.5 0.5;
+			align: 1.0 0.0;
 			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
@@ -134,13 +154,15 @@ part {
 	name: "e.text.time";
 	type: TEXT;
 	effect: NONE;
-	clip_to: "text_fade_clip";
+	clip_to: "fade_clip";
 
 	description {
 		state: "default" 0.0;
 		color: 7 7 7 255;
-		align: 0.5 0.5;
+		//align: 0.5 0.5;
+		align: 1.0 0.0;
 
+/*
 		rel1 { 
 			to: "text_clip"; 
 			relative: 0.0 0.5; 
@@ -152,13 +174,24 @@ part {
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
+*/
+
+	    rel1 {
+	       relative: 1.0  1.0;
+	       to_x:     "battery";
+	       to_y:     "e.text.reading";
+	    }
+	    rel2 {
+	       relative: 1.0  1.0;
+	       to_y:     "e.text.reading";
+	    }
 
 		text {
 			text: "00:00";
 			font: "DejaVuSans";
 			size: 9;
 			min: 1 1;
-			align: 0.5 0.5;
+			align: 1.0 0.0;
 			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
@@ -188,27 +221,6 @@ part {
 	description {
 		state: "charging" 0.0;
 		color: 255 255 255 255;
-	}
-}
-
-part {
-	name: "text_fade_clip";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 0;
-	}
-
-	description {
-		state: "charging" 0.0;
-		color: 255 255 255 255;
-	}
-
-	description {
-		state: "faded" 0.0;
-		color: 255 255 255 128;
 	}
 }
 
