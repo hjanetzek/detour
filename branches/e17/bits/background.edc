@@ -3,9 +3,18 @@ group {
 	name: "e/desktop/background";
 
 	parts { 
-		#include "background_main.edc"
-	}
+		part { 
+			name: "background_image";
+			type: GRADIENT;
+	
+			description { 
+				state: "default" 0.0; 
 
-	programs {
+				gradient {
+					spectrum: "backdrop";
+				}
+    			}
+		}
 	}
 }
+
