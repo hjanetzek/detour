@@ -15,8 +15,60 @@ group {
 	name: "e/gadman/popup";
 
 	parts {
-		//~ this shit is not edje friendly
+		//~ this shit is not edje friendly!!
         	#include "gadman_popup.edc"
+	}
+}
+
+group {
+	name: "e/gadman/full_bg";
+
+	parts {
+		part{
+			name: "bg";
+			type: RECT;
+			mouse_events: 1;
+
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 192;
+			}
+
+			description {
+				state: "hidden" 0.0;
+				color: 0 0 0 0;
+			}
+		}
+	}
+
+	programs {
+		program {
+			name: "show";
+			signal: "e,state,visibility,show";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "bg";
+		}
+		program {
+			name: "hide";
+			signal: "e,state,visibility,hide";
+			source: "e";
+			action: STATE_SET "hidden" 0.0;
+			target: "bg";
+		}
+
+	}
+}
+
+group {
+	name: "e/gadman/frame";
+
+	parts {
+		#include "gadman_frame.edc"
+	}
+
+	programs {
+		#include "gadman_frame_programs.edc"
 	}
 }
 
