@@ -10,7 +10,7 @@
 
 /* 
  * cored.org et al (see AUTHORS)
- * detour version 0.7.4 (e17) for Enlightenment 0.16.999.042 or later.
+ * detour version 0.7.4 (e17) for Enlightenment 0.16.999.043 or later.
  */
 
 //Set the pointer to pulsating mode
@@ -38,16 +38,13 @@
 //Set ibar icons to rgba: 255 255 255 164
 #define FADE_IBAR_ICONS 0
 
-## testing grounds 
+## testing
 
 //Enable custom color classes
 #define ENABLE_COLOR_CLASS 0 /* incomplete */
 
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
-
-//Set the background style
-#define BACKGROUND_TYPE 1
 
 //Use an RGBA for the Shelf
 #define USES_X_COMPOSITE 1

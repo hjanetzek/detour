@@ -1,5 +1,6 @@
 == Bugfix ==
 Gadman_frame.edc: missing context menu popup
+	-you can see it once
 
 == Improve ==
 -Active & Inactive Window Decorations (borders)
