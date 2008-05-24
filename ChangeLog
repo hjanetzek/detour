@@ -1,4 +1,141 @@
 ------------------------------------------------------------------------
+r484 | alberto.castro.leiva | 2008-05-08 02:01:05 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/entrance/TODO
+
+Update TODO
+
+------------------------------------------------------------------------
+r480 | alberto.castro.leiva | 2008-05-08 01:29:35 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/entrance/AUTHORS
+   M /branches/entrance/Makefile
+   A /branches/entrance/bits
+   A /branches/entrance/bits/background.edc
+   A /branches/entrance/bits/instructables.edc
+   A /branches/entrance/bits/instructables_programs.edc
+   A /branches/entrance/bits/main_window.edc
+   A /branches/entrance/bits/main_window_programs.edc
+   A /branches/entrance/bits/preview.edc
+   A /branches/entrance/bits/session.edc
+   A /branches/entrance/bits/session_programs.edc
+   M /branches/entrance/images/images.edc
+   A /branches/entrance/macros
+   M /branches/entrance/main.edc
+
+Update Entrance directory structure.
+
+------------------------------------------------------------------------
+r469 | alberto.castro.leiva | 2008-05-07 02:41:41 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/entrance/main.edc
+   M /branches/entrance/main_window.edc
+   M /branches/entrance/main_window_programs.edc
+
+Cosmetic fixes.
+
+------------------------------------------------------------------------
+r468 | alberto.castro.leiva | 2008-05-07 02:23:17 -0500 (Wed, 07 May 2008) | 3 lines
+Changed paths:
+   M /branches/entrance/main_window_programs.edc
+
+Allow the user to log in at least, until Sessions are up.
+
+
+------------------------------------------------------------------------
+r460 | alberto.castro.leiva | 2008-05-07 01:44:25 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   A /branches/entrance/AUTHORS
+   A /branches/entrance/COPYING
+   A /branches/entrance/ChangeLog
+   A /branches/entrance/DejaVu.COPYING
+   A /branches/entrance/INSTALL
+   A /branches/entrance/README
+   A /branches/entrance/TODO
+   A /branches/entrance/Tango.COPYING
+   A /branches/entrance/instructables.edc
+   A /branches/entrance/instructables_programs.edc
+
+Add these files.
+
+------------------------------------------------------------------------
+r459 | alberto.castro.leiva | 2008-05-07 01:35:46 -0500 (Wed, 07 May 2008) | 4 lines
+Changed paths:
+   D /branches/entrance/fonts/DejaVuSansMono-Bold.ttf
+   D /branches/entrance/fonts/DejaVuSansMono.ttf
+   D /branches/entrance/images/default_preview.png
+   A /branches/entrance/images/dialog-error.png
+   M /branches/entrance/images/entry_focus.png
+   A /branches/entrance/images/instruct_overlay.png
+   M /branches/entrance/images/logo.png
+   D /branches/entrance/images/panel.png
+   D /branches/entrance/images/panel_bottom.png
+   D /branches/entrance/images/pass_ok.png
+   A /branches/entrance/images/power_button.png
+   D /branches/entrance/images/power_button_0.png
+   D /branches/entrance/images/power_button_1.png
+   A /branches/entrance/images/preview.png
+   A /branches/entrance/images/reset_button.png
+   D /branches/entrance/images/reset_button_0.png
+   D /branches/entrance/images/reset_button_1.png
+   D /branches/entrance/images/user_ok.png
+   M /branches/entrance/main.edc
+   M /branches/entrance/main_window.edc
+   M /branches/entrance/main_window_programs.edc
+   D /branches/entrance/power_button.edc
+   M /branches/entrance/preview.edc
+   D /branches/entrance/reset_button.edc
+
+Entrance,
+All we need now is a session panel.
+
+
+------------------------------------------------------------------------
+r458 | alberto.castro.leiva | 2008-05-06 01:04:36 -0500 (Tue, 06 May 2008) | 3 lines
+Changed paths:
+   A /branches/entrance/Makefile
+   A /branches/entrance/background.edc
+   A /branches/entrance/fonts
+   A /branches/entrance/fonts/DejaVuSans-Bold.ttf
+   A /branches/entrance/fonts/DejaVuSans.ttf
+   A /branches/entrance/fonts/DejaVuSansMono-Bold.ttf
+   A /branches/entrance/fonts/DejaVuSansMono.ttf
+   A /branches/entrance/images
+   A /branches/entrance/images/bg.png
+   A /branches/entrance/images/button.png
+   A /branches/entrance/images/button_base.png
+   A /branches/entrance/images/button_clicked.png
+   A /branches/entrance/images/default_preview.png
+   A /branches/entrance/images/dot-wide.png
+   A /branches/entrance/images/dot.png
+   A /branches/entrance/images/entry.png
+   A /branches/entrance/images/entry_focus.png
+   A /branches/entrance/images/images.edc
+   A /branches/entrance/images/logo.png
+   A /branches/entrance/images/main_window.png
+   A /branches/entrance/images/panel.png
+   A /branches/entrance/images/panel_bottom.png
+   A /branches/entrance/images/pass_ok.png
+   A /branches/entrance/images/power_button_0.png
+   A /branches/entrance/images/power_button_1.png
+   A /branches/entrance/images/reset_button_0.png
+   A /branches/entrance/images/reset_button_1.png
+   A /branches/entrance/images/side-panel.png
+   A /branches/entrance/images/side-panel_shadow.png
+   A /branches/entrance/images/user_ok.png
+   A /branches/entrance/main.edc
+   A /branches/entrance/main_window.edc
+   A /branches/entrance/main_window_programs.edc
+   A /branches/entrance/power_button.edc
+   A /branches/entrance/preview.edc
+   A /branches/entrance/reset_button.edc
+   A /branches/entrance/session.edc
+   A /branches/entrance/session_programs.edc
+
+Testing grounds for an Entrance.
+Detour Entrance v. 0.0.1 
+
+------------------------------------------------------------------------
 r457 | alberto.castro.leiva | 2008-05-06 00:58:11 -0500 (Tue, 06 May 2008) | 2 lines
 Changed paths:
    A /branches/entrance
