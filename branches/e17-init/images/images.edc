@@ -3,7 +3,6 @@
 image: "check0.png" COMP;
 image: "check1.png" COMP;
 image: "splash.png" COMP;
-image: "entry.png" COMP;
 image: "busy.cursor.00.png" COMP;
 image: "busy.cursor.01.png" COMP;
 image: "busy.cursor.02.png" COMP;

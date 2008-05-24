@@ -27,12 +27,21 @@ program {
 	after: "go2"; /* loop */
 }
 
+program {
+	name: "stop_go2";
+	signal: "show";
+	source: "";
+	action: STATE_SET "default" 0.0; /* set it to visible */
+	transition: LINEAR 0.25;
+	target: "busy_clip"; in: 3.0 0.0;
+}
+
 program { 
 	name: "load.splash.screen";
 	signal: "show";
 	source: "";
 	action: STATE_SET "visible" 0.0; /* set it to visible */
-	transition: DECELERATE 2.0; in: 2.5 0.0; /* delay */
+	transition: DECELERATE 2.0; in: 4.5 0.0; /* delay */
 	target: "splash.clip";
 	after: "load.text"; 
 }
