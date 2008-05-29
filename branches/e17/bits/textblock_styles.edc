@@ -3,13 +3,31 @@ style {
 	name: "about_style";
 	#if ENABLE_TEXT_CLASS == 0
 		base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
-		tag:  "hilight" "+ font=DejaVuSans-Bold";
-		tag:  "title" "+ font_size=11 font=DejaVuSans";
+		tag: "hilight" "+ font=DejaVuSans-Bold";
+		tag: "title" "+ font_size=11 font=DejaVuSans";
 	#else
 	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
-	tag:  "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
-	tag:  "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
+	tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
+	tag: "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
+	#endif
+	#endif
+      
+	tag:  "br" "\n"; 
+	tag:  "/title" "- \n \n";
+}
+
+style {
+	name: "about_authors";
+	#if ENABLE_TEXT_CLASS == 0
+		base: "font=DejaVuSans font_size=11 color=#070707 align=center wrap=word";
+		tag: "hilight" "+ font=DejaVuSans-Bold";
+		tag: "title" "+ font_size=11 font=DejaVuSans";
+	#else
+	#if ENABLE_TEXT_CLASS == 1
+		base: "font=DejaVuSans font_size=11 color=#070707 align=center wrap=word text_class=tb_plain";
+	tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
+	tag: "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
 	#endif
 	#endif
       
