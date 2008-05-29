@@ -109,6 +109,17 @@ program {
 	transition: DECELERATE 0.75; 
 	in: 10.0 0.0;
 	target: "about_authors_entry_clip";
+	after: "go_a3";
+}
+
+program {
+	name: "go_a3";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.3;
+	transition: DECELERATE 0.75; 
+	in: 10.0 0.0;
+	target: "about_authors_entry_clip";
 	after: "return";
 }
 
@@ -120,8 +131,8 @@ program {
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 1.0; 
 	in: 10.0 0.0;
-	target: "about_authors_entry_clip";
 	target: "about_e_entry_clip";
+	target: "about_authors_entry_clip";
 	target: "e.textblock.authors";
 	after: "go"; 
 }
