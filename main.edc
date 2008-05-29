@@ -47,7 +47,7 @@
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
 
 //Use an RGBA for the Shelf
-#define USES_X_COMPOSITE 1
+#define USES_X_COMPOSITE 0
 
 fonts {
 	font:"fonts/DejaVuSans.ttf" "DejaVuSans";

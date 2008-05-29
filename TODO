@@ -1,6 +1,7 @@
 == Bugfix ==
 Gadman_frame.edc: missing context menu popup
 	-you can see it once
+Dialog app border: wrong pixels bb border
 
 == Improve ==
 -Active & Inactive Window Decorations (borders)
@@ -12,6 +13,7 @@ Gadman_frame.edc: missing context menu popup
 -about enlightenment dialog
 -windows rememeber icon (replace)
 -icons()
+-desklock entry
 
 == Global ==
 *Complete start.edc

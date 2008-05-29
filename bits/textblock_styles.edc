@@ -2,12 +2,12 @@
 style {
 	name: "about_style";
 	#if ENABLE_TEXT_CLASS == 0
-		base: "font=DejaVuSans font_size=9 align=center color=#070707 wrap=word";
+		base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
 		tag:  "hilight" "+ font=DejaVuSans-Bold";
 		tag:  "title" "+ font_size=11 font=DejaVuSans";
 	#else
 	#if ENABLE_TEXT_CLASS == 1
-		base: "font=DejaVuSans font_size=10 align=center color=#070707 wrap=word text_class=tb_plain";
+		base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
 	tag:  "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
 	tag:  "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
 	#endif
@@ -19,17 +19,17 @@ style {
 
 style {
 	name: "resize";
-	base: "font=DejaVuSans-Bold font_size=10 align=center color=#3c3c3c";
+	base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c";
 }
 
 style {
 	name: "dialog_style";
 	#if ENABLE_TEXT_CLASS == 0
-		base: "font=DejaVuSans-Bold font_size=10 align=center color=#3c3c3c wrap=word"; 
+		base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word"; 
 		tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d";
 	#else
 	#if ENABLE_TEXT_CLASS == 1
-		base: "font=DejaVuSans-Bold font_size=10 align=center color=#3c3c3c wrap=word text_class=tb_plain";
+		base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word text_class=tb_plain";
 	tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d text_class=tb_light"; 
 	#endif
 	#endif
