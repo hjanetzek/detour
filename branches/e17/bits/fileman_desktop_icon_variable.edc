@@ -289,7 +289,6 @@ part {
 		text {
 			text: "No Title";
 			size: 11;
-			//font: "Sans:style=Bold,DejaVuSans-Bold";
 			font: "DejaVuSans";
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
 				min: 1 1;

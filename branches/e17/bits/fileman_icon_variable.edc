@@ -249,7 +249,6 @@ part {
 		aspect: 1.0 1.0;
 		aspect_preference: BOTH;
 		align: 0.5 0.5;
-		/* TODO: fixed: 1 1; */
 
 		rel1 { 
 			to: "icon"; 

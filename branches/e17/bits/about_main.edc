@@ -1,314 +1,23 @@
 
 part {
-	name: "base3";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 104 108 111 255;
-	
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-	
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 0; 
-		}
-	}
-}
-
-part {
-	name: "base2";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 104 108 111 0;
-
-		rel1 { 
-			to_y: "base"; 
-			relative: 0.0 1.0; 
-			offset: 1 0; 
-		}
-
-		rel2 { 
-			relative: 1.0  1.0; 
-			offset: -2 0; 
-		}
-	}
-}
-
-part {
-	name: "base";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "dialog_bg.png";
-			border: 2 2 2 2;
-		}
-
-		fill {
-			smooth: 0;
-		}
-    	}
-}
-
-part {
-	name: "middle";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 4 100;
-		max: 4 100;
-		fixed: 1 1;
-		color: 255 0 0 0;
-		align: 0.5 1.0;
-
-		rel1 { 
-			relative: 0.0 1.0; 
-			offset: 7 -1; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -8 -1; 
-		}
-	}
-}
-
-part {
-	name: "about_bg";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		visible: 0;
-
-		rel1 { 
-			to: "e.textblock.about"; 
-			offset: -7 -7; 
-		}
-
-		rel2 { 
-			to: "e.textblock.about"; 
-			offset: 6 6; 
-		}
-
-		image {
-			normal: "entry.png";
-			border: 5 5 8 7;
-		}
-    	}
-}
-
-part {
-	name: "authors_bg";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		visible: 0;
-
-		rel1 { 
-			to: "e.textblock.authors"; 
-			offset: -7 -7; 
-		}
-
-		rel2 { 
-			to: "e.textblock.authors"; 
-			offset: 6 6; 
-		}
-
-		image {
-			normal: "entry.png";
-			border: 5 5 8 7;
-		}
-	}
-}
-
-part {
-	name: "e.textblock.about";
-	type: TEXTBLOCK;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 200 0;
-		max: 200 1000;
-
-		rel1 { 
-			to_y: "e.text.version"; 
-			relative: 0.0 1.0; 
-			offset: 16 8; 
-		}
-
-		rel2 { 
-			to_y: "middle"; 
-			to_x: "logo"; 
-			relative: 0.0 0.4; 
-			offset: -9 -9; 
-		}
-
-		text {
-			style: "about_style";
-			min: 0 1;
-		}
-	}
-}
-
-part {
-	name: "e.textblock.authors";
-	type: TEXTBLOCK;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 200 0;
-		max: 1000 1000;
-
-		rel1 { 
-			to_y: "e.text.version"; 
-			to_x: "logo"; 
-			relative: 1.0 1.0; 
-			offset: 8 8; 
-		}
-
-		rel2 { 
-			to_y: "middle"; 
-			relative: 1.0 0.4; 
-			offset: -17 -9; 
-		}
-
-		text {
-			style: "about_style";
-			min: 1 1;
-		}
-   	 }
-}
-
-part {
-	name: "e.text.title";
-	type: TEXT;
-	effect: SHADOW;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 7 7 7 255;
-		color3: 170 168 169 128;
-		fixed: 0 1;
-		align: 0.5 0.0;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 6 6; 
-		}
-
-		rel2 { 
-			relative: 1.0 0.0; 
-			offset: -7 6; 
-		}
-
-		text {
-			text: "Enlightenment";
-			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 16;
-			min: 1 1;
-			align: 0.5 0.5;
-			#if ENABLE_TEXT_CLASS == 0
-				text_class: "";
-			#else
-			#if ENABLE_TEXT_CLASS == 1
-				text_class: "about_title";
-			#endif
-			#endif      
-		}
-	}
-}
-
-part {
-	name: "e.text.version";
-	type: TEXT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 60 60 60 255;
-		fixed: 0 1;
-		align: 0.5 0.0;
-
-		rel1 { 
-			to: "e.text.title"; 
-			relative: 0.0 1.0; 
-			offset: 6 1; 
-		}
-
-		rel2 { 
-			to: "e.text.title"; 
-			relative: 1.0  1.0; 
-			offset: -7 1; 
-		}
-
-		text {
-			text: "0.17.0.000";
-			font: "DejaVuSans";
-			size: 12;
-			min: 1 1;
-			align: 0.5 0.5;
-			#if ENABLE_TEXT_CLASS == 0
-				text_class: "";
-			#else
-			#if ENABLE_TEXT_CLASS == 1
-				text_class: "about_version";
-			#endif
-			#endif	       
-		}
-	}
-}
-
-part {
 	name: "logo";
 	type: IMAGE;
 	mouse_events: 0;
 
 	description {
 		state:"default" 0.0;
-		min: 63 63;
-		max: 63 63;
+		min: 108 108;
+		max: 108 108;
 		fixed: 1 1;
 		align: 0.5 0.5;
 
 		rel1 { 
-			to_y: "e.textblock.about"; 
-			relative: 0.5 0.5; 
-			offset: 0 0; 
+			relative: 0.5 0.0; 
+			offset: 0 130; 
 		}
-
+			
 		rel2 { 
-			to_y: "e.textblock.about";
-			relative: 0.5 0.5; 
+			relative: 0.5 0.0; 
 			offset: 0 0; 
 		}
 
@@ -385,272 +94,305 @@ PT("p28", 0.6093750, 0.6875000, 0.8046875, 0.8906250);
 PT("p29", 0.6640625, 0.6406250, 0.8671875, 0.8359375);
 
 part {
-	name: "button.area";
-	type: RECT;
-
-	description {
-		state: "default" 0.0;
-		min: 98 30;
-		max: 98 30;
-		fixed: 1 1;
-		color: 255 255 255 255;
-		align: 0.5 1.0;
-
-		rel1 { 
-			relative: 0.5 1.0; 
-			offset: 0 -7; 
-		}
-
-		rel2 { 
-			relative: 0.5 1.0; 
-			offset: 0 -7; 
-		}
-	}
-}
-
-part {
-	name: "button_image";
-	type: IMAGE;
-	mouse_events: 0;
-	clip_to: "button.area";
-
-	description {
-		state: "default" 0.0;
-		min: 98 28;
-		max: 98 28;
-		fixed: 1 1;
-		color: 255 255 255 178;
-
-		rel1 { 
-			to: "button.area"; 
-			relative: 0.5 0.5; 
-		}
-
-		rel2 { 
-			to: "button.area"; 
-			relative: 0.5 0.5; 
-		}	
-
-		image.normal: "button_outline.png";
-		image.border: 7 7 7 7;
-	}
-
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-	}
-}
-
-part {
-	name: "button_clip";
-	type: RECT;
-	mouse_events: 0;
-	clip_to: "button.area";
-
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 255;
-
-		rel1 { 
-			to: "button_image"; 
-			relative: 0.0 0.0; 
-			offset: 3 1; 
-		}
-
-		rel2 { 
-			to: "button_image"; 
-			relative: 1.0 1.0; 
-			offset: -4 -2; 
-		}
-	}
-
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-	}
-}
-
-part {
-	name: "button_enabled";
-	type: IMAGE;
-	mouse_events: 1;
-	clip_to: "button_clip";
-
-	description {
-		state: "default" 0.0;
-		min: 44 26;
-
-		rel1 { 
-			to: "button_clip"; 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "button_clip"; 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image.normal: "button.png";
-		image.border: 7 7 7 7;
-	}
-
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-	}
-}
-
-part {
-	name: "button_shadow";
-	type: IMAGE;
-	mouse_events: 0;
-	clip_to: "button_clip";
-
-	description {
-		state: "default" 0.0;
-		min: 86 26;
-		color: 255 255 255 0;
-
-		rel1 { 
-			to: "button_clip"; 
-		}
-
-		rel2 { 
-			to: "button_clip"; 
-		}
-
-		image.normal: "button_shadow.png";
-		image.border: 6 6 0 6;
-	}
-
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
-}
-
-part {
-	name: "icon_swallow";
-	type: RECT;
-
-	description {
-		state: "default" 0.0;
-		align: 0.0 0.5;
-		color: 0 0 0 0;
-
-		rel2 { 
-			to: "button_image"; 
-			relative: 0.0 0.0; 
-			offset: 4 5; 
-		}
-
-		rel2 { 
-			to: "button_image"; 
-			relative: 0.0 1.0; 
-			offset: 3 -6; 
-		}
-	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		aspect: 1.0 1.0;
-		align: 0.0 0.5;	
-		aspect_preference: VERTICAL;
-		color: 0 0 0 0;
-
-		rel1 { 
-			to: "button_image"; 
-			relative: 0.0 0.0; 
-			offset: 8 5; 
-		}
-
-		rel2 { 
-			to: "button_image"; 
-			relative: 0.0 1.0; 
-			offset: 7 -6; 
-		}
-
-	}
-}
-
-part {
-	name: "button_text";
+	name: "e.text.title";
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
-	clip_to: "button.area";
 
 	description {
 		state: "default" 0.0;
-		color: 60 60 60 255;
+		color: 7 7 7 255;
 		color3: 170 168 169 128;
 
-		rel1 {
-			to_x: "icon_swallow";
-			to_y: "button_image";
-			relative: 1.0 0.0; offset: 4 2;
+		rel1 { 
+			to: "logo";
+			relative: 0.5 1.0; 
+			offset: 0 0; 
 		}
-
-		rel2 {
-			relative: 1.0 1.0; offset: -8 0;
-			to: "button_image";
+	
+		rel2 { 
+			to: "logo"; 
+			relative: 0.5 1.0; 
+			offset: -1 31; 
 		}
 
 		text {
-			text: "Exit";
+			text: "Enlightenment";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 11;
+			size: 12;
 			min: 1 1;
-			align: 0.5 0.55;
+			align: 0.5 0.5;
 			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else
 			#if ENABLE_TEXT_CLASS == 1
-				text_class: "button";
+				text_class: "about_title";
 			#endif
-			#endif
+			#endif      
 		}
-	}
-
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-		color: 60 60 60 229;
-		color3: 170 168 169 64;
 	}
 }
 
 part {
-	name: "button_shadow_overlay";
-	type: IMAGE;
+	name: "e.text.version";
+	type: TEXT;
+	effect: NONE;
 	mouse_events: 0;
-	clip_to: "button_clip";
 
 	description {
 		state: "default" 0.0;
-		min: 86 26;
-		color: 255 255 255 0;
+		color: 60 60 60 255;
 
 		rel1 { 
-			to: "button_clip"; 
+			to: "e.text.title"; 
+			relative: 0.5 1.0; 
+			offset: 0 0;
 		}
 
 		rel2 { 
-			to: "button_clip"; 
+			to: "e.text.title"; 
+			relative: 0.5 1.0; 
+			offset: -1 8; 
 		}
 
-		image.normal: "button_shadow_overlay.png";
-		image.border: 6 6 6 13;
+		text {
+			text: "0.17.0.000";
+			font: "DejaVuSans";
+			size: 11;
+			min: 1 1;
+			align: 0.5 0.5;
+			#if ENABLE_TEXT_CLASS == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASS == 1
+				text_class: "about_version";
+			#endif
+			#endif	       
+		}
+	}
+}
+
+part {
+	name: "about_e_entry";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+
+		rel1 { 
+			to_y: "e.text.version";  
+			relative: 0.0 1.0; 
+			offset: 4 5; 
+		}
+
+		rel2 { 
+			to: "button.area"; 
+			to_x: "base";
+			relative: 1.0 0.0; 
+			offset: -5 -5; 
+		}
+
+		image {
+			normal: "entry.png";
+			border: 6 6 8 7;
+		}
+	}
+}
+
+part {
+	name: "container";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 4 4; 
+		}
+
+		rel2 { 
+			to: "about_e_entry"; 
+			relative: 1.0 1.0; 
+			offset: -5 -5; 
+		}
+	}	
+}
+
+part {
+	name: "about_e_entry_clip";
+	type: RECT;
+	mouse_events: 0;
+	clip_to: "container";
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 7 5; 
+		}
+	
+		rel2 { 
+			to: "about_e_entry"; 
+			relative: 1.0 1.0; 
+			offset: -5 -4; 
+		}
 	}
 
 	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
+		state: "default" 0.1;
 		color: 255 255 255 255;
+	
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 7 -116; 
+		}
+
+		rel2 { 
+			to: "about_e_entry";  
+			relative: 1.0 1.0; 
+			offset: -5 -4; 
+		}
 	}
+
+	description {
+		state: "default" 0.2;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 7 -256; 
+		}
+
+		rel2 { 
+			to: "about_e_entry";  
+			relative: 1.0 1.0; 
+			offset: -5 -5; 
+		}
+	}
+}
+
+part {
+	name: "e.textblock.about";
+	type: TEXTBLOCK;
+	mouse_events: 0;
+	clip_to: "about_e_entry_clip";
+
+	description {
+		state: "default" 0.0;
+
+		rel1 { 
+			to: "about_e_entry_clip"; 
+			offset: 2 0; 
+		}
+
+		rel2 { 
+			to: "about_e_entry_clip"; 
+		}
+
+		text {
+			style: "about_style";
+			//min: 0 1;
+		}
+	}
+}
+
+part {
+	name: "about_authors_entry_clip";
+	type: RECT;
+	mouse_events: 0;
+	clip_to: "container";
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 7 5; 
+		}
+	
+		rel2 { 
+			to: "about_e_entry"; 
+			relative: 1.0 1.0; 
+			offset: -5 -4; 
+		}
+	}
+
+	description {
+		state: "default" 0.1;
+		color: 255 255 255 255;
+	
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 7 -66; 
+		}
+
+		rel2 { 
+			to: "about_e_entry";  
+			relative: 1.0 1.0; 
+			offset: -5 -4; 
+		}
+	}
+
+	description {
+		state: "default" 0.2;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "about_e_entry"; 
+			relative: 0.0 0.0; 
+			offset: 7 -136; 
+		}
+
+		rel2 { 
+			to: "about_e_entry";  
+			relative: 1.0 1.0; 
+			offset: -5 -5; 
+		}
+	}
+}
+
+part {
+	name: "e.textblock.authors";
+	type: TEXTBLOCK;
+	mouse_events: 0;
+	clip_to: "about_authors_entry_clip";
+
+	description {
+		state: "default" 0.0;
+		visible: 0;
+
+		rel1 { 
+			to: "about_authors_entry_clip"; 
+			offset: 2 0; 
+		}
+
+		rel2 { 
+			to: "about_authors_entry_clip"; 
+		}
+
+		text {
+			style: "about_style";
+			//min: 0 1;
+		}
+	}
+
+	description {
+		state: "default" 0.1;
+		inherit: "default" 0.0;
+		visible: 1;
+   	 }
 }
 
