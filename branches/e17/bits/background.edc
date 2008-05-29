@@ -5,14 +5,11 @@ group {
 	parts { 
 		part { 
 			name: "background_image";
-			type: GRADIENT;
+			type: RECT;
 	
 			description { 
 				state: "default" 0.0; 
-
-				gradient {
-					spectrum: "backdrop";
-				}
+				color: 138 171 225 255;
     			}
 		}
 	}

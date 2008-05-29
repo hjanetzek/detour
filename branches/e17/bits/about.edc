@@ -1,9 +1,30 @@
 
 group {
 	name: "e/widgets/about/main";
+	min: 299 341;
+	max: 299 341;
 
 	parts {
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 299 341;
+				max: 299 341;
+				fixed: 1 1;
+
+				image {
+					normal: "dialog_bg.png";
+					border: 2 2 2 2;
+				}
+			}
+		}
+
 		#include "about_main.edc"
+		#include "about_theme_widget.edc"
 	}
 
 	programs {

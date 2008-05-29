@@ -37,7 +37,7 @@ part {
 
 		image {
 			normal: "shelf_default_bg_tb2.png";
-			border: 10 10 17 0;
+			border: 10 10 15 0;
 		}
 
 		fill {
