@@ -28,6 +28,9 @@
 //Truncate efm icons filename
 #define TRUNCATE_EFM_ICON_FILENAME 1
 
+//Truncate ilist icons filename
+#define TRUNCATE_EFM_ICON_LIST_FILENAME 1
+
 //Enable custom text classes
 #define ENABLE_TEXT_CLASS 1 	
 /* window border always on due to macro dependency */
