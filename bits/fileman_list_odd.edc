@@ -253,7 +253,15 @@ part {
 			text: "Item Label";
 			font: "DejaVuSans";
 			size: 11;
-			min: 1 1;
+			#if TRUNCATE_EFM_ICON_LIST_FILENAME == 0
+				min: 1 1;
+				//elipsis: 0.0;
+			#else
+			#if TRUNCATE_EFM_ICON_LIST_FILENAME == 1
+				min: 0 1;
+				//elipsis: 1.0;
+			#endif
+			#endif
 			align: 0.0 0.5;
 			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
