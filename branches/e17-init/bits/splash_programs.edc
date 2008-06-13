@@ -32,7 +32,7 @@ program {
 	signal: "show";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	transition: LINEAR 0.0; in: 2.0 0.0;
+	transition: LINEAR 0.0; in: 2.5 0.0;
 	target: "busy_clip"; /* hide busy anim */
 }
 
