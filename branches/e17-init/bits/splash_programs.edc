@@ -28,12 +28,12 @@ program {
 }
 
 program {
-	name: "stop_go2";
+	name: "stop_busy_clip";
 	signal: "show";
 	source: "";
-	action: STATE_SET "default" 0.0; /* set it to visible */
-	transition: LINEAR 0.25;
-	target: "busy_clip"; in: 3.0 0.0;
+	action: STATE_SET "default" 0.0;
+	transition: LINEAR 0.0; in: 2.0 0.0;
+	target: "busy_clip"; /* hide busy anim */
 }
 
 program { 
@@ -41,7 +41,7 @@ program {
 	signal: "show";
 	source: "";
 	action: STATE_SET "visible" 0.0; /* set it to visible */
-	transition: DECELERATE 2.0; in: 4.5 0.0; /* delay */
+	transition: DECELERATE 2.0; in: 3.5 0.0; /* delay */
 	target: "splash.clip";
 	after: "load.text"; 
 }
@@ -73,17 +73,7 @@ program {
 	action: STATE_SET "visible" 0.0; 
 	transition: DECELERATE 0.25;
 	target: "icon_clip2";
-	after: "stop2"; 
-}
-
-program {
-	name: "stop2";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.0;
-	transition: LINEAR 0.25;
-	target: "busy_clip"; /* hide busy anim */
-	after: "done0"; /* get ready to hide the splash */
+	after: "done0"; 
 }
 
 program {
