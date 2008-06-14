@@ -83,10 +83,10 @@ style {
 	tag: "br" "\n";
 
 	#if ENABLE_TEXT_CLASS == 0
-		tag: "hilight" "+ font=DejaVuSans-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14";
+		tag: "hilight" "+ font=DejaVuSans-Bold color=#070707";
 	#else
 	#if ENABLE_TEXT_CLASS == 1
-		tag: "hilight" "+ font=DejaVuSans-Bold style=glow color=#fff glow2_color=#fe87 glow_color=#fa14 text_class=tb_large_light";
+		tag: "hilight" "+ font=DejaVuSans-Bold color=#070707 text_class=tb_large_light";
 	#endif
 	#endif
 }

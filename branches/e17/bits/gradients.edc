@@ -1,20 +1,20 @@
 
-spectrum { 
-	name: "backdrop"; 
-	color: 180 190 207 255 1; 
-	color: 84 86 86 255 1; 
+spectrum {
+	name: "radial_gradient";
+	color: 239 239 239 255 1;
+	color: 139 157 180 255 1;
 }
 
-spectrum { 
-	name: "radial_gradient"; 
+spectrum {
+	name: "linear_gradient";
+	color: 139 157 180 128 1;
 	color: 239 239 239 255 1;
-	color: 139 157 180 255 1; 
 }
 
-spectrum { 
-	name: "linear_gradient"; 
-	color: 139 157 180 128 1; 
-	color: 239 239 239 255 1;
+spectrum {
+	name: "backdrop";
+	color: 136 152 168 255 1;
+	color: 254 228 191 255 1;
 }
 
 spectrum {

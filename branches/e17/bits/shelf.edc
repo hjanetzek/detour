@@ -45,10 +45,10 @@ group {
 	}
 
 	parts {
-		#if USES_X_COMPOSITE == 0
+		#if RGBA_IS_AVAILABLE == 0
 			#include "shelf_alternate_base.edc"
 		#else
-		#if USES_X_COMPOSITE == 1
+		#if RGBA_IS_AVAILABLE == 1
 			#include "shelf_alternate_base_x.edc"
 		#endif
 		#endif
