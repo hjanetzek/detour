@@ -3,14 +3,35 @@ group {
 	name: "e/desktop/background";
 
 	parts { 
+		background()
+
 		part { 
-			name: "background_image";
-			type: RECT;
+			name: "background_transition";
+			type: GRADIENT;
 	
 			description { 
 				state: "default" 0.0; 
-				color: 138 171 225 255;
+				gradient.spectrum: "backdrop";
+				color: 255 255 255 0;
     			}
+
+			description { 
+				state: "default" 0.1; 
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+    			}
+		}
+	}
+
+	programs {
+		program {      
+			name: "go_active";
+			signal: "show";
+			source: "";
+			action: STATE_SET "default" 0.1;
+			transition: DECELERATE 0.5; 
+			in: 5.0 0.0;
+			target:  "background_transition";
 		}
 	}
 }

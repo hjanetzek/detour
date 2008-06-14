@@ -168,6 +168,7 @@ image: "sf_bl1_over.png" COMP;
 image: "sf_br1_over.png" COMP;
 
 //~ background
+image: "bg.png" COMP;
 
 //~ error
 image: "error-dialog_bg.png" COMP;

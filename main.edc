@@ -28,7 +28,7 @@
 //Truncate efm icons filename
 #define TRUNCATE_EFM_ICON_FILENAME 1
 
-//Truncate ilist icons filename
+//Truncate efm icon list filename
 #define TRUNCATE_EFM_ICON_LIST_FILENAME 1
 
 //Enable custom text classes
@@ -41,16 +41,14 @@
 //Set ibar icons to rgba: 255 255 255 164
 #define FADE_IBAR_ICONS 0
 
-## testing
-
 //Enable custom color classes
-#define ENABLE_COLOR_CLASS 0 /* incomplete */
+#define ENABLE_COLOR_CLASS 0 /* work in progress */
 
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
 
-//Use an RGBA for the Shelf
-#define USES_X_COMPOSITE 0
+//Use RGBA for the alternate Shelf
+#define RGBA_IS_AVAILABLE 0 /* work in progress */
 
 fonts {
 	font:"fonts/DejaVuSans.ttf" "DejaVuSans";
