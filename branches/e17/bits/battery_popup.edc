@@ -45,7 +45,7 @@ part {
 		}
 
 		text {
-			text: "Warning: Low Battery!";
+			text: "Warning: Running on Battery!";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 1 1;
