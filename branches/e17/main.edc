@@ -33,7 +33,6 @@
 
 //Enable custom text classes
 #define ENABLE_TEXT_CLASS 1 	
-/* window border always on due to macro dependency */
 
 //Display ibar & ibox label overlay
 #define ENABLE_IBAR_LABEL_OVERLAY 1

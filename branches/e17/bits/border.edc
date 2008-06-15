@@ -46,7 +46,6 @@ group {
 		//~ #include "border_blend.edc"
 
 		#include "border_noresizefull_dialog.edc"
-		TOP_BORDER_SHADOW()
 	}
 
 	programs {
@@ -63,7 +62,6 @@ group {
 
 	parts {
 		#include "border_app.edc"
-		TOP_BORDER_SHADOW()
 	}
 
 	programs {
@@ -155,7 +153,6 @@ group {
 
 	parts {
 		#include "border_terminal.edc"
-		TOP_BORDER_SHADOW()
 	}
 
 	programs {
