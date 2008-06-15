@@ -4,7 +4,7 @@ program {
 	signal: "show";
 	source: "";
 	action: STATE_SET "default" 0.0;
-	target:  "logo";
+	target: "logo";
 	after: "go_active1";
 	after: "go_active2";
 	after: "go_active3";
@@ -64,76 +64,4 @@ PR("26", 0.6, "p26");
 PR("27", 0.4, "p27");
 PR("28", 0.2, "p28");
 PR("29", 0.0, "p29");
-
-program {
-	name: "go";
-	/* scrolling about_textblock begin */
-	signal: "load";
-	source: "";
-	action: STATE_SET "default" 0.1;
-	transition: DECELERATE 1.0; 
-	in: 10.0 0.0;
-	target: "about_e_entry_clip";
-	after: "go2";
-}
-
-program {
-	name: "go2";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.2;
-	transition: DECELERATE 0.75; 
-	in: 5.0 0.0;
-	target: "about_e_entry_clip";
-	after: "go_a";
-}
-
-program {
-	name: "go_a";
-	/* scrolling authors_textblock begin */
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.1;
-	transition: DECELERATE 1.0; 
-	in: 5.0 0.0;
-	target: "about_authors_entry_clip";
-	target: "e.textblock.authors";
-	after: "go2";
-}
-
-program {
-	name: "go_a2";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.2;
-	transition: DECELERATE 0.75; 
-	in: 10.0 0.0;
-	target: "about_authors_entry_clip";
-	after: "go_a3";
-}
-
-program {
-	name: "go_a3";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.3;
-	transition: DECELERATE 0.75; 
-	in: 10.0 0.0;
-	target: "about_authors_entry_clip";
-	after: "return";
-}
-
-program {
-	name: "return";
-	/* to the first state */
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 1.0; 
-	in: 10.0 0.0;
-	target: "about_e_entry_clip";
-	target: "about_authors_entry_clip";
-	target: "e.textblock.authors";
-	after: "go"; 
-}
 
