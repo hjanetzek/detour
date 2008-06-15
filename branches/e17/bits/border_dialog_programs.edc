@@ -16,3 +16,4 @@ program {
 	transition: DECELERATE 0.5;
 	target: "close-clip";
 }
+

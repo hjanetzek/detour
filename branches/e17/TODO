@@ -4,13 +4,11 @@ Gadman_frame.edc: missing context menu popup
 Dialog app border: wrong pixels bb border
 
 == Improve ==
--Active & Inactive Window Decorations (borders)
 -gadman controls
 -toolbar.edc
 -temperature.edc: graphics
 -battery e.text.time e.text.reading
--borders.edc are a mess
--about enlightenment dialog
+-macros/borders.edc
 -windows rememeber icon (replace)
 -icons()
 -desklock entry
@@ -19,8 +17,6 @@ Dialog app border: wrong pixels bb border
 *Complete start.edc
 *Complete cpufreq.edc
 *Complete transitions.edc
-*Revamp about.edc
-*Develop wallpapers
 *Add color_classes
 
 == Compile ==

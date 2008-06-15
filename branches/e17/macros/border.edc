@@ -3,6 +3,7 @@
 part { 						\
 	name: "clip.color"; 			\
 	type: RECT; 				\
+	mouse_events: 0;			\
 						\
 	description { 				\
 		state: "default" 0.0; 		\
@@ -29,8 +30,9 @@ part { 						\
 #define BORDER(NAME, INDEX1, MIN, MAX, REL1, OFF1, REL2, OFF2, IMG1, INDEX2, IMG2) 	\
 part { 											\
 	name: NAME; 									\
-	clip_to: "clip.color"; 								\
+	type: IMAGE;									\
 	mouse_events: 0; 								\
+	clip_to: "clip.color"; 								\
 											\
 	description { 									\
 		state: "default" INDEX1; 						\
@@ -66,6 +68,7 @@ part { 											\
 part { 							\
 	name: NAME; 					\
 	type: RECT; 					\
+	mouse_events: 0;				\
 	clip_to: "clip.color"; 				\
 							\
 	description { 					\
@@ -91,8 +94,9 @@ part { 							\
 #define BORDER3(NAME, INDEX1, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, IMG1, INDEX2, IMG2) 	\
 part { 												\
 	name: NAME; 										\
-	clip_to: "clip.color"; 									\
+	type: IMAGE;										\
 	mouse_events: 0; 									\
+	clip_to: "clip.color"; 									\
 												\
 	description { 										\
 		state: "default" INDEX1; 							\
@@ -202,13 +206,14 @@ part { 												\
 	} 											\
 }
 
+/*
 #define TITLE(NAME, CLIP, INDEX1, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR, COLOR3, INDEX2, COLOR1, COLOR4) 	\
 part { 														\
 	name: NAME; 												\
 	type: TEXT; 												\
 	effect: SHADOW; 											\
-	clip_to: CLIP; 												\
 	mouse_events: 0; 											\
+	clip_to: CLIP; 												\
 														\
 	description { 												\
 		state: "default" INDEX1; 									\
@@ -244,6 +249,7 @@ part { 														\
 		color3: COLOR4; 										\
 	} 													\
 }
+*/
 
 #define MOVE_WINDOW(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) 	\
 part { 										\
@@ -275,8 +281,8 @@ part { 										\
 part { 							\
 	name: NAME; 					\
 	type: RECT; 					\
-	clip_to: CLIP; 					\
 	mouse_events: 1; 				\
+	clip_to: CLIP; 					\
 							\
 	description { 					\
 		state: "default" 0.0; 			\
@@ -327,7 +333,7 @@ part { 								\
 #define HOLDER(NAME,SIZE,TO,IMG) 	\
 part { 					\
 	name: NAME; 			\
-	clip_to: "clip.color"; 		\
+	type: IMAGE;			\
 					\
 	description { 			\
 		state: "default" 0.0; 	\
@@ -351,6 +357,7 @@ part { 					\
 #define BUTTONS(NAME, CLIP, SIZE, TO, IMG) 	\
 part { 						\
 	name: NAME; 				\
+	type: IMAGE;				\
 	mouse_events: 1; 			\
 	clip_to: CLIP; 				\
 						\
@@ -374,7 +381,6 @@ part { 						\
 	description { 				\
 		state: "default" 0.1; 		\
 		inherit: "default" 0.0; 	\
-		color: 255 255 255 164; 	\
 	} 					\
 }
 
@@ -434,6 +440,8 @@ part { 						\
 		state: "default" 0.0; 		\
 		min: 0 24; 			\
 		max: 9999 24; 			\
+		image.normal: "tb-shadow.png";	\
+		image.border: 1 1 11 0; 	\
 		color: 255 255 255 0; 		\
 						\
 		rel1 { 				\
@@ -445,15 +453,12 @@ part { 						\
 			to: "top-right"; 	\
 			offset: -2 -1; 		\
 		} 				\
-						\
-		image.normal: "tb-shadow.png";	\
-		image.border: 1 1 11 0; 	\
 	} 					\
 						\
 	description { 				\
 		state: "default" 0.1; 		\
 		inherit: "default" 0.0; 	\
-		color: 255 255 255 255; 	\
+		color: 255 255 255 192; 	\
 	} 					\
 }
 
