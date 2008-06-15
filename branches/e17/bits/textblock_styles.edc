@@ -9,7 +9,7 @@ style {
 	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
 	tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
-	tag: "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
+	tag: "title" "+ font_size=11 font=DejaVuSans-Bold text_class=tb_big";
 	#endif
 	#endif
       

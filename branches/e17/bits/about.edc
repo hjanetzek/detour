@@ -2,7 +2,7 @@
 group {
 	name: "e/widgets/about/main";
 
-	parts 
+	parts {
 		part {
 			name: "base";
 			type: IMAGE;
@@ -19,10 +19,11 @@ group {
 		}
 
 		#include "about_main.edc"
+		//#include "about_theme_widget.edc"
 	}
 
 	programs {
 		buttons()
-		//#include "about_main_programs.edc"
+		#include "about_main_programs.edc"
 	}
 }
