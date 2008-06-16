@@ -1,0 +1,36 @@
+
+program {
+	name: "go_show";
+	signal: "e,state,item_show";
+	source: "e";
+	action: STATE_SET "visible" 0.0;
+	transition: LINEAR 0.5;
+	target: "icon_clip";
+}
+
+program {
+	name: "go_hide";
+	signal: "e,state,item_hide";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "icon_clip";
+}
+
+program {
+	name: "go_iconic";
+	signal: "e,state,item_iconify";
+	source: "e";
+	action: STATE_SET "iconic" 0.0;
+	transition: LINEAR 0.25;
+	target: "icon_clip";
+}
+
+program {
+	name: "go_uniconic";
+	signal: "e,state,item_uniconify";
+	source: "e";
+	action: STATE_SET "visible" 0.0;
+	transition: LINEAR 0.5;
+	target: "icon_clip";
+}
+
