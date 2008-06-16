@@ -3,7 +3,16 @@ group {
 	name: "e/desktop/background";
 
 	parts { 
-		background()
+		part {
+			name: "background";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 255;
+			}
+		}
 
 		part { 
 			name: "background_transition";
@@ -12,15 +21,12 @@ group {
 			description { 
 				state: "default" 0.0; 
 				gradient.spectrum: "backdrop";
-				color: 255 255 255 0;
-    			}
-
-			description { 
-				state: "default" 0.1; 
-				inherit: "default" 0.0;
-				color: 255 255 255 255;
     			}
 		}
+
+		background_shadow()
+		background()
+
 	}
 
 	programs {
@@ -29,9 +35,10 @@ group {
 			signal: "show";
 			source: "";
 			action: STATE_SET "default" 0.1;
-			transition: DECELERATE 0.5; 
-			in: 5.0 0.0;
-			target:  "background_transition";
+			transition: ACCELERATE 30.0; 
+			in: 10.0 0.0;
+			target:  "background_image_left";
+			target:  "background_image_right";
 		}
 	}
 }

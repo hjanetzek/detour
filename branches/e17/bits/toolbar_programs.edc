@@ -4,7 +4,7 @@ program {
 	signal: "e,state,orientation,top";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	target: "bg";
+	target: "base";
 	target: "e.swallow.content";
 }
 
@@ -13,25 +13,7 @@ program {
 	signal: "e,state,orientation,bottom";
 	source: "e";
 	action: STATE_SET "bottom" 0.0;
-	target: "bg";
-	target: "e.swallow.content";
-}
-
-program {
-	name: "orient3";
-	signal: "e,state,orientation,left";
-	source: "e";
-	action: STATE_SET "left" 0.0;
-	target: "bg";
-	target: "e.swallow.content";
-}
-
-program {
-	name: "orient4";
-	signal: "e,state,orientation,right";
-	source: "e";
-	action: STATE_SET "right" 0.0;
-	target: "bg";
+	target: "base";
 	target: "e.swallow.content";
 }
 
