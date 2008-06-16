@@ -128,6 +128,7 @@ collections {
 	#include "bits/toolbar.edc"
 	#include "bits/transitions.edc" /* incomplete */
 	#include "bits/tclock.edc"
+	#include "bits/itask.edc"
 	//~ #include "bits/cpufreq.edc"
 	//~ #include "bits/start.edc"
 	//~ #include "bits/slidesel.edc"

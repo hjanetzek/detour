@@ -169,6 +169,12 @@ image: "sf_br1_over.png" COMP;
 
 //~ background
 image: "bg.png" COMP;
+image: "bg_shadow1.png" COMP;
+image: "bg_shadow2.png" COMP;
+
+//~ itask
+image: "itask-bg.png" COMP;
+image: "itask-bg_vert.png" COMP;
 
 //~ error
 image: "error-dialog_bg.png" COMP;

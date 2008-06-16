@@ -1,0 +1,109 @@
+
+group {
+	name: "e/modules/itask-ng/bg";
+
+	parts {
+		#include "itask-bg.edc"
+	}
+
+	programs {
+		program {
+			name: "horizontal";
+			signal: "e,state,horizontal";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "bg";
+		}
+
+		program {
+			name: "vertical";
+			signal: "e,state,vertical";
+			source: "e";
+			action: STATE_SET "vertical" 0.0;
+			target: "bg";
+		}
+	}
+}
+
+group {
+	name: "e/modules/itask-ng/separator";
+	min: 1 1;
+	max: 128 128; 
+
+	parts {
+		#include "itask-separator.edc"
+	}
+
+	programs {
+		program {
+			name: "go_horizontal";
+			signal: "e,state,horizontal";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "separator";
+		}
+
+		program {
+			name: "go_vertical";
+			signal: "e,state,vertical";
+			source: "e";
+			action: STATE_SET "vertical" 0.0;
+			target: "separator";
+		}
+	}
+}
+
+group {
+	name: "e/modules/itask-ng/label";
+
+	parts {
+		#include "itask-label.edc"
+	}
+
+	programs {
+		program {
+			name: "go_label_show";
+			signal: "e,state,label_show";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			transition: DECELERATE 0.5;
+			target: "e.text.label";
+		}
+
+		program {
+			name: "go_label_hide";
+			signal: "e,state,label_hide";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			transition: ACCELERATE 0.25;
+			target: "e.text.label";
+		}
+	}
+}
+
+group {
+	name: "e/modules/itask-ng/icon"; 
+	min: 32 32;
+	max: 128 128;    
+
+	parts {
+		#include "itask-icon.edc"
+	} 
+ 
+	programs {
+		#include "itask-icon_programs.edc"
+        }
+}
+
+group {
+	name: "e/modules/itask-ng/icon_overlay";
+		
+	parts {
+		#include "itask-icon_overlay.edc"
+	}
+
+	programs {
+		#include "itask-icon_overlay_programs.edc"
+	}
+}
+

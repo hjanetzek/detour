@@ -5,7 +5,7 @@ Dialog app border: wrong pixels bb border
 
 == Improve ==
 -gadman controls
--toolbar.edc
+-toolbar.edc: unfortunately bg image size is fixed!!
 -temperature.edc: graphics
 -battery e.text.time e.text.reading
 -macros/borders.edc
