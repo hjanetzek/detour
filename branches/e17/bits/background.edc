@@ -26,7 +26,6 @@ group {
 
 		background_shadow()
 		background()
-
 	}
 
 	programs {
@@ -35,7 +34,7 @@ group {
 			signal: "show";
 			source: "";
 			action: STATE_SET "default" 0.1;
-			transition: ACCELERATE 30.0; 
+			transition: ACCELERATE 7.5; 
 			in: 10.0 0.0;
 			target:  "background_image_left";
 			target:  "background_image_right";
