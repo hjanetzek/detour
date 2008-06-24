@@ -1,8 +1,11 @@
 
 COMPILING and INSTALLING:
 
-To compile and install or rebuild:
+To compile or rebuild:
 	make
+
+To install: (requires sudo access)
+	make install
 
 To uninstall:
 	make uninstall
