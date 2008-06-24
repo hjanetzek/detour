@@ -169,8 +169,7 @@ image: "sf_br1_over.png" COMP;
 
 //~ background
 image: "bg.png" COMP;
-image: "bg_shadow1.png" COMP;
-image: "bg_shadow2.png" COMP;
+image: "pattern-10036.png" COMP;
 
 //~ itask
 image: "itask-bg.png" COMP;

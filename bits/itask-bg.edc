@@ -33,12 +33,12 @@ part {
 
 		rel2 {
 			relative: 1.0 1.0;
-			offset: -1 4;
+			offset: 10 4;
 		}
 
 		image {
 			normal: "itask-bg_vert.png";
-			border: 1 14 43 18;
+			border: 1 22 43 18;
 		}
 	}
 }
