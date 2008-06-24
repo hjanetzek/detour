@@ -11,7 +11,7 @@ EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
 
 .SILENT :
 
-all: checkdir version clean build install
+all: checkdir version clean build
 
 checkdir:
 	if [ ! -d $(PATH_INSTALL) ]; then sudo mkdir -p $(PATH_INSTALL); fi
@@ -22,6 +22,7 @@ verbose: main.edc
 build: main.edc
 	@echo "Running make..."
 	$(COMPILE) $(SRC) -o $(OUT)
+	@echo ""
 
 install: detour-entrance.edj
 	@echo "Running make install..."
