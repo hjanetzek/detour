@@ -1,4 +1,263 @@
 ------------------------------------------------------------------------
+r509 | alberto.castro.leiva | 2008-06-14 23:23:26 -0500 (Sat, 14 Jun 2008) | 3 lines
+Changed paths:
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_main_programs.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/macros/buttons.edc
+
+The logic behind this about_e dialog is.... shame!!
+
+
+------------------------------------------------------------------------
+r508 | alberto.castro.leiva | 2008-06-13 23:33:54 -0500 (Fri, 13 Jun 2008) | 2 lines
+Changed paths:
+   A /branches/e17/images/bg.png
+
+Add this, thanks Catalyst
+
+------------------------------------------------------------------------
+r507 | alberto.castro.leiva | 2008-06-13 22:57:32 -0500 (Fri, 13 Jun 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/battery_popup.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/images/images.edc
+   M /branches/e17/macros/background.edc
+   M /branches/e17/main.edc
+
+What a about_e mess.
+
+------------------------------------------------------------------------
+r504 | alberto.castro.leiva | 2008-06-03 13:10:26 -0500 (Tue, 03 Jun 2008) | 4 lines
+Changed paths:
+   M /branches/e17/bits/fileman_list_fixed.edc
+   M /branches/e17/bits/fileman_list_odd.edc
+   M /branches/e17/main.edc
+
+-Add an EFM icon list filename truncate option
+	This removes the horiz. scrollbar
+
+
+------------------------------------------------------------------------
+r503 | alberto.castro.leiva | 2008-05-29 02:36:00 -0500 (Thu, 29 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_main_programs.edc
+   M /branches/e17/bits/textblock_styles.edc
+
+more err
+
+------------------------------------------------------------------------
+r502 | alberto.castro.leiva | 2008-05-29 02:26:59 -0500 (Thu, 29 May 2008) | 4 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_main.edc
+   M /branches/e17/bits/about_main_programs.edc
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/about_theme_logo.edc
+   M /branches/e17/bits/about_theme_widget.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/battery_popup.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/desklock_main.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/dialog_main.edc
+   M /branches/e17/bits/fileman_desktop_icon_variable.edc
+   M /branches/e17/bits/fileman_icon_variable.edc
+   M /branches/e17/bits/shelf_alternate_base_x.edc
+   M /branches/e17/bits/textblock_styles.edc
+   M /branches/e17/images/logo.png
+   M /branches/e17/images/shelf_default_bg_tb2.png
+   M /branches/e17/main.edc
+
+-Misc. fixes
+-about e dialog (wip)
+
+
+------------------------------------------------------------------------
+r499 | alberto.castro.leiva | 2008-05-20 04:07:30 -0500 (Tue, 20 May 2008) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/background.edc
+   D /branches/e17/bits/background_main.edc
+   M /branches/e17/bits/gradients.edc
+   M /branches/e17/main.edc
+
+Simplify background.edc for now, looking for a possible bug.
+
+
+------------------------------------------------------------------------
+r498 | alberto.castro.leiva | 2008-05-20 03:56:30 -0500 (Tue, 20 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+
+TODO bugfix
+
+------------------------------------------------------------------------
+r497 | alberto.castro.leiva | 2008-05-20 03:54:52 -0500 (Tue, 20 May 2008) | 19 lines
+Changed paths:
+   M /branches/e17/bits/gadman.edc
+   A /branches/e17/bits/gadman_frame.edc
+   A /branches/e17/bits/gadman_frame_programs.edc
+
+Adding .edc support for the new Gadman desktop module.
+
+Detour's .edc code seems to have a bug. I haven't figured out 
+where its coming from, but it deals with the context menu. Here 
+is how to reproduce it:
+
+Set your module (ie: clock) 
+	"On top pressing WIN + G"
+
+Click the background to leave/hide visibility mode.
+Press WIN+G and watch your module, now click the bg one more 
+time. Again press WIN+G and try to right_click the module 
+(normaly the context menu appears) this time it wont. It will 
+just leave visibility mode. You have to restart E17 to be able 
+to access the context menu.
+
+This works fine with the default theme.
+ 
+
+------------------------------------------------------------------------
+r496 | alberto.castro.leiva | 2008-05-17 03:09:32 -0500 (Sat, 17 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/icons.edc
+
+Add stock Window Remember icon (for now) just so that its there.
+
+------------------------------------------------------------------------
+r495 | alberto.castro.leiva | 2008-05-17 02:58:24 -0500 (Sat, 17 May 2008) | 4 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   D /branches/e17/custom/document.png
+   D /branches/e17/custom/folder.png
+   D /branches/e17/custom/folder_tar.png
+   D /branches/e17/custom/font-x-generic.png
+   D /branches/e17/custom/gnome-mime-application-pdf.png
+   D /branches/e17/custom/image-x-generic.png
+   D /branches/e17/custom/text-html.png
+   D /branches/e17/custom/text-x-generic.png
+   M /branches/e17/icons/applications-accessories.png
+   M /branches/e17/icons/applications-graphics.png
+   M /branches/e17/icons/applications-other2.png
+   M /branches/e17/icons/dialog-error.png
+   M /branches/e17/icons/dialog-warning.png
+   M /branches/e17/icons/preferences-desktop-font.png
+   M /branches/e17/icons/preferences-desktop-keyboard-shortcuts.png
+   M /branches/e17/icons/preferences-desktop-peripherals.png
+   M /branches/e17/icons/preferences-desktop-screensaver.png
+   M /branches/e17/icons/preferences-desktop-theme.png
+   M /branches/e17/icons/preferences-desktop-wallpaper.png
+   M /branches/e17/icons/preferences-desktop.png
+   M /branches/e17/icons/preferences-system-session.png
+   M /branches/e17/icons/preferences-system-windows.png
+   M /branches/e17/icons/preferences-windows-list.png
+   M /branches/e17/icons/system-file-manager.png
+   M /branches/e17/icons/system-lock-screen.png
+   M /branches/e17/icons/window-new.png
+   M /branches/e17/icons/wmtweaks.png
+
+I don't see a need to have icons who for the most part are 
+static > 48x48, then resize these 64x64 images (some).
+
+
+------------------------------------------------------------------------
+r494 | alberto.castro.leiva | 2008-05-17 02:22:48 -0500 (Sat, 17 May 2008) | 9 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/battery_main.edc
+   M /branches/e17/bits/battery_programs.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/border_app.edc
+   M /branches/e17/bits/border_blend.edc
+   M /branches/e17/bits/border_default.edc
+   M /branches/e17/bits/border_dialog.edc
+   M /branches/e17/bits/border_noresize_dialog.edc
+   M /branches/e17/bits/border_noresizefull_dialog.edc
+   M /branches/e17/bits/border_shaped.edc
+   M /branches/e17/bits/border_squared.edc
+   M /branches/e17/bits/border_terminal.edc
+   M /branches/e17/bits/button_main.edc
+   M /branches/e17/bits/check_icon.edc
+   M /branches/e17/bits/check_main.edc
+   M /branches/e17/bits/deskpreview_main.edc
+   M /branches/e17/bits/ilist.edc
+   A /branches/e17/bits/ilist_even.edc
+   D /branches/e17/bits/ilist_ilist.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/menu_background.edc
+   M /branches/e17/bits/menu_check.edc
+   M /branches/e17/bits/menu_icon.edc
+   M /branches/e17/bits/menu_item_bg.edc
+   M /branches/e17/bits/menu_label.edc
+   M /branches/e17/bits/menu_radio.edc
+   M /branches/e17/bits/menu_submenu.edc
+   M /branches/e17/bits/menu_submenu_bg.edc
+   M /branches/e17/bits/pager_desk.edc
+   M /branches/e17/bits/pager_window.edc
+   M /branches/e17/bits/shelf.edc
+   A /branches/e17/bits/shelf_alternate_base_x.edc
+   M /branches/e17/bits/spectrum_main.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/tclock_main.edc
+   A /branches/e17/bits/tclock_popup.edc
+   D /branches/e17/bits/tclock_tooltip.edc
+   D /branches/e17/fonts/DejaVuSans-Oblique.ttf
+   D /branches/e17/images/arrow_dark.png
+   D /branches/e17/images/arrow_light.png
+   A /branches/e17/images/bt-base.png
+   R /branches/e17/images/bt.png
+   D /branches/e17/images/button_wm0.png
+   D /branches/e17/images/check-.png
+   M /branches/e17/images/check1.png
+   A /branches/e17/images/check2.png
+   D /branches/e17/images/color_slider.png
+   A /branches/e17/images/color_slider_cursor.png
+   A /branches/e17/images/deskpreview_bg.png
+   M /branches/e17/images/images.edc
+   A /branches/e17/images/menu_arrow0.png
+   A /branches/e17/images/menu_arrow1.png
+   D /branches/e17/images/pager_desk.png
+   A /branches/e17/images/pager_desk_bg_focus.png
+   D /branches/e17/images/pager_focus.png
+   A /branches/e17/images/pager_icon_window.png
+   A /branches/e17/images/pager_icon_window_ds.png
+   D /branches/e17/images/pager_window.png
+   D /branches/e17/images/pager_window_ds.png
+   D /branches/e17/images/pager_window_iconified.png
+   D /branches/e17/images/pager_window_shaded.png
+   D /branches/e17/images/pager_window_winlist.png
+   M /branches/e17/images/shelf_default_bg_t2.png
+   A /branches/e17/images/shelf_default_bg_tb2.png
+   A /branches/e17/images/shelf_default_bg_tt2.png
+   A /branches/e17/images/winlist_icon_window.png
+   A /branches/e17/images/winlist_icon_window_minimized.png
+   A /branches/e17/images/winlist_icon_window_shaded.png
+   M /branches/e17/macros/border_menu.edc
+   M /branches/e17/main.edc
+
+* Remove unused Oblique Font
+
+- revert / fix / improve main and context menu
+- rename tclock_tooltip to tclock_popup
+- rename filenames to fit description
+- improve ilist/tlist/flist color order
+- alternate shelf, now with rgba features
+
+
+------------------------------------------------------------------------
 r492 | alberto.castro.leiva | 2008-05-10 12:25:32 -0500 (Sat, 10 May 2008) | 3 lines
 Changed paths:
    M /branches/e17/README
