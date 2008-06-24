@@ -1,4 +1,139 @@
 ------------------------------------------------------------------------
+r505 | alberto.castro.leiva | 2008-06-13 00:46:12 -0500 (Fri, 13 Jun 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/bits/splash_programs.edc
+   D /branches/e17-init/splash.edc
+   D /branches/e17-init/splash_programs.edc
+
+Animation timer is kind of off.
+
+------------------------------------------------------------------------
+r501 | alberto.castro.leiva | 2008-05-24 00:52:35 -0500 (Sat, 24 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/README
+   M /branches/e17-init/TODO
+   M /branches/e17-init/bits/splash.edc
+   M /branches/e17-init/bits/splash_programs.edc
+   D /branches/e17-init/images/entry.png
+   M /branches/e17-init/images/images.edc
+   M /branches/e17-init/images/splash.png
+   D /branches/e17-init/images/splash.xcf
+   M /branches/e17-init/main.edc
+
+Update detour-init.
+
+------------------------------------------------------------------------
+r482 | alberto.castro.leiva | 2008-05-08 01:57:00 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/Makefile
+
+Update Makefile
+
+------------------------------------------------------------------------
+r478 | alberto.castro.leiva | 2008-05-08 01:16:22 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/AUTHORS
+   M /branches/e17-init/macros/bg.edc
+   M /branches/e17-init/main.edc
+
+Update
+
+------------------------------------------------------------------------
+r474 | alberto.castro.leiva | 2008-05-07 23:24:52 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/Makefile
+   A /branches/e17-init/bits
+   A /branches/e17-init/bits/splash.edc
+   A /branches/e17-init/bits/splash_programs.edc
+   D /branches/e17-init/extra.edc
+   A /branches/e17-init/images/images.edc
+   A /branches/e17-init/macros
+   A /branches/e17-init/macros/bg.edc
+   M /branches/e17-init/main.edc
+
+Update directory structure. Use macros for the bg().
+
+------------------------------------------------------------------------
+r470 | alberto.castro.leiva | 2008-05-07 02:44:09 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/extra.edc
+   A /branches/e17-init/images/bg.png
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+
+Follow the same style as Entrance (bg)
+
+------------------------------------------------------------------------
+r461 | alberto.castro.leiva | 2008-05-07 01:50:01 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   A /branches/e17-init/AUTHORS
+   A /branches/e17-init/COPYING
+   A /branches/e17-init/ChangeLog
+   A /branches/e17-init/DejaVu.COPYING
+   A /branches/e17-init/INSTALL
+   A /branches/e17-init/README
+   A /branches/e17-init/TODO
+   A /branches/e17-init/Tango.COPYING
+
+Add these files.
+
+------------------------------------------------------------------------
+r413 | alberto.castro.leiva | 2008-04-03 02:53:08 -0600 (Thu, 03 Apr 2008) | 2 lines
+Changed paths:
+   A /branches/e17-init/images/busy.cursor.00.png
+   A /branches/e17-init/images/busy.cursor.01.png
+   A /branches/e17-init/images/busy.cursor.02.png
+   A /branches/e17-init/images/busy.cursor.03.png
+   A /branches/e17-init/images/splash.xcf
+
+Forgot to add these images.
+
+------------------------------------------------------------------------
+r411 | alberto.castro.leiva | 2008-04-03 02:47:56 -0600 (Thu, 03 Apr 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/extra.edc
+   A /branches/e17-init/fonts/DejaVuSans-Bold.ttf
+   A /branches/e17-init/fonts/DejaVuSans.ttf
+   D /branches/e17-init/fonts/Vera.ttf
+   D /branches/e17-init/fonts/VeraBd.ttf
+   D /branches/e17-init/images/busy_1.png
+   D /branches/e17-init/images/busy_2.png
+   M /branches/e17-init/images/splash.png
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+   M /branches/e17-init/splash_programs.edc
+
+update
+
+------------------------------------------------------------------------
+r337 | alberto.castro.leiva | 2007-10-23 11:53:29 -0500 (Tue, 23 Oct 2007) | 2 lines
+Changed paths:
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+
+Fix
+
+------------------------------------------------------------------------
+r336 | alberto.castro.leiva | 2007-10-23 11:33:52 -0500 (Tue, 23 Oct 2007) | 2 lines
+Changed paths:
+   D /branches/e17-init/images/applications-system.png
+   M /branches/e17-init/images/busy_1.png
+   M /branches/e17-init/images/busy_2.png
+   M /branches/e17-init/images/check0.png
+   M /branches/e17-init/images/check1.png
+   M /branches/e17-init/images/entry.png
+   D /branches/e17-init/images/insignia.png
+   A /branches/e17-init/images/preferences-desktop.png
+   D /branches/e17-init/images/preferences-system-session.png
+   M /branches/e17-init/images/splash.png
+   D /branches/e17-init/images/splash_bg.png
+   A /branches/e17-init/images/user-desktop.png
+   M /branches/e17-init/main.edc
+   M /branches/e17-init/splash.edc
+
+Forgot to commit.
+
+------------------------------------------------------------------------
 r324 | boykot.tokyo | 2007-10-19 01:56:06 -0500 (Fri, 19 Oct 2007) | 2 lines
 Changed paths:
    A /branches/e17-init/images/applications-system.png
