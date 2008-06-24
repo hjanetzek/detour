@@ -13,8 +13,8 @@ spectrum {
 
 spectrum {
 	name: "backdrop";
-	color: 136 152 168 255 1;
-	color: 254 228 191 255 1;
+	color: 230 229 211 255 1;
+	color: 196 196 182 255 1;
 }
 
 spectrum {
