@@ -10,6 +10,7 @@ Dialog app border: wrong pixels bb border
 -windows rememeber icon (replace)
 -icons()
 -desklock entry
+-clock graphics()
 
 == Global ==
 *Complete start.edc
