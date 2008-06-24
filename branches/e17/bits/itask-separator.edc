@@ -29,7 +29,7 @@ part {
 
 		rel2 {
 			relative: 1.0 1.0;
-			offset: -6 0;
+			offset: -5 0;
 		}
 	}
 }

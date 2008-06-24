@@ -1,13 +1,11 @@
 == Bugfix ==
-Gadman_frame.edc: missing context menu popup
-	-you can see it once
 Dialog app border: wrong pixels bb border
 
 == Improve ==
--gadman controls
+-gadman controls/redo/gadman/overlay
 -toolbar.edc: unfortunately bg image size is fixed!!
 -temperature.edc: graphics
--battery e.text.time e.text.reading
+-battery poup
 -macros/borders.edc
 -windows rememeber icon (replace)
 -icons()

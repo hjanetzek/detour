@@ -1,6 +1,7 @@
 
 part {
 	name: "background";
+	type: IMAGE;
 	mouse_events: 1;
 	clip_to: "bg_clip";
 
