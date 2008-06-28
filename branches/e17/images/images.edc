@@ -100,6 +100,16 @@ image: "menu_bg.png" COMP;
 image: "menu_separator.png" COMP;
 image: "menu_select.png" COMP;
 
+//~ efm nav module
+image: "nav_back-base.png" COMP;
+image: "nav_back-button.png" COMP;
+image: "nav_forward-base.png" COMP;
+image: "nav_forward-button.png" COMP;
+image: "nav_refresh-base.png" COMP;
+image: "nav_refresh-button.png" COMP;
+image: "nav_up-base.png" COMP;
+image: "nav_up-button.png" COMP;
+
 //~ entry
 image: "entry.png" COMP;
 image: "entry_focus.png" COMP;

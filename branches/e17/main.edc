@@ -2,6 +2,7 @@
 #include "macros/border.edc"
 #include "macros/border_menu.edc"
 #include "macros/buttons.edc"
+#include "macros/efm_nav.edc"
 #include "macros/fileman_list.edc"
 #include "macros/sys.edc"
 
@@ -10,7 +11,7 @@
 
 /* 
  * cored.org et al (see AUTHORS)
- * detour version 0.7.4 (e17) for Enlightenment 0.16.999.043 or later.
+ * detour version 0.7.5 (e17) for Enlightenment 0.16.999.043 or later.
  */
 
 //Set the pointer to pulsating mode
@@ -126,13 +127,13 @@ collections {
 	#include "bits/font_preview.edc"
 	#include "bits/gadman.edc"
 	#include "bits/toolbar.edc"
-	#include "bits/transitions.edc" /* incomplete */
+	//~ #include "bits/transitions.edc" /* incomplete */
 	#include "bits/tclock.edc"
 	#include "bits/itask.edc"
 	//~ #include "bits/cpufreq.edc"
 	//~ #include "bits/start.edc"
+	#include "bits/efm_nav.edc"
 	//~ #include "bits/slidesel.edc"
-	//~ #include "bits/module_notification.edc"
 	//~ #include "bits/wizard.edc"
 }
 
