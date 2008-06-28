@@ -1,0 +1,75 @@
+
+group {
+	name: "modules/efm_nav/main";
+
+	parts {
+		part {
+			name: "base";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 0;
+			}
+		}
+		part {
+			name: "e.swallow.buttons";
+			type: SWALLOW;
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+			}
+		}
+	}
+}
+
+group {
+	name: "modules/efm_nav/back";
+
+	parts {
+		#include "efm_nav-back.edc"
+	}
+
+	programs {
+		efm_navigation();
+	}
+}
+
+group {
+	name: "modules/efm_nav/forward";
+
+	parts {
+		#include "efm_nav-forward.edc"
+	}
+
+	programs {
+		efm_navigation();
+	}
+}
+
+group {
+	name: "modules/efm_nav/refresh";
+
+	parts {
+		#include "efm_nav-refresh.edc"
+	}
+
+	programs {
+		efm_navigation();
+	}
+}
+
+group {
+	name: "modules/efm_nav/up";
+
+	parts {
+		#include "efm_nav-up.edc"
+	}
+
+	programs {
+		efm_navigation();
+	}
+}
+

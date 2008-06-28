@@ -1,0 +1,65 @@
+
+part {
+	name: "base";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 36 25;
+		min: 36 25;
+		fixed: 1 1;
+
+		rel1 { 
+			relative: 0.0 0.0; 
+			offset: 16 0; 
+		}
+
+		image {
+			normal: "nav_refresh-base.png";
+		}
+	}
+}
+
+part {
+	name: "button";
+	type: IMAGE;
+	mouse_events: 1;
+	repeat_events: 1;
+
+	description {
+		state: "default" 0.0;
+		max: 33 23;
+		min: 33 23;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "base";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		} 
+
+		rel2 { 
+			to: "base";
+			relative: 1.0 1.0; 
+			offset: -1 -2; 
+		}
+
+		image {
+			normal: "nav_refresh-button.png";
+		}
+	}
+
+	description {
+		state: "pressed" 0.0;
+		inherit: "default" 0.0;
+		color: 0 0 255 128;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 0 0 128;
+	}
+}
+
