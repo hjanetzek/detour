@@ -12,12 +12,26 @@ Transitions rect.clip color ??
 -icons()
 -desklock entry
 -clock graphics()
+-check widget graphics
+-efm nav "refresh" symbol
 
 == Global ==
 *Complete start.edc
 *Complete cpufreq.edc
 *Complete transitions.edc
 *Add color_classes
+*Add Init
 
 == Compile ==
+
+== e ==
+	description {
+		state: "pressed" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "nav_back-button.png";
+			normal: "nav_button-shadow-left.png";
+		}
+	}
 

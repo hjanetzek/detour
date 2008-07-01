@@ -1,5 +1,5 @@
 
-## desklock
+//~ desklock
 image: "desklock_dialog_bg.png" COMP;
 image: "dot.png" COMP;
 
@@ -100,15 +100,27 @@ image: "menu_bg.png" COMP;
 image: "menu_separator.png" COMP;
 image: "menu_select.png" COMP;
 
-//~ efm nav module
+//~ efm nav
 image: "nav_back-base.png" COMP;
 image: "nav_back-button.png" COMP;
+image: "nav_back-button-disabled.png" COMP;
+image: "nav_back-button-sign.png" COMP;
+image: "nav_back-button-sign2.png" COMP;
 image: "nav_forward-base.png" COMP;
 image: "nav_forward-button.png" COMP;
+image: "nav_forward-button-disabled.png" COMP;
+image: "nav_forward-button-sign.png" COMP;
+image: "nav_forward-button-sign2.png" COMP;
 image: "nav_refresh-base.png" COMP;
 image: "nav_refresh-button.png" COMP;
-image: "nav_up-base.png" COMP;
-image: "nav_up-button.png" COMP;
+image: "nav_refresh-button-disabled.png" COMP;
+image: "nav_refresh-button-sign.png" COMP;
+image: "nav_refresh-button-sign2.png" COMP;
+image: "nav_refresh-button-shadow.png" COMP;
+image: "nav_up-button-sign.png" COMP;
+image: "nav_up-button-sign2.png" COMP;
+image: "nav_button-shadow-left.png" COMP;
+image: "nav_button-shadow-right.png" COMP;
 
 //~ entry
 image: "entry.png" COMP;
@@ -190,8 +202,6 @@ image: "error-dialog_bg.png" COMP;
 
 //~ transitions
 image: "transition_vswipe.png" COMP;
-
-//~ ilist
 
 //~ pager
 image: "pager_desk_bg_focus.png" COMP;
@@ -386,11 +396,9 @@ image: "seconds.cursor.58.png" COMP;
 image: "seconds.cursor.59.png" COMP;
 image: "clock_bg.png" COMP;
 
-//~ tclock
-
-//~ move
-
-//~ ibox
+//~ toolbar
+image: "efm_toolbar.png" COMP;
+image: "efm_toolbar2.png" COMP;
 
 //~ winlist
 image: "winlist_icon_window.png" COMP;
@@ -485,9 +493,7 @@ image: "busy.cursor.01.png" COMP;
 image: "busy.cursor.02.png" COMP;
 image: "busy.cursor.03.png" COMP;
 image: "typebuf_clip.png" COMP;
-
-//~ notification
-//~ image: "module_notification.png" COMP;
+image: "fileman_win_drop.png" COMP;
 
 //~ gadman
 image: "gadman_hl1.png" COMP;
