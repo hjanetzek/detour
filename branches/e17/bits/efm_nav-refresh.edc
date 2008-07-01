@@ -6,18 +6,19 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 31 25;
-		min: 31 25;
+		max: 36 26;
+		min: 36 26;
 		fixed: 1 1;
 		color: 255 255 255 178;
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 30 0; 
+			offset: 36 0; 
 		}
 
 		image {
 			normal: "nav_refresh-base.png";
+			border: 6 6 6 6;
 		}
 	}
 }
@@ -30,8 +31,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 31 23;
-		min: 31 23;
+		max: 36 24;
+		min: 36 24;
 		fixed: 1 1;
 
 		rel1 { 
@@ -48,6 +49,7 @@ part {
 
 		image {
 			normal: "nav_refresh-button.png";
+			border: 6 6 6 6;
 		}
 	}
 
@@ -73,21 +75,18 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 31 23;
-		min: 31 23;
-		fixed: 1 1;
 		visible: 0;
 
 		rel1 { 
-			to: "base";
+			to: "button";
 			relative: 0.0 0.0; 
-			offset: 0 0; 
+			offset: -1 0; 
 		} 
 
 		rel2 { 
-			to: "base";
+			to: "button";
 			relative: 1.0 1.0; 
-			offset: -1 -2; 
+			offset: 0 -1; 
 		}
 
 		image {
@@ -115,14 +114,14 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 12 13;
-		min: 12 13;
+		max: 18 19;
+		min: 18 19;
 		fixed: 1 1;
 
 		rel1 { 
 			to: "button";
 			relative: 0.0 0.0; 
-			offset: 0 0; 
+			offset: 0 2; 
 		} 
 
 		rel2 { 
