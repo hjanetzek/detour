@@ -207,6 +207,7 @@ image: "error-dialog_bg.png" COMP;
 
 //~ transitions
 image: "transition_vswipe.png" COMP;
+image: "universe.png" COMP;
 
 //~ pager
 image: "pager_desk_bg_focus.png" COMP;
