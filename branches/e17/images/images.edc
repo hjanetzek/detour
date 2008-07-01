@@ -126,11 +126,6 @@ image: "nav_button-shadow-right.png" COMP;
 image: "entry.png" COMP;
 image: "entry_focus.png" COMP;
 
-//~ init
-image: "splash.png" COMP;
-image: "init-check0.png" COMP;
-image: "init-check1.png" COMP;
-
 //~ dialog
 image: "separator.png" COMP;
 image: "dialog_bg.png" COMP;
