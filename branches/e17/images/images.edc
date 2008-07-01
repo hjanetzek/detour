@@ -122,6 +122,11 @@ image: "nav_up-button-sign2.png" COMP;
 image: "nav_button-shadow-left.png" COMP;
 image: "nav_button-shadow-right.png" COMP;
 
+//~ navigation buttons
+image: "button-up.png" COMP;
+image: "button-down.png" COMP;
+image: "button-forward.png" COMP;
+
 //~ entry
 image: "entry.png" COMP;
 image: "entry_focus.png" COMP;
@@ -501,5 +506,6 @@ image: "gadman_hr1.png" COMP;
 image: "gadman_vt1.png" COMP;
 image: "gadman_vb1.png" COMP;
 image: "gadman_indicator.png" COMP;
-image: "gadman_control.png" COMP;
+image: "gadman_control_window.png" COMP;
+image: "gadman_control_border.png" COMP;
 

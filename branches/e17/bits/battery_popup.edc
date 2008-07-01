@@ -2,13 +2,12 @@
 part {
 	name: "battery";
 	type: SWALLOW;
-	//mouse_events: 1;
-	//repeat_events: 1;
 
 	description {
 		state: "default" 0.0;
-		min: 1 1;
-		max: 120 120;
+		min: 48 48;
+		max: 48 48;
+		fixed: 1 1;
 		color: 255 255 255 255;
 
 		rel1 {
@@ -30,22 +29,23 @@ part {
 		state: "default" 0.0;
 		min: 120 1;
 		max: 300 48;
+		/* what was Mekius thinking ? */
 		fixed: 1 1;
 		color: 7 7 7 255;
 
 		rel1 {
-			to_x:battery;
+			to_x: "battery";
 			relative: 1.0 0.5;
 			offset: 0 0;
 		}
 
 		rel2 {
 			relative: 1.0 0.5;
-			offset: 0 -1;
+			offset: -8 -1;
 		}
 
 		text {
-			text: "Warning: Running on Battery!";
+			text: "Running on Battery!";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 1 1;

@@ -52,17 +52,19 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		max: 35 35;
-		aspect: 1 1;
-		align: 1.0 1.0;
+		min: 16 16;
+		max: 16 16;
 		visible: 0;
 
 		rel1 {
-			relative: 0.5  0.5;
+			to: "battery";
+			relative: 1.0 1.0;
 		}
 
 		rel2 {
-			relative: 1.0  1.0;
+			to: "battery";
+			relative: 1.0 1.0;
+			offset: -26 -26;
 		}
 
 		image {
