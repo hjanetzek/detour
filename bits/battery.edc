@@ -1,7 +1,6 @@
 
 group {
 	name: "e/modules/battery/main";
-	//max: 85 85;
 	max: 128 128;
 	min: 1 1;
 

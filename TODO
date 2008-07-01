@@ -3,16 +3,12 @@ Dialog app border: wrong pixels bb border
 Transitions rect.clip color ??
 
 == Improve ==
--gadman controls/redo/gadman/overlay
--toolbar.edc: unfortunately bg image size is fixed!!
 -temperature.edc: graphics
--battery poup
 -macros/borders.edc
 -windows rememeber icon (replace)
 -icons()
 -desklock entry
--clock graphics()
--check widget graphics
+-clock graphics(hands)
 -efm nav "refresh" symbol
 
 == Global ==

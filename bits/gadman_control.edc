@@ -56,13 +56,13 @@ part {
 }
 
 part {
-	name: "overlay";
+	name: "overlay_window";
 	type: IMAGE;
-	mouse_events: 1;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 96;
+		color: 255 255 255 221;
 
 		rel1 {
 			relative: 0.0 0.0;
@@ -75,7 +75,33 @@ part {
 		}
 
 		image {
-			normal: "gadman_control.png";
+			normal: "gadman_control_window.png";
+			border: 16 16 16 16;
+		}
+	}
+}
+
+part {
+	name: "overlay";
+	type: IMAGE;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 221;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -2 -2;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 1 2;
+		}
+
+		image {
+			normal: "gadman_control_border.png";
 			border: 12 12 12 12;
 		}
 	}
