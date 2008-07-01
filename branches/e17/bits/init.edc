@@ -1,0 +1,27 @@
+
+group {
+	name: "e/init/splash";
+
+	script {
+		public check_widget;
+		public completed;
+	}
+
+	parts {
+		init_background()
+		#include "init-splash.edc"
+	}
+
+	programs {
+		#include "init-splash_programs.edc"
+	}
+}
+
+group {
+	name: "e/init/extra_screen";
+
+	parts {
+		init_background()
+	}
+}
+
