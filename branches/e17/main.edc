@@ -1,3 +1,4 @@
+#include "macros/init-bg.edc"
 #include "macros/background.edc"
 #include "macros/border.edc"
 #include "macros/border_menu.edc"
@@ -135,5 +136,6 @@ collections {
 	#include "bits/efm_nav.edc"
 	//~ #include "bits/slidesel.edc"
 	//~ #include "bits/wizard.edc"
+	#include "bits/init.edc"
 }
 
