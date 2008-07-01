@@ -213,7 +213,6 @@ group {
 	name: "e/fileman/desktop/list/drop_between";
 	alias: "e/fileman/desktop/list/drop_in";
 
-
 	parts {
 		part {
 			name: "bg";
@@ -338,7 +337,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 104 108 111 128;
+				color: 140 142 145 192;
 
 				image {
 					normal: "fileman_rubberband.png";
@@ -355,7 +354,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 75 115 199 64;
+				color: 138 171 225 92;
 
 				rel1 {
 					to: "base";

@@ -6,17 +6,18 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 26 25;
-		min: 26 25;
+		max: 31 25;
+		min: 31 25;
 		fixed: 1 1;
+		color: 255 255 255 178;
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 32 0; 
+			offset: 48 0; 
 		}
 
 		image {
-			normal: "nav_up-base.png";
+			normal: "nav_refresh-base.png";
 		}
 	}
 }
@@ -29,14 +30,14 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 23 23;
-		min: 23 23;
+		max: 31 23;
+		min: 31 23;
 		fixed: 1 1;
 
 		rel1 { 
 			to: "base";
 			relative: 0.0 0.0; 
-			offset: 1 0; 
+			offset: 0 0; 
 		} 
 
 		rel2 { 
@@ -46,20 +47,107 @@ part {
 		}
 
 		image {
-			normal: "nav_up-button.png";
+			normal: "nav_refresh-button.png";
 		}
 	}
 
 	description {
 		state: "pressed" 0.0;
 		inherit: "default" 0.0;
-		color: 0 0 255 128;
 	}
 
 	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
-		color: 255 0 0 128;
+
+		image {
+			normal: "nav_refresh-button-disabled.png";
+		}
+	}
+}
+
+part {
+	name: "button-shadow";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 31 23;
+		min: 31 23;
+		fixed: 1 1;
+		visible: 0;
+
+		rel1 { 
+			to: "base";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		} 
+
+		rel2 { 
+			to: "base";
+			relative: 1.0 1.0; 
+			offset: -1 -2; 
+		}
+
+		image {
+			normal: "nav_refresh-button-shadow.png";
+		}
+	}
+
+	description {
+		state: "pressed" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		visible: 0;
+	}
+}
+
+part {
+	name: "symbol";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		max: 9 6;
+		min: 9 6;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "button";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		} 
+
+		rel2 { 
+			to: "button";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+
+		image {
+			normal: "nav_up-button-sign.png";
+		}
+	}
+
+	description {
+		state: "pressed" 0.0;
+		inherit: "default" 0.0;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "nav_up-button-sign2.png";
+		}
 	}
 }
 
