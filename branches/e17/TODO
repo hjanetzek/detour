@@ -1,6 +1,5 @@
 == Bugfix ==
 Dialog app border: wrong pixels bb border
-Transitions rect.clip color ??
 
 == Improve ==
 -temperature.edc: graphics
@@ -10,6 +9,7 @@ Transitions rect.clip color ??
 -desklock entry
 -clock graphics(hands)
 -efm nav "refresh" symbol
+-dialog bg (image)
 
 == Global ==
 *Complete start.edc
