@@ -1,8 +1,4 @@
 
-//~ init
-image: "user-desktop22x22.png" COMP;
-image: "preferences-desktop22x22.png" COMP;
-
 //~ efm actions
 image: "document-new.png" COMP;
 image: "document-open.png" COMP;

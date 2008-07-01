@@ -20,7 +20,7 @@ Transitions rect.clip color ??
 *Complete cpufreq.edc
 *Complete transitions.edc
 *Add color_classes
-*Add Init
+*Add Init / doesn't seem to work require binary .edj
 
 == Compile ==
 
