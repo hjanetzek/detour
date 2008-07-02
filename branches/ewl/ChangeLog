@@ -1,4 +1,190 @@
 ------------------------------------------------------------------------
+r465 | alberto.castro.leiva | 2008-05-07 02:05:14 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/COPYING
+   A /branches/ewl/ChangeLog
+   A /branches/ewl/DejaVu.COPYING
+   M /branches/ewl/README
+   M /branches/ewl/TODO
+   A /branches/ewl/fonts/DejaVuSans-Bold.ttf
+   A /branches/ewl/fonts/DejaVuSans-Oblique.ttf
+   A /branches/ewl/fonts/DejaVuSans.ttf
+   A /branches/ewl/fonts/DejaVuSansMono-Bold.ttf
+   A /branches/ewl/fonts/DejaVuSansMono.ttf
+
+Add these.
+
+------------------------------------------------------------------------
+r455 | avi.thomas | 2008-05-03 21:57:54 -0500 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+
+oops
+------------------------------------------------------------------------
+r454 | avi.thomas | 2008-05-03 21:57:20 -0500 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   D /branches/ewl/widgets/highlight.edc
+
+Remove unused file
+------------------------------------------------------------------------
+r453 | avi.thomas | 2008-05-03 21:56:26 -0500 (Sat, 03 May 2008) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/label.edc
+   M /branches/ewl/widgets/tree.edc
+   M /branches/ewl/widgets/tree_header_normal.edc
+   M /branches/ewl/widgets/tree_header_normal_programs.edc
+
+EWL no longer uses individual highlight widgets
+------------------------------------------------------------------------
+r377 | avi.thomas | 2008-01-26 23:09:31 -0600 (Sat, 26 Jan 2008) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+
+Wrong group
+------------------------------------------------------------------------
+r376 | avi.thomas | 2008-01-25 23:34:24 -0600 (Fri, 25 Jan 2008) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/toolbar.edc
+
+Toolbar stuff
+------------------------------------------------------------------------
+r375 | avi.thomas | 2008-01-24 22:25:11 -0600 (Thu, 24 Jan 2008) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/combo.edc
+
+Set proper padding
+------------------------------------------------------------------------
+r374 | avi.thomas | 2008-01-24 15:21:08 -0600 (Thu, 24 Jan 2008) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/border.edc
+   M /branches/ewl/widgets/label.edc
+
+Start using bold fonts, tree2 no longer exists
+------------------------------------------------------------------------
+r373 | avi.thomas | 2008-01-20 10:28:04 -0600 (Sun, 20 Jan 2008) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/combo.edc
+   A /branches/ewl/widgets/combo_programs.edc
+
+Ewl now sends more signals to the combo
+------------------------------------------------------------------------
+r359 | avi.thomas | 2007-12-04 16:50:59 -0600 (Tue, 04 Dec 2007) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/progressbar.edc
+
+And the rest of progressbar
+------------------------------------------------------------------------
+r358 | avi.thomas | 2007-12-04 16:31:14 -0600 (Tue, 04 Dec 2007) | 1 line
+Changed paths:
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/menu.edc
+   A /branches/ewl/widgets/progressbar.edc
+
+Finally get a start of progressbar in, along with some other fixes
+------------------------------------------------------------------------
+r357 | avi.thomas | 2007-12-01 20:59:12 -0600 (Sat, 01 Dec 2007) | 1 line
+Changed paths:
+   M /branches/ewl/Makefile
+
+EWL now likes it's themes to be in .ewl/themes
+------------------------------------------------------------------------
+r356 | avi.thomas | 2007-12-01 11:17:58 -0600 (Sat, 01 Dec 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/scrollpane_bg.edc
+   M /branches/ewl/widgets/statusbar.edc
+   M /branches/ewl/widgets/tree_bg.edc
+
+small fixes
+------------------------------------------------------------------------
+r355 | avi.thomas | 2007-11-25 19:44:52 -0600 (Sun, 25 Nov 2007) | 1 line
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/check_programs.edc
+   M /branches/ewl/widgets/radio_programs.edc
+
+Bring check and radio buttons up to current behaviour
+------------------------------------------------------------------------
+r354 | avi.thomas | 2007-11-25 19:26:13 -0600 (Sun, 25 Nov 2007) | 1 line
+Changed paths:
+   M /branches/ewl/widgets/entry.edc
+   M /branches/ewl/widgets/entry_main.edc
+   M /branches/ewl/widgets/entry_main_programs.edc
+
+Fix a problem when entry was blank
+------------------------------------------------------------------------
+r335 | alberto.castro.leiva | 2007-10-23 08:33:56 -0500 (Tue, 23 Oct 2007) | 16 lines
+Changed paths:
+   A /branches/ewl/images/check-.png
+   M /branches/ewl/images/check0.png
+   D /branches/ewl/images/check01.png
+   M /branches/ewl/images/check1.png
+   A /branches/ewl/images/check_base.png
+   A /branches/ewl/images/check_focus.png
+   A /branches/ewl/images/check_shadow.png
+   M /branches/ewl/images/entry_focus.png
+   M /branches/ewl/images/iconbox_over.png
+   M /branches/ewl/images/iconbox_rubberband.png
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/images/radio0.png
+   M /branches/ewl/images/radio1.png
+   D /branches/ewl/images/radio2.png
+   A /branches/ewl/images/radio_base.png
+   A /branches/ewl/images/radio_focus.png
+   A /branches/ewl/images/radio_shadow.png
+   D /branches/ewl/images/slider_focus.png
+   A /branches/ewl/images/slider_h_btn.png
+   M /branches/ewl/images/slider_h_btn_disabled.png
+   D /branches/ewl/images/slider_h_btn_down.png
+   D /branches/ewl/images/slider_h_btn_up.png
+   A /branches/ewl/images/slider_h_focus.png
+   A /branches/ewl/images/slider_h_shadow.png
+   A /branches/ewl/images/slider_v_btn.png
+   M /branches/ewl/images/slider_v_btn_disabled.png
+   D /branches/ewl/images/slider_v_btn_down.png
+   D /branches/ewl/images/slider_v_btn_up.png
+   A /branches/ewl/images/slider_vert_focus.png
+   A /branches/ewl/images/slider_vert_shadow.png
+   M /branches/ewl/images/tree_bg.png
+   M /branches/ewl/images/tree_header_first.png
+   M /branches/ewl/images/tree_header_first2.png
+   M /branches/ewl/images/tree_header_last.png
+   M /branches/ewl/images/tree_header_last2.png
+   M /branches/ewl/images/tree_header_middle.png
+   M /branches/ewl/images/tree_header_middle2.png
+   M /branches/ewl/images/tree_header_over.png
+   M /branches/ewl/images/tree_header_unique.png
+   M /branches/ewl/images/tree_header_unique2.png
+   M /branches/ewl/images/tree_over.png
+   M /branches/ewl/widgets/check_main.edc
+   M /branches/ewl/widgets/check_programs.edc
+   M /branches/ewl/widgets/radio_main.edc
+   M /branches/ewl/widgets/radio_programs.edc
+   M /branches/ewl/widgets/seeker_horiz_button.edc
+   M /branches/ewl/widgets/seeker_vertical_button.edc
+   M /branches/ewl/widgets/tree_bg.edc
+
+Check, Radio, and Seeker widget updates:
+- new images
+- new focus behaviour (see detour-e17)
+
+Jaime: see http://www.cored.org/tmp/new_focus_behaviour.png
+
+Old focus behaviour still there. This is also true for the 
+seeker.
+
+Note to self: the seeker should be confined to the rail, not to 
+the beginning and end of the image(s).
+
+Tree header image updates. On etk, the tree_headers are outside 
+the tree, while in ewl they are inside ?
+
+
+------------------------------------------------------------------------
 r319 | avi.thomas | 2007-10-17 14:13:59 -0500 (Wed, 17 Oct 2007) | 1 line
 Changed paths:
    M /branches/ewl/main.edc
