@@ -1,4 +1,26 @@
 ------------------------------------------------------------------------
+r517 | alberto.castro.leiva | 2008-06-24 03:32:58 -0500 (Tue, 24 Jun 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/main.edc
+
+Bah
+
+------------------------------------------------------------------------
+r515 | alberto.castro.leiva | 2008-06-24 03:20:53 -0500 (Tue, 24 Jun 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/ChangeLog
+   M /branches/e17-init/main.edc
+
+Bump version for release.
+
+------------------------------------------------------------------------
+r506 | alberto.castro.leiva | 2008-06-13 00:56:25 -0500 (Fri, 13 Jun 2008) | 2 lines
+Changed paths:
+   M /branches/e17-init/bits/splash_programs.edc
+
+Timer 
+
+------------------------------------------------------------------------
 r505 | alberto.castro.leiva | 2008-06-13 00:46:12 -0500 (Fri, 13 Jun 2008) | 2 lines
 Changed paths:
    M /branches/e17-init/bits/splash_programs.edc
