@@ -6,9 +6,10 @@
 
 
 == Global ==
-*
+* Move from Bitstream to DejaVu fonts.
 
 
 == Compile ==
 Improve edje_decc: directory structure
+Make install
 
