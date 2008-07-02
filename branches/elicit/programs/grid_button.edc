@@ -21,6 +21,13 @@ program {
 }
 
 program {
+	name: "text-click";
+	signal: "mouse,down,1";
+	source: "grid.text";
+	action: SIGNAL_EMIT "elicit,grid,toggle" "";
+}
+
+program {
 	name: "focus_in";
 	signal: "mouse,in";
 	source: "grid.check.button";

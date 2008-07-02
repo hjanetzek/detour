@@ -1,4 +1,6 @@
 
+#include "macros/sliders.edc"
+
 //Set the current version
 #define VERSION_STRING 0.4.2
 
@@ -16,7 +18,7 @@ color_classes {
 }
 
 images { 
-	#include "images.edc"
+	#include "images/images.edc"
 }	
 
 collections {
@@ -34,7 +36,7 @@ collections {
 			public shot_focus = 0;
 			public swatch_focus = 0;
 			public grid_state = 0;
-			public spinner_focus = 0; /* not really needed */
+			public spinner_focus = 0;
 		}
 
 		parts { 
