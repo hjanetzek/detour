@@ -9,6 +9,7 @@ part {
 		min: 50 20;
 		max: 50 20;
 		color: 255 0 0 0;
+		visible: 0;
 
 		rel1 { 
 			to: "shot.bg"; 
@@ -38,7 +39,7 @@ part {
 		rel1 { 
 			to: "grid.rect"; 
 			relative: 0.0 0.0; 
-			offset: 24 4; 
+			offset: 94 3; 
 		}
 
 		rel2 { 
@@ -67,6 +68,7 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 128;
+		image.normal: "check_shadow.png";
 
 		rel1 { 
 			to: "grid.check.button";
@@ -79,14 +81,13 @@ part {
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
-
-		image.normal: "check_shadow.png";
 	} 
 
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
+		image.normal: "check_focus.png";
 
 		rel1 { 
 			to: "grid.check.button";
@@ -99,8 +100,6 @@ part {
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
-
-		image.normal: "check_focus.png";
 	}
 
 	description {
@@ -122,15 +121,11 @@ part {
 		fixed: 1 1;
 
 		rel1 { 
-			to: "grid.rect"; 
-			relative: 0.0 0.0; 
-			offset: 24 4; 
+			to: "check_base"; 
 		}
 
 		rel2 { 
-			to: "grid.rect"; 
-			relative: 0.0 1.0; 
-			offset: -1 -1; 
+			to: "check_base"; 
 		}
 
 		image {
@@ -148,15 +143,6 @@ part {
 	}
 
 	description {
-		state: "semi-clicked" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "check-.png";
-		}
-	}
-
-	description {
 		state: "disabled" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 128;
@@ -166,30 +152,30 @@ part {
 part {
 	name: "grid.text";
 	type: TEXT;
-	mouse_events: 0;
+	mouse_events: 1;
 
 	description {
 		state: "default" 0.0;
 		min: 47 12;
 		max: 47 12;
-		color, 60 60 60 255;
+		color: 60 60 60 255;
 
 		rel1 { 
-			to: "grid.check.button"; 
-			relative: 1.0 0.0; 
-			offset: 28 4; 
+			to: "grid.rect"; 
+			relative: 0.0 0.0; 
+			offset: 38 3; 
 		}
 
 		rel2 { 
-			to: "grid.check.button"; 
-			relative: 1.0 1.0; 
+			to: "grid.rect"; 
+			relative: 0.0 1.0; 
 			offset: -1 -1; 
 		}
 
 		text {
-			text: "Grid";
+			text: "Grid:";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 10;
+			size: 11;
 		}
 	}
 }
