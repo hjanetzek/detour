@@ -43,7 +43,7 @@ program {
 	source: "";
 	script {
 		set_int(spinner_focus, 1);
-		set_state(PART:"entry", "focused", 0.0);
+		set_state(PART:"entry_focus", "focused", 0.0);
 	}
 }
 
@@ -53,7 +53,7 @@ program {
 	source: "";
 	script {
 		set_int(spinner_focus, 0);
-		set_state(PART:"entry", "default", 0.0);
+		set_state(PART:"entry_focus", "default", 0.0);
 	}
 }
 
@@ -63,7 +63,7 @@ program {
 	source: "";
 	script {
 		set_int(spinner_focus, 1);
-		set_state(PART:"entry", "focused", 0.0);
+		set_state(PART:"entry_focus", "focused", 0.0);
 	}
 }
 
@@ -73,7 +73,7 @@ program {
 	source: "";
 	script {
 		set_int(spinner_focus, 0);
-		set_state(PART:"entry", "default", 0.0);
+		set_state(PART:"entry_focus", "default", 0.0);
 	}
 }
 

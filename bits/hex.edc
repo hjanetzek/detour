@@ -6,13 +6,13 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 60 20;
-		max: 9999 20;
+		min: 76 22;
+		max: 9999 22;
 
 		rel1 { 
 			to: "grid.rect"; 
 			relative: 1.0 0.0; 
-			offset: -2 3; 
+			offset: 9 1; 
 		}
 
 		rel2 { 
@@ -22,9 +22,42 @@ part {
 		}
 
 		image {
-			normal, "entry.png";
-			border: 10 10 8 8;
+			normal: "entry.png";
+			border: 6 6 8 7;
 		}
+	}
+}
+
+part {
+	name: "hex_entry_focus";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 39 22;
+		max: 39 22;
+		fixed: 1 1;
+		color: 255 255 255 0;
+
+		rel1 { 
+			to: "hex_entry"; 
+		}
+
+		rel2 { 
+			to: "hex_entry"; 
+		}
+
+		image {
+			normal: "entry_focus.png";
+			border: 7 7 6 6;
+		}
+	}
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
 	}
 }
 
@@ -40,7 +73,7 @@ part {
 		rel1 { 
 			to: "hex_entry"; 
 			relative: 0.0 0.0; 
-			offset: 4 5; 
+			offset: 4 4; 
 		}
 
 		rel2 { 
@@ -69,7 +102,7 @@ part {
 		rel2 { 
 			to: "hex-val_rect"; 
 			relative: 1.0 1.0; 
-			offset: 0 0; 
+			offset: -1 -1; 
 		}
 
 		text {

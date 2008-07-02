@@ -70,7 +70,7 @@ part {
 		}
 
 		image {
-			normal, "scrollframe_inset.png";
+			normal: "scrollframe_inset.png";
 			border: 5 5 5 6;
 		}
 	}
@@ -80,7 +80,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal, "scrollframe_focus.png";
+			normal: "scrollframe_focus.png";
 			border: 5 5 5 6;
 		}
 	}
@@ -93,8 +93,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 16 16;
-		max: 16 16;
+		min: 23 23;
+		max: 23 23;
 		color: 255 255 255 255;
 
 		rel1 { 
@@ -110,7 +110,7 @@ part {
 		}
 
 		image {
-			normal: "shot.png";
+			normal: "tool-grab.png";
 		}
 	}
 
