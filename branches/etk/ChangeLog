@@ -1,4 +1,89 @@
 ------------------------------------------------------------------------
+r489 | alberto.castro.leiva | 2008-05-10 11:51:42 -0500 (Sat, 10 May 2008) | 3 lines
+Changed paths:
+   M /branches/etk/README
+   M /branches/etk/images/button_outline.png
+   M /branches/etk/images/check1.png
+   M /branches/etk/images/iconbox_focus.png
+   M /branches/etk/images/images.edc
+   M /branches/etk/images/slider_h_btn.png
+   D /branches/etk/images/slider_h_btn_disabled.png
+   D /branches/etk/images/slider_h_focus.png
+   M /branches/etk/images/slider_h_shadow.png
+   D /branches/etk/images/slider_v_bot_disabled.png
+   M /branches/etk/images/slider_v_btn.png
+   D /branches/etk/images/slider_v_btn_disabled.png
+   D /branches/etk/images/slider_vert_focus.png
+   M /branches/etk/images/slider_vert_shadow.png
+   M /branches/etk/images/tree_focus.png
+   M /branches/etk/styles.edc
+   M /branches/etk/widgets/button.edc
+   M /branches/etk/widgets/colorpicker.edc
+   M /branches/etk/widgets/combobox_entry.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/frame.edc
+   M /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/statusbar.edc
+   M /branches/etk/widgets/toggle_button.edc
+
+Update detour-etk font sizes.
+Update sliders to mimic detour-e17
+
+------------------------------------------------------------------------
+r485 | alberto.castro.leiva | 2008-05-08 02:16:00 -0500 (Thu, 08 May 2008) | 5 lines
+Changed paths:
+   M /branches/etk/AUTHORS
+   M /branches/etk/Makefile
+   A /branches/etk/fonts/DejaVuSans-BoldOblique.ttf
+   D /branches/etk/fonts/Vera.ttf
+   D /branches/etk/fonts/VeraBI.ttf
+   D /branches/etk/fonts/VeraBd.ttf
+   D /branches/etk/fonts/VeraIt.ttf
+   D /branches/etk/fonts/VeraMoBd.ttf
+   D /branches/etk/fonts/VeraMono.ttf
+   D /branches/etk/fonts/bitstream.COPYING
+   M /branches/etk/main.edc
+   M /branches/etk/styles.edc
+   M /branches/etk/widgets/colorpicker.edc
+   M /branches/etk/widgets/combobox_entry.edc
+   M /branches/etk/widgets/entry.edc
+   M /branches/etk/widgets/frame.edc
+   M /branches/etk/widgets/menu.edc
+   M /branches/etk/widgets/progress_bar.edc
+   M /branches/etk/widgets/slider.edc
+   M /branches/etk/widgets/statusbar.edc
+   M /branches/etk/widgets/tree.edc
+
+Remove Vera Font family dep.
+Update .edc to reflect this.
+detour-ewl is up next :)
+
+
+------------------------------------------------------------------------
+r467 | alberto.castro.leiva | 2008-05-07 02:06:43 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/etk/README
+
+Update
+
+------------------------------------------------------------------------
+r464 | alberto.castro.leiva | 2008-05-07 01:59:50 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/etk/AUTHORS
+   M /branches/etk/COPYING
+   A /branches/etk/ChangeLog
+   A /branches/etk/DejaVu.COPYING
+   M /branches/etk/README
+   A /branches/etk/TODO
+   A /branches/etk/fonts/DejaVuSans-Bold.ttf
+   A /branches/etk/fonts/DejaVuSans-Oblique.ttf
+   A /branches/etk/fonts/DejaVuSans.ttf
+   A /branches/etk/fonts/DejaVuSansMono-Bold.ttf
+   A /branches/etk/fonts/DejaVuSansMono.ttf
+
+Add these.
+
+------------------------------------------------------------------------
 r346 | alberto.castro.leiva | 2007-10-30 07:29:50 -0600 (Tue, 30 Oct 2007) | 18 lines
 Changed paths:
    M /branches/etk/images/images.edc
