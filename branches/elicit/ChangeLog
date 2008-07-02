@@ -1,4 +1,106 @@
 ------------------------------------------------------------------------
+r483 | alberto.castro.leiva | 2008-05-08 01:58:30 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/Makefile
+
+Update Makefile
+
+------------------------------------------------------------------------
+r479 | alberto.castro.leiva | 2008-05-08 01:16:40 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/AUTHORS
+
+Update
+
+------------------------------------------------------------------------
+r476 | alberto.castro.leiva | 2008-05-08 01:06:42 -0500 (Thu, 08 May 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/AUTHORS
+
+Update
+
+------------------------------------------------------------------------
+r475 | alberto.castro.leiva | 2008-05-08 00:49:01 -0500 (Thu, 08 May 2008) | 6 lines
+Changed paths:
+   M /branches/elicit/Makefile
+   M /branches/elicit/README
+   M /branches/elicit/bits/background.edc
+   M /branches/elicit/bits/grid_button.edc
+   M /branches/elicit/bits/hex.edc
+   M /branches/elicit/bits/shot_window.edc
+   M /branches/elicit/bits/sliders.edc
+   M /branches/elicit/bits/spinner.edc
+   M /branches/elicit/bits/swatch.edc
+   M /branches/elicit/bits/swatches.edc
+   D /branches/elicit/fonts/Vera.COPYING
+   D /branches/elicit/fonts/Vera.ttf
+   D /branches/elicit/fonts/VeraBd.ttf
+   M /branches/elicit/main.edc
+   M /branches/elicit/programs/controls.edc
+   M /branches/elicit/programs/focus.edc
+   M /branches/elicit/programs/hex.edc
+   M /branches/elicit/programs/shot_window.edc
+   M /branches/elicit/programs/spinner.edc
+   M /branches/elicit/programs/swatch.edc
+   M /branches/elicit/swatch/parts.edc
+   M /branches/elicit/swatch/programs.edc
+
+* Update detour-elicit to v. 0.4.2 
+* Code refactoring 
+* Still need to update the edje to the latest color style 
+* Moved away from Vera to DejaVu fonts.
+
+
+------------------------------------------------------------------------
+r466 | alberto.castro.leiva | 2008-05-07 02:05:53 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/README
+
+Update
+
+------------------------------------------------------------------------
+r463 | alberto.castro.leiva | 2008-05-07 01:53:35 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   A /branches/elicit/TODO
+
+Add 
+
+------------------------------------------------------------------------
+r462 | alberto.castro.leiva | 2008-05-07 01:51:41 -0500 (Wed, 07 May 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/COPYING
+   A /branches/elicit/ChangeLog
+   A /branches/elicit/DejaVu.COPYING
+   M /branches/elicit/INSTALL
+   M /branches/elicit/README
+   A /branches/elicit/fonts/DejaVuSans-Bold.ttf
+   A /branches/elicit/fonts/DejaVuSans.ttf
+
+Add these files.
+
+------------------------------------------------------------------------
+r352 | alberto.castro.leiva | 2007-11-18 19:22:37 -0600 (Sun, 18 Nov 2007) | 2 lines
+Changed paths:
+   M /branches/elicit/bits/grid_button.edc
+   M /branches/elicit/bits/shot_window.edc
+   M /branches/elicit/bits/swatch.edc
+   A /branches/elicit/images/check-.png
+   A /branches/elicit/images/check0.png
+   M /branches/elicit/images/check1.png
+   D /branches/elicit/images/check2.png
+   A /branches/elicit/images/check_base.png
+   A /branches/elicit/images/check_focus.png
+   A /branches/elicit/images/check_shadow.png
+   M /branches/elicit/images/entry.png
+   M /branches/elicit/images/entry_focus.png
+   M /branches/elicit/images.edc
+   M /branches/elicit/programs/controls.edc
+   M /branches/elicit/programs/grid_button.edc
+   M /branches/elicit/programs/shot_window.edc
+
+Update
+
+------------------------------------------------------------------------
 r179 | boykot.tokyo | 2007-05-24 02:53:31 -0500 (Thu, 24 May 2007) | 2 lines
 Changed paths:
    M /branches/elicit/images/scrollframe_focus.png
