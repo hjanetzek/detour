@@ -20,14 +20,9 @@ Dialog app border: wrong pixels bb border
 
 == Compile ==
 
-== e ==
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
 
-		image {
-			normal: "nav_back-button.png";
-			normal: "nav_button-shadow-left.png";
-		}
-	}
+== e ==
+
+[03:27]<raster> not sure about the whole gadman setup
+[03:28]<raster> crazy dave at work there! :)
 
