@@ -4,6 +4,88 @@ group {
 	min: 410 327;
 	
 	parts {
-		#include "configure_main.edc"
+		part {
+			name: "dialog_bg";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 410 327;
+
+				image {
+					normal: "dialog_bg_default.png";
+					border: 1 1 1 1;
+				}
+			}
+		}
+
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 { 
+					to: "dialog_bg"; 
+					relative: 0.0 0.0; 
+					offset: 10 6; 
+				}
+
+				rel2 { 
+					to: "button.area"; 
+					relative: 1.0 0.0;
+					offset: -12 -10; 
+				}
+			}
+		}
+
+		part {
+			name: "button.area";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 299 30;
+				color: 255 0 0 0;
+
+				rel1 { 
+					to: "dialog_bg"; 
+					relative: 0.0 1.0; 
+					offset: 0 0; 
+				}
+
+				rel2 { 
+					to: "dialog_bg"; 
+					relative: 1.0 1.0; 
+					offset: 0 -41; 
+				}
+			}
+		}
+
+		part {
+			name: "e.swallow.button";
+			type: SWALLOW;
+
+			description {
+				state: "default" 0.0;
+				fixed: 1 1; 
+
+				rel1 { 
+					to: "button.area"; 
+					relative: 0.5 0.5; 
+					offset: 0 0; 
+				}
+
+				rel2 { 
+					to: "button.area"; 
+					relative: 0.5 0.5; 
+					offset: 0 -5; 
+				}	     	    
+			}
+		}
 	}	   
 }
+
