@@ -1,6 +1,6 @@
 
 part {
-	name: "bg";
+	name: "dialog_bg_border";
 	type: RECT;
 	mouse_events: 0;
 
@@ -11,7 +11,7 @@ part {
 }
 
 part {
-	name: "base";
+	name: "menu_bg";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -110,7 +110,7 @@ part {
   
 		#if VISIBLE_MENU_TITLE == 0
 			rel1 {
-				to: "base"; 
+				to: "menu_bg"; 
 				relative: 0.0 0.0; 
 				offset: 3 2; 
 			}
