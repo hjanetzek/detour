@@ -18,7 +18,7 @@ part {
 	description {
 		state: "iconic" 0.0;
 		inherit: "default" 0.0;
-		color: 255 255 255 128;
+		color: 255 255 255 129;
 	}
 
 	description {
