@@ -34,7 +34,7 @@ part {
 		rel2 {
 			to: "e.text.label";
 			relative: 1.0 1.0; 
-			offset: 1 1; 
+			offset: 1 0; 
 		}
 
 		image {
