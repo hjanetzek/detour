@@ -4,7 +4,7 @@ group {
 
 	parts {
 		part {
-			name: "base";
+			name: "dialog_bg";
 			type: IMAGE;
 			mouse_events: 0;
 
@@ -19,7 +19,13 @@ group {
 		}
 
 		#include "about_main.edc"
-		//#include "about_theme_widget.edc"
+
+		/*
+		 * at one time both about_theme & about_e dialogs share the same
+		 * button widget parts and programs
+		 */
+
+		/* #include "about_theme_widget.edc" */
 	}
 
 	programs {
@@ -27,3 +33,4 @@ group {
 		#include "about_main_programs.edc"
 	}
 }
+

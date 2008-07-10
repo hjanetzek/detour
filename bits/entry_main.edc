@@ -2,6 +2,7 @@
 part {
 	name: "entry";
 	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;

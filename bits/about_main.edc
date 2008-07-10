@@ -270,7 +270,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
+			border: 6 6 8 7;
 		}
     	}
 }
@@ -295,7 +295,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
+			border: 6 6 8 7;
 		}
 	}
 }
@@ -385,7 +385,7 @@ part {
 }
 
 part {
-	name: "button_image";
+	name: "base";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "button.area";
@@ -395,7 +395,7 @@ part {
 		min: 98 28;
 		max: 98 28;
 		fixed: 1 1;
-		image.normal: "button_outline.png";
+		image.normal: "button_base.png";
 		image.border: 7 7 7 7;
 		color: 255 255 255 178;
 
@@ -422,13 +422,13 @@ part {
 		color: 255 255 255 255;
 
 		rel1 { 
-			to: "button_image"; 
+			to: "base"; 
 			relative: 0.0 0.0; 
 			offset: 3 1; 
 		}
 
 		rel2 { 
-			to: "button_image"; 
+			to: "base"; 
 			relative: 1.0 1.0; 
 			offset: -4 -2; 
 		}
@@ -436,7 +436,7 @@ part {
 }
 
 part {
-	name: "button_enabled";
+	name: "button";
 	type: IMAGE;
 	mouse_events: 1;
 	clip_to: "button_clip";
@@ -449,20 +449,16 @@ part {
 
 		rel1 { 
 			to: "button_clip"; 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
 		}
 
 		rel2 { 
 			to: "button_clip"; 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
 		}
 	}
 }
 
 part {
-	name: "button_shadow";
+	name: "shadow";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "button_clip";
@@ -491,7 +487,7 @@ part {
 }
 
 part {
-	name: "button_text";
+	name: "text";
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
@@ -516,7 +512,7 @@ part {
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 1 1;
-			align: 0.5 0.55;
+			align: 0.5 0.5;
 			#if ENABLE_TEXT_CLASSES == 0
 				text_class: "";
 			#else
@@ -536,7 +532,7 @@ part {
 }
 
 part {
-	name: "button_shadow_overlay";
+	name: "shadow_overlay";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "button_clip";
