@@ -6,15 +6,13 @@ group  {
 		part { 
 			name: "background_image";
 			type: RECT;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
 				color: 139 157 180 255;
 			}
 		}
-	}
-
-	programs {
 	}
 }
 

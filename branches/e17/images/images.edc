@@ -7,7 +7,7 @@ image: "dot.png" COMP;
 image: "frame_outline.png" COMP;
 
 //~ button
-image: "button_outline.png" COMP;
+image: "button_base.png" COMP;
 image: "button_focus.png" COMP;
 image: "button.png" COMP;
 image: "button_shadow.png" COMP;
@@ -134,6 +134,7 @@ image: "entry_focus.png" COMP;
 //~ dialog
 image: "separator.png" COMP;
 image: "dialog_bg.png" COMP;
+image: "dialog_bg_default.png" COMP;
 
 //~ check
 image: "check_base.png" COMP;
@@ -500,6 +501,7 @@ image: "busy.cursor.02.png" COMP;
 image: "busy.cursor.03.png" COMP;
 image: "typebuf_clip.png" COMP;
 image: "fileman_win_drop.png" COMP;
+image: "icon_select.png" COMP;
 
 //~ gadman
 image: "gadman_hl1.png" COMP;

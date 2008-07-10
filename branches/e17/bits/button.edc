@@ -2,10 +2,6 @@
 group {
 	name: "e/widgets/button";
 
-	script {
-		public focus_activated;
-	}
-
 	parts {
 		#include "button_main.edc"
 	}
@@ -14,3 +10,4 @@ group {
 		#include "button_programs.edc"
 	}
 }
+

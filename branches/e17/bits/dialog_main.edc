@@ -18,8 +18,8 @@ part {
 		}
 	
 		image {
-			normal: "dialog_bg.png";
-			border: 8 8 2 2;
+			normal: "dialog_bg_default.png";
+			border: 1 1 1 1;
 		}
 	}
 }

@@ -1,29 +1,15 @@
 
 part {
-	name: "base";
+	name: "dialog_bg";
 	type: IMAGE;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 	
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-	
 		image {
 			normal: "error-dialog_bg.png";
 			border: 3 3 3 3;
-		}
-
-		fill {
-			smooth: 0;
 		}
 	}
 }
@@ -58,6 +44,7 @@ part {
 part {
 	name: "entry";
 	type: IMAGE;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -76,7 +63,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
+			border: 6 6 8 7;
 		}
 	}
 }
@@ -150,7 +137,7 @@ part {
 part {
 	name: "button.area";
 	type: RECT;
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -170,8 +157,8 @@ part {
 
 part {
 	name: "separator";
-	mouse_events: 0;
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -193,7 +180,7 @@ part {
 }
 
 part {
-	name: "button_image";
+	name: "base";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -213,7 +200,7 @@ part {
 			offset: 0 0; 
 		}
 
-		image.normal: "button_outline.png";
+		image.normal: "button_base.png";
 		image.border: 7 7 7 7;
 	}
 
@@ -239,12 +226,12 @@ part {
 		color: 255 255 255 255;
 
 		rel1 { 
-			to: "button_image"; 
+			to: "base"; 
 			offset: 6 1; 
 		}
 
 		rel2 { 
-			to: "button_image";
+			to: "base";
 			offset: -7 -2; 
 		}
 	}
@@ -265,7 +252,7 @@ part {
 
 
 part {
-	name: "button_enabled";
+	name: "button";
 	type: IMAGE;
 	mouse_events: 1;
 	clip_to: "button_clip";
@@ -275,19 +262,16 @@ part {
 		min: 86 24;
 		max: 86 24;
 		fixed: 1 1;
+		image.normal: "button.png";
+		image.border: 7 7 7 7;
 
 		rel1 { 
-			to: "button_image"; 
-			offset: 6 1; 
+			to: "button_clip"; 
 		}
 
 		rel2 { 
-			to: "button_image"; 
-			offset: -7 -2; 
+			to: "button_clip"; 
 		}
-
-		image.normal: "button.png";
-		image.border: 7 7 7 7;
 	}
 
 	description {
@@ -303,10 +287,10 @@ part {
 }
 
 part {
-	name: "button_text";
+	name: "text";
 	type: TEXT;
 	effect: SHADOW;
-	mouse_events:  0;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
@@ -314,17 +298,17 @@ part {
 		color3: 170 168 169 128;
 
 		rel1 { 
-			to: "button_image"; 
+			to: "base"; 
 			offset: 6 1; 
 		}
 
 		rel2 { 
-			to: "button_image"; 
+			to: "base"; 
 			offset: -7 0; 
 		}
 
 		text {
-			text: "OK";
+			text: "Ok";
 			font: "DejaVuSans-Bold";
 			size: 11;
 			min: 0 0;

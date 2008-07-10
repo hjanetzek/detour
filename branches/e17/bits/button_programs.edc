@@ -2,17 +2,17 @@
 program {
 	name: "button_unclick";
 	signal: "mouse,up,1";
-	source: "button_enabled";
+	source: "button";
 	action: STATE_SET "default" 0.0;
-	target: "button_enabled";
-	target: "button_shadow";
-	target: "e.text.label";
-	target: "button_shadow_overlay";
 	target: "minimum.size.hack";
+	target: "button";
+	target: "shadow";
+	target: "shadow_overlay";
+	target: "e.text.label";
 }
 
 program {
-	name: "focus_in";
+	name: "gain_focus";
 	signal: "e,state,focused";
 	source: "e";
 	action: STATE_SET "visible" 0.0;
@@ -21,7 +21,7 @@ program {
 }
 
 program {
-	name: "focus_out";
+	name: "lose_focus";
 	signal: "e,state,unfocused";
 	source: "e";
 	action: STATE_SET "default" 0.0;
@@ -32,20 +32,20 @@ program {
 program {
 	name: "button_click";
 	signal: "mouse,down,1";
-	source: "button_enabled";
+	source: "button";
 	script {
-		set_state(PART:"button_enabled", "clicked", 0.0);
-		set_state(PART:"e.text.label", "clicked", 0.0);
-		set_state(PART:"button_shadow", "clicked", 0.0);
-		set_state(PART:"button_shadow_overlay", "clicked", 0.0);
 		set_state(PART:"minimum.size.hack", "clicked", 0.0);
+		set_state(PART:"button", "clicked", 0.0);
+		set_state(PART:"shadow", "clicked", 0.0);
+		set_state(PART:"shadow_overlay", "clicked", 0.0);
+		set_state(PART:"e.text.label", "clicked", 0.0);
 	}
 }
 
 program {
 	name: "button_clicked";
 	signal: "mouse,clicked,1";
-	source: "button_enabled";
+	source: "button";
 	action: SIGNAL_EMIT "e,action,click" "";
 }
 
@@ -77,30 +77,30 @@ program {
 }
 
 program {
-	name: "enable";
+	name: "enable_button";
 	signal: "e,state,enabled";
 	source: "e";
 	action: STATE_SET "default" 0.0;
-	target: "button_image"; 
-	target: "button_enabled";
-	target: "button_shadow";
-	target: "button_disabled"; 
-	target: "e.text.label"; 
-	target: "button_shadow_overlay";
 	target: "minimum.size.hack";
+	target: "base"; 
+	target: "button";
+	target: "disabled"; 
+	target: "shadow";
+	target: "shadow_overlay";
+	target: "e.text.label"; 
 }
 
 program {
-	name: "disable";
+	name: "disable_button";
 	signal: "e,state,disabled";
 	source: "e";
 	action: STATE_SET "disabled" 0.0;
-	target: "button_image";
-	target: "button_enabled";
-	target: "button_shadow";
-	target: "button_disabled";
-	target: "e.text.label"; 
-	target: "button_shadow_overlay";
 	target: "minimum.size.hack";
+	target: "base"; 
+	target: "button";
+	target: "disabled"; 
+	target: "shadow";
+	target: "shadow_overlay";
+	target: "e.text.label"; 
 }
 

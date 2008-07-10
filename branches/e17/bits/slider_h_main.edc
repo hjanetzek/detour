@@ -58,10 +58,6 @@ part {
 			normal: "sb_runnerh.png";
 			border: 1 1 6 5;
 		}
-	
-		fill {
-			smooth: 0;
-		}
 	}
 
 	description {
@@ -85,7 +81,7 @@ part {
 	
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
+			border: 6 6 8 7;
 		}
 	}
 
@@ -110,11 +106,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
-		}
-
-		fill {
-			smooth: 0;
+			border: 6 6 8 7;
 		}
 	}
 }
@@ -143,7 +135,7 @@ part {
 	
 		image {
 			normal: "entry_focus.png";
-			border: 5 5 8 7;
+			border: 7 7 8 7;
 		}
 	}
 

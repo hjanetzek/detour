@@ -30,7 +30,7 @@ part {
 part {
 	name: "e.text.title";
 	type: TEXT;
-	effect: NONE;
+	effect: SOFT_SHADOW;
 	mouse_events: 0;
 
 	description {
@@ -42,7 +42,8 @@ part {
 			color_class: "menu_title";
 		#endif
 		#endif
-		color: 60 60 60 255;
+		color: 90 90 90 255;
+		color3: 255 255 255 32;
 		visible: 0;
 
 		rel1 { 

@@ -1,7 +1,7 @@
+#include "macros/about_buttons.edc"
 #include "macros/background.edc"
 #include "macros/border.edc"
 #include "macros/border_menu.edc"
-#include "macros/buttons.edc"
 #include "macros/efm_nav.edc"
 #include "macros/fileman_list.edc"
 //~ #include "macros/init-bg.edc"
@@ -39,9 +39,6 @@
 //Display ibar & ibox label overlay
 #define ENABLE_IBAR_LABEL_OVERLAY 1
 
-//Set ibar icons to rgba: 255 255 255 164
-#define FADE_IBAR_ICONS 0
-
 //Enable custom color classes
 #define ENABLE_COLOR_CLASS 0 /* work in progress */
 
@@ -52,10 +49,10 @@
 #define RGBA_IS_AVAILABLE 0 /* work in progress */
 
 fonts {
-	font:"fonts/DejaVuSans.ttf" "DejaVuSans";
-	font:"fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
-	font:"fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
-	font:"fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
+	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
+	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
+	font: "fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
+	font: "fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
 }
 
 spectra {

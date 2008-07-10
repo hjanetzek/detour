@@ -48,11 +48,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
-		}
-
-		fill {
-			smooth: 0;
+			border: 6 6 8 7;
 		}
 	}
 
@@ -87,7 +83,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 255;
+		color: 60 60 60 64;
 		rel1.to: "overlay";
 		rel1.offset: 3 3;
 		rel2.to: "overlay";
@@ -103,6 +99,8 @@ part {
 
 	description {
 		state: "default" 0.0;
+		image.normal: "pager_lid_l.png";
+		image.border: 2 2 2 2;
 
 		rel1 { 
 			to: "clip"; 
@@ -115,9 +113,6 @@ part {
 			relative: 0.5 1.0; 
 			offset: 0 -1; 
 		}
-
-		image.normal: "pager_lid_l.png";
-		image.border: 2 2 2 2;
 	}
 
 	description {
@@ -146,6 +141,8 @@ part {
 
 	description {
 		state: "default" 0.0;
+		image.normal: "pager_lid_r.png";
+		image.border: 2 2 2 2;
 	
 		rel1 { 
 			to: "clip"; 
@@ -158,9 +155,6 @@ part {
 			relative: 1.0 1.0; 
 			offset: 0 -1; 
 		}
-
-		image.normal: "pager_lid_r.png";
-		image.border: 2 2 2 2;
 	}
 
 	description {
