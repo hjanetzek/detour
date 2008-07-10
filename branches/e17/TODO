@@ -2,6 +2,9 @@
 Dialog app border: wrong pixels bb border
 
 == Improve ==
+-"e/modules/ibar/drop_overlay";
+-"bits/error.edc"
+-exebuf name parts
 -temperature.edc: graphics
 -macros/borders.edc
 -windows rememeber icon (replace)
@@ -10,19 +13,18 @@ Dialog app border: wrong pixels bb border
 -clock graphics(hands)
 -efm nav "refresh" symbol
 -dialog bg (image)
+-transitions.edc
+-winlist.edc
 
 == Global ==
 *Complete start.edc
 *Complete cpufreq.edc
-*Complete transitions.edc
 *Add color_classes
-*Add Init / doesn't seem to work require binary .edj
 
 == Compile ==
-
+*Add Init / would require a symlink to $HOME/.e/e/init
 
 == e ==
-
 [03:27]<raster> not sure about the whole gadman setup
 [03:28]<raster> crazy dave at work there! :)
 

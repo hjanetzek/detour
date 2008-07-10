@@ -103,7 +103,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
+			border: 6 6 8 7;
 		}
 	}
 }

@@ -6,6 +6,10 @@ group {
 		#include "pointer_color.edc"
 	}
 
+/* 
+ * these programs are responsible for the mouse pointer
+ * pulsating transition/effect
+ */
 	programs {
 		#if ANIMATED_CURSOR == 0
 		#else
@@ -14,7 +18,7 @@ group {
 				name: "go_active";
 				signal: "e,state,mouse,idle";
 				source: "e";
-				action: STATE_SET "default" 0.0;
+				action: STATE_SET "visible" 0.0;
 				target: "pointer"; 
 				after: "go_active2";
 			}
@@ -38,8 +42,8 @@ group {
 				after: "go_active";
 			}
 
-			program {
-				name: "stop";
+			program { // when mouse becomes active STOP all programs
+				name: "stop"; 
 	    			signal: "e,state,mouse,active";
 	    			source: "e";
 				action: ACTION_STOP;
@@ -54,6 +58,12 @@ group {
 
 group {
 	name: "e/pointer/enlightenment/default/mono";
+
+/*
+ * monochrome pointer:
+ * this image has been Indexed to two colors
+ * hopefully you will never have to see it 
+ */
 
 	parts {
 		#include "pointer_mono.edc"

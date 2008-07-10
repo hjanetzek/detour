@@ -1,8 +1,8 @@
 
 group {
 	name: "e/error/main";
-	min: 333 196;
-	max: 333 196;
+	min: 333 211;
+	max: 333 211;
 
 	parts {
 		#include "error_main.edc"
@@ -12,3 +12,4 @@ group {
 		#include "error_programs.edc"
 	}
 }
+

@@ -6,8 +6,6 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 0 26;
-		max: 199 26;
 		align: 0.5 0.5;
 		color: 0 0 0 0;
 
@@ -121,8 +119,6 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 120 26;
-		max: 120 26;
 		align: 0.5 0.5;
 		color: 0 0 0 0;
 

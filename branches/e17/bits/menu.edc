@@ -16,6 +16,7 @@ program { \
 	ITEM_SEL("go_passive", "e,state,unselected", "default", 0.0, DECELERATE, 0.0, "item_hilight") \
 	ITEM_SEL("go_active", "e,state,selected", "active", 0.0, DECELERATE, 0.0, "item_hilight")
 
+
 # ifdef ITEM_TOGGLE
 #  undef ITEM_TOGGLE
 # endif

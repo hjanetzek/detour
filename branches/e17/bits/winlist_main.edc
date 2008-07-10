@@ -1,73 +1,28 @@
 
 part {
-	name: "base3";
+	name: "dialog_bg_border";
 	type: RECT;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 		color: 104 108 111 255;
-
-		rel1 { 
-			relative: 0.0 0.0;
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
 	}
 }
 
 part {
-	name: "base2";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 104 108 111 255;
-
-		rel1 { 
-			to_y: "base"; 
-			relative: 0.0 1.0; 
-			offset: 1 0; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -2 -2; 
-		}
-	}
-}
-
-part {
-	name: "base";
+	name: "dialog_bg";
 	type: IMAGE;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
-		align: 0.5 0.0;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 1 1; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -2 -2; 
-		}
+		rel1.offset: 1 1;
+		rel2.offset: -2 -2;
 
 		image {
 			normal: "menu_bg.png";
 			border: 2 2 2 2;
-		}
-
-		fill {
-			smooth: 0;
 		}
 	}
 }
@@ -133,6 +88,8 @@ part {
 
 	description {
 		state: "default" 0.0;
+		image.normal: "scrollframe_focus.png";
+		image.border: 7 7 7 7;
 
 		rel1 { 
 			to: "list"; 
@@ -145,9 +102,6 @@ part {
 			relative: 1.0 1.0; 
 			offset: 0 -1; 
 		}
-
-		image.normal: "scrollframe_focus.png";
-		image.border: 7 7 7 7;
 	}
 }
 
@@ -258,7 +212,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
+			border: 6 6 8 7;
 		}
 	}
 }
@@ -318,11 +272,7 @@ part {
 
 		image {
 			normal: "entry.png";
-			border: 5 5 8 7;
-		}
-
-		fill {
-			smooth: 0;
+			border: 6 6 8 7;
 		}
 	}
 }
@@ -403,13 +353,13 @@ part {
 		fixed: 1 1;
 	
 		rel1 { 
-			to: "base3"; 
+			to: "dialog_bg"; 
 			relative: 0.5 1.0; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "base3"; 
+			to: "dialog_bg"; 
 			relative: 0.5 1.0; 
 			offset: 0 -14; 
 		}
