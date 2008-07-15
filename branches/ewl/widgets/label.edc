@@ -31,7 +31,7 @@ group {
 				text {
 					text: "text";
 					font: "ewl/default";
-					size: 10;
+					size: 11;
 					min: 1 1;
 					align: 0.0 0.5;
 				}
@@ -92,7 +92,7 @@ group {
 				text {
 					text: "text";
 					font: "ewl/default/bold";
-					size: 10;
+					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
 				}
@@ -128,7 +128,7 @@ group {
 				text {
 					text: "text";
 					font: "ewl/default/bold";
-					size: 10;
+					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
 				}
