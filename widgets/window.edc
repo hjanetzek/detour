@@ -4,8 +4,8 @@ group {
 
 	data {
 		item: "inset" 0;
-		item: "inset/left" 1;
-		item: "inset/right" 1;
+		item: "inset/left" 3;
+		item: "inset/right" 3;
 	}
 
 	parts {
