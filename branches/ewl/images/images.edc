@@ -4,10 +4,10 @@ image: "dialog_bg.png" COMP;
 image: "dialog_separator.png" COMP;
 
 //~ button
+image: "button_base.png" COMP;
 image: "button.png" COMP;
 image: "button_focus.png" COMP;
 image: "button_disabled.png" COMP;
-image: "button_outline.png" COMP;
 image: "button_shadow.png" COMP;
 image: "button_shadow_overlay.png" COMP;
 
