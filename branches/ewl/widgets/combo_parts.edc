@@ -1,108 +1,111 @@
 
 part {
-			name: "base";
-			mouse_events: 0;
+	name: "base";
+	type: IMAGE;
+	mouse_events: 0;
 
-			description {
-				state: "default" 0.0;
-				min: 0 24;
+	description {
+		state: "default" 0.0;
+		min: 0 24;
 
-				image {
-					normal: "button_outline.png";
-					border: 7 7 7 7;
-				}
-			}
+		image {
+			normal: "button_base.png";
+			border: 7 7 7 7;
 		}
+	}
+}
 
-		part {
-			name: "focus_clip";
-			type: RECT;
-			mouse_events: 0;
+part {
+	name: "focus_clip";
+	type: RECT;
+	mouse_events: 0;
 
-			description {
-				state: "default" 0.0;
-				color: 255 255 255 0;
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 0;
 				
-				rel1{
-					to: "combo_button";
-				}
-
-				rel2 {
-					to: "combo_button";
-				}
-			}
-
-			description {
-				state: "clicked" 0.0;
-				inherit: "default" 0.0;
-				color: 255 255 255 255;
-			}
+		rel1{
+			to: "combo_button";
 		}
 
-		part {
-			name: "focus";
-			mouse_events: 0;
-			clip_to: "focus_clip";
+		rel2 {
+			to: "combo_button";
+		}
+	}
 
-			description {
-				state: "default" 0.0;
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+}
 
-				rel1 {
-					to: "combo_button";
-				}
+part {
+	name: "focus";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "focus_clip";
 
-				rel2 {
-					to: "combo_button";
-				}
+	description {
+		state: "default" 0.0;
 
-				image {
-					normal: "combobox_focus.png";
-					border: 7 7 7 7;
-				}
-			}
+		rel1 {
+			to: "combo_button";
 		}
 
-		part {
-			name: "combo_button";
+		rel2 {
+			to: "combo_button";
+		}
 
-			description {
-				state: "default" 0.0;
-				min: 0 22;
+		image {
+			normal: "combobox_focus.png";
+			border: 7 7 7 7;
+		}
+	}
+}
 
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 3 1;
-					to: "base";
-				}
+part {
+	name: "combo_button";
+	type: IMAGE;
 
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -4 -3;
-					to: "base";
-				}
+	description {
+		state: "default" 0.0;
+		min: 0 22;
 
-				image {
-					normal: "combobox_button.png";
-					border: 7 23 7 7;
-				}
-			}
+		rel1 {
+			to: "base";
+			relative: 0.0 0.0;
+			offset: 3 1;
+		}
 
-			description {
-				state: "clicked" 0.0;
-				inherit: "default" 0.0;
+		rel2 {
+			to: "base";
+			relative: 1.0 1.0;
+			offset: -4 -3;
+		}
+
+		image {
+			normal: "combobox_button.png";
+			border: 7 23 7 7;
+		}
+	}
+
+	description {
+		state: "clicked" 0.0;
+		inherit: "default" 0.0;
 				
-				image {
-					normal: "combobox_button_clicked.png";
-				}
-			}
-
-			description {
-				state: "disabled" 0.0;
-				inherit: "default" 0.0;
-
-				image {
-					normal: "combobox_button_disabled.png";
-				}
-			}
+		image {
+			normal: "combobox_button_clicked.png";
 		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+
+		image {
+			normal: "combobox_button_disabled.png";
+		}
+	}
+}
 
