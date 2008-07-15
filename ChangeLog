@@ -1,4 +1,94 @@
 ------------------------------------------------------------------------
+r550 | alberto.castro.leiva | 2008-07-15 16:01:10 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/TODO
+   M /branches/ewl/images/check1.png
+   M /branches/ewl/images/dialog_bg.png
+   M /branches/ewl/images/images.edc
+   M /branches/ewl/images/menu_item_arrow_dark.png
+   D /branches/ewl/images/slider_h_focus.png
+   D /branches/ewl/images/slider_vert_focus.png
+   M /branches/ewl/widgets/seeker_horiz_button.edc
+   M /branches/ewl/widgets/seeker_vertical_button.edc
+
+Improve a couple of images.
+
+------------------------------------------------------------------------
+r549 | alberto.castro.leiva | 2008-07-15 15:50:41 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   A /branches/ewl/fonts/DejaVuSans-BoldOblique.ttf
+   A /branches/ewl/fonts/DejaVuSansMono-BoldOblique.ttf
+   A /branches/ewl/fonts/DejaVuSansMono-Oblique.ttf
+
+Forgot these files.
+
+------------------------------------------------------------------------
+r548 | alberto.castro.leiva | 2008-07-15 15:47:50 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/TODO
+   D /branches/ewl/Vera.COPYING
+   D /branches/ewl/fonts/Vera.ttf
+   D /branches/ewl/fonts/VeraBI.ttf
+   D /branches/ewl/fonts/VeraBd.ttf
+   D /branches/ewl/fonts/VeraIt.ttf
+   D /branches/ewl/fonts/VeraMoBI.ttf
+   D /branches/ewl/fonts/VeraMoBd.ttf
+   D /branches/ewl/fonts/VeraMoIt.ttf
+   D /branches/ewl/fonts/VeraMono.ttf
+   D /branches/ewl/fonts/bitstream.COPYING
+   M /branches/ewl/main.edc
+
+Remove Bitstream Vera fonts in favour of DejaVuSans
+
+------------------------------------------------------------------------
+r547 | UnixTitan | 2008-07-15 15:39:37 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/widgets/window.edc
+
+More inset.
+
+------------------------------------------------------------------------
+r546 | UnixTitan | 2008-07-15 15:15:07 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/widgets/window.edc
+
+Make it a little smaller
+
+------------------------------------------------------------------------
+r545 | UnixTitan | 2008-07-15 15:12:25 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/widgets/window.edc
+
+This is much needed
+
+------------------------------------------------------------------------
+r544 | alberto.castro.leiva | 2008-07-15 14:56:06 -0500 (Tue, 15 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/main.edc
+   M /branches/ewl/widgets/border.edc
+   M /branches/ewl/widgets/label.edc
+
+Default text size: 11px
+
+------------------------------------------------------------------------
+r532 | alberto.castro.leiva | 2008-07-01 19:44:18 -0500 (Tue, 01 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/ChangeLog
+   M /branches/ewl/README
+   M /branches/ewl/TODO
+
+Add ChangeLog, update README and initiate TODO
+
+------------------------------------------------------------------------
+r491 | alberto.castro.leiva | 2008-05-10 11:56:54 -0500 (Sat, 10 May 2008) | 2 lines
+Changed paths:
+   M /branches/ewl/AUTHORS
+   M /branches/ewl/Makefile
+   M /branches/ewl/main.edc
+
+Update information.
+
+------------------------------------------------------------------------
 r465 | alberto.castro.leiva | 2008-05-07 02:05:14 -0500 (Wed, 07 May 2008) | 2 lines
 Changed paths:
    M /branches/ewl/COPYING
