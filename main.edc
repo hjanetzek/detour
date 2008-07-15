@@ -23,10 +23,10 @@ images {
 
 data {
 	/* theme information */
-	item: "/theme/author" "See AUTHORS";
+	item: "/theme/author" "See AUTHORS file";
 	item: "/theme/font_path" "fonts";
 	item: "/theme/license" "BSD Artistic License";
-	item: "/theme/name" "detour-ewl";
+	item: "/theme/name" "detour";
 
 	/* button widget */
 	item: "/button/group" "ewl/button";
@@ -118,7 +118,7 @@ data {
 	/* default values */
 	item: "/entry/color/a" 255;
 	item: "/entry/font" "ewl/default";
-	item: "/entry/font_size" 10;
+	item: "/entry/font_size" 11;
 
 	item: "/freebox/auto/padding" 5;
 
