@@ -1,5 +1,4 @@
 
-
 part {
 	name: "check_base";
 	type: IMAGE;
@@ -42,6 +41,7 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 128;
+		image.normal: "check_shadow.png";
 
 		rel1 { 
 			to: "check";
@@ -54,14 +54,13 @@ part {
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
-
-		image.normal: "check_shadow.png";
 	} 
 
 	description {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
+		image.normal: "check_focus.png";
 
 		rel1 { 
 			to: "check";
@@ -74,8 +73,6 @@ part {
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
-
-		image.normal: "check_focus.png";
 	}
 
 	description {
@@ -116,16 +113,7 @@ part {
 		inherit: "default" 0.0;
 	
 		image {
-			normal: "check1.png";
-		}
-	}
-
-	description {
-		state: "semi-clicked" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "check-.png";
+			normal: "check2.png";
 		}
 	}
 
