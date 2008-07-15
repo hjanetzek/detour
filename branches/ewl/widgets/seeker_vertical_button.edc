@@ -28,21 +28,6 @@ part {
 		state: "focused" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-
-		rel1 { 
-			to: "drag"; 
-			offset: 0 0; 
-		}
-
-		rel2 { 
-			to: "drag"; 
-			offset: -1 0; 
-		}
-
-		image {
-			normal: "slider_vert_focus.png";
-			border: 7 7 7 7;
-		}
 	}
 
 	description {

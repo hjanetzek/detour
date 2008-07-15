@@ -69,7 +69,6 @@ image: "slider_h_trough_left.png" COMP;
 image: "slider_h_trough_right.png" COMP;
 image: "slider_h_btn.png" COMP;
 image: "slider_h_btn_disabled.png" COMP;
-image: "slider_h_focus.png" COMP;
 image: "slider_h_shadow.png" COMP;
 
 
@@ -82,7 +81,6 @@ image: "slider_v_trough_up.png" COMP;
 image: "slider_v_trough_down.png" COMP;
 image: "slider_v_btn.png" COMP;
 image: "slider_v_btn_disabled.png" COMP;
-image: "slider_vert_focus.png" COMP;
 image: "slider_vert_shadow.png" COMP;
 
 //~ menu
