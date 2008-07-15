@@ -2,14 +2,15 @@
 -
 
 == Improve ==
--
+-redesign spinner widget
+-seeker rail confiment
+-redesign tree graphics/images
 
 
 == Global ==
-* Move from Bitstream to DejaVu fonts.
+* 
 
 
 == Compile ==
-Improve edje_decc: directory structure
-Make install
+
 
