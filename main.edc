@@ -7,14 +7,14 @@
  */
 
 fonts {
-	font: "fonts/Vera.ttf" "ewl/default";
-	font: "fonts/VeraBd.ttf" "ewl/default/bold";
-	font: "fonts/VeraIt.ttf" "ewl/default/italic";
-	font: "fonts/VeraBI.ttf" "ewl/default/bold-italic";
-	font: "fonts/VeraMono.ttf" "ewl/monospace";
-	font: "fonts/VeraMoBd.ttf" "ewl/monospace/bold";
-	font: "fonts/VeraMoIt.ttf" "ewl/monospace/italic";
-	font: "fonts/VeraMoBI.ttf" "ewl/monospace/bold-italic";
+	font: "fonts/DejaVuSans.ttf" "ewl/default";
+	font: "fonts/DejaVuSans-Bold.ttf" "ewl/default/bold";
+	font: "fonts/DejaVuSans-Oblique.ttf" "ewl/default/italic";
+	font: "fonts/DejaVuSans-BoldOblique.ttf" "ewl/default/bold-italic";
+	font: "fonts/DejaVuSansMono.ttf" "ewl/monospace";
+	font: "fonts/DejaVuSansMono-Bold.ttf" "ewl/monospace/bold";
+	font: "fonts/DejaVuSansMono-Oblique.ttf" "ewl/monospace/italic";
+	font: "fonts/DejaVuSansMono-BoldOblique.ttf" "ewl/monospace/bold-italic";
 }
 
 images {
