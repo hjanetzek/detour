@@ -6,6 +6,7 @@ part {
 
 	description {
 		state: "default" 0.0;
+		color: 255 255 255 178;
 		min: 0 24;
 
 		image {
