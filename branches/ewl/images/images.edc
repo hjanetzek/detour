@@ -20,8 +20,7 @@ image: "radio_shadow.png" COMP;
 
 //~ check
 image: "check0.png" COMP;
-image: "check1.png" COMP;
-image: "check-.png" COMP;
+image: "check2.png" COMP;
 image: "check_base.png" COMP;
 image: "check_focus.png" COMP;
 image: "check_shadow.png" COMP;
