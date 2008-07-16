@@ -1,11 +1,11 @@
 images {
 
 //~ button
+   image: "button_base.png" COMP;
    image: "button.png" COMP;
    image: "button_clicked.png" COMP;
    image: "button_disabled.png" COMP;
    image: "button_focus.png" COMP;
-   image: "button_outline.png" COMP;
    image: "button_on.png" COMP;
    image: "button_on_disabled.png" COMP;
    image: "button_shadow_overlay.png" COMP;
