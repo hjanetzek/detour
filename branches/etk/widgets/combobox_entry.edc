@@ -63,7 +63,7 @@ group {
             state: "default" 0.0;
             min: 0 24;
             image {
-               normal: "button_outline.png";
+               normal: "button_base.png";
                border: 7 7 7 7;
             }
          }
