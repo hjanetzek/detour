@@ -22,9 +22,27 @@ part {
 			border: 18 18 20 0;
 		}
 	}
+	description {
+		state: "top" 0.0;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -5 0;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 6 -1;
+		}
+
+		image {
+			normal: "itask-bg_top.png";
+			border: 18 18 0 20;
+		}
+	}
 
 	description {
-		state: "vertical" 0.0;
+		state: "left" 0.0;
 
 		rel1 {
 			relative: 0.0 0.0;
@@ -37,9 +55,29 @@ part {
 		}
 
 		image {
-			normal: "itask-bg_vert.png";
-			border: 1 22 43 18;
+			normal: "itask-bg_left.png";
+			border: 0 20 32 18;
 		}
+	}
+	
+	description {
+		state: "right" 0.0;
+
+		rel1 {
+			relative: 0.0 0.0;
+			offset: -10 -5;
+		}
+
+		rel2 {
+			relative: 1.0 1.0;
+			offset: 10 4;
+		}
+
+		image {
+			normal: "itask-bg_right.png";
+			border: 20 0 32 18;
+		}
+
 	}
 }
 
