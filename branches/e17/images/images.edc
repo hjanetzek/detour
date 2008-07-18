@@ -201,7 +201,10 @@ image: "pattern-10036.png" COMP;
 
 //~ itask
 image: "itask-bg.png" COMP;
-image: "itask-bg_vert.png" COMP;
+image: "itask-bg_top.png" COMP;
+image: "itask-bg_left.png" COMP;
+image: "itask-bg_right.png" COMP;
+
 
 //~ error
 image: "error-dialog_bg.png" COMP;

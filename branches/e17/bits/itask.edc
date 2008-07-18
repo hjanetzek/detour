@@ -8,18 +8,33 @@ group {
 
 	programs {
 		program {
-			name: "horizontal";
-			signal: "e,state,horizontal";
+			name: "bg_bottom";
+			signal: "e,state,bg_bottom";
 			source: "e";
 			action: STATE_SET "default" 0.0;
 			target: "bg";
 		}
 
 		program {
-			name: "vertical";
-			signal: "e,state,vertical";
+			name: "bg_top";
+			signal: "e,state,bg_top";
 			source: "e";
-			action: STATE_SET "vertical" 0.0;
+			action: STATE_SET "top" 0.0;
+			target: "bg";
+		}
+		program {
+			name: "bg_left";
+			signal: "e,state,bg_left";
+			source: "e";
+			action: STATE_SET "left" 0.0;
+			target: "bg";
+		}
+
+		program {
+			name: "bg_right";
+			signal: "e,state,bg_right";
+			source: "e";
+			action: STATE_SET "right" 0.0;
 			target: "bg";
 		}
 	}
