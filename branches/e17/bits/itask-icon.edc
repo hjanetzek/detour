@@ -26,6 +26,11 @@ part {
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
 	} 
+	description {
+		state: "urgent" 0.0;
+		inherit: "default" 0.0;
+		color: 255 10 10 255;
+	} 
 } 
 
 part {
