@@ -34,3 +34,11 @@ program {
 	target: "icon_clip";
 }
 
+program {
+	name: "go_urgent";
+	signal: "e,state,item_urgent";
+	source: "e";
+	action: STATE_SET "urgent" 0.0;
+	transition: LINEAR 0.5;
+	target: "icon_clip";
+}
