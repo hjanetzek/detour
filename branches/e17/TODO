@@ -1,7 +1,9 @@
 == Bugfix ==
 Dialog app border: wrong pixels bb border
+efm_window: drop_in/drop_between(s)
 
 == Improve ==
+-itask-ng's "base image/remove drop shadow" use compositor dshadow instead
 -"e/modules/ibar/drop_overlay";
 -"bits/error.edc"
 -exebuf name parts
@@ -15,6 +17,13 @@ Dialog app border: wrong pixels bb border
 -dialog bg (image)
 -transitions.edc
 -winlist.edc
+-use edje gradients for those images that have them ??
+	(dialog_bg_default.png)
+	(error-dialog_bg.png)
+	(menu_bg.png)
+	(resize-dialog_bg.png)
+	(shelf base non-rgba images)	
+-seeker focus?
 
 == Global ==
 *Complete start.edc
@@ -23,6 +32,7 @@ Dialog app border: wrong pixels bb border
 
 == Compile ==
 *Add Init / would require a symlink to $HOME/.e/e/init
+	(but its not a good idea to add this to the Makefile)
 
 == e ==
 [03:27]<raster> not sure about the whole gadman setup

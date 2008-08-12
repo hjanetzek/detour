@@ -34,12 +34,12 @@ part {
 		rel2 {
 			to: "e.text.label";
 			relative: 1.0 1.0; 
-			offset: 1 0; 
+			offset: 1 -2; 
 		}
 
 		image {
 			normal: "icon_select.png";
-			border: 6 6 5 8;
+			border: 5 5 5 7;
 		}       
 	}
 }
