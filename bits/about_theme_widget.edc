@@ -59,7 +59,7 @@ part {
 }
 
 part {
-	name: "base"; // button base
+	name: "button_base";
 	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "button.area";
@@ -96,13 +96,13 @@ part {
 		color: 255 255 255 255;
 
 		rel1 { 
-			to: "base"; 
+			to: "button_base"; 
 			relative: 0.0 0.0; 
 			offset: 3 1; 
 		}
 
 		rel2 { 
-			to: "base"; 
+			to: "button_base"; 
 			relative: 1.0 1.0; 
 			offset: -4 -2; 
 		}
@@ -122,10 +122,14 @@ part {
 
 		rel1 { 
 			to: "button_clip"; 
+			relative: 0.0 0.0; 
+			offset: 0 0; 
 		}
 
 		rel2 { 
 			to: "button_clip"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
 		}
 	}
 }
@@ -181,7 +185,7 @@ part {
 		}
 
 		text {
-			text: "Ok";
+			text: "Exit";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
 			min: 1 1;
@@ -213,9 +217,9 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 86 26;
-		color: 255 255 255 0;
 		image.normal: "button_shadow_overlay.png";
 		image.border: 6 6 6 13;
+		color: 255 255 255 0;
 
 		rel1 { 
 			to: "button_clip"; 

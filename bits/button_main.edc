@@ -93,6 +93,8 @@ part {
 
 	description {
 		state: "default" 0.0;
+		image.normal: "button_focus.png";
+		image.border: 7 7 7 7;
 
 		rel1 { 
 			to: "focus_clip"; 
@@ -101,9 +103,6 @@ part {
 		rel2 { 
 			to: "focus_clip"; 
 		}
-	
-		image.normal: "button_focus.png";
-		image.border: 7 7 7 7;
 	}
 }
 
@@ -116,6 +115,8 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 44 24;
+		image.normal: "button.png";
+		image.border: 7 7 7 7;
 
 		rel1 { 
 			to: "button_clip"; 
@@ -124,9 +125,6 @@ part {
 		rel2 { 
 			to: "button_clip"; 
 		}
-
-		image.normal: "button.png";
-		image.border: 7 7 7 7;
 	}
 
 	description {
@@ -350,6 +348,8 @@ part {
 		state: "default" 0.0;
 		min: 44 24;
 		color: 255 255 255 0;
+		image.normal: "button_shadow_overlay.png";
+		image.border: 6 6 6 13;
 
 		rel1 { 
 			to: "button_clip"; 
@@ -358,9 +358,6 @@ part {
 		rel2 { 
 			to: "button_clip"; 
 		}
-
-		image.normal: "button_shadow_overlay.png";
-		image.border: 6 6 6 13;
 	}
 
 	description {

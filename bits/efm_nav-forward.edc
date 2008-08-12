@@ -13,7 +13,7 @@ part {
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 14 0; 
+			offset: 24 0; 
 		}
 
 		image {
