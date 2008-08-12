@@ -51,7 +51,7 @@ part {
 		}
 
 		text {
-			text: "detour (dTR)";
+			text: "detour (DTR)";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			min: 1 1;
@@ -107,7 +107,7 @@ part {
 }
 
 part {
-	name: "about_entry";
+	name: "about_edj_entry";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -144,13 +144,13 @@ part {
 		color: 255 255 255 255;
 
 		rel1 { 
-			to: "about_entry"; 
+			to: "about_edj_entry"; 
 			relative: 0.0 0.0; 
 			offset: 7 5; 
 		}
 	
 		rel2 { 
-			to: "about_entry"; 
+			to: "about_edj_entry"; 
 			relative: 1.0 1.0; 
 			offset: -5 -4; 
 		}
@@ -158,7 +158,7 @@ part {
 }
 
 part {
-	name: "info";
+	name: "edj_text";
 	type: TEXTBLOCK;
 	mouse_events: 0;
 	clip_to: "entry_clip";
@@ -177,7 +177,7 @@ part {
 
 		text {
 			style: "about_this_theme";
-text: "Designed and developed by Alberto Castro with help from Hannes Janetzek et al.<br><br>Released under the BSD Artistic License.<br><br><-><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal></->";
+text: "Designed and developed by Alberto Castro with help from Hannes Janetzek, et al.<br><br>Released under the BSD Artistic License.<br><br><-><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal></->";
 		}
     	}
 }

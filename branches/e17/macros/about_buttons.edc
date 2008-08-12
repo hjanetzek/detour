@@ -1,12 +1,9 @@
 
-# ifdef buttons
-#  undef buttons
-# endif
-#define buttons()								\
+#define about_dialog_buttons()							\
 program { 									\
 	name: "button_click"; 							\
 	signal: "mouse,down,1"; 						\
-	source: "button_enabled"; 						\
+	source: "button"; 							\
 	script { 								\
 		set_state(PART:"shadow", "clicked", 0.0); 			\
 		set_state(PART:"shadow_overlay", "clicked", 0.0); 		\
@@ -16,7 +13,7 @@ program { 									\
 program { 									\
 	name: "button_unclick"; 			\
 	signal: "mouse,up,1"; 				\
-	source: "button_enabled";			\
+	source: "button";				\
 	action: STATE_SET "default" 0.0; 		\
 	target: "shadow"; 				\
 	target: "shadow_overlay"; 			\
@@ -25,7 +22,7 @@ program { 									\
 program { 						\
 	name: "button_clicked"; 			\
 	signal: "mouse,clicked,1"; 			\
-	source: "button_enabled"; 			\
+	source: "button"; 				\
 	action: SIGNAL_EMIT "e,action,close" ""; 	\
 }
 

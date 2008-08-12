@@ -125,7 +125,7 @@ collections {
 	#include "bits/font_preview.edc"
 	#include "bits/gadman.edc"
 	#include "bits/toolbar.edc"
-	#include "bits/transitions.edc"
+	//~ #include "bits/transitions.edc"
 	#include "bits/tclock.edc"
 	#include "bits/itask.edc"
 	//~ #include "bits/cpufreq.edc"

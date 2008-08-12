@@ -31,7 +31,6 @@ group {
 	}
 }
 
-/*
 group {
 	name: "e/widgets/border/dialog_wm/border";
 
@@ -40,7 +39,12 @@ group {
 	}
 
 	parts {
+
+/* disabling this border style for now
+ */
+
 		//~ #include "border_blend.edc"
+
 		#include "border_noresizefull_dialog.edc"
 	}
 
@@ -94,14 +98,12 @@ group {
 		#include "border_modal.edc"
 	}
 }
-*/
 
 /*
  * make e internal windows (config panel, dialogs, config windows etc.) 
  * use special border styles by default
  */
 
-/*
 group {
 	name: "e/widgets/border/noresize_dialog/border";
 
@@ -110,14 +112,17 @@ group {
 	}
 
 	parts {
-		#include "border_noresize_dialog.edc"
+		#include "border_noresize_dialog_ext.edc"
+
+/* disabling this border style for now
+ */
+		//~ #include "border_noresize_dialog.edc"
 	}
 
 	programs {
 		#include "border_dialog_programs.edc"
 	}
 }
-*/
 
 group {
 	name: "e/widgets/border/pixel/border";
@@ -158,6 +163,7 @@ group {
 		#include "border_default_programs.edc"
 	}
 }
+
 
 FULL_SIZE_BORDER_BUTTON("close")
 FULL_SIZE_BORDER_BUTTON("minimize")

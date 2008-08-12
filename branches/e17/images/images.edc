@@ -76,6 +76,11 @@ image: "bb-dialog.png" COMP;
 image: "br-dialog.png" COMP;
 image: "bb-dialog2.png" COMP;
 
+//~ extended
+image: "tl2-dialog.png" COMP;
+image: "tb2-dialog.png" COMP;
+image: "tr2-dialog.png" COMP;
+
 //~ border container
 image: "bl-shaped.png" COMP;
 image: "br-shaped.png" COMP;
@@ -121,6 +126,7 @@ image: "nav_up-button-sign.png" COMP;
 image: "nav_up-button-sign2.png" COMP;
 image: "nav_button-shadow-left.png" COMP;
 image: "nav_button-shadow-right.png" COMP;
+image: "nav_fav-button-sign.png" COMP;
 
 //~ navigation buttons
 image: "button-up.png" COMP;
@@ -211,7 +217,6 @@ image: "error-dialog_bg.png" COMP;
 
 //~ transitions
 image: "transition_vswipe.png" COMP;
-image: "universe.png" COMP;
 
 //~ pager
 image: "pager_desk_bg_focus.png" COMP;
