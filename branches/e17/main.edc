@@ -75,7 +75,6 @@ collections {
 	#include "bits/background.edc"
 	#include "bits/border.edc"
 	#include "bits/ibar.edc"
-	//~ #include "bits/filesel.edc" /* obsolete */
 	#include "bits/fileman.edc"
 	#if TANGO_ICONS == 0
 	#else
@@ -97,6 +96,7 @@ collections {
 	#include "bits/check.edc"
 	#include "bits/radio.edc"
 	#include "bits/frame.edc"
+	//~ #include "bits/filesel.edc" /* obsolete */
 	#include "bits/button.edc"
 	#include "bits/label.edc"
 	#include "bits/slider.edc"

@@ -24,6 +24,14 @@ efm_window: drop_in/drop_between(s)
 	(resize-dialog_bg.png)
 	(shelf base non-rgba images)	
 -seeker focus?
+-check widget "arrow" fix pixels
+-improve pointer group:
+	signal: "e,action,mouse,move";
+	signal: "e,action,mouse,down";
+	signal: "e,action,mouse,up";
+	signal: "e,action,mouse,wheel";
+	signal: "e,state,mouse,idle";
+	signal: "e,state,mouse,active";
 
 == Global ==
 *Complete start.edc
