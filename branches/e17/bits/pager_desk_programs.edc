@@ -71,7 +71,6 @@ program {
 	transition: ACCELERATE 0.5;
 	target: "overlay.left";
 	target: "overlay.right";
-	target: "focus";
 }
 
 program {
@@ -82,5 +81,22 @@ program {
 	transition: DECELERATE 0.5;
 	target: "overlay.left";
 	target: "overlay.right";
+}
+
+program {
+	name: "focus";
+	signal: "e,state,selected";
+	source: "e";
+	action: STATE_SET "active" 0.0;
+	transition: ACCELERATE 0.5;
 	target: "focus";
 }
+
+program {
+	name: "unfocus";
+	signal: "e,state,unselected";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "focus";
+}
+
