@@ -8,11 +8,11 @@
 #include "macros/sys.edc"
 
 //Set the current version
-#define VERSION_STRING 0.7.5
+#define VERSION_STRING 0.7.6
 
 /* 
  * cored.org et al (see AUTHORS)
- * detour version 0.7.5 (e17) for Enlightenment 0.16.999.043 or later.
+ * detour version 0.7.6 (e17) for Enlightenment 0.16.999.050 or later.
  */
 
 //Set the pointer to pulsating mode
@@ -123,14 +123,14 @@ collections {
 	#include "bits/battery.edc"
 	#include "bits/temperature.edc"
 	#include "bits/font_preview.edc"
-	#include "bits/gadman.edc"
+	//#include "bits/gadman.edc"
 	#include "bits/toolbar.edc"
 	//~ #include "bits/transitions.edc"
 	#include "bits/tclock.edc"
 	#include "bits/itask.edc"
 	//~ #include "bits/cpufreq.edc"
 	//~ #include "bits/start.edc"
-	#include "bits/efm_nav.edc"
+	//#include "bits/efm_nav.edc"
 	//~ #include "bits/slidesel.edc"
 	//~ #include "bits/wizard.edc"
 	//~ #include "bits/init.edc"
