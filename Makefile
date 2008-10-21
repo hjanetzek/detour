@@ -33,11 +33,6 @@ install: detour-e17.edj
 	@echo $(PATH_INSTALL)/ directory.
 	@echo --------------------------------------------------
 	@echo
-	@echo Some systems dont support symbolic links.
-	@echo
-	@echo Please manually create a symbolic link from
-	@echo $(PATH_INSTALL)/$(OUT) to $(INIT_PATH)/
-	@echo if you want to use the Init edje shipped with $(OUT)
 	@echo
 
 version:
@@ -46,8 +41,6 @@ version:
 	cat main.edc | head -15 | tail -1
 
 clean:
-	@echo 
-	@echo Note: init Edje is now part of detour-e17.edj 
 	@echo
 	@echo "Checking..."
 	if [ -e $(OUT) ]; then rm -rf $(OUT); fi
