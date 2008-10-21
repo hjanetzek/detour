@@ -7,8 +7,8 @@ group {
 	parts {
 		part {
 			name: "base";
-			mouse_events: 0;
 			type: IMAGE;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -24,8 +24,8 @@ group {
 				}
 		
 				image {
-					normal: "dialog_bg.png";
-					border: 2 2 2 1;
+					normal: "dialog_bg_default.png";
+					border: 1 1 1 1;
 				}
 			}
 		}
