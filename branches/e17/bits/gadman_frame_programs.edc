@@ -11,8 +11,29 @@ program {
 }
 
 program {
+	name: "show_now";
+	signal: "e,state,visibility,show,now";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	transition: ACCELERATE 0.25;
+	target: "items_clip";
+	target: "background";
+	target: "e.swallow.content";
+}
+
+program {
 	name: "hide";
 	signal: "e,state,visibility,hide";
+	source: "e";
+	action: STATE_SET "hidden" 0.0;
+	target: "items_clip";
+	target: "background";
+	target: "e.swallow.content";
+}
+
+program {
+	name: "hide_now";
+	signal: "e,state,visibility,hide,now";
 	source: "e";
 	action: STATE_SET "hidden" 0.0;
 	target: "items_clip";
