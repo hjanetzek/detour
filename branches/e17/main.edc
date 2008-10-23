@@ -4,7 +4,7 @@
 #include "macros/border_menu.edc"
 #include "macros/efm_nav.edc"
 #include "macros/fileman_list.edc"
-//~ #include "macros/init-bg.edc"
+#include "macros/init-bg.edc"
 #include "macros/sys.edc"
 
 //Set the current version
@@ -133,6 +133,6 @@ collections {
 	//#include "bits/efm_nav.edc"
 	//~ #include "bits/slidesel.edc"
 	//~ #include "bits/wizard.edc"
-	//~ #include "bits/init.edc"
+	#include "bits/init.edc"
 }
 

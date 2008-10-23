@@ -520,3 +520,6 @@ image: "gadman_indicator.png" COMP;
 image: "gadman_control_window.png" COMP;
 image: "gadman_control_border.png" COMP;
 
+//~ init
+image: "splash.png" COMP;
+
