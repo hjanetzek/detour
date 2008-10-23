@@ -42,6 +42,8 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 200 32;
+		max: 200 32;
+		fixed: 1 1;
 		color: 255 255 255 255;
 
 		rel1 { 

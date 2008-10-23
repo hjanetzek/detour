@@ -139,3 +139,7 @@ image: "cd_image-x-generic.png" COMP;
 image: "cd_text-html.png" COMP;
 image: "cd_text-x-generic.png" COMP;
 
+//~ init
+image: "preferences-desktop-16.png" COMP;
+image: "user-desktop-16.png" COMP;
+
