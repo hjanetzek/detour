@@ -28,8 +28,8 @@ group {
 				}
 		
 				image {
-					normal: "dialog_bg_default.png";
-					border: 1 1 1 1;
+					normal: "dialog_aboutbg.png";
+					border: 3 3 3 3;
 				}
 			}
 		}
