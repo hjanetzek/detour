@@ -111,13 +111,13 @@ part {
 MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
 PART_EVENT_MAP("e.event.resize.t", 1, "resize_t")
 PART_EVENT_MAP("e.event.titlebar", 1, "move-window")
+
 /*
-PART_EVENT_MAP("e.event.resize.r", 1, "right-border")
-PART_EVENT_MAP("e.event.resize.l", 1, "left-border")
-PART_EVENT_MAP("e.event.resize.br", 1, "bottom-right")
-PART_EVENT_MAP("e.event.resize.bl", 1, "bottom-left")
-PART_EVENT_MAP("e.event.resize.b", 1, "bottom-center")
-*/
+ * terminal_border could have all six event resizes
+ * don't be so lazy
+ * PART_EVENT_MAP("e.event.resize.b", 1, "")
+ */
+
 PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
 PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
 E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.icon", 255 255 255 0)		
@@ -134,7 +134,5 @@ PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
 RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
-//COLOR_CLIP(255 255 255 255, 244 244 244 255)
-COLOR_CLIP(255 255 255 255, 255 255 255 255)
 TOP_BORDER_SHADOW()
 
