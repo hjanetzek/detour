@@ -227,6 +227,7 @@ image: "pager_lid_r.png" COMP;
 
 //~ about_theme
 image: "logo.png" COMP;
+image: "dialog_aboutbg.png" COMP;
 
 //~ clock
 image: "hour.cursor.00.png" COMP;
