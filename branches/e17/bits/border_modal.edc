@@ -62,5 +62,4 @@ part {
 MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
 PART_EVENT_MAP("e.event.titlebar", 1, "move-window")
 E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.icon", 255 255 255 0)
-COLOR_CLIP(255 255 255 255, 255 255 255 255)
 

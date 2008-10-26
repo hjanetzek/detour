@@ -79,7 +79,12 @@ ICON("e/icons/enlightenment/startup", "system-shutdown.png")
 ICON("e/icons/enlightenment/behavior", "gnome-dev-keyboard-mouse.png")
 ICON("e/icons/enlightenment/extensions", "gnome-run.png")
 ICON("e/icons/enlightenment/run", "applications-system.png")
-ICON("e/icons/enlightenment/window_remembers", "window-new.png") /* fixme */
+ICON("e/icons/enlightenment/window_remembers", "window-new.png") /* big fat fixme */
+
+//ICON("e/icons/enlightenment/website", "icon_globe.png")
+//ICON("e/icons/enlightenment/background", "icon_wallpaper.png")
+//ICON("e/icons/enlightenment/picture", "icon_wallpaper.png")
+//ICON("e/icons/enlightenment/e", "logo_white_128.png")
 
 # ifdef ICON
 #  undef ICON
@@ -162,6 +167,11 @@ ICON("e/icons/widget/new_dialog", 18 15, "button-forward.png")
 ICON("e/icons/widget/up_arrow", 14 17, "button-up.png")
 ICON("e/icons/widget/down_arrow", 14 17, "button-down.png")
 ICON("e/icons/widget/up_dir", 14 17, "button-up.png")
+ICON("e/icons/widget/del", 16 16, "list-remove.png")
+ICON("e/icons/widget/new", 16 16, "document-new.png")
+ICON("e/icons/widget/add", 16 16, "list-add.png")
+ICON("e/icons/widget/config", 16 16, "document-properties.png")
+ICON("e/icons/enlightenment/about", 16 16, "applications-system-16.png")
 
 # ifdef ICON
 #  undef ICON
@@ -207,8 +217,8 @@ group {
 	parts {
 		part {
 			name: "bg";
-			mouse_events: 0;
 			type: IMAGE;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;

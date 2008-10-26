@@ -3,7 +3,7 @@ program {
 	name: "active"; 
 	signal: "e,state,selected"; 
 	source: "e"; 
-	action: STATE_SET "active" 0.0;
+	action: STATE_SET "selected" 0.0;
 	target: "e.text.label"; 
 	target: "file_overlay_clip";
 } 
@@ -16,6 +16,27 @@ program {
 	target: "e.text.label";
 	target: "file_overlay_clip"; 
 }  
+
+program { name: "ask";
+	signal: "e,state,ask";
+	source: "e";
+	action: STATE_SET "ask" 0.0;
+	target: "dnd_action";
+}
+
+program { name: "move";
+	signal: "e,state,move";
+	source: "e";
+	action: STATE_SET "move" 0.0;
+	target: "dnd_action";
+}
+
+program { name: "copy";
+	signal: "e,state,copy";
+	source: "e";
+	action: STATE_SET "copy" 0.0;
+	target: "dnd_action";
+}
 
 program {
 	name: "thumb_gen";

@@ -114,5 +114,4 @@ HOLDER("_close", 20 18, "close-clip", "bt-base.png")
 BUTTONS("button-close", "close-clip", 17 17, "close-clip", "bt-close.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
-COLOR_CLIP(255 255 255 255, 255 255 255 255)
 
