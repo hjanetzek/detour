@@ -13,7 +13,7 @@ part {
 
 		rel1 { 
 			relative: 0.5 0.0; 
-			offset: 0 130; 
+			offset: 0 120; 
 		}
 			
 		rel2 { 
@@ -48,7 +48,7 @@ part {
 		rel2 { 
 			to: "logo"; 
 			relative: 0.5 1.0; 
-			offset: -1 31; 
+			offset: -1 16; 
 		}
 
 		text {
@@ -126,7 +126,7 @@ part {
 		rel2 { 
 			to: "base"; 
 			relative: 1.0 1.0; 
-			offset: -5 -40; 
+			offset: -5 -45; 
 		}
 
 		image {
