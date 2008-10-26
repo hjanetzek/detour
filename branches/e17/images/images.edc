@@ -510,6 +510,8 @@ image: "busy.cursor.03.png" COMP;
 image: "typebuf_clip.png" COMP;
 image: "fileman_win_drop.png" COMP;
 image: "icon_select.png" COMP;
+image: "efmws.png" COMP;
+image: "efmws2.png" COMP;
 
 //~ gadman
 image: "gadman_hl1.png" COMP;

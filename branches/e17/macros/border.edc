@@ -1,38 +1,9 @@
 
-#define COLOR_CLIP(COL1,COL2) 			\
-part { 						\
-	name: "clip.color"; 			\
-	type: RECT; 				\
-	mouse_events: 0;			\
-						\
-	description { 				\
-		state: "default" 0.0; 		\
-		color: COL1; 			\
-						\
-		rel1 { 				\
-			relative: 0.0 0.0; 	\
-			offset: 0 0; 		\
-		} 				\
-						\
-		rel2 { 				\
-			relative: 1.0 1.0; 	\
-			offset: -1 -1; 		\
-		} 				\
-	} 					\
-						\
-	description { 				\
-		state: "default" 0.1; 		\
-		inherit: "default" 0.0; 	\
-		color: COL2; 			\
-	} 					\
-}
-
 #define BORDER(NAME, INDEX1, MIN, MAX, REL1, OFF1, REL2, OFF2, IMG1, INDEX2, IMG2) 	\
 part { 											\
 	name: NAME; 									\
 	type: IMAGE;									\
 	mouse_events: 0; 								\
-	clip_to: "clip.color"; 								\
 											\
 	description { 									\
 		state: "default" INDEX1; 						\
@@ -69,7 +40,6 @@ part { 							\
 	name: NAME; 					\
 	type: RECT; 					\
 	mouse_events: 0;				\
-	clip_to: "clip.color"; 				\
 							\
 	description { 					\
 		state: "default" 0.0; 			\
@@ -96,7 +66,6 @@ part { 												\
 	name: NAME; 										\
 	type: IMAGE;										\
 	mouse_events: 0; 									\
-	clip_to: "clip.color"; 									\
 												\
 	description { 										\
 		state: "default" INDEX1; 							\
@@ -205,51 +174,6 @@ part { 												\
 		} 										\
 	} 											\
 }
-
-/*
-#define TITLE(NAME, CLIP, INDEX1, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR, COLOR3, INDEX2, COLOR1, COLOR4) 	\
-part { 														\
-	name: NAME; 												\
-	type: TEXT; 												\
-	effect: SHADOW; 											\
-	mouse_events: 0; 											\
-	clip_to: CLIP; 												\
-														\
-	description { 												\
-		state: "default" INDEX1; 									\
-		color: COLOR; 											\
-		color3: COLOR3; 										\
-														\
-		rel1 { 												\
-			to: TO1; 										\
-			relative: REL1; 									\
-			offset: OFF1; 										\
-		} 												\
-														\
-		rel2 { 												\
-			to: TO2; 										\
-			relative: REL2; 									\
-			offset: OFF2; 										\
-		} 												\
-														\
-		text { 												\
-			text: "";										\
-			font: "Sans:style=Bold,DejaVuSans-Bold"; 						\
-			size: 11; 										\
-			min: 0 1; 										\
-			align: 0.0 0.5; 									\
-			text_class: "title_bar"; 								\
-		} 												\
-	} 													\
-														\
-	description { 												\
-		state: "default" INDEX2; 									\
-		inherit: "default" INDEX1; 									\
-		color: COLOR1; 											\
-		color3: COLOR4; 										\
-	} 													\
-}
-*/
 
 #define MOVE_WINDOW(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) 	\
 part { 										\
@@ -458,7 +382,7 @@ part { 						\
 	description { 				\
 		state: "default" 0.1; 		\
 		inherit: "default" 0.0; 	\
-		color: 255 255 255 192; 	\
+		color: 255 255 255 164;		\
 	} 					\
 }
 

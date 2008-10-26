@@ -100,6 +100,10 @@ image: "stock_select-all.png" COMP;
 image: "dialog-information.png" COMP;
 image: "xfce4-taskbar.png" COMP;
 image: "gnome-window-manager.png" COMP;
+image: "list-add.png" COMP;
+image: "list-remove.png" COMP;
+image: "document-properties.png" COMP;
+image: "applications-system-16.png" COMP;
 
 //~ e
 image: "e17_icon_e_0.png" COMP;
@@ -142,4 +146,9 @@ image: "cd_text-x-generic.png" COMP;
 //~ init
 image: "preferences-desktop-16.png" COMP;
 image: "user-desktop-16.png" COMP;
+
+//~ efm
+image: "icon_efm_dnd_copy.png" COMP;
+image: "icon_efm_dnd_ask.png" COMP;
+image: "icon_efm_dnd_move.png" COMP;
 

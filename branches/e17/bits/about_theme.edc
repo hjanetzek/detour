@@ -4,6 +4,10 @@ group {
 	min: 299 341;
 	max: 299 341;
 
+	data {
+		item: "borderless" "1";
+	}
+
 	parts {
 		part {
 			name: "base";
