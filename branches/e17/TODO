@@ -3,9 +3,10 @@ Dialog app border: wrong pixels bb border
 efm_window: drop_in/drop_between(s)
 
 == Improve ==
+Menu label text placement: menu_label.edc
 Make use of: data.item: "borderless" "1";
 Make use of: scale: 1;
--itask-ng's "base image/remove drop shadow" use compositor dshadow instead
+-URGENT "border" signals
 -"e/modules/ibar/drop_overlay";
 -"bits/error.edc"
 -exebuf name parts

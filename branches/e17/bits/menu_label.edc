@@ -2,7 +2,8 @@
 part {
 	name: "e.text.label";
 	type: TEXT;
-	effect: NONE;
+	effect: SHADOW;
+	mouse_events: 0;
       
 	description {
         	state: "default" 0.0;
@@ -13,15 +14,16 @@ part {
 		#endif
 		#endif
 		color: 60 60 60 255;
+		color3: 170 168 169 0;
         
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 5 2; 
+			offset: 5 3; 
 		}
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -6 -3; 
+			offset: -6 -2; 
 		}
 
 		text {

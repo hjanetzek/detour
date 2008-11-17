@@ -7,7 +7,7 @@ group {
 	}
 
 	max: 1920 1200;
-
+	#if WALLPAPER == 0
 	parts { 
 		part {
 			name: "background";
@@ -122,5 +122,116 @@ group {
 			target:  "background(overlay)";
 		}
 	}
+	#else
+	#if WALLPAPER == 1
+	parts { 
+		part {
+			name: "background";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 255;
+			}
+		}
+
+		part { 
+			name: "background_transition";
+			type: GRADIENT;
+	
+			description { 
+				state: "default" 0.0; 
+				gradient.spectrum: "backdrop";
+    			}
+		}
+
+		part {
+			name: "overlay-pattern";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
+
+				image {
+					normal: "wallpaper-221.png";
+				}
+			}
+		}
+
+		part {
+			name: "project-clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 0;
+			}
+
+			description {
+				state: "hidden" 0.0;
+				color: 0 0 0 0;
+			}
+		}
+
+		part {
+			name: "project.version";
+			type: TEXT;
+			effect: NONE;
+			mouse_events: 0;
+			clip_to: "project-clip";
+
+			description {
+				state: "default" 0.0;
+				color: 205 204 188 128;
+
+				rel1 { 
+					to: "background";
+					relative: 1.0 1.0; 
+					offset: 0 0; 
+				}
+	
+				rel2 { 
+					to: "background"; 
+					relative: 1.0 1.0; 
+					offset: -114 -25; 
+				}
+
+				text {
+					text: "version "VERSION_STRING"";
+					font: "DejaVuSans";
+					size: 11;
+					min: 1 1;
+					align: 0.5 0.5;
+					#if ENABLE_TEXT_CLASS == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASS == 1
+						text_class: "about_version";
+					#endif
+					#endif
+				}
+    			}
+		}
+
+		background()
+	}
+
+	programs {
+		program {      
+			name: "go_active";
+			signal: "load";
+			source: "";
+			action: STATE_SET "default" 0.1;
+			transition: LINEAR 0.5; 
+			in: 1.25 0.0;
+			target:  "background(overlay)";
+		}
+	}
+	#endif
+	#endif
 }
 
