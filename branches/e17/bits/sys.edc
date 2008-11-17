@@ -2,6 +2,10 @@
 group {
 	name: "e/sys/logout";
 
+	data {
+		item: "borderless" "1";
+	}
+
 	parts {
 		WIN_BG()
 		MESSAGE()
@@ -56,6 +60,10 @@ group {
 
 group {
 	name: "e/sys/halt";
+
+	data {
+		item: "borderless" "1";
+	}
 
 	parts {
 		WIN_BG()
@@ -112,6 +120,10 @@ group {
 group {
 	name: "e/sys/reboot";
 
+	data {
+		item: "borderless" "1";
+	}
+
 	parts {
 		WIN_BG()
 		MESSAGE()
@@ -166,6 +178,10 @@ group {
 
 group {
 	name: "e/sys/suspend";
+
+	data {
+		item: "borderless" "1";
+	}
 
 	parts {
 		WIN_BG()
@@ -222,6 +238,10 @@ group {
 group {
 	name: "e/sys/hibernate";
 
+	data {
+		item: "borderless" "1";
+	}
+
 	parts {
 		WIN_BG()
 		MESSAGE()
@@ -273,3 +293,4 @@ group {
 		PR("29", 0.0, "p29");
 	}
 }
+

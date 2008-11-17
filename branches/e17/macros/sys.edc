@@ -19,8 +19,8 @@ part { 							\
 		} 					\
 							\
 		image { 				\
-			normal: "dialog_bg.png"; 	\
-			border: 2 2 2 2; 		\
+			normal: "dialog_aboutbg.png"; 	\
+			border: 3 3 3 3; 		\
 		} 					\
 							\
 		fill { 					\

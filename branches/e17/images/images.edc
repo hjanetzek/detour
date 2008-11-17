@@ -204,6 +204,7 @@ image: "sf_br1_over.png" COMP;
 //~ background
 image: "bg.png" COMP;
 image: "pattern-10036.png" COMP;
+image: "wallpaper-221.png" COMP;
 
 //~ itask
 image: "itask-bg.png" COMP;
