@@ -197,6 +197,7 @@ part {
 part {
 	name: "e.text.label";
 	type: TEXT;
+	scale: 1;
 	
 	description {
 		state: "default" 0.0;
