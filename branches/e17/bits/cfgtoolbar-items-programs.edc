@@ -1,0 +1,29 @@
+
+program { 
+	name: "go_active";
+	signal: "e,state,selected";
+	source: "e";
+	action: STATE_SET "selected" 0.0;
+	target: "bg";
+	target: "e.text.label";
+	//target: "label2";
+	//transition: LINEAR 0.2;
+}
+
+program { 
+	name: "go_passive";
+	signal: "e,state,unselected";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "bg";
+	target: "e.text.label";
+	//target: "label2";
+	//transition: LINEAR 0.1;
+}
+
+program { 
+	name: "go";
+	signal: "mouse,up,1";
+	source: "event";
+	action: SIGNAL_EMIT "e,action,click" "e";
+}

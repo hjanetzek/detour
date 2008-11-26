@@ -4,6 +4,7 @@ part {
 	type: TEXT;
 	effect: SHADOW;
 	mouse_events: 0;
+	scale: 1;
       
 	description {
         	state: "default" 0.0;
