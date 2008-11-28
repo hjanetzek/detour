@@ -2,346 +2,58 @@
 #if TANGO_ICONS == 0
 #else
 #if TANGO_ICONS == 1
-group {
-	name: "e/fileman/default/button/open";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "document-open.png";
-				}
-			}
-		}
-	}
+#define EFM_CONTEXTMENU_ICONS(NAME, FILE)			\
+group {								\
+	name: "e/fileman/default/button/"NAME;			\
+								\
+	parts {							\
+		part { 						\
+			name: "whole"; 				\
+			type: IMAGE; 				\
+								\
+			description {				\
+				state: "default" 0.0;		\
+				max: 16 16;			\
+				aspect: 1.0 1.0;		\
+								\
+				rel1 {				\
+					relative: 0.0 0.0;	\
+					offset: 0 0;		\
+				}				\
+								\
+				rel2 {				\
+					relative: 1.0 1.0;	\
+					offset: -1 -1;		\
+				}				\
+								\
+				image {				\
+					normal: FILE;		\
+				}				\
+			} 					\
+		} 						\
+	} 							\
 }
 
-group {
-	name: "e/fileman/default/button/copy";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "edit-copy.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/cut";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "edit-cut.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/paste";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "edit-paste.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/delete";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "edit-delete.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/properties";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "document-properties.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/new";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "document-new.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/new_dir";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "folder-new.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/refresh";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "view-refresh.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/rename";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "filesaveas.png";
-				}
-			}
-		}
-	}
-}
-
-group {
-	name: "e/fileman/default/button/select";
-
-	parts {
-		part {
-			name: "whole";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				max: 16 16;
-				aspect: 1.0 1.0;
-
-				rel1 {
-					relative: 0.0 0.0;
-					offset: 0 0;
-				}
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: -1 -1;
-				}
-
-				image {
-					normal: "stock_select-all.png";
-				}
-			}
-		}
-	}
-}
+EFM_CONTEXTMENU_ICONS("open", "document-open.png")
+EFM_CONTEXTMENU_ICONS("copy", "edit-copy.png")
+EFM_CONTEXTMENU_ICONS("cut", "edit-cut.png")
+EFM_CONTEXTMENU_ICONS("paste", "edit-paste.png")
+EFM_CONTEXTMENU_ICONS("delete", "edit-paste.png")
+EFM_CONTEXTMENU_ICONS("properties", "document-properties.png")
+EFM_CONTEXTMENU_ICONS("new", "document-new.png")
+EFM_CONTEXTMENU_ICONS("new_dir", "folder-new.png")
+EFM_CONTEXTMENU_ICONS("refresh", "view-refresh.png")
+EFM_CONTEXTMENU_ICONS("rename", "filesaveas.png")
+EFM_CONTEXTMENU_ICONS("select", "stock_select-all.png")
+//EFM_CONTEXTMENU_ICONS("arrange_name", ".png")
+//EFM_CONTEXTMENU_ICONS("arrange_time", ".png")
+//EFM_CONTEXTMENU_ICONS("arrange", ".png")
+//EFM_CONTEXTMENU_ICONS("view", ".png")
+//EFM_CONTEXTMENU_ICONS("view_details", ".png")
+//EFM_CONTEXTMENU_ICONS("view_name", ".png")
+//EFM_CONTEXTMENU_ICONS("sort", ".png")
+EFM_CONTEXTMENU_ICONS("ordering", "edit-find-replace.png")
+EFM_CONTEXTMENU_ICONS("hidden_files", "edit-find.png")
 #endif
 #endif
 

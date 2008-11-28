@@ -10,6 +10,8 @@ image: "folder-new.png" COMP;
 image: "edit-cut.png" COMP;
 image: "edit-delete.png" COMP;
 image: "view-refresh.png" COMP;
+image: "edit-find-replace.png" COMP;
+image: "edit-find.png" COMP;
 
 //~ fileman mime-types
 image: "gnome-mime-application-pdf.png" COMP; //~ pdf
@@ -104,6 +106,16 @@ image: "list-add.png" COMP;
 image: "list-remove.png" COMP;
 image: "document-properties.png" COMP;
 image: "applications-system-16.png" COMP;
+image: "internet-web-browser.png" COMP;
+image: "preferences-desktop-wallpaper-16.png" COMP;
+image: "xfce4-workspaces.png" COMP;
+image: "emblem-favorite-16.png" COMP;
+image: "mail-send-receive.png" COMP;
+image: "go-first.png" COMP;
+image: "media-optical.png" COMP;
+image: "gnome-dev-removable-usb.png" COMP;
+image: "media-flash.png" COMP;
+
 
 //~ e
 image: "e17_icon_e_0.png" COMP;
