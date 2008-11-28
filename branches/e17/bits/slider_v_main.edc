@@ -1,6 +1,6 @@
 
 part {
-	name: "slider_base";
+	name: "base";
 	type: RECT;
 	mouse_events: 1;
 
@@ -218,13 +218,13 @@ part {
 		fixed: 1 1;
 
 		rel1 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 0.0; 
 			offset: 0 14; 
 		}
 
 		rel2 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 0.0; 
 			offset: -1 0; 
 		}
@@ -273,13 +273,13 @@ part {
 		fixed: 1 1;
 
 		rel1 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 1.0; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 1.0; 
 			offset: -1 -14; 
 		}
@@ -343,13 +343,13 @@ part {
 		color: 0 0 0 0;
 
 		rel1 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 0.5; 
 			offset: 1 0; 
 		}
 
 		rel2 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 0.5; 
 			offset: 1 0; 
 		}
@@ -357,13 +357,35 @@ part {
 }
 
 part {
-	name: "slider_image_shadow";
-	type: IMAGE;
+	name: "shadow_focus_clip";
+	type: RECT;
 	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 128;
+	}
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 64;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "focused" 0.0;
+	}
+}
+
+part {
+	name: "slider_image_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "shadow_focus_clip";
+
+	description {
+		state: "default" 0.0;
 
 		rel1 { 
 			to: "slider_image"; 
@@ -379,18 +401,6 @@ part {
 			normal: "slider_vshadow.png";
 			border: 7 7 7 7;
 		}
-	} 
-
-	description {
-		state: "focused" 0.0;
-		inherit: "default" 0.0;
-		//color: 255 255 255 255;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 128;
 	}
 }
     
