@@ -134,7 +134,7 @@ part { 															\
 	} 														\
 } 															\
 
-#define FULL_SIZE_BORDER_BUTTON(TYPE) 						\
+#define BORDER_MENU_BUTTON(TYPE) 						\
 group { 									\
 	name: "e/widgets/border/default/"TYPE; 					\
 										\

@@ -468,6 +468,8 @@ image: "button_detail_minimize.png" COMP;
 image: "button_detail_shade.png" COMP;
 image: "button_detail_stick.png" COMP;
 image: "button_detail_locks.png" COMP;
+image: "button_detail_locks_user.png" COMP;
+image: "button_detail_locks_application.png" COMP;
 image: "button_detail_borderless.png" COMP;
 image: "button_detail_remember.png" COMP;
 image: "button_detail_skip_winlist.png" COMP;
@@ -481,6 +483,9 @@ image: "button_detail_stack_on_top.png" COMP;
 image: "button_detail_properties.png" COMP;
 image: "button_detail_skip.png" COMP;
 image: "button_detail_skip_pager.png" COMP;
+image: "button_detail_skip_taskbar.png" COMP;
+image: "button_detail_skip_winlist.png" COMP;
+image: "button_detail_basic.png" COMP;
 
 //~ battery
 image: "battery-0.png" COMP;

@@ -134,6 +134,7 @@ style {
 	tag: "center" "+ align=middle";
 	tag: "subliminal" "+ color=#07070710";
 	tag: "underline" "+ underline=on underline_color=#3c3c3c60 font_size=9 color=#3c3c3c60";
+	tag: "lighter" "+ color=#07070750";
 }
 
 style {

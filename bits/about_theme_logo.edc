@@ -36,8 +36,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 7 7 7 255;
-		color3: 170 168 169 128;
+		color: 60 60 60 255;
+		color3: 170 168 169 32;
 		fixed: 1 1;
 
 		rel1 { 
@@ -53,7 +53,7 @@ part {
 		}
 
 		text {
-			text: "detour (DTR)";
+			text: "detour (dTR)";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			min: 1 1;
@@ -182,7 +182,7 @@ part {
 
 		text {
 			style: "about_this_theme";
-text: "Designed and developed by Alberto Castro with help from Hannes Janetzek, et al.<br><br>Released under the BSD Artistic License.<br><br><-><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal></->";
+text: "Designed and developed by Alberto Castro <lighter>[boykot tokyo]</lighter> with help from Hannes Janetzek <lighter>[jeffdameth]</lighter>, et al.<br><br>Released under the <underline>BSD Artistic License</underline>.<br><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal>";
 		}
     	}
 }
