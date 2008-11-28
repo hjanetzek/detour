@@ -127,14 +127,13 @@ style {
 	name: "about_this_theme";
 	base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
 
-	tag: "-" "+ font_size=9";
-	tag: "b" "+ font=DejaVuSans-Bold";
-	tag: "m" "+ font=DejaVuSans-Mono";
-	tag: "br" "\n";
+	tag: "-" "+ font_size=10";
+	tag: "bold" "+ font=DejaVuSans-Bold";
+	tag: "mono" "+ font=DejaVuSans-Mono";
 	tag: "center" "+ align=middle";
 	tag: "subliminal" "+ color=#07070710";
 	tag: "underline" "+ underline=on underline_color=#3c3c3c60 font_size=9 color=#3c3c3c60";
-	tag: "lighter" "+ color=#07070750";
+	tag: "lighter" "+ color=#07070799";
 }
 
 style {

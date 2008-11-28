@@ -114,6 +114,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "text.area";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -155,6 +156,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "text.area";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -196,6 +198,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "text.area";
+	scale: 1;
 	
 	description {
 		state: "default" 0.0;
@@ -289,9 +292,84 @@ part {
 }
 
 part {
-	name: "check_widget";
+	name: "focus_clip";
+	type: RECT;
+	mouse_events: 0;
+	clip_to: "splash.clip";
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 0;
+	}
+
+	description {
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+}
+
+part {
+	name: "check_shadow";
 	type: IMAGE;
-	mouse_events: 1;
+	mouse_events: 0;
+	clip_to: "splash.clip";
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 128;
+		image.normal: "check_shadow.png";
+
+		rel1 { 
+			to: "check";
+			relative: 0.0 0.0; 
+			offset: 0 1; 
+		}
+
+		rel2 { 
+			to: "check";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
+part {
+	name: "focus";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "splash.clip";
+	clip_to: "focus_clip";
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+		image.normal: "check_focus.png";
+
+		rel1 { 
+			to: "check";
+			relative: 0.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "check";
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+	}
+}
+
+part {
+	name: "check_outline";
+	type: IMAGE;
+	mouse_events: 0;
 	clip_to: "splash.clip";
 
 	description {
@@ -318,12 +396,50 @@ part {
 	}
 
 	description {
-		state: "on" 0.0;
+		state: "disabled" 0.0;
 		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+part {
+	name: "check";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "splash.clip";
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		visible: 0;
+
+		rel1 { 
+			to: "splash.clip"; 
+			relative: 0.0 1.0; 
+			offset: 40 -40; 
+		}
+
+		rel2 { 
+			to: "splash.clip"; 
+			relative: 0.0 1.0; 
+			offset: 0 -1; 
+		}
 
 		image {
-			normal: "check2.png";
+			normal: "check1.png";
 		}
+	}
+
+	description {
+		state: "active" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "default" 0.0;
 	}
 }
 
@@ -333,6 +449,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "splash.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -341,13 +458,13 @@ part {
 		color3: 0 0 0 32;
 
 		rel1 { 
-			to: "check_widget"; 
+			to: "check"; 
 			relative: 1.0 0.0; 
 			offset: 4 5; 
 		}
 
 		rel2 { 
-			to: "check_widget"; 
+			to: "check"; 
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}

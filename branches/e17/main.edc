@@ -121,9 +121,9 @@ collections {
 	#include "bits/tlist.edc"
 	#include "bits/winlist.edc"
 	#include "bits/about.edc"
-	#include "bits/color_well.edc" /* this might next fixing */
+	#include "bits/color_well.edc" /* this probably needs fixing */
 	#include "bits/cslider.edc"
-	#include "bits/spectrum.edc" /* this might next fixing */
+	#include "bits/spectrum.edc" /* this probably needs fixing */
 	#include "bits/exebuf.edc"
 	#include "bits/deskpreview.edc"
 	#include "bits/sys.edc"

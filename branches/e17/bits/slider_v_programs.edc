@@ -44,8 +44,8 @@ program {\
 	target: TARGET3;\
 }
 
-PROG("show_label", "e,action,show,label", "e", "active", "slider_base", "label_under", "e.text.label")
-PROG("hide_label", "e,action,hide,label", "e", "default", "slider_base", "label_under", "e.text.label")
+PROG("show_label", "e,action,show,label", "e", "active", "base", "label_under", "e.text.label")
+PROG("hide_label", "e,action,hide,label", "e", "default", "base", "label_under", "e.text.label")
 
 program {
 	name: "enable";
@@ -58,7 +58,7 @@ program {
 	target: "runner_top";
 	target: "slider_runner";
 	target: "slider_image";
-	target: "slider_image_shadow";
+	target: "shadow_focus_clip";
 }
 
 program {
@@ -69,28 +69,24 @@ program {
 	target: "clip";
 	target: "catch";
 	target: "slider_image";
-	target: "slider_image_shadow";
+	target: "shadow_focus_clip";
 }
 
-/*
 program {
-	name: "focused";
+	name: "gain_focus";
 	signal: "e,state,focused";
 	source: "e";
-	script {
-		set_state(PART:"slider_image_shadow", "focused", 0.0);
-		set_state(PART:"label_focus", "active", 0.0);
-	}
+	action: STATE_SET "focused" 0.0;
+	transition: DECELERATE 0.5;
+	target: "shadow_focus_clip";
 }
 
 program {
-	name: "unfocus";
+	name: "lose_focus";
 	signal: "e,state,unfocused";
 	source: "e";
-	script {
-		set_state(PART:"slider_image_shadow", "default", 0.0);
-		set_state(PART:"label_focus", "default", 0.0);
-	}
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "shadow_focus_clip";
 }
-*/
 

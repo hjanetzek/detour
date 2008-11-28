@@ -1,6 +1,6 @@
 
 part {
-	name: "slider_base";
+	name: "base";
 	type: RECT;
 	mouse_events: 1;
 
@@ -35,6 +35,7 @@ part {
 
 part {
 	name: "slider_runner";
+	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "clip";
 
@@ -72,6 +73,7 @@ part {
 
 part {
 	name: "label_under";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -219,13 +221,13 @@ part {
 		fixed: 1 1;
 
 		rel1 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.0 0.0; 
 			offset: 6 0; 
 		}
 
 		rel2 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.0 1.0; 
 			offset: 0 0; 
 		}
@@ -264,6 +266,7 @@ part {
 
 part {
 	name: "runner_right";
+	type: IMAGE;
 	mouse_events: 0;
 	clip_to: "clip";
 
@@ -274,13 +277,13 @@ part {
 		fixed: 1 1;
 
 		rel1 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 1.0 0.0; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 1.0 1.0; 
 			offset: -7 0; 
 		}
@@ -344,13 +347,13 @@ part {
 		color: 255 0 0 0;
 
 		rel1 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 0.5; 
 			offset: 0 0; 
 		}
 
 		rel2 { 
-			to: "slider_base"; 
+			to: "base"; 
 			relative: 0.5 0.5; 
 			offset: 0 0; 
 		}
@@ -358,14 +361,35 @@ part {
 }
 
 part {
-	name: "slider_image_shadow";
-	type: IMAGE;
+	name: "shadow_focus_clip";
+	type: RECT;
 	mouse_events: 0;
-	//clip_to: "clip";
 
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 128;
+	}
+
+	description {
+		state: "focused" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 64;
+	}
+
+	description {
+		state: "disabled" 0.0;
+		inherit: "focused" 0.0;
+	}
+}
+
+part {
+	name: "slider_image_shadow";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "shadow_focus_clip";
+
+	description {
+		state: "default" 0.0;
 
 		rel1 { 
 			to: "slider_image"; 
@@ -381,18 +405,6 @@ part {
 			normal: "slider_hshadow.png";
 			border: 7 8 7 7;
 		}
-	}
-
-	description {
-		state: "focused" 0.0;
-		inherit: "default" 0.0;
-		//color: 255 255 255 255;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 128;
 	}
 }
 
@@ -436,6 +448,7 @@ part {
 part {
 	name: "clip";
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
