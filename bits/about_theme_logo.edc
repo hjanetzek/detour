@@ -53,7 +53,7 @@ part {
 		}
 
 		text {
-			text: "detour (dTR)";
+			text: "detour (DTr)";
 			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 12;
 			min: 1 1;
@@ -90,7 +90,7 @@ part {
 		rel2 { 
 			to: "project_name"; 
 			relative: 0.5 1.0; 
-			offset: -1 8; 
+			offset: -1 10; 
 		}
 
 		text {
@@ -122,7 +122,7 @@ part {
 			to_y: "project_version"; 
 			to_x: "base"; 
 			relative: 0.0 1.0; 
-			offset: 4 5; 
+			offset: 4 2; 
 		}
 
 		rel2 { 
@@ -182,7 +182,7 @@ part {
 
 		text {
 			style: "about_this_theme";
-text: "Designed and developed by Alberto Castro <lighter>[boykot tokyo]</lighter> with help from Hannes Janetzek <lighter>[jeffdameth]</lighter>, et al.<br><br>Released under the <underline>BSD Artistic License</underline>.<br><subliminal>Tricks of the Guild. [2008]<br>http://cored.org/</subliminal>";
+text: "Designed and developed by Alberto Castro <lighter>(boykot tokyo)</lighter> with help from Hannes Janetzek <lighter>(jeffdameth)</lighter>, et al.<\n><\n><->Detour is licensed under the BSD Artistic License.<-><\n><subliminal>Tricks of the Guild. [2005-2008]</subliminal>";
 		}
     	}
 }

@@ -34,6 +34,23 @@ part {
 }
 
 part {
+	name: "focus_clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 0;
+	}
+
+	description {
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+}
+
+part {
 	name: "check_shadow";
 	type: IMAGE;
 	mouse_events: 0;
@@ -57,8 +74,20 @@ part {
 	} 
 
 	description {
-		state: "focused" 0.0;
+		state: "disabled" 0.0;
 		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
+part {
+	name: "focus";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "focus_clip";
+
+	description {
+		state: "default" 0.0;
 		color: 255 255 255 255;
 		image.normal: "check_focus.png";
 
@@ -74,16 +103,10 @@ part {
 			offset: -1 -1; 
 		}
 	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 0;
-	}
 }
-    
+
 part {
-	name: "check";
+	name: "check_outline";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -112,8 +135,36 @@ part {
 	}
 
 	description {
-		state: "semi-clicked" 0.0;
+		state: "disabled" 0.0;
 		inherit: "default" 0.0;
+		color: 255 255 255 128;
+	}
+}
+    
+part {
+	name: "check";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 20 18;
+		max: 20 18;
+		fixed: 1 1;
+		align: 0.0 0.5;
+		visible: 0;
+
+		rel1 {
+			to: "base";
+			relative: 0.0 0.0;
+			offset: 0 0;
+		}
+
+		rel2 {
+			to: "base";
+			relative: 1.0 1.0;
+			offset: -1 -1;
+		}
 
 		image {
 			normal: "check1.png";
@@ -123,16 +174,7 @@ part {
 	description {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
-
-		image {
-			normal: "check2.png";
-		}
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 128;
+		visible: 1;
 	}
 }
 

@@ -2,10 +2,6 @@
 group {
 	name: "e/widgets/check";
 
-	script {
-		public focus_activated;
-	}
-
 	parts {
 		#include "check_main.edc"
 	}
@@ -17,10 +13,6 @@ group {
 
 group {
 	name: "e/widgets/check_icon";
-
-	script {
-		public focus_activated;
-	}
 
 	parts {
 		#include "check_icon.edc"

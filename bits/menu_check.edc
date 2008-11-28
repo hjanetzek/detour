@@ -107,7 +107,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "check2.png";
+			normal: "check1.png";
 		}
 	}
 }

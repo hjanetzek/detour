@@ -51,63 +51,6 @@ group {
 				}
 			}
 		}
-
-		part {
-			name: "project-clip";
-			type: RECT;
-			mouse_events: 0;
-
-			description {
-				state: "default" 0.0;
-				color: 0 0 0 0;
-			}
-
-			description {
-				state: "hidden" 0.0;
-				color: 0 0 0 0;
-			}
-		}
-
-		part {
-			name: "project.version";
-			type: TEXT;
-			effect: NONE;
-			mouse_events: 0;
-			clip_to: "project-clip";
-
-			description {
-				state: "default" 0.0;
-				color: 205 204 188 128;
-
-				rel1 { 
-					to: "background";
-					relative: 1.0 1.0; 
-					offset: 0 0; 
-				}
-	
-				rel2 { 
-					to: "background"; 
-					relative: 1.0 1.0; 
-					offset: -114 -25; 
-				}
-
-				text {
-					text: "version "VERSION_STRING"";
-					font: "DejaVuSans";
-					size: 11;
-					min: 1 1;
-					align: 0.5 0.5;
-					#if ENABLE_TEXT_CLASS == 0
-						text_class: "";
-					#else
-					#if ENABLE_TEXT_CLASS == 1
-						text_class: "about_version";
-					#endif
-					#endif
-				}
-    			}
-		}
-
 		background()
 	}
 
@@ -147,7 +90,7 @@ group {
 		}
 
 		part {
-			name: "overlay-pattern";
+			name: "wallpaper";
 			type: IMAGE;
 			mouse_events: 0;
 
@@ -160,63 +103,6 @@ group {
 				}
 			}
 		}
-
-		part {
-			name: "project-clip";
-			type: RECT;
-			mouse_events: 0;
-
-			description {
-				state: "default" 0.0;
-				color: 0 0 0 0;
-			}
-
-			description {
-				state: "hidden" 0.0;
-				color: 0 0 0 0;
-			}
-		}
-
-		part {
-			name: "project.version";
-			type: TEXT;
-			effect: NONE;
-			mouse_events: 0;
-			clip_to: "project-clip";
-
-			description {
-				state: "default" 0.0;
-				color: 205 204 188 128;
-
-				rel1 { 
-					to: "background";
-					relative: 1.0 1.0; 
-					offset: 0 0; 
-				}
-	
-				rel2 { 
-					to: "background"; 
-					relative: 1.0 1.0; 
-					offset: -114 -25; 
-				}
-
-				text {
-					text: "version "VERSION_STRING"";
-					font: "DejaVuSans";
-					size: 11;
-					min: 1 1;
-					align: 0.5 0.5;
-					#if ENABLE_TEXT_CLASS == 0
-						text_class: "";
-					#else
-					#if ENABLE_TEXT_CLASS == 1
-						text_class: "about_version";
-					#endif
-					#endif
-				}
-    			}
-		}
-
 		background()
 	}
 

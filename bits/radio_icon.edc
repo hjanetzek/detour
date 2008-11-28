@@ -1,6 +1,6 @@
 
 part {
-	name: "radio_base";
+	name: "base";
 	type: IMAGE;
 	mouse_events: 0;
 
@@ -34,6 +34,23 @@ part {
 }
 
 part {
+	name: "focus_clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 0;
+	}
+
+	description {
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+	}
+}
+
+part {
 	name: "radio_shadow";
 	type: IMAGE;
 	mouse_events: 0;
@@ -41,6 +58,7 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 128;
+		image.normal: "radio_shadow.png";
 
 		rel1 { 
 			to: "radio";
@@ -51,16 +69,27 @@ part {
 		rel2 { 
 			to: "radio";
 			relative: 1.0 1.0; 
-			offset: -1 0; 
+			offset: -1 -1; 
 		}
-
-		image.normal: "radio_shadow.png";
-	} 
+	}
 
 	description {
-		state: "focused" 0.0;
+		state: "disabled" 0.0;
 		inherit: "default" 0.0;
+		color: 255 255 255 0;
+	}
+}
+
+part {
+	name: "focus";
+	type: IMAGE;
+	mouse_events: 0;
+	clip_to: "focus_clip";
+
+	description {
+		state: "default" 0.0;
 		color: 255 255 255 255;
+		image.normal: "radio_focus.png";
 
 		rel1 { 
 			to: "radio";
@@ -73,17 +102,8 @@ part {
 			relative: 1.0 1.0; 
 			offset: -1 -1; 
 		}
-
-		image.normal: "radio_focus.png";
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 0;
 	}
 }
-
 part {
 	name: "radio_outline";
 	type: IMAGE;
