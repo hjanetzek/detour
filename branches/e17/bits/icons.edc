@@ -81,10 +81,17 @@ ICON("e/icons/enlightenment/extensions", "gnome-run.png")
 ICON("e/icons/enlightenment/run", "applications-system.png")
 ICON("e/icons/enlightenment/window_remembers", "window-new.png") /* big fat fixme */
 
-//ICON("e/icons/enlightenment/website", "icon_globe.png")
-//ICON("e/icons/enlightenment/background", "icon_wallpaper.png")
-//ICON("e/icons/enlightenment/picture", "icon_wallpaper.png")
+ICON("e/icons/enlightenment/website", "internet-web-browser.png")
+ICON("e/icons/enlightenment/gradient", "xfce4-workspaces.png")
+ICON("e/icons/enlightenment/picture", "preferences-desktop-wallpaper-16.png")
 //ICON("e/icons/enlightenment/e", "logo_white_128.png")
+//ICON("enlightenment/e", "logo_white_128.png")
+//ICON("enlightenment/about", "logo_black_128.png")
+//ICON("enlightenment/check",".png")
+
+ICON("e/icons/drive-harddisk", "drive-harddisk.png")
+ICON("e/icons/drive-optical", "media-optical.png")
+ICON("e/icons/media-flash", "media-flash.png")
 
 # ifdef ICON
 #  undef ICON
@@ -170,8 +177,11 @@ ICON("e/icons/widget/up_dir", 14 17, "button-up.png")
 ICON("e/icons/widget/del", 16 16, "list-remove.png")
 ICON("e/icons/widget/new", 16 16, "document-new.png")
 ICON("e/icons/widget/add", 16 16, "list-add.png")
+ICON("e/icons/widget/add_fav", 16 16, "emblem-favorite-16.png")
 ICON("e/icons/widget/config", 16 16, "document-properties.png")
-ICON("e/icons/enlightenment/about", 16 16, "applications-system-16.png")
+//ICON("e/icons/enlightenment/about", 16 16, "applications-system-16.png")
+ICON("e/icons/widget/swap", 16 16, "mail-send-receive.png")
+ICON("e/icons/widget/resize", 16 16, "go-first.png")
 
 # ifdef ICON
 #  undef ICON
