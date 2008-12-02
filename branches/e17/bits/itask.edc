@@ -82,7 +82,7 @@ group {
 			source: "e";
 			action: STATE_SET "visible" 0.0;
 			transition: DECELERATE 0.5;
-			target: "e.text.label";
+			target: "label.clip";
 		}
 
 		program {
@@ -91,7 +91,7 @@ group {
 			source: "e";
 			action: STATE_SET "default" 0.0;
 			transition: ACCELERATE 0.25;
-			target: "e.text.label";
+			target: "label.clip";
 		}
 	}
 }
