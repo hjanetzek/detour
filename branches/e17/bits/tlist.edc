@@ -1,27 +1,41 @@
 
-# ifdef PROG
-#  undef PROG
+# ifdef LIST
+#  undef LIST
 # endif
-#define PROG(NAME,SIGNAL,STATE) \
+#define LIST(NAME,SIGNAL,STATE) \
 program { \
 	name: NAME; \
 	signal: SIGNAL; \
 	source: "e"; \
 	action: STATE_SET STATE 0.0; \
+	transition: DECELERATE 0.5; \
 	target: "base"; \
+}
+
+# ifdef TEXT
+#  undef TEXT
+# endif
+#define TEXT(NAME,SIGNAL,STATE) \
+program { \
+	name: NAME; \
+	signal: SIGNAL; \
+	source: "e"; \
+	action: STATE_SET STATE 0.0; \
 	target: "e.text.label"; \
-} 
+}
 
 group {
 	name: "e/widgets/tlist";
 	
 	parts {
-		#include "tlist_main.edc"
+		#include "tlist_even.edc"
 	}
 
 	programs {
-		PROG("active", "e,state,selected", "active")
-		PROG("deactivate", "e,state,unselected", "default")
+		LIST("active_list", "e,state,selected", "active")
+		LIST("unactive_list", "e,state,unselected", "default")
+		TEXT("active_text", "e,state,selected", "active")
+		TEXT("unactive_text", "e,state,unselected", "default")
 	}
 }
 
@@ -33,8 +47,10 @@ group {
 	}
 
 	programs {
-		PROG("active", "e,state,selected", "active")
-		PROG("deactivate", "e,state,unselected", "default")
+		LIST("active_list", "e,state,selected", "active")
+		LIST("unactive_list", "e,state,unselected", "default")
+		TEXT("active_text", "e,state,selected", "active")
+		TEXT("unactive_text", "e,state,unselected", "default")
 	}
 }
 

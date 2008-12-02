@@ -1,17 +1,4 @@
 
-# ifdef PROG
-#  undef PROG
-# endif
-#define PROG(NAME,SIGNAL,STATE) \
-program { \
-	name: NAME; \
-	signal: SIGNAL; \
-	source: "e"; \
-	action: STATE_SET STATE 0.0; \
-	target: "base"; \
-	target: "e.text.label"; \
-} 
-
 group {
 	name: "e/fileman/default/window/main";
 
@@ -28,8 +15,10 @@ group {
 	}
 
 	programs {
-		PROG("active", "e,state,selected", "active")
-		PROG("deactivate", "e,state,unselected", "default")
+		LIST("active_list", "e,state,selected", "active")
+		LIST("unactive_list", "e,state,unselected", "default")
+		TEXT("active_text", "e,state,selected", "active")
+		TEXT("unactive_text", "e,state,unselected", "default")
 		FILEMAN_LIST_PROGS()
 	}
 }
@@ -42,8 +31,10 @@ group {
 	}
 
 	programs {
-		PROG("active", "e,state,selected", "active")
-		PROG("deactivate", "e,state,unselected", "default")
+		LIST("active_list", "e,state,selected", "active")
+		LIST("unactive_list", "e,state,unselected", "default")
+		TEXT("active_text", "e,state,selected", "active")
+		TEXT("unactive_text", "e,state,unselected", "default")
 		FILEMAN_LIST_PROGS()
 	}
 }
