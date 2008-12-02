@@ -24,7 +24,7 @@ part {
 
 		image {
 			normal: "typebuf_clip.png";
-			border: 6 6 6 6;
+			border: 5 5 5 5;
 		}
 	}
 }
@@ -89,7 +89,7 @@ part {
 		rel1 { 
 			to: "e.text.label"; 
 			relative: 0.0 0.0; 
-			offset: -12 0; 
+			offset: -12 -4; 
 		}
 
 		rel2 { 
