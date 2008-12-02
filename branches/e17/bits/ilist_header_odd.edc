@@ -5,7 +5,7 @@ part {
 	
 	description {
 		state: "default" 0.0;
-		color: 68 108 172 255;
+		color: 45 108 255 255;
 	}
 }
 
@@ -38,7 +38,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 255 255 255 255;
+		color: 2555 255 255 255;
 
 		rel1 { 
 			to_x: "e.swallow.icon"; 

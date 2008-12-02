@@ -1,6 +1,6 @@
 
 part {
-	name: "bg";
+	name: "base";
 	type: RECT;
 
 	description {
