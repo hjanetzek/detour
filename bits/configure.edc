@@ -1,7 +1,8 @@
 
 group {
 	name: "e/widgets/configure/main";
-	min: 410 327;
+	min: 299 341;
+	max: 299 341;
 	
 	parts {
 		part {
@@ -11,11 +12,13 @@ group {
 
 			description {
 				state: "default" 0.0;
-				min: 410 327;
+				min: 299 341;
+				max: 299 341;
+				//fixed: 1 1;
 
 				image {
-					normal: "dialog_bg_default.png";
-					border: 1 1 1 1;
+					normal: "dialog_bg_conf.png";
+					border: 2 2 3 3;
 				}
 			}
 		}
@@ -30,13 +33,13 @@ group {
 				rel1 { 
 					to: "dialog_bg"; 
 					relative: 0.0 0.0; 
-					offset: 10 6; 
+					offset: 4 4; 
 				}
 
 				rel2 { 
 					to: "button.area"; 
 					relative: 1.0 0.0;
-					offset: -12 -10; 
+					offset: -4 -6; 
 				}
 			}
 		}
@@ -71,7 +74,6 @@ group {
 
 			description {
 				state: "default" 0.0;
-				fixed: 1 1; 
 
 				rel1 { 
 					to: "button.area"; 

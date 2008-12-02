@@ -9,7 +9,7 @@ part {
 	
 		image {
 			normal: "dialog_bg_default.png";
-			border: 1 1 1 1;
+			border: 2 2 1 1;
 		}
 	}
 }
@@ -45,7 +45,7 @@ part {
 
 		rel1 { 
 			to_x: "e.swallow.icon"; 
-			relative: 1 0; 
+			relative: 1.0 0.0; 
 			offset: 0 7; 
 		}
 
@@ -58,7 +58,7 @@ part {
 }
 
 part {
-	name: "separator";
+	name: "separator"; //~ hack
 	type: RECT;
 	mouse_events: 0;
 

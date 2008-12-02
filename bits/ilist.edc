@@ -1,48 +1,55 @@
 
-# ifdef PROG
-#  undef PROG
-# endif
-#define PROG(NAME,SIGNAL,STATE) \
-program { \
-	name: NAME; \
-	signal: SIGNAL; \
-	source: "e"; \
-	action: STATE_SET STATE 0.0; \
-	target: "bg"; \
-	target: "e.text.label"; \
-} 
-
 group {
 	name: "e/widgets/ilist";
+	data.item: "stacking" "above";
+	data.item: "selectraise" "on";
 
 	parts {
 		#include "ilist_even.edc"
 	}
 
 	programs {
-		PROG("active", "e,state,selected", "active")
-		PROG("deactivate", "e,state,unselected", "default")
+		LIST("active_list", "e,state,selected", "active")
+		LIST("unactive_list", "e,state,unselected", "default")
+		TEXT("active_text", "e,state,selected", "active")
+		TEXT("unactive_text", "e,state,unselected", "default")
 	}
 }
 
 group {
 	name: "e/widgets/ilist_odd";
+	data.item: "stacking" "below";
+	data.item: "selectraise" "on";
 
 	parts {
 		#include "ilist_odd.edc"
 }
 
 	programs {
-		PROG("active", "e,state,selected", "active")
-		PROG("deactivate", "e,state,unselected", "default") 
+		LIST("active_list", "e,state,selected", "active")
+		LIST("unactive_list", "e,state,unselected", "default")
+		TEXT("active_text", "e,state,selected", "active")
+		TEXT("unactive_text", "e,state,unselected", "default")
 	}
 }
 
 group {
 	name: "e/widgets/ilist_header";
+	data.item: "stacking" "above";
+	data.item: "selectraise" "on";
 
 	parts {
 		#include "ilist_header.edc"
+	}
+}
+
+group {
+	name: "e/widgets/ilist_header_odd";
+	data.item: "stacking" "below";
+	data.item: "selectraise" "on";
+
+	parts {
+		#include "ilist_header_odd.edc"
 	}
 }
 
