@@ -2,10 +2,17 @@
 part { 
 	name: "base";
 	type: IMAGE;
-	mouse_events: 1;
+	mouse_events: 0;
 
 	description { 
 		state: "default" 0.0;
+
+		rel1 {
+			offset: -1 -1;
+		}
+		rel2 {
+			offset: -2 -1;
+		}
 
 		image {
 			normal: "entry.png";
@@ -21,21 +28,22 @@ part {
 
 	description {
 		state: "default" 0.0;
+
 		rel1 {
 			to: "base";
-			offset: 8 8;
+			offset: 5 5;
 		}
 		rel2 {
 			to: "base";
-			offset: -9 -9;
+			offset: -7 -7;
 		}
 	}
 }
 
 part { 
 	name: "e.swallow.content";
-	clip_to: "clipper";
 	type: SWALLOW;
+	clip_to: "clipper";
 
 	description {
 		state: "default" 0.0;

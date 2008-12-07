@@ -6,8 +6,6 @@ program {
 	action: STATE_SET "selected" 0.0;
 	target: "bg";
 	target: "e.text.label";
-	//target: "label2";
-	//transition: LINEAR 0.2;
 }
 
 program { 
@@ -17,8 +15,6 @@ program {
 	action: STATE_SET "default" 0.0;
 	target: "bg";
 	target: "e.text.label";
-	//target: "label2";
-	//transition: LINEAR 0.1;
 }
 
 program { 
@@ -27,3 +23,71 @@ program {
 	source: "event";
 	action: SIGNAL_EMIT "e,action,click" "e";
 }
+
+/**/
+
+program {
+	name: "go_active_icon";
+	signal: "e,state,selected";
+	source: "e";
+	action: STATE_SET "visible" 0.0;
+	target: "e.swallow.icon";
+	after: "go_active_icon2";
+}
+
+program {
+	name: "go_active_icon2";
+	signal: "";
+	source: "";
+	action: STATE_SET "hidden" 0.0;
+	transition: LINEAR 0.5;
+	target: "e.swallow.icon";
+	after: "go_active_icon";
+}
+
+program {
+	name: "go_passive_icon";
+	signal: "e,state,unselected";
+	source: "e";
+	action: ACTION_STOP;
+	target: "go_active_icon";
+	target: "go_active_icon2";
+	after: "go_passive_icon2";
+}
+
+program {
+	name: "go_passive_icon2";
+	signal: "";
+	source: "";
+	action: STATE_SET "default" 0.0;
+	target: "bg";
+}
+
+program {
+	name: "go_big";
+	action: STATE_SET "visible" 0.0;
+	target: "e.swallow.icon";
+	after: "go_big2";
+}
+
+program {
+	name: "go_big2";
+	action: STATE_SET "huge" 0.0;
+	transition: LINEAR 0.5;
+	target: "e.swallow.icon";
+}
+
+program {
+	name: "exec_start";
+	signal: "mouse,up,1";
+	source: "event";
+	action: ACTION_STOP;
+	target: "go_active_icon";
+	target: "go_active_icon2";
+	target: "go_passive_icon";
+	target: "go_passive_icon2";
+	target: "go_big";
+	target: "go_big2";
+	after: "go_big";
+}
+

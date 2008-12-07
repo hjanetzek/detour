@@ -22,6 +22,7 @@ part {
 			border: 18 18 20 0;
 		}
 	}
+
 	description {
 		state: "top" 0.0;
 
