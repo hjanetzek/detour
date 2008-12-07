@@ -7,13 +7,13 @@ Make use of: scale: 1;
 -URGENT "border" signals
 -"e/modules/ibar/drop_overlay";
 -"bits/error.edc"
--exebuf name parts
 -temperature.edc: graphics
 -macros/borders.edc
 -windows rememeber icon (replace)
 -icons()
 -desklock entry
 -clock graphics(hands)
+-battery: text/graphics --transition
 -efm nav "refresh" symbol
 -dialog bg (image)
 -transitions.edc
@@ -41,8 +41,6 @@ Make use of: scale: 1;
 *Add color_classes
 
 == Compile ==
-*Add Init / would require a symlink to $HOME/.e/e/init
-	(but its not a good idea to add this to the Makefile)
 
 == e ==
 [03:27]<raster> not sure about the whole gadman setup

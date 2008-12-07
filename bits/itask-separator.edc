@@ -2,6 +2,7 @@
 part {
 	name: "separator";
 	type: RECT;
+	mouse_events: 0;
 
 	description {
 		state: "default" 0.0;
