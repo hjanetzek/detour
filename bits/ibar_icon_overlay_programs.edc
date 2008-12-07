@@ -9,22 +9,6 @@ program {
 }
 
 program {
-	name: "tooltip_on";
-	signal: "e,action,show,label";
-	source: "e";
-	action: STATE_SET "visible" 0.0;
-	target: "label.clip";
-}
-
-program {
-	name: "tooltip_off";
-	signal: "e,action,hide,label";
-	source: "e";
-	action: STATE_SET "default" 0.0;
-	target: "label.clip";
-}
-
-program {
 	name: "go_active2";
 	signal: "";
 	source: "";
@@ -64,6 +48,22 @@ program {
 	action: STATE_SET "huge" 0.0;
 	transition: LINEAR 0.5;
 	target: "background";
+}
+
+program {
+	name: "tooltip_on";
+	signal: "e,action,show,label";
+	source: "e";
+	action: STATE_SET "visible" 0.0;
+	target: "label.clip";
+}
+
+program {
+	name: "tooltip_off";
+	signal: "e,action,hide,label";
+	source: "e";
+	action: STATE_SET "default" 0.0;
+	target: "label.clip";
 }
 
 program {
