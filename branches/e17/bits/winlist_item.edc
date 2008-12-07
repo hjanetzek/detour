@@ -15,7 +15,7 @@ part {
 		rel1 { 
 			to_x: "e.swallow.icon"; 
 			relative: 1.0 0.0; 
-			offset: 4 -1; 
+			offset: 4 0; 
 		}
 
 		rel2 { 
@@ -29,8 +29,6 @@ part {
 		state: "active" 0.0;
 		inherit: "default" 0.0;
 		color: 255 255 255 255;
-		image.normal: "menu_select.png";
-		image.border: 5 5 5 5;
 		visible: 1;
 	}
 }

@@ -62,7 +62,6 @@ group {
 			signal: "";
 			source: "";
 			action: STATE_SET "active" 0.0;
-			transition: DECELERATE 0.5;
 			target: "title_bar";
 		}
 
@@ -71,7 +70,6 @@ group {
 			signal: "";
 			source: "";
 			action: STATE_SET "default" 0.0;
-			transition: DECELERATE 0.5;
 			target: "title_bar";
 		}
     	}

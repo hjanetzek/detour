@@ -2,10 +2,11 @@
 part {
 	name: "base";
 	type: RECT;
+	mouse_events: 0;
 	
 	description {
 		state: "default" 0.0;
-		color: 68 108 172 255;
+		color: 62 98 170 255;
 	}
 }
 

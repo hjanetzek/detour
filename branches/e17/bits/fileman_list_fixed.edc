@@ -17,6 +17,7 @@ part {
 
 part {
 	name: "icon_box_shadow";
+	type: IMAGE;
 	mouse_events: 0;
 
 	description {
@@ -81,6 +82,7 @@ part {
          
 part {
 	name: "icon_box_bg";
+	type: IMAGE;
 	mouse_events: 0;
 	
 	description {

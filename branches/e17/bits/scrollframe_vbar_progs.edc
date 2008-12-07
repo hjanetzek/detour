@@ -16,15 +16,6 @@ program {
 }
 
 program {
-	name: "sb_vbar_a1_down";
-	signal: "mouse,down,1";
-	source: "sb_vbar_a1";
-	action: STATE_SET "clicked" 0.0;
-	transition: DECELERATE 0.15;
-	target: "a1_arrow";
-}
-
-program {
 	name: "sb_vbar_a1_down2";
 	signal: "mouse,down,1";
 	source: "sb_vbar_a1";
@@ -33,38 +24,11 @@ program {
 }
 
 program {
-	name: "sb_vbar_a1_up";
-	signal: "mouse,up,1";
-	source: "sb_vbar_a1";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.5;
-	target: "a1_arrow";
-}
-
-program {
-	name: "sb_vbar_a2_down";
-	signal: "mouse,down,1";
-	source: "sb_vbar_a2";
-	action: STATE_SET "clicked" 0.0;
-	transition: DECELERATE 0.15;
-	target: "a2_arrow";
-}
-
-program {
 	name: "sb_vbar_a2_down2";
 	signal: "mouse,down,1";
 	source: "sb_vbar_a2";
 	action: DRAG_VAL_STEP 0.0 1.0;
 	target: "e.dragable.vbar";
-}
-
-program {
-	name: "sb_vbar_a2_up";
-	signal: "mouse,up,1";
-	source: "sb_vbar_a2";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.5;
-	target: "a2_arrow";
 }
 
 program {
@@ -119,4 +83,41 @@ program {
 	target: "e.dragable.vbar";
 	target: "vbar_stipple";
 }
+
+program {
+	name: "sb_vbar_a1_down";
+	signal: "mouse,down,1";
+	source: "sb_vbar_a1";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "a1_arrow";
+}
+
+program {
+	name: "sb_vbar_a1_up";
+	signal: "mouse,up,1";
+	source: "sb_vbar_a1";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "a1_arrow";
+}
+
+program {
+	name: "sb_vbar_a2_down";
+	signal: "mouse,down,1";
+	source: "sb_vbar_a2";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "a2_arrow";
+}
+
+program {
+	name: "sb_vbar_a2_up";
+	signal: "mouse,up,1";
+	source: "sb_vbar_a2";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "a2_arrow";
+}
 */
+

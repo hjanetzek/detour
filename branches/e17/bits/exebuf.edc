@@ -1,6 +1,6 @@
 
 group {
-name: "e/widgets/exebuf/main";
+	name: "e/widgets/exebuf/main";
 
 	parts {
 		#include "exebuf_main.edc"
@@ -12,7 +12,6 @@ name: "e/widgets/exebuf/main";
 			signal: "show";
 			source: "";
 			action: STATE_SET "faded" 0.0;
-			transition: LINEAR 0.5;
 			target: "cursor";
 			after: "blink2";
 		}
@@ -20,9 +19,10 @@ name: "e/widgets/exebuf/main";
 		program {
 			name: "blink2";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.5;
+			transition: DECELERATE 0.5;
 			target: "cursor";
 			after: "blink1";
+			in: 0.5 0.0;
 		}
 	}
 }
@@ -41,7 +41,7 @@ group {
 			source: "e";
 			action: STATE_SET "active" 0.0;
 			target: "e.text.title";
-			target: "title_bar";
+			target: "entry_title";
 		}
 
 		program {
@@ -50,7 +50,7 @@ group {
 			source: "e";
 			action: STATE_SET "default" 0.0;
 			target: "e.text.title";
-			target: "title_bar";
+			target: "entry_title";
 		}
 	}
 }

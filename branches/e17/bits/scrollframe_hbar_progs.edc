@@ -16,15 +16,6 @@ program {
 }
 
 program {
-	name: "sb_hbar_a1_down";
-	signal: "mouse,down,1";
-	source: "sb_hbar_a1";
-	action: STATE_SET "clicked" 0.0;
-	transition: DECELERATE 0.15;
-	target: "arrow_a1";
-}
-
-	program {
 	name: "sb_hbar_a1_down2";
 	signal: "mouse,down,1";
 	source: "sb_hbar_a1";
@@ -33,38 +24,11 @@ program {
 }
 
 program {
-	name: "sb_hbar_a1_up";
-	signal: "mouse,up,1";
-	source: "sb_hbar_a1";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.5;
-	target: "arrow_a1";
-}
-
-program {
-	name: "sb_hbar_a2_down";
-	signal: "mouse,down,1";
-	source: "sb_hbar_a2";
-	action: STATE_SET "clicked" 0.0;
-	transition: DECELERATE 0.15;
-	target: "arrow_a2";
-}
-
-program {
 	name: "sb_hbar_a2_down2";
 	signal: "mouse,down,1";
 	source: "sb_hbar_a2";
 	action: DRAG_VAL_STEP 1.0 0.0;
 	target: "e.dragable.hbar";
-}
-
-program {
-	name: "sb_hbar_a2_up";
-	signal: "mouse,up,1";
-	source: "sb_hbar_a2";
-	action: STATE_SET "default" 0.0;
-	transition: DECELERATE 0.5;
-	target: "arrow_a2";
 }
 
 program {
@@ -79,7 +43,7 @@ program {
 	name: "sb_hbar_p2_down";
 	signal: "mouse,down,1";
 	source: "sb_hbar_p2";
-	action: DRAG_VAL_PAGE  1.0 0.0;
+	action: DRAG_VAL_PAGE 1.0 0.0;
 	target: "e.dragable.hbar";
 }
 
@@ -119,4 +83,41 @@ program {
 	target: "e.dragable.hbar";
 	target: "hbar_stipple";
 }
+
+program {
+	name: "sb_hbar_a1_down";
+	signal: "mouse,down,1";
+	source: "sb_hbar_a1";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "arrow_a1";
+}
+
+program {
+	name: "sb_hbar_a1_up";
+	signal: "mouse,up,1";
+	source: "sb_hbar_a1";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "arrow_a1";
+}
+
+program {
+	name: "sb_hbar_a2_down";
+	signal: "mouse,down,1";
+	source: "sb_hbar_a2";
+	action: STATE_SET "clicked" 0.0;
+	transition: DECELERATE 0.15;
+	target: "arrow_a2";
+}
+
+program {
+	name: "sb_hbar_a2_up";
+	signal: "mouse,up,1";
+	source: "sb_hbar_a2";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "arrow_a2";
+}
 */
+
