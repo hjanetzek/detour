@@ -1,4 +1,5 @@
 
+/*
 program { 
 	name: "sb_hbar_show";
 	signal: "e,action,show,hbar";
@@ -14,8 +15,9 @@ program {
 	signal: "e,action,hide,hbar";
 	source: "e";
 	action:  STATE_SET "hidden" 0.0;
+	transition: LINEAR 0.5;
 	target: "left_arrow";
 	target: "right_arrow";
-	transition: LINEAR 0.5;
 }
+*/
 
