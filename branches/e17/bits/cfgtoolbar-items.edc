@@ -62,8 +62,44 @@ part {
 }
 
 part { 
+	name: "clipper";
+	type: RECT;
+	mouse_events: 1;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 128;
+		visible: 1;
+	}
+
+	description {
+		state: "visible" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 255;
+		visible: 1;
+	}
+
+	description {
+		state: "hidden" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+		rel1.relative: -0.5 -0.5;
+		rel2.relative: 1.5 1.5;
+	}
+
+	description {
+		state: "huge" 0.0;
+		inherit: "default" 0.0;
+		visible: 1;
+		rel1.relative: -1.0 -1.0;
+		rel2.relative: 2.0 2.0;
+	}
+}
+
+part { 
 	name: "e.swallow.icon";
 	type: SWALLOW;
+	clip_to: "clipper";
 
 	description { 
 		state: "default" 0.0;
@@ -81,39 +117,6 @@ part {
 			to_y: "e.text.label";
 			relative: 1.0 0.0;
 			offset: -3 -1;
-		}
-	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-		visible: 1;
-	}
-
-	description {
-		state: "hidden" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-		rel1.relative: -0.5 -0.5;
-
-		rel2 {
-			to_y: "e.text.label";
-			relative: 1.5 1.5;
-			offset: -1 -1;
-		}
-	}
-
-	description {
-		state: "huge" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-		rel1.relative: -1.0 -1.0;
-
-		rel2 {
-			to_y: "e.text.label";
-			relative: 2.0 2.0;
-			offset: -1 -1;
 		}
 	}
 }

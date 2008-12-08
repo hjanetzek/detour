@@ -6,6 +6,10 @@ group {
 		#include "cfgtoolbar-main.edc"
 	}
 	programs {
+
+/* these signals are not in used, but should be
+ */
+
 /*
 		# ifdef FOCUS
 		#  undef FOCUS

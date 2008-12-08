@@ -13,7 +13,7 @@ program {
 	name: "go_active3_in";
 	signal: "";
 	source: "";
-	action:  STATE_SET "visible" 0.0;
+	action: STATE_SET "visible" 0.0;
 	transition: LINEAR 0.3;
 	target: "background";
 	after: "go_active";
