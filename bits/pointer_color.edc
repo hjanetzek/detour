@@ -16,6 +16,12 @@ part {
 			normal: "cursor.png";
 		}
 	}
+
+	description {
+		state: "down" 0.0;
+		inherit: "default" 0.0;
+		color: 255 255 255 164;
+	}
 }
 
 #if ANIMATED_CURSOR == 0

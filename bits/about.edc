@@ -12,14 +12,13 @@ group {
 				state: "default" 0.0;
 
 				image {
-					normal: "dialog_bg.png";
-					border: 2 2 2 2;
+					normal: "dialog_bg_conf.png";
+					border: 2 2 3 3;
 				}
 			}
 		}
 
 		#include "about_main.edc"
-		//#include "about_theme_widget.edc"
 	}
 
 	programs {
@@ -27,3 +26,4 @@ group {
 		#include "about_main_programs.edc"
 	}
 }
+

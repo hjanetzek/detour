@@ -9,13 +9,11 @@ Make use of: scale: 1;
 -"bits/error.edc"
 -temperature.edc: graphics
 -macros/borders.edc
--windows rememeber icon (replace)
 -icons()
 -desklock entry
 -clock graphics(hands)
 -battery: text/graphics --transition
 -efm nav "refresh" symbol
--dialog bg (image)
 -transitions.edc
 -winlist.edc
 -use edje gradients for those images that have them ??
@@ -26,13 +24,9 @@ Make use of: scale: 1;
 	(shelf base non-rgba images)	
 -check widget "arrow" fix pixels
 -improve pointer group:
-	signal: "e,action,mouse,move";
-	signal: "e,action,mouse,down";
-	signal: "e,action,mouse,up";
 	signal: "e,action,mouse,wheel";
-	signal: "e,state,mouse,idle";
-	signal: "e,state,mouse,active";
--configure.edc: width seems to be hardcoded, bad devs!
+	signal: "e,action,mouse,move";
+-configure.edc: width seems to be hardcoded, bad!
 -dialog.edc bg should be different for diff. type of border/dialogs: complain!
 
 == Global ==
@@ -41,8 +35,4 @@ Make use of: scale: 1;
 *Add color_classes
 
 == Compile ==
-
-== e ==
-[03:27]<raster> not sure about the whole gadman setup
-[03:28]<raster> crazy dave at work there! :)
 
