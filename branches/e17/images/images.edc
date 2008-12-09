@@ -139,7 +139,6 @@ image: "entry_focus.png" COMP;
 
 //~ dialog
 image: "separator.png" COMP;
-image: "dialog_bg.png" COMP;
 image: "dialog_bg_default.png" COMP;
 image: "dialog_bg_conf.png" COMP;
 
