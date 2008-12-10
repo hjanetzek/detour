@@ -63,6 +63,26 @@ group {
 			}
 		}
 
+
+/* FIXME: Document this clip */
+
+		part {
+			name: "hover_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				color: 109 152 222 255;
+			}
+		}
+
 /*
  * "focus_clip" acts as a toggle between two STATE(s), or descriptions.
  * any object cliped to "focus_clip" will inherit the active state of 
@@ -104,7 +124,6 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 255;
 				image.normal: "check_bt3.png";
 
 				rel1 {
@@ -132,7 +151,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 128; /* image with 50% alpha blend */
+				color: 255 255 255 192; /* image with 50% alpha blend */
 				image.normal: "check_bt4.png"; 	/* shadow */
 
 				rel1 { 
@@ -144,7 +163,7 @@ group {
 				rel2 { 
 					to: "checked";
 					relative: 1.0 1.0; 
-					offset: -2 -1; /* move 1px to the left */
+					offset: -2 -2; /* move 1px to the left 1px up*/
 				}
 			} 
 
@@ -164,6 +183,7 @@ group {
 			name: "unchecked";
 			type: IMAGE;
 			mouse_events: 0; /* accept no mouse_events */
+			clip_to: "hover_clip";
 
 			description {
 				state: "default" 0.0;
@@ -207,6 +227,7 @@ group {
 			name: "checked";
 			type: IMAGE;
 			mouse_events: 0;
+			clip_to: "hover_clip";
 
 			description {
 				state: "default" 0.0; /* hidden */
