@@ -286,7 +286,7 @@ part {
 		}
 
 		image {
-			normal: "check_base.png";
+			normal: "check_bt0.png";
 		}
 	}
 }
@@ -318,7 +318,7 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 128;
-		image.normal: "check_shadow.png";
+		image.normal: "check_bt4.png";
 
 		rel1 { 
 			to: "check";
@@ -350,7 +350,7 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 255 255 255 255;
-		image.normal: "check_focus.png";
+		image.normal: "check_bt3.png";
 
 		rel1 { 
 			to: "check";
@@ -391,7 +391,7 @@ part {
 		}
 
 		image {
-			normal: "check0.png";
+			normal: "check_bt1.png";
 		}
 	}
 
@@ -427,7 +427,7 @@ part {
 		}
 
 		image {
-			normal: "check1.png";
+			normal: "check_bt2.png";
 		}
 	}
 
