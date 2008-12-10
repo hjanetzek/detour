@@ -107,18 +107,18 @@ part {
 			state: "default" 0.0;
 			align: 0.5 0.5;
 			color: 0 0 0 128;
-			max: 999 26;
+			max: 999 21;
 
 			rel1 { 
 				to: "e.text.label"; 
 				relative: 0.0 0.0; 
-				offset: -5 0; 
+				offset: -8 -2; 
 			}
 
 			rel2 { 
 				to: "e.text.label"; 
 				relative: 1.0 1.0; 
-				offset: 4 -2; 
+				offset: 4 -1; 
 			}
 
 			image {

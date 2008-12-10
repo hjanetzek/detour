@@ -70,7 +70,7 @@ part {
 				text_class: "";
 			#else
 			#if ENABLE_TEXT_CLASS == 1
-				text_class: "module_large";
+				text_class: "module_normal";
 			#endif
 			#endif
 		}
