@@ -2,13 +2,10 @@
 -
 
 == Improve ==
--Move over to DejaVu fonts.
-
+-
 
 == Global ==
-*
-
+* Match detour-e17 widget/look and behaviour.
 
 == Compile ==
-Improve edje_decc: directory structure
 
