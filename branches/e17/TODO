@@ -4,7 +4,6 @@ efm_window: drop_in/drop_between(s)
 radio.edc:516 (e.text.label)
 
 == Improve ==
-check/radio widget mouse_in/out behaviour
 Make use of: scale: 1;
 -URGENT "border" signals
 -"e/modules/ibar/drop_overlay";
