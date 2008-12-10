@@ -6,7 +6,6 @@ part {
 
 	description {
 		state: "default" 0.0;
-		max: 12 12;
 
 		rel1 { 
 			relative: 0.0 0.0; 
@@ -35,7 +34,6 @@ part {
 
 		rel1 { 
 			to: "border"; 
-			offset: 0 0; 
 		}
 
 		rel2 { 
