@@ -2,10 +2,12 @@
 #include "macros/background.edc"
 #include "macros/border.edc"
 #include "macros/border_menu.edc"
+#include "macros/check.edc"
 #include "macros/efm_nav.edc"
 #include "macros/fileman_list.edc"
 #include "macros/init-bg.edc"
 #include "macros/list.edc"
+#include "macros/radio.edc"
 #include "macros/sys.edc"
 
 #define VERSION_STRING 0.7.5
@@ -79,9 +81,10 @@ data {
 }
 
 collections {
-	#include "bits/background.edc"
-	#include "bits/border.edc"
-	#include "bits/ibar.edc"
+	#include "bits/background.edc" /* background group */
+	#include "bits/border.edc" /* border group */
+	#include "bits/ibar.edc" /* ibar group */
+	#include "bits/ibox.edc" /* ibox group, shares code with ibar group */
 	#include "bits/fileman.edc"
 	#if TANGO_ICONS == 0
 	#else
@@ -114,7 +117,6 @@ collections {
 	#include "bits/error.edc"
 	#include "bits/pager.edc"
 	#include "bits/about_theme.edc"
-	#include "bits/ibox.edc"
 	#include "bits/clock.edc"
 	#include "bits/scrollframe.edc"
 	#include "bits/ilist.edc"

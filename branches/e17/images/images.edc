@@ -1,4 +1,23 @@
 
+//~ check widget
+image: "check_bt0.png" COMP; /* base */
+image: "check_bt1.png" COMP; /* unchecked */
+image: "check_bt2.png" COMP; /* checked */
+image: "check_bt3.png" COMP; /* focus */
+image: "check_bt4.png" COMP; /* shadow */
+
+//~ pointer
+image: "pointer_im1.png" COMP; /* default mode */
+image: "pointer_im2.png" COMP; /* pulsating mode */
+image: "pointer_im3.png" COMP; /* monochrome */
+
+//~ radio widget
+image: "radio_bt0.png" COMP; /* base */
+image: "radio_bt1.png" COMP; /* toggle off */
+image: "radio_bt2.png" COMP; /* toggle on */
+image: "radio_bt3.png" COMP; /* focus */
+image: "radio_bt4.png" COMP; /* shadow */
+
 //~ desklock
 image: "desklock_dialog_bg.png" COMP;
 image: "dot.png" COMP;
@@ -93,11 +112,6 @@ image: "ibar_drop.png" COMP;
 //~ resize
 image: "resize-dialog_bg.png" COMP;
 
-//~ pointer
-image: "cursor.png" COMP;
-image: "cursor2.png" COMP;
-image: "cursor_mono.png" COMP;
-
 //~ menu
 image: "menu_arrow0.png" COMP;
 image: "menu_arrow1.png" COMP;
@@ -141,20 +155,6 @@ image: "entry_focus.png" COMP;
 image: "separator.png" COMP;
 image: "dialog_bg_default.png" COMP;
 image: "dialog_bg_conf.png" COMP;
-
-//~ check
-image: "check_base.png" COMP;
-image: "check_shadow.png" COMP;
-image: "check_focus.png" COMP;
-image: "check0.png" COMP;
-image: "check1.png" COMP;
-
-//~ radio
-image: "radio0.png" COMP;
-image: "radio1.png" COMP;
-image: "radio_base.png" COMP;
-image: "radio_focus.png" COMP;
-image: "radio_shadow.png" COMP;
 
 //~ preview
 image: "preview_bg_over.png" COMP;
