@@ -67,7 +67,7 @@ part {
 		}
 
 		image {
-			normal: "separator.png";
+			normal: "dialog_im1.png";
 			border: 0 0 4 0;
 		}
 
@@ -102,7 +102,7 @@ part {
 		}
 
 		image {
-			normal: "entry.png";
+			normal: "entry_im0.png";
 			border: 6 6 8 7;
 		}
 	}
