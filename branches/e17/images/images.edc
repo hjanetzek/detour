@@ -62,6 +62,47 @@ image: "decoration_im1.png" COMP; /* wide dot */
 
 //~ exebuf
 
+//~ fill and stretch options (screen)
+image: "wallscreen_im0.png" COMP; /* gradient box */
+image: "wallscreen_im1.png" COMP; /* stretch */
+image: "wallscreen_im2.png" COMP; /* center */
+image: "wallscreen_im3.png" COMP; /* fill */
+image: "wallscreen_im4.png" COMP; /* tile */
+image: "wallscreen_im5.png" COMP; /* within */
+
+//~ border buttons
+image: "window-border_bt0.png" COMP; /* base */
+image: "window-border_bt1.png" COMP; /* button flat */
+image: "window-border_bt2.png" COMP; /* minimize */
+image: "window-border_bt3.png" COMP; /* maximize */
+image: "window-border_bt4.png" COMP; /* close */
+
+//~ window border menu (details(
+image: "button_detail_close.png" COMP;
+image: "button_detail_maximize.png" COMP;
+image: "button_detail_minimize.png" COMP;
+image: "button_detail_shade.png" COMP;
+image: "button_detail_stick.png" COMP;
+image: "button_detail_locks.png" COMP;
+image: "button_detail_locks_user.png" COMP;
+image: "button_detail_locks_application.png" COMP;
+image: "button_detail_borderless.png" COMP;
+image: "button_detail_remember.png" COMP;
+image: "button_detail_skip_winlist.png" COMP;
+image: "button_detail_fullscreen.png" COMP;
+image: "button_detail_sendto.png" COMP;
+image: "button_detail_kill.png" COMP;
+image: "button_detail_stacking.png" COMP;
+image: "button_detail_stack_below.png" COMP;
+image: "button_detail_stack_normal.png" COMP;
+image: "button_detail_stack_on_top.png" COMP;
+image: "button_detail_properties.png" COMP;
+image: "button_detail_skip.png" COMP;
+image: "button_detail_skip_pager.png" COMP;
+image: "button_detail_skip_taskbar.png" COMP;
+image: "button_detail_skip_winlist.png" COMP;
+image: "button_detail_basic.png" COMP;
+
 //~ desklock
 image: "desklock_dialog_bg.png" COMP;
 
@@ -97,13 +138,6 @@ image: "rb.png" COMP;
 image: "lb-blend.png" COMP;
 image: "rb-blend.png" COMP;
 image: "tb-shadow.png" COMP;
-
-//~ border buttons
-image: "bt-base.png" COMP;
-image: "bt.png" COMP;
-image: "bt-max.png" COMP;
-image: "bt-close.png" COMP;
-image: "bt-min.png" COMP;
 
 //~ border shaped
 image: "bld-shaped.png" COMP;
@@ -168,11 +202,6 @@ image: "nav_fav-button-sign.png" COMP;
 image: "button-up.png" COMP;
 image: "button-down.png" COMP;
 image: "button-forward.png" COMP;
-
-
-//~ preview
-image: "preview_bg_over.png" COMP;
-image: "preview_bg.png" COMP;
 
 //~ shelf
 image: "shelf_default_bg_t.png" COMP;
@@ -461,33 +490,6 @@ image: "color_slider_y.png" COMP;
 image: "cp_slider_trough.png" COMP;
 image: "cp_slider_trough_left.png" COMP;
 image: "cp_slider_trough_right.png" COMP;
-
-//~ border window menu
-image: "bt.png" COMP;
-image: "button_detail_close.png" COMP;
-image: "button_detail_maximize.png" COMP;
-image: "button_detail_minimize.png" COMP;
-image: "button_detail_shade.png" COMP;
-image: "button_detail_stick.png" COMP;
-image: "button_detail_locks.png" COMP;
-image: "button_detail_locks_user.png" COMP;
-image: "button_detail_locks_application.png" COMP;
-image: "button_detail_borderless.png" COMP;
-image: "button_detail_remember.png" COMP;
-image: "button_detail_skip_winlist.png" COMP;
-image: "button_detail_fullscreen.png" COMP;
-image: "button_detail_sendto.png" COMP;
-image: "button_detail_kill.png" COMP;
-image: "button_detail_stacking.png" COMP;
-image: "button_detail_stack_below.png" COMP;
-image: "button_detail_stack_normal.png" COMP;
-image: "button_detail_stack_on_top.png" COMP;
-image: "button_detail_properties.png" COMP;
-image: "button_detail_skip.png" COMP;
-image: "button_detail_skip_pager.png" COMP;
-image: "button_detail_skip_taskbar.png" COMP;
-image: "button_detail_skip_winlist.png" COMP;
-image: "button_detail_basic.png" COMP;
 
 //~ battery
 image: "battery-0.png" COMP;
