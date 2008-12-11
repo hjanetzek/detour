@@ -276,7 +276,6 @@ group {
 
 			description {
 				state: "default" 0.0;
-				min: 17 17;
 				color: 60 60 60 255;
 
 				rel1 {
@@ -336,11 +335,6 @@ group {
 	}
 }
 
-/*
- * I don't see where to test this group so disable it for now 
- */
-
-/*
 group {
 	name: "e/widgets/check_icon";
 
@@ -375,52 +369,91 @@ group {
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
+				/* alpha blend the image 50% when the state = disabled */
 				color: 255 255 255 128;
 			}
 		}
 
+/* FIXME: Document this clip */
+
 		part {
-			name: "focus_clip";
+			name: "hover_clip";
 			type: RECT;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 0;
+				color: 255 255 255 255;
 			}
 
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 255;
+				color: 109 152 222 255;
 			}
 		}
 
+/*
+ * "focus_clip" acts as a toggle between two STATE(s), or descriptions.
+ * any object cliped to "focus_clip" will inherit the active state of 
+ * this clip. With the default state as "selected", any object clipped
+ * to it, will not be visible. The only way for the object to be visible
+ * is for the clip to change to the "visible" state.
+ */
+		part {
+			name: "focus_clip";
+/* this clip is a rectangle 
+ * the only different between this and an image 
+ * is that a rectangle does not need to define an
+ * image, and opposed to an image the rectangle
+ * should define a color
+ */
+			type: RECT;
+			mouse_events: 0; /* accept no mouse_events */
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 0; /* not visible */
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255; /* visible */
+			}
+		}
+
+/*
+ * "focus" image will behaviour according to the "focus_clip" STATE(s) changes.
+ */
 		part {
 			name: "focus";
 			type: IMAGE;
 			mouse_events: 0;
-			clip_to: "focus_clip";
+			clip_to: "focus_clip"; /* clip this part to "focus_clip" */
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 255;
 				image.normal: "check_bt3.png";
 
-				rel1 { 
-					to: "checked";
-					relative: 0.0 0.0; 
-					offset: 0 0; 
+				rel1 {
+					to: "base";
+					relative: 0.0 0.0;
+					offset: 0 0;
 				}
 
-				rel2 { 
-					to: "checked";
-					relative: 1.0 1.0; 
-					offset: -1 -1; 
+				rel2 {
+					to: "base";
+					relative: 1.0 1.0;
+					offset: -1 -1;
 				}
 			}
 		}
 
+/*
+ * The "shadow" part can be considered a [cosmetic]. Its only purpose is to
+ * give a (raised) look to the widget.
+ */
 		part {
 			name: "shadow";
 			type: IMAGE;
@@ -428,40 +461,60 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 128;
-				image.normal: "check_bt4.png";
+				color: 255 255 255 192; /* image with 50% alpha blend */
+				image.normal: "check_bt4.png"; 	/* shadow */
 
 				rel1 { 
 					to: "checked";
 					relative: 0.0 0.0; 
-					offset: 0 1; 
+					offset: 1 -1; /* move 1px down one to the left*/
 				}
 
 				rel2 { 
 					to: "checked";
 					relative: 1.0 1.0; 
-					offset: -1 -1; 
+					offset: -2 -2; /* move 1px to the left 1px up*/
 				}
-			}
+			} 
 
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 0;
+				/* hide the image when the widget is disabled */
+				color: 255 255 255 0; 
 			}
 		}
 
+/*
+ * the switch off state image.
+ * check button image in off state
+ */
 		part {
 			name: "unchecked";
 			type: IMAGE;
-			mouse_events: 0;
+			mouse_events: 0; /* accept no mouse_events */
+			clip_to: "hover_clip";
 
 			description {
 				state: "default" 0.0;
+				/* image dimensions: 20x18 and fixed */
 				min: 20 18;
-				max: 20 18;
+				max: 20 18;  
 				fixed: 1 1;
+				/* align to the far left and center */
 				align: 0.0 0.5;
+
+				/* since no relative or offset is defined
+				 * assume: relative: 0.0 0.0; offset: 0 0; for rel1 */
+				rel1 {
+					to: "base";
+				}
+
+				/* since no relative or offset is defined
+				 * assume: relative: 1.0 1.0; offset: -1 -1; for rel2 */
+				rel2 {
+					to: "base";
+				}
 
 				image {
 					normal: "check_bt1.png";
@@ -471,22 +524,38 @@ group {
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
+				/* alpha blend the image 50% when the state = disabled */
 				color: 255 255 255 128;
 			}
 		}
-
+    
+/*
+ * the switch on image state
+ * not visible by default, only when the widget is checked
+ */
 		part {
 			name: "checked";
 			type: IMAGE;
 			mouse_events: 0;
+			clip_to: "hover_clip";
 
 			description {
-				state: "default" 0.0;
+				state: "default" 0.0; /* hidden */
+				/* image dimensions: 20x18 and fixed */
 				min: 20 18;
 				max: 20 18;
 				fixed: 1 1;
+				/* align to the far left and center */
 				align: 0.0 0.5;
-				visible: 0;
+				visible: 0; /* hide the image */
+
+				rel1 {
+					to: "base";
+				}
+
+				rel2 {
+					to: "base";
+				}
 
 				image {
 					normal: "check_bt2.png";
@@ -494,9 +563,35 @@ group {
 			}
 
 			description {
-				state: "active" 0.0;
+				state: "visible" 0.0;
 				inherit: "default" 0.0;
-				visible: 1;
+				visible: 1; /* image becomes visible */
+			}
+		}
+
+		part {
+			name: "icon_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 16 16;
+				color: 255 255 255 255; 
+
+				rel1 { 
+					to: "e.swallow.icon"; 
+				}
+
+				rel2 { 
+					to: "e.swallow.icon"; 
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit:  "default" 0.0;
+				color: 255 255 255 128;
 			}
 		}
 
@@ -540,50 +635,24 @@ group {
 		}
 
 		part {
-			name: "icon_clip";
-			type: RECT;
-			mouse_events: 0;
-
-			description {
-				state: "default" 0.0;
-				min: 16 16;
-				color: 255 255 255 255; 
-
-				rel1 { 
-					to: "e.swallow.icon"; 
-				}
-
-				rel2 { 
-					to: "e.swallow.icon"; 
-				}
-			}
-
-			description {
-				state: "disabled" 0.0;
-				inherit:  "default" 0.0;
-				color: 255 255 255 128;
-			}
-		}
-
-		part {
 			name: "e.text.label";
 			type: TEXT;
 			mouse_events: 0;
+			scale: 1;
 
 			description {
 				state: "default" 0.0;
-				min: 16 16;
 				color: 60 60 60 255;
 
-				rel1 { 
-					to_x: "checked"; 
-					relative: 1.0 0.0; 
-					offset: 2 3; 
+				rel1 {
+					to_x: "base";
+					relative: 1.0 0.0;
+					offset: 5 2;
 				}
-		
-				rel2 { 
-					relative: 1.0 1.0; 
-					offset: -2 -2; 
+
+				rel2 {
+					relative: 1.0  1.0;
+					offset: -5 -2;
 				}
 
 				text {
@@ -627,8 +696,99 @@ group {
 	}
 
 	programs {
-		CHECK()
+		program {
+			name: "focused";
+			signal: "e,state,focused";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			transition: DECELERATE 0.5;
+			target: "focus_clip";
+		}
+
+		program {
+			name: "unfocused";
+			signal: "e,state,unfocused";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "focus_clip";
+		}
+
+		program {
+			name: "checked";
+			signal: "e,state,checked";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			target: "checked";
+		}
+
+		program {
+			name: "unchecked";
+			signal: "e,state,unchecked";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "checked";
+		}
+
+		program {
+			name: "action,toggle";
+			signal: "mouse,down,1";
+			source: "event";
+			action: SIGNAL_EMIT "e,action,toggle" "";
+			after: "mouse_out";
+		}
+
+		program {
+			name: "enable";
+			signal: "e,state,enabled";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "base";
+			target: "checked";
+			target: "shadow";
+			target: "icon_clip";
+			target: "e.text.label";
+			target: "event";
+		}
+
+		program {
+			name: "disable";
+			signal: "e,state,disabled";
+			source: "e";
+			action: STATE_SET "disabled" 0.0;
+			target: "base";
+			target: "checked";
+			target: "shadow";
+			target: "icon_clip";
+			target: "e.text.label";
+			target: "event";
+		}
+
+		program { 
+			name: "labeled";
+			signal: "e,state,labeled";
+			source: "e";
+			action: STATE_SET "label_visible" 0.0;
+			target: "e.swallow.icon";
+		}
+
+		program {
+			name: "mouse_in";
+			signal: "mouse,in";
+			source: "event";
+			action: STATE_SET "visible" 0.0;
+			transition: DECELERATE 0.25;
+			target: "hover_clip";
+		}
+
+		program {
+			name: "mouse_out";
+			signal: "mouse,out";
+			source: "event";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.25;
+			target: "hover_clip";
+		}
 	}
 }
-*/
 
