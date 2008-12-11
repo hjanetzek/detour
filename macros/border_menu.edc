@@ -27,7 +27,7 @@ part { 															\
 		} 													\
 															\
 		image { 												\
-			normal: "bt-base.png"; 										\
+			normal: "window-border_bt0.png"; 										\
 			border: 6 6 6 6; 										\
 		} 													\
 	} 														\
@@ -61,7 +61,7 @@ part { 															\
 		} 													\
 															\
 		image { 												\
-			normal: "bt.png"; 										\
+			normal: "window-border_bt1.png"; 										\
 			border: 7 6 7 6; 										\
 		}													\
 	} 														\

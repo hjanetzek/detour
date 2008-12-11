@@ -2,13 +2,14 @@
 # ifdef ICON
 #  undef ICON
 # endif
-#define ICON(GROUP_NAME,IMAGE) \
+#define ICON(GROUP_NAME,IMAGE_NAME) \
 group { \
 	name: GROUP_NAME; \
 	max: 256 256; \
 	parts { \
 		part { \
 			name: "icon"; \
+			type: IMAGE; \
 			mouse_events: 0; \
 			description { \
 				state: "default" 0.0; \
@@ -16,12 +17,16 @@ group { \
 				aspect_preference: BOTH; \
 				max: 256 256; \
 				image { \
-					normal: IMAGE; \
+					normal: IMAGE_NAME; \
 				} \
 	    		} \
    		} \
     	} \
 }
+
+/*
+ * Enlightenment Settings icons.
+ */
 
 ICON("e/icons/enlightenment/performance", "preferences-system.png")
 ICON("e/icons/enlightenment/focus", "window-new.png")
@@ -78,6 +83,10 @@ ICON("e/icons/enlightenment/extensions", "gnome-run.png")
 ICON("e/icons/enlightenment/run", "applications-system.png")
 ICON("e/icons/enlightenment/window_remembers", "window-new.png") /* big fat fixme */
 
+/*
+ * Enlightenment wallpaper options icons.
+ */
+
 ICON("e/icons/enlightenment/website", "internet-web-browser.png")
 ICON("e/icons/enlightenment/gradient", "xfce4-workspaces.png")
 ICON("e/icons/enlightenment/picture", "preferences-desktop-wallpaper-16.png")
@@ -86,6 +95,10 @@ ICON("e/icons/enlightenment/picture", "preferences-desktop-wallpaper-16.png")
 //ICON("enlightenment/about", "logo_black_128.png")
 //ICON("enlightenment/check",".png")
 
+/*
+ * Enlightenment Desktop Icons.
+ */
+
 ICON("e/icons/drive-harddisk", "drive-harddisk.png")
 ICON("e/icons/drive-optical", "media-optical.png")
 ICON("e/icons/media-flash", "media-flash.png")
@@ -93,25 +106,32 @@ ICON("e/icons/media-flash", "media-flash.png")
 # ifdef ICON
 #  undef ICON
 # endif
-#define ICON(GROUP_NAME,IMAGE) \
+#define ICON(GROUP_NAME,IMAGE_NAME) \
 group { \
 	name: GROUP_NAME; \
 	parts { \
 		part { \
 			name: "icon"; \
+			type: IMAGE; \
 			mouse_events: 0; \
 			description { \
 				state: "default" 0.0; \
+				min: 24 24; \
 				max: 24 24; \
+				fixed: 1 1; \
 				aspect: 1.0 1.0; \
 				aspect_preference: BOTH; \
 				image { \
-					normal: IMAGE; \
+					normal: IMAGE_NAME; \
 				} \
 	    		} \
 		} \
 	} \
 }
+
+/*
+ * Shelf icons: orientation.
+ */
 
 ICON("e/icons/enlightenment/shelf_position_bottom", "icon_shelf_bottom.png")
 ICON("e/icons/enlightenment/shelf_position_bottom_left", "icon_shelf_bottom_left.png")
@@ -131,6 +151,11 @@ ICON("e/icons/enlightenment/shelf_dock", "icon_shelf_dock.png")
 ICON("e/icons/enlightenment/shelf_menu_bar", "icon_shelf_menu_bar.png")
 ICON("e/icons/enlightenment/shelf_panel", "icon_shelf_panel.png")
 ICON("e/icons/enlightenment/shelf_top_desk", "icon_shelf_top_desk.png")
+
+/*
+ * Screen rotation and mirroring icons.
+ */
+
 ICON("e/icons/enlightenment/screen_around", "screen_around.png")
 ICON("e/icons/enlightenment/screen_left", "screen_left.png")
 ICON("e/icons/enlightenment/screen_right", "screen_right.png")
@@ -141,28 +166,30 @@ ICON("e/icons/enlightenment/screen_normal", "screen_normal.png")
 # ifdef ICON
 #  undef ICON
 # endif
-#define ICON(GROUP_NAME,SIZE,IMAGE) \
+#define ICON(GROUP_NAME,SIZE,IMAGE_NAME) \
 group { \
 	name: GROUP_NAME; \
-\
 	parts { \
 		part { \
 			name: "icon"; \
+			type: IMAGE; \
 			mouse_events: 0; \
-\
 			description { \
 				state: "default" 0.0; \
 				aspect: 1.0 1.0; \
 				aspect_preference: BOTH; \
 				max: SIZE; \
-\
 				image { \
-					normal: IMAGE; \
+					normal: IMAGE_NAME; \
 				} \
 			} \
 		} \
 	} \
 }
+
+/*
+ * Widget icons: icons that go on top of widgets.
+ */
 
 ICON("e/icons/widget/new_dialog", 18 15, "button-forward.png")
 ICON("e/icons/widget/up_arrow", 14 17, "button-up.png")
@@ -173,65 +200,73 @@ ICON("e/icons/widget/new", 16 16, "document-new.png")
 ICON("e/icons/widget/add", 16 16, "list-add.png")
 ICON("e/icons/widget/add_fav", 16 16, "emblem-favorite-16.png")
 ICON("e/icons/widget/config", 16 16, "document-properties.png")
-//ICON("e/icons/enlightenment/about", 16 16, "applications-system-16.png")
 ICON("e/icons/widget/swap", 16 16, "mail-send-receive.png")
 ICON("e/icons/widget/resize", 16 16, "go-first.png")
+//ICON("e/icons/enlightenment/about", 16 16, "applications-system-16.png")
 
 # ifdef ICON
 #  undef ICON
 # endif
-#define ICON(GROUP_NAME,SIZE,IMAGE) \
+#define ICON(GROUP_NAME,IMAGE_NAME) \
 group { \
 	name: GROUP_NAME; \
-	max: SIZE; \
-\
+	min: 24 24; \
+	max: 24 24; \
 	parts { \
 		part { \
 			name: "screen"; \
+			type: IMAGE; \
 			mouse_events:  0; \
-\
 			description { \
-				max: SIZE; \
+				min: 24 24; \
+				max: 24 24; \
+				fixed: 1 1; \
 				state: "default" 0.0; \
 				aspect: 1.0 1.0; \
 				aspect_preference: BOTH; \
-\
 				image { \
-					normal: IMAGE; \
+					normal: IMAGE_NAME; \
 				} \
 			} \
 		} \
 	} \
 }
 
-ICON("e/icons/enlightenment/wallpaper_stretch", 24 24, "wallpaper_screen_stretch.png")
+/*
+ * Wallpaper fill and stretch icons.
+ */
 
-ICON("e/icons/enlightenment/wallpaper_center", 24 24, "wallpaper_screen_center.png")
+ICON("e/icons/enlightenment/wallpaper_stretch", "wallscreen_im1.png")
+ICON("e/icons/enlightenment/wallpaper_center", "wallscreen_im2.png")
+ICON("e/icons/enlightenment/wallpaper_tile", "wallscreen_im4.png")
+ICON("e/icons/enlightenment/wallpaper_scale_aspect_in", "wallscreen_im5.png")
+ICON("e/icons/enlightenment/wallpaper_scale_aspect_out", "wallscreen_im3.png")
 
-ICON("e/icons/enlightenment/wallpaper_tile", 24 24, "wallpaper_screen_tile.png")
-
-ICON("e/icons/enlightenment/wallpaper_scale_aspect_in", 24 24, "wallpaper_screen_in.png")
-
-ICON("e/icons/enlightenment/wallpaper_scale_aspect_out", 24 24, "wallpaper_screen_out.png")
+/*
+ * Gradient background and definitions.
+ */
 
 group {
 	name: "e/icons/enlightenment/gradient_h";
+	min: 24 24;
 	max: 24 24;
 
 	parts {
 		part {
-			name: "bg";
+			name: "background";
 			type: IMAGE;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
+				min: 24 24;
 				max: 24 24;
+				fixed: 1 1;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
 				image {
-					normal: "wallpaper_screen_grad.png";
+					normal: "wallscreen_im0.png";
 				}
 			}
 		}
@@ -245,12 +280,12 @@ group {
 				state: "default" 0.0;
             
 				rel1 {
-					to: "bg";
+					to: "background";
 					offset: 5 5;
 				}
 
 				rel2 {
-					to: "bg";
+					to: "background";
 					offset: -6 -6;
 				}
 
@@ -268,22 +303,25 @@ group {
 
 group {
 	name: "e/icons/enlightenment/gradient_v";
+	min: 24 24;
 	max: 24 24;
 
 	parts {
 		part {
-			name: "bg";
+			name: "background";
 			mouse_events: 0;
 			type: IMAGE;
 
 			description {
 				state: "default" 0.0;
+				min: 24 24;
 				max: 24 24;
+				fixed: 1 1;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
 				image {
-					normal: "wallpaper_screen_grad.png";
+					normal: "wallscreen_im0.png";
 				}
 			}
 		}
@@ -297,12 +335,12 @@ group {
 				state: "default" 0.0;
             
 				rel1 {
-					to: "bg";
+					to: "background";
 					offset: 5 5;
 				}
 
 				rel2 {
-					to: "bg";
+					to: "background";
 					offset: -6 -6;
 				}
 
@@ -316,22 +354,25 @@ group {
 
 group {
 	name: "e/icons/enlightenment/gradient_du";
+	min: 24 24;
 	max: 24 24;
 
 	parts {
 		part {
-			name: "bg";
+			name: "background";
 			mouse_events: 0;
 			type: IMAGE;
 
 			description {
 				state: "default" 0.0;
+				min: 24 24;
 				max: 24 24;
+				fixed: 1 1;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
 				image {
-					normal: "wallpaper_screen_grad.png";
+					normal: "wallscreen_im0.png";
 				}
 			}
 		}
@@ -345,12 +386,12 @@ group {
 				state: "default" 0.0;
             
 				rel1 {
-					to: "bg";
+					to: "background";
 					offset: 5 5;
 				}
 
 				rel2 {
-					to: "bg";
+					to: "background";
 					offset: -6 -6;
 				}
 
@@ -368,22 +409,25 @@ group {
 
 group {
 	name: "e/icons/enlightenment/gradient_dd";
+	min: 24 24;
 	max: 24 24;
 
 	parts {
 		part {
-			name: "bg";
+			name: "background";
 			mouse_events: 0;
 			type: IMAGE;
 
 			description {
 				state: "default" 0.0;
+				min: 24 24;
 				max: 24 24;
+				fixed: 1 1;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
 				image {
-					normal: "wallpaper_screen_grad.png";
+					normal: "wallscreen_im0.png";
 				}
 			}
 		}
@@ -397,12 +441,12 @@ group {
 				state: "default" 0.0;
             
 				rel1 {
-					to: "bg";
+					to: "background";
 					offset: 5 5;
 				}
 
 				rel2 {
-					to: "bg";
+					to: "background";
 					offset: -6 -6;
 				}
 
@@ -420,22 +464,25 @@ group {
 
 group {
 	name: "e/icons/enlightenment/gradient_rad";
+	min: 24 24;
 	max: 24 24;
 
 	parts {
 		part {
-			name: "bg";
+			name: "background";
 			mouse_events: 0;
 			type: IMAGE;
 
 			description {
 				state: "default" 0.0;
+				min: 24 24;
 				max: 24 24;
+				fixed: 1 1;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
 				image {
-					normal: "wallpaper_screen_grad.png";
+					normal: "wallscreen_im0.png";
 				}
 			}
 		}
@@ -449,12 +496,12 @@ group {
 				state: "default" 0.0;
             
 				rel1 {
-					to: "bg";
+					to: "background";
 					offset: 5 5;
 				}
 
 				rel2 {
-					to: "bg";
+					to: "background";
 					offset: -6 -6;
 				}
 
@@ -471,6 +518,7 @@ group {
 	}
 }
 
+/*
 group {
 	name: "e/icons/enlightenment/e";
 	max: 256 256;
@@ -544,4 +592,5 @@ group {
 		}
 	}
 }
+*/
 

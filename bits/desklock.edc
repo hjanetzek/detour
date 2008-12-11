@@ -13,6 +13,15 @@ group  {
 				color: 139 157 180 255;
 			}
 		}
+
+		part { 
+			name: "e.swallow.login_box";
+			type: SWALLOW;
+
+			description { 
+				state: "default" 0.0;
+			}
+		}
 	}
 }
 
@@ -20,11 +29,345 @@ group {
 	name: "e/desklock/login_box";
 
 	parts {
-		#include "desklock_main.edc"
+part { 
+	name: "base";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description { 
+		state: "default" 0.0; 
+
+		rel1 { 
+			to: "icon"; 
+			relative: 0.0 0.0; 
+			offset: -14 -13; 
+		}
+
+		rel2 { 
+			to_x: "dot"; 
+			to_y: "icon"; 
+			relative: 1.0 1.0; 
+			offset: 16 10; 
+		}
+
+		image {
+			normal: "desklock_dialog_bg.png"; 
+			border: 17 17 17 17;
+		}
+	}
+}
+
+part  {
+	name: "icon";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 48 48;
+		max: 48 48;
+		fixed: 1 1;
+
+		image {
+			normal: "system-lock-screen.png";
+		}
+	}
+}
+
+part {
+	name: "separator";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 245 12;
+		max: 245 12;
+
+		rel1 { 
+			to: "entry"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 1.0; 
+			offset: -1 0; 
+		}
+
+		image {
+			normal: "dialog_im1.png";
+			border: 0 0 4 0;
+		}
+
+		fill {
+			smooth: 0;
+		}
+	}
+}
+
+part {
+	name: "entry";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		/* setting this part to a fixed size is not a very good idea */
+		min: 251 21;
+		max: 251 21;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "icon"; 
+			relative: 3.25 0.0; 
+			offset: 60 10; 
+		}
+
+		rel2 { 
+			to: "icon"; 
+			relative: 3.25 1.0; 
+			offset: -18 -1; 
+		}
+
+		image {
+			normal: "entry_im0.png";
+			border: 6 6 8 7;
+		}
+	}
+}
+
+part {
+	name: "e.text.title";
+	type: TEXT;
+	effect: SHADOW;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		fixed: 0 1;
+		align: 0.0 0.5;
+		color: 60 60 60 255;
+		color3: 170 168 169 128;
+
+		rel1 { 
+			to: "icon"; 
+			relative: 1.0 0.0; 
+			offset: 6 8; 
+		}
+
+		rel2 { 
+			to: "icon"; 
+			relative: 1.0 0.3; 
+			offset: 0 0; 
+		}
+
+		text {
+			text: "Please enter your unlock password";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
+			size: 10;
+			align: 0.0 0.5;
+			min: 1 1;
+			#if ENABLE_TEXT_CLASS == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASS == 1
+				text_class: "desklock_title";
+			#endif
+			#endif
+		}
+    	}
+}
+
+part {
+	name: "entry_clip";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		color: 255 255 255 255;
+
+		rel1 { 
+			to: "entry"; 
+			relative: 0.0 0.0; 
+			offset: 6 0; 
+		}
+		
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 1.0; 
+			offset: -1 -1; 
+		}
+	}
+}
+
+part {
+	name: "e.text.password";
+	type: TEXT;
+	mouse_events: 0;
+	clip_to: "entry_clip";
+
+	description {
+		state: "default" 0.0;
+		color: 7 7 7 255;
+		fixed: 0 1;
+		align: 0.0 0.5;
+		  
+		rel1 { 
+			to: "entry_clip"; 
+			relative: 0.0 0.0; 	
+			offset: 0 2; 
+		}
+
+		rel2 { 
+			to: "entry_clip"; 
+			relative: 0.0 1.0; 
+			offset: 0 0; 
+		}
+
+		text {
+			text: "****";
+			font: "DejaVuSans";
+			size: 11;
+			align: 0.0 0.5;
+			min: 1 1;
+			#if ENABLE_TEXT_CLASS == 0
+				text_class: "";
+			#else
+			#if ENABLE_TEXT_CLASS == 1
+				text_class: "desklock_passwd"; 
+			#endif
+			#endif
+		}
+	}
+}
+
+part {
+	name: "cursor";
+	type: RECT;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 1 9;
+		max: 1 9;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "e.text.password"; 
+			relative: 1.0 0.0; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "e.text.password"; 
+			relative: 1.0 0.9; 
+			offset: 0 -1; 
+		}
+	}
+
+	description {
+		state: "default" 0.1;
+		inherit: "default" 0.0;
+		color: 60 60 60 255;
+	}
+}
+
+part {
+	name: "dot";
+	type: IMAGE;
+	mouse_events: 0;
+
+	description {
+		state: "default" 0.0;
+		min: 11 11;
+		max: 11 11;
+		fixed: 1 1;
+
+		rel1 { 
+			to: "entry"; 
+			relative: 1.0 0.5; 
+			offset: 0 0; 
+		}
+
+		rel2 { 
+			to: "entry"; 
+			relative: 1.0 0.5; 
+			offset: 18 0; 
+		}
+
+		image {
+			normal: "decoration_im0.png";
+		}
+    	}
+}
+
 	}
 
 	programs {
-		#include "desklock_main_programs.edc"
+		program {
+			name: "cursor.blink";
+			signal: "load";
+			source: "";
+			action: STATE_SET "default" 0.1;
+			transition: DECELERATE 0.5;
+			target: "cursor";
+			after: "cursor.unblink";
+		}
+
+		program {
+			name: "cursor.unblink";
+			signal: "";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "cursor";
+			after: "cursor.blink";
+		}
+
+/*
+rogram { name: "pulse.1";
+	    signal: "e,state,checking";
+	    source: "e.desklock";
+	    action: STATE_SET "pulse" 0.0;
+	    target: "pulse_clip";
+	    transition: SINUSOIDAL 0.5;
+	    after: "pulse.2";
+	 }
+	 program { name: "pulse.2";
+	    action: STATE_SET "default" 0.0;
+	    target: "pulse_clip";
+	    transition: SINUSOIDAL 0.5;
+	    after: "pulse.1";
+	 }
+	 program { name: "pulse.stop";
+	    signal: "e,state,invalid";
+	    source: "e.desklock";
+	    action: ACTION_STOP;
+	    target: "pulse.1";
+	    target: "pulse.2";
+	    after: "pulse.reset";
+	 }
+	 program { name: "pulse.reset";
+	    action: STATE_SET "default" 0.0;
+	    target: "pulse_clip";
+	    transition: SINUSOIDAL 0.5;
+	 }
+	 program { name: "go_invalid";
+	    signal: "e,state,invalid";
+	    source: "e.desklock";
+	    action: STATE_SET "invalid" 0.0;
+	    target: "error_clip";
+	    transition: DECELERATE 0.5;
+	 }
+	 program { name: "stop_invalid";
+	    action: STATE_SET "default" 0.0;
+	    target: "error_clip";
+	    transition: DECELERATE 1.5;
+	 }
+*/
 	}
 }
 
