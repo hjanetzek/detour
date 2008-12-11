@@ -54,14 +54,6 @@ image: "icon_shelf_menu_bar.png" COMP;
 image: "icon_shelf_panel.png" COMP;
 image: "icon_shelf_top_desk.png" COMP;
 
-//~ screen
-image: "wallpaper_screen_stretch.png" COMP;
-image: "wallpaper_screen_center.png" COMP;
-image: "wallpaper_screen_tile.png" COMP;
-image: "wallpaper_screen_in.png" COMP;
-image: "wallpaper_screen_out.png" COMP;
-image: "wallpaper_screen_grad.png" COMP;
-
 //~ Tango Icons http://tango.freedesktop.org
 image: "video-display.png" COMP;
 image: "dialog-error.png" COMP;
@@ -115,7 +107,6 @@ image: "go-first.png" COMP;
 image: "media-optical.png" COMP;
 image: "gnome-dev-removable-usb.png" COMP;
 image: "media-flash.png" COMP;
-
 
 //~ e
 image: "e17_icon_e_0.png" COMP;
