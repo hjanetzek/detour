@@ -287,19 +287,18 @@ part {
 
 		text {
 			text: "No Title";
+			font: "Sans:style=Bold,DejaVuSans-Bold";
 			size: 11;
-			font: "DejaVuSans";
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
 				min: 1 1;
-				//elipsis: 0.0;
+				elipsis: 1.0;
 			#else
 			#if TRUNCATE_DESKTOP_ICON_FILENAME == 1
 				min: 0 1;
-				//elipsis: 1.0;
+				elipsis: 0.0;
 			#endif
 			#endif
 			align: 0.5 1.0; 
-			elipsis: 0.0;
 			#if ENABLE_TEXT_CLASS == 0
 				text_class: "";
 			#else

@@ -6,18 +6,15 @@
 group { \
 	name: GROUP_NAME; \
 	max: 256 256; \
-\
 	parts { \
 		part { \
 			name: "icon"; \
 			mouse_events: 0; \
-\
 			description { \
 				state: "default" 0.0; \
 				aspect: 1.0 1.0; \
 				aspect_preference: BOTH; \
 				max: 256 256; \
-\
 				image { \
 					normal: IMAGE; \
 				} \
@@ -99,18 +96,15 @@ ICON("e/icons/media-flash", "media-flash.png")
 #define ICON(GROUP_NAME,IMAGE) \
 group { \
 	name: GROUP_NAME; \
-\
 	parts { \
 		part { \
 			name: "icon"; \
 			mouse_events: 0; \
-\
 			description { \
 				state: "default" 0.0; \
 				max: 24 24; \
 				aspect: 1.0 1.0; \
 				aspect_preference: BOTH; \
-\
 				image { \
 					normal: IMAGE; \
 				} \

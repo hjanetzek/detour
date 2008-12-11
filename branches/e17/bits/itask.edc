@@ -3,7 +3,88 @@ group {
 	name: "e/modules/itask-ng/bg";
 
 	parts {
-		#include "itask-bg.edc"
+		part {
+			name: "bg";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -5 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 6 -1;
+				}
+
+				image {
+					normal: "itask-bg.png";
+					border: 18 18 20 0;
+				}		
+			}
+
+			description {
+				state: "top" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -5 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 6 -1;
+				}
+
+				image {
+					normal: "itask-bg_top.png";
+					border: 18 18 0 20;
+				}
+			}
+
+			description {
+				state: "left" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 -5;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 10 4;
+				}
+
+				image {
+					normal: "itask-bg_left.png";
+					border: 0 20 32 18;
+				}
+			}
+	
+			description {
+				state: "right" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -10 -5;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 10 4;
+				}
+
+				image {
+					normal: "itask-bg_right.png";
+					border: 20 0 32 18;
+				}
+
+			}
+		}
 	}
 
 	programs {
@@ -46,7 +127,41 @@ group {
 	max: 128 128; 
 
 	parts {
-		#include "itask-separator.edc"
+		part {
+			name: "separator";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 182 182 182 192;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 5;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 0 -6;
+				}
+			}
+
+			description {
+				state: "vertical" 0.0;
+				color: 182 182 182 192;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 5 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -5 0;
+				}
+			}
+		}
 	}
 
 	programs {
@@ -72,7 +187,113 @@ group {
 	name: "e/modules/itask-ng/label";
 
 	parts {
-		#include "itask-label.edc"
+		part {      
+			name: "label";
+			type: IMAGE;               
+			mouse_events: 0;
+			clip_to: "label.clip";  
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				color: 0 0 0 148;
+				max: 999 26;
+
+				rel1 { 
+					to: "e.text.label"; 
+					relative: 0.0 0.0; 
+					offset: -8 -2; 
+				}
+
+				rel2 { 
+					to: "e.text.label"; 
+					relative: 1.0 1.0; 
+					offset: 4 -1; 
+				}
+
+				image {
+					normal: "typebuf_clip.png";
+					border: 5 5 5 5;
+				}
+			}
+		}
+
+		part {      
+			name: "e.text.label";
+			type: TEXT;
+			effect: SHADOW;                
+			mouse_events: 0;
+			clip_to: "label.clip";
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				#if ENABLE_IBAR_LABEL_OVERLAY == 0
+					color: 7 7 7 255;
+					color3: 170 168 169 128;
+				#else
+				#if ENABLE_IBAR_LABEL_OVERLAY == 1
+					color: 255 255 255 255;
+					color3: 0 0 0 0;
+				#endif
+				#endif
+		
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 0 2; 
+				}
+
+				rel2 { 
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				text {
+					text: "";
+					font: "Sans:style=Bold,DejaVuSans-Bold";
+					size: 11;
+					min: 1 1;
+					align: 0.5 0.5;
+					#if ENABLE_TEXT_CLASS == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASS == 1
+						text_class: "module_normal";
+					#endif
+					#endif
+				}
+			}
+		}
+
+		part {      
+			name: "label.clip";
+			type: RECT;                 
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				color: 255 255 255 0;
+
+				rel1 { 
+					to: "e.text.label"; 
+					relative: 0.0 0.0; 
+					offset: -12 -4; 
+				}
+
+				rel2 { 
+					to: "e.text.label"; 
+					relative: 1.0 1.0; 
+					offset: 11 -1; 
+				}
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
+		}
 	}
 
 	programs {
@@ -102,11 +323,127 @@ group {
 	max: 128 128;    
 
 	parts {
-		#include "itask-icon.edc"
+		part {
+			name: "icon_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 0;
+			}
+
+			description {
+				state: "faded" 0.0;
+				inherit: "default" 0.0;
+				color: 229 229 229 229;
+			} 
+
+			description {
+				state: "iconic" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 129;
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			} 
+
+			description {
+				state: "urgent" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+
+				rel1 { 
+					relative: -0.5 -0.5; 
+				}
+		
+				rel2 { 
+					relative: 1.5 1.5; 
+				}
+			} 
+		} 
+
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+			mouse_events: 0;
+			clip_to: "icon_clip";
+
+			description {
+				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+			}
+
+			description {
+				state: "active" 0.0;
+				inherit: "default" 0.0;
+			}
+
+			description {          
+				state: "focused" 0.0;
+				inherit: "default" 0.0;
+				color: 190 190 190 190; /* ? */
+			}
+		}
 	} 
  
 	programs {
-		#include "itask-icon_programs.edc"
+		program {
+			name: "go_show";
+			signal: "e,state,item_show";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.5;
+			target: "icon_clip";
+		}
+
+		program {
+			name: "go_hide";
+			signal: "e,state,item_hide";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "icon_clip";
+		}
+
+		program {
+			name: "go_iconic";
+			signal: "e,state,item_iconify";
+			source: "e";
+			action: STATE_SET "iconic" 0.0;
+			transition: LINEAR 0.25;
+			target: "icon_clip";
+		}
+
+		program {
+			name: "go_uniconic";
+			signal: "e,state,item_uniconify";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.5;
+			target: "icon_clip";
+		}
+
+		program {
+			name: "go_urgent";
+			signal: "e,state,item_urgent";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			transition: LINEAR 1.0;
+			target: "icon_clip";
+			after: "go_urgent2";
+		}
+
+		program {
+			name: "go_urgent2";
+			action: STATE_SET "urgent" 0.0;
+			transition: LINEAR 1.0;
+			target: "icon_clip";
+			after: "go_urgent";
+		}
         }
 }
 
@@ -114,11 +451,139 @@ group {
 	name: "e/modules/itask-ng/icon_overlay";
 		
 	parts {
-		#include "itask-icon_overlay.edc"
+		part {
+			name: "background";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 0;
+				visible: 0;
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+				visible: 1;
+			}
+
+			description {
+				state: "hidden" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+				rel1.relative: -0.5 -0.5;
+				rel2.relative: 1.5 1.5;
+			}
+
+			description {
+				state: "huge" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+				rel1.relative: -1.0 -1.0;
+				rel2.relative: 2.0 2.0;
+			}
+		}
+
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+			clip_to: "background";
+
+			description {
+				state: "default" 0.0;
+				rel1.to: "background";
+				rel2.to: "background";
+			}
+		}
 	}
 
 	programs {
-		#include "itask-icon_overlay_programs.edc"
+		program {
+			name: "go_active2_in";
+			signal: "";
+			source: "";
+			action: STATE_SET "hidden" 0.0;
+			transition: LINEAR 0.3;
+			target: "background";
+			after:  "go_active3_in";
+		}
+
+		program {
+			name: "go_active3_in";
+			signal: "";
+			source: "";
+			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.3;
+			target: "background";
+			after: "go_active";
+		}
+
+		program {
+			name: "go_active";
+			signal: "e,state,item_focused";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			target: "background";
+			after: "go_active2";
+		}
+
+		program {
+			name: "go_active2";
+			signal: "";
+			source: "";
+			action: STATE_SET "hidden" 0.0;
+			transition: LINEAR 0.5;
+			target: "background";
+			after: "go_active";
+		}
+
+		program {
+			name: "go_passive";
+			signal: "e,state,item_unfocused";
+			source: "e";
+			action: ACTION_STOP;
+			target: "go_active";
+			target: "go_active2";
+			after: "go_passive2";
+		}
+
+		program {
+			name: "go_passive2";
+			signal: "";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			target: "background";
+		}
+
+		program {
+			name: "go_big";
+			action: STATE_SET "visible" 0.0;
+			target: "background";
+			after: "go_big2";
+		}
+
+		program {
+			name: "go_big2";
+			action: STATE_SET "huge" 0.0;
+			transition: LINEAR 0.5;
+			target: "background";
+		}
+
+		program {
+			name: "exec_start";
+			signal: "e,action,start";
+			source: "e";
+			action: ACTION_STOP;
+			target: "go_active";
+			target: "go_active2";
+			target: "go_passive";
+			target: "go_passive2";
+			target: "go_big";
+			target: "go_big2";
+			after: "go_big";
+		}
 	}
 }
 

@@ -3,6 +3,10 @@ Dialog app border: wrong pixels bb border
 efm_window: drop_in/drop_between(s)
 radio.edc:516 (e.text.label)
 
+== Redo ==
+content_menu: icon/shift (REDO "menu.edc" entirely)
+pager.edc: popup
+
 == Improve ==
 Make use of: scale: 1;
 -URGENT "border" signals
@@ -23,17 +27,19 @@ Make use of: scale: 1;
 	(menu_bg.png)
 	(resize-dialog_bg.png)
 	(shelf base non-rgba images)	
--check widget "arrow" fix pixels
--improve pointer group:
-	signal: "e,action,mouse,wheel";
-	signal: "e,action,mouse,move";
 -configure.edc: width seems to be hardcoded, bad!
--dialog.edc bg should be different for diff. type of border/dialogs: complain!
+-pointer.edc: "e,action,mouse,down";
+-ilist: [header] colors
 
 == Global ==
 *Complete start.edc
 *Complete cpufreq.edc
 *Add color_classes
+
+== Ideas ==
+-improve pointer group:
+	signal: "e,action,mouse,wheel";
+	signal: "e,action,mouse,move";
 
 == Compile ==
 

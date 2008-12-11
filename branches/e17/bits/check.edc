@@ -157,7 +157,7 @@ group {
 				rel1 { 
 					to: "checked";
 					relative: 0.0 0.0; 
-					offset: 1 1; /* move 1px down one to the left*/
+					offset: 1 -1; /* move 1px down one to the left*/
 				}
 
 				rel2 { 

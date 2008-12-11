@@ -18,20 +18,52 @@ image: "radio_bt2.png" COMP; /* toggle on */
 image: "radio_bt3.png" COMP; /* focus */
 image: "radio_bt4.png" COMP; /* shadow */
 
-//~ desklock
-image: "desklock_dialog_bg.png" COMP;
-image: "dot.png" COMP;
+//~ button
+image: "button_im0.png" COMP; /* base */
+image: "button_im1.png" COMP; /* enabled */
+image: "button_im2.png" COMP; /* disabled */
+image: "button_im3.png" COMP; /* focus */
+image: "button_im4.png" COMP; /* top shadow */
+image: "button_im5.png" COMP; /* shadow overlay */
 
 //~ frame
-image: "frame_outline.png" COMP;
+image: "frame_im0.png" COMP; /* frame border */
 
-//~ button
-image: "button_base.png" COMP;
-image: "button_focus.png" COMP;
-image: "button.png" COMP;
-image: "button_shadow.png" COMP;
-image: "button_disabled.png" COMP;
-image: "button_shadow_overlay.png" COMP;
+//~ menu
+image: "menu_im0.png" COMP; /* background */
+image: "menu_im1.png" COMP; /* separator */
+image: "menu_im2.png" COMP; /* hilite */
+image: "menu_im3.png" COMP; /* inactive arrow */
+image: "menu_im4.png" COMP; /* active arrow */
+
+//~ dialog
+image: "dialog_im0.png" COMP; /* background */
+image: "dialog_im1.png" COMP; /* separator */
+
+//~ configure
+image: "configure_im0.png" COMP; /* background */
+
+//~ entry
+image: "entry_im0.png" COMP; /* base */
+image: "entry_im1.png" COMP; /* focus */
+
+//~ deskpreview
+image: "deskpreview_im0.png" COMP; /* background */
+
+//~ toolbar
+image: "efmtbar_im0.png" COMP; /* bar image top */
+image: "efmtbar_im1.png" COMP; /* bar image bottom */
+
+//~ resize
+
+//~ decoration
+image: "decoration_im0.png" COMP; /* regular dot */
+image: "decoration_im1.png" COMP; /* wide dot */
+
+//~ exebuf
+
+//~ desklock
+image: "desklock_dialog_bg.png" COMP;
 
 //~ slider
 image: "slider_h.png" COMP;
@@ -109,16 +141,6 @@ image: "tr-shaped.png" COMP;
 //~ ibar
 image: "ibar_drop.png" COMP;
 
-//~ resize
-image: "resize-dialog_bg.png" COMP;
-
-//~ menu
-image: "menu_arrow0.png" COMP;
-image: "menu_arrow1.png" COMP;
-image: "menu_bg.png" COMP;
-image: "menu_separator.png" COMP;
-image: "menu_select.png" COMP;
-
 //~ efm nav
 image: "nav_back-base.png" COMP;
 image: "nav_back-button.png" COMP;
@@ -147,14 +169,6 @@ image: "button-up.png" COMP;
 image: "button-down.png" COMP;
 image: "button-forward.png" COMP;
 
-//~ entry
-image: "entry.png" COMP;
-image: "entry_focus.png" COMP;
-
-//~ dialog
-image: "separator.png" COMP;
-image: "dialog_bg_default.png" COMP;
-image: "dialog_bg_conf.png" COMP;
 
 //~ preview
 image: "preview_bg_over.png" COMP;
@@ -210,7 +224,6 @@ image: "itask-bg.png" COMP;
 image: "itask-bg_top.png" COMP;
 image: "itask-bg_left.png" COMP;
 image: "itask-bg_right.png" COMP;
-
 
 //~ error
 image: "error-dialog_bg.png" COMP;
@@ -412,10 +425,6 @@ image: "seconds.cursor.58.png" COMP;
 image: "seconds.cursor.59.png" COMP;
 image: "clock_bg.png" COMP;
 
-//~ toolbar
-image: "efm_toolbar.png" COMP;
-image: "efm_toolbar2.png" COMP;
-
 //~ winlist
 image: "winlist_icon_window.png" COMP;
 image: "winlist_icon_window_shaded.png" COMP;
@@ -441,12 +450,6 @@ image: "e17_logo_small_p26.png" COMP;
 image: "e17_logo_small_p27.png" COMP;
 image: "e17_logo_small_p28.png" COMP;
 image: "e17_logo_small_p29.png" COMP;
-
-//~ exebuf
-image: "dot-wide.png" COMP;
-
-//~ deskpreview
-image: "deskpreview_bg.png" COMP;
 
 //~ spectrum
 image: "cs_box.png" COMP;
