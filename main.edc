@@ -9,6 +9,7 @@
 #include "macros/list.edc"
 #include "macros/radio.edc"
 #include "macros/sys.edc"
+#include "macros/win_geometry.edc"
 
 #define VERSION_STRING 0.7.5
 

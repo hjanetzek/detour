@@ -8,13 +8,12 @@ style {
 	#else
 	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
-	tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
-	tag: "title" "+ font_size=11 font=DejaVuSans-Bold text_class=tb_big";
+		tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
+		tag: "title" "+ font_size=11 font=DejaVuSans-Bold text_class=tb_big";
 	#endif
 	#endif
-      
-	tag:  "br" "\n"; 
-	tag:  "/title" "- \n \n";
+		tag:  "br" "\n"; 
+		tag:  "/title" "- \n \n";
 }
 
 style {
@@ -26,13 +25,12 @@ style {
 	#else
 	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans font_size=11 color=#070707 align=center wrap=word text_class=tb_plain";
-	tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
-	tag: "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
+		tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
+		tag: "title" "+ font_size=11 font=DejaVuSans text_class=tb_big";
 	#endif
 	#endif
-      
-	tag:  "br" "\n"; 
-	tag:  "/title" "- \n \n";
+		tag:  "br" "\n"; 
+		tag:  "/title" "- \n \n";
 }
 
 style {
@@ -48,11 +46,10 @@ style {
 	#else
 	#if ENABLE_TEXT_CLASS == 1
 		base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word text_class=tb_plain";
-	tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d text_class=tb_light"; 
+		tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d text_class=tb_light"; 
 	#endif
 	#endif
-
-	tag:  "br" "\n";
+		tag:  "br" "\n";
 }
 
 style {
@@ -73,14 +70,13 @@ style {
 style {
 	name: "sys_style";
 	#if ENABLE_TEXT_CLASS == 0
-	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word";
+		base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word";
 	#else
 	#if ENABLE_TEXT_CLASS == 1
-	base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word text_class=tb_large";
+		base: "font=DejaVuSans-Bold font_size=14 align=center color=#070707 style=shadow shadow_color=#aaa8a9 wrap=word text_class=tb_large";
 	#endif
 	#endif
-
-	tag: "br" "\n";
+		tag: "br" "\n";
 
 	#if ENABLE_TEXT_CLASS == 0
 		tag: "hilight" "+ font=DejaVuSans-Bold color=#070707";
@@ -115,7 +111,7 @@ style {
 
 style {
 	name: "notification_style";
-	base: "font=Edje-Vera font_size=11 align=left color=#3c3c3c wrap=word text_class=module_normal";
+	base: "font=DejaVuSans font_size=11 align=left color=#3c3c3c wrap=word text_class=module_normal";
 	tag: "subject"  "+ text_class=module_large font_size=16"; 
 	tag: "/subject" "- text_class=module_large font_size=16"; 
 	tag: "body"  "+ text_class=module_normal font_size=13"; 

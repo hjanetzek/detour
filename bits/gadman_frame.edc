@@ -10,7 +10,7 @@ part {
 		color: 255 255 255 128;
 
 		image {
-			normal: "entry.png";
+			normal: "entry_im0.png";
 			border: 6 6 6 6;
 		}
 	}

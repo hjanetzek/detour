@@ -3,11 +3,74 @@ group {
 	name: "e/toolbar/default/base";
 
 	parts {
-		#include "toolbar_main.edc"
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 0 37;
+				max: 9999 37;
+				rel1.offset: 0 0;
+				rel2.offset: -1 1;
+
+				image {
+					normal: "efmtbar_im0.png";
+					border: 2 2 2 6;
+				}
+			}
+
+			description {
+				state: "bottom" 0.0;
+				inherit: "default" 0.0;
+				rel1.offset: 0 -4;
+				rel2.offset: -1 -1;
+
+				image {
+					normal: "efmtbar_im1.png";
+					border: 2 2 6 2;
+				}
+			}
+		}
+
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+
+			description {
+				state: "default" 0.0;
+				rel1.offset: 2 2;
+				rel2.offset: -3 -3;
+			}
+
+			description {
+				state: "bottom" 0.0;
+				inherit: "default" 0.0;
+				rel1.offset: 2 2;
+				rel2.offset: -3 0;
+			}
+		}
 	}
 
 	programs {
-		#include "toolbar_programs.edc"
+		program {
+			name: "orient1";
+			signal: "e,state,orientation,top";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "base";
+			target: "e.swallow.content";
+		}
+
+		program {
+			name: "orient2";
+			signal: "e,state,orientation,bottom";
+			source: "e";
+			action: STATE_SET "bottom" 0.0;
+			target: "base";
+			target: "e.swallow.content";
+		}
 	}
 }
 

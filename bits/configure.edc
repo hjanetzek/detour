@@ -17,7 +17,7 @@ group {
 				//fixed: 1 1;
 
 				image {
-					normal: "dialog_bg_conf.png";
+					normal: "configure_im0.png";
 					border: 2 2 3 3;
 				}
 			}
