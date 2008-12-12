@@ -22,7 +22,7 @@ part {
 		}
 
 		image {
-			normal: "typebuf_clip.png";
+			normal: "ibar_im0.png";
 			border: 5 5 5 5;
 		}
 	}
@@ -40,6 +40,7 @@ part {
 	effect: NONE;
 	mouse_events: 0;
 	clip_to: "typebuf_clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -135,7 +136,7 @@ part {
 		}
 
 		image {
-			normal: "typebuf_clip.png";
+			normal: "ibar_im0.png";
 			border: 5 5 5 5;
 		}
 	}
@@ -153,6 +154,7 @@ part {
 	effect: NONE;
 	mouse_events: 0;
 	clip_to: "busy_clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;

@@ -206,312 +206,312 @@ group {
 	}
 
 	parts {
-part {
-	name: "base";
-	type: RECT;
-	mouse_events: 0;
+		part {
+			name: "base";
+			type: RECT;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		color: 255 0 0 0;
-	}
-}
-
-part {
-	name: "background";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0; 
-		color: 255 255 255 0;
-		visible: 0;
-
-		rel1 { 
-			to: "base"; 
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 0;
+			}
 		}
 
-		rel2 { 
-			to: "base"; 
-		}
-	}
+		part {
+			name: "background";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0; 
+				color: 255 255 255 0;
+				visible: 0;
+
+				rel1 { 
+					to: "base"; 
+				}
+
+				rel2 { 
+					to: "base"; 
+				}
+			}
 	
-	description {
-		state: "visible" 0.0;
-		color: 255 255 255 255;
-		visible: 1;
+			description {
+				state: "visible" 0.0;
+				color: 255 255 255 255;
+				visible: 1;
 
-		rel1 { 
-			to: "base"; 
-		}
+				rel1 { 
+					to: "base"; 
+				}
 
-		rel2 { 
-			to: "base"; 
-		}
-	}
+				rel2 { 
+					to: "base"; 
+				}
+			}
 
-	description {
-		state: "hidden" 0.0;
-		color: 255 255 255 0;
-		visible: 1;
+			description {
+				state: "hidden" 0.0;
+				color: 255 255 255 0;
+				visible: 1;
 
-		rel1 { 
-			to: "base"; 
-			relative: -0.5 -0.5; 
-		}
+				rel1 { 
+					to: "base"; 
+					relative: -0.5 -0.5; 
+				}
 		
-		rel2 { 
-			to: "base"; 
-			relative: 1.5 1.5;
+				rel2 { 
+					to: "base"; 
+					relative: 1.5 1.5;
+				}
+			}
+
+			description {
+				state: "huge" 0.0;
+				color: 255 255 255 0;
+				visible: 1;
+
+				rel1 { 
+					to: "base"; 
+					relative: -2.0 -2.0; 
+				}
+
+				rel2 { 
+					to: "base"; 
+					relative: 3.0 3.0; 
+				}
+			}
 		}
-	}
 
-	description {
-		state: "huge" 0.0;
-		color: 255 255 255 0;
-		visible: 1;
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+			clip_to: "background";
 
-		rel1 { 
-			to: "base"; 
-			relative: -2.0 -2.0; 
-		}
-
-		rel2 { 
-			to: "base"; 
-			relative: 3.0 3.0; 
-		}
-	}
-}
-
-part {
-	name: "e.swallow.content";
-	type: SWALLOW;
-	clip_to: "background";
-
-	description {
-		state: "default" 0.0;
+			description {
+				state: "default" 0.0;
 		
-		rel1 { 
-			to: "background"; 
-		}
+				rel1 { 
+					to: "background"; 
+				}
 
-		rel2 { 
-			to: "background"; 
-		}
-	}
-}
-
-#if ENABLE_IBAR_LABEL_OVERLAY == 0
-#else
-#if ENABLE_IBAR_LABEL_OVERLAY == 1
-	part {      
-		name: "label";
-		type: IMAGE;  
-		clip_to: "label.clip";               
-		mouse_events: 0;
-
-		description {
-			state: "default" 0.0;
-			align: 0.5 0.5;
-			color: 0 0 0 128;
-			max: 999 21;
-
-			rel1 { 
-				to: "e.text.label"; 
-				relative: 0.0 0.0; 
-				offset: -8 -2; 
-			}
-
-			rel2 { 
-				to: "e.text.label"; 
-				relative: 1.0 1.0; 
-				offset: 4 -1; 
-			}
-
-			image {
-				normal: "typebuf_clip.png";
-				border: 5 5 5 5;
+				rel2 { 
+					to: "background"; 
+				}
 			}
 		}
-	}
-#endif
-#endif
 
-part {      
-	name: "e.text.label";
-	type: TEXT;
-	effect: SHADOW;
-	clip_to: "label.clip";                
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		align: 0.5 0.5;
 		#if ENABLE_IBAR_LABEL_OVERLAY == 0
-			color: 7 7 7 255;
-			color3: 170 168 169 128;
 		#else
 		#if ENABLE_IBAR_LABEL_OVERLAY == 1
-			color: 255 255 255 255;
-			color3: 0 0 0 0;
+			part {      
+				name: "label";
+				type: IMAGE;  
+				clip_to: "label.clip";               
+				mouse_events: 0;
+
+				description {
+					state: "default" 0.0;
+					align: 0.5 0.5;
+					color: 0 0 0 128;
+					max: 999 21;
+
+					rel1 { 
+						to: "e.text.label"; 
+						relative: 0.0 0.0; 
+						offset: -8 -2; 
+					}
+
+					rel2 { 
+						to: "e.text.label"; 
+						relative: 1.0 1.0; 
+						offset: 4 -1; 
+					}
+
+					image {
+						normal: "ibar_im0.png";
+						border: 5 5 5 5;
+					}
+				}
+			}
 		#endif
 		#endif
+
+		part {      
+			name: "e.text.label";
+			type: TEXT;
+			effect: SHADOW;
+			clip_to: "label.clip";                
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				#if ENABLE_IBAR_LABEL_OVERLAY == 0
+					color: 7 7 7 255;
+					color3: 170 168 169 128;
+				#else
+				#if ENABLE_IBAR_LABEL_OVERLAY == 1
+					color: 255 255 255 255;
+					color3: 0 0 0 0;
+				#endif
+				#endif
 		
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 0 2; 
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 0 2; 
+				}
+
+				rel2 { 
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				text {
+					text: "";
+					font: "Sans:style=Bold,DejaVuSans-Bold";
+					size: 11;
+					min: 1 1;
+					align: 0.5 0.5;
+					#if ENABLE_TEXT_CLASS == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASS == 1
+						text_class: "module_normal";
+					#endif
+					#endif
+				}
+			}
 		}
 
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
+		part {      
+			name: "label.clip";
+			type: RECT;                 
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				color: 255 255 255 0;
+
+				rel1 { 
+					to: "e.text.label"; 
+					relative: 0.0 0.0; 
+					offset: -12 0; 
+				}
+
+				rel2 { 
+					to: "e.text.label"; 
+					relative: 1.0 1.0; 
+					offset: 11 -1; 
+				}
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
 		}
-
-		text {
-			text: "";
-			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 11;
-			min: 1 1;
-			align: 0.5 0.5;
-			#if ENABLE_TEXT_CLASS == 0
-				text_class: "";
-			#else
-			#if ENABLE_TEXT_CLASS == 1
-				text_class: "module_normal";
-			#endif
-			#endif
-		}
-	}
-}
-
-part {      
-	name: "label.clip";
-	type: RECT;                 
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		align: 0.5 0.5;
-		color: 255 255 255 0;
-
-		rel1 { 
-			to: "e.text.label"; 
-			relative: 0.0 0.0; 
-			offset: -12 0; 
-		}
-
-		rel2 { 
-			to: "e.text.label"; 
-			relative: 1.0 1.0; 
-			offset: 11 -1; 
-		}
-	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
-}
 
 	}
 
 	programs {
-program {
-	name: "go_active";
-	signal: "e,state,focused";
-	source: "e";
-	action: STATE_SET "visible" 0.0;
-	target: "background";
-	after: "go_active2";
-}
+		program {
+			name: "go_active";
+			signal: "e,state,focused";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			target: "background";
+			after: "go_active2";
+		}
 
-program {
-	name: "go_active2";
-	signal: "";
-	source: "";
-	action: STATE_SET "hidden" 0.0;
-	transition: LINEAR 0.5;
-	target: "background";
-	after: "go_active";
-}
+		program {
+			name: "go_active2";
+			signal: "";
+			source: "";
+			action: STATE_SET "hidden" 0.0;
+			transition: LINEAR 0.5;
+			target: "background";
+			after: "go_active";
+		}
 
-program {
-	name: "go_passive";
-	signal: "e,state,unfocused";
-	source: "e";
-	action: ACTION_STOP;
-	target: "go_active";
-	target: "go_active2";
-	after: "go_passive2";
-}
+		program {
+			name: "go_passive";
+			signal: "e,state,unfocused";
+			source: "e";
+			action: ACTION_STOP;
+			target: "go_active";
+			target: "go_active2";
+			after: "go_passive2";
+		}
 
-program {
-	name: "go_passive2";
-	signal: "";
-	source: "";
-	action: STATE_SET "default" 0.0;
-	target: "background";
-}
+		program {
+			name: "go_passive2";
+			signal: "";
+			source: "";
+			action: STATE_SET "default" 0.0;
+			target: "background";
+		}
 
-program {
-	name: "go_big";
-	action: STATE_SET "visible" 0.0;
-	target: "background";
-	after: "go_big2";
-}
+		program {
+			name: "go_big";
+			action: STATE_SET "visible" 0.0;
+			target: "background";
+			after: "go_big2";
+		}
 
-program {
-	name: "go_big2";
-	action: STATE_SET "huge" 0.0;
-	transition: LINEAR 0.5;
-	target: "background";
-}
+		program {
+			name: "go_big2";
+			action: STATE_SET "huge" 0.0;
+			transition: LINEAR 0.5;
+			target: "background";
+		}
 
-program {
-	name: "tooltip_on";
-	signal: "e,action,show,label";
-	source: "e";
-	action: STATE_SET "visible" 0.0;
-	target: "label.clip";
-}
+		program {
+			name: "tooltip_on";
+			signal: "e,action,show,label";
+			source: "e";
+			action: STATE_SET "visible" 0.0;
+			target: "label.clip";
+		}
 
-program {
-	name: "tooltip_off";
-	signal: "e,action,hide,label";
-	source: "e";
-	action: STATE_SET "default" 0.0;
-	target: "label.clip";
-}
+		program {
+			name: "tooltip_off";
+			signal: "e,action,hide,label";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "label.clip";
+		}
 
-program {
-	name: "exec_start";
-	signal: "e,action,start";
-	source: "e";
-	action: ACTION_STOP;
-	target: "go_active";
-	target: "go_active2";
-	target: "go_passive";
-	target: "go_passive2";
-	target: "go_big";
-	target: "go_big2";
-	after: "go_big";
-}
+		program {
+			name: "exec_start";
+			signal: "e,action,start";
+			source: "e";
+			action: ACTION_STOP;
+			target: "go_active";
+			target: "go_active2";
+			target: "go_passive";
+			target: "go_passive2";
+			target: "go_big";
+			target: "go_big2";
+			after: "go_big";
+		}
 
-program {
-	name: "exec_exec";
-	signal: "e,action,exec";
-	source: "e";
-	after: "exec_start";
-}
+		program {
+			name: "exec_exec";
+			signal: "e,action,exec";
+			source: "e";
+			after: "exec_start";
+		}
 
-program {
-	name: "exec_stop";
-	signal: "e,action,stop";
-	source: "e";
-}
+		program {
+			name: "exec_stop";
+			signal: "e,action,stop";
+			source: "e";
+		}
 
-program {
+		program {
 			name: "set_passive";
 			signal: "e,state,unfocused";
 			source: "e";
@@ -609,48 +609,47 @@ group {
 	alias: "e/modules/ibox/drop";
 
 	parts {
-part {
-	name: "drop_clip";
-	type: RECT;
-	mouse_events: 0;
+		part {
+			name: "drop_clip";
+			type: RECT;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 64;
-	}
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 64;
+			}
 
-	description {
-		state: "visible" 0.0;
-		color: 255 255 255 255;
-	}
-}
-
-part {
-	name: "bg";
-	type: IMAGE;
-	mouse_events: 0;
-	clip_to: "drop_clip";
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to: "drop_clip"; 
-			relative: 0.0 0.0; 
+			description {
+				state: "visible" 0.0;
+				color: 255 255 255 255;
+			}
 		}
 
-		rel2 { 
-			to: "drop_clip"; 
-			relative: 1.0 1.0; 
-		}
+		part {
+			name: "bg";
+			type: IMAGE;
+			mouse_events: 0;
+			clip_to: "drop_clip";
 
-		image {
-			normal: "ibar_drop.png";
-			border: 12 12 12 12;
-		}
-	}
-}
+			description {
+				state: "default" 0.0;
 
+				rel1 { 
+					to: "drop_clip"; 
+					relative: 0.0 0.0; 
+				}
+
+				rel2 { 
+					to: "drop_clip"; 
+					relative: 1.0 1.0; 
+				}
+
+				image {
+					normal: "ibar_im1.png";
+					border: 12 12 12 12;
+				}
+			}
+		}
 	}
 
 	programs {
