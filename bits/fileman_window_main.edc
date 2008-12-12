@@ -6,7 +6,8 @@ part {
 
 	description {
 		state: "default" 0.0;
-		color: 243 243 243 255;
+		//color: 243 243 243 255;
+		color: 255 255 255 255;
 	}
 }
 
