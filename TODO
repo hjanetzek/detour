@@ -8,6 +8,7 @@ pager.edc: popup
 desklock.edc: new graphics completely
 
 == Improve ==
+ibar.edc: drop
 bits/icons.edc: e/icons/enlightenment/e 
 Make use of: scale: 1;
 -URGENT "border" signals
