@@ -22,7 +22,7 @@ group {
 				}
 
 				image {
-					normal: "itask-bg.png";
+					normal: "itask_im0.png";
 					border: 18 18 20 0;
 				}		
 			}
@@ -41,7 +41,7 @@ group {
 				}
 
 				image {
-					normal: "itask-bg_top.png";
+					normal: "itask_im1.png";
 					border: 18 18 0 20;
 				}
 			}
@@ -60,7 +60,7 @@ group {
 				}
 
 				image {
-					normal: "itask-bg_left.png";
+					normal: "itask_im2.png";
 					border: 0 20 32 18;
 				}
 			}
@@ -79,7 +79,7 @@ group {
 				}
 
 				image {
-					normal: "itask-bg_right.png";
+					normal: "itask_im3.png";
 					border: 20 0 32 18;
 				}
 
@@ -212,7 +212,7 @@ group {
 				}
 
 				image {
-					normal: "typebuf_clip.png";
+					normal: "ibar_im0.png";
 					border: 5 5 5 5;
 				}
 			}
@@ -224,6 +224,7 @@ group {
 			effect: SHADOW;                
 			mouse_events: 0;
 			clip_to: "label.clip";
+			scale: 1;
 
 			description {
 				state: "default" 0.0;
