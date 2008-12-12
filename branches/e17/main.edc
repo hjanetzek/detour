@@ -52,9 +52,6 @@
 //Display main menu title
 #define VISIBLE_MENU_TITLE 0
 
-//Set the wallpaper style
-#define WALLPAPER 0
-
 fonts {
 	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
 	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
