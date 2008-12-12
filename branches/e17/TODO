@@ -9,6 +9,7 @@ desklock.edc: new graphics completely
 
 == Improve ==
 ibar.edc: drop
+tclock.edc: popup -- HUD like??
 bits/icons.edc: e/icons/enlightenment/e 
 Make use of: scale: 1;
 -URGENT "border" signals

@@ -1,16 +1,31 @@
 
 group  {
 	name: "e/desklock/background";
+	max: 1920 1200;
 
 	parts { 
-		part { 
-			name: "background_image";
+		part {
+			name: "background";
 			type: RECT;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
-				color: 139 157 180 255;
+				color: 0 0 0 255;
+			}
+		}
+
+		part {
+			name: "wallpaper";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+
+				image {
+					normal: "wallpaper-221.png";
+				}
 			}
 		}
 
@@ -29,33 +44,33 @@ group {
 	name: "e/desklock/login_box";
 
 	parts {
-part { 
-	name: "base";
-	type: IMAGE;
-	mouse_events: 0;
+		part { 
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
 
-	description { 
-		state: "default" 0.0; 
+			description { 
+				state: "default" 0.0; 
 
-		rel1 { 
-			to: "icon"; 
-			relative: 0.0 0.0; 
-			offset: -14 -13; 
+				rel1 { 
+					to: "icon"; 
+					relative: 0.0 0.0; 
+					offset: -14 -13; 
+				}
+
+				rel2 { 
+					to_x: "dot"; 
+					to_y: "icon"; 
+					relative: 1.0 1.0; 
+					offset: 16 10; 
+				}
+
+				image {
+					normal: "desklock_dialog_bg.png"; 
+					border: 17 17 17 17;
+				}
+			}
 		}
-
-		rel2 { 
-			to_x: "dot"; 
-			to_y: "icon"; 
-			relative: 1.0 1.0; 
-			offset: 16 10; 
-		}
-
-		image {
-			normal: "desklock_dialog_bg.png"; 
-			border: 17 17 17 17;
-		}
-	}
-}
 
 part  {
 	name: "icon";
