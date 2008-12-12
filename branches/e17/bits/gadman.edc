@@ -3,11 +3,515 @@ group {
 	name: "e/gadman/control";
 
 	parts {
-		#include "gadman_control.edc"
+		part {
+			name: "hclip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
+				visible: 1;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -80 -80;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 79 79;
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				visible : 0;
+			}
+		}
+
+		part {
+			name: "vclip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
+				visible: 1;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -80 -80;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 79 79;
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				visible : 0;
+			}
+		}
+
+		part {
+			name: "overlay_window";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 221;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -2 -2;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 1 2;
+				}
+
+				image {
+					normal: "gadman_im0.png";
+					border: 16 16 16 16;
+				}
+			}
+		}
+
+		part {
+			name: "overlay";
+			type: IMAGE;
+			mouse_events: 1;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 221;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -2 -2;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 1 2;
+				}
+
+				image {
+					normal: "gadman_im1.png";
+					border: 12 12 12 12;
+				}
+			}
+		}
+
+		part {
+			name: "indicator";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				max: 27 27;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+				color: 255 255 255 128;
+
+				image {
+					normal: "gadman_im2.png";
+				}
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
+		}
+  
+		part {
+			name: "left_arrow"; 
+			type: IMAGE;
+			mouse_events: 1;
+			clip_to: "hclip";
+	
+			description {
+				state: "default" 0.0;
+				min: 22 22;
+				max: 22 22;
+				fixed: 1 1;
+				color: 255 255 255 255;
+				align: 1.0 0.5;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: -9 0;
+				}
+
+				rel2 {
+					relative: 0.0 1.0;
+					offset: -9 -1;
+				}
+
+				image {
+					normal: "gadman_im5.png";
+				}
+			}
+
+			description {
+				state: "down" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+		}
+
+		part {
+			name: "right_arrow"; 
+			type: IMAGE;
+			mouse_events: 1;
+			clip_to: "hclip";
+	
+			description {
+				state: "default" 0.0;
+				min: 22 22;
+				max: 22 22;
+				fixed: 1 1;
+				color: 255 255 255 255;
+				align: 0.0 0.5;
+
+				rel1 {
+					relative: 1.0 0.0;
+					offset: 8 0;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 0 -1;
+				}
+
+				image {
+					normal: "gadman_im6.png";
+				}
+			}
+
+			description {
+				state: "down" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+		}
+
+		part {
+			name: "top_arrow"; 
+			type: IMAGE;
+			mouse_events: 1;
+			clip_to: "vclip";
+
+			description {
+				state: "default" 0.0;
+				min: 22 22;
+				max: 22 22;
+				fixed: 1 1;
+				color: 255 255 255 255;
+				align: 0.5 1.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+					offset: 0 -9;
+				}
+
+				rel2 {
+					relative: 1.0  0.0;
+					offset: -1 -9;
+				}
+
+				image {
+					normal: "gadman_im3.png";
+				}
+			}
+
+			description {
+				state: "down" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+		}
+
+		part {
+			name: "bottom_arrow"; 
+			type: IMAGE;
+			mouse_events: 1;
+			clip_to: "vclip";
+
+			description {
+				state: "default" 0.0;
+				min: 22 22;
+				max: 22 22;
+				fixed: 1 1;
+				color: 255 255 255 255;
+				align: 0.5 0.0;
+
+				rel1 {
+					relative: 0.0 1.0;
+					offset: 0 8;
+				}
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 8;
+				}
+
+				image {
+					normal: "gadman_im4.png";
+				}
+			}
+
+			description {
+				state: "down" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+		}
+
 	}
 
 	programs {
-		#include "gadman_control_programs.edc"
+		program {
+			name: "hsize_on";
+			signal: "e,state,hsize,on";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "hclip";
+		}
+
+		program {
+			name: "hsize_off";
+			signal: "e,state,hsize,off";
+			source: "e";
+			action: STATE_SET "disabled" 0.0;
+			target: "hclip";
+		}
+
+		program {
+			name: "vsize_on";
+			signal: "e,state,vsize,on";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "vclip";
+		}
+
+		program {
+			name: "vsize_off";
+			signal: "e,state,vsize,off";
+			source: "e";
+			action: STATE_SET "disabled" 0.0;
+			target: "vclip";
+		}
+
+		program {
+			name: "move_on";
+			signal: "e,state,move,on";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "indicator";
+		}
+
+		program {
+			name: "move_off";
+			signal: "e,state,move,off";
+			source: "e";
+			action: STATE_SET "disabled" 0.0;
+			target: "indicator";
+		}
+
+/*      
+		program {
+			name: "api_active";
+			signal: "e,state,focused";
+			source: "e";
+		}
+
+		program {
+			name: "api_inactive";
+			signal: "e,state,unfocused";
+			source: "e";
+		}
+*/    
+
+		program {
+			name: "move_down";
+			signal: "mouse,down,1";
+			source: "overlay";
+			action: SIGNAL_EMIT "e,action,move,start" "";
+		}
+
+		program {
+			name: "move_up";
+			signal: "mouse,up,1";
+			source: "overlay";
+			action: SIGNAL_EMIT "e,action,move,stop" "";
+		}
+
+		program {
+			name: "gadman_move";
+			signal: "mouse,move";
+			source: "overlay";
+			action: SIGNAL_EMIT "e,action,move,go" "";
+		}
+     
+		program {
+			name: "left_arrow_down";
+			signal: "mouse,down,1";
+			source: "left_arrow";
+			action: STATE_SET "down" 0.0;
+			target: "left_arrow";
+		}
+
+		program {
+			name: "left_arrow_up";
+			signal: "mouse,up,1";
+			source: "left_arrow";
+			action: STATE_SET "default" 0.0;
+			target: "left_arrow";
+		}
+
+		program {
+			name: "left_arrow_resize_start";
+			signal: "mouse,down,1";
+			source: "left_arrow";
+			action: SIGNAL_EMIT "e,action,resize,left,start" "";
+		}
+
+		program {
+			name: "left_arrow_resize_stop";
+			signal: "mouse,up,1";
+			source: "left_arrow";
+			action: SIGNAL_EMIT "e,action,resize,left,stop" "";
+		}
+
+		program {
+			name: "left_arrow_move";
+			signal: "mouse,move";
+			source: "left_arrow";
+			action: SIGNAL_EMIT "e,action,resize,left,go" "";
+		}
+
+		program {
+			name: "right_arrow_down";
+			signal: "mouse,down,1";
+			source: "right_arrow";
+			action: STATE_SET "down" 0.0;
+			target: "right_arrow";
+		}
+
+		program {
+			name: "right_arrow_up";
+			signal: "mouse,up,1";
+			source: "right_arrow";
+			action: STATE_SET "default" 0.0;
+			target: "right_arrow";
+		}
+
+		program {
+			name: "right_arrow_resize_start";
+			signal: "mouse,down,1";
+			source: "right_arrow";
+			action: SIGNAL_EMIT "e,action,resize,right,start" "";
+		}
+
+		program {
+			name: "right_arrow_resize_stop";
+			signal: "mouse,up,1";
+			source: "right_arrow";
+			action: SIGNAL_EMIT "e,action,resize,right,stop" "";
+		}
+
+		program {
+			name: "right_arrow_move";
+			signal: "mouse,move";
+			source: "right_arrow";
+			action: SIGNAL_EMIT "e,action,resize,right,go" "";
+		}
+   
+		program {
+			 name: "top_arrow_down";
+			 signal: "mouse,down,1";
+			 source: "top_arrow";
+			 action: STATE_SET "down" 0.0;
+			 target: "top_arrow";
+		}
+
+		program {
+			name: "top_arrow_up";
+			signal: "mouse,up,1";
+			source: "top_arrow";
+			action: STATE_SET "default" 0.0;
+			target: "top_arrow";
+		}
+
+		program {
+			name: "top_arrow_resize_start";
+			signal: "mouse,down,1";
+			source: "top_arrow";
+			action: SIGNAL_EMIT "e,action,resize,up,start" "";
+		}
+
+		program {
+			name: "top_arrow_resize_stop";
+			signal: "mouse,up,1";
+			source: "top_arrow";
+			action: SIGNAL_EMIT "e,action,resize,up,stop" "";
+		}
+
+		program {
+			name: "top_arrow_move";
+			signal: "mouse,move";
+			source: "top_arrow";
+			action: SIGNAL_EMIT "e,action,resize,up,go" "";
+		}
+
+		program {
+			name: "bottom_arrow_down";
+			signal: "mouse,down,1";
+			source: "bottom_arrow";
+			action: STATE_SET "down" 0.0;
+			target: "bottom_arrow";
+		}
+
+		program {
+			name: "bottom_arrow_up";
+			signal: "mouse,up,1";
+			source: "bottom_arrow";
+			action: STATE_SET "default" 0.0;
+			target: "bottom_arrow";
+		}
+
+		program {
+			name: "bottom_arrow_resize_start";
+			signal: "mouse,down,1";
+			source: "bottom_arrow";
+			action: SIGNAL_EMIT "e,action,resize,down,start" "";
+		}
+
+		program {
+			name: "bottom_arrow_resize_stop";
+			signal: "mouse,up,1";
+			source: "bottom_arrow";
+			action: SIGNAL_EMIT "e,action,resize,down,stop" "";
+		}
+
+		program {
+			name: "bottom_arrow_move";
+			signal: "mouse,move";
+			source: "bottom_arrow";
+			action: SIGNAL_EMIT "e,action,resize,down,go" "";
+		}
  	}
 }
 
@@ -15,8 +519,46 @@ group {
 	name: "e/gadman/popup";
 
 	parts {
-		//~ this shit is not edje friendly!!
-        	#include "gadman_popup.edc"
+		part {
+			name: "border";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 104 108 111 255;
+			}
+		}
+
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				rel1.offset: 1 1;
+				rel2.offset: -2 -2;
+
+				image {
+					normal: "menu_im0.png";
+					border: 2 2 2 2;
+				}
+			}
+		}
+
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+
+				rel1.offset: 0 0;
+				rel2.offset: -1 -1;
+			} 
+		}
 	}
 }
 
@@ -142,11 +684,144 @@ group {
 	name: "e/gadman/frame";
 
 	parts {
-		#include "gadman_frame.edc"
+		part {
+			name: "background";
+			type: IMAGE;
+			mouse_events: 1;
+			clip_to: "bg_clip";
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 128;
+
+				image {
+					normal: "entry_im0.png";
+					border: 6 6 6 6;
+				}
+			}
+
+			description {
+				state: "hidden" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 0;
+			}
+		}
+
+		part{
+			name: "bg_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
+			}
+
+			description {
+				state: "plain" 0.0;
+				inherit: "default" 0.0;
+
+				rel1 {
+					relative: 0.0 0.0;
+				}
+
+				rel2 {
+					relative: 0.0 0.0;
+				}
+			}
+		}
+
+		part {
+			name: "items_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
+			}
+
+			description {
+				state: "hidden" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 0;
+			}
+		}
+
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+			clip_to: "items_clip";
+
+			description {
+				state: "default" 0.0;
+			}
+
+			description {
+				state: "hidden" 0.0;
+				color: 255 255 255 0;
+			}
+		}
 	}
 
 	programs {
-		#include "gadman_frame_programs.edc"
+		program {
+			name: "show";
+			signal: "e,state,visibility,show";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			transition: ACCELERATE 0.25;
+			target: "items_clip";
+			target: "background";
+			target: "e.swallow.content";
+		}
+
+		program {
+			name: "show_now";
+			signal: "e,state,visibility,show,now";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			transition: ACCELERATE 0.25;
+			target: "items_clip";
+			target: "background";
+			target: "e.swallow.content";
+		}
+
+		program {
+			name: "hide";
+			signal: "e,state,visibility,hide";
+			source: "e";
+			action: STATE_SET "hidden" 0.0;
+			target: "items_clip";
+			target: "background";
+			target: "e.swallow.content";
+		}
+
+		program {
+			name: "hide_now";
+			signal: "e,state,visibility,hide,now";
+			source: "e";
+			action: STATE_SET "hidden" 0.0;
+			target: "items_clip";
+			target: "background";
+			target: "e.swallow.content";
+		}
+
+		program {
+			name: "inset";
+			signal: "e,state,visibility,inset";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "bg_clip";
+		}
+
+		program {
+			name: "plain";
+			signal: "e,state,visibility,plain";
+			source: "e";
+			action: STATE_SET "plain" 0.0;
+			target: "bg_clip";
+		}
 	}
 }
 

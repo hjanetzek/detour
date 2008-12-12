@@ -77,7 +77,26 @@ image: "window-border_bt2.png" COMP; /* minimize */
 image: "window-border_bt3.png" COMP; /* maximize */
 image: "window-border_bt4.png" COMP; /* close */
 
-//~ window border menu (details(
+//~ ibar
+image: "ibar_im0.png" COMP; /* label */
+image: "ibar_im1.png" COMP; /* drop */
+
+//~ itask
+image: "itask_im0.png" COMP; /* bottom orientation */
+image: "itask_im1.png" COMP; /* top orientation */
+image: "itask_im2.png" COMP; /* left orientation */
+image: "itask_im3.png" COMP; /* right orientation */
+
+//~ gadman
+image: "gadman_im0.png" COMP; /* background */
+image: "gadman_im1.png" COMP; /* border */
+image: "gadman_im2.png" COMP; /* indicator */
+image: "gadman_im3.png" COMP; /* top arrow */
+image: "gadman_im4.png" COMP; /* bottom arrow */
+image: "gadman_im5.png" COMP; /* left arrow */
+image: "gadman_im6.png" COMP; /* right arrow */
+
+//~ window border menu (details)
 image: "button_detail_close.png" COMP;
 image: "button_detail_maximize.png" COMP;
 image: "button_detail_minimize.png" COMP;
@@ -172,9 +191,6 @@ image: "br-shaped.png" COMP;
 image: "tl-shaped.png" COMP;
 image: "tr-shaped.png" COMP;
 
-//~ ibar
-image: "ibar_drop.png" COMP;
-
 //~ efm nav
 image: "nav_back-base.png" COMP;
 image: "nav_back-button.png" COMP;
@@ -247,12 +263,6 @@ image: "sf_br1_over.png" COMP;
 image: "bg.png" COMP;
 image: "pattern-10036.png" COMP;
 image: "wallpaper-221.png" COMP;
-
-//~ itask
-image: "itask-bg.png" COMP;
-image: "itask-bg_top.png" COMP;
-image: "itask-bg_left.png" COMP;
-image: "itask-bg_right.png" COMP;
 
 //~ error
 image: "error-dialog_bg.png" COMP;
@@ -518,20 +528,10 @@ image: "busy.cursor.00.png" COMP;
 image: "busy.cursor.01.png" COMP;
 image: "busy.cursor.02.png" COMP;
 image: "busy.cursor.03.png" COMP;
-image: "typebuf_clip.png" COMP;
 image: "fileman_win_drop.png" COMP;
 image: "icon_select.png" COMP;
 image: "efmws.png" COMP;
 image: "efmws2.png" COMP;
-
-//~ gadman
-image: "gadman_hl1.png" COMP;
-image: "gadman_hr1.png" COMP;
-image: "gadman_vt1.png" COMP;
-image: "gadman_vb1.png" COMP;
-image: "gadman_indicator.png" COMP;
-image: "gadman_control_window.png" COMP;
-image: "gadman_control_border.png" COMP;
 
 //~ init
 image: "splash.png" COMP;
