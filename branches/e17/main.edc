@@ -85,8 +85,7 @@ data {
 collections {
 	#include "bits/background.edc" /* background group */
 	#include "bits/border.edc" /* border group */
-	#include "bits/ibar.edc" /* ibar group */
-	#include "bits/ibox.edc" /* ibox group, shares code with ibar group */
+	#include "bits/ibar.edc" /* ibar & ibox group */
 	#include "bits/fileman.edc"
 	#if TANGO_ICONS == 0
 	#else
