@@ -61,6 +61,7 @@ image: "decoration_im0.png" COMP; /* regular dot */
 image: "decoration_im1.png" COMP; /* wide dot */
 
 //~ exebuf
+image: "exebuf_im0.png" COMP; /* hilite */
 
 //~ fill and stretch options (screen)
 image: "wallscreen_im0.png" COMP; /* gradient box */
