@@ -3,61 +3,60 @@ group {
 	name: "e/widgets/winlist/main";
 
 	parts {
+		part {
+			name: "dialog_bg_border";
+			type: RECT;
+			mouse_events: 0;
 
-part {
-	name: "dialog_bg_border";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		color: 104 108 111 255;
-	}
-}
-
-part {
-	name: "dialog_bg";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		rel1.offset: 1 1;
-		rel2.offset: -2 -2;
-
-		image {
-			normal: "menu_im0.png";
-			border: 2 2 2 2;
-		}
-	}
-}
-
-part {
-	name: "list";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to_y: "e.swallow.list"; 
-			relative: 0.0 0.0; 
-			offset: 7 -7; 
+			description {
+				state: "default" 0.0;
+				color: 104 108 111 255;
+			}
 		}
 
-		rel2 { 
-			to_y: "e.swallow.list";
-			relative: 1.0 1.0;	
-			offset: -8 4;
+		part {
+			name: "dialog_bg";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				rel1.offset: 1 1;
+				rel2.offset: -2 -2;
+
+				image {
+					normal: "menu_im0.png";
+					border: 2 2 2 2;
+				}
+			}
 		}
 
-		image {
-			normal: "scrollframe_bg.png";
-			border: 7 7 7 7;
+		part {
+			name: "list";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+
+				rel1 { 
+					to_y: "e.swallow.list"; 
+					relative: 0.0 0.0; 
+					offset: 7 -7; 
+				}
+
+				rel2 { 
+					to_y: "e.swallow.list";
+					relative: 1.0 1.0;	
+					offset: -8 4;
+				}
+
+				image {
+					normal: "scrollframe_bg.png";
+					border: 7 7 7 7;
+				}
+			}
 		}
-	}
-}
 
 part {
 	name: "list_inset";
@@ -393,8 +392,8 @@ part {
 		state: "default" 0.0;
 		max: 9999 18;
 		color: 255 255 255 0;
-		image.normal: "menu_im2.png";
-		image.border: 5 5 5 5;
+		image.normal: "exebuf_im0.png";
+		image.border: 4 4 5 5;
 		visible: 0;
 
 		rel1 { 
