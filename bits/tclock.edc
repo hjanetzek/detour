@@ -202,7 +202,8 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 104 108 111 255;
+				/* X Composite ?? */
+				color: 104 108 111 128;
 			}
 		}
 

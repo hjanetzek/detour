@@ -5,11 +5,9 @@ efm_window: drop_in/drop_between(s)
 == Redo ==
 content_menu: icon/shift (REDO "menu.edc" entirely)
 pager.edc: popup
-desklock.edc: new graphics completely
 
 == Improve ==
 ibar.edc: drop
-tclock.edc: popup -- HUD like??
 bits/icons.edc: e/icons/enlightenment/e 
 Make use of: scale: 1;
 -URGENT "border" signals
