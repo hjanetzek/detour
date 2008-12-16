@@ -37,9 +37,6 @@
 //Use RGBA for the alternate Shelf
 #define RGBA_IS_AVAILABLE 0 /* work in progress */
 
-//Display Tango Icons
-#define TANGO_ICONS 1
-
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
 
@@ -68,8 +65,8 @@ styles {
 }
 
 images {
-	#include "icons/icons.edc"
-	#include "images/images.edc"
+	#include "icons.edc"
+	#include "images.edc"
 }
 
 data {
@@ -80,67 +77,59 @@ data {
 }
 
 collections {
-	#include "bits/background.edc" /* background group */
-	#include "bits/border.edc" /* border group */
-	#include "bits/ibar.edc" /* ibar & ibox group */
-	#include "bits/fileman.edc"
-	#if TANGO_ICONS == 0
-	#else
-	#if TANGO_ICONS == 1
-		#include "bits/icons.edc"
-		#include "bits/fileman_actions.edc"
-		#include "bits/fileman_icon.edc"
-		#include "bits/fileman_icon_clickable.edc"
-		#include "bits/fileman_mime.edc"
-	#endif
-	#endif
-	#include "bits/menu.edc"
-	#include "bits/resize.edc"
-	#include "bits/move.edc"
-	#include "bits/dialog.edc"
-	#include "bits/configure.edc"
-	#include "bits/pointer.edc"
-	#include "bits/entry.edc"
-	#include "bits/check.edc"
-	#include "bits/radio.edc"
-	#include "bits/frame.edc"
-	//~ #include "bits/filesel.edc" /* obsolete */
-	#include "bits/button.edc"
-	#include "bits/label.edc"
-	#include "bits/slider.edc"
-	#include "bits/desklock.edc"
-	#include "bits/textblock.edc"
-	#include "bits/shelf.edc"
-	#include "bits/preview.edc"
-	#include "bits/error.edc"
-	#include "bits/pager.edc"
-	#include "bits/about_theme.edc"
-	#include "bits/clock.edc"
-	#include "bits/scrollframe.edc"
-	#include "bits/ilist.edc"
-	#include "bits/tlist.edc"
-	#include "bits/winlist.edc"
 	#include "bits/about.edc"
-	#include "bits/color_well.edc" /* this probably needs fixing */
-	#include "bits/cslider.edc"
-	#include "bits/spectrum.edc" /* this probably needs fixing */
-	#include "bits/exebuf.edc"
-	#include "bits/deskpreview.edc"
-	#include "bits/sys.edc"
+	#include "bits/about_theme.edc"
+	#include "bits/background.edc" 	/* background group */
 	#include "bits/battery.edc"
-	#include "bits/temperature.edc"
+	#include "bits/border.edc"	/* border group */
+	#include "bits/button.edc"	/* button widget group */
+	#include "bits/check.edc"	/* check widget group */
+	#include "bits/cfgtoolbar.edc"
+	#include "bits/clock.edc"
+	#include "bits/color_well.edc"
+	#include "bits/configure.edc"	/* configure group */
+	//~ #include "bits/connman.edc"	/* connection manager */
+	//~ #include "bits/cpufreq.edc"
+	#include "bits/cslider.edc"
+	#include "bits/desklock.edc"	/* desklock group */
+	#include "bits/deskpreview.edc"
+	#include "bits/dialog.edc"	/* dialog group */
+	//~ #include "bits/efm_nav.edc"
+	#include "bits/entry.edc"	/* entry group */
+	#include "bits/error.edc"
+	#include "bits/exebuf.edc"
 	#include "bits/font_preview.edc"
 	#include "bits/gadman.edc"
-	//~ #include "bits/transitions.edc"
-	#include "bits/tclock.edc"
-	#include "bits/itask.edc"
-	//~ #include "bits/cpufreq.edc"
-	//~ #include "bits/start.edc"
-	//#include "bits/efm_nav.edc"
-	#include "bits/toolbar.edc"
-	//~ #include "bits/slidesel.edc"
-	//~ #include "bits/wizard.edc"
+	#include "bits/frame.edc"	/* frame widget group */
+	#include "bits/ibar.edc" 	/* ibar & ibox group */
+	#include "bits/icons.edc" 	/* icons definitions */
+	#include "bits/ilist.edc"
 	#include "bits/init.edc"
-	#include "bits/cfgtoolbar.edc"
+	#include "bits/itask.edc"
+	#include "bits/label.edc"	/* label definiton group */
+	#include "bits/fileman.edc" 	/* file manager groups */
+	#include "bits/menu.edc" 	/* menu and context menu groups */
+	//~ include "bits/mixer.png"	/* mixer module group */
+	#include "bits/move.edc" 	/* move window information group */
+	#include "bits/pager.edc"
+	#include "bits/pointer.edc"	/* mouse pointer group */
+	#include "bits/preview.edc"
+	#include "bits/resize.edc" 	/* resize window information group */
+	#include "bits/radio.edc"	/* radio widget group */
+	#include "bits/scrollframe.edc"
+	#include "bits/shelf.edc"	/* shelf groups */
+	#include "bits/slider.edc"	/* slider group */
+	//~ #include "bits/slidesel.edc"
+	#include "bits/spectrum.edc"
+	//~ #include "bits/start.edc"
+	#include "bits/sys.edc"
+	#include "bits/tclock.edc"
+	//~ #include "bits/temperature.edc"
+	#include "bits/textblock.edc"	/* textblock definitions group */
+	#include "bits/tlist.edc"
+	//~ #include "bits/transitions.edc"
+	#include "bits/toolbar.edc"
+	#include "bits/winlist.edc"
+	//~ #include "bits/wizard.edc"
 }
 

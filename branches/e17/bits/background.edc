@@ -38,7 +38,7 @@ group {
 				color: 205 204 188 5;
 
 				image {
-					normal: "pattern-10036.png";
+					normal: "images/wallpaper_pat1.png";
 				}
 
 				fill {
@@ -51,7 +51,6 @@ group {
 		}
 
 		background()
-
 	}
 
 	programs {

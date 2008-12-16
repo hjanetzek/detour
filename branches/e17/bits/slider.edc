@@ -60,7 +60,7 @@ group {
 				}
 
 				image {
-					normal: "sb_runnerh.png";
+					normal: "images/sb_runnerh.png";
 					border: 1 1 6 5;
 				}
 			}
@@ -70,7 +70,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "sb_runnerh_disabled.png";
+					normal: "images/sb_runnerh_disabled.png";
 				}
 			}
 		}
@@ -86,7 +86,7 @@ group {
 				visible: 0;
 	
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -111,7 +111,7 @@ group {
 				}
 
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -140,7 +140,7 @@ group {
 				}
 	
 				image {
-					normal: "entry_im1.png";
+					normal: "images/entry_im1.png";
 					border: 7 7 8 7;
 				}
 			}
@@ -237,7 +237,7 @@ group {
 				}
 
 				image {
-					normal: "sb_runnerh_left.png";
+					normal: "images/sb_runnerh_left.png";
 				}
 			}
 
@@ -246,7 +246,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "sb_runnerh_left_disabled.png";
+					normal: "images/sb_runnerh_left_disabled.png";
 				}
 			}
 		}
@@ -293,7 +293,7 @@ group {
 				}
 
 				image {
-					normal: "sb_runnerh_right.png";
+					normal: "images/sb_runnerh_right.png";
 				}
 			}
 
@@ -302,7 +302,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "sb_runnerh_right_disabled.png";
+					normal: "images/sb_runnerh_right_disabled.png";
 				}
 			}
 		}
@@ -406,7 +406,7 @@ group {
 				}
 
 				image {
-					normal: "slider_hshadow.png";
+					normal: "images/slider_hshadow.png";
 					border: 7 8 7 7;
 				}
 			}
@@ -433,7 +433,7 @@ group {
 				}
 
 				image {
-					normal: "slider_h.png";
+					normal: "images/slider_h.png";
 				}
 			}
 
@@ -636,7 +636,7 @@ group {
 				}
 
 				image {
-					normal: "sb_runnerv.png";
+					normal: "images/sb_runnerv.png";
 					border: 2 2 1 1;
 				}
 			}
@@ -646,7 +646,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "sb_runnerv_disabled.png";
+					normal: "images/sb_runnerv_disabled.png";
 				}
 			}
 		}
@@ -662,7 +662,7 @@ group {
 				visible: 0;
 
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -686,7 +686,7 @@ group {
 				}
 
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -715,7 +715,7 @@ group {
 				}
 
 				image {
-					normal: "entry_im1.png";
+					normal: "images/entry_im1.png";
 					border: 7 7 8 7;
 				}
 			}
@@ -811,7 +811,7 @@ group {
 				}
 
 				image {
-					normal: "sb_runnerv_top.png";
+					normal: "images/sb_runnerv_top.png";
 				}
 			}
 
@@ -820,7 +820,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "sb_runnerv_top_disabled.png";
+					normal: "images/sb_runnerv_top_disabled.png";
 				}
 			}
 		}
@@ -866,7 +866,7 @@ group {
 				}
 
 				image {
-					normal: "sb_runnerv_bot.png";
+					normal: "images/sb_runnerv_bot.png";
 				}
 			}
 
@@ -875,7 +875,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "sb_runnerv_bot_disabled.png";
+					normal: "images/sb_runnerv_bot_disabled.png";
 				}
 			}
 		}
@@ -979,7 +979,7 @@ group {
 				}
 
 				image {
-					normal: "slider_vshadow.png";
+					normal: "images/slider_vshadow.png";
 					border: 7 7 7 7;
 				}
 			}
@@ -1006,7 +1006,7 @@ group {
 				}
 
 				image {
-					normal: "slider_v.png";
+					normal: "images/slider_v.png";
 				}
 			}
 

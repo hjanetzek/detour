@@ -43,7 +43,7 @@ group {
 				}
 
 				image {
-					normal: "menu_im0.png";
+					normal: "images/menu_im0.png";
 					border: 2 2 2 2;
 				}
 			}
@@ -261,7 +261,7 @@ group {
 				}
 
 				image {
-					normal: "decoration_im1.png";
+					normal: "images/decoration_im1.png";
 				}
     			}
 		}
@@ -270,6 +270,10 @@ group {
 
 group {
 	name: "e/modules/pager/desk";
+
+	data {
+		item: "e/modules/pager/desk/apparence" 	"plain";
+	}
 
 	script {
 		public active;
@@ -325,7 +329,7 @@ group {
 				}
 
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -377,7 +381,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				image.normal: "pager_lid_l.png";
+				image.normal: "images/pager_lid_l.png";
 				image.border: 2 2 2 2;
 
 				rel1 { 
@@ -419,7 +423,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				image.normal: "pager_lid_r.png";
+				image.normal: "images/pager_lid_r.png";
 				image.border: 2 2 2 2;
 	
 				rel1 { 
@@ -475,7 +479,7 @@ group {
 				}
 
 				image {
-					normal: "pager_desk_bg_focus.png";
+					normal: "images/pager_desk_bg_focus.png";
 					border: 8 8 8 8;
 				}
 			}
@@ -617,7 +621,7 @@ group {
 				}
 
 				image {
-					normal: "pager_icon_window_ds.png";
+					normal: "images/pager_icon_window_ds.png";
 					border: 1 1 1 1;
 				}
     			}
@@ -641,7 +645,7 @@ group {
 				}
 
 				image {
-					normal: "pager_icon_window.png";
+					normal: "images/pager_icon_window.png";
 					border: 4 4 6 4;
 				}
 			}
@@ -666,7 +670,7 @@ group {
 				}
 
 				image {
-					normal: "pager_icon_window.png";
+					normal: "images/pager_icon_window.png";
 					border: 4 4 6 4;
 				}
 			}

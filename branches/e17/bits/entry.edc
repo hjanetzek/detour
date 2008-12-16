@@ -15,7 +15,7 @@ group {
 				max: 9999 24;
 
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -45,10 +45,22 @@ group {
 
 			description {
 				state: "default" 0.0;
-				min: 22 24;
+				//min: 22 24;
 				max: 9999 24;
-				image.normal: "entry_im1.png";
-				image.border: 7 7 8 7;
+				image.normal: "images/entry_im1.png";
+				image.border: 6 6 6 6;
+
+				rel1 { 
+					to: "entry"; 
+					relative: 0.0 0.0; 
+					offset: 0 0; 
+				}
+
+				rel2 { 
+					to: "entry"; 
+					relative: 1.0 1.0; 
+					offset: -1 -2; 
+				}
 			}
 		}
 
@@ -84,7 +96,6 @@ group {
 			signal: SIGNAL; \
 			source: "e"; \
 			action: STATE_SET STATE 0.0; \
-			transition: DECELERATE 0.5; \
 			target: "focus_clip"; \
 		}
 		FOCUS("focus_in", "e,state,focused", "focused")

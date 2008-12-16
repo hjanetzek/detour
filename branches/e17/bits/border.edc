@@ -7,56 +7,50 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 6 24, 6 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "tl-full.png", 0.1, "tl-full.png")
-BORDER("top-right", 0.0, 6 24, 6 24, 1.0 0.0, 0 24, 1.0 0.0, -6 0, "tr-full.png", 0.1, "tr-full.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl-full.png", 0.1, "bl-full.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br-full.png", 0.1, "br-full.png")
+		BORDER("top-left", 0.0, 6 24, 6 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/tl-full.png", 0.1, "images/tl-full.png")
+		BORDER("top-right", 0.0, 6 24, 6 24, 1.0 0.0, 0 24, 1.0 0.0, -6 0, "images/tr-full.png", 0.1, "images/tr-full.png")
+		BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl-full.png", 0.1, "images/bl-full.png")
+		BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br-full.png", 0.1, "images/br-full.png")
 
-#define BORDER5(NAME,TO1,REL1,OFF1,TO2,REL2,OFF2,IMG,IMG2) \
-part { \
-	name: NAME; \
-	type: IMAGE; \
-\
-	description { \
-		state: "default" 0.0; \
-		min: 5 1; \
-		max: 5 9999; \
-\
-		rel1 { \
-			to: TO1; \
-			relative: REL1; \
-			offset: OFF1; \
-		} \
-\
-		rel2 { \
-			to: TO2; \
-			relative: REL2; \
-			offset: OFF2; \
-		} \
-\
-		image { \
-			normal: IMG; \
-		} \
-	} \
-\
-	description { \
-		state: "default" 0.1; \
-		inherit: "default" 0.0; \
-\
-		image { \
-			normal: IMG2; \
-		} \
-	} \
-}
+		#define BORDER5(NAME,TO1,REL1,OFF1,TO2,REL2,OFF2,IMG,IMG2) \
+			part { \
+				name: NAME; \
+				type: IMAGE; \
+				description { \
+					state: "default" 0.0; \
+					min: 5 1; \
+					max: 5 9999; \
+					rel1 { \
+						to: TO1; \
+						relative: REL1; \
+						offset: OFF1; \
+					} \
+					rel2 { \
+						to: TO2; \
+						relative: REL2; \
+						offset: OFF2; \
+					} \
+					image { \
+						normal: IMG; \
+					} \
+				} \
+				description { \
+					state: "default" 0.1; \
+					inherit: "default" 0.0; \
+					image { \
+						normal: IMG2; \
+					} \
+				} \
+			}
 
-BORDER5("left-border", "top-left", 0.0 1.0, 3 0, "bottom-left", 0.0 0.0, 0 0, "lb.png", "lb.png")
-BORDER5("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -5 0, "rb.png", "rb.png")
+		BORDER5("left-border", "top-left", 0.0 1.0, 3 0, "bottom-left", 0.0 0.0, 0 0, "images/lb.png", "images/lb.png")
+		BORDER5("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -5 0, "images/rb.png", "images/rb.png")
 
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
-BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
-E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 5 0, "bottom-right", 0.0 1.0, 0 -7)
-TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
-E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
+		BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
+		BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb.png", 0.1, "images/bb.png")
+		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 5 0, "bottom-right", 0.0 1.0, 0 -7)
+		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
+		E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
 
 part { 														
 	name: "e.text.title";
@@ -64,6 +58,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -120,12 +115,12 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -236,14 +231,14 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "tl.png", 0.1, "tl.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr.png", 0.1, "tr.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl.png", 0.1, "bl.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br.png", 0.1, "br.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/tl.png", 0.1, "images/tl.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr.png", 0.1, "images/tr.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl.png", 0.1, "images/bl.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br.png", 0.1, "images/br.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
-BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
+BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
+BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb.png", 0.1, "images/bb.png")
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0) 
@@ -254,6 +249,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -310,12 +306,12 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -438,22 +434,22 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
 RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 */
 
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "tl-dialog.png", 0.1, "tl-dialog.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr-dialog.png", 0.1, "tr-dialog.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl-dialog.png", 0.1, "bl-dialog.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br-dialog.png", 0.1, "br-dialog.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "images/tl-dialog.png", 0.1, "images/tl-dialog.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr-dialog.png", 0.1, "images/tr-dialog.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl-dialog.png", 0.1, "images/bl-dialog.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br-dialog.png", 0.1, "images/br-dialog.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
 
@@ -494,8 +490,8 @@ part { \
 	} \
 }
 
-BORDER6("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb-dialog.png", 0.1, "tb-dialog.png")
-BORDER6("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb-dialog.png", 0.1, "bb-dialog.png")
+BORDER6("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb-dialog.png", 0.1, "images/tb-dialog.png")
+BORDER6("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb-dialog.png", 0.1, "images/bb-dialog.png")
 
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
@@ -507,6 +503,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -563,12 +560,12 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -590,14 +587,14 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "tl.png", 0.1, "tl.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr.png", 0.1, "tr.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl-dialog.png", 0.1, "bl-dialog.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br-dialog.png", 0.1, "br-dialog.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/tl.png", 0.1, "images/tl.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr.png", 0.1, "images/tr.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl-dialog.png", 0.1, "images/bl-dialog.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br-dialog.png", 0.1, "images/br-dialog.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
-BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb-dialog2.png", 0.1, "bb-dialog2.png")
+BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
+BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb-dialog2.png", 0.1, "images/bb-dialog2.png")
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
@@ -608,6 +605,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -664,12 +662,12 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -693,14 +691,14 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "tl.png", 0.1, "tl.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr.png", 0.1, "tr.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl.png", 0.1, "bl.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br.png", 0.1, "br.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/tl.png", 0.1, "images/tl.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr.png", 0.1, "images/tr.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl.png", 0.1, "images/bl.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br.png", 0.1, "images/br.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
-BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
+BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
+BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb.png", 0.1, "images/bb.png")
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-close", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
@@ -711,6 +709,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -765,8 +764,8 @@ PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
 PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
 E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.icon", 255 255 255 0)		
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 
@@ -801,14 +800,14 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "tl.png", 0.1, "tl.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr.png", 0.1, "tr.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl.png", 0.1, "bl.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br.png", 0.1, "br.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/tl.png", 0.1, "images/tl.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr.png", 0.1, "images/tr.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl.png", 0.1, "images/bl.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br.png", 0.1, "images/br.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
-BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
+BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
+BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb.png", 0.1, "images/bb.png")
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "top-right", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
@@ -819,6 +818,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -881,10 +881,10 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "tl2-dialog.png", 0.1, "tl2-dialog.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr2-dialog.png", 0.1, "tr2-dialog.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bl-dialog.png", 0.1, "bl-dialog.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "br-dialog.png", 0.1, "br-dialog.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "images/tl2-dialog.png", 0.1, "images/tl2-dialog.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr2-dialog.png", 0.1, "images/tr2-dialog.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl-dialog.png", 0.1, "images/bl-dialog.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br-dialog.png", 0.1, "images/br-dialog.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
 
@@ -925,8 +925,8 @@ part { \
 	} \
 }
 
-BORDER6("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb2-dialog.png", 0.1, "tb2-dialog.png")
-BORDER6("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb-dialog.png", 0.1, "bb-dialog.png")
+BORDER6("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb2-dialog.png", 0.1, "images/tb2-dialog.png")
+BORDER6("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb-dialog.png", 0.1, "images/bb-dialog.png")
 
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-close", 0.0 0.5, -5 0, 255 255 255 255)
@@ -938,6 +938,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -992,8 +993,8 @@ PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
 PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
 E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.icon", 255 255 255 0)		
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 
@@ -1115,7 +1116,7 @@ PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
 PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
 E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.icon", 255 255 255 0)		
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
 BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
@@ -1203,14 +1204,14 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 9 24, 9 24, 0.0 0.0, 7 22, 0.0 0.0, 0 0, "tld-shaped.png", 0.1, "tld-shaped.png")
-BORDER("top-right", 0.0, 9 24, 9 24, 1.0 0.0, 0 22, 1.0 0.0, -9 0, "trd-shaped.png", 0.1, "trd-shaped.png")
-BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "bld-shaped.png", 0.1, "bld-shaped.png")
-BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "brd-shaped.png", 0.1, "brd-shaped.png")
+BORDER("top-left", 0.0, 9 24, 9 24, 0.0 0.0, 7 22, 0.0 0.0, 0 0, "images/tld-shaped.png", 0.1, "images/tld-shaped.png")
+BORDER("top-right", 0.0, 9 24, 9 24, 1.0 0.0, 0 22, 1.0 0.0, -9 0, "images/trd-shaped.png", 0.1, "images/trd-shaped.png")
+BORDER("bottom-left", 0.0, 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bld-shaped.png", 0.1, "images/bld-shaped.png")
+BORDER("bottom-right", 0.0, 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/brd-shaped.png", 0.1, "images/brd-shaped.png")
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
-BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "bb.png", 0.1, "bb.png")
+BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
+BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb.png", 0.1, "images/bb.png")
 E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
 TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0)
@@ -1221,6 +1222,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -1277,12 +1279,12 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -12 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -1393,8 +1395,8 @@ group {
 	}
 
 	parts {
-BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "tl.png", 0.1, "tl.png")
-BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "tr.png", 0.1, "tr.png")
+BORDER("top-left", 0.0, 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/tl.png", 0.1, "images/tl.png")
+BORDER("top-right", 0.0, 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/tr.png", 0.1, "images/tr.png")
 
 #define BORDER8(NAME,REL1,OFF1,REL2,OFF2)\
 part { \
@@ -1424,7 +1426,7 @@ BORDER8("bottom-right", 1.0 1.0, 0 -1, 1.0 1.0, -1 0)
 
 BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
 BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "tb.png", 0.1, "tb.png")
+BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
 
 part { 
 	name: "bottom-center"; 
@@ -1460,6 +1462,7 @@ part {
 	effect: SHADOW;
 	mouse_events: 0;
 	clip_to: "title.area.clip";
+	scale: 1;
 
 	description {
 		state: "default" 0.0;
@@ -1518,12 +1521,12 @@ E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.ico
 CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
-HOLDER("_min", 20 18, "min-clip", "window-border_bt0.png")
-HOLDER("_max", 20 18, "max-clip", "window-border_bt0.png")
-HOLDER("_close", 20 18, "close-clip", "window-border_bt0.png")
-BUTTONS("button-close", "close-clip", 17 17, "close-clip", "window-border_bt4.png")
-BUTTONS("button-max", "max-clip", 17 17, "max-clip", "window-border_bt3.png")
-BUTTONS("button-min", "min-clip", 17 17, "min-clip", "window-border_bt2.png")
+HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
 PART_EVENT_MAP("e.event.close", 1, "button-close")
 PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 PART_EVENT_MAP("e.event.minimize", 1, "button-min")
