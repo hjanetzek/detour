@@ -16,7 +16,7 @@ group {
 				rel2.offset: -1 1;
 
 				image {
-					normal: "efmtbar_im0.png";
+					normal: "images/efmtbar_im0.png";
 					border: 2 2 2 6;
 				}
 			}
@@ -28,7 +28,7 @@ group {
 				rel2.offset: -1 -1;
 
 				image {
-					normal: "efmtbar_im1.png";
+					normal: "images/efmtbar_im1.png";
 					border: 2 2 6 2;
 				}
 			}
@@ -55,7 +55,7 @@ group {
 
 	programs {
 		program {
-			name: "orient1";
+			name: "top";
 			signal: "e,state,orientation,top";
 			source: "e";
 			action: STATE_SET "default" 0.0;
@@ -64,7 +64,7 @@ group {
 		}
 
 		program {
-			name: "orient2";
+			name: "bottom";
 			signal: "e,state,orientation,bottom";
 			source: "e";
 			action: STATE_SET "bottom" 0.0;

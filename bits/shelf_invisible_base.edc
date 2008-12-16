@@ -1,8 +1,0 @@
-part {
-	name: "e.swallow.content";
-	type: SWALLOW;
-
-	description {
-		state: "default" 0.0;
-	}
-}

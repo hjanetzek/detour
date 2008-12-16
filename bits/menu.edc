@@ -61,7 +61,7 @@ group {
 				rel2.offset: -2 -2;
 
 				image {
-					normal: "menu_im0.png";
+					normal: "images/menu_im0.png";
 					border: 2 2 2 2;
 				}
 			}
@@ -209,7 +209,7 @@ group {
 				state: "default" 0.0;
 				min: 10 11;
 				max: 10 11;
-				image.normal: "menu_im3.png";
+				image.normal: "images/menu_im3.png";
 
 				rel2 { 
 					relative: 0.0 0.0; 
@@ -225,7 +225,7 @@ group {
 			description {
         			state: "visible" 0.0;
 				inherit: "default" 0.0;
-	       		 	image.normal: "menu_im4.png";
+	       		 	image.normal: "images/menu_im4.png";
 			}
 		}
 
@@ -284,7 +284,7 @@ group {
 				}
 
 				image {
-					normal: "menu_im1.png";
+					normal: "images/menu_im1.png";
 					border: 2 2 1 1;
 				}
 			}
@@ -327,7 +327,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt0.png";
+					normal: "images/check_bt0.png";
 				}
 			}
 		}
@@ -340,7 +340,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 192;
-				image.normal: "check_bt4.png";
+				image.normal: "images/check_bt4.png";
 
 				rel1 { 
 					to: "check";
@@ -387,7 +387,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt1.png";
+					normal: "images/check_bt1.png";
 				}
 			}
 
@@ -396,7 +396,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "check_bt2.png";
+					normal: "images/check_bt2.png";
 				}
 			}
 		}
@@ -442,7 +442,7 @@ group {
 				}
 
 				image {
-					normal: "radio_bt0.png";
+					normal: "images/radio_bt0.png";
 				}
 			}
 
@@ -461,7 +461,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 192;
-				image.normal: "radio_bt4.png";
+				image.normal: "images/radio_bt4.png";
 
 				#if VISIBLE_MENU_TITLE == 0
 					rel1 { 
@@ -517,7 +517,7 @@ group {
 				}
 
 				image {
-					normal: "radio_bt1.png";
+					normal: "images/radio_bt1.png";
 				}
 			}
 
@@ -526,7 +526,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "radio_bt2.png";
+					normal: "images/radio_bt2.png";
 				}
 			}
 		}
@@ -589,7 +589,7 @@ group {
 			description {
 				state: "default" 0.0;
 				max: 9999 24;
-				image.normal: "menu_im2.png";
+				image.normal: "images/menu_im2.png";
 				image.border: 5 5 5 5;
 				visible: 0;
 
@@ -657,7 +657,7 @@ group {
 			description {
 				state: "default" 0.0;
 				max: 9999 24;
-				image.normal: "menu_im2.png";
+				image.normal: "images/menu_im2.png";
 				image.border: 5 5 5 5;
 				visible: 0;
 

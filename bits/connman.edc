@@ -1,0 +1,89 @@
+
+group {
+      name: "e/modules/connman/main"; // for gadget
+      alias: "e/modules/connman/network"; // for icon in popup
+      max: 128 128;
+      min: 1 1;
+
+      script {
+       public message(Msg_Type:type, id, ...) {
+	  if ((type == MSG_INT_SET) && (id == 0)) {
+	     new sig;
+
+	     sig = getarg(2);
+
+	     if (sig <= 0)
+	       run_program(PROGRAM:"sig_none");
+	     else if (sig < 33)
+	       run_program(PROGRAM:"sig_low");
+	     else if (sig < 66)
+	       run_program(PROGRAM:"sig_medium");
+	     else if (sig >= 66)
+	       run_program(PROGRAM:"sig_high");
+	  }
+       }
+      }
+      parts {
+	 part { name: "base";
+	    description { state: "default" 0.0;
+	       aspect: 1 1;
+	       aspect_preference: BOTH;
+	       image.normal: "ball.png";
+	    }
+	 }
+      }
+      programs {
+	 program { name: "sig_none";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sig_low";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sig_medium";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sig_high";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sec0";
+	    signal: "e,state,security,open";
+	    source: "e";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sec1";
+	    signal: "e,state,security,wep";
+	    source: "e";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sec2";
+	    signal: "e,state,security,wpa";
+	    source: "e";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sec3";
+	    signal: "e,state,security,rsn";
+	    source: "e";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sav0";
+	    signal: "e,state,saved,on";
+	    source: "e";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+	 program { name: "sav1";
+	    signal: "e,state,saved,off";
+	    source: "e";
+	    action: STATE_SET "default" 0.0;
+	    target: "base";
+	 }
+      }
+   }

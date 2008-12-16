@@ -70,7 +70,7 @@ part {								\
 		color: 255 255 255 255;				\
 								\
 		image {						\
-			normal: "bg.png";			\
+			normal: "images/wallpaper_pat0.png";	\
 		}						\
 								\
 		fill {						\

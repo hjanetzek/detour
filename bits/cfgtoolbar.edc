@@ -20,7 +20,7 @@ group {
 				}
 
 				image {
-					normal: "entry_im0.png";
+					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 			}
@@ -73,8 +73,7 @@ group {
 				align: 0.0 0.5;
 
 				image {
-					normal: "gadman_im5.png";
-					//border: 10 10 10 10;
+					normal: "images/gadman_im5.png";
 				}
 			}
 
@@ -101,8 +100,7 @@ group {
 				align: 1.0 0.5;
 
 				image {
-					normal: "gadman_im6.png";
-					//border: 10 10 10 10;
+					normal: "images/gadman_im6.png";
 				}
 			}
 
@@ -225,7 +223,7 @@ group {
 				visible: 0;
 
 				image {
-					normal: "icon_select.png";
+					normal: "images/icon_select.png";
 					border: 5 5 5 7;
 				} 
 			}
@@ -239,44 +237,8 @@ group {
 		}
 
 		part { 
-			name: "clipper";
-			type: RECT;
-			mouse_events: 1;
-
-			description {
-				state: "default" 0.0;
-				color: 255 255 255 128;
-				visible: 1;
-			}
-
-			description {
-				state: "visible" 0.0;
-				inherit: "default" 0.0;
-				color: 255 255 255 255;
-				visible: 1;
-			}
-
-			description {
-				state: "hidden" 0.0;
-				inherit: "default" 0.0;
-				visible: 1;
-				rel1.relative: -0.5 -0.5;
-				rel2.relative: 1.5 1.5;
-			}
-
-			description {
-				state: "huge" 0.0;
-				inherit: "default" 0.0;
-				visible: 1;
-				rel1.relative: -1.0 -1.0;
-				rel2.relative: 2.0 2.0;
-			}
-		}
-
-		part { 
 			name: "e.swallow.icon";
 			type: SWALLOW;
-			clip_to: "clipper";
 
 			description { 
 				state: "default" 0.0;
@@ -380,43 +342,6 @@ group {
 			signal: "mouse,up,1";
 			source: "event";
 			action: SIGNAL_EMIT "e,action,click" "e";
-		}
-
-		program {
-			name: "go_active";
-			signal: "e,state,selected";
-			source: "e";
-			action: STATE_SET "visible" 0.0;
-			target: "clipper";
-			after: "go_active2";
-		}
-
-		program {
-			name: "go_active2";
-			signal: "";
-			source: "";
-			action: STATE_SET "hidden" 0.0;
-			transition: LINEAR 0.5;
-			target: "clipper";
-			after: "go_active";
-		}
-
-		program {
-			name: "go_passive";
-			signal: "e,state,unselected";
-			source: "e";
-			action: ACTION_STOP;
-			target: "go_active";
-			target: "go_active2";
-			after: "go_passive2";
-		}
-
-		program {
-			name: "go_passive2";
-			signal: "";
-			source: "";
-			action: STATE_SET "default" 0.0;
-			target: "clipper";
 		}
 	}
 }

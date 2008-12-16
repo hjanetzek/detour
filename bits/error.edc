@@ -5,334 +5,332 @@ group {
 	max: 333 211;
 
 	parts {
-part {
-	name: "dialog_bg";
-	type: IMAGE;
-	mouse_events: 0;
+		part {
+			name: "dialog_bg";
+			type: IMAGE;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
+			description {
+				state: "default" 0.0;
 	
-		image {
-			normal: "error-dialog_bg.png";
-			border: 3 3 3 3;
-		}
-	}
-}
-
-part {
-	name: "error-icon";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		min: 48 48;
-		max: 48 48;
-		fixed: 1 1;
-
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 16 16; 
+				image {
+					normal: "images/error-dialog_bg.png";
+					border: 3 3 3 3;
+				}
+			}
 		}
 
-		rel2 { 
-			relative: 0.0 0.0; 
-			offset: 80 80; 
+		part {
+			name: "error-icon";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 48 48;
+				max: 48 48;
+				fixed: 1 1;
+
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 16 16; 
+				}
+
+				rel2 { 
+					relative: 0.0 0.0; 
+					offset: 80 80; 
+				}
+
+				image {
+					normal: "icons/dialog-error.png";
+				}
+			}
 		}
 
-		image {
-			normal: "dialog-error.png";
-		}
-	}
-}
+		part {
+			name: "entry";
+			type: IMAGE;
+			mouse_events: 0;
 
-part {
-	name: "entry";
-	type: IMAGE;
-	mouse_events: 0;
+			description {
+				state: "default" 0.0;
 
-	description {
-		state: "default" 0.0;
+				rel1 { 
+					to_y: "error-icon"; 
+					relative: 0.0 1.0; 
+					offset: 16 16; 
+				}
 
-		rel1 { 
-			to_y: "error-icon"; 
-			relative: 0.0 1.0; 
-			offset: 16 16; 
-		}
+				rel2 { 
+					to_y: "button.area"; 
+					relative: 1.0 0.0; 
+					offset: -18 -17; 
+				}
 
-		rel2 { 
-			to_y: "button.area"; 
-			relative: 1.0 0.0; 
-			offset: -18 -17; 
-		}
-
-		image {
-			normal: "entry_im0.png";
-			border: 6 6 8 7;
-		}
-	}
-}
-
-part {
-	name: "e.text.title";
-	type: TEXT;
-	mouse_events: 0;
-	scale: 1;
-
-	description {
-		state: "default" 0.0;
-		color: 60 60 60 255;
-
-		rel1 { 
-			to: "error-icon"; 
-			relative: 1.0 0.0; 
-			offset: 16 0; 
+				image {
+					normal: "images/entry_im0.png";
+					border: 6 6 8 7;
+				}
+			}
 		}
 
-		rel2 { 
-			to_y: "error-icon"; 
-			relative: 1.0 1.0; 
-			offset: -17 -1; 
+		part {
+			name: "e.text.title";
+			type: TEXT;
+			mouse_events: 0;
+			scale: 1;
+
+			description {
+				state: "default" 0.0;
+				color: 60 60 60 255;
+
+				rel1 { 
+					to: "error-icon"; 
+					relative: 1.0 0.0; 
+					offset: 16 0; 
+				}
+
+				rel2 { 
+					to_y: "error-icon"; 
+					relative: 1.0 1.0; 
+					offset: -17 -1; 
+				}
+
+				text {
+					text: "Title";
+					font: "Sans:style=Bold,DejaVuSans-Bold";
+					size: 12;
+					min: 1 1;
+					align: 0.0 0.5;
+					#if ENABLE_TEXT_CLASS == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASS == 1
+						text_class: "dialog_error";
+					#endif
+					#endif	       
+				}
+			}
 		}
 
-		text {
-			text: "Title";
-			font: "Sans:style=Bold,DejaVuSans-Bold";
-			size: 12;
-			min: 1 1;
-			align: 0.0 0.5;
-			#if ENABLE_TEXT_CLASS == 0
-				text_class: "";
-			#else
-			#if ENABLE_TEXT_CLASS == 1
-				text_class: "dialog_error";
-			#endif
-			#endif	       
-		}
-	}
-}
+		part {
+			name: "e.text.message";
+			type: TEXTBLOCK;
+			mouse_events: 0;
+			scale: 1;
 
-part {
-	name: "e.text.message";
-	type: TEXTBLOCK;
-	mouse_events: 0;
-	scale: 1;
+			description {
+				state: "default" 0.0;
 
-	description {
-		state: "default" 0.0;
+				rel1 { 
+					to: "entry"; 
+					relative: 0.0 0.0; 
+					offset: 8 8; 
+				}
 
-		rel1 { 
-			to: "entry"; 
-			relative: 0.0 0.0; 
-			offset: 8 8; 
+				rel2 { 
+					to: "entry"; 
+					relative: 1.0 1.0; 
+					offset: -8 -8; 
+				}
+
+				text {
+					text: "An Error<br>Goes Here.";
+					style: "error_style";
+					min: 1 1;
+				}
+			}
 		}
 
-		rel2 { 
-			to: "entry"; 
-			relative: 1.0 1.0; 
-			offset: -8 -8; 
+		part {
+			name: "button.area";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 0 0 0;
+
+				rel1 { 
+					relative: 0.0 1.0; 	
+					offset: 0 -45; 
+				}
+
+				rel2 { 
+					relative: 1.0 1.0; 
+					offset: -1 0; 
+				}
+			}
 		}
 
-		text {
-			text: "An Error<br>Goes Here.";
-			style: "error_style";
-			min: 1 1;
-		}
-	}
-}
+		part {
+			name: "separator";
+			type: RECT;
+			mouse_events: 0;
 
-part {
-	name: "button.area";
-	type: RECT;
-	mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				max: 333 12;
+				color: 0 0 0 0;
 
-	description {
-		state: "default" 0.0;
-		color: 255 0 0 0;
+				rel1 { 
+					to: "button.area"; 
+					relative: 0.0 0.0; 
+					offset: 0 -10; 
+				}
 
-		rel1 { 
-			relative: 0.0 1.0; 	
-			offset: 0 -45; 
-		}
-
-		rel2 { 
-			relative: 1.0 1.0; 
-			offset: -1 0; 
-		}
-	}
-}
-
-part {
-	name: "separator";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 333 12;
-		color: 0 0 0 0;
-
-		rel1 { 
-			to: "button.area"; 
-			relative: 0.0 0.0; 
-			offset: 0 -10; 
+				rel2 { 
+					to: "button.area"; 
+					relative: 1.0 0.0; 
+					offset: 0 0; 
+				}
+			}
 		}
 
-		rel2 { 
-			to: "button.area"; 
-			relative: 1.0 0.0; 
-			offset: 0 0; 
-		}
-	}
-}
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
 
-part {
-	name: "base";
-	type: IMAGE;
-	mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				min: 98 26;
+				max: 98 26;
+				fixed: 1 1;
+				image.normal: "images/button_im0.png";
+				image.border: 7 7 7 7;
 
-	description {
-		state: "default" 0.0;
-		min: 98 26;
-		max: 98 26;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "button.area"; 
-			offset: 0 0; 
-		}
+				rel1 { 
+					to: "button.area"; 
+					offset: 0 0; 
+				}
 		
-		rel2 { 
-			to: "button.area"; 
-			offset: 0 0; 
+				rel2 { 
+					to: "button.area"; 
+					offset: 0 0; 
+				}
+			}
+
+			description {
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
 		}
 
-		image.normal: "button_im0.png";
-		image.border: 7 7 7 7;
-	}
+		part {
+			name: "button_clip";
+			type: RECT;
+		mouse_events: 0;
 
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-	}
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 255;
 
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
+				rel1 { 
+					to: "base"; 
+					offset: 6 1; 
+				}
 
-part {
-	name: "button_clip";
-	type: RECT;
-	mouse_events: 0;
+				rel2 { 
+					to: "base";
+					offset: -7 -2; 
+				}
+			}
 
-	description {
-		state: "default" 0.0;
-		color: 255 255 255 255;
+			description {
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 255;
+			}
 
-		rel1 { 
-			to: "base"; 
-			offset: 6 1; 
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 0;
+				visible: 0;
+			}
 		}
 
-		rel2 { 
-			to: "base";
-			offset: -7 -2; 
-		}
-	}
 
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 255;
-	}
+		part {
+			name: "button";
+			type: IMAGE;
+		mouse_events: 1;
+			clip_to: "button_clip";
 
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		color: 255 255 255 0;
-		visible: 0;
-	}
-}
+			description {
+				state: "default" 0.0;
+				min: 86 24;
+				max: 86 24;
+				fixed: 1 1;
+				image.normal: "images/button_im1.png";
+				image.border: 7 7 7 7;
 
+				rel1 { 
+					to: "button_clip"; 
+				}
 
-part {
-	name: "button";
-	type: IMAGE;
-	mouse_events: 1;
-	clip_to: "button_clip";
+				rel2 { 
+					to: "button_clip"; 
+				}
+			}
 
-	description {
-		state: "default" 0.0;
-		min: 86 24;
-		max: 86 24;
-		fixed: 1 1;
-		image.normal: "button_im1.png";
-		image.border: 7 7 7 7;
+			description {
+				state: "clicked" 0.0;
+				inherit: "default" 0.0;
+			}
 
-		rel1 { 
-			to: "button_clip"; 
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				visible: 0;
+			}
 		}
 
-		rel2 { 
-			to: "button_clip"; 
+		part {
+			name: "text";
+			type: TEXT;
+			effect: SHADOW;
+			mouse_events: 0;
+			scale: 1;
+
+			description {
+				state: "default" 0.0;
+				color: 60 60 60 255;
+				color3: 170 168 169 128;
+
+				rel1 { 
+					to: "base"; 
+					offset: 6 1; 
+				}
+
+				rel2 { 
+					to: "base"; 
+					offset: -7 0; 
+				}
+
+				text {
+					text: "Ok";
+					font: "DejaVuSans-Bold";
+					size: 11;
+					min: 0 0;
+					align: 0.5 0.5;
+					#if ENABLE_TEXT_CLASS == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASS == 1
+						text_class: "button";
+					#endif
+					#endif
+				}
+			}
 		}
-	}
-
-	description {
-		state: "clicked" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
-
-part {
-	name: "text";
-	type: TEXT;
-	effect: SHADOW;
-	mouse_events: 0;
-	scale: 1;
-
-	description {
-		state: "default" 0.0;
-		color: 60 60 60 255;
-		color3: 170 168 169 128;
-
-		rel1 { 
-			to: "base"; 
-			offset: 6 1; 
-		}
-
-		rel2 { 
-			to: "base"; 
-			offset: -7 0; 
-		}
-
-		text {
-			text: "Ok";
-			font: "DejaVuSans-Bold";
-			size: 11;
-			min: 0 0;
-			align: 0.5 0.5;
-			#if ENABLE_TEXT_CLASS == 0
-				text_class: "";
-			#else
-			#if ENABLE_TEXT_CLASS == 1
-				text_class: "button";
-			#endif
-			#endif
-		}
-	}
-}
-
 	}
 
 	programs {
