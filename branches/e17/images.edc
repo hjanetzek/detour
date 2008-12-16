@@ -1,0 +1,523 @@
+
+//~ check widget
+image: "images/check_bt0.png" COMP; /* base */
+image: "images/check_bt1.png" COMP; /* unchecked */
+image: "images/check_bt2.png" COMP; /* checked */
+image: "images/check_bt3.png" COMP; /* focus */
+image: "images/check_bt4.png" COMP; /* shadow */
+
+//~ pointer
+image: "images/pointer_im1.png" COMP; /* default mode */
+image: "images/pointer_im2.png" COMP; /* pulsating mode */
+image: "images/pointer_im3.png" COMP; /* monochrome */
+
+//~ radio widget
+image: "images/radio_bt0.png" COMP; /* base */
+image: "images/radio_bt1.png" COMP; /* toggle off */
+image: "images/radio_bt2.png" COMP; /* toggle on */
+image: "images/radio_bt3.png" COMP; /* focus */
+image: "images/radio_bt4.png" COMP; /* shadow */
+
+//~ button
+image: "images/button_im0.png" COMP; /* base */
+image: "images/button_im1.png" COMP; /* enabled */
+image: "images/button_im2.png" COMP; /* disabled */
+image: "images/button_im3.png" COMP; /* focus */
+image: "images/button_im4.png" COMP; /* top shadow */
+image: "images/button_im5.png" COMP; /* shadow overlay */
+
+//~ frame
+image: "images/frame_im0.png" COMP; /* frame border */
+
+//~ menu
+image: "images/menu_im0.png" COMP; /* background */
+image: "images/menu_im1.png" COMP; /* separator */
+image: "images/menu_im2.png" COMP; /* hilite */
+image: "images/menu_im3.png" COMP; /* inactive arrow */
+image: "images/menu_im4.png" COMP; /* active arrow */
+
+//~ dialog
+image: "images/dialog_im0.png" COMP; /* background */
+image: "images/dialog_im1.png" COMP; /* separator */
+
+//~ configure
+image: "images/configure_im0.png" COMP; /* background */
+
+//~ entry
+image: "images/entry_im0.png" COMP; /* base */
+image: "images/entry_im1.png" COMP; /* focus */
+
+//~ deskpreview
+image: "images/deskpreview_im0.png" COMP; /* background */
+
+//~ toolbar
+image: "images/efmtbar_im0.png" COMP; /* bar image top */
+image: "images/efmtbar_im1.png" COMP; /* bar image bottom */
+
+//~ resize
+
+//~ decoration
+image: "images/decoration_im0.png" COMP; /* regular dot */
+image: "images/decoration_im1.png" COMP; /* wide dot */
+
+//~ exebuf
+image: "images/exebuf_im0.png" COMP; /* hilite */
+
+//~ border buttons
+image: "images/window-border_bt0.png" COMP; /* base */
+image: "images/window-border_bt1.png" COMP; /* button flat */
+image: "images/window-border_bt2.png" COMP; /* minimize */
+image: "images/window-border_bt3.png" COMP; /* maximize */
+image: "images/window-border_bt4.png" COMP; /* close */
+
+//~ ibar
+image: "images/ibar_im0.png" COMP; /* label */
+image: "images/ibar_im1.png" COMP; /* drop */
+
+//~ itask
+image: "images/itask_im0.png" COMP; /* bottom orientation */
+image: "images/itask_im1.png" COMP; /* top orientation */
+image: "images/itask_im2.png" COMP; /* left orientation */
+image: "images/itask_im3.png" COMP; /* right orientation */
+
+//~ gadman
+image: "images/gadman_im0.png" COMP; /* background */
+image: "images/gadman_im1.png" COMP; /* border */
+image: "images/gadman_im2.png" COMP; /* indicator */
+image: "images/gadman_im3.png" COMP; /* top arrow */
+image: "images/gadman_im4.png" COMP; /* bottom arrow */
+image: "images/gadman_im5.png" COMP; /* left arrow */
+image: "images/gadman_im6.png" COMP; /* right arrow */
+
+//~ spectrum
+image: "images/spectrum_im0.png" COMP; /* spectrum inset */
+image: "images/spectrum_im1.png" COMP; /* spectrum cursor */
+image: "images/cs_box.png" COMP;
+image: "images/color_slider_cursor.png" COMP;
+image: "images/color_slider_x.png" COMP;
+image: "images/color_slider_y.png" COMP;
+
+//~ background
+image: "images/wallpaper_pat0.png" COMP; /* background pattern */
+image: "images/wallpaper_pat1.png" COMP; /* overlay pattern */
+
+//~ desklock
+image: "images/wallpaper_im0.png" COMP; /* wallpaper */
+
+//~ window border menu (details)
+image: "images/button_detail_close.png" COMP;
+image: "images/button_detail_maximize.png" COMP;
+image: "images/button_detail_minimize.png" COMP;
+image: "images/button_detail_shade.png" COMP;
+image: "images/button_detail_stick.png" COMP;
+image: "images/button_detail_locks.png" COMP;
+image: "images/button_detail_locks_user.png" COMP;
+image: "images/button_detail_locks_application.png" COMP;
+image: "images/button_detail_borderless.png" COMP;
+image: "images/button_detail_remember.png" COMP;
+image: "images/button_detail_skip_winlist.png" COMP;
+image: "images/button_detail_fullscreen.png" COMP;
+image: "images/button_detail_sendto.png" COMP;
+image: "images/button_detail_kill.png" COMP;
+image: "images/button_detail_stacking.png" COMP;
+image: "images/button_detail_stack_below.png" COMP;
+image: "images/button_detail_stack_normal.png" COMP;
+image: "images/button_detail_stack_on_top.png" COMP;
+image: "images/button_detail_properties.png" COMP;
+image: "images/button_detail_skip.png" COMP;
+image: "images/button_detail_skip_pager.png" COMP;
+image: "images/button_detail_skip_taskbar.png" COMP;
+image: "images/button_detail_skip_winlist.png" COMP;
+image: "images/button_detail_basic.png" COMP;
+
+//~ desklock
+image: "images/desklock_dialog_bg.png" COMP;
+
+//~ slider
+image: "images/slider_h.png" COMP;
+image: "images/slider_v.png" COMP;
+image: "images/slider_hshadow.png" COMP;
+image: "images/slider_vshadow.png" COMP;
+
+//~ runner
+image: "images/sb_runnerh.png" COMP;
+image: "images/sb_runnerh_disabled.png" COMP;
+image: "images/sb_runnerv.png" COMP;
+image: "images/sb_runnerh_left.png" COMP;
+image: "images/sb_runnerh_right.png" COMP;
+image: "images/sb_runnerv_top.png" COMP;
+image: "images/sb_runnerv_bot.png" COMP;
+image: "images/sb_runnerv_top_disabled.png" COMP;
+image: "images/sb_runnerv_bot_disabled.png" COMP;
+image: "images/sb_runnerv_disabled.png" COMP;
+image: "images/sb_runnerh_left_disabled.png" COMP;
+image: "images/sb_runnerh_right_disabled.png" COMP;
+
+//~ border default
+image: "images/tl.png" COMP;
+image: "images/tb.png" COMP;
+image: "images/tr.png" COMP;
+image: "images/bl.png" COMP;
+image: "images/bb.png" COMP;
+image: "images/br.png" COMP;
+image: "images/lb.png" COMP;
+image: "images/rb.png" COMP;
+image: "images/lb-blend.png" COMP;
+image: "images/rb-blend.png" COMP;
+image: "images/tb-shadow.png" COMP;
+
+//~ border shaped
+image: "images/bld-shaped.png" COMP;
+image: "images/brd-shaped.png" COMP;
+image: "images/tld-shaped.png" COMP;
+image: "images/trd-shaped.png" COMP;
+image: "images/tb-shaped.png" COMP;
+
+//~ border full
+image: "images/tl-full.png" COMP;
+image: "images/tr-full.png" COMP;
+image: "images/bl-full.png" COMP;
+image: "images/br-full.png" COMP;
+
+//~ border dialog
+image: "images/tl-dialog.png" COMP;
+image: "images/tb-dialog.png" COMP;
+image: "images/tr-dialog.png" COMP;
+image: "images/bl-dialog.png" COMP;
+image: "images/bb-dialog.png" COMP;
+image: "images/br-dialog.png" COMP;
+image: "images/bb-dialog2.png" COMP;
+
+//~ extended
+image: "images/tl2-dialog.png" COMP;
+image: "images/tb2-dialog.png" COMP;
+image: "images/tr2-dialog.png" COMP;
+
+//~ border container
+image: "images/bl-shaped.png" COMP;
+image: "images/br-shaped.png" COMP;
+image: "images/tl-shaped.png" COMP;
+image: "images/tr-shaped.png" COMP;
+
+//~ efm nav
+image: "images/nav_back-base.png" COMP;
+image: "images/nav_back-button.png" COMP;
+image: "images/nav_back-button-disabled.png" COMP;
+image: "images/nav_back-button-sign.png" COMP;
+image: "images/nav_back-button-sign2.png" COMP;
+image: "images/nav_forward-base.png" COMP;
+image: "images/nav_forward-button.png" COMP;
+image: "images/nav_forward-button-disabled.png" COMP;
+image: "images/nav_forward-button-sign.png" COMP;
+image: "images/nav_forward-button-sign2.png" COMP;
+image: "images/nav_refresh-base.png" COMP;
+image: "images/nav_refresh-button.png" COMP;
+image: "images/nav_refresh-button-disabled.png" COMP;
+image: "images/nav_refresh-button-sign.png" COMP;
+image: "images/nav_refresh-button-sign2.png" COMP;
+image: "images/nav_refresh-button-shadow.png" COMP;
+image: "images/nav_up-button-sign.png" COMP;
+image: "images/nav_up-button-sign2.png" COMP;
+image: "images/nav_button-shadow-left.png" COMP;
+image: "images/nav_button-shadow-right.png" COMP;
+image: "images/nav_fav-button-sign.png" COMP;
+
+//~ shelf
+image: "images/shelf_default_bg_t.png" COMP;
+image: "images/shelf_default_bg_t2.png" COMP;
+image: "images/shelf_default_bg_tt2.png" COMP;
+image: "images/shelf_default_bg_tb2.png" COMP;
+image: "images/shelf_default_bg_v.png" COMP;
+image: "images/shelf_default_bg_v2.png" COMP;
+image: "images/shelf_default_r_bg_v.png" COMP;
+image: "images/shelf_default_r_bg_v2.png" COMP;
+image: "images/shelf_default_inset_bg.png" COMP;
+image: "images/shelf_invisible_inset_bg.png" COMP;
+
+//~ scrollbar
+image: "images/sb_bl1.png" COMP;
+image: "images/sb_br1.png" COMP;
+image: "images/sb_btu1.png" COMP;
+image: "images/sb_btd1.png" COMP;
+
+//~ scrollframe
+image: "images/scrollframe_inset.png" COMP;
+image: "images/scrollframe_focus.png" COMP;
+image: "images/sf_vb_runner.png" COMP;
+image: "images/sf_btu1.png" COMP;
+image: "images/sf_btd1.png" COMP;
+image: "images/sf_barv1.png" COMP;
+image: "images/sf_hb_runner.png" COMP;
+image: "images/sf_bl1.png" COMP;
+image: "images/sf_br1.png" COMP;
+image: "images/sf_barh1.png" COMP;
+image: "images/scrollframe_focus.png" COMP;
+image: "images/sb_vdrag.png" COMP;
+image: "images/sb_hdrag.png" COMP;
+image: "images/scrollframe_bg.png" COMP;
+image: "images/sf_barv_thumb.png" COMP;
+image: "images/sf_barh_thumb.png" COMP; 
+image: "images/sf_btu1_over.png" COMP;
+image: "images/sf_btd1_over.png" COMP;
+image: "images/sf_bl1_over.png" COMP;
+image: "images/sf_br1_over.png" COMP;
+
+//~ error
+image: "images/error-dialog_bg.png" COMP;
+
+//~ transitions
+image: "images/transition_vswipe.png" COMP;
+
+//~ pager
+image: "images/pager_desk_bg_focus.png" COMP;
+image: "images/pager_icon_window.png" COMP;
+image: "images/pager_icon_window_ds.png" COMP;
+image: "images/pager_lid_l.png" COMP;
+image: "images/pager_lid_r.png" COMP;
+
+//~ about_theme
+image: "images/logo.png" COMP;
+image: "images/dialog_aboutbg.png" COMP;
+
+//~ clock
+image: "clock/clock_bg.png" COMP;
+image: "clock/hour.cursor.00.png" COMP;
+image: "clock/hour.cursor.01.png" COMP;
+image: "clock/hour.cursor.02.png" COMP;
+image: "clock/hour.cursor.03.png" COMP;
+image: "clock/hour.cursor.04.png" COMP;
+image: "clock/hour.cursor.05.png" COMP;
+image: "clock/hour.cursor.06.png" COMP;
+image: "clock/hour.cursor.07.png" COMP;
+image: "clock/hour.cursor.08.png" COMP;
+image: "clock/hour.cursor.09.png" COMP;
+image: "clock/hour.cursor.10.png" COMP;
+image: "clock/hour.cursor.11.png" COMP;
+image: "clock/hour.cursor.12.png" COMP;
+image: "clock/hour.cursor.13.png" COMP;
+image: "clock/hour.cursor.14.png" COMP;
+image: "clock/hour.cursor.15.png" COMP;
+image: "clock/hour.cursor.16.png" COMP;
+image: "clock/hour.cursor.17.png" COMP;
+image: "clock/hour.cursor.18.png" COMP;
+image: "clock/hour.cursor.19.png" COMP;
+image: "clock/hour.cursor.20.png" COMP;
+image: "clock/hour.cursor.21.png" COMP;
+image: "clock/hour.cursor.22.png" COMP;
+image: "clock/hour.cursor.23.png" COMP;
+image: "clock/hour.cursor.24.png" COMP;
+image: "clock/hour.cursor.25.png" COMP;
+image: "clock/hour.cursor.26.png" COMP;
+image: "clock/hour.cursor.27.png" COMP;
+image: "clock/hour.cursor.28.png" COMP;
+image: "clock/hour.cursor.29.png" COMP;
+image: "clock/hour.cursor.30.png" COMP;
+image: "clock/hour.cursor.31.png" COMP;
+image: "clock/hour.cursor.32.png" COMP;
+image: "clock/hour.cursor.33.png" COMP;
+image: "clock/hour.cursor.34.png" COMP;
+image: "clock/hour.cursor.35.png" COMP;
+image: "clock/hour.cursor.36.png" COMP;
+image: "clock/hour.cursor.37.png" COMP;
+image: "clock/hour.cursor.38.png" COMP;
+image: "clock/hour.cursor.39.png" COMP;
+image: "clock/hour.cursor.40.png" COMP;
+image: "clock/hour.cursor.41.png" COMP;
+image: "clock/hour.cursor.42.png" COMP;
+image: "clock/hour.cursor.43.png" COMP;
+image: "clock/hour.cursor.44.png" COMP;
+image: "clock/hour.cursor.45.png" COMP;
+image: "clock/hour.cursor.46.png" COMP;
+image: "clock/hour.cursor.47.png" COMP;
+image: "clock/hour.cursor.48.png" COMP;
+image: "clock/hour.cursor.49.png" COMP;
+image: "clock/hour.cursor.50.png" COMP;
+image: "clock/hour.cursor.51.png" COMP;
+image: "clock/hour.cursor.52.png" COMP;
+image: "clock/hour.cursor.53.png" COMP;
+image: "clock/hour.cursor.54.png" COMP;
+image: "clock/hour.cursor.55.png" COMP;
+image: "clock/hour.cursor.56.png" COMP;
+image: "clock/hour.cursor.57.png" COMP;
+image: "clock/hour.cursor.58.png" COMP;
+image: "clock/hour.cursor.59.png" COMP;
+image: "clock/minutes.cursor.00.png" COMP;
+image: "clock/minutes.cursor.01.png" COMP;
+image: "clock/minutes.cursor.02.png" COMP;
+image: "clock/minutes.cursor.03.png" COMP;
+image: "clock/minutes.cursor.04.png" COMP;
+image: "clock/minutes.cursor.05.png" COMP;
+image: "clock/minutes.cursor.06.png" COMP;
+image: "clock/minutes.cursor.07.png" COMP;
+image: "clock/minutes.cursor.08.png" COMP;
+image: "clock/minutes.cursor.09.png" COMP;
+image: "clock/minutes.cursor.10.png" COMP;
+image: "clock/minutes.cursor.11.png" COMP;
+image: "clock/minutes.cursor.12.png" COMP;
+image: "clock/minutes.cursor.13.png" COMP;
+image: "clock/minutes.cursor.14.png" COMP;
+image: "clock/minutes.cursor.15.png" COMP;
+image: "clock/minutes.cursor.16.png" COMP;
+image: "clock/minutes.cursor.17.png" COMP;
+image: "clock/minutes.cursor.18.png" COMP;
+image: "clock/minutes.cursor.19.png" COMP;
+image: "clock/minutes.cursor.20.png" COMP;
+image: "clock/minutes.cursor.21.png" COMP;
+image: "clock/minutes.cursor.22.png" COMP;
+image: "clock/minutes.cursor.23.png" COMP;
+image: "clock/minutes.cursor.24.png" COMP;
+image: "clock/minutes.cursor.25.png" COMP;
+image: "clock/minutes.cursor.26.png" COMP;
+image: "clock/minutes.cursor.27.png" COMP;
+image: "clock/minutes.cursor.28.png" COMP;
+image: "clock/minutes.cursor.29.png" COMP;
+image: "clock/minutes.cursor.30.png" COMP;
+image: "clock/minutes.cursor.31.png" COMP;
+image: "clock/minutes.cursor.32.png" COMP;
+image: "clock/minutes.cursor.33.png" COMP;
+image: "clock/minutes.cursor.34.png" COMP;
+image: "clock/minutes.cursor.35.png" COMP;
+image: "clock/minutes.cursor.36.png" COMP;
+image: "clock/minutes.cursor.37.png" COMP;
+image: "clock/minutes.cursor.38.png" COMP;
+image: "clock/minutes.cursor.39.png" COMP;
+image: "clock/minutes.cursor.40.png" COMP;
+image: "clock/minutes.cursor.41.png" COMP;
+image: "clock/minutes.cursor.42.png" COMP;
+image: "clock/minutes.cursor.43.png" COMP;
+image: "clock/minutes.cursor.44.png" COMP;
+image: "clock/minutes.cursor.45.png" COMP;
+image: "clock/minutes.cursor.46.png" COMP;
+image: "clock/minutes.cursor.47.png" COMP;
+image: "clock/minutes.cursor.48.png" COMP;
+image: "clock/minutes.cursor.49.png" COMP;
+image: "clock/minutes.cursor.50.png" COMP;
+image: "clock/minutes.cursor.51.png" COMP;
+image: "clock/minutes.cursor.52.png" COMP;
+image: "clock/minutes.cursor.53.png" COMP;
+image: "clock/minutes.cursor.54.png" COMP;
+image: "clock/minutes.cursor.55.png" COMP;
+image: "clock/minutes.cursor.56.png" COMP;
+image: "clock/minutes.cursor.57.png" COMP;
+image: "clock/minutes.cursor.58.png" COMP;
+image: "clock/minutes.cursor.59.png" COMP;
+image: "clock/seconds.cursor.00.png" COMP;
+image: "clock/seconds.cursor.01.png" COMP;
+image: "clock/seconds.cursor.02.png" COMP;
+image: "clock/seconds.cursor.03.png" COMP;
+image: "clock/seconds.cursor.04.png" COMP;
+image: "clock/seconds.cursor.05.png" COMP;
+image: "clock/seconds.cursor.06.png" COMP;
+image: "clock/seconds.cursor.07.png" COMP;
+image: "clock/seconds.cursor.08.png" COMP;
+image: "clock/seconds.cursor.09.png" COMP;
+image: "clock/seconds.cursor.10.png" COMP;
+image: "clock/seconds.cursor.11.png" COMP;
+image: "clock/seconds.cursor.12.png" COMP;
+image: "clock/seconds.cursor.13.png" COMP;
+image: "clock/seconds.cursor.14.png" COMP;
+image: "clock/seconds.cursor.15.png" COMP;
+image: "clock/seconds.cursor.16.png" COMP;
+image: "clock/seconds.cursor.17.png" COMP;
+image: "clock/seconds.cursor.18.png" COMP;
+image: "clock/seconds.cursor.19.png" COMP;
+image: "clock/seconds.cursor.20.png" COMP;
+image: "clock/seconds.cursor.21.png" COMP;
+image: "clock/seconds.cursor.22.png" COMP;
+image: "clock/seconds.cursor.23.png" COMP;
+image: "clock/seconds.cursor.24.png" COMP;
+image: "clock/seconds.cursor.25.png" COMP;
+image: "clock/seconds.cursor.26.png" COMP;
+image: "clock/seconds.cursor.27.png" COMP;
+image: "clock/seconds.cursor.28.png" COMP;
+image: "clock/seconds.cursor.29.png" COMP;
+image: "clock/seconds.cursor.30.png" COMP;
+image: "clock/seconds.cursor.31.png" COMP;
+image: "clock/seconds.cursor.32.png" COMP;
+image: "clock/seconds.cursor.33.png" COMP;
+image: "clock/seconds.cursor.34.png" COMP;
+image: "clock/seconds.cursor.35.png" COMP;
+image: "clock/seconds.cursor.36.png" COMP;
+image: "clock/seconds.cursor.37.png" COMP;
+image: "clock/seconds.cursor.38.png" COMP;
+image: "clock/seconds.cursor.39.png" COMP;
+image: "clock/seconds.cursor.40.png" COMP;
+image: "clock/seconds.cursor.41.png" COMP;
+image: "clock/seconds.cursor.42.png" COMP;
+image: "clock/seconds.cursor.43.png" COMP;
+image: "clock/seconds.cursor.44.png" COMP;
+image: "clock/seconds.cursor.45.png" COMP;
+image: "clock/seconds.cursor.46.png" COMP;
+image: "clock/seconds.cursor.47.png" COMP;
+image: "clock/seconds.cursor.48.png" COMP;
+image: "clock/seconds.cursor.49.png" COMP;
+image: "clock/seconds.cursor.50.png" COMP;
+image: "clock/seconds.cursor.51.png" COMP;
+image: "clock/seconds.cursor.52.png" COMP;
+image: "clock/seconds.cursor.53.png" COMP;
+image: "clock/seconds.cursor.54.png" COMP;
+image: "clock/seconds.cursor.55.png" COMP;
+image: "clock/seconds.cursor.56.png" COMP;
+image: "clock/seconds.cursor.57.png" COMP;
+image: "clock/seconds.cursor.58.png" COMP;
+image: "clock/seconds.cursor.59.png" COMP;
+
+//~ winlist
+image: "images/winlist_icon_window.png" COMP;
+image: "images/winlist_icon_window_shaded.png" COMP;
+image: "images/winlist_icon_window_minimized.png" COMP;
+
+//~ about
+image: "images/e17_logo_small.png" COMP;
+image: "images/e17_logo_small_p1.png" COMP;
+image: "images/e17_logo_small_p2.png" COMP;
+image: "images/e17_logo_small_p3.png" COMP;
+image: "images/e17_logo_small_p4.png" COMP;
+image: "images/e17_logo_small_p5.png" COMP;
+image: "images/e17_logo_small_p6.png" COMP;
+image: "images/e17_logo_small_p7.png" COMP;
+image: "images/e17_logo_small_p8.png" COMP;
+image: "images/e17_logo_small_p9.png" COMP;
+image: "images/e17_logo_small_p21.png" COMP;
+image: "images/e17_logo_small_p22.png" COMP;
+image: "images/e17_logo_small_p23.png" COMP;
+image: "images/e17_logo_small_p24.png" COMP;
+image: "images/e17_logo_small_p25.png" COMP;
+image: "images/e17_logo_small_p26.png" COMP;
+image: "images/e17_logo_small_p27.png" COMP;
+image: "images/e17_logo_small_p28.png" COMP;
+image: "images/e17_logo_small_p29.png" COMP;
+
+//~ cslider
+image: "images/cp_slider_trough.png" COMP;
+image: "images/cp_slider_trough_left.png" COMP;
+image: "images/cp_slider_trough_right.png" COMP;
+
+//~ temperature 
+image: "images/temperature-base.png" COMP;
+image: "images/temperature-0.png" COMP;
+image: "images/temperature-20.png" COMP;
+image: "images/temperature-40.png" COMP;
+image: "images/temperature-60.png" COMP;
+image: "images/temperature-80.png" COMP;
+image: "images/temperature-100.png" COMP;
+
+//~ fileman
+image: "images/fileman_thumb_bg.png" COMP;
+image: "images/fileman_shadow.png" COMP;
+image: "images/fileman_drop.png" COMP;
+image: "images/fileman_rubberband.png" COMP;
+image: "images/fileman_win_drop.png" COMP;
+image: "images/icon_select.png" COMP;
+image: "images/efmws.png" COMP;
+image: "images/efmws2.png" COMP;
+
+//~ busy cursor
+image: "images/busy.cursor.00.png" COMP;
+image: "images/busy.cursor.01.png" COMP;
+image: "images/busy.cursor.02.png" COMP;
+image: "images/busy.cursor.03.png" COMP;
+
+//~ init
+image: "images/splash.png" COMP;
+
