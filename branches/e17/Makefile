@@ -5,7 +5,6 @@ COMPILE		= $(CC) $(EDJE_CC_FLAGS)
 SRC		= main.edc
 OUT		= detour-e17.edj
 PATH_INSTALL    = $(HOME)/.e/e/themes
-INIT_PATH	= $(HOME)/.e/e/init
 
 EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
 -id images \

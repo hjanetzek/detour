@@ -28,7 +28,7 @@ group {
 				}
 		
 				image {
-					normal: "dialog_aboutbg.png";
+					normal: "images/dialog_aboutbg.png";
 					border: 3 3 3 3;
 				}
 			}
@@ -106,7 +106,7 @@ part {
 		min: 98 28;
 		max: 98 28;
 		fixed: 1 1;
-		image.normal: "button_im0.png";
+		image.normal: "images/button_im0.png";
 		image.border: 7 7 7 7;
 		color: 255 255 255 178;
 
@@ -154,7 +154,7 @@ part {
 
 	description {
 		state: "default" 0.0;
-		image.normal: "button_im1.png";
+		image.normal: "images/button_im1.png";
 		image.border: 7 7 7 7;
 
 		rel1 { 
@@ -180,7 +180,7 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 86 26;
-		image.normal: "button_im4.png";
+		image.normal: "images/button_im4.png";
 		image.border: 6 6 0 6;
 		color: 255 255 255 0;
 
@@ -254,7 +254,7 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 86 26;
-		image.normal: "button_im5.png";
+		image.normal: "images/button_im5.png";
 		image.border: 6 6 6 13;
 		color: 255 255 255 0;
 
@@ -297,7 +297,7 @@ part {
 		}
 
 		image {
-			normal: "logo.png";
+			normal: "images/logo.png";
 		}
 	}
 }
@@ -407,7 +407,7 @@ part {
 		}
 
 		image {
-			normal: "entry_im0.png";
+			normal: "images/entry_im0.png";
 			border: 6 6 8 7;
 		}
 	}

@@ -12,7 +12,7 @@ group {
 				state: "default" 0.0;
 
 				image {
-					normal: "configure_im0.png";
+					normal: "images/configure_im0.png";
 					border: 2 2 3 3;
 				}
 			}
@@ -119,7 +119,7 @@ part {
 		}
 
 		image {
-			normal: "e17_logo_small.png";
+			normal: "images/e17_logo_small.png";
 		}
     	}
 }
@@ -148,7 +148,7 @@ part { \
 		} \
 \
 		image { \
-			normal: "e17_logo_small_"_name".png"; \
+			normal: "images/e17_logo_small_"_name".png"; \
 		} \
 	} \
 \
@@ -288,7 +288,7 @@ part {
 		}
 
 		image {
-			normal: "entry_im0.png";
+			normal: "images/entry_im0.png";
 			border: 5 5 8 7;
 		}
     	}
@@ -313,7 +313,7 @@ part {
 		}
 
 		image {
-			normal: "entry_im0.png";
+			normal: "images/entry_im0.png";
 			border: 5 5 8 7;
 		}
 	}
@@ -414,7 +414,7 @@ part {
 		min: 98 28;
 		max: 98 28;
 		fixed: 1 1;
-		image.normal: "button_im0.png";
+		image.normal: "images/button_im0.png";
 		image.border: 7 7 7 7;
 		color: 255 255 255 178;
 
@@ -463,7 +463,7 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 44 26;
-		image.normal: "button_im1.png";
+		image.normal: "images/button_im1.png";
 		image.border: 7 7 7 7;
 
 		rel1 { 
@@ -489,7 +489,7 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 86 26;
-		image.normal: "button_im4.png";
+		image.normal: "images/button_im4.png";
 		image.border: 6 6 0 6;
 		color: 255 255 255 0;
 
@@ -563,7 +563,7 @@ part {
 	description {
 		state: "default" 0.0;
 		min: 86 26;
-		image.normal: "button_im5.png";
+		image.normal: "images/button_im5.png";
 		image.border: 6 6 6 13;
 		color: 255 255 255 0;
 

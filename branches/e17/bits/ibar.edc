@@ -329,7 +329,7 @@ group {
 					}
 
 					image {
-						normal: "ibar_im0.png";
+						normal: "images/ibar_im0.png";
 						border: 5 5 5 5;
 					}
 				}
@@ -340,9 +340,10 @@ group {
 		part {      
 			name: "e.text.label";
 			type: TEXT;
-			effect: SHADOW;
-			clip_to: "label.clip";                
+			effect: SHADOW;               
 			mouse_events: 0;
+			clip_to: "label.clip"; 
+			scale: 1;
 
 			description {
 				state: "default" 0.0;
@@ -645,7 +646,7 @@ group {
 				}
 
 				image {
-					normal: "ibar_im1.png";
+					normal: "images/ibar_im1.png";
 					border: 12 12 12 12;
 				}
 			}

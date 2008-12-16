@@ -20,7 +20,7 @@ group {
 				}
 
 				image {
-					normal: "deskpreview_im0.png";
+					normal: "images/deskpreview_im0.png";
 					border: 4 4 7 5;
 				}
 

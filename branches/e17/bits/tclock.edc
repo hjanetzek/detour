@@ -38,6 +38,7 @@ group {
 			name: "tclock_time";
 			type: TEXT;
 			mouse_events: 0;
+			scale: 1;
 
 			description {
 				state: "default" 0.0;
@@ -95,7 +96,8 @@ group {
 		part {
 			name: "tclock_date";
 			type: TEXT;
-			mouse_events: 0;		  
+			mouse_events: 0;
+			scale: 1;		  
 
 			description {
 				state: "default" 0.0;
@@ -191,7 +193,7 @@ group {
 	name: "modules/tclock/tip";
 
 	data {
-		//item: "shaped" "0";
+		item: "shaped" "1";
 	}
 
 	parts {
@@ -202,7 +204,6 @@ group {
 
 			description {
 				state: "default" 0.0;
-				/* X Composite ?? */
 				color: 104 108 111 128;
 			}
 		}
@@ -218,7 +219,7 @@ group {
 				rel2.offset: -2 -2;
 
 				image {
-					normal: "menu_im0.png";
+					normal: "images/menu_im0.png";
 					border: 2 2 2 2;
 				}
 			}
@@ -229,6 +230,7 @@ group {
 			type: TEXT;
 			effect: SHADOW;
 			mouse_events: 0;
+			scale: 1;
 
 			description {
 				state: "default" 0.0;

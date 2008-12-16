@@ -17,7 +17,7 @@ group {
 				state: "default" 0.0;
 
 				image {
-					normal: "pointer_im1.png";
+					normal: "images/pointer_im1.png";
 				}
 			}
 
@@ -41,7 +41,7 @@ group {
 					color: 255 255 255 0;
 
 					image {
-						normal: "pointer_im1.png";
+						normal: "images/pointer_im1.png";
 					}
 				}
 
@@ -67,7 +67,7 @@ group {
 					}
 
 					image {
-						normal: "pointer_im2.png";
+						normal: "images/pointer_im2.png";
 					}
 				}
 			}
@@ -176,7 +176,7 @@ group {
 				state: "default" 0.0;
 
 				image {
-					normal: "pointer_im3.png";
+					normal: "images/pointer_im3.png";
 				}
 			}
 		}

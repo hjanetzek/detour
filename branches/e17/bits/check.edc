@@ -44,7 +44,7 @@ group {
 				}		       
 
 				image {
-					normal: "check_bt0.png"; /* base */
+					normal: "images/check_bt0.png"; /* base */
 				}
 			}
 
@@ -124,7 +124,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				image.normal: "check_bt3.png";
+				image.normal: "images/check_bt3.png";
 
 				rel1 {
 					to: "base";
@@ -152,7 +152,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 192; /* image with 50% alpha blend */
-				image.normal: "check_bt4.png"; 	/* shadow */
+				image.normal: "images/check_bt4.png"; 	/* shadow */
 
 				rel1 { 
 					to: "checked";
@@ -207,7 +207,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt1.png";
+					normal: "images/check_bt1.png";
 				}
 			}
 
@@ -248,7 +248,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt2.png";
+					normal: "images/check_bt2.png";
 				}
 			}
 
@@ -362,7 +362,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt0.png";
+					normal: "images/check_bt0.png";
 				}
 			}
 
@@ -434,7 +434,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				image.normal: "check_bt3.png";
+				image.normal: "images/check_bt3.png";
 
 				rel1 {
 					to: "base";
@@ -462,7 +462,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 192; /* image with 50% alpha blend */
-				image.normal: "check_bt4.png"; 	/* shadow */
+				image.normal: "images/check_bt4.png"; 	/* shadow */
 
 				rel1 { 
 					to: "checked";
@@ -517,7 +517,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt1.png";
+					normal: "images/check_bt1.png";
 				}
 			}
 
@@ -558,7 +558,7 @@ group {
 				}
 
 				image {
-					normal: "check_bt2.png";
+					normal: "images/check_bt2.png";
 				}
 			}
 

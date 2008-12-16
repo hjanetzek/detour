@@ -354,35 +354,35 @@ part { 						\
 	} 					\
 }
 
-#define TOP_BORDER_SHADOW() 			\
-part { 						\
-	name: "inactive.shadow"; 		\
-	type: IMAGE; 				\
-	mouse_events: 0; 			\
-						\
-	description { 				\
-		state: "default" 0.0; 		\
-		min: 0 24; 			\
-		max: 9999 24; 			\
-		image.normal: "tb-shadow.png";	\
-		image.border: 1 1 11 0; 	\
-		color: 255 255 255 0; 		\
-						\
-		rel1 { 				\
-			to: "top-left"; 	\
-			offset: 1 1; 		\
-		} 				\
-						\
-		rel2 { 				\
-			to: "top-right"; 	\
-			offset: -2 -1; 		\
-		} 				\
-	} 					\
-						\
-	description { 				\
-		state: "default" 0.1; 		\
-		inherit: "default" 0.0; 	\
-		color: 255 255 255 164;		\
-	} 					\
+#define TOP_BORDER_SHADOW() 				\
+part { 							\
+	name: "inactive.shadow"; 			\
+	type: IMAGE; 					\
+	mouse_events: 0; 				\
+							\
+	description { 					\
+		state: "default" 0.0; 			\
+		min: 0 24; 				\
+		max: 9999 24; 				\
+		image.normal: "images/tb-shadow.png";	\
+		image.border: 1 1 11 0; 		\
+		color: 255 255 255 0; 			\
+							\
+		rel1 { 					\
+			to: "top-left"; 		\
+			offset: 1 1; 			\
+		} 					\
+							\
+		rel2 { 					\
+			to: "top-right"; 		\
+			offset: -2 -1; 			\
+		} 					\
+	} 						\
+							\
+	description { 					\
+		state: "default" 0.1; 			\
+		inherit: "default" 0.0; 		\
+		color: 255 255 255 164;			\
+	} 						\
 }
 
