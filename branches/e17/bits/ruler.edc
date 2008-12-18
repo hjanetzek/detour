@@ -1,0 +1,106 @@
+
+/*
+group { 
+	name: "e/gadget/icon";
+
+	parts {
+		part { 
+			name: "icon";
+			type: IMAGE;
+
+			description {
+				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
+
+				image {
+					normal: "ruler_icon.png";
+				}
+			}
+		}
+	}
+}
+*/
+
+group { 
+	name: "e/gadget/main";
+
+	data {
+		item: "e/gadget/name"        "Ruler";
+		item: "e/gadget/description" "All widget sets have a ruler...";
+		item: "e/gadget/version"     "0.0.1";
+		item: "e/gadget/author"      "DaveMDS <dave@gurumeditattion.it>";
+		item: "e/gadget/license"     "3-Clause BSD";
+		item: "e/gadget/apparence"   "plain";
+	}
+
+	script {
+		public init() {
+			send_message(MSG_STRING_SET, 0, "EDGAR_DBG", "Ruler Init");
+		}
+
+		public message(Msg_Type:type, id, ...) {
+			new cmd[32];
+			new val[2048];
+		
+		if ((type != MSG_STRING_SET)) return;
+			getsarg(2, cmd, sizeof(cmd));
+
+			if (strcmp(cmd, "EDGAR_ORIENT") == 0) {
+				getsarg(3, val, sizeof(val));
+				send_message(MSG_STRING_SET, 0, "EDGAR_DBG", "ruler orient", val);
+				if (strcmp(val, "VERT") == 0) {
+					set_state(PART:"ruler", "vertical", 0.0);
+					send_message(MSG_STRING_INT_SET, 0, "EDGAR_MIN_SET", "70 800");
+				}
+				else {
+					set_state(PART:"ruler", "default", 0.0);
+					send_message(MSG_STRING_SET, 0, "EDGAR_MIN_SET", "800 70");
+				}
+			}
+			else
+			send_message(MSG_STRING_SET, 0, "EDGAR_DBG", "Unknow");
+		}
+	}
+
+	parts {
+		part { 
+			name: "ruler";
+
+			description { 
+				state: "default" 0.0;
+				min: 492 69; 
+				max: 492 69; 
+				color: 245 228 82 242; 
+
+				image {
+					normal: "images/extra_ruler0.png";
+				}
+			}
+
+/*
+			description { 
+				state: "vertical" 0.0;
+				min: 69 492; 
+				max: 69 492;
+
+				image {
+					normal: "";
+				}
+			}
+*/
+		}
+	}
+
+	programs {
+		program { 
+			name: "init";
+			signal: "load";
+			source: "";
+			script {
+				init();
+			}
+		}
+	}
+}
+
