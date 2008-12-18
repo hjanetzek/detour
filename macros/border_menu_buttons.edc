@@ -27,7 +27,7 @@ part { 															\
 		} 													\
 															\
 		image { 												\
-			normal: "images/window-border_bt0.png"; 										\
+			normal: "images/window-border_bt0.png"; 							\
 			border: 6 6 6 6; 										\
 		} 													\
 	} 														\

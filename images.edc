@@ -50,9 +50,9 @@ image: "images/entry_im1.png" COMP; /* focus */
 //~ deskpreview
 image: "images/deskpreview_im0.png" COMP; /* background */
 
-//~ toolbar
-image: "images/efmtbar_im0.png" COMP; /* bar image top */
-image: "images/efmtbar_im1.png" COMP; /* bar image bottom */
+//~ efm toolbar
+image: "images/efm_tbar_im0.png" COMP; /* bar image top */
+image: "images/efm_tbar_im1.png" COMP; /* bar image bottom */
 
 //~ resize
 
@@ -104,31 +104,51 @@ image: "images/wallpaper_pat1.png" COMP; /* overlay pattern */
 //~ desklock
 image: "images/wallpaper_im0.png" COMP; /* wallpaper */
 
+//~ ruler
+image: "images/extra_ruler0.png" COMP; /* ruler */
+
+//~ shelf
+image: "images/shelf_def_im0.png" COMP; /* regular orientation */
+image: "images/shelf_def_im1.png" COMP; /* left orientation */
+image: "images/shelf_def_im2.png" COMP; /* right orientation */
+image: "images/shelf_def_im3.png" COMP; /* inset */
+image: "images/shelf_alt_im0.png" COMP; /* alternate image: regular orientation */
+image: "images/shelf_alt_im1.png" COMP; /* left orientation */
+image: "images/shelf_alt_im2.png" COMP; /* right orientation */
+
 //~ window border menu (details)
+image: "images/button_detail_basic.png" COMP; 			/* empty */
+image: "images/button_detail_borderless.png" COMP; 		/* empty */
 image: "images/button_detail_close.png" COMP;
+image: "images/button_detail_fullscreen.png" COMP;
+image: "images/button_detail_kill.png" COMP;
+image: "images/button_detail_locks.png" COMP; 			/* empty */
+image: "images/button_detail_locks_user.png" COMP; 		/* empty */
+image: "images/button_detail_locks_application.png" COMP; 	/* empty */
 image: "images/button_detail_maximize.png" COMP;
 image: "images/button_detail_minimize.png" COMP;
-image: "images/button_detail_shade.png" COMP;
-image: "images/button_detail_stick.png" COMP;
-image: "images/button_detail_locks.png" COMP;
-image: "images/button_detail_locks_user.png" COMP;
-image: "images/button_detail_locks_application.png" COMP;
-image: "images/button_detail_borderless.png" COMP;
-image: "images/button_detail_remember.png" COMP;
-image: "images/button_detail_skip_winlist.png" COMP;
-image: "images/button_detail_fullscreen.png" COMP;
-image: "images/button_detail_sendto.png" COMP;
-image: "images/button_detail_kill.png" COMP;
-image: "images/button_detail_stacking.png" COMP;
-image: "images/button_detail_stack_below.png" COMP;
-image: "images/button_detail_stack_normal.png" COMP;
-image: "images/button_detail_stack_on_top.png" COMP;
 image: "images/button_detail_properties.png" COMP;
-image: "images/button_detail_skip.png" COMP;
-image: "images/button_detail_skip_pager.png" COMP;
-image: "images/button_detail_skip_taskbar.png" COMP;
-image: "images/button_detail_skip_winlist.png" COMP;
-image: "images/button_detail_basic.png" COMP;
+image: "images/button_detail_remember.png" COMP; 		/* empty */
+image: "images/button_detail_sendto.png" COMP; 			/* empty */
+image: "images/button_detail_shade.png" COMP;
+image: "images/button_detail_skip.png" COMP; 			/* empty */
+image: "images/button_detail_skip_pager.png" COMP; 		/* empty */
+image: "images/button_detail_skip_taskbar.png" COMP; 		/* empty */
+image: "images/button_detail_skip_winlist.png" COMP; 		/* empty */
+image: "images/button_detail_stack_below.png" COMP; 		/* empty */
+image: "images/button_detail_stacking.png" COMP; 		/* empty */
+image: "images/button_detail_stack_normal.png" COMP; 		/* empty */
+image: "images/button_detail_stack_on_top.png" COMP; 		/* empty */
+image: "images/button_detail_stick.png" COMP;
+
+//~ busy cursor
+image: "images/cursor_im0.png" COMP; /* 00 */
+image: "images/cursor_im1.png" COMP; /* 15 */
+image: "images/cursor_im2.png" COMP; /* 30 */
+image: "images/cursor_im3.png" COMP; /* 45 */
+
+//~ init
+image: "images/init_im0.png" COMP; /* init splash screen */
 
 //~ desklock
 image: "images/desklock_dialog_bg.png" COMP;
@@ -221,18 +241,6 @@ image: "images/nav_up-button-sign2.png" COMP;
 image: "images/nav_button-shadow-left.png" COMP;
 image: "images/nav_button-shadow-right.png" COMP;
 image: "images/nav_fav-button-sign.png" COMP;
-
-//~ shelf
-image: "images/shelf_default_bg_t.png" COMP;
-image: "images/shelf_default_bg_t2.png" COMP;
-image: "images/shelf_default_bg_tt2.png" COMP;
-image: "images/shelf_default_bg_tb2.png" COMP;
-image: "images/shelf_default_bg_v.png" COMP;
-image: "images/shelf_default_bg_v2.png" COMP;
-image: "images/shelf_default_r_bg_v.png" COMP;
-image: "images/shelf_default_r_bg_v2.png" COMP;
-image: "images/shelf_default_inset_bg.png" COMP;
-image: "images/shelf_invisible_inset_bg.png" COMP;
 
 //~ scrollbar
 image: "images/sb_bl1.png" COMP;
@@ -509,15 +517,6 @@ image: "images/fileman_drop.png" COMP;
 image: "images/fileman_rubberband.png" COMP;
 image: "images/fileman_win_drop.png" COMP;
 image: "images/icon_select.png" COMP;
-image: "images/efmws.png" COMP;
-image: "images/efmws2.png" COMP;
-
-//~ busy cursor
-image: "images/busy.cursor.00.png" COMP;
-image: "images/busy.cursor.01.png" COMP;
-image: "images/busy.cursor.02.png" COMP;
-image: "images/busy.cursor.03.png" COMP;
-
-//~ init
-image: "images/splash.png" COMP;
+image: "images/efm_sw0.png" COMP; /* main window: top shadow */
+image: "images/efm_sw1.png" COMP; /* main window: bottom shadow */
 
