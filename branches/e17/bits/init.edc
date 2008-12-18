@@ -10,37 +10,37 @@ group {
 	parts {
 		init_background()
 
-part {
-	name: "splash.clip";
-	type: RECT;
-	mouse_events: 0;
+		part {
+			name: "splash.clip";
+			type: RECT;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		min: 295 89;
-		max: 295 89;
-		fixed: 1 1;
-		visible: 0;
+			description {
+				state: "default" 0.0;
+				min: 295 89;
+				max: 295 89;
+				fixed: 1 1;
+				visible: 0;
 
-		rel1 { 
-			to: "background_image"; 
-			relative: 0.5 0.5; 
-			offset: 1 0; 
+				rel1 { 
+					to: "background_image"; 
+					relative: 0.5 0.5; 
+					offset: 1 0; 
+				}
+
+				rel2 { 
+					to: "background_image"; 
+					relative: 0.5 0.5; 
+					offset: 0 -2; 
+				}
+			}
+
+			description {
+				state: "visible" 0.0;
+				inherit: "default" 0.0;
+				visible: 1;
+			}
 		}
-
-		rel2 { 
-			to: "background_image"; 
-			relative: 0.5 0.5; 
-			offset: 0 -2; 
-		}
-	}
-
-	description {
-		state: "visible" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-}
 
 part {
 	name: "splash";
@@ -63,7 +63,7 @@ part {
 		}
 
 		image {
-			normal: "images/splash.png";
+			normal: "images/init_im0.png";
 		}
     	}
 }
@@ -522,14 +522,14 @@ part {
 		}
 
 		image {
-			normal: "images/busy.cursor.00.png";
-			tween:  "images/busy.cursor.01.png";
-			tween:  "images/busy.cursor.02.png";
-			tween:  "images/busy.cursor.03.png";
-			normal: "images/busy.cursor.00.png";
-			tween:  "images/busy.cursor.01.png";
-			tween:  "images/busy.cursor.02.png";
-			tween:  "images/busy.cursor.03.png";
+					normal: "images/cursor_im0.png";
+					tween:  "images/cursor_im1.png";
+					tween:  "images/cursor_im2.png";
+					tween:  "images/cursor_im3.png";
+					normal: "images/cursor_im0.png";
+					tween:  "images/cursor_im1.png";
+					tween:  "images/cursor_im2.png";
+					tween:  "images/cursor_im3.png";
 		}
 	}
 }

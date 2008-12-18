@@ -49,7 +49,7 @@ group {
 					color_class: "";
 				#endif
 				#endif
-				color: 7 7 7 255;
+				color: 60 60 60 255;
 				visible: 0;
 
 				rel1 { 
@@ -66,7 +66,7 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSansMono-Bold"; /* fixme */
+					font: "Sans:style=Bold,DejaVuSansMono-Bold"; /* FIXME: */
 					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
@@ -108,7 +108,7 @@ group {
 					color_class: "";
 				#endif
 				#endif
-				color: 7 7 7 255;
+				color: 60 60 60 255;
 				visible: 0;
 
 				rel1 { 
@@ -125,8 +125,7 @@ group {
 
 				text {
 					text: "";
-					/* fixme */
-					font: "Sans:style=Bold,DejaVuSansMono-Bold";
+					font: "Sans:style=Bold,DejaVuSansMono-Bold"; /* FIXME: */
 					size: 9;
 					min: 1 1;
 					align: 0.5 0.5;
@@ -193,7 +192,7 @@ group {
 	name: "modules/tclock/tip";
 
 	data {
-		item: "shaped" "1";
+		//item: "shaped" "1";
 	}
 
 	parts {
@@ -204,7 +203,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 104 108 111 128;
+				color: 104 108 111 255;
 			}
 		}
 
@@ -235,8 +234,8 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;
-				color: 7 7 7 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 255;
+				color3: 170 168 169 64;
 				rel1.offset: 6 6;
 				rel2.offset: -5 -5;
 
@@ -256,7 +255,6 @@ group {
 				}
 			}
 		}
-
 	}
 }
   

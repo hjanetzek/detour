@@ -293,7 +293,7 @@ group {
 				}
 
 				gradient {
-					spectrum: "black_to_trans";
+					spectrum: "example_gradient";
 					rel1.relative: 0 0.5;
 					rel1.offset: 0 0;
 					rel2.relative: 1 0.5;
@@ -348,7 +348,7 @@ group {
 				}
 
 				gradient {
-					spectrum: "black_to_trans";
+					spectrum: "example_gradient";
 				}
 			}
 		}
@@ -399,7 +399,7 @@ group {
 				}
 
 				gradient {
-					spectrum: "black_to_trans";
+					spectrum: "example_gradient";
 					rel1.relative: 0 1;
 					rel1.offset: 0 -1;
 					rel2.relative: 1 0;
@@ -454,7 +454,7 @@ group {
 				}
 
 				gradient {
-					spectrum: "black_to_trans";
+					spectrum: "example_gradient";
 					rel1.relative: 0 0;
 					rel1.offset: 0 0;
 					rel2.relative: 1 1;
@@ -509,7 +509,7 @@ group {
 				}
 
 				gradient {
-					spectrum: "black_to_trans";
+					spectrum: "example_gradient";
 					type: "radial";
 				}
 
