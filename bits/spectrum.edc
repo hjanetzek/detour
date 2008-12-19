@@ -4,19 +4,6 @@ group {
 
 	parts {
 		part { 
-			name: "content_clip";
-			type: RECT;
-			mouse_events: 0;
-
-			description { 
-				state: "default" 0.0;
-				color: 255 255 255 255;
-				rel1.to: "e.swallow.content";
-				rel2.to: "e.swallow.content";
-			}
-		}
-
-		part { 
 			name: "e.swallow.content";
 			type: SWALLOW;
 			clip_to: "content_clip";
@@ -25,6 +12,25 @@ group {
 				state: "default" 0.0;
 				rel1.offset: 4 4;
 				rel2.offset: -5 -5;
+			}
+		}
+
+		part { 
+			name: "content_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description { 
+				state: "default" 0.0;
+				color: 255 255 255 255;
+
+				rel1 {
+					to: "e.swallow.content";
+				}
+
+				rel2 {
+					to: "e.swallow.content";
+				}
 			}
 		}
 
@@ -39,12 +45,12 @@ group {
 
 				rel1 {
 					to: "e.swallow.content";
-					offset: -1 -1;
+					offset: -1 -2;
 				}
 
 				rel2 {
 					to: "e.swallow.content";
-					offset: 0 0;
+					offset: 0 1;
 				}
 
 				image {
@@ -56,179 +62,48 @@ group {
 		}
 
 		part { 
-			name: "e.dragable.cursor";
+			name: "dragable.cursor.shadow";
 			type: IMAGE;
-
-			dragable {
-				confine: "e.swallow.content";
-				x: 1 1 0;
-				y: 1 1 0;
-			}
+			mouse_events: 0;
 
 			description { 
 				state: "default" 0.0;
-				min: 21 21;
-				max: 21 21;
+				min: 7 8;
+				max: 7 8;
 				fixed: 1 1;
-				visible: 1;
 
 				rel1 {
-					to: "e.swallow.content";
-					relative: 0.5 0.5;
-					offset: 0 0;
+					to: "e.dragable.cursor";
+					offset: 0 1;
 				}
 
 				rel2 {
-					to: "e.swallow.content";
-					relative: 0.5 0.5;
-					offset: 0 0;
+					to: "e.dragable.cursor";
+					offset: -1 -1;
 				}
 
 				image {
-					normal: "images/spectrum_im1.png";
-				}
-			}
-		}
-
-		part { 
-			name: "cursor_x";
-			type: RECT;
-
-			description { 
-				state: "default" 0.0;
-				color: 255 255 255 150;
-
-				rel1 {
-					to_x: "e.dragable.cursor";
-					to_y: "e.swallow.content";
-				}
-
-				rel2 {
-					to_x: "e.dragable.cursor";
-					to_y: "e.swallow.content";
-				}
-			}
-		}
-
-		part { 
-			name: "cursor_y";
-			type: RECT;
-
-			description { 
-				state: "default" 0.0;
-				color: 255 255 255 150;
-
-				rel1 {
-					to_x: "e.swallow.content";
-					to_y: "e.dragable.cursor";
-				}
-
-				rel2 {
-					to_x: "e.swallow.content";
-					to_y: "e.dragable.cursor";
-				}
-			}
-		}
-
-/*
-		part {
-			name: "background";
-			type: RECT;
-			mouse_events: 0;
-
-			description {
-				state: "default" 0.0;
-				min: 50 50;
-				aspect: 1 1;
-				color: 255 255 255 255;
-
-				rel1 { 
-					to: "overlay"; 
-				}
-
-				rel2 { 
-					to: "overlay"; 
-				}
- 			}
-		}
-
-		part {
-			name: "content_clip";
-			type: RECT;
-			mouse_events: 0;
-
-			description {
-				state: "default" 0.0;
-				aspect: 1 1;
-				color: 255 255 255 255;
-
-				rel1 { 
-					to: "background"; 
-					offset: 0 2; 
-				}
-
-				rel2 { 
-					to: "background"; 
-					offset: -2 -3; 
+					normal: "images/spectrum_im4.png";
 				}
 			}
 		}
 
 		part {
-			name: "e.swallow.content";
-			type: SWALLOW;
+			name: "e.dragable.cursor";
+			type: IMAGE;
 			clip_to: "content_clip";
 
-			description {
-				state: "default" 0.0;
-				aspect: 1 1;
-		
-				rel1 { 
-					offset: 0 2; 
-				}
-
-				rel2 { 
-					offset: -2 -3; 
-				}
-			}
-		}
-
-		part {
-			name: "overlay";
-			type: IMAGE;
-			mouse_events: 0;
-	
-			description {
-				state: "default" 0.0;
-				aspect: 1 1;
-
-				image {
-					normal: "cs_box.png";
-					border: 2 2 3 3;
-					middle: 0;
-				}
-
-				fill {
-					smooth: 0;
-				}
-			}
-		}
-
-		part {
-			name: "e.dragable.cursor";
-			type: IMAGE;
-
 			dragable {
 				x: 1 1 0;
 				y: 1 1 0;
-				confine: "e.swallow.content";
+				confine: "content_clip";
 			}
 
 			description {
 				state: "default" 0.0;
-				min: 15 15;
-				max: 15 15;
-				visible: 1;
+				min: 7 7;
+				max: 7 7;
+				fixed: 1 1;
 
 				rel1 { 
 					to: "e.swallow.content"; 
@@ -243,14 +118,20 @@ group {
 				}
 
 				image {
-					normal: "color_slider_cursor.png";
+					normal: "images/spectrum_im1.png";
 				}
 			}
 		}
 
+/*
+ * x,y value pointers, an idea not easily doable right
+ */
+
+/*
 		part {
 			name: "cursor_x";
 			type: IMAGE;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -260,26 +141,25 @@ group {
 
 				rel1 { 
 					to_x: "e.dragable.cursor"; 
-					//~ to_y: "e.swallow.content"; 
 					relative: 0.0 1.0; 
-				offset: 0 0;  
+					offset: 0 0;  
 				}
 
 				rel2 { 
 					to_x: "e.dragable.cursor"; 
-					//~ to_y: "e.swallow.content"; 
 					relative: 1.0 1.0; 
-					offset: -1 -1; 
+					offset: -1 -13; 
 				}
 
 				image {
-					normal: "color_slider_x.png";
+					normal: "images/spectrum_im2.png"; 
 				}
 			}
 		}
 
 		part {
 			name: "cursor_y";
+			mouse_events: 0;
 			type: IMAGE;
 
 			description {
@@ -289,25 +169,22 @@ group {
 				fixed: 1 1;
 
 				rel1 { 
-					//~ to_x: "e.swallow.content"; 
 					to_y: "e.dragable.cursor"; 
 					relative: 1.0 0.0; 
-					offset: 5 5; 
+					offset: -12 0; 
 				}
 
 				rel2 { 
-					//~ to_x: "e.swallow.content"; 
 					to_y: "e.dragable.cursor"; 
 					relative: 1.0 1.0; 
 					offset: -1 -1; 
 				}
 
 				image {
-					normal: "color_slider_y.png";
+					normal: "images/spectrum_im3.png";
 				}
 			}
-		}
-*/
+		}*/
 	}
 }
 
