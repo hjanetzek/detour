@@ -385,16 +385,6 @@ group {
 			 * that a) its running or b) urgent
 			 */
 				color: 255 255 255 132; /* app minimized */
-
-				rel1 {
-					relative: 0.5 0.5;
-					offset: -10 -10;
-				}
-
-				rel2 {
-					relative: 0.5 0.5;
-					offset: 5 5;
-				}
 			}
 
 			description {
