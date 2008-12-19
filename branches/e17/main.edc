@@ -107,10 +107,10 @@ collections {
 	#include "bits/border.edc"		/* border group */
 	#include "bits/button.edc"		/* button widget group */
 	#include "bits/check.edc"		/* check widget group */
-	#include "bits/cfgtoolbar.edc"		/* configuration toolbar */
 	#include "bits/clock.edc"		/* clock module */
 	#include "bits/color_well.edc"		/* color well */
 	#include "bits/configure.edc"		/* configure group */
+	#include "bits/configure_toolbar.edc"	/* configuration toolbar */
 	//~ #include "bits/connman.edc"		/* connection manager */
 	//~ #include "bits/cpufreq.edc"		/* cpu frequency */
 	#include "bits/cslider.edc"		/* cslider group */
