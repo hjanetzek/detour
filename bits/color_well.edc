@@ -11,9 +11,9 @@ group {
 
 			description { 
 				state: "default" 0.0;
+				color: 255 255 255 255;
 				rel1.to: "e.swallow.content";
 				rel2.to: "e.swallow.content";
-				color: 255 255 255 255;
 			}
 
 			description { 
@@ -28,12 +28,12 @@ group {
 			type: SWALLOW;
 			clip_to: "content_clip";
 
-				description { 
-					state: "default" 0.0;
-					rel1.offset: 4 4;
-					rel2.offset: -5 -5;
-				}
+			description { 
+				state: "default" 0.0;
+				rel1.offset: 4 4;
+				rel2.offset: -5 -5;
 			}
+		}
 
 		part { 
 			name: "border";

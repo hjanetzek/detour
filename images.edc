@@ -93,18 +93,17 @@ image: "images/gadman_im6.png" COMP; /* right arrow */
 image: "images/spectrum_im0.png" COMP; /* spectrum inset */
 image: "images/spectrum_im1.png" COMP; /* spectrum cursor */
 image: "images/spectrum_im2.png" COMP; /* x value */
-image: "images/spectrum_im3.png" COMP; /* y value */
+image: "images/spectrum_im3.png" COMP; /* y value middle*/
 image: "images/spectrum_im4.png" COMP; /* spectrum shadow */
+image: "images/spectrum_im5.png" COMP; /* y value top */
+image: "images/spectrum_im6.png" COMP; /* y value bottom */
+image: "images/spectrum_im7.png" COMP; /* y value inverted top */
+image: "images/spectrum_im8.png" COMP; /* y value inverted middle */
+image: "images/spectrum_im9.png" COMP; /* y value inverted bottom */
 
 //~ background
 image: "images/wallpaper_pat0.png" COMP; /* background pattern */
 image: "images/wallpaper_pat1.png" COMP; /* overlay pattern */
-
-//~ desklock
-image: "images/wallpaper_im0.png" COMP; /* wallpaper */
-
-//~ ruler
-image: "images/extra_ruler0.png" COMP; /* ruler */
 
 //~ shelf
 image: "images/shelf_def_im0.png" COMP; /* regular orientation */
@@ -114,6 +113,20 @@ image: "images/shelf_def_im3.png" COMP; /* inset */
 image: "images/shelf_alt_im0.png" COMP; /* alternate image: regular orientation */
 image: "images/shelf_alt_im1.png" COMP; /* left orientation */
 image: "images/shelf_alt_im2.png" COMP; /* right orientation */
+
+//~ busy cursor
+image: "images/cursor_im0.png" COMP; /* 00 */
+image: "images/cursor_im1.png" COMP; /* 15 */
+image: "images/cursor_im2.png" COMP; /* 30 */
+image: "images/cursor_im3.png" COMP; /* 45 */
+
+//~ init
+image: "images/init_im0.png" COMP; /* init splash screen */
+
+//~ cslider
+image: "images/cslider_im0.png" COMP; /* base */
+image: "images/cslider_im1.png" COMP; /* left */
+image: "images/cslider_im2.png" COMP; /* right */
 
 //~ window border menu (details)
 image: "images/button_detail_basic.png" COMP; 			/* empty */
@@ -140,17 +153,9 @@ image: "images/button_detail_stack_normal.png" COMP; 		/* empty */
 image: "images/button_detail_stack_on_top.png" COMP; 		/* empty */
 image: "images/button_detail_stick.png" COMP;
 
-//~ busy cursor
-image: "images/cursor_im0.png" COMP; /* 00 */
-image: "images/cursor_im1.png" COMP; /* 15 */
-image: "images/cursor_im2.png" COMP; /* 30 */
-image: "images/cursor_im3.png" COMP; /* 45 */
-
-//~ init
-image: "images/init_im0.png" COMP; /* init splash screen */
-
 //~ desklock
 image: "images/desklock_dialog_bg.png" COMP;
+image: "images/wallpaper_im0.png" COMP; /* wallpaper */
 
 //~ slider
 image: "images/slider_h.png" COMP;
@@ -494,11 +499,6 @@ image: "images/e17_logo_small_p26.png" COMP;
 image: "images/e17_logo_small_p27.png" COMP;
 image: "images/e17_logo_small_p28.png" COMP;
 image: "images/e17_logo_small_p29.png" COMP;
-
-//~ cslider
-image: "images/cp_slider_trough.png" COMP;
-image: "images/cp_slider_trough_left.png" COMP;
-image: "images/cp_slider_trough_right.png" COMP;
 
 //~ temperature 
 image: "images/temperature-base.png" COMP;

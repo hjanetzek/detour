@@ -484,7 +484,7 @@ group {
 			signal: "e,state,item_urgent";
 			source: "e";
 			action: STATE_SET "urgent" 0.0;
-			transition: LINEAR 0.5;
+			transition: LINEAR 1.0;
 			target: "icon_clip";
 			after: "go_urgent2";
 		}
@@ -492,7 +492,7 @@ group {
 		program {
 			name: "go_urgent2";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.5;
+			transition: LINEAR 1.0;
 			target: "icon_clip";
 			after: "go_urgent";
 		}
