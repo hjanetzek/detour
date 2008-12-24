@@ -90,8 +90,8 @@ spectra {
 
 	spectrum {
 		name: "example_gradient";
-		color: 222 116 27 255 1;
-		color: 233 223 86 255 1;
+		color: 252 98 170 255 1;
+		color: 62 98 170 255 1;
 	}
 }
 
@@ -140,7 +140,6 @@ collections {
 	#include "bits/preview.edc"		/* preview */
 	#include "bits/resize.edc" 		/* resize window information group */
 	#include "bits/radio.edc"		/* radio widget group */
-	//~ #include "bits/ruler.edc"		/* extra: ruler group */
 	#include "bits/scrollframe.edc"		/* scrollframe groups */
 	#include "bits/shelf.edc"		/* shelf groups */
 	#include "bits/slider.edc"		/* slider group */
