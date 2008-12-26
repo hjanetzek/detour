@@ -3,7 +3,7 @@ group {
 	name: "e/widgets/configure/main";
 	min: 299 341;
 	max: 299 341;
-	
+
 	parts {
 		part {
 			name: "dialog_bg";

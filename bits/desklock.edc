@@ -24,7 +24,14 @@ group  {
 				state: "default" 0.0;
 
 				image {
-					normal: "images/wallpaper_im0.png";
+					normal: "images/wallpaper_pat0.png";
+				}
+
+				fill {
+					size {
+						relative: 0 0;
+						offset: 24 24;
+					}
 				}
 			}
 		}

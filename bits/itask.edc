@@ -388,9 +388,9 @@ group {
 				inherit: "default" 0.0;
 				color: 255 255 255 132;
 			}
-			// please set this not below alpha 
-			// of 129, since otherwise it will become 
-			// invisible when not using composite 
+			// please do not set this 255 255 255 129;
+			// if a composite manager is not found the icons
+			// will be completely invisible
 			description {
 				state: "iconic" 0.0;
 				inherit: "default" 0.0;
@@ -427,23 +427,17 @@ group {
 				 * when an application is first launched the corresponding
 				 * icon equals: 255 255 255 0;
 				 */
-				color: 255 255 255 255;
+				color: 255 255 255 128;
 			} 
 
 			description {
 				state: "taskbar_urgent" 0.0;
 				inherit: "default" 0.0;
-				color: 255 100 100 255;
+				color: 255 255 255 255;
 			}  
 
 			description {
 				state: "taskbar_focused" 0.0;
-				inherit: "default" 0.0;
-				color: 230 230 230 150;
-			} 
-
-			description {
-				state: "taskbar_focused2" 0.0;
 				inherit: "default" 0.0;
 				color: 255 255 255 255;
 			} 
@@ -451,7 +445,7 @@ group {
 			description {
 				state: "taskbar_iconic" 0.0;
 				inherit: "default" 0.0;
-				color: 180 180 180 200;
+				color: 255 255 255 255;
 			} 
 		} 
 
@@ -503,8 +497,7 @@ group {
 			name: "go_taskbar_normal";
 			signal: "e,state,taskbar_item_normal";
 			source: "e";
-			/* application is not minimized,
-			 * urgent or focused  */
+			/* application is not minimized, urgent or focused  */
 			action: STATE_SET "taskbar_normal" 0.0;
 			transition: LINEAR 0.5;
 			target: "icon_clip";
@@ -520,8 +513,8 @@ group {
 			transition: LINEAR 0.5;
 			target: "icon_clip";
 		}
-		/* just for testing if it works.. */
-		/*program {
+
+		program {
 			name: "go_taskbar_focused";
 			signal: "e,state,taskbar_item_focused";
 			source: "e";
@@ -529,22 +522,14 @@ group {
 			action: STATE_SET "taskbar_focused" 0.0;
 			transition: SINUSOIDAL 0.3;
 			target: "icon_clip";
-			after: "go_taskbar_focused2";
 		}
 		
-		program {
-			name: "go_taskbar_focused2";
-			action: STATE_SET "taskbar_focused2" 0.0;
-			transition: SINUSOIDAL 0.3;
-			target: "icon_clip";
-			after: "go_taskbar_focused";
-		}
-		*/
 		program {
 			name: "go_taskbar_urgent";
 			signal: "e,state,taskbar_item_urgent";
 			source: "e";
 			action: STATE_SET "taskbar_urgent" 0.0;
+			/* application is sending urgent signal  */
 			transition: LINEAR 1.0;
 			target: "icon_clip";
 			after: "go_taskbar_urgent2";

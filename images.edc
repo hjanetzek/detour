@@ -128,6 +128,10 @@ image: "images/cslider_im0.png" COMP; /* base */
 image: "images/cslider_im1.png" COMP; /* left */
 image: "images/cslider_im2.png" COMP; /* right */
 
+//~ about_theme
+image: "images/logo.png" COMP; /* detour logo */
+image: "images/dialog_aboutbg.png" COMP; 
+
 //~ window border menu (details)
 image: "images/button_detail_basic.png" COMP; 			/* empty */
 image: "images/button_detail_borderless.png" COMP; 		/* empty */
@@ -153,9 +157,31 @@ image: "images/button_detail_stack_normal.png" COMP; 		/* empty */
 image: "images/button_detail_stack_on_top.png" COMP; 		/* empty */
 image: "images/button_detail_stick.png" COMP;
 
+//~ border default
+image: "images/window-border_im0.png" COMP; 	/* top left corner */
+//image: "images/window-border_im1.png" COMP; 	/* top center */
+image: "images/window-border_im2.png" COMP; 	/* top right corner */
+//image: "images/window-border_im3.png" COMP; 	/* bottom left */
+//image: "images/window-border_im4.png" COMP; 	/* bottom center */
+//image: "images/window-border_im5.png" COMP; 	/* bottom right */
+//image: "images/window-border_im6.png" COMP; 	/* left border */
+//image: "images/window-border_im7.png" COMP; 	/* right border */
+//image: "images/window-border_im8.png" COMP; 	/* border shadow: inactive */
+image: "images/bl.png" COMP;
+image: "images/bb.png" COMP;
+image: "images/br.png" COMP;
+image: "images/tb.png" COMP;
+image: "images/tb-shadow.png" COMP;
+
+//~ border: shaped border
+image: "images/bld-shaped.png" COMP;
+image: "images/brd-shaped.png" COMP;
+image: "images/tld-shaped.png" COMP;
+image: "images/trd-shaped.png" COMP;
+image: "images/tb-shaped.png" COMP;
+
 //~ desklock
 image: "images/desklock_dialog_bg.png" COMP;
-image: "images/wallpaper_im0.png" COMP; /* wallpaper */
 
 //~ slider
 image: "images/slider_h.png" COMP;
@@ -176,26 +202,6 @@ image: "images/sb_runnerv_bot_disabled.png" COMP;
 image: "images/sb_runnerv_disabled.png" COMP;
 image: "images/sb_runnerh_left_disabled.png" COMP;
 image: "images/sb_runnerh_right_disabled.png" COMP;
-
-//~ border default
-image: "images/tl.png" COMP;
-image: "images/tb.png" COMP;
-image: "images/tr.png" COMP;
-image: "images/bl.png" COMP;
-image: "images/bb.png" COMP;
-image: "images/br.png" COMP;
-image: "images/lb.png" COMP;
-image: "images/rb.png" COMP;
-image: "images/lb-blend.png" COMP;
-image: "images/rb-blend.png" COMP;
-image: "images/tb-shadow.png" COMP;
-
-//~ border shaped
-image: "images/bld-shaped.png" COMP;
-image: "images/brd-shaped.png" COMP;
-image: "images/tld-shaped.png" COMP;
-image: "images/trd-shaped.png" COMP;
-image: "images/tb-shaped.png" COMP;
 
 //~ border full
 image: "images/tl-full.png" COMP;
@@ -286,10 +292,6 @@ image: "images/pager_icon_window.png" COMP;
 image: "images/pager_icon_window_ds.png" COMP;
 image: "images/pager_lid_l.png" COMP;
 image: "images/pager_lid_r.png" COMP;
-
-//~ about_theme
-image: "images/logo.png" COMP;
-image: "images/dialog_aboutbg.png" COMP;
 
 //~ clock
 image: "clock/clock_bg.png" COMP;
