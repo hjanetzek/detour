@@ -422,7 +422,7 @@ group {
 				 * when an application is first launched the corresponding
 				 * icon equals: 255 255 255 0;
 				 */
-				color: 255 255 255 128;
+				color: 255 255 255 192;
 			} 
 
 			description {
@@ -440,7 +440,7 @@ group {
 			description {
 				state: "taskbar_iconic" 0.0;
 				inherit: "default" 0.0;
-				color: 90 90 90 192;
+				color: 255 255 255 129;
 			} 
 		} 
 
