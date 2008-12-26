@@ -96,12 +96,12 @@ spectra {
 }
 
 styles {
-	#include "bits/textblock_styles.edc"
+	#include "bits/styles.edc"
 }
 
 collections {
 	#include "bits/about.edc"		/* about enlightenment */
-	#include "bits/about_theme.edc"		/* about this edje */
+	#include "bits/about_detour.edc"	/* about this edje */
 	#include "bits/background.edc" 		/* background group */
 	#include "bits/battery.edc"		/* battery module */
 	#include "bits/border.edc"		/* border group */
