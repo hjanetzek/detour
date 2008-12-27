@@ -422,7 +422,7 @@ group {
 				 * when an application is first launched the corresponding
 				 * icon equals: 255 255 255 0;
 				 */
-				color: 255 255 255 192;
+				color: 255 255 255 225;
 			} 
 
 			description {
