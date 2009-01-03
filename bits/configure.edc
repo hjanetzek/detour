@@ -2,7 +2,7 @@
 group {
 	name: "e/widgets/configure/main";
 	min: 299 341;
-	max: 299 341;
+	//max: 299 341;
 
 	parts {
 		part {
@@ -13,7 +13,7 @@ group {
 			description {
 				state: "default" 0.0;
 				min: 299 341;
-				max: 299 341;
+				max: 299 341; // bad reaster
 				//fixed: 1 1;
 
 				image {
