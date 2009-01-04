@@ -166,10 +166,7 @@ image: "images/window-border_im6.png" COMP; /* bottom right */
 image: "images/window-border_im7.png" COMP; /* left */
 image: "images/window-border_im8.png" COMP; /* right */
 
-image: "images/bl.png" COMP;
-image: "images/bb.png" COMP;
-image: "images/br.png" COMP;
-image: "images/tb.png" COMP;
+
 image: "images/tb-shadow.png" COMP;
 
 //~ border buttons
@@ -184,13 +181,6 @@ image: "images/window-border_bt5.png" COMP; /* base for border menu */
 
 
 
-
-//~ border: shaped border
-image: "images/bld-shaped.png" COMP;
-image: "images/brd-shaped.png" COMP;
-image: "images/tld-shaped.png" COMP;
-image: "images/trd-shaped.png" COMP;
-image: "images/tb-shaped.png" COMP;
 
 //~ desklock
 image: "images/desklock_dialog_bg.png" COMP;
@@ -229,11 +219,6 @@ image: "images/tl2-dialog.png" COMP;
 image: "images/tb2-dialog.png" COMP;
 image: "images/tr2-dialog.png" COMP;
 
-//~ border container
-image: "images/bl-shaped.png" COMP;
-image: "images/br-shaped.png" COMP;
-image: "images/tl-shaped.png" COMP;
-image: "images/tr-shaped.png" COMP;
 
 //~ efm nav
 image: "images/nav_back-base.png" COMP;
