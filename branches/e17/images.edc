@@ -63,13 +63,6 @@ image: "images/decoration_im1.png" COMP; /* wide dot */
 //~ exebuf
 image: "images/exebuf_im0.png" COMP; /* hilite */
 
-//~ border buttons
-image: "images/window-border_bt0.png" COMP; /* base */
-image: "images/window-border_bt1.png" COMP; /* button flat */
-image: "images/window-border_bt2.png" COMP; /* minimize */
-image: "images/window-border_bt3.png" COMP; /* maximize */
-image: "images/window-border_bt4.png" COMP; /* close */
-
 //~ ibar
 image: "images/ibar_im0.png" COMP; /* label */
 image: "images/ibar_im1.png" COMP; /* drop */
@@ -157,21 +150,40 @@ image: "images/button_detail_stack_normal.png" COMP; 		/* empty */
 image: "images/button_detail_stack_on_top.png" COMP; 		/* empty */
 image: "images/button_detail_stick.png" COMP;
 
-//~ border default
+//~ border: default border style
 image: "images/window-border_im0.png" COMP; 	/* top left corner */
-//image: "images/window-border_im1.png" COMP; 	/* top center */
+image: "images/window-border_im1.png" COMP; 	/* top center */
 image: "images/window-border_im2.png" COMP; 	/* top right corner */
-//image: "images/window-border_im3.png" COMP; 	/* bottom left */
-//image: "images/window-border_im4.png" COMP; 	/* bottom center */
-//image: "images/window-border_im5.png" COMP; 	/* bottom right */
-//image: "images/window-border_im6.png" COMP; 	/* left border */
-//image: "images/window-border_im7.png" COMP; 	/* right border */
-//image: "images/window-border_im8.png" COMP; 	/* border shadow: inactive */
+image: "images/window-border_im9.png" COMP; 	/* bottom center */
+image: "images/window-border_im10.png" COMP; 	/* bottom left */
+image: "images/window-border_im11.png" COMP; 	/* bottom right */
+
+//~ border: classic border style
+image: "images/window-border_im3.png" COMP; /* top left */
+image: "images/window-border_im4.png" COMP; /* top right */
+image: "images/window-border_im5.png" COMP; /* bottom left */
+image: "images/window-border_im6.png" COMP; /* bottom right */
+image: "images/window-border_im7.png" COMP; /* left */
+image: "images/window-border_im8.png" COMP; /* right */
+
 image: "images/bl.png" COMP;
 image: "images/bb.png" COMP;
 image: "images/br.png" COMP;
 image: "images/tb.png" COMP;
 image: "images/tb-shadow.png" COMP;
+
+//~ border buttons
+image: "images/window-border_bt0.png" COMP; /* base */
+image: "images/window-border_bt1.png" COMP; /* button flat */
+image: "images/window-border_bt2.png" COMP; /* minimize */
+image: "images/window-border_bt3.png" COMP; /* maximize */
+image: "images/window-border_bt4.png" COMP; /* close */
+image: "images/window-border_bt5.png" COMP; /* base for border menu */
+
+
+
+
+
 
 //~ border: shaped border
 image: "images/bld-shaped.png" COMP;
@@ -202,12 +214,6 @@ image: "images/sb_runnerv_bot_disabled.png" COMP;
 image: "images/sb_runnerv_disabled.png" COMP;
 image: "images/sb_runnerh_left_disabled.png" COMP;
 image: "images/sb_runnerh_right_disabled.png" COMP;
-
-//~ border full
-image: "images/tl-full.png" COMP;
-image: "images/tr-full.png" COMP;
-image: "images/bl-full.png" COMP;
-image: "images/br-full.png" COMP;
 
 //~ border dialog
 image: "images/tl-dialog.png" COMP;
