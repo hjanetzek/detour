@@ -20,7 +20,7 @@
  */
 
 data {
-	item: "theme/name" 		"detour (DTR)";
+	item: "theme/name" 		"detour (symetrika)";
 	item: "theme/description" 	"";
 	item: "theme/version"		"0.7.5";
 	item: "theme/author"		"Alberto Castro, Hannes Janetzek, et al.";
