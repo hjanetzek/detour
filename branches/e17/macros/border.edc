@@ -52,42 +52,33 @@ part { 							\
 	} 						\
 }
 
-#define BORDER3(NAME, INDEX1, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, IMG1, INDEX2, IMG2) 	\
-part { 												\
-	name: NAME; 										\
-	type: IMAGE;										\
-	mouse_events: 0; 									\
-												\
-	description { 										\
-		state: "default" INDEX1; 							\
-		min: MIN; 									\
-		max: MAX; 									\
-												\
-		rel1 { 										\
-			to: TO1; 								\
-			relative: REL1; 							\
-			offset: OFF1; 								\
-		} 										\
-												\
-		rel2 { 										\
-			to: TO2; 								\
-			relative: REL2; 							\
-			offset: OFF2; 								\
-		} 										\
-												\
-		image { 									\
-			normal: IMG1; 								\
-		}										\
-	} 											\
-												\
-	description { 										\
-		state: "default" INDEX2; 							\
-		inherit: "default" 0.0; 							\
-												\
-		image { 									\
-			normal: IMG2; 								\
-		} 										\
-	} 											\
+#define BORDER3(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, IMG1) \
+part { 									\
+	name: NAME; 							\
+	type: IMAGE;							\
+	mouse_events: 0; 						\
+									\
+	description { 							\
+		state: "default" 0.0; 					\
+		min: MIN; 						\
+		max: MAX; 						\
+									\
+		rel1 { 							\
+			to: TO1; 					\
+			relative: REL1; 				\
+			offset: OFF1; 					\
+		} 							\
+									\
+		rel2 { 							\
+			to: TO2; 					\
+			relative: REL2; 				\
+			offset: OFF2; 					\
+		} 							\
+									\
+		image { 						\
+			normal: IMG1; 					\
+		}							\
+	} 								\
 }
 
 #define E_SWALLOW_CLIENT(NAME, TO1, REL1, OFF1, TO2, REL2, OFF2) 	\
@@ -138,32 +129,25 @@ part { 									\
 	} 								\
 }
 
-#define E_SWALLOW_ICON(NAME, CLIP, MIN, MAX, FIX, ASPECT, TO1, REL1, OFF1, TO2, REL2, OFF2) 	\
-part { 												\
-	name: NAME; 										\
-	type: SWALLOW; 										\
-	mouse_events: 0; 									\
-	clip_to: CLIP; 										\
-												\
-	description { 										\
-		state: "default" 0.0; 								\
-		min: MIN; 									\
-		max: MAX; 									\
-		fixed: FIX; 									\
-		aspect: ASPECT; 								\
-												\
-		rel1 {										\
-			to: TO1; 								\
-			relative: REL1; 							\
-			offset: OFF1; 								\
-		} 										\
-												\
-		rel2 { 										\
-			to: TO2; 								\
-			relative: REL2; 							\
-			offset: OFF2; 								\
-		} 										\
-	} 											\
+#define E_SWALLOW_ICON(NAME, RELT)		\
+part { 						\
+	name: NAME; 				\
+	type: SWALLOW; 				\
+	clip_to: "e.event.icon";		\
+						\
+	description { 				\
+		state: "default" 0.0; 		\
+		aspect: 1.0 1.0;		\
+		aspect_preference: BOTH;	\
+						\
+		rel1 {				\
+			to: RELT; 		\
+		} 				\
+						\
+		rel2 { 				\
+			to: RELT; 		\
+		} 				\
+	} 					\
 }
 
 #define MOVE_WINDOW(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) 	\
@@ -192,24 +176,33 @@ part { 										\
 	} 									\
 }
 
-#define E_EVENT_ICON(NAME, CLIP, TO1, TO2, COLOR) 	\
+#define E_EVENT_ICON(NAME, TO1, TO2)	 		\
 part { 							\
 	name: NAME; 					\
 	type: RECT; 					\
 	mouse_events: 1; 				\
-	clip_to: CLIP; 					\
 							\
 	description { 					\
 		state: "default" 0.0; 			\
-		color: COLOR; 				\
+		align: 0.0 0.5;				\
+		aspect: 1.0 1.0;			\
+		aspect_preference: VERTICAL;		\
+		color: 255 255 255 255; 		\
 							\
 		rel1 { 					\
 			to: TO1; 			\
+			offset: 5 3;			\
 		} 					\
 							\
 		rel2 { 					\
 			to: TO2; 			\
 		} 					\
+	}						\
+							\
+	description {					\
+		state: "urgent" 0.0;			\
+		inherit: "default" 0.0;			\
+		color: 255 255 255 0;			\
 	}						\
 }
 
@@ -241,7 +234,7 @@ part { 								\
 	description { 						\
 		state: "clicked" 0.0; 				\
 		inherit: "default" 0.0; 			\
-		color: 215 215 215 255; 			\
+		color: 215 215 215 255;				\
 	} 							\
 }
 
@@ -292,10 +285,6 @@ part { 						\
 		image { 			\
 			normal: IMG; 		\
 		} 				\
-	} 					\
-	description { 				\
-		state: "default" 0.1; 		\
-		inherit: "default" 0.0; 	\
 	} 					\
 }
 
@@ -353,15 +342,15 @@ part { 							\
 							\
 	description { 					\
 		state: "default" 0.0; 			\
-		min: 0 24; 				\
-		max: 9999 24; 				\
+		min: 0 23; 				\
+		max: 9999 23; 				\
 		image.normal: "images/tb-shadow.png";	\
 		image.border: 1 1 11 0; 		\
-		color: 255 255 255 0; 			\
+		color: 90 90 90 0;			\
 							\
 		rel1 { 					\
 			to: "top-left"; 		\
-			offset: 1 1; 			\
+			offset: 1 0; 			\
 		} 					\
 							\
 		rel2 { 					\
@@ -373,7 +362,7 @@ part { 							\
 	description { 					\
 		state: "default" 0.1; 			\
 		inherit: "default" 0.0; 		\
-		color: 90 90 90 64;			\
+		color: 90 90 90 0;			\
 	} 						\
 }
 

@@ -59,7 +59,7 @@ group {
 				rel2 { 
 					to: "entry"; 
 					relative: 1.0 1.0; 
-					offset: -1 -2; 
+					offset: -1 -1; 
 				}
 			}
 		}
