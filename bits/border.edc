@@ -1,25 +1,151 @@
 
 group {
-	name: "e/widgets/border/default/border";
+	name: "e/widgets/border/classic/border";
 
 	data {
-		item: "shaped" "1";
+		//item: "shaped" "0";
 	}
 
 	parts {
-		BORDER("top-left", 6 24, 6 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
-		BORDER("top-right", 6 24, 6 24, 1.0 0.0, 0 24, 1.0 0.0, -6 0, "images/window-border_im2.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/bl.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/br.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 0.0, 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/tb.png", 0.1, "images/tb.png")
-		BORDER3("bottom-center", 0.0, 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/bb.png", 0.1, "images/bb.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+		BORDER("top-left", 6 24, 6 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im3.png")
+		BORDER("top-right", 6 24, 6 24, 1.0 0.0, 0 24, 1.0 0.0, -6 0, "images/window-border_im4.png")
+		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im5.png")
+		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im6.png")
+
+		#define BORDER5(NAME,TO1,REL1,OFF1,TO2,REL2,OFF2,IMG) \
+			part { \
+				name: NAME; \
+				type: IMAGE; \
+				description { \
+					state: "default" 0.0; \
+					min: 5 1; \
+					max: 5 9999; \
+					rel1 { \
+						to: TO1; \
+						relative: REL1; \
+						offset: OFF1; \
+					} \
+					rel2 { \
+						to: TO2; \
+						relative: REL2; \
+						offset: OFF2; \
+					} \
+					image { \
+						normal: IMG; \
+					} \
+				} \
+			}
+
+		BORDER5("left-border", "top-left", 0.0 1.0, 3 0, "bottom-left", 0.0 0.0, 0 0, "images/window-border_im7.png")
+		BORDER5("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -5 0, "images/window-border_im8.png")
+		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
+		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 5 0, "bottom-right", 0.0 1.0, 0 -7)
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
-		E_SWALLOW_ICON("e.swallow.icon", "title.area.clip", 18 18, 18 18, 1 1, 1.0 1.0, "title.area.clip", 0.0 0.5, 19 0, "title.area.clip", 0.0 0.5, 0 0) 
+		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
 
 		part { 														
+			name: "e.text.title";
+			type: TEXT;
+			effect: SHADOW;
+			mouse_events: 0;
+			clip_to: "title.area.clip";
+			scale: 1;
+
+			description {
+				state: "default" 0.0;
+				color: 60 60 60 255;
+				color3: 170 168 169 128;
+
+				rel1 {
+					to: "title.area.clip";
+					relative: 0.0 0.5;
+					offset: 23 4; 
+				}
+
+				rel2 { 
+					to: "title.area.clip";
+					relative: 1.0 0.5; 
+					offset: -5 0;
+				}
+
+				text {
+					text: "";
+					font: "Sans:style=Bold,DejaVuSans-Bold";
+					size: 11;
+					min: 0 1;
+					align: 0.0 0.5;
+					#if ENABLE_TEXT_CLASS == 0
+						text_class: "";
+					#else
+					#if ENABLE_TEXT_CLASS == 1
+						text_class: "title_bar";
+					#endif
+					#endif
+				}
+			}
+
+			description { 
+				state: "default" 0.1; 
+				inherit: "default" 0.0;
+				color: 95 95 93 255;
+				color3: 170 168 169 128;
+			} 
+		}
+
+		MOVE_WINDOW("move-window", 1 22, 9999 22, "top-left", 0.0 0.0, 5 2, "top-right", 1.0 1.0, -7 -1, 255 0 0 0)
+		PART_EVENT_MAP("e.event.resize.t", 1, "resize_t")
+		PART_EVENT_MAP("e.event.titlebar", 1, "move-window")
+		PART_EVENT_MAP("e.event.resize.r", 1, "right-border")
+		PART_EVENT_MAP("e.event.resize.l", 1, "left-border")
+		PART_EVENT_MAP("e.event.resize.br", 1, "bottom-right")
+		PART_EVENT_MAP("e.event.resize.bl", 1, "bottom-left")
+		PART_EVENT_MAP("e.event.resize.b", 1, "bottom-center")
+		PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
+		PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
+		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")	
+		CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
+		CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
+		CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
+		HOLDER("_min", 20 18, "min-clip", "images/window-border_bt0.png")
+		HOLDER("_max", 20 18, "max-clip", "images/window-border_bt0.png")
+		HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
+		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+		BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
+		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		PART_EVENT_MAP("e.event.close", 1, "button-close")
+		PART_EVENT_MAP("e.event.maximize", 1, "button-max")
+		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
+		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
+		TOP_BORDER_SHADOW()
+	}
+
+	programs { 
+		BORDER_DEFAULT_PROGRAMS()
+	}
+}
+
+group {
+	name: "e/widgets/border/default/border";
+
+	data {
+		item: "shaped" "0";
+	}
+
+	parts {
+		BORDER("top-left", 5 24, 5 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
+		BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 24, 1.0 0.0, -5 0, "images/window-border_im2.png")
+		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
+		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
+		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
+		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
+		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
+
+		part {
 			name: "e.text.title";
 			type: TEXT;
 			effect: SHADOW;
@@ -78,7 +204,7 @@ group {
 		PART_EVENT_MAP("e.event.resize.b", 1, "bottom-center")
 		PART_EVENT_MAP("e.event.resize.tr", 1, "top-right")
 		PART_EVENT_MAP("e.event.resize.tl", 1, "top-left")
-		E_EVENT_ICON("e.event.icon", "title.area.clip", "e.swallow.icon", "e.swallow.icon", 255 255 255 0)		
+		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")		
 		CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 		CLIPS("max-clip", 20 18, 20 18, "close-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
 		CLIPS("min-clip", 20 18, 20 18, "max-clip", 0.0 0.0, 0 0, 0.0 1.0, -21 0)
@@ -99,6 +225,9 @@ group {
 		BORDER_DEFAULT_PROGRAMS()
 	}
 }
+
+
+
 
 BORDER_MENU_BUTTON("close")
 BORDER_MENU_BUTTON("basic")

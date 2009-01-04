@@ -328,7 +328,7 @@ group {
 				}
 
 				text {
-					text: "detour (dtr)";
+					text: "detour (symetrika)";
 					font: "Sans:style=Bold,DejaVuSans-Bold";
 					size: 12;
 					min: 1 1;
@@ -457,7 +457,7 @@ group {
 
 				text {
 					style: "about_detour";
-text: "Designed and developed by Alberto Castro (<lighter>boykot tokyo</lighter>) with help from Hannes Janetzek (<lighter>jeffdameth</lighter>), et al.<\n><\n><mono>Detour</mono> is licensed under the BSD Artistic License.<-><\n><subliminal>Tricks of the Guild. [2003-2008]</subliminal>";
+text: "Designed and developed by Alberto Castro (<lighter>boykot tokyo</lighter>) with help from Hannes Janetzek (<lighter>jeffdameth</lighter>), et al.<\n><\n><mono>Detour</mono> is licensed under the BSD Artistic License.<-><\n><subliminal>Tricks of the Guild. [2003-2009]</subliminal>";
 				}
     			}
 		}
