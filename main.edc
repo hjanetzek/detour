@@ -1,7 +1,7 @@
 #include "macros/about_buttons.edc"
 #include "macros/background.edc"
 #include "macros/border.edc"
-#include "macros/border_default_programs.edc"
+#include "macros/border_programs.edc"
 #include "macros/border_menu_buttons.edc"
 #include "macros/check.edc"
 #include "macros/efm_nav.edc"
