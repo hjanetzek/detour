@@ -31,7 +31,6 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "close-clip"; \
-	target: "button-close"; \
 } \
 program { \
 	name: "close_unclick"; \
@@ -40,7 +39,6 @@ program { \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 1.0; \
 	target: "close-clip"; \
-	target: "button-close"; \
 } \
 program { \
 	name: "max_click"; \
@@ -49,7 +47,6 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "max-clip"; \
-	target: "button-max"; \
 } \
 program { \
 	name: "max_unclick"; \
@@ -58,7 +55,6 @@ program { \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 1.0; \
 	target: "max-clip"; \
-	target: "button-max"; \
 } \
 program { \
 	name: "min_click"; \
@@ -67,7 +63,6 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "min-clip"; \
-	target: "button-min"; \
 } \
 program { \
 	name: "min_unclick"; \
@@ -76,7 +71,6 @@ program { \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 1.0; \
 	target: "min-clip"; \
-	target: "button-min"; \
 } \
 program { \
 	name: "urgent"; \
@@ -129,7 +123,6 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "close-clip"; \
-	target: "button-close"; \
 } \
 program { \
 	name: "close_unclick"; \
@@ -138,7 +131,6 @@ program { \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 1.0; \
 	target: "close-clip"; \
-	target: "button-close"; \
 } \
 program { \
 	name: "urgent"; \
