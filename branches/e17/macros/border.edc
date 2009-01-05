@@ -234,7 +234,7 @@ part { 								\
 	description { 						\
 		state: "clicked" 0.0; 				\
 		inherit: "default" 0.0; 			\
-		color: 0 153 204 128;				\
+		color: 215 215 215 255;				\
 	} 							\
 }
 
