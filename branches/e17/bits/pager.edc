@@ -607,8 +607,6 @@ group {
 
 			description {
 				state: "default" 0.0;
-				//aspect: 1.0 1.0;
-				//aspect_preference: VERTICAL;
 
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -634,8 +632,6 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 255;
-				//aspect: 1.0 1.0;
-				//aspect_preference: VERTICAL;
 
 				rel1 { 
 					relative: 0.0 0.0; 
