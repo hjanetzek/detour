@@ -385,7 +385,7 @@ group {
 	
 			description {
 				state: "default" 0.0;
-				max: 9999 18;
+				max: 9999 26;
 				color: 255 255 255 0;
 				image.normal: "images/exebuf_im0.png";
 				image.border: 4 4 5 5;
@@ -393,14 +393,14 @@ group {
 
 				rel1 { 
 					to_x: "e.swallow.icon"; 
-					relative: 1.0 0.0; 
-					offset: 4 0; 
+					relative: 0.0 0.0; 
+					offset: -4 0; 
 				}
 
 				rel2 { 
 					to_x: "type"; 
-					relative: 0.0 1.0; 
-					offset: -4 -1; 
+					relative: 1.0 1.0; 
+					offset: 2 -1; 
 				}
 			}
 
@@ -467,9 +467,9 @@ group {
 				} 
 		
 				rel2 { 
-					to_x: "title_bar"; 
-					relative: 1.0 1.0; 
-					offset: -20 -6; 
+					to_x: "type"; 
+					relative: 0.0 1.0; 
+					offset: -12 -6; 
 				}
 
 				text {
@@ -497,7 +497,7 @@ group {
 					text: "Item Label";
 					font: "Sans:style=Bold,DejaVuSans-Bold";
 					size: 11;
-					min: 0 0;
+					min: 0 1;
 					align: 0.0 0.5;
 					#if ENABLE_TEXT_CLASS == 0
 						text_class: "";
@@ -541,9 +541,9 @@ group {
 	
 			description {
 				state: "default" 0.0;
-				aspect: 1.0 1.0;
-				align: 1.0 0.5;
-				aspect_preference: VERTICAL;
+				min: 24 24;
+				max: 24 24;
+				fixed: 1 1;
 
 				rel1 { 
 					relative: 1.0 0.0;
@@ -553,11 +553,11 @@ group {
 				rel2 { 
 					to_y: "title_bar"; 
 					relative: 1.0 1.0; 
-					offset: -1 -1; 
+					offset: -24 -1; 
 				}
 
 				image {
-					normal: "icons/gnome-window-manager.png";
+					normal: "images/winlist_icon_window.png";
 				}
 			}
 
@@ -566,7 +566,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "icons/xfce4-taskbar.png";
+					normal: "images/winlist_icon_window_minimized.png";
 				}
 			}
 
@@ -581,7 +581,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "icons/gnome-window-manager.png";
+					normal: "images/winlist_icon_window_shaded.png";
 				}
 			}
 		}

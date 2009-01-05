@@ -10,21 +10,17 @@
 /root: 11 items, total: 311.9kb
 
 == Bugfix ==
-border: can't drag e.swallow.icon
 efm_window: drop_in/drop_between(s)
 tclock: use mono fonts where possible
 
 == Redo ==
 content_menu: icon/shift (REDO "menu.edc" entirely)
 pager.edc: popup
-cslider.edc
 
 == Improve ==
-ibar.edc: drop
+-"e/modules/ibar/drop_overlay";
 bits/icons.edc: e/icons/enlightenment/e 
 Make use of: scale: 1;
--URGENT "border" signals
--"e/modules/ibar/drop_overlay";
 -"bits/error.edc"
 -temperature.edc: graphics
 -macros/borders.edc
@@ -35,12 +31,6 @@ Make use of: scale: 1;
 -efm nav "refresh" symbol
 -transitions.edc
 -winlist.edc
--use edje gradients for those images that have them ??
-	(dialog_bg_default.png)
-	(error-dialog_bg.png)
-	(menu_bg.png)
-	(resize-dialog_bg.png)
-	(shelf base non-rgba images)	
 -configure.edc: width seems to be hardcoded, bad!
 -pointer.edc: "e,action,mouse,down";
 -ilist: [header] colors
@@ -57,6 +47,6 @@ Make use of: scale: 1;
 
 == Compile ==
 
-
-== Bitch about ==
+== yell about ==
 Gradient dialog and Online dialog not inheriting "button" icon.
+
