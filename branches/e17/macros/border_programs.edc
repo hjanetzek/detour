@@ -8,6 +8,9 @@ program { \
 	transition: DECELERATE 0.5; \
 	target: "inactive.shadow"; \
 	target: "e.text.title"; \
+	target: "button-min"; \
+	target: "button-max"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "inactive"; \
@@ -17,6 +20,9 @@ program { \
 	transition: DECELERATE 0.5; \
 	target: "inactive.shadow"; \
 	target: "e.text.title"; \
+	target: "button-min"; \
+	target: "button-max"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "close_click"; \
@@ -25,14 +31,16 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "close-clip"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "close_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-close"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 0.5; \
+	transition: DECELERATE 1.0; \
 	target: "close-clip"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "max_click"; \
@@ -41,14 +49,16 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "max-clip"; \
+	target: "button-max"; \
 } \
 program { \
 	name: "max_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-max"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 0.5; \
+	transition: DECELERATE 1.0; \
 	target: "max-clip"; \
+	target: "button-max"; \
 } \
 program { \
 	name: "min_click"; \
@@ -57,14 +67,16 @@ program { \
 	action: STATE_SET "clicked" 0.0; \
 	transition: DECELERATE 0.15; \
 	target: "min-clip"; \
+	target: "button-min"; \
 } \
 program { \
 	name: "min_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-min"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 0.5; \
+	transition: DECELERATE 1.0; \
 	target: "min-clip"; \
+	target: "button-min"; \
 } \
 program { \
 	name: "urgent"; \
@@ -72,7 +84,7 @@ program { \
 	source: "e"; \
 	action: STATE_SET "urgent" 0.0; \
 	transition: DECELERATE 0.5; \
-	target: "e.event.icon"; \
+	target: "e.swallow.icon"; \
 	after: "urgent2"; \
 } \
 program { \
@@ -81,7 +93,7 @@ program { \
 	source: ""; \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 0.5; \
-	target: "e.event.icon"; \
+	target: "e.swallow.icon"; \
 	after: "urgent"; \
 } \
 program { \
@@ -92,4 +104,67 @@ program { \
 	target: "urgent"; \
 	target: "urgent2"; \
 }
+
+#define BORDER_int_PROGRAMS() \
+program { \
+	name: "active"; \
+	signal: "e,state,focused"; \
+	source: "e"; \
+	action: STATE_SET "default" 0.0; \
+	transition: DECELERATE 0.5; \
+	target: "button-close"; \
+} \
+program { \
+	name: "inactive"; \
+	signal: "e,state,unfocused"; \
+	source: "e"; \
+	action: STATE_SET "default" 0.1; \
+	transition: DECELERATE 0.5; \
+	target: "button-close"; \
+} \
+program { \
+	name: "close_click"; \
+	signal: "mouse,down,1"; \
+	source: "button-close"; \
+	action: STATE_SET "clicked" 0.0; \
+	transition: DECELERATE 0.15; \
+	target: "close-clip"; \
+	target: "button-close"; \
+} \
+program { \
+	name: "close_unclick"; \
+	signal: "mouse,up,1"; \
+	source: "button-close"; \
+	action: STATE_SET "default" 0.0; \
+	transition: DECELERATE 1.0; \
+	target: "close-clip"; \
+	target: "button-close"; \
+} \
+program { \
+	name: "urgent"; \
+	signal: "e,state,urgent"; \
+	source: "e"; \
+	action: STATE_SET "urgent" 0.0; \
+	transition: DECELERATE 0.5; \
+	target: "e.swallow.icon"; \
+	after: "urgent2"; \
+} \
+program { \
+	name: "urgent2"; \
+	signal: ""; \
+	source: ""; \
+	action: STATE_SET "default" 0.0; \
+	transition: DECELERATE 0.5; \
+	target: "e.swallow.icon"; \
+	after: "urgent"; \
+} \
+program { \
+	name: "stop"; \
+	signal: "e,state,not_urgent"; \
+	source: "e"; \
+	action: ACTION_STOP; \
+	target: "urgent"; \
+	target: "urgent2"; \
+}
+
 

@@ -39,6 +39,7 @@ image: "images/menu_im4.png" COMP; /* active arrow */
 //~ dialog
 image: "images/dialog_im0.png" COMP; /* background */
 image: "images/dialog_im1.png" COMP; /* separator */
+image: "images/dialog_im2.png" COMP; /* about detour dialog bg */
 
 //~ configure
 image: "images/configure_im0.png" COMP; /* background */
@@ -103,9 +104,6 @@ image: "images/shelf_def_im0.png" COMP; /* regular orientation */
 image: "images/shelf_def_im1.png" COMP; /* left orientation */
 image: "images/shelf_def_im2.png" COMP; /* right orientation */
 image: "images/shelf_def_im3.png" COMP; /* inset */
-image: "images/shelf_alt_im0.png" COMP; /* alternate image: regular orientation */
-image: "images/shelf_alt_im1.png" COMP; /* left orientation */
-image: "images/shelf_alt_im2.png" COMP; /* right orientation */
 
 //~ busy cursor
 image: "images/cursor_im0.png" COMP; /* 00 */
@@ -120,10 +118,6 @@ image: "images/init_im0.png" COMP; /* init splash screen */
 image: "images/cslider_im0.png" COMP; /* base */
 image: "images/cslider_im1.png" COMP; /* left */
 image: "images/cslider_im2.png" COMP; /* right */
-
-//~ about_theme
-image: "images/logo.png" COMP; /* detour logo */
-image: "images/dialog_aboutbg.png" COMP; 
 
 //~ window border menu (details)
 image: "images/button_detail_basic.png" COMP; 			/* empty */
@@ -157,6 +151,7 @@ image: "images/window-border_im2.png" COMP; 	/* top right corner */
 image: "images/window-border_im9.png" COMP; 	/* bottom center */
 image: "images/window-border_im10.png" COMP; 	/* bottom left */
 image: "images/window-border_im11.png" COMP; 	/* bottom right */
+image: "images/window-border_im12.png" COMP;	/* shadow overlay */
 
 //~ border: classic border style
 image: "images/window-border_im3.png" COMP; /* top left */
@@ -166,9 +161,6 @@ image: "images/window-border_im6.png" COMP; /* bottom right */
 image: "images/window-border_im7.png" COMP; /* left */
 image: "images/window-border_im8.png" COMP; /* right */
 
-
-image: "images/tb-shadow.png" COMP;
-
 //~ border buttons
 image: "images/window-border_bt0.png" COMP; /* base */
 image: "images/window-border_bt1.png" COMP; /* button flat */
@@ -176,14 +168,25 @@ image: "images/window-border_bt2.png" COMP; /* minimize */
 image: "images/window-border_bt3.png" COMP; /* maximize */
 image: "images/window-border_bt4.png" COMP; /* close */
 image: "images/window-border_bt5.png" COMP; /* base for border menu */
+image: "images/window-border_bt6.png" COMP; /* clicked effect */
 
+//~ pager
+image: "images/pager_im0.png" COMP; /* focus */
+image: "images/pager_im1.png" COMP; /* icon */
+image: "images/pager_im2.png" COMP; /* left lid */
+image: "images/pager_im3.png" COMP; /* right lid */
 
-
-
-
+//~ about_theme
+image: "images/logo.png" COMP; /* detour logo */
 
 //~ desklock
-image: "images/desklock_dialog_bg.png" COMP;
+image: "images/desklock_im0.png" COMP;
+
+
+
+
+
+
 
 //~ slider
 image: "images/slider_h.png" COMP;
@@ -276,13 +279,6 @@ image: "images/error-dialog_bg.png" COMP;
 
 //~ transitions
 image: "images/transition_vswipe.png" COMP;
-
-//~ pager
-image: "images/pager_desk_bg_focus.png" COMP;
-image: "images/pager_icon_window.png" COMP;
-image: "images/pager_icon_window_ds.png" COMP;
-image: "images/pager_lid_l.png" COMP;
-image: "images/pager_lid_r.png" COMP;
 
 //~ clock
 image: "clock/clock_bg.png" COMP;

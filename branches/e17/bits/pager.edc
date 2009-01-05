@@ -272,7 +272,7 @@ group {
 	name: "e/modules/pager/desk";
 
 	data {
-		item: "e/modules/pager/desk/apparence" 	"plain";
+		item: "e/modules/pager/desk/apparence" "plain";
 	}
 
 	script {
@@ -381,7 +381,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				image.normal: "images/pager_lid_l.png";
+				image.normal: "images/pager_im2.png";
 				image.border: 2 2 2 2;
 
 				rel1 { 
@@ -423,7 +423,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				image.normal: "images/pager_lid_r.png";
+				image.normal: "images/pager_im3.png";
 				image.border: 2 2 2 2;
 	
 				rel1 { 
@@ -479,7 +479,7 @@ group {
 				}
 
 				image {
-					normal: "images/pager_desk_bg_focus.png";
+					normal: "images/pager_im0.png";
 					border: 8 8 8 8;
 				}
 			}
@@ -602,37 +602,13 @@ group {
 	
 	parts {
 		part {
-			name: "window_shadow";
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-
-				rel1 { 
-					to: "overlay"; 
-					relative: 0.0 0.0; 
-					offset: 0 0; 
-				}
-
-				rel2 { 
-					to: "overlay";
-					relative: 1.0 1.0; 
-					offset: 0 -1; 
-				}
-
-				image {
-					normal: "images/pager_icon_window_ds.png";
-					border: 1 1 1 1;
-				}
-    			}
-		}
-
-		part {
 			name: "pager_window";
 			type: IMAGE;
 
 			description {
 				state: "default" 0.0;
+				//aspect: 1.0 1.0;
+				//aspect_preference: VERTICAL;
 
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -645,8 +621,8 @@ group {
 				}
 
 				image {
-					normal: "images/pager_icon_window.png";
-					border: 4 4 6 4;
+					normal: "images/pager_im1.png";
+					border: 4 9 6 6;
 				}
 			}
 		}
@@ -658,6 +634,8 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 255;
+				//aspect: 1.0 1.0;
+				//aspect_preference: VERTICAL;
 
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -670,8 +648,8 @@ group {
 				}
 
 				image {
-					normal: "images/pager_icon_window.png";
-					border: 4 4 6 4;
+					normal: "images/pager_im1.png";
+					border: 4 9 6 6;
 				}
 			}
 
@@ -708,7 +686,7 @@ group {
 
 				rel2 { 
 					to: "overlay"; 
-					offset: -3 -3; 
+					offset: -5 -5; 
 				}
 			}
 		}

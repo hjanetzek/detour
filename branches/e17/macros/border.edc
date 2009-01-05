@@ -133,7 +133,6 @@ part { 									\
 part { 						\
 	name: NAME; 				\
 	type: SWALLOW; 				\
-	clip_to: "e.event.icon";		\
 						\
 	description { 				\
 		state: "default" 0.0; 		\
@@ -148,6 +147,12 @@ part { 						\
 			to: RELT; 		\
 		} 				\
 	} 					\
+						\
+	description {				\
+		state: "urgent" 0.0;		\
+		inherit: "default" 0.0;		\
+		color: 255 255 255 0;		\
+	}					\
 }
 
 #define MOVE_WINDOW(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) 	\
@@ -187,7 +192,8 @@ part { 							\
 		align: 0.0 0.5;				\
 		aspect: 1.0 1.0;			\
 		aspect_preference: VERTICAL;		\
-		color: 255 255 255 255; 		\
+		color: 255 255 255 0; 			\
+		visible: 1;				\
 							\
 		rel1 { 					\
 			to: TO1; 			\
@@ -197,12 +203,6 @@ part { 							\
 		rel2 { 					\
 			to: TO2; 			\
 		} 					\
-	}						\
-							\
-	description {					\
-		state: "urgent" 0.0;			\
-		inherit: "default" 0.0;			\
-		color: 255 255 255 0;			\
 	}						\
 }
 
@@ -234,7 +234,7 @@ part { 								\
 	description { 						\
 		state: "clicked" 0.0; 				\
 		inherit: "default" 0.0; 			\
-		color: 215 215 215 255;				\
+		color: 0 153 204 128;				\
 	} 							\
 }
 
@@ -262,30 +262,45 @@ part { 					\
 	} 				\
 }
 
-#define BUTTONS(NAME, CLIP, SIZE, TO, IMG) 	\
-part { 						\
-	name: NAME; 				\
-	type: IMAGE;				\
-	mouse_events: 1; 			\
-	clip_to: CLIP; 				\
-						\
-	description { 				\
-		state: "default" 0.0; 		\
-		min: SIZE; 			\
-		max: SIZE; 			\
-						\
-		rel1 { 				\
-			to: TO; 		\
-		} 				\
-						\
-		rel2 { 				\
-			to: TO; 		\
-		} 				\
-						\
-		image { 			\
-			normal: IMG; 		\
-		} 				\
-	} 					\
+#define BUTTONS(NAME, CLIP, SIZE, TO, IMG, IMG2) 	\
+part { 							\
+	name: NAME; 					\
+	type: IMAGE;					\
+	mouse_events: 1; 				\
+	clip_to: CLIP; 					\
+							\
+	description { 					\
+		state: "default" 0.0; 			\
+		min: SIZE; 				\
+		max: SIZE; 				\
+							\
+		rel1 { 					\
+			to: TO; 			\
+		} 					\
+							\
+		rel2 { 					\
+			to: TO; 			\
+		} 					\
+							\
+		image { 				\
+			normal: IMG; 			\
+		} 					\
+	} 						\
+							\
+	description { 					\
+		state: "default" 0.1; 			\
+		inherit: "default" 0.0; 		\
+		color: 215 215 215 192;			\
+	} 						\
+							\
+	description { 					\
+		state: "clicked" 0.0; 			\
+		inherit: "default" 0.0; 		\
+							\
+		image { 				\
+			normal: IMG2; 			\
+		} 					\
+	} 						\
 }
 
 #define RESIZE_TOP(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) 	\
@@ -334,35 +349,35 @@ part { 						\
 	} 					\
 }
 
-#define TOP_BORDER_SHADOW() 				\
-part { 							\
-	name: "inactive.shadow"; 			\
-	type: IMAGE; 					\
-	mouse_events: 0; 				\
-							\
-	description { 					\
-		state: "default" 0.0; 			\
-		min: 0 23; 				\
-		max: 9999 23; 				\
-		image.normal: "images/tb-shadow.png";	\
-		image.border: 1 1 11 0; 		\
-		color: 90 90 90 0;			\
-							\
-		rel1 { 					\
-			to: "top-left"; 		\
-			offset: 1 0; 			\
-		} 					\
-							\
-		rel2 { 					\
-			to: "top-right"; 		\
-			offset: -2 -1; 			\
-		} 					\
-	} 						\
-							\
-	description { 					\
-		state: "default" 0.1; 			\
-		inherit: "default" 0.0; 		\
-		color: 90 90 90 0;			\
-	} 						\
+#define TOP_BORDER_SHADOW() 					\
+part { 								\
+	name: "inactive.shadow"; 				\
+	type: IMAGE; 						\
+	mouse_events: 0; 					\
+								\
+	description { 						\
+		state: "default" 0.0; 				\
+		min: 0 23; 					\
+		max: 9999 23; 					\
+		image.normal: "images/window-border_im12.png";	\
+		image.border: 1 1 11 0; 			\
+		color: 90 90 90 0;				\
+								\
+		rel1 { 						\
+			to: "top-left"; 			\
+			offset: 1 2; 				\
+		} 						\
+								\
+		rel2 { 						\
+			to: "top-right"; 			\
+			offset: -2 -1; 				\
+		} 						\
+	} 							\
+								\
+	description { 						\
+		state: "default" 0.1; 				\
+		inherit: "default" 0.0; 			\
+		color: 215 215 215 64;				\
+	} 							\
 }
 
