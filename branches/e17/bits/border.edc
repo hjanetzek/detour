@@ -352,7 +352,6 @@ group {
 
 group {
 	name: "e/widgets/border/dialog/border";
-	alias: "e/widgets/border/urgent/border";
 	alias: "e/widgets/border/noresize/border";
 
 	data {
@@ -570,6 +569,24 @@ group {
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
 			target: "close-clip";
+		}
+
+		program {
+			name: "min_click";
+			signal: "mouse,down,1";
+			source: "button-min";
+			action: STATE_SET "clicked" 0.0;
+			transition: DECELERATE 0.15;
+			target: "min-clip";
+		}
+
+		program {
+			name: "min_unclick";
+			signal: "mouse,up,1";
+			source: "button-min";
+			action: STATE_SET "default" 0.0;
+			transition: DECELERATE 0.5;
+			target: "min-clip";
 		}
 	}
 }
