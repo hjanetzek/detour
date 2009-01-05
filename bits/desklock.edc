@@ -93,16 +93,6 @@ group {
 				image {
 					normal: "icons/system-lock-screen.png";
 				}
-
-				rel1 { 
-					relative: -0.5 0.0; 
-					offset: 0 0; 
-				}
-
-				rel2 { 
-					relative: -1.0 1.0; 
-					offset: -1 -1; 
-				}
 			}
 		}
 
