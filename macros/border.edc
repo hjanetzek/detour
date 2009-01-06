@@ -262,7 +262,7 @@ part { 					\
 	} 				\
 }
 
-#define BUTTONS(NAME, CLIP, SIZE, TO, IMG, IMG2) 	\
+#define BUTTONS(NAME, CLIP, SIZE, TO, IMG) 		\
 part { 							\
 	name: NAME; 					\
 	type: IMAGE;					\
@@ -291,15 +291,6 @@ part { 							\
 		state: "default" 0.1; 			\
 		inherit: "default" 0.0; 		\
 		color: 215 215 215 192;			\
-	} 						\
-							\
-	description { 					\
-		state: "clicked" 0.0; 			\
-		inherit: "default" 0.0; 		\
-							\
-		image { 				\
-			normal: IMG2; 			\
-		} 					\
 	} 						\
 }
 
