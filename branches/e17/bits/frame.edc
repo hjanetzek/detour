@@ -107,7 +107,6 @@ group {
 		part {
 			name: "rect_sep";
 			type: RECT;
-			type: IMAGE;
 
 			description {
 				state: "default" 0.0;

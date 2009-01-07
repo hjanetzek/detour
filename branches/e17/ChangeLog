@@ -1,4 +1,489 @@
 ------------------------------------------------------------------------
+r618 | alberto.castro.leiva | 2009-01-04 12:53:12 -0600 (Sun, 04 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/images/init_im0.png
+   D /branches/e17/images/splash.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/init-bg.edc
+   M /branches/e17/main.edc
+
+.
+
+------------------------------------------------------------------------
+r617 | alberto.castro.leiva | 2009-01-04 00:31:10 -0600 (Sun, 04 Jan 2009) | 2 lines
+Changed paths:
+   D /branches/e17/images/bb.png
+   D /branches/e17/images/bl-full.png
+   D /branches/e17/images/bl-shaped.png
+   D /branches/e17/images/bl.png
+   D /branches/e17/images/bld-shaped.png
+   D /branches/e17/images/br-full.png
+   D /branches/e17/images/br-shaped.png
+   D /branches/e17/images/br.png
+   D /branches/e17/images/brd-shaped.png
+   D /branches/e17/images/lb-blend.png
+   D /branches/e17/images/lb.png
+   D /branches/e17/images/rb-blend.png
+   D /branches/e17/images/rb.png
+   M /branches/e17/images/splash.png
+   D /branches/e17/images/tl-full.png
+   D /branches/e17/images/tl-shaped.png
+   D /branches/e17/images/tl.png
+   D /branches/e17/images/tld-shaped.png
+   D /branches/e17/images/tr-full.png
+   D /branches/e17/images/tr-shaped.png
+   D /branches/e17/images/tr.png
+   D /branches/e17/images/trd-shaped.png
+
+Delete these
+
+------------------------------------------------------------------------
+r616 | alberto.castro.leiva | 2009-01-04 00:23:13 -0600 (Sun, 04 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/images/entry_im1.png
+   D /branches/e17/images/menu_im2-bak.png
+   M /branches/e17/images/menu_im2.png
+   M /branches/e17/images/slider_h.png
+   M /branches/e17/images/tb-shadow.png
+   M /branches/e17/images/tb.png
+   M /branches/e17/images/window-border_bt0.png
+   M /branches/e17/images/window-border_bt2.png
+   M /branches/e17/images/window-border_bt3.png
+   M /branches/e17/images/window-border_bt4.png
+   A /branches/e17/images/window-border_bt5.png
+   M /branches/e17/images/window-border_im0.png
+   A /branches/e17/images/window-border_im1.png
+   A /branches/e17/images/window-border_im10.png
+   A /branches/e17/images/window-border_im11.png
+   M /branches/e17/images/window-border_im2.png
+   A /branches/e17/images/window-border_im3.png
+   A /branches/e17/images/window-border_im4.png
+   A /branches/e17/images/window-border_im5.png
+   A /branches/e17/images/window-border_im6.png
+   A /branches/e17/images/window-border_im7.png
+   A /branches/e17/images/window-border_im8.png
+   A /branches/e17/images/window-border_im9.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/macros/border_default_programs.edc
+   M /branches/e17/macros/border_menu_buttons.edc
+
+Slow rebuilding borders
+
+------------------------------------------------------------------------
+r615 | alberto.castro.leiva | 2009-01-03 00:56:11 -0600 (Sat, 03 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/images/window-border_im0.png
+   M /branches/e17/images/window-border_im2.png
+
+Fix 2 pixels.
+
+------------------------------------------------------------------------
+r614 | alberto.castro.leiva | 2008-12-26 18:29:10 -0600 (Fri, 26 Dec 2008) | 2 lines
+Changed paths:
+   A /branches/e17/bits/border2.edc
+   M /branches/e17/bits/itask.edc
+   A /branches/e17/images/window-border_im0.png
+   A /branches/e17/images/window-border_im2.png
+
+Oops, thanks Catalyst
+
+------------------------------------------------------------------------
+r613 | alberto.castro.leiva | 2008-12-26 01:29:17 -0600 (Fri, 26 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/itask.edc
+
+Needs work.
+
+------------------------------------------------------------------------
+r612 | alberto.castro.leiva | 2008-12-26 01:10:22 -0600 (Fri, 26 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/itask.edc
+
+Hmm, how about an indicator?
+
+------------------------------------------------------------------------
+r611 | alberto.castro.leiva | 2008-12-26 00:59:40 -0600 (Fri, 26 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   A /branches/e17/bits/about_detour.edc
+   D /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/itask.edc
+   A /branches/e17/bits/styles.edc
+   D /branches/e17/bits/textblock_styles.edc
+   D /branches/e17/images/wallpaper_im0.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/main.edc
+
+Itask-ng: perhaps, this is what I meant.
+
+------------------------------------------------------------------------
+r610 | hannes.janetzek | 2008-12-24 22:15:20 -0600 (Wed, 24 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/itask.edc
+
+itask-ng: update to current signals, change separator opacity with background
+
+------------------------------------------------------------------------
+r609 | alberto.castro.leiva | 2008-12-23 23:40:33 -0600 (Tue, 23 Dec 2008) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/color_well.edc
+   M /branches/e17/bits/cslider.edc
+   M /branches/e17/bits/itask.edc
+   D /branches/e17/bits/ruler.edc
+   M /branches/e17/icons/wallscreen_im0.png
+   D /branches/e17/images/cp_slider_trough.png
+   D /branches/e17/images/cp_slider_trough_left.png
+   D /branches/e17/images/cp_slider_trough_right.png
+   D /branches/e17/images/cs_box.png
+   A /branches/e17/images/cslider_im0.png
+   A /branches/e17/images/cslider_im1.png
+   A /branches/e17/images/cslider_im2.png
+   D /branches/e17/images/extra_ruler0.png
+   M /branches/e17/images/spectrum_im1.png
+   M /branches/e17/images/spectrum_im2.png
+   M /branches/e17/images/spectrum_im3.png
+   A /branches/e17/images/spectrum_im5.png
+   A /branches/e17/images/spectrum_im6.png
+   A /branches/e17/images/spectrum_im7.png
+   A /branches/e17/images/spectrum_im8.png
+   A /branches/e17/images/spectrum_im9.png
+   D /branches/e17/images/wallpaper-221.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Finally, a decent color selector.
+Wallpaper: gradient / crete a gradient / color x: color selector
+
+------------------------------------------------------------------------
+r608 | alberto.castro.leiva | 2008-12-19 00:12:42 -0600 (Fri, 19 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/itask.edc
+
+Ooops
+
+------------------------------------------------------------------------
+r607 | alberto.castro.leiva | 2008-12-19 00:12:29 -0600 (Fri, 19 Dec 2008) | 2 lines
+Changed paths:
+   D /branches/e17/bits/cfgtoolbar.edc
+   M /branches/e17/bits/color_well.edc
+   A /branches/e17/bits/configure_toolbar.edc
+   M /branches/e17/bits/cslider.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/spectrum.edc
+   A /branches/e17/images/spectrum_im2.png
+   A /branches/e17/images/spectrum_im3.png
+   A /branches/e17/images/spectrum_im4.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Update these files. 
+
+------------------------------------------------------------------------
+r606 | alberto.castro.leiva | 2008-12-19 00:10:51 -0600 (Fri, 19 Dec 2008) | 2 lines
+Changed paths:
+   D /branches/e17/images/color_slider_cursor.png
+   D /branches/e17/images/color_slider_x.png
+   D /branches/e17/images/color_slider_y.png
+   M /branches/e17/images/spectrum_im1.png
+
+Update spectrum, but i think its not yet finished?
+
+------------------------------------------------------------------------
+r605 | alberto.castro.leiva | 2008-12-18 00:49:32 -0600 (Thu, 18 Dec 2008) | 2 lines
+Changed paths:
+   A /branches/e17/bits/efm_toolbar.edc
+   M /branches/e17/bits/fileman.edc
+   D /branches/e17/bits/gradients.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/init.edc
+   M /branches/e17/bits/itask.edc
+   A /branches/e17/bits/ruler.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/temperature.edc
+   D /branches/e17/bits/toolbar.edc
+   D /branches/e17/images/busy.cursor.00.png
+   D /branches/e17/images/busy.cursor.01.png
+   D /branches/e17/images/busy.cursor.02.png
+   D /branches/e17/images/busy.cursor.03.png
+   A /branches/e17/images/cursor_im0.png
+   A /branches/e17/images/cursor_im1.png
+   A /branches/e17/images/cursor_im2.png
+   A /branches/e17/images/cursor_im3.png
+   A /branches/e17/images/efm_sw0.png
+   A /branches/e17/images/efm_sw1.png
+   A /branches/e17/images/efm_tbar_im0.png
+   A /branches/e17/images/efm_tbar_im1.png
+   D /branches/e17/images/efm_toolbar.png
+   D /branches/e17/images/efm_toolbar2.png
+   D /branches/e17/images/efmtbar_im0.png
+   D /branches/e17/images/efmtbar_im1.png
+   D /branches/e17/images/efmws.png
+   D /branches/e17/images/efmws2.png
+   A /branches/e17/images/extra_ruler0.png
+   A /branches/e17/images/init_im0.png
+   A /branches/e17/images/shelf_alt_im0.png
+   A /branches/e17/images/shelf_alt_im1.png
+   A /branches/e17/images/shelf_alt_im2.png
+   A /branches/e17/images/shelf_def_im0.png
+   A /branches/e17/images/shelf_def_im02.png
+   A /branches/e17/images/shelf_def_im1.png
+   A /branches/e17/images/shelf_def_im2.png
+   A /branches/e17/images/shelf_def_im3.png
+   D /branches/e17/images/shelf_default_bg_t.png
+   D /branches/e17/images/shelf_default_bg_t2.png
+   D /branches/e17/images/shelf_default_bg_tb2.png
+   D /branches/e17/images/shelf_default_bg_tt2.png
+   D /branches/e17/images/shelf_default_bg_v.png
+   D /branches/e17/images/shelf_default_bg_v2.png
+   D /branches/e17/images/shelf_default_inset_bg.png
+   D /branches/e17/images/shelf_default_r_bg_v.png
+   D /branches/e17/images/shelf_default_r_bg_v2.png
+   D /branches/e17/images/shelf_invisible_inset_bg.png
+   M /branches/e17/images.edc
+   D /branches/e17/macros/border_menu.edc
+   A /branches/e17/macros/border_menu_buttons.edc
+   M /branches/e17/main.edc
+
+Add these files.
+
+------------------------------------------------------------------------
+r604 | alberto.castro.leiva | 2008-12-16 00:37:07 -0600 (Tue, 16 Dec 2008) | 2 lines
+Changed paths:
+   D /branches/e17/icons/icons.edc
+   D /branches/e17/images/bg.png
+   D /branches/e17/images/button-down.png
+   D /branches/e17/images/button-forward.png
+   D /branches/e17/images/button-up.png
+   D /branches/e17/images/pattern-10036.png
+   D /branches/e17/images/wallscreen_im0.png
+   D /branches/e17/images/wallscreen_im1.png
+   D /branches/e17/images/wallscreen_im2.png
+   D /branches/e17/images/wallscreen_im3.png
+   D /branches/e17/images/wallscreen_im4.png
+   D /branches/e17/images/wallscreen_im5.png
+
+Remove these files.
+
+------------------------------------------------------------------------
+r603 | alberto.castro.leiva | 2008-12-16 00:35:00 -0600 (Tue, 16 Dec 2008) | 2 lines
+Changed paths:
+   A /branches/e17/icons.edc
+   A /branches/e17/images.edc
+
+Add these new files.
+
+------------------------------------------------------------------------
+r602 | alberto.castro.leiva | 2008-12-16 00:34:04 -0600 (Tue, 16 Dec 2008) | 6 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/Makefile
+   M /branches/e17/TODO
+   M /branches/e17/bits/about.edc
+   M /branches/e17/bits/about_theme.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/cfgtoolbar.edc
+   M /branches/e17/bits/check.edc
+   M /branches/e17/bits/clock.edc
+   M /branches/e17/bits/color_well.edc
+   M /branches/e17/bits/configure.edc
+   A /branches/e17/bits/connman.edc
+   M /branches/e17/bits/cslider.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/deskpreview.edc
+   M /branches/e17/bits/dialog.edc
+   D /branches/e17/bits/efm_nav-back.edc
+   D /branches/e17/bits/efm_nav-fav.edc
+   D /branches/e17/bits/efm_nav-forward.edc
+   D /branches/e17/bits/efm_nav-refresh.edc
+   D /branches/e17/bits/efm_nav-up.edc
+   M /branches/e17/bits/efm_nav.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/error.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/fileman.edc
+   D /branches/e17/bits/fileman_actions.edc
+   D /branches/e17/bits/fileman_desktop_icon_variable.edc
+   D /branches/e17/bits/fileman_icon.edc
+   D /branches/e17/bits/fileman_icon_clickable.edc
+   D /branches/e17/bits/fileman_icon_fixed.edc
+   D /branches/e17/bits/fileman_icon_fixed_programs.edc
+   D /branches/e17/bits/fileman_icon_variable.edc
+   D /branches/e17/bits/fileman_icon_variable_programs.edc
+   D /branches/e17/bits/fileman_list_fixed.edc
+   D /branches/e17/bits/fileman_list_odd.edc
+   D /branches/e17/bits/fileman_list_odd_variable.edc
+   D /branches/e17/bits/fileman_list_odd_variable_programs.edc
+   D /branches/e17/bits/fileman_list_variable.edc
+   D /branches/e17/bits/fileman_list_variable_programs.edc
+   D /branches/e17/bits/fileman_mime.edc
+   D /branches/e17/bits/fileman_overlay.edc
+   D /branches/e17/bits/fileman_overlay_programs.edc
+   D /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/gadman.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/icons.edc
+   D /branches/e17/bits/init-splash.edc
+   D /branches/e17/bits/init-splash_programs.edc
+   M /branches/e17/bits/init.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/label.edc
+   M /branches/e17/bits/menu.edc
+   A /branches/e17/bits/mixer.edc
+   M /branches/e17/bits/move.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/preview.edc
+   M /branches/e17/bits/radio.edc
+   M /branches/e17/bits/resize.edc
+   D /branches/e17/bits/scrollbar_hbar.edc
+   D /branches/e17/bits/scrollbar_vbar.edc
+   M /branches/e17/bits/scrollframe.edc
+   D /branches/e17/bits/scrollframe_hbar.edc
+   D /branches/e17/bits/scrollframe_hbar_progs.edc
+   D /branches/e17/bits/scrollframe_main.edc
+   D /branches/e17/bits/scrollframe_vbar.edc
+   D /branches/e17/bits/scrollframe_vbar_progs.edc
+   M /branches/e17/bits/shelf.edc
+   D /branches/e17/bits/shelf_alternate_base.edc
+   D /branches/e17/bits/shelf_alternate_base_x.edc
+   D /branches/e17/bits/shelf_base.edc
+   D /branches/e17/bits/shelf_base_programs.edc
+   D /branches/e17/bits/shelf_default_inset.edc
+   D /branches/e17/bits/shelf_default_plain.edc
+   D /branches/e17/bits/shelf_invisible_base.edc
+   D /branches/e17/bits/shelf_invisible_inset.edc
+   D /branches/e17/bits/shelf_invisible_plain.edc
+   M /branches/e17/bits/slider.edc
+   M /branches/e17/bits/spectrum.edc
+   A /branches/e17/bits/start.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/temperature.edc
+   D /branches/e17/bits/temperature_main.edc
+   D /branches/e17/bits/temperature_programs.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/bits/toolbar.edc
+   M /branches/e17/bits/winlist.edc
+   A /branches/e17/bits/wizzard.edc
+   A /branches/e17/icons/audio-card.png
+   A /branches/e17/icons/button-down.png
+   A /branches/e17/icons/button-forward.png
+   A /branches/e17/icons/button-up.png
+   A /branches/e17/icons/wallscreen_im0.png
+   A /branches/e17/icons/wallscreen_im1.png
+   A /branches/e17/icons/wallscreen_im2.png
+   A /branches/e17/icons/wallscreen_im3.png
+   A /branches/e17/icons/wallscreen_im4.png
+   A /branches/e17/icons/wallscreen_im5.png
+   M /branches/e17/images/entry_im1.png
+   D /branches/e17/images/images.edc
+   A /branches/e17/images/spectrum_im0.png
+   A /branches/e17/images/spectrum_im1.png
+   A /branches/e17/images/wallpaper_im0.png
+   A /branches/e17/images/wallpaper_pat0.png
+   A /branches/e17/images/wallpaper_pat1.png
+   M /branches/e17/macros/background.edc
+   M /branches/e17/macros/border.edc
+   M /branches/e17/macros/border_menu.edc
+   M /branches/e17/macros/init-bg.edc
+   M /branches/e17/macros/sys.edc
+   M /branches/e17/macros/win_geometry.edc
+   M /branches/e17/main.edc
+
+Update ChangeLog
+Shuffle images and icons around.
+Done grouping files.
+Lots of stuff left to do though.
+
+
+------------------------------------------------------------------------
+r601 | alberto.castro.leiva | 2008-12-13 13:54:24 -0600 (Sat, 13 Dec 2008) | 2 lines
+Changed paths:
+   A /branches/e17/images/exebuf_im0.png
+   A /branches/e17/images/menu_im2-bak.png
+
+Broke the 600 commit messages mark.
+
+------------------------------------------------------------------------
+r600 | alberto.castro.leiva | 2008-12-13 13:52:58 -0600 (Sat, 13 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/e17/bits/itask.edc
+
+Itask: vertical separator was broken.
+
+------------------------------------------------------------------------
+r599 | alberto.castro.leiva | 2008-12-13 13:45:20 -0600 (Sat, 13 Dec 2008) | 5 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/winlist.edc
+   M /branches/e17/images/images.edc
+   D /branches/e17/images/itask-bg.png
+   D /branches/e17/images/itask-bg_left.png
+   D /branches/e17/images/itask-bg_right.png
+   D /branches/e17/images/itask-bg_top.png
+   M /branches/e17/images/itask_im1.png
+   M /branches/e17/images/menu_im2.png
+
+Itask: top orientation had broken images. 
+The separator does not change opacity based on background 
+transparency. It should.
+
+
+------------------------------------------------------------------------
+r598 | alberto.castro.leiva | 2008-12-11 23:59:37 -0600 (Thu, 11 Dec 2008) | 5 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/fileman_window_main.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/images/menu_im2.png
+   M /branches/e17/images/menu_im3.png
+   M /branches/e17/images/menu_im4.png
+   M /branches/e17/main.edc
+
+Broke tclock's popup. Fixed it!
+
+New context menu and menu hilite.
+
+
+------------------------------------------------------------------------
+r597 | alberto.castro.leiva | 2008-12-11 22:09:45 -0600 (Thu, 11 Dec 2008) | 2 lines
+Changed paths:
+   D /branches/e17/images/gadman_control_border.png
+   D /branches/e17/images/gadman_control_window.png
+   D /branches/e17/images/gadman_hl1.png
+   D /branches/e17/images/gadman_hr1.png
+   D /branches/e17/images/gadman_indicator.png
+   D /branches/e17/images/gadman_vb1.png
+   D /branches/e17/images/gadman_vt1.png
+
+Delete
+
+------------------------------------------------------------------------
 r596 | alberto.castro.leiva | 2008-12-11 22:08:39 -0600 (Thu, 11 Dec 2008) | 2 lines
 Changed paths:
    M /branches/e17/bits/cfgtoolbar.edc
