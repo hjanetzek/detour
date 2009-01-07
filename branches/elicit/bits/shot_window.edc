@@ -9,15 +9,15 @@ part {
 		min: 192 122;
 
 		rel1 { 
-			to: "main_bg"; 
+			to: "main"; 
 			relative: 0.0 0.0; 
 			offset: 2 3; 
 		}
 
 		rel2 {  
-			to_x: "main_bg";
+			to_x: "main";
 			relative: 1.0 1.0;
-			offset: -3 -110;
+			offset: -3 -120;
 		}
 
 		image {
@@ -68,16 +68,6 @@ part {
 			to: "shot.bg"; 
 			offset: -3 -2;
 		}
-
-		image {
-			normal: "scrollframe_inset.png";
-			border: 5 5 5 6;
-		}
-	}
-
-	description {
-		state: "focused" 0.0;
-		inherit: "default" 0.0;
 
 		image {
 			normal: "scrollframe_focus.png";

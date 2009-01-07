@@ -1,5 +1,23 @@
 
 program {
+	name: "mouse,in"; 
+	signal: "mouse,in"; 
+	source: "grid.check.button";
+	action: STATE_SET "visible" 0.0;
+	transition: DECELERATE 0.5;
+	target: "hover_clip";
+}
+
+program {
+	name: "mouse,out"; 
+	signal: "mouse,out"; 
+	source: "grid.check.button";
+	action: STATE_SET "default" 0.0;
+	transition: DECELERATE 0.5;
+	target: "hover_clip";
+}
+
+program {
 	name: "grid,shown"; 
 	signal: "elicit,grid,shown"; 
 	source: "Elicit";
@@ -18,31 +36,6 @@ program {
 	signal: "mouse,down,1";
 	source: "grid.check.button";
 	action: SIGNAL_EMIT "elicit,grid,toggle" "";
-}
-
-program {
-	name: "text-click";
-	signal: "mouse,down,1";
-	source: "grid.text";
-	action: SIGNAL_EMIT "elicit,grid,toggle" "";
-}
-
-program {
-	name: "focus_in";
-	signal: "mouse,in";
-	source: "grid.check.button";
-	script {
-		set_state(PART:"check_shadow", "focused", 0.0);
-	}
-}
-
-program {
-	name: "focus_out";
-	signal: "mouse,out";
-	source: "grid.check.button";
-	script {
-		set_state(PART:"check_shadow", "default", 0.0);
-	}
 }
 
 program {

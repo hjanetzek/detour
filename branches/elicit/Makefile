@@ -35,8 +35,8 @@ install: detour-elicit.edj
 
 version:
 	@echo ""
-	cat main.edc | head -8 | tail -1
-	cat main.edc | head -9 | tail -1
+	cat main.edc | head -6 | tail -1
+	cat main.edc | head -7 | tail -1
 
 clean:
 	@echo ""

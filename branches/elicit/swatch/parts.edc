@@ -9,16 +9,16 @@ part {
 
 		rel1 { 
 			relative: 0.0 0.0; 
-			offset: 0 1; 
+			offset: -3 1; 
 		}
 
 		rel2 { 
 			relative: 1.0 1.0; 
-			offset: -1 -1; 
+			offset: -4 -1; 
 		}
 
 		image {
-			normal: "swatch_shadow.png";
+			normal: "swatch_im0.png";
 			border: 2 2 2 2;
 		}
 	}
@@ -51,6 +51,15 @@ part {
 	description {
 		state: "default" 0.0;
 		color: 0 0 0 0;
+
+		rel1 { 
+			to: "border"; 
+		}
+
+		rel2 { 
+			to: "border"; 
+			offset: -2 -2; 
+		}
 	}
 }
 
