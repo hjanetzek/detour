@@ -1,4 +1,64 @@
 ------------------------------------------------------------------------
+r585 | alberto.castro.leiva | 2008-12-10 01:07:47 -0600 (Wed, 10 Dec 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/Makefile
+   M /branches/elicit/TODO
+   M /branches/elicit/main.edc
+   M /branches/elicit/swatch/parts.edc
+
+Update
+
+------------------------------------------------------------------------
+r541 | alberto.castro.leiva | 2008-07-10 01:49:31 -0500 (Thu, 10 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/programs/focus.edc
+
+More consistent this way.
+
+------------------------------------------------------------------------
+r530 | alberto.castro.leiva | 2008-07-01 19:42:34 -0500 (Tue, 01 Jul 2008) | 2 lines
+Changed paths:
+   M /branches/elicit/ChangeLog
+
+Update ChangeLog
+
+------------------------------------------------------------------------
+r528 | alberto.castro.leiva | 2008-07-01 19:20:29 -0500 (Tue, 01 Jul 2008) | 2 lines
+Changed paths:
+   A /branches/elicit/images/tool-grab.png
+   A /branches/elicit/macros/sliders.edc
+
+Forgot the files.
+
+------------------------------------------------------------------------
+r527 | alberto.castro.leiva | 2008-07-01 19:17:59 -0500 (Tue, 01 Jul 2008) | 3 lines
+Changed paths:
+   M /branches/elicit/Makefile
+   M /branches/elicit/README
+   M /branches/elicit/bits/background.edc
+   M /branches/elicit/bits/grid_button.edc
+   M /branches/elicit/bits/hex.edc
+   M /branches/elicit/bits/shot_window.edc
+   M /branches/elicit/bits/sliders.edc
+   M /branches/elicit/bits/spinner.edc
+   M /branches/elicit/bits/swatch.edc
+   M /branches/elicit/bits/swatches.edc
+   D /branches/elicit/images/check-.png
+   R /branches/elicit/images/check1.png
+   A /branches/elicit/images/entry_rgb.png
+   A /branches/elicit/images/images.edc
+   D /branches/elicit/images/picker.png
+   D /branches/elicit/images/shot.png
+   D /branches/elicit/images/vswipe.png
+   D /branches/elicit/images.edc
+   M /branches/elicit/main.edc
+   M /branches/elicit/programs/focus.edc
+   M /branches/elicit/programs/grid_button.edc
+
+Update Elicit to all the changes in Edje over the months.
+
+
+------------------------------------------------------------------------
 r483 | alberto.castro.leiva | 2008-05-08 01:58:30 -0500 (Thu, 08 May 2008) | 2 lines
 Changed paths:
    M /branches/elicit/Makefile

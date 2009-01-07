@@ -1,7 +1,7 @@
 
-#define SLIDER(RGB) \
+#define SLIDER_RED() \
 part { \
-	name: RGB"-trough_left"; \
+	name: "red-trough_left"; \
 	type: IMAGE; \
 	description { \
 		state: "default" 0.0; \
@@ -9,17 +9,17 @@ part { \
 		max: 8 16; \
 		fixed: 1 1; \
 		rel1 { \
-			to: RGB; \
+			to: "red"; \
 			relative: 0.0 0.5; \
 			offset: 3 -8; \
 		} \
 		rel2 { \
-			to: RGB; \
+			to: "red"; \
 			relative: 0.0 0.5; \
 			offset: 11 8; \
 		} \
 		image { \
-			normal: "cp_slider_trough_left.png"; \
+			normal: "cslider_im1.png"; \
 			border: 6 0 7 7; \
 		} \
 		fill { \
@@ -28,24 +28,24 @@ part { \
     	} \
 } \
 part { \
-	name: RGB"-trough_right"; \
+	name: "red-trough_right"; \
 	description { \
 		state: "default" 0.0; \
 		min: 8 16; \
 		max: 8 16; \
 		fixed: 1 1; \
 		rel1 { \
-			to: RGB"-entry"; \
+			to: "red-entry"; \
 			relative: 0.0 0.5; \
 			offset: -5 -8; \
 		} \
 		rel2 { \
-			to: RGB"-entry"; \
+			to: "red-entry"; \
 			relative: 0.0 0.5; \
-			offset: -5 8; \
+			offset: -5 6; \
 		} \
 		image { \
-			normal: "cp_slider_trough_right.png"; \
+			normal: "cslider_im2.png"; \
 			border: 0 6 7 7; \
 		} \
 		fill { \
@@ -54,21 +54,21 @@ part { \
 	} \
 } \
 part { \
-	name: RGB"-trough"; \
+	name: "red-trough"; \
 	description { \
 	state: "default" 0.0; \
 		rel1 { \
-			to: RGB"-trough_left"; \
+			to: "red-trough_left"; \
 			relative: 1.0 0.0; \
 			offset: 0 0; \
 		} \
 		rel2 { \
-			to: RGB"-trough_right"; \
+			to: "red-trough_right"; \
 			relative: 0.0 1.0; \
 			offset: -1 -1; \
 		} \
 		image { \
-			normal: "cp_slider_trough.png"; \
+			normal: "cslider_im0.png"; \
 			border: 1 1 2 2; \
 		} \
 		fill { \
@@ -77,26 +77,26 @@ part { \
 	} \
 } \
 part { \
-	name: RGB"-confine"; \
+	name: "red-confine"; \
 	type: RECT; \
 	description { \
 		state: "default" 0.0; \
 		color: 255 0 0 128; \
 		visible: 0; \
 		rel1 { \
-			to: RGB"-trough"; \
+			to: "red-trough"; \
 			relative: 0.0 0.0; \
 			offset: -5 1; \
 		} \
 		rel2 { \
-			to: RGB"-trough"; \
+			to: "red-trough"; \
 			relative: 1.0 1.0; \
 			offset: 4 -2; \
 		} \
 	} \
 } \
 part { \
-	name: RGB"-entry"; \
+	name: "red-entry"; \
 	description { \
 		state: "default" 0.0; \
 		align: 1.0 0.5; \
@@ -104,18 +104,18 @@ part { \
 		max: 39 24; \
 		fixed: 1 1; \
 		rel1 { \
-			to: RGB"-val"; \
+			to: "red-val"; \
 			relative: 0.0 0.0; \
-			offset: -6 -5; \
+			offset: -6 -3; \
 		} \
 		rel2 { \
-			to: RGB"-val"; \
+			to: "red-val"; \
 			relative: 1.0 1.0; \
 			offset: 4 2; \
 		} \
 		image { \
-			normal: "entry_rgb.png"; \
-			border: 8 8 10 9; \
+			normal: "entry_im0.png"; \
+			border: 7 7 6 6; \
 		} \
 		fill { \
 			smooth: 0; \
@@ -123,7 +123,7 @@ part { \
 	} \
 } \
 part { \
-	name: RGB"-val"; \
+	name: "red-val"; \
 	type: TEXT; \
 	mouse_events: 0; \
 	description { \
@@ -132,12 +132,12 @@ part { \
 		align: 1.0 0.5; \
 		fixed: 1 1; \
 		rel1 { \
-			to: RGB; \
+			to: "red"; \
 			relative: 1.0 0.5; \
 			offset: -5 1; \
 		} \
 		rel2 { \
-			to: RGB; \
+			to: "red"; \
 			relative: 1.0 0.5; \
 			offset: -5 1; \
 		} \
@@ -149,3 +149,310 @@ part { \
 		} \
 	} \
 }
+
+#define SLIDER_GREEN() \
+part { \
+	name: "green-trough_left"; \
+	type: IMAGE; \
+	description { \
+		state: "default" 0.0; \
+		min: 8 16; \
+		max: 8 16; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "green"; \
+			relative: 0.0 0.5; \
+			offset: 3 -8; \
+		} \
+		rel2 { \
+			to: "green"; \
+			relative: 0.0 0.5; \
+			offset: 11 8; \
+		} \
+		image { \
+			normal: "cslider_im1.png"; \
+			border: 6 0 7 7; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+    	} \
+} \
+part { \
+	name: "green-trough_right"; \
+	description { \
+		state: "default" 0.0; \
+		min: 8 16; \
+		max: 8 16; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "green-entry"; \
+			relative: 0.0 0.5; \
+			offset: -5 -8; \
+		} \
+		rel2 { \
+			to: "green-entry"; \
+			relative: 0.0 0.5; \
+			offset: -5 6; \
+		} \
+		image { \
+			normal: "cslider_im2.png"; \
+			border: 0 6 7 7; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+part { \
+	name: "green-trough"; \
+	description { \
+		state: "default" 0.0; \
+		min: 15 16; \
+		max: 9999 16; \
+		rel1 { \
+			to: "green-trough_left"; \
+			relative: 1.0 0.0; \
+			offset: 0 0; \
+		} \
+		rel2 { \
+			to: "green-trough_right"; \
+			relative: 0.0 1.0; \
+			offset: -1 -1; \
+		} \
+		image { \
+			normal: "cslider_im0.png"; \
+			border: 1 1 2 2; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+part { \
+	name: "green-confine"; \
+	type: RECT; \
+	description { \
+		state: "default" 0.0; \
+		color: 255 0 0 128; \
+		visible: 0; \
+		rel1 { \
+			to: "green-trough"; \
+			relative: 0.0 0.0; \
+			offset: -5 1; \
+		} \
+		rel2 { \
+			to: "green-trough"; \
+			relative: 1.0 1.0; \
+			offset: 4 -2; \
+		} \
+	} \
+} \
+part { \
+	name: "green-entry"; \
+	description { \
+		state: "default" 0.0; \
+		align: 1.0 0.5; \
+		min: 39 24; \
+		max: 39 24; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "green-val"; \
+			relative: 0.0 0.0; \
+			offset: -6 1; \
+		} \
+		rel2 { \
+			to: "green-val"; \
+			relative: 1.0 1.0; \
+			offset: 4 -3; \
+		} \
+		image { \
+			normal: "entry_im0.png"; \
+			border: 7 7 6 6; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+part { \
+	name: "green-val"; \
+	type: TEXT; \
+	mouse_events: 0; \
+	description { \
+		state: "default" 0.0; \
+		color: 60 60 60 255; \
+		align: 1.0 0.5; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "green"; \
+			relative: 1.0 0.5; \
+			offset: -5 1; \
+		} \
+		rel2 { \
+			to: "green"; \
+			relative: 1.0 0.5; \
+			offset: -5 1; \
+		} \
+		text { \
+		text: "0"; \
+			font: "DejaVuSans"; \
+			size: 11; \
+			min: 1 1; \
+		} \
+	} \
+}
+
+#define SLIDER_BLUE() \
+part { \
+	name: "blue-trough_left"; \
+	type: IMAGE; \
+	description { \
+		state: "default" 0.0; \
+		min: 8 16; \
+		max: 8 16; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "blue"; \
+			relative: 0.0 0.5; \
+			offset: 3 -8; \
+		} \
+		rel2 { \
+			to: "blue"; \
+			relative: 0.0 0.5; \
+			offset: 11 8; \
+		} \
+		image { \
+			normal: "cslider_im1.png"; \
+			border: 6 0 7 7; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+    	} \
+} \
+part { \
+	name: "blue-trough_right"; \
+	description { \
+		state: "default" 0.0; \
+		min: 8 16; \
+		max: 8 16; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "blue-entry"; \
+			relative: 0.0 0.5; \
+			offset: -5 -8; \
+		} \
+		rel2 { \
+			to: "blue-entry"; \
+			relative: 0.0 0.5; \
+			offset: -5 6; \
+		} \
+		image { \
+			normal: "cslider_im2.png"; \
+			border: 0 6 7 7; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+part { \
+	name: "blue-trough"; \
+	description { \
+		state: "default" 0.0; \
+		min: 15 16; \
+		max: 9999 16; \
+		rel1 { \
+			to: "blue-trough_left"; \
+			relative: 1.0 0.0; \
+			offset: 0 0; \
+		} \
+		rel2 { \
+			to: "blue-trough_right"; \
+			relative: 0.0 1.0; \
+			offset: -1 -1; \
+		} \
+		image { \
+			normal: "cslider_im0.png"; \
+			border: 1 1 2 2; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+part { \
+	name: "blue-confine"; \
+	type: RECT; \
+	description { \
+		state: "default" 0.0; \
+		color: 255 0 0 128; \
+		visible: 0; \
+		rel1 { \
+			to: "blue-trough"; \
+			relative: 0.0 0.0; \
+			offset: -5 1; \
+		} \
+		rel2 { \
+			to: "blue-trough"; \
+			relative: 1.0 1.0; \
+			offset: 4 -2; \
+		} \
+	} \
+} \
+part { \
+	name: "blue-entry"; \
+	description { \
+		state: "default" 0.0; \
+		align: 1.0 0.5; \
+		min: 39 24; \
+		max: 39 24; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "blue-val"; \
+			relative: 0.0 0.0; \
+			offset: -6 1; \
+		} \
+		rel2 { \
+			to: "blue-val"; \
+			relative: 1.0 1.0; \
+			offset: 4 -3; \
+		} \
+		image { \
+			normal: "entry_im0.png"; \
+			border: 7 7 6 6; \
+		} \
+		fill { \
+			smooth: 0; \
+		} \
+	} \
+} \
+part { \
+	name: "blue-val"; \
+	type: TEXT; \
+	mouse_events: 0; \
+	description { \
+		state: "default" 0.0; \
+		color: 60 60 60 255; \
+		align: 1.0 0.5; \
+		fixed: 1 1; \
+		rel1 { \
+			to: "blue"; \
+			relative: 1.0 0.5; \
+			offset: -5 1; \
+		} \
+		rel2 { \
+			to: "blue"; \
+			relative: 1.0 0.5; \
+			offset: -5 1; \
+		} \
+		text { \
+		text: "0"; \
+			font: "DejaVuSans"; \
+			size: 11; \
+			min: 1 1; \
+		} \
+	} \
+}
+
