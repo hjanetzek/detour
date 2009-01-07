@@ -13,7 +13,7 @@ part {
 		rel1 { 
 			to: "swatch.bg"; 
 			relative: 1.0 0.0; 
-			offset: 0 -37; 
+			offset: 0 -46; 
 		}
 
 		rel2 { 
@@ -38,7 +38,7 @@ part {
 		rel1 { 
 			to: "swatch.bg"; 
 			relative: 1.0 0.0; 
-			offset: 0 1; 
+			offset: 0 2; 
 		}
 
 		rel2 { 
@@ -63,7 +63,7 @@ part {
 		rel1 { 
 			to: "swatch.bg"; 
 			relative: 1.0 0.0; 
-			offset: 0 38; 
+			offset: 0 50; 
 		}
 
 		rel2 { 
@@ -137,9 +137,9 @@ part {
 	} 
 } 
 
-SLIDER("red")
-SLIDER("green")
-SLIDER("blue")
+SLIDER_RED()
+SLIDER_GREEN()
+SLIDER_BLUE()
 
 part {
 	name: "red-slider";
@@ -153,11 +153,12 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 11 19;
-		max: 11 19;
+		min: 11 15;
+		max: 11 15;
+		fixed: 1 1;
 
 		image {
-			normal: "cp_slider_drag.png";
+			normal: "spectrum_im2.png";
 		}
 	}
 }
@@ -174,11 +175,12 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 11 19;
-		max: 11 19;
+		min: 11 15;
+		max: 11 15;
+		fixed: 1 1;
 
 		image {
-			normal: "cp_slider_drag.png";
+			normal: "spectrum_im2.png";
 		}
 	}
 }
@@ -195,11 +197,12 @@ part {
 
 	description {
 		state: "default" 0.0;
-		min: 11 19;
-		max: 11 19;
+		min: 11 15;
+		max: 11 15;
+		fixed: 1 1;
 
 		image {
-			normal: "cp_slider_drag.png";
+			normal: "spectrum_im2.png";
 		}
 	}
 }

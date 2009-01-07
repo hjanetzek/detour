@@ -1,21 +1,23 @@
 
 program {
 	name: "hex-copy";
-	signal: "mouse,clicked,1";
+	signal: "mouse,down,1";
 	source: "hex-val";
 	action: SIGNAL_EMIT "elicit,copy,hex" "";
-	after: "hex-pulse";
 }
 
 program {
 	name: "hex-pulse";
+	signal: "mouse,down,1";
+	source: "hex-val";
 	action: STATE_SET "fade" 0.0;
 	target: "hex-val";
-	after: "hex-pulse-2";
 }
 
 program {
 	name: "hex-pulse-2";
+	signal: "mouse,up,1";
+	source: "hex-val";
 	action: STATE_SET "default" 0.0;
 	transition: DECELERATE 0.5;
 	target: "hex-val";

@@ -1,17 +1,23 @@
-
 #include "macros/sliders.edc"
 
-//Set the current version
-#define VERSION_STRING 0.4.2
+#define VERSION_STRING 0.0.6
 
 /* 
- * detour version 0.4.3 (elicit) for Elicit 0.9.2 or later.
+ * detour version 0.0.6 (elicit) for Elicit 0.9.2 or later.
  * cored.org et al (see AUTHORS)
  */
 
+data {
+	item: "theme/name" 		"detour (symetrika)";
+	item: "theme/description" 	"";
+	item: "theme/version"		"0.0.6";
+	item: "theme/author"		"Alberto Castro & Brian Mattern";
+	item: "theme/license"		"BSD Artistic License";
+}
+
 fonts {
-	font:"fonts/DejaVuSans.ttf" "DejaVuSans";
-	font:"fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
+	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
+	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
 }
 
 color_classes {
@@ -24,7 +30,7 @@ images {
 collections {
 	group {
 		name: "elicit";
-		min: 200 234;
+		min: 200 264;
 		max: 9999 9999;
 
 		data {
@@ -32,15 +38,59 @@ collections {
 			/* item: "shots.direction" "h"; */
 		}
 
-		script {
-			public shot_focus = 0;
-			public swatch_focus = 0;
-			public grid_state = 0;
-			public spinner_focus = 0;
-		}
-
 		parts { 
-			#include "bits/background.edc"
+			part {
+				name: "main";
+				type: IMAGE;
+				mouse_events: 1;
+
+				description {
+					state: "default" 0.0;
+					min: 200 264;
+					max: 9999 9999;
+
+					rel1 { 
+						relative: 0.0 0.0; 
+						offset: 0 0; 
+					}
+
+					rel2 { 
+						relative: 1.0 1.0; 
+						offset: -1 -1; 
+					}
+
+					image {
+						normal: "dialog_im0.png";
+						border: 2 2 0 0;
+					}
+				}
+			}
+
+			part {
+				name: "body.rect";
+				type: RECT;
+				mouse_events: 0;
+
+				description {
+					state: "default" 0.0;
+					min: 192 56;
+					color: 128 0 0 0;
+					visible: 0;
+
+					rel1 { 
+						to: "grid.rect"; 
+						relative: 0.0 1.0; 
+						offset: 2 6; 
+					}
+
+					rel2 { 
+						to_x: "main"; 
+						relative: 1.0 1.0; 
+						offset: -5 -30; 
+					}
+				}
+			}
+
 			#include "bits/shot_window.edc"
 			#include "bits/grid_button.edc"
 			#include "bits/spinner.edc"
@@ -51,7 +101,6 @@ collections {
 		}
 
 		programs { 
-			#include "programs/focus.edc"
 			#include "programs/shot_window.edc"
 			#include "programs/swatch.edc"
 			#include "programs/grid_button.edc"

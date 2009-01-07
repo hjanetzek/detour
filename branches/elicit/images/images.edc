@@ -1,42 +1,39 @@
 
 //~ base
-image: "base.png" COMP;
+image: "dialog_im0.png" COMP;
 
 //~ tool
 image: "tool-grab.png" COMP;
 
 //~ entry
-image: "entry.png" COMP;
-image: "entry_focus.png" COMP;
-image: "entry_rgb.png" COMP;
+image: "entry_im0.png" COMP;
+image: "entry_im1.png" COMP;
 
 //~ scrollframe
-image: "scrollframe_inset.png" COMP;
 image: "scrollframe_focus.png" COMP;
 image: "scrollframe_bg.png" COMP;
 
-//~ window
-image: "base.png" COMP;
-
 //~ check
-image: "check_base.png" COMP;
-image: "check0.png" COMP;
-image: "check1.png" COMP;
-image: "check_shadow.png" COMP;
-image: "check_focus.png" COMP;
+image: "check_bt0.png" COMP;
+image: "check_bt1.png" COMP;
+image: "check_bt2.png" COMP;
+image: "check_bt3.png" COMP;
+image: "check_bt4.png" COMP;
 
 //~ swatch
-image: "swatches_box.png" COMP;
-image: "swatch_shadow.png" COMP;
+image: "swatch_im0.png" COMP;
 
 //~ color 
-image: "cp_slider_drag.png" COMP;
-image: "cp_slider_trough.png" COMP;
-image: "cp_slider_trough_left.png" COMP;
-image: "cp_slider_trough_right.png" COMP;
+image: "cslider_im0.png" COMP;
+image: "cslider_im1.png" COMP;
+image: "cslider_im2.png" COMP;
+
+//~ spectrum
+image: "spectrum_im0.png" COMP;
+image: "spectrum_im1.png" COMP;
+image: "spectrum_im2.png" COMP;
 
 //~ spinner
-image: "spinner_base.png" COMP;
-image: "spinner_up.png" COMP;
-image: "spinner_down.png" COMP;
+image: "spinner_im1.png" COMP;
+image: "spinner_im2.png" COMP;
 

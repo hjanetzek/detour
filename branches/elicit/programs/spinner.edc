@@ -2,7 +2,7 @@
 program {
 	name: "zoom+";
 	signal: "mouse,down,1";
-	source: "spinner_up";
+	source: "spinner_right";
 	action: SIGNAL_EMIT "elicit,zoom,up,start" "";
 	after: "zoom_in";
 }
@@ -10,7 +10,7 @@ program {
 program {
 	name: "zoom-";
 	signal: "mouse,down,1";
-	source: "spinner_down";
+	source: "spinner_left";
 	action: SIGNAL_EMIT "elicit,zoom,down,start" "";
 	after: "zoom_out";
 }
@@ -20,7 +20,7 @@ program {
 	signal: ""; 
 	source: "";
 	action: STATE_SET "down" 0.0;
-	target: "spinner_up";
+	target: "spinner_right";
 }
 
 program {
@@ -28,13 +28,13 @@ program {
 	signal: ""; 
 	source: "";
 	action: STATE_SET "down" 0.0;
-	target: "spinner_down";
+	target: "spinner_left";
 }
 
 program {
 	name: "zoom+stop";
        	signal: "mouse,up,1";
-       	source: "spinner_up";
+       	source: "spinner_right";
        	action: SIGNAL_EMIT "elicit,zoom,up,stop" "";
 	after: "zoom_up_release";
 }
@@ -42,7 +42,7 @@ program {
 program {
 	name: "zoom-stop";
 	signal: "mouse,up,1";
-	source: "spinner_down";
+	source: "spinner_left";
 	action: SIGNAL_EMIT "elicit,zoom,down,stop" "";
 	after: "zoom_down_release";
 }
@@ -52,7 +52,7 @@ program {
 	signal: ""; 
 	source: "";
 	action: STATE_SET "default" 0.0;
-	target: "spinner_up";
+	target: "spinner_right";
 }
 
 program {
@@ -60,6 +60,6 @@ program {
 	signal: ""; 
 	source: "";
 	action: STATE_SET "default" 0.0;
-	target: "spinner_down";
+	target: "spinner_left";
 }
 
