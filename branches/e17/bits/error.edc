@@ -226,7 +226,7 @@ group {
 		part {
 			name: "button_clip";
 			type: RECT;
-		mouse_events: 0;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -261,7 +261,7 @@ group {
 		part {
 			name: "button";
 			type: IMAGE;
-		mouse_events: 1;
+			mouse_events: 1;
 			clip_to: "button_clip";
 
 			description {
