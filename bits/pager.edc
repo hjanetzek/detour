@@ -495,7 +495,7 @@ group {
 		
 				rel1 { 
 					to: "overlay"; 
-					offset: 1 6; 
+					offset: 6 6; 
 				}
 
 				rel2 { 

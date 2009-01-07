@@ -30,56 +30,49 @@ group {
 			}
 		}
 
-/* 
- * include scrollframe main 
- */
+		/* scrollframe main */
+		part {
+			name: "item_clip";
+			type: RECT;
+			mouse_events: 0;
 
+			description {
+				state: "default" 0.0;
 
-part {
-	name: "item_clip";
-	type: RECT;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-
-		rel1 { 
-			to: "e.swallow.content"; 
-			offset: 1 0; 
-		}
+				rel1 { 
+					to: "e.swallow.content"; 
+					offset: 1 0; 
+				}
 		
-		rel2 { 
-			to: "e.swallow.content"; 
-			offset: -2 -2; 
+				rel2 { 
+					to: "e.swallow.content"; 
+					offset: -2 -2; 
+				}
+			}
 		}
-	}
-}
   
-part {
-	name: "e.swallow.content";
-	type: SWALLOW;
-	clip_to: "item_clip";
+		part {
+			name: "e.swallow.content";
+			type: SWALLOW;
+			clip_to: "item_clip";
 
-	description {
-		state: "default" 0.0;
+			description {
+				state: "default" 0.0;
 		
-		rel1 { 
-			to: "border"; 
-			offset: 0 2; 
-		}
+				rel1 { 
+					to: "border"; 
+					offset: 0 2; 
+				}
 		
-		rel2 { 
-			to_x: "sb_vbar"; 
-			to_y: "sb_hbar"; 
-			relative: 0.0 0.0;
-			offset: 1 1; 
+				rel2 { 
+					to_x: "sb_vbar"; 
+					to_y: "sb_hbar"; 
+					relative: 0.0 0.0;
+					offset: 1 1; 
+				}
+			}
 		}
-	}
-}
-
-/*
- * end scrollframe main
- */
+		/* scrollframe main */
 
 		part {
 			name: "border";
@@ -104,155 +97,153 @@ part {
 			}
 		}
 
-/*
- * vertical scrollframe 
- */
+		/* vertical scrollframe */
 
-part {
-	name: "sb_vbar";
-	type: RECT;
-	mouse_events: 0;
+		part {
+			name: "sb_vbar";
+			type: RECT;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		min: 19 19;
-		align: 1.0 0.0;
-		color: 255 255 255 255;
+			description {
+				state: "default" 0.0;
+				min: 19 19;
+				align: 1.0 0.0;
+				color: 255 255 255 255;
 
-		rel1 { 
-			to: "border"; 
-			relative: 1.0 0.0; 
-			offset: 0 1; 
+				rel1 { 
+					to: "border"; 
+					relative: 1.0 0.0; 
+					offset: 0 1; 
+				}
+
+				rel2 { 
+					to: "border"; 
+					relative: 1.0 0.0; 
+					offset: 0 1; 
+					to_y: "sb_hbar"; 
+				}
+			}
+
+			description {
+				state: "hidden" 0.0;
+				max: 0 99999;
+				visible: 0;
+
+				rel1 { 
+					to: "border"; 
+					relative: 1.0 0.0; 
+					offset: 0 1; 
+				}
+
+				rel2 { 
+					to: "border"; 
+					relative: 1.0 0.0; 
+					offset: -4 0; 
+					to_y: "sb_hbar"; 
+				}
+			}
 		}
 
-		rel2 { 
-			to: "border"; 
-			relative: 1.0 0.0; 
-			offset: 0 1; 
-			to_y: "sb_hbar"; 
-		}
-	}
+		part {
+			name: "sb_vbar_base";
+			type: RECT;
+			mouse_events: 0;
+			clip_to: "sb_vbar";
 
-	description {
-		state: "hidden" 0.0;
-		max: 0 99999;
-		visible: 0;
+			description {
+				state: "default" 0.0;
+				color: 255 0 0 0;
 
-		rel1 { 
-			to: "border"; 
-			relative: 1.0 0.0; 
-			offset: 0 1; 
-		}
+				rel1 { 
+					to: "sb_vbar_a1"; 
+					relative: 0.0 1.0; 
+					offset: 0 0; 
+				}
 
-		rel2 { 
-			to: "border"; 
-			relative: 1.0 0.0; 
-			offset: -4 0; 
-			to_y: "sb_hbar"; 
-		}
-	}
-}
-
-part {
-	name: "sb_vbar_base";
-	type: RECT;
-	mouse_events: 0;
-	clip_to: "sb_vbar";
-
-	description {
-		state: "default" 0.0;
-		color: 255 0 0 0;
-
-		rel1 { 
-			to: "sb_vbar_a1"; 
-			relative: 0.0 1.0; 
-			offset: 0 0; 
+				rel2 { 
+					to: "sb_vbar_a2"; 
+					relative: 1.0 0.0; 
+					offset: -1 -1; 
+				}
+			}
 		}
 
-		rel2 { 
-			to: "sb_vbar_a2"; 
-			relative: 1.0 0.0; 
-			offset: -1 -1; 
-		}
-	}
-}
+		part {
+			name: "sb_vbar_p1";
+			type: RECT;
+			mouse_events: 0;
+			clip_to: "sb_vbar";
 
-part {
-	name: "sb_vbar_p1";
-	type: RECT;
-	mouse_events: 0;
-	clip_to: "sb_vbar";
+			description {
+				state: "default" 0.0;
+				color: 255 0 0 0;
 
-	description {
-		state: "default" 0.0;
-		color: 255 0 0 0;
+				rel1 { 
+					to: "sb_vbar_a1"; 
+					relative: 0.0 1.0; 
+					offset: 5 1; 
+				}
 
-		rel1 { 
-			to: "sb_vbar_a1"; 
-			relative: 0.0 1.0; 
-			offset: 5 1; 
-		}
-
-		rel2 { 
-			to: "e.dragable.vbar"; 
-			relative: 1.0 0.0; 
-			offset: -4 2; 
-		}
-	}
-}
-
-part {
-	name: "sb_vbar_p2";
-	type: RECT;
-	mouse_events: 1;
-	clip_to: "sb_vbar";
-
-	description {
-		state: "default" 0.0;
-		color: 255 0 0 0;
-
-		rel1 { 
-			to: "e.dragable.vbar"; 
-			relative: 0.0 1.0; 
-			offset: 3 -3; 
+				rel2 { 
+					to: "e.dragable.vbar"; 
+					relative: 1.0 0.0; 
+					offset: -4 2; 
+				}
+			}
 		}
 
-		rel2 { 
-			to: "sb_vbar_a2"; 
-			relative: 1.0 0.0; 
-			offset: -6 -1; 
-		}
-	}
-}
+		part {
+			name: "sb_vbar_p2";
+			type: RECT;
+			mouse_events: 1;
+			clip_to: "sb_vbar";
 
-part {
-	name: "sb_vbar_runner";
-	type: IMAGE;
-	mouse_events: 0;
-	clip_to: "sb_vbar";
+			description {
+				state: "default" 0.0;
+				color: 255 0 0 0;
 
-	description {
-		state: "default" 0.0;
-		max: 17 99999;
+				rel1 { 
+					to: "e.dragable.vbar"; 
+					relative: 0.0 1.0; 
+					offset: 3 -3; 
+				}
 
-		rel1 { 
-			to: "sb_vbar_base"; 
-		}
-
-		rel2 { 
-			to: "sb_vbar_base"; 
+				rel2 { 
+					to: "sb_vbar_a2"; 
+					relative: 1.0 0.0; 
+					offset: -6 -1; 
+				}
+			}
 		}
 
-		image { 
-			normal: "images/sf_vb_runner.png"; 
-			border: 8 8 6 6; 
-		}
+		part {
+			name: "sb_vbar_runner";
+			type: IMAGE;
+			mouse_events: 0;
+			clip_to: "sb_vbar";
 
-		fill {
-			smooth: 0;
+			description {
+				state: "default" 0.0;
+				max: 17 99999;
+
+				rel1 { 
+					to: "sb_vbar_base"; 
+				}
+
+				rel2 { 
+					to: "sb_vbar_base"; 
+				}
+
+				image { 
+					normal: "images/sf_vb_runner.png"; 
+					border: 8 8 6 6; 
+				}
+
+				fill {
+					smooth: 0;
+				}
+			}
 		}
-	}
-}
 
 part {      
 	name: "sb_vbar_a1";
