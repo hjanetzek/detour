@@ -438,7 +438,7 @@ group {
 
 				image {
 					normal: "images/pager_im1.png";
-					border: 4 9 6 6;
+					border: 5 5 7 6;
 				}
 			}
 		}
@@ -463,7 +463,7 @@ group {
 
 				image {
 					normal: "images/pager_im1.png";
-					border: 4 9 6 6;
+					border: 5 5 7 6;
 				}
 			}
 

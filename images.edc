@@ -161,6 +161,20 @@ image: "images/window-border_im6.png" COMP; /* bottom right */
 image: "images/window-border_im7.png" COMP; /* left */
 image: "images/window-border_im8.png" COMP; /* right */
 
+//~ border: shaped border style
+image: "images/window-border_im13.png" COMP; 	/* shaped left */
+image: "images/window-border_im14.png" COMP;	/* shaped right */
+
+//~ border: dialog border style
+image: "images/window-border_im18.png" COMP; 	/*  */
+image: "images/window-border_im19.png" COMP; 	/*  */
+image: "images/window-border_im20.png" COMP;	/*  */
+
+//~ border: application blend style
+image: "images/window-border_im15.png" COMP; 	/* bottom left */
+image: "images/window-border_im16.png" COMP;	/* bottom center */
+image: "images/window-border_im17.png" COMP;	/* bottom right */
+
 //~ border buttons
 image: "images/window-border_bt0.png" COMP; /* base */
 image: "images/window-border_bt1.png" COMP; /* button flat */
@@ -171,17 +185,25 @@ image: "images/window-border_bt5.png" COMP; /* base for border menu */
 
 //~ pager
 image: "images/pager_im0.png" COMP; /* focus */
-image: "images/pager_im1.png" COMP; /* icon */
+image: "images/pager_im1.png" COMP; /* icon also used by winlist */
 image: "images/pager_im2.png" COMP; /* left lid */
 image: "images/pager_im3.png" COMP; /* right lid */
+image: "images/pager_im4.png" COMP; /* icon minimized: used by winlist */
+image: "images/pager_im5.png" COMP; /* icon shaded: used by winlist */
 
 //~ about_theme
 image: "images/logo.png" COMP; /* detour logo */
 
 //~ desklock
-image: "images/desklock_im0.png" COMP;
+image: "images/desklock_im0.png" COMP; /* dialog */
 
+//~ scrollframe
+image: "images/scrollframe_im0.png" COMP;	/* bg */
+image: "images/scrollframe_im1.png" COMP;	/* inset */
+image: "images/scrollframe_im2.png" COMP;	/* focus */
 
+//~ transitions
+image: "images/transition_im0.png" COMP;
 
 
 
@@ -206,21 +228,6 @@ image: "images/sb_runnerv_bot_disabled.png" COMP;
 image: "images/sb_runnerv_disabled.png" COMP;
 image: "images/sb_runnerh_left_disabled.png" COMP;
 image: "images/sb_runnerh_right_disabled.png" COMP;
-
-//~ border dialog
-image: "images/tl-dialog.png" COMP;
-image: "images/tb-dialog.png" COMP;
-image: "images/tr-dialog.png" COMP;
-image: "images/bl-dialog.png" COMP;
-image: "images/bb-dialog.png" COMP;
-image: "images/br-dialog.png" COMP;
-image: "images/bb-dialog2.png" COMP;
-
-//~ extended
-image: "images/tl2-dialog.png" COMP;
-image: "images/tb2-dialog.png" COMP;
-image: "images/tr2-dialog.png" COMP;
-
 
 //~ efm nav
 image: "images/nav_back-base.png" COMP;
@@ -252,8 +259,6 @@ image: "images/sb_btu1.png" COMP;
 image: "images/sb_btd1.png" COMP;
 
 //~ scrollframe
-image: "images/scrollframe_inset.png" COMP;
-image: "images/scrollframe_focus.png" COMP;
 image: "images/sf_vb_runner.png" COMP;
 image: "images/sf_btu1.png" COMP;
 image: "images/sf_btd1.png" COMP;
@@ -262,10 +267,8 @@ image: "images/sf_hb_runner.png" COMP;
 image: "images/sf_bl1.png" COMP;
 image: "images/sf_br1.png" COMP;
 image: "images/sf_barh1.png" COMP;
-image: "images/scrollframe_focus.png" COMP;
 image: "images/sb_vdrag.png" COMP;
 image: "images/sb_hdrag.png" COMP;
-image: "images/scrollframe_bg.png" COMP;
 image: "images/sf_barv_thumb.png" COMP;
 image: "images/sf_barh_thumb.png" COMP; 
 image: "images/sf_btu1_over.png" COMP;
@@ -275,9 +278,6 @@ image: "images/sf_br1_over.png" COMP;
 
 //~ error
 image: "images/error-dialog_bg.png" COMP;
-
-//~ transitions
-image: "images/transition_vswipe.png" COMP;
 
 //~ clock
 image: "clock/clock_bg.png" COMP;
@@ -461,11 +461,6 @@ image: "clock/seconds.cursor.56.png" COMP;
 image: "clock/seconds.cursor.57.png" COMP;
 image: "clock/seconds.cursor.58.png" COMP;
 image: "clock/seconds.cursor.59.png" COMP;
-
-//~ winlist
-image: "images/winlist_icon_window.png" COMP;
-image: "images/winlist_icon_window_shaded.png" COMP;
-image: "images/winlist_icon_window_minimized.png" COMP;
 
 //~ about
 image: "images/e17_logo_small.png" COMP;
