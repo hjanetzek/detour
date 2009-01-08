@@ -54,9 +54,6 @@ data {
 //Truncate efm icon list filename
 #define TRUNCATE_EFM_ICON_LIST_FILENAME 1
 
-//Display main menu title
-#define VISIBLE_MENU_TITLE 0
-
 fonts {
 	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
 	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
@@ -151,7 +148,7 @@ collections {
 	//~ #include "bits/temperature.edc"	/* temperature module */
 	#include "bits/textblock.edc"		/* textblock definitions group */
 	#include "bits/tlist.edc"		/* tlist groups */
-	//~ #include "bits/transitions.edc"	/* desktop wallpaper transitions */
+	#include "bits/transitions.edc"		/* desktop wallpaper transitions */
 	#include "bits/winlist.edc"		/* window list (alt+tab) */
 	//~ #include "bits/wizard.edc"		/* initialization wizzard */
 }
