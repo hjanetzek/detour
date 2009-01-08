@@ -298,7 +298,7 @@ group {
 				}
 
 				image {
-					normal: "images/scrollframe_bg.png";
+					normal: "images/scrollframe_im0.png";
 					border: 7 7 7 7;
 				}
 			}
@@ -328,7 +328,7 @@ group {
 				}
 
 				image {
-					normal: "images/scrollframe_inset.png";
+					normal: "images/scrollframe_im1.png";
 					border: 5 5 5 6;
 				}
 			}
@@ -344,7 +344,7 @@ group {
 				min: 48 47;
 				max: 48 47;
 				fixed: 1 1;
-				image.normal: "images/scrollframe_focus.png";
+				image.normal: "images/scrollframe_im2.png";
 				image.border: 7 7 7 7; 
 
 				rel1 { 
