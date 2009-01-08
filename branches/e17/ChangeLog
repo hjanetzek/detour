@@ -1,4 +1,206 @@
 ------------------------------------------------------------------------
+r628 | alberto.castro.leiva | 2009-01-08 00:47:42 -0600 (Thu, 08 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/configure_toolbar.edc
+   M /branches/e17/bits/efm_toolbar.edc
+   M /branches/e17/bits/fileman.edc
+   D /branches/e17/images/button_disabled.png
+   D /branches/e17/images/efm_sw0.png
+   D /branches/e17/images/efm_sw1.png
+   D /branches/e17/images/efm_tbar_im0.png
+   D /branches/e17/images/efm_tbar_im1.png
+   D /branches/e17/images/fileman_drop.png
+   A /branches/e17/images/fileman_im0.png
+   A /branches/e17/images/fileman_im1.png
+   A /branches/e17/images/fileman_im2.png
+   A /branches/e17/images/fileman_im3.png
+   A /branches/e17/images/fileman_im4.png
+   A /branches/e17/images/fileman_im5.png
+   A /branches/e17/images/fileman_im6.png
+   A /branches/e17/images/fileman_im7.png
+   A /branches/e17/images/fileman_im8.png
+   D /branches/e17/images/fileman_rubberband.png
+   D /branches/e17/images/fileman_shadow.png
+   D /branches/e17/images/fileman_thumb_bg.png
+   D /branches/e17/images/fileman_win_drop.png
+   D /branches/e17/images/icon_select.png
+   M /branches/e17/images/init_im0.png
+   M /branches/e17/images.edc
+
+Re-enable EFM rubberband
+
+------------------------------------------------------------------------
+r627 | alberto.castro.leiva | 2009-01-07 23:54:21 -0600 (Wed, 07 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/battery.edc
+
+Update
+
+------------------------------------------------------------------------
+r626 | alberto.castro.leiva | 2009-01-07 23:52:29 -0600 (Wed, 07 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   D /branches/e17/bits/border2.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/preview.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist.edc
+   D /branches/e17/images/bb-dialog.png
+   D /branches/e17/images/bb-dialog2.png
+   D /branches/e17/images/bl-dialog.png
+   D /branches/e17/images/br-dialog.png
+   D /branches/e17/images/button.png
+   D /branches/e17/images/dialog_bg_conf.png
+   D /branches/e17/images/dialog_bg_default.png
+   M /branches/e17/images/menu_im1.png
+   M /branches/e17/images/pager_im1.png
+   A /branches/e17/images/pager_im4.png
+   A /branches/e17/images/pager_im5.png
+   D /branches/e17/images/scrollframe_bg.png
+   D /branches/e17/images/scrollframe_focus.png
+   A /branches/e17/images/scrollframe_im0.png
+   A /branches/e17/images/scrollframe_im1.png
+   A /branches/e17/images/scrollframe_im2.png
+   D /branches/e17/images/scrollframe_inset.png
+   D /branches/e17/images/tb-dialog.png
+   D /branches/e17/images/tb.png
+   D /branches/e17/images/tb2-dialog.png
+   D /branches/e17/images/tl-dialog.png
+   D /branches/e17/images/tl2-dialog.png
+   D /branches/e17/images/tr-dialog.png
+   D /branches/e17/images/tr2-dialog.png
+   A /branches/e17/images/transition_im0.png
+   D /branches/e17/images/transition_vswipe.png
+   A /branches/e17/images/window-border_im13.png
+   A /branches/e17/images/window-border_im14.png
+   A /branches/e17/images/window-border_im15.png
+   A /branches/e17/images/window-border_im16.png
+   A /branches/e17/images/window-border_im17.png
+   A /branches/e17/images/window-border_im18.png
+   A /branches/e17/images/window-border_im19.png
+   A /branches/e17/images/window-border_im20.png
+   D /branches/e17/images/winlist_icon_window.png
+   D /branches/e17/images/winlist_icon_window_minimized.png
+   D /branches/e17/images/winlist_icon_window_shaded.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Update & Fixes
+
+------------------------------------------------------------------------
+r625 | alberto.castro.leiva | 2009-01-07 01:06:12 -0600 (Wed, 07 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/error.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/mixer.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/images/window-border_im10.png
+   M /branches/e17/images/window-border_im11.png
+   M /branches/e17/images/window-border_im5.png
+   M /branches/e17/images/window-border_im6.png
+   M /branches/e17/images/window-border_im7.png
+   M /branches/e17/images/window-border_im8.png
+   M /branches/e17/images/window-border_im9.png
+
+Update
+
+------------------------------------------------------------------------
+r623 | alberto.castro.leiva | 2009-01-06 13:23:18 -0600 (Tue, 06 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/images/entry_im0.png
+   M /branches/e17/images/pager_im1.png
+   D /branches/e17/images/window-border_bt6.png
+   M /branches/e17/images/window-border_im0.png
+   M /branches/e17/images/window-border_im1.png
+   M /branches/e17/images/window-border_im2.png
+   M /branches/e17/images/window-border_im3.png
+   M /branches/e17/images/window-border_im4.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/border.edc
+
+Update these
+
+------------------------------------------------------------------------
+r622 | alberto.castro.leiva | 2009-01-05 00:08:38 -0600 (Mon, 05 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+
+.
+
+------------------------------------------------------------------------
+r621 | alberto.castro.leiva | 2009-01-04 23:55:58 -0600 (Sun, 04 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/winlist.edc
+   M /branches/e17/icons/go-first.png
+   M /branches/e17/images/pager_im1.png
+   M /branches/e17/images/window-border_bt0.png
+   M /branches/e17/images/window-border_bt2.png
+   M /branches/e17/images/window-border_bt3.png
+   M /branches/e17/images/window-border_bt4.png
+   M /branches/e17/macros/border.edc
+   M /branches/e17/macros/border_programs.edc
+
+Fix these.
+
+------------------------------------------------------------------------
+r620 | alberto.castro.leiva | 2009-01-04 22:43:27 -0600 (Sun, 04 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/images/pager_im1.png
+
+.
+
+------------------------------------------------------------------------
+r619 | alberto.castro.leiva | 2009-01-04 22:35:19 -0600 (Sun, 04 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/pager.edc
+   D /branches/e17/images/desklock_dialog_bg.png
+   A /branches/e17/images/desklock_im0.png
+   D /branches/e17/images/dialog_aboutbg.png
+   A /branches/e17/images/dialog_im2.png
+   D /branches/e17/images/pager_desk_bg_focus.png
+   D /branches/e17/images/pager_icon_window.png
+   D /branches/e17/images/pager_icon_window_ds.png
+   A /branches/e17/images/pager_im0.png
+   A /branches/e17/images/pager_im1.png
+   A /branches/e17/images/pager_im2.png
+   A /branches/e17/images/pager_im3.png
+   D /branches/e17/images/pager_lid_l.png
+   D /branches/e17/images/pager_lid_r.png
+   D /branches/e17/images/shelf_alt_im0.png
+   D /branches/e17/images/shelf_alt_im1.png
+   D /branches/e17/images/shelf_alt_im2.png
+   D /branches/e17/images/tb-shadow.png
+   M /branches/e17/images/window-border_bt4.png
+   A /branches/e17/images/window-border_bt6.png
+   A /branches/e17/images/window-border_im12.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/border.edc
+   D /branches/e17/macros/border_default_programs.edc
+   A /branches/e17/macros/border_programs.edc
+   M /branches/e17/macros/sys.edc
+   M /branches/e17/main.edc
+
+more wrko
+
+------------------------------------------------------------------------
 r618 | alberto.castro.leiva | 2009-01-04 12:53:12 -0600 (Sun, 04 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/TODO
