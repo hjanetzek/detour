@@ -38,7 +38,7 @@ group {
 				}
 
 				image {
-					normal: "images/efm_sw0.png";
+					normal: "images/fileman_im5.png";
 					border: 1 1 1 1;
 				}
 			}
@@ -67,7 +67,7 @@ group {
 				}
 
 				image {
-					normal: "images/efm_sw1.png";
+					normal: "images/fileman_im6.png";
 					border: 1 1 1 1;
 				}
 			}
@@ -126,7 +126,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_shadow.png";
+					normal: "images/fileman_im1.png";
 					border: 6 6 7 7;
 				}
 			}
@@ -191,7 +191,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_thumb_bg.png";
+					normal: "images/fileman_im2.png";
 				}	    	       
 
 				fill {	    
@@ -435,7 +435,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_shadow.png";
+					normal: "images/fileman_im1.png";
 					border: 6 6 7 7;
 				}
 			}
@@ -500,7 +500,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_thumb_bg.png";
+					normal: "images/fileman_im2.png";
 				}	    	       
 	
 				fill {	    
@@ -770,7 +770,7 @@ part {
 		}
 
 		image {
-			normal: "images/fileman_shadow.png";
+			normal: "images/fileman_im1.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -834,7 +834,7 @@ part {
 		}
 
 		image {
-			normal: "images/fileman_thumb_bg.png";
+			normal: "images/fileman_im2.png";
 
 		}	    	       
 		
@@ -1155,7 +1155,7 @@ part {
 		}
 
 		image {
-			normal: "images/icon_select.png";
+			normal: "images/fileman_im4.png";
 			border: 5 5 5 7;
 		}      
 	}
@@ -1183,7 +1183,7 @@ part {
 		}
 
 		image {
-			normal: "images/fileman_shadow.png";
+			normal: "images/fileman_im1.png";
 			border: 6 6 7 7;
 		}
 	}
@@ -1249,7 +1249,7 @@ part {
 		}
 
 		image {
-			normal: "images/fileman_thumb_bg.png";
+			normal: "images/fileman_im2.png";
 
 		}	    	       
 		
@@ -1628,7 +1628,7 @@ part {
 		}
 
 		image {
-			normal: "images/fileman_shadow.png";
+			normal: "images/fileman_im1.png";
 			border: 6 6 7 7;
 		}
 	}
@@ -1694,7 +1694,7 @@ part {
 		}
 
 		image {
-			normal: "images/fileman_thumb_bg.png";
+			normal: "images/fileman_im2.png";
 
 		}	    	       
 		
@@ -1863,7 +1863,7 @@ part {
 		}
 
 		image {
-			normal: "images/icon_select.png";
+			normal: "images/fileman_im4.png";
 			border: 5 5 5 7;
 		}       
 	}
@@ -2751,7 +2751,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_drop.png";
+					normal: "images/fileman_im0.png";
 					border: 26 26 26 26;
 				}
 			}
@@ -2769,7 +2769,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_drop.png";
+					normal: "images/fileman_im0.png";
 					border: 26 26 26 26;
 				}
 			}
@@ -2820,7 +2820,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_drop.png";
+					normal: "images/fileman_im0.png";
 					border: 26 26 26 26;
 				}
 			}
@@ -2838,7 +2838,7 @@ group {
 				}
 
 				image {
-					normal: "images/fileman_drop.png";
+					normal: "images/fileman_im0.png";
 					border: 26 26 26 26;
 				}
 			}
@@ -3975,53 +3975,57 @@ program {
 	}
 }
 
-/*
+
 group {
 	name: "e/fileman/default/rubberband";
 
 	parts {
 		part {
-			name: "base";
-			mouse_events: 0;
-			type: IMAGE;
-
-			description {
-				state: "default" 0.0;
-				color: 140 142 145 192;
-
-				image {
-					normal: "images/fileman_rubberband.png";
-					border: 2 2 2 2;
-					middle: 0;
-				}
-			}
-		}
-
-		part {
 			name: "middle";
+			type: IMAGE;
 			mouse_events: 0;
-			type: RECT;
 
 			description {
 				state: "default" 0.0;
-				color: 138 171 225 92;
+				color: 138 171 225 128;
+				fill.size.relative: 0 0;
+				fill.size.offset: 24 24;
 
 				rel1 {
 					to: "base";
 					relative: 0.0 0.0;
-					offset: 1 1;
+					offset: 6 6;
 				}
 
 				rel2 {
 					to: "base";
 					relative: 1.0 1.0;
-					offset: -2 -2;
+					offset: -6 -6;
+				}
+
+				image {
+					normal: "images/wallpaper_pat0.png";
+				}
+			}
+		}
+
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+
+				image {
+					normal: "images/fileman_im3.png";
+					border: 10 10 10 10;
+					middle: 0;
 				}
 			}
 		}
 	}
 }
-*/
 
 group {
 	name: "e/fileman/default/button/open";

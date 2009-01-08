@@ -51,12 +51,6 @@ image: "images/entry_im1.png" COMP; /* focus */
 //~ deskpreview
 image: "images/deskpreview_im0.png" COMP; /* background */
 
-//~ efm toolbar
-image: "images/efm_tbar_im0.png" COMP; /* bar image top */
-image: "images/efm_tbar_im1.png" COMP; /* bar image bottom */
-
-//~ resize
-
 //~ decoration
 image: "images/decoration_im0.png" COMP; /* regular dot */
 image: "images/decoration_im1.png" COMP; /* wide dot */
@@ -203,8 +197,22 @@ image: "images/scrollframe_im1.png" COMP;	/* inset */
 image: "images/scrollframe_im2.png" COMP;	/* focus */
 
 //~ transitions
-image: "images/transition_im0.png" COMP;
+image: "images/transition_im0.png" COMP; /* transitional wipe */
 
+//~ fileman
+image: "images/fileman_im0.png" COMP; /* drop image */
+image: "images/fileman_im1.png" COMP; /* icon shadow */
+image: "images/fileman_im2.png" COMP; /* thumb bg */
+image: "images/fileman_im3.png" COMP; /* rubberband */
+image: "images/fileman_im4.png" COMP; /* icon label */
+image: "images/fileman_im5.png" COMP; /* main window: top shadow */
+image: "images/fileman_im6.png" COMP; /* main window: bottom shadow */
+image: "images/fileman_im7.png" COMP; /* toolbar image top */
+image: "images/fileman_im8.png" COMP; /* toolbar image bottom */
+
+
+
+//~ resize
 
 
 
@@ -491,14 +499,4 @@ image: "images/temperature-40.png" COMP;
 image: "images/temperature-60.png" COMP;
 image: "images/temperature-80.png" COMP;
 image: "images/temperature-100.png" COMP;
-
-//~ fileman
-image: "images/fileman_thumb_bg.png" COMP;
-image: "images/fileman_shadow.png" COMP;
-image: "images/fileman_drop.png" COMP;
-image: "images/fileman_rubberband.png" COMP;
-image: "images/fileman_win_drop.png" COMP;
-image: "images/icon_select.png" COMP;
-image: "images/efm_sw0.png" COMP; /* main window: top shadow */
-image: "images/efm_sw1.png" COMP; /* main window: bottom shadow */
 
