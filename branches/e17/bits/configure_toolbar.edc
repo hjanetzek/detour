@@ -223,7 +223,7 @@ group {
 				visible: 0;
 
 				image {
-					normal: "images/icon_select.png";
+					normal: "images/fileman_im4.png";
 					border: 5 5 5 7;
 				} 
 			}
