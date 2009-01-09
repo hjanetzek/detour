@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------
+r629 | alberto.castro.leiva | 2009-01-08 00:48:51 -0600 (Thu, 08 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+
+Update ChangeLog
+
+------------------------------------------------------------------------
 r628 | alberto.castro.leiva | 2009-01-08 00:47:42 -0600 (Thu, 08 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/bits/configure_toolbar.edc
