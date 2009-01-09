@@ -61,6 +61,7 @@ image: "images/exebuf_im0.png" COMP; /* hilite */
 //~ ibar
 image: "images/ibar_im0.png" COMP; /* label */
 image: "images/ibar_im1.png" COMP; /* drop */
+image: "images/ibar_im2.png" COMP; /* desktop icon label */
 
 //~ itask
 image: "images/itask_im0.png" COMP; /* bottom orientation */
