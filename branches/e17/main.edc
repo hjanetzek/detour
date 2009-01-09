@@ -42,9 +42,6 @@ data {
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
 
-//Use RGBA for the alternate Shelf
-#define RGBA_IS_AVAILABLE 0 /* work in progress */
-
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
 

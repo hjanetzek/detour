@@ -62,7 +62,7 @@ group {
 		part {
 			name: "overlay_window";
 			type: IMAGE;
-			mouse_events: 0;
+			mouse_events: 1;
 
 			description {
 				state: "default" 0.0;
@@ -114,7 +114,6 @@ group {
 		part {
 			name: "indicator";
 			type: IMAGE;
-			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -138,7 +137,6 @@ group {
 		part {
 			name: "left_arrow"; 
 			type: IMAGE;
-			mouse_events: 1;
 			clip_to: "hclip";
 	
 			description {
@@ -174,7 +172,6 @@ group {
 		part {
 			name: "right_arrow"; 
 			type: IMAGE;
-			mouse_events: 1;
 			clip_to: "hclip";
 	
 			description {
@@ -210,7 +207,6 @@ group {
 		part {
 			name: "top_arrow"; 
 			type: IMAGE;
-			mouse_events: 1;
 			clip_to: "vclip";
 
 			description {
@@ -246,7 +242,6 @@ group {
 		part {
 			name: "bottom_arrow"; 
 			type: IMAGE;
-			mouse_events: 1;
 			clip_to: "vclip";
 
 			description {
@@ -330,7 +325,19 @@ group {
 			target: "indicator";
 		}
 
-/*      
+/*
+		program {
+			name: "api_move_on";
+			signal: "e,state,move,on";
+			source: "e";
+		}
+
+		program {
+			name: "api_move_off";
+			signal: "e,state,move,off";
+			source: "e";
+		}
+
 		program {
 			name: "api_active";
 			signal: "e,state,focused";
@@ -342,7 +349,7 @@ group {
 			signal: "e,state,unfocused";
 			source: "e";
 		}
-*/    
+*/   
 
 		program {
 			name: "move_down";
@@ -522,7 +529,6 @@ group {
 		part {
 			name: "border";
 			type: RECT;
-			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -554,7 +560,6 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;
-
 				rel1.offset: 0 0;
 				rel2.offset: -1 -1;
 			} 
@@ -578,7 +583,7 @@ group {
 
 			description {
 				state: "visible" 0.0;
-				color: 0 0 0 192;
+				color: 0 0 0 128;
 			}
 		}
 
@@ -606,6 +611,7 @@ group {
 				state: "default" 0.0;
 			}
 		}
+
 		part {
 			name: "grabber";
 			type: RECT;
@@ -625,28 +631,37 @@ group {
 			signal: "e,state,visibility,show";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.4;
 			target: "bg";
 		}
+
 		program {
 			name: "show_now";
 			signal: "e,state,visibility,show,now";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.4;
 			target: "bg";
 		}
+
 		program {
 			name: "hide";
 			signal: "e,state,visibility,hide";
 			source: "e";
 			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.4;
 			target: "bg";
+			after: "hide_stop";
 		}
+
 		program {
 			name: "hide_now";
 			signal: "e,state,visibility,hide,now";
 			source: "e";
 			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.0;
 			target: "bg";
+			after: "hide_stop";
 		}
 
 		program {
@@ -654,28 +669,42 @@ group {
 			signal: "e,state,visibility,show,custom";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.4;
 			target: "custom_bg";
 		}
+
 		program {
 			name: "show_custom_now";
 			signal: "e,state,visibility,show,custom,now";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
+			transition: LINEAR 0.0;
 			target: "custom_bg";
 		}
+
 		program {
 			name: "hide_custom";
 			signal: "e,state,visibility,hide,custom";
 			source: "e";
 			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.4;
 			target: "custom_bg";
+			after: "hide_stop";
 		}
+
 		program {
 			name: "hide_custom_now";
 			signal: "e,state,visibility,hide,custom,now";
 			source: "e";
 			action: STATE_SET "default" 0.0;
+			transition: LINEAR 0.0;
 			target: "custom_bg";
+			after: "hide_stop";
+		}
+
+		program { 
+			name: "hide_stop";
+			action: SIGNAL_EMIT "e,action,hide,stop" "";
 		}
 	}
 }
@@ -684,29 +713,6 @@ group {
 	name: "e/gadman/frame";
 
 	parts {
-		part {
-			name: "background";
-			type: IMAGE;
-			mouse_events: 1;
-			clip_to: "bg_clip";
-
-			description {
-				state: "default" 0.0;
-				color: 255 255 255 128;
-
-				image {
-					normal: "images/entry_im0.png";
-					border: 6 6 6 6;
-				}
-			}
-
-			description {
-				state: "hidden" 0.0;
-				inherit: "default" 0.0;
-				color: 255 255 255 0;
-			}
-		}
-
 		part{
 			name: "bg_clip";
 			type: RECT;
@@ -720,6 +726,7 @@ group {
 			description {
 				state: "plain" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 
 				rel1 {
 					relative: 0.0 0.0;
@@ -755,10 +762,34 @@ group {
 
 			description {
 				state: "default" 0.0;
+				color: 255 255 255 255;
 			}
 
 			description {
 				state: "hidden" 0.0;
+				color: 255 255 255 0;
+			}
+		}
+
+		part {
+			name: "background";
+			type: IMAGE;
+			mouse_events: 0;
+			clip_to: "bg_clip";
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 128;
+
+				image {
+					normal: "images/entry_im0.png";
+					border: 6 6 6 6;
+				}
+			}
+
+			description {
+				state: "hidden" 0.0;
+				inherit: "default" 0.0;
 				color: 255 255 255 0;
 			}
 		}

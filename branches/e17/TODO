@@ -1,44 +1,32 @@
 /* detour stats: */
 
-/images: 259 items, total: 267.6kb
-/icons: 140 items, total: 275.4kb
-/macros: 13 items, total: 27.6kb
+/images: 235 items, total: 233.7kb
+/icons: 140 items, total: 272.2kb
+/macros: 13 items, total: 28.4kb
 /fonts: 4 items, total: 1.7mb
 /custom: 9 items, total: 15.6kb
 /clock: 181 items, total: 313.9kb
-/bits: 54 items, total: 450.7kb
+/bits: 54 items, total: 440.3kb
 /root: 11 items, total: 311.9kb
 
 == Bugfix ==
-efm_window: drop_in/drop_between(s)
 tclock: use mono fonts where possible
 
 == Redo ==
-content_menu: icon/shift (REDO "menu.edc" entirely)
-pager.edc: popup
 
 == Improve ==
--"e/modules/ibar/drop_overlay";
 bits/icons.edc: e/icons/enlightenment/e 
-Make use of: scale: 1;
 -"bits/error.edc"
 -temperature.edc: graphics
--macros/borders.edc
--icons()
 -desklock entry
 -clock graphics(hands)
 -battery: text/graphics --transition
 -efm nav "refresh" symbol
--transitions.edc
--winlist.edc
 -configure.edc: width seems to be hardcoded, bad!
 -pointer.edc: "e,action,mouse,down";
 -ilist: [header] colors
 
 == Global ==
-*Complete start.edc
-*Complete cpufreq.edc
-*Add color_classes
 
 == Ideas ==
 -improve pointer group:
