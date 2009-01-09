@@ -617,7 +617,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 64;
+				color: 255 255 255 128;
 			}
 
 			description {
@@ -634,6 +634,8 @@ group {
 
 			description {
 				state: "default" 0.0;
+				aspect: 1.0 1.0;
+				aspect_preference: BOTH;
 
 				rel1 { 
 					to: "drop_clip"; 
@@ -647,7 +649,6 @@ group {
 
 				image {
 					normal: "images/ibar_im1.png";
-					border: 12 12 12 12;
 				}
 			}
 		}

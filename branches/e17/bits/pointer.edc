@@ -55,7 +55,8 @@ group {
 					state: "pulsate" 0.0;
 					color: 255 255 255 0;
 
-/* to avoid seeing object-size cut-offs as the image expands
+/* 
+ * to avoid seeing object-size cut-offs as the image expands
  * from its original point 
  */
 					rel1 { 
