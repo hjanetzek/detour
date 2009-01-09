@@ -114,6 +114,7 @@ group {
 		part {
 			name: "indicator";
 			type: IMAGE;
+			mouse_events: 1;
 
 			description {
 				state: "default" 0.0;
@@ -519,6 +520,27 @@ group {
 			source: "bottom_arrow";
 			action: SIGNAL_EMIT "e,action,resize,down,go" "";
 		}
+
+		program {
+			name: "move_indicator_down";
+			signal: "mouse,down,1";
+			source: "indicator";
+			action: SIGNAL_EMIT "e,action,move,start" "";
+		}
+
+		program {
+			name: "move_indicatator_up";
+			signal: "mouse,up,1";
+			source: "indicator";
+			action: SIGNAL_EMIT "e,action,move,stop" "";
+		}
+
+		program {
+			name: "gadman_indicator_move";
+			signal: "mouse,move";
+			source: "indicator";
+			action: SIGNAL_EMIT "e,action,move,go" "";
+		}
  	}
 }
 
@@ -713,6 +735,29 @@ group {
 	name: "e/gadman/frame";
 
 	parts {
+		part {
+			name: "background";
+			type: IMAGE;
+			mouse_events: 0;
+			clip_to: "bg_clip";
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 128;
+
+				image {
+					normal: "images/entry_im0.png";
+					border: 6 6 6 6;
+				}
+			}
+
+			description {
+				state: "hidden" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 0;
+			}
+		}
+
 		part{
 			name: "bg_clip";
 			type: RECT;
@@ -767,29 +812,6 @@ group {
 
 			description {
 				state: "hidden" 0.0;
-				color: 255 255 255 0;
-			}
-		}
-
-		part {
-			name: "background";
-			type: IMAGE;
-			mouse_events: 0;
-			clip_to: "bg_clip";
-
-			description {
-				state: "default" 0.0;
-				color: 255 255 255 128;
-
-				image {
-					normal: "images/entry_im0.png";
-					border: 6 6 6 6;
-				}
-			}
-
-			description {
-				state: "hidden" 0.0;
-				inherit: "default" 0.0;
 				color: 255 255 255 0;
 			}
 		}

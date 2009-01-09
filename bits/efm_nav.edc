@@ -50,7 +50,7 @@ part {
 		color: 255 255 255 178;
 
 		image {
-			normal: "nav_back-base.png";
+			normal: "images/nav_back-base.png";
 			border: 6 1 6 7;
 		}
 	}
@@ -81,7 +81,7 @@ part {
 		}
 
 		image {
-			normal: "nav_back-button.png";
+			normal: "images/nav_back-button.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -96,7 +96,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_back-button-disabled.png";
+			normal: "images/nav_back-button-disabled.png";
 		}
 	}
 }
@@ -123,7 +123,7 @@ part {
 		}
 
 		image {
-			normal: "nav_button-shadow-left.png";
+			normal: "images/nav_button-shadow-left.png";
 		}
 	}
 
@@ -164,7 +164,7 @@ part {
 		}
 
 		image {
-			normal: "nav_back-button-sign.png";
+			normal: "images/nav_back-button-sign.png";
 		}
 	}
 
@@ -178,7 +178,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_back-button-sign2.png";
+			normal: "images/nav_back-button-sign2.png";
 		}
 	}
 }
@@ -212,7 +212,7 @@ part {
 		}
 
 		image {
-			normal: "nav_forward-base.png";
+			normal: "images/nav_forward-base.png";
 			border: 1 6 5 7;
 		}
 	}
@@ -243,7 +243,7 @@ part {
 		}
 
 		image {
-			normal: "nav_forward-button.png";
+			normal: "images/nav_forward-button.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -258,7 +258,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_forward-button-disabled.png";
+			normal: "images/nav_forward-button-disabled.png";
 		}
 	}
 }
@@ -285,7 +285,7 @@ part {
 		}
 
 		image {
-			normal: "nav_button-shadow-right.png";
+			normal: "images/nav_button-shadow-right.png";
 		}
 	}
 
@@ -326,7 +326,7 @@ part {
 		}
 
 		image {
-			normal: "nav_forward-button-sign.png";
+			normal: "images/nav_forward-button-sign.png";
 		}
 	}
 
@@ -340,7 +340,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_forward-button-sign2.png";
+			normal: "images/nav_forward-button-sign2.png";
 		}
 	}
 }
@@ -374,7 +374,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-base.png";
+			normal: "images/nav_refresh-base.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -405,7 +405,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button.png";
+			normal: "images/nav_refresh-button.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -420,7 +420,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_refresh-button-disabled.png";
+			normal: "images/nav_refresh-button-disabled.png";
 		}
 	}
 }
@@ -447,7 +447,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button-shadow.png";
+			normal: "images/nav_refresh-button-shadow.png";
 		}
 	}
 
@@ -488,7 +488,7 @@ part {
 		}
 
 		image {
-			normal: "nav_up-button-sign.png";
+			normal: "images/nav_up-button-sign.png";
 		}
 	}
 
@@ -502,7 +502,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_up-button-sign2.png";
+			normal: "images/nav_up-button-sign2.png";
 		}
 	}
 }
@@ -536,7 +536,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-base.png";
+			normal: "images/nav_refresh-base.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -567,7 +567,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button.png";
+			normal: "images/nav_refresh-button.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -582,7 +582,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_refresh-button-disabled.png";
+			normal: "images/nav_refresh-button-disabled.png";
 		}
 	}
 }
@@ -609,7 +609,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button-shadow.png";
+			normal: "images/nav_refresh-button-shadow.png";
 		}
 	}
 
@@ -650,7 +650,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button-sign.png";
+			normal: "images/nav_refresh-button-sign.png";
 		}
 	}
 
@@ -664,7 +664,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_refresh-button-sign2.png";
+			normal: "images/nav_refresh-button-sign2.png";
 		}
 	}
 }
@@ -699,7 +699,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-base.png";
+			normal: "images/nav_refresh-base.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -730,7 +730,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button.png";
+			normal: "images/nav_refresh-button.png";
 			border: 6 6 6 6;
 		}
 	}
@@ -745,7 +745,7 @@ part {
 		inherit: "default" 0.0;
 
 		image {
-			normal: "nav_refresh-button-disabled.png";
+			normal: "images/nav_refresh-button-disabled.png";
 		}
 	}
 }
@@ -772,7 +772,7 @@ part {
 		}
 
 		image {
-			normal: "nav_refresh-button-shadow.png";
+			normal: "images/nav_refresh-button-shadow.png";
 		}
 	}
 
@@ -813,7 +813,7 @@ part {
 		}
 
 		image {
-			normal: "nav_fav-button-sign.png";
+			normal: "images/nav_fav-button-sign.png";
 		}
 	}
 
