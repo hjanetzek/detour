@@ -211,6 +211,30 @@ image: "images/fileman_im6.png" COMP; /* main window: bottom shadow */
 image: "images/fileman_im7.png" COMP; /* toolbar image top */
 image: "images/fileman_im8.png" COMP; /* toolbar image bottom */
 
+//~ module: efm_navigation
+image: "images/efmnav_bt0.png" COMP; 	/* back button base */
+image: "images/efmnav_bt1.png" COMP;	/* back button */
+image: "images/efmnav_bt2.png" COMP;	/* forward button base*/
+image: "images/efmnav_bt3.png" COMP;	/* forward button */
+image: "images/nav_back-button-disabled.png" COMP;
+image: "images/nav_back-button-sign.png" COMP;
+image: "images/nav_back-button-sign2.png" COMP;
+image: "images/nav_forward-base.png" COMP;
+image: "images/nav_forward-button.png" COMP;
+image: "images/nav_forward-button-disabled.png" COMP;
+image: "images/nav_forward-button-sign.png" COMP;
+image: "images/nav_forward-button-sign2.png" COMP;
+image: "images/nav_refresh-base.png" COMP;
+image: "images/nav_refresh-button.png" COMP;
+image: "images/nav_refresh-button-disabled.png" COMP;
+image: "images/nav_refresh-button-sign.png" COMP;
+image: "images/nav_refresh-button-sign2.png" COMP;
+image: "images/nav_refresh-button-shadow.png" COMP;
+image: "images/nav_up-button-sign.png" COMP;
+image: "images/nav_up-button-sign2.png" COMP;
+image: "images/nav_button-shadow-left.png" COMP;
+image: "images/nav_button-shadow-right.png" COMP;
+image: "images/nav_fav-button-sign.png" COMP;
 
 
 //~ resize
@@ -472,6 +496,7 @@ image: "clock/seconds.cursor.58.png" COMP;
 image: "clock/seconds.cursor.59.png" COMP;
 
 //~ about
+image: "images/e17_logo.png" COMP;
 image: "images/e17_logo_small.png" COMP;
 image: "images/e17_logo_small_p1.png" COMP;
 image: "images/e17_logo_small_p2.png" COMP;
