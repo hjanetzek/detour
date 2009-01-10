@@ -9,7 +9,7 @@ group {
 	
 			description { 
 				state: "default" 0.0; 
-				gradient.spectrum: "backdrop";
+				gradient.spectrum: "file_manager";
     			}
 		}
 
@@ -20,8 +20,6 @@ group {
 
 			description {
 				state: "default" 0.0;
-				//color: 243 243 243 255;
-				//color: 255 255 255 255;
 				color: 205 204 188 5;
 
 				image {

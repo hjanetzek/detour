@@ -78,6 +78,12 @@ spectra {
 
 	spectrum {
 		name: "backdrop";
+		color: 138 171 225 255 1;
+		color: 62 98 170 255 1;
+	}
+
+	spectrum {
+		name: "file_manager";
 		color: 230 229 211 255 1;
 		color: 196 196 182 255 1;
 	}
@@ -94,8 +100,8 @@ styles {
 }
 
 collections {
-	#include "bits/about.edc"		/* about enlightenment */
 	#include "bits/about_detour.edc"	/* about this edje */
+	#include "bits/about_e.edc"		/* about enlightenment */
 	#include "bits/background.edc" 		/* background group */
 	#include "bits/battery.edc"		/* battery module */
 	#include "bits/border.edc"		/* border group */
