@@ -1,4 +1,87 @@
 ------------------------------------------------------------------------
+r634 | alberto.castro.leiva | 2009-01-10 23:51:06 -0600 (Sat, 10 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/itask.edc
+   A /branches/e17/images/itask_im4.png
+   A /branches/e17/images/itask_im5.png
+   M /branches/e17/images/pager_im4.png
+   M /branches/e17/images/pager_im5.png
+   M /branches/e17/images.edc
+
+ITask-NG: overlay label decoration.
+
+------------------------------------------------------------------------
+r633 | alberto.castro.leiva | 2009-01-10 21:25:19 -0600 (Sat, 10 Jan 2009) | 2 lines
+Changed paths:
+   A /branches/e17/bits/about_e.edc
+
+Add missing file, thanks Catalyst
+
+------------------------------------------------------------------------
+r632 | alberto.castro.leiva | 2009-01-10 01:01:12 -0600 (Sat, 10 Jan 2009) | 2 lines
+Changed paths:
+   D /branches/e17/bits/about.edc
+   M /branches/e17/bits/efm_nav.edc
+   M /branches/e17/bits/efm_toolbar.edc
+   M /branches/e17/bits/fileman.edc
+   A /branches/e17/images/e17_logo.png
+   A /branches/e17/images/efmnav_bt0.png
+   A /branches/e17/images/efmnav_bt1.png
+   A /branches/e17/images/efmnav_bt2.png
+   A /branches/e17/images/efmnav_bt3.png
+   M /branches/e17/images/fileman_im7.png
+   M /branches/e17/images/fileman_im8.png
+   M /branches/e17/images/nav_back-button-sign.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+About_Enlightenment dialog redesigned.
+
+------------------------------------------------------------------------
+r631 | alberto.castro.leiva | 2009-01-09 03:05:54 -0600 (Fri, 09 Jan 2009) | 6 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/bits/efm_nav.edc
+   M /branches/e17/bits/gadman.edc
+   M /branches/e17/images/menu_im1.png
+   M /branches/e17/images/menu_im3.png
+   M /branches/e17/main.edc
+
+Add gadman functionality.
+
+efm_nav + efm toolbar needs a overhaul.
+efm toolbar: let's make it black w/ grad.
+
+
+------------------------------------------------------------------------
+r630 | alberto.castro.leiva | 2009-01-09 02:34:16 -0600 (Fri, 09 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/clock.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/gadman.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/icons/icon_efm_dnd_ask.png
+   M /branches/e17/icons/icon_efm_dnd_copy.png
+   M /branches/e17/icons/icon_efm_dnd_move.png
+   M /branches/e17/images/fileman_im5.png
+   M /branches/e17/images/fileman_im6.png
+   D /branches/e17/images/ibar_drop.png
+   M /branches/e17/images/ibar_im1.png
+   A /branches/e17/images/ibar_im2.png
+   D /branches/e17/images/tb-shaped.png
+   M /branches/e17/images/window-border_bt2.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Squishing moer bugs.cy
+
+
+------------------------------------------------------------------------
 r629 | alberto.castro.leiva | 2009-01-08 00:48:51 -0600 (Thu, 08 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/ChangeLog
