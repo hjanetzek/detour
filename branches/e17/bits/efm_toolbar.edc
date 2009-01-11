@@ -17,7 +17,7 @@ group {
 
 				image {
 					normal: "images/fileman_im7.png";
-					border: 1 1 1 6;
+					border: 2 2 1 6;
 				}
 			}
 
@@ -29,7 +29,7 @@ group {
 
 				image {
 					normal: "images/fileman_im8.png";
-					border: 1 1 7 1;
+					border: 2 2 7 1;
 				}
 			}
 		}

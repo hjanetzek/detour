@@ -218,26 +218,13 @@ image: "images/efmnav_bt0.png" COMP; 	/* back button base */
 image: "images/efmnav_bt1.png" COMP;	/* back button */
 image: "images/efmnav_bt2.png" COMP;	/* forward button base*/
 image: "images/efmnav_bt3.png" COMP;	/* forward button */
-image: "images/nav_back-button-disabled.png" COMP;
-image: "images/nav_back-button-sign.png" COMP;
-image: "images/nav_back-button-sign2.png" COMP;
-image: "images/nav_forward-base.png" COMP;
-image: "images/nav_forward-button.png" COMP;
-image: "images/nav_forward-button-disabled.png" COMP;
-image: "images/nav_forward-button-sign.png" COMP;
-image: "images/nav_forward-button-sign2.png" COMP;
-image: "images/nav_refresh-base.png" COMP;
-image: "images/nav_refresh-button.png" COMP;
-image: "images/nav_refresh-button-disabled.png" COMP;
-image: "images/nav_refresh-button-sign.png" COMP;
-image: "images/nav_refresh-button-sign2.png" COMP;
-image: "images/nav_refresh-button-shadow.png" COMP;
-image: "images/nav_up-button-sign.png" COMP;
-image: "images/nav_up-button-sign2.png" COMP;
-image: "images/nav_button-shadow-left.png" COMP;
-image: "images/nav_button-shadow-right.png" COMP;
-image: "images/nav_fav-button-sign.png" COMP;
-
+image: "images/efmnav_bt4.png" COMP;	/* up button base */
+image: "images/efmnav_bt5.png" COMP;	/* up button */
+image: "images/efmnav_bt6.png" COMP; 	/* back button symbol */
+image: "images/efmnav_bt7.png" COMP;	/* forward button symbol */
+image: "images/efmnav_bt8.png" COMP;	/* up button symbol */
+image: "images/efmnav_bt9.png" COMP;	/* refresh button symbol */
+image: "images/efmnav_bt10.png" COMP;	/* favorites button symbol */
 
 //~ resize
 
@@ -263,29 +250,6 @@ image: "images/sb_runnerv_bot_disabled.png" COMP;
 image: "images/sb_runnerv_disabled.png" COMP;
 image: "images/sb_runnerh_left_disabled.png" COMP;
 image: "images/sb_runnerh_right_disabled.png" COMP;
-
-//~ efm nav
-image: "images/nav_back-base.png" COMP;
-image: "images/nav_back-button.png" COMP;
-image: "images/nav_back-button-disabled.png" COMP;
-image: "images/nav_back-button-sign.png" COMP;
-image: "images/nav_back-button-sign2.png" COMP;
-image: "images/nav_forward-base.png" COMP;
-image: "images/nav_forward-button.png" COMP;
-image: "images/nav_forward-button-disabled.png" COMP;
-image: "images/nav_forward-button-sign.png" COMP;
-image: "images/nav_forward-button-sign2.png" COMP;
-image: "images/nav_refresh-base.png" COMP;
-image: "images/nav_refresh-button.png" COMP;
-image: "images/nav_refresh-button-disabled.png" COMP;
-image: "images/nav_refresh-button-sign.png" COMP;
-image: "images/nav_refresh-button-sign2.png" COMP;
-image: "images/nav_refresh-button-shadow.png" COMP;
-image: "images/nav_up-button-sign.png" COMP;
-image: "images/nav_up-button-sign2.png" COMP;
-image: "images/nav_button-shadow-left.png" COMP;
-image: "images/nav_button-shadow-right.png" COMP;
-image: "images/nav_fav-button-sign.png" COMP;
 
 //~ scrollbar
 image: "images/sb_bl1.png" COMP;
