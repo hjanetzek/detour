@@ -20,7 +20,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				align: 0.5 0.5;
+				align: 1.0 0.5;
 
 				rel1 { 
 					to: "base";
@@ -43,13 +43,14 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 29 17;
-				min: 29 17;
+				max: 29 24;
+				min: 29 24;
 				fixed: 1 1;
-				//color: 255 255 255 178;
+				color: 255 255 255 128;
 
 				image {
 					normal: "images/efmnav_bt0.png";
+					border: 7 1 7 7;
 				}
 			}
 		}
@@ -62,8 +63,8 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 29 14;
-				min: 29 14;
+				max: 29 21;
+				min: 29 21;
 				fixed: 1 1;
 
 				rel1 { 
@@ -80,12 +81,14 @@ group {
 
 				image {
 					normal: "images/efmnav_bt1.png";
+					border: 7 1 6 6;
 				}
 			}
 
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 192;
 			}
 
 			description {
@@ -95,89 +98,48 @@ group {
 			}
 		}
 
-
 		part {
-			name: "button-shadow";
+			name: "symbol";
 			type: IMAGE;
 			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		visible: 0;
+			description {
+				state: "default" 0.0;
+				max: 11 8;
+				min: 11 8;
+				fixed: 1 1;
+				align: 0.5 0.5;
+				color: 255 255 255 192;
 
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: -1 0; 
-		} 
+				rel1 { 
+					to: "button";
+					relative: 0.0 0.0; 
+					offset: 0 2; 
+				} 
 
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: 0 -2; 
+				rel2 { 
+					to: "button";
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				image {
+					normal: "images/efmnav_bt6.png";
+				}
+			}
+
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 64;
+			}
 		}
-
-		image {
-			normal: "images/nav_button-shadow-left.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
-
-part {
-	name: "symbol";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 18 15;
-		min: 18 15;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: 4 2; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "images/nav_back-button-sign.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_back-button-sign2.png";
-		}
-	}
-}
-
 	}
 
 	programs {
@@ -196,10 +158,10 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 29 17;
-				min: 29 17;
+				max: 29 24;
+				min: 29 24;
 				fixed: 1 1;
-				//color: 255 255 255 178;
+				color: 255 255 255 128;
 
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -208,6 +170,7 @@ group {
 
 				image {
 					normal: "images/efmnav_bt2.png";
+					border: 1 7 7 7;
 				}
 			}
 		}
@@ -220,8 +183,8 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 29 14;
-				min: 29 14;
+				max: 29 21;
+				min: 29 21;
 				fixed: 1 1;
 
 				rel1 { 
@@ -238,12 +201,14 @@ group {
 
 				image {
 					normal: "images/efmnav_bt3.png";
+					border: 1 7 6 6;
 				}
 			}
 
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 192;
 			}
 
 			description {
@@ -253,87 +218,48 @@ group {
 			}
 		}
 
-part {
-	name: "button-shadow";
-	type: IMAGE;
-	mouse_events: 0;
+		part {
+			name: "symbol";
+			type: IMAGE;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		visible: 0;
+			description {
+				state: "default" 0.0;
+				max: 11 8;
+				min: 11 8;
+				fixed: 1 1;
+				align: 0.5 0.5;
+				color: 255 255 255 192;
 
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		} 
+				rel1 { 
+					to: "button";
+					relative: 0.0 0.0; 
+					offset: 0 2; 
+				} 
 
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: 0 -2; 
+				rel2 { 
+					to: "button";
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				image {
+					normal: "images/efmnav_bt7.png";
+				}
+			}
+
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 64;
+			}
 		}
-
-		image {
-			normal: "images/nav_button-shadow-right.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
-
-part {
-	name: "symbol";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 18 15;
-		min: 18 15;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: 0 2; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: -3 -1; 
-		}
-
-		image {
-			normal: "images/nav_forward-button-sign.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_forward-button-sign2.png";
-		}
-	}
-}
 
 	}
 
@@ -346,157 +272,116 @@ group {
 	name: "modules/efm_nav/up";
 
 	parts {
-part {
-	name: "base";
-	type: IMAGE;
-	mouse_events: 0;
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		max: 36 26;
-		min: 36 26;
-		fixed: 1 1;
-		color: 255 255 255 178;
+			description {
+				state: "default" 0.0;
+				max: 29 24;
+				min: 29 24;
+				fixed: 1 1;
+				color: 255 255 255 128;
 
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 54 0; 
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 54 0; 
+				}
+
+				image {
+					normal: "images/efmnav_bt4.png";
+					border: 8 8 7 8;
+				}
+			}
 		}
 
-		image {
-			normal: "images/nav_refresh-base.png";
-			border: 6 6 6 6;
-		}
-	}
-}
+		part {
+			name: "button";
+			type: IMAGE;
+			mouse_events: 1;
+			repeat_events: 1;
 
-part {
-	name: "button";
-	type: IMAGE;
-	mouse_events: 1;
-	repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				max: 25 21;
+				min: 25 21;
+				fixed: 1 1;
 
-	description {
-		state: "default" 0.0;
-		max: 36 24;
-		min: 36 24;
-		fixed: 1 1;
+				rel1 { 
+					to: "base";
+					relative: 0.0 0.0; 
+					offset: 0 0; 
+				} 
 
-		rel1 { 
-			to: "base";
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		} 
+				rel2 { 
+					to: "base";
+					relative: 1.0 1.0; 
+					offset: -1 -2; 
+				}
 
-		rel2 { 
-			to: "base";
-			relative: 1.0 1.0; 
-			offset: -1 -2; 
-		}
+				image {
+					normal: "images/efmnav_bt5.png";
+					border: 7 7 6 6;
+				}
+			}
 
-		image {
-			normal: "images/nav_refresh-button.png";
-			border: 6 6 6 6;
-		}
-	}
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 192;
+			}
 
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_refresh-button-disabled.png";
-		}
-	}
-}
-
-part {
-	name: "button-shadow";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		visible: 0;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: -1 0; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: 0 -1; 
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
 		}
 
-		image {
-			normal: "images/nav_refresh-button-shadow.png";
+
+		part {
+			name: "symbol";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				max: 8 11;
+				min: 8 11;
+				fixed: 1 1;
+				align: 0.5 0.5;
+				color: 255 255 255 192;
+
+				rel1 { 
+					to: "button";
+					relative: 0.0 0.0; 
+					offset: 0 0; 
+				} 
+
+				rel2 { 
+					to: "button";
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				image {
+					normal: "images/efmnav_bt8.png";
+				}
+			}
+
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 64;
+			}
 		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
-
-part {
-	name: "symbol";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 14 17;
-		min: 14 17;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: 0 2; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "images/nav_up-button-sign.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_up-button-sign2.png";
-		}
-	}
-}
-
 	}
 
 	programs {
@@ -508,157 +393,115 @@ group {
 	name: "modules/efm_nav/refresh";
 
 	parts {
-part {
-	name: "base";
-	type: IMAGE;
-	mouse_events: 0;
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
 
-	description {
-		state: "default" 0.0;
-		max: 36 26;
-		min: 36 26;
-		fixed: 1 1;
-		color: 255 255 255 178;
+			description {
+				state: "default" 0.0;
+				max: 29 24;
+				min: 29 24;
+				fixed: 1 1;
+				color: 255 255 255 128;
 
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 92 0; 
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 84 0; 
+				}
+
+				image {
+					normal: "images/efmnav_bt4.png";
+					border: 8 8 7 8;
+				}
+			}
 		}
 
-		image {
-			normal: "images/nav_refresh-base.png";
-			border: 6 6 6 6;
-		}
-	}
-}
+		part {
+			name: "button";
+			type: IMAGE;
+			mouse_events: 1;
+			repeat_events: 1;
 
-part {
-	name: "button";
-	type: IMAGE;
-	mouse_events: 1;
-	repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				max: 25 21;
+				min: 25 21;
+				fixed: 1 1;
 
-	description {
-		state: "default" 0.0;
-		max: 36 24;
-		min: 36 24;
-		fixed: 1 1;
+				rel1 { 
+					to: "base";
+					relative: 0.0 0.0; 
+					offset: 0 0; 
+				} 
 
-		rel1 { 
-			to: "base";
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		} 
+				rel2 { 
+					to: "base";
+					relative: 1.0 1.0; 
+					offset: -1 -2; 
+				}
 
-		rel2 { 
-			to: "base";
-			relative: 1.0 1.0; 
-			offset: -1 -2; 
-		}
+				image {
+					normal: "images/efmnav_bt5.png";
+					border: 7 7 6 6;
+				}
+			}
 
-		image {
-			normal: "images/nav_refresh-button.png";
-			border: 6 6 6 6;
-		}
-	}
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 192;
+			}
 
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_refresh-button-disabled.png";
-		}
-	}
-}
-
-part {
-	name: "button-shadow";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		visible: 0;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: -1 0; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: 0 -1; 
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
 		}
 
-		image {
-			normal: "images/nav_refresh-button-shadow.png";
+		part {
+			name: "symbol";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				max: 10 11;
+				min: 10 11;
+				fixed: 1 1;
+				align: 0.5 0.5;
+				color: 255 255 255 192;
+
+				rel1 { 
+					to: "button";
+					relative: 0.0 0.0; 
+					offset: 1 0; 
+				} 
+
+				rel2 { 
+					to: "button";
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				image {
+					normal: "images/efmnav_bt9.png";
+				}
+			}
+
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 64;
+			}
 		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
-
-part {
-	name: "symbol";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 18 19;
-		min: 18 19;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: 0 2; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "images/nav_refresh-button-sign.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_refresh-button-sign2.png";
-		}
-	}
-}
-
 	}
 
 	programs {
@@ -670,153 +513,115 @@ group {
 	name: "modules/efm_nav/favorites";
 
 	parts {
+		part {
+			name: "base";
+			type: IMAGE;
+			mouse_events: 0;
 
-part {
-	name: "base";
-	type: IMAGE;
-	mouse_events: 0;
+			description {
+				state: "default" 0.0;
+				max: 29 24;
+				min: 29 24;
+				fixed: 1 1;
+				color: 255 255 255 128;
 
-	description {
-		state: "default" 0.0;
-		max: 36 26;
-		min: 36 26;
-		fixed: 1 1;
-		color: 255 255 255 178;
+				rel1 { 
+					relative: 0.0 0.0; 
+					offset: 114 0; 
+				}
 
-		rel1 { 
-			relative: 0.0 0.0; 
-			offset: 130 0; 
+				image {
+					normal: "images/efmnav_bt4.png";
+					border: 8 8 7 8;
+				}
+			}
 		}
 
-		image {
-			normal: "images/nav_refresh-base.png";
-			border: 6 6 6 6;
-		}
-	}
-}
+		part {
+			name: "button";
+			type: IMAGE;
+			mouse_events: 1;
+			repeat_events: 1;
 
-part {
-	name: "button";
-	type: IMAGE;
-	mouse_events: 1;
-	repeat_events: 1;
+			description {
+				state: "default" 0.0;
+				max: 25 21;
+				min: 25 21;
+				fixed: 1 1;
 
-	description {
-		state: "default" 0.0;
-		max: 36 24;
-		min: 36 24;
-		fixed: 1 1;
+				rel1 { 
+					to: "base";
+					relative: 0.0 0.0; 
+					offset: 0 0; 
+				} 
 
-		rel1 { 
-			to: "base";
-			relative: 0.0 0.0; 
-			offset: 0 0; 
-		} 
+				rel2 { 
+					to: "base";
+					relative: 1.0 1.0; 
+					offset: -1 -2; 
+				}
 
-		rel2 { 
-			to: "base";
-			relative: 1.0 1.0; 
-			offset: -1 -2; 
-		}
+				image {
+					normal: "images/efmnav_bt5.png";
+					border: 7 7 6 6;
+				}
+			}
 
-		image {
-			normal: "images/nav_refresh-button.png";
-			border: 6 6 6 6;
-		}
-	}
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 192;
+			}
 
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-
-		image {
-			normal: "images/nav_refresh-button-disabled.png";
-		}
-	}
-}
-
-part {
-	name: "button-shadow";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		visible: 0;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: -1 0; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: 0 -1; 
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
 		}
 
-		image {
-			normal: "images/nav_refresh-button-shadow.png";
+		part {
+			name: "symbol";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				max: 14 15;
+				min: 14 15;
+				fixed: 1 1;
+				align: 0.5 0.5;
+				color: 255 255 255 192;
+
+				rel1 { 
+					to: "button";
+					relative: 0.0 0.0; 
+					offset: 1 1; 
+				} 
+
+				rel2 { 
+					to: "button";
+					relative: 1.0 1.0; 
+					offset: -1 -1; 
+				}
+
+				image {
+					normal: "images/efmnav_bt10.png";
+				}
+			}
+
+			description {
+				state: "pressed" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 128;
+			}
+
+			description {
+				state: "disabled" 0.0;
+				inherit: "default" 0.0;
+				color: 255 255 255 64;
+			}
 		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-		visible: 1;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-		visible: 0;
-	}
-}
-
-part {
-	name: "symbol";
-	type: IMAGE;
-	mouse_events: 0;
-
-	description {
-		state: "default" 0.0;
-		max: 18 19;
-		min: 18 19;
-		fixed: 1 1;
-
-		rel1 { 
-			to: "button";
-			relative: 0.0 0.0; 
-			offset: 0 2; 
-		} 
-
-		rel2 { 
-			to: "button";
-			relative: 1.0 1.0; 
-			offset: -1 -1; 
-		}
-
-		image {
-			normal: "images/nav_fav-button-sign.png";
-		}
-	}
-
-	description {
-		state: "pressed" 0.0;
-		inherit: "default" 0.0;
-	}
-
-	description {
-		state: "disabled" 0.0;
-		inherit: "default" 0.0;
-	}
-}
 	}
 
 	programs {

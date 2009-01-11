@@ -12,7 +12,6 @@ program { 						\
 	source: "button"; 				\
 	action: STATE_SET "pressed" 0.0; 		\
 	target: "button"; 				\
-	target: "button-shadow";			\
 	target: "symbol";				\
 } 							\
 							\
@@ -22,7 +21,6 @@ program { 						\
 	source: "button"; 				\
 	action: STATE_SET "default" 0.0; 		\
 	target: "button"; 				\
-	target: "button-shadow";			\
 	target: "symbol";				\
 } 							\
 							\
@@ -39,7 +37,6 @@ program { 						\
 	source: "e"; 					\
 	action: STATE_SET "disabled" 0.0; 		\
 	target: "button"; 				\
-	target: "button-shadow";			\
 	target: "symbol";				\
 } 							\
 							\
@@ -49,7 +46,6 @@ program { 						\
 	source: "e"; 					\
 	action: STATE_SET "default" 0.0; 		\
 	target: "button"; 				\
-	target: "button-shadow";			\
 	target: "symbol";				\
 } 
 
