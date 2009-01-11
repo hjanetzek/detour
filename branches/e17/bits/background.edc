@@ -38,13 +38,13 @@ group {
 				color: 205 204 188 5;
 
 				image {
-					normal: "images/wallpaper_pat1.png";
+					normal: "images/wallpaper_pat2.png";
 				}
 
 				fill {
 					size {
 						relative: 0 0;
-						offset: 35 35;
+						offset: 24 24;
 					}
 				}
 			}
