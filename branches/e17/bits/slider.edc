@@ -60,7 +60,7 @@ group {
 				}
 
 				image {
-					normal: "images/sb_runnerh.png";
+					normal: "images/runner_im2.png";
 					border: 1 1 6 5;
 				}
 			}
@@ -70,7 +70,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "images/sb_runnerh_disabled.png";
+					normal: "images/runner_im3.png";
 				}
 			}
 		}
@@ -215,6 +215,7 @@ group {
 
 		part {
 			name: "runner_left";
+			type: IMAGE;
 			mouse_events: 0;
 			clip_to: "clip";
 
@@ -237,7 +238,7 @@ group {
 				}
 
 				image {
-					normal: "images/sb_runnerh_left.png";
+					normal: "images/runner_im0.png";
 				}
 			}
 
@@ -246,7 +247,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "images/sb_runnerh_left_disabled.png";
+					normal: "images/runner_im1.png";
 				}
 			}
 		}
@@ -293,7 +294,7 @@ group {
 				}
 
 				image {
-					normal: "images/sb_runnerh_right.png";
+					normal: "images/runner_im4.png";
 				}
 			}
 
@@ -302,7 +303,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "images/sb_runnerh_right_disabled.png";
+					normal: "images/runner_im5.png";
 				}
 			}
 		}
@@ -365,7 +366,7 @@ group {
 		}
 
 		part {
-		name: "shadow_focus_clip";
+			name: "shadow_focus_clip";
 			type: RECT;
 			mouse_events: 0;
 
@@ -406,7 +407,7 @@ group {
 				}
 
 				image {
-					normal: "images/slider_hshadow.png";
+					normal: "images/slider_im1.png";
 					border: 7 8 7 7;
 				}
 			}
@@ -433,7 +434,7 @@ group {
 				}
 
 				image {
-					normal: "images/slider_h.png";
+					normal: "images/slider_im0.png";
 				}
 			}
 
@@ -616,6 +617,7 @@ group {
 
 		part {
 			name: "slider_runner";
+			type: IMAGE;
 			mouse_events: 0;
 			clip_to: "clip";
 
@@ -636,7 +638,7 @@ group {
 				}
 
 				image {
-					normal: "images/sb_runnerv.png";
+					normal: "images/runner_im8.png";
 					border: 2 2 1 1;
 				}
 			}
@@ -646,13 +648,14 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "images/sb_runnerv_disabled.png";
+					normal: "images/runner_im9.png";
 				}
 			}
 		}
 
 		part {
 			name: "label_under";
+			type: IMAGE;
 			mouse_events: 0;
 
 			description {
@@ -694,6 +697,7 @@ group {
 
 		part {
 			name: "label_focus";
+			type: IMAGE;
 			mouse_events: 0;
 
 			description {
@@ -789,6 +793,7 @@ group {
 
 		part {
 			name: "runner_top";
+			type: IMAGE;
 			mouse_events: 0;
 			clip_to: "clip";
 
@@ -811,7 +816,7 @@ group {
 				}
 
 				image {
-					normal: "images/sb_runnerv_top.png";
+					normal: "images/runner_im6.png";
 				}
 			}
 
@@ -820,7 +825,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "images/sb_runnerv_top_disabled.png";
+					normal: "images/runner_im7.png";
 				}
 			}
 		}
@@ -844,6 +849,7 @@ group {
 
 		part {
 			name: "runner_bot";
+			type: IMAGE;
 			mouse_events: 0;
 			clip_to: "clip";
 
@@ -866,7 +872,7 @@ group {
 				}
 
 				image {
-					normal: "images/sb_runnerv_bot.png";
+					normal: "images/runner_im10.png";
 				}
 			}
 
@@ -875,7 +881,7 @@ group {
 				inherit: "default" 0.0;
 
 				image {
-					normal: "images/sb_runnerv_bot_disabled.png";
+					normal: "images/runner_im11.png";
 				}
 			}
 		}
@@ -917,7 +923,7 @@ group {
 			}
 
 			description {
-					state: "default" 0.0;
+				state: "default" 0.0;
 				min: 17 29;
 				max: 17 29;
 				fixed: 1 1;
@@ -979,7 +985,7 @@ group {
 				}
 
 				image {
-					normal: "images/slider_vshadow.png";
+					normal: "images/slider_im3.png";
 					border: 7 7 7 7;
 				}
 			}
@@ -1006,7 +1012,7 @@ group {
 				}
 
 				image {
-					normal: "images/slider_v.png";
+					normal: "images/slider_im2.png";
 				}
 			}
 

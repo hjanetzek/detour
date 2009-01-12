@@ -21,7 +21,7 @@
 
 data {
 	item: "theme/name" 		"detour (symetrika)";
-	item: "theme/description" 	"";
+	item: "theme/description" 	"NO $random colours.";
 	item: "theme/version"		"0.7.5";
 	item: "theme/author"		"Alberto Castro, Hannes Janetzek, et al.";
 	item: "theme/license"		"BSD Artistic License";
