@@ -1,13 +1,13 @@
 /* detour stats: */
 
-/images: 228 items, total: 237.1kb
+/images: 207 items, total: 198.8kb
 /icons: 140 items, total: 272.2kb
-/macros: 13 items, total: 28.3kb
+/macros: 12 items, total: 24.4kb
 /fonts: 4 items, total: 1.7mb
 /custom: 9 items, total: 15.6kb
 /clock: 181 items, total: 313.9kb
-/bits: 54 items, total: 440.3kb
-/root: 11 items, total: 311.9kb
+/bits: 53 items, total: 431.5kb
+/root: 9 items, total: 338.8kb
 
 == Bugfix ==
 tclock: use mono fonts where possible

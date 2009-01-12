@@ -1,4 +1,33 @@
 
+#define background()						\
+part {								\
+	name: "background(overlay)";				\
+	type: IMAGE;						\
+	mouse_events: 0;					\
+								\
+	description {						\
+		state: "default" 0.0;				\
+		color: 255 255 255 255;				\
+								\
+		image {						\
+			normal: "images/wallpaper_pat0.png";	\
+		}						\
+								\
+		fill {						\
+			size {					\
+				relative: 0 0;			\
+				offset: 24 24;			\
+			}					\
+		}						\
+	}							\
+								\
+	description {						\
+		state: "default" 0.1;				\
+		inherit: "default" 0.0;				\
+		color: 255 255 255 0;				\
+	}							\
+}
+
 group {
 	name: "e/desktop/background";
 
