@@ -11,18 +11,18 @@ program { 									\
 	} 									\
 } 										\
 program { 									\
-	name: "button_unclick"; 			\
-	signal: "mouse,up,1"; 				\
-	source: "button";				\
-	action: STATE_SET "default" 0.0; 		\
-	target: "shadow"; 				\
-	target: "shadow_overlay"; 			\
-	target: "text"; 				\
-} 							\
-program { 						\
-	name: "button_clicked"; 			\
-	signal: "mouse,clicked,1"; 			\
-	source: "button"; 				\
-	action: SIGNAL_EMIT "e,action,close" ""; 	\
+	name: "button_unclick"; 						\
+	signal: "mouse,up,1"; 							\
+	source: "button";							\
+	action: STATE_SET "default" 0.0; 					\
+	target: "shadow"; 							\
+	target: "shadow_overlay"; 						\
+	target: "text"; 							\
+} 										\
+program { 									\
+	name: "button_clicked"; 						\
+	signal: "mouse,clicked,1"; 						\
+	source: "button"; 							\
+	action: SIGNAL_EMIT "e,action,close" ""; 				\
 }
 
