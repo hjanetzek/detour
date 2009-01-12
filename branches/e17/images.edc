@@ -10,6 +10,7 @@ image: "images/check_bt4.png" COMP; /* shadow */
 image: "images/pointer_im1.png" COMP; /* default mode */
 image: "images/pointer_im2.png" COMP; /* pulsating mode */
 image: "images/pointer_im3.png" COMP; /* monochrome */
+image: "images/pointer_im4.png" COMP; /* black */
 
 //~ radio widget
 image: "images/radio_bt0.png" COMP; /* base */
@@ -61,7 +62,6 @@ image: "images/exebuf_im0.png" COMP; /* hilite */
 //~ ibar
 image: "images/ibar_im0.png" COMP; /* label */
 image: "images/ibar_im1.png" COMP; /* drop */
-image: "images/ibar_im2.png" COMP; /* desktop icon label */
 
 //~ itask
 image: "images/itask_im0.png" COMP; /* bottom orientation */
