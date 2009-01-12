@@ -36,8 +36,8 @@ install: detour-e17.edj
 
 version:
 	@echo
+	cat main.edc | head -17 | tail -1
 	cat main.edc | head -18 | tail -1
-	cat main.edc | head -19 | tail -1
 
 clean:
 	@echo

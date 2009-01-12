@@ -1,4 +1,82 @@
 ------------------------------------------------------------------------
+r639 | alberto.castro.leiva | 2009-01-11 20:38:25 -0600 (Sun, 11 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/pointer.edc
+   D /branches/e17/images/ibar_im2.png
+   A /branches/e17/images/pointer_im4.png
+   M /branches/e17/images/pointer_src.svg
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Add "alternate" black mouse pointer.
+
+------------------------------------------------------------------------
+r638 | alberto.castro.leiva | 2009-01-11 13:20:05 -0600 (Sun, 11 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+
+Better alignment of desktop/efm_win overlay.
+
+------------------------------------------------------------------------
+r637 | alberto.castro.leiva | 2009-01-11 01:42:10 -0600 (Sun, 11 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/efm_nav.edc
+   M /branches/e17/bits/fileman.edc
+   A /branches/e17/images/wallpaper_pat2.png
+   M /branches/e17/images.edc
+
+Update these (fixes)
+
+------------------------------------------------------------------------
+r636 | alberto.castro.leiva | 2009-01-11 01:03:57 -0600 (Sun, 11 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+
+Update ChangeLog
+
+------------------------------------------------------------------------
+r635 | alberto.castro.leiva | 2009-01-11 00:58:12 -0600 (Sun, 11 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/efm_nav.edc
+   M /branches/e17/bits/efm_toolbar.edc
+   A /branches/e17/images/efmnav_bt10.png
+   A /branches/e17/images/efmnav_bt4.png
+   A /branches/e17/images/efmnav_bt5.png
+   A /branches/e17/images/efmnav_bt6.png
+   A /branches/e17/images/efmnav_bt7.png
+   A /branches/e17/images/efmnav_bt8.png
+   A /branches/e17/images/efmnav_bt9.png
+   M /branches/e17/images/fileman_im7.png
+   M /branches/e17/images/fileman_im8.png
+   D /branches/e17/images/nav_back-base.png
+   D /branches/e17/images/nav_back-button-disabled.png
+   D /branches/e17/images/nav_back-button-sign.png
+   D /branches/e17/images/nav_back-button-sign2.png
+   D /branches/e17/images/nav_back-button.png
+   D /branches/e17/images/nav_button-shadow-left.png
+   D /branches/e17/images/nav_button-shadow-right.png
+   D /branches/e17/images/nav_fav-button-sign.png
+   D /branches/e17/images/nav_forward-base.png
+   D /branches/e17/images/nav_forward-button-disabled.png
+   D /branches/e17/images/nav_forward-button-sign.png
+   D /branches/e17/images/nav_forward-button-sign2.png
+   D /branches/e17/images/nav_forward-button.png
+   D /branches/e17/images/nav_refresh-base.png
+   D /branches/e17/images/nav_refresh-button-disabled.png
+   D /branches/e17/images/nav_refresh-button-shadow.png
+   D /branches/e17/images/nav_refresh-button-sign.png
+   D /branches/e17/images/nav_refresh-button-sign2.png
+   D /branches/e17/images/nav_refresh-button.png
+   D /branches/e17/images/nav_up-button-sign.png
+   D /branches/e17/images/nav_up-button-sign2.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/efm_nav.edc
+
+EFM Navigation module graphics.
+
+------------------------------------------------------------------------
 r634 | alberto.castro.leiva | 2009-01-10 23:51:06 -0600 (Sat, 10 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/TODO
