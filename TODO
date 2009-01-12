@@ -11,18 +11,20 @@
 
 == Bugfix ==
 tclock: use mono fonts where possible
+desklock: center dialog
+battery.edc: text
+init.edc: check button
 
 == Redo ==
 
 == Improve ==
+transitions: where the graphics?
+entry: focus
 about_e.edc: ugly design
 bits/icons.edc: e/icons/enlightenment/e 
--"bits/error.edc"
 -temperature.edc: graphics
--desklock entry
 -clock graphics(hands)
 -battery: text/graphics --transition
--efm nav "refresh" symbol
 -configure.edc: width seems to be hardcoded, bad!
 -pointer.edc: "e,action,mouse,down";
 -ilist: [header] colors

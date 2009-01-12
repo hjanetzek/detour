@@ -55,6 +55,10 @@ image: "images/deskpreview_im0.png" COMP; /* background */
 //~ decoration
 image: "images/decoration_im0.png" COMP; /* regular dot */
 image: "images/decoration_im1.png" COMP; /* wide dot */
+image: "images/decoration_im2.png" COMP; /* window geometry */
+
+//~ e17 logo
+image: "images/e17_logo.png" COMP; /* e17 logo */
 
 //~ exebuf
 image: "images/exebuf_im0.png" COMP; /* hilite */
@@ -458,28 +462,6 @@ image: "clock/seconds.cursor.57.png" COMP;
 image: "clock/seconds.cursor.58.png" COMP;
 image: "clock/seconds.cursor.59.png" COMP;
 
-//~ about
-image: "images/e17_logo.png" COMP;
-image: "images/e17_logo_small.png" COMP;
-image: "images/e17_logo_small_p1.png" COMP;
-image: "images/e17_logo_small_p2.png" COMP;
-image: "images/e17_logo_small_p3.png" COMP;
-image: "images/e17_logo_small_p4.png" COMP;
-image: "images/e17_logo_small_p5.png" COMP;
-image: "images/e17_logo_small_p6.png" COMP;
-image: "images/e17_logo_small_p7.png" COMP;
-image: "images/e17_logo_small_p8.png" COMP;
-image: "images/e17_logo_small_p9.png" COMP;
-image: "images/e17_logo_small_p21.png" COMP;
-image: "images/e17_logo_small_p22.png" COMP;
-image: "images/e17_logo_small_p23.png" COMP;
-image: "images/e17_logo_small_p24.png" COMP;
-image: "images/e17_logo_small_p25.png" COMP;
-image: "images/e17_logo_small_p26.png" COMP;
-image: "images/e17_logo_small_p27.png" COMP;
-image: "images/e17_logo_small_p28.png" COMP;
-image: "images/e17_logo_small_p29.png" COMP;
-
 //~ temperature 
 image: "images/temperature-base.png" COMP;
 image: "images/temperature-0.png" COMP;
@@ -492,5 +474,4 @@ image: "images/temperature-100.png" COMP;
 //~ resize
 
 //~ error
-
 
