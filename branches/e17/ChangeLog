@@ -1,4 +1,171 @@
 ------------------------------------------------------------------------
+r644 | alberto.castro.leiva | 2009-01-12 19:44:06 -0600 (Mon, 12 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/sys.edc
+
+Dialog: tag, "hilight";
+sys.edc: textblock
+
+------------------------------------------------------------------------
+r643 | alberto.castro.leiva | 2009-01-12 19:21:14 -0600 (Mon, 12 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/about_e.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/entry.edc
+   D /branches/e17/bits/error.edc
+   M /branches/e17/bits/icons.edc
+   D /branches/e17/bits/styles.edc
+   M /branches/e17/bits/sys.edc
+   A /branches/e17/bits/syscon.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/macros/sys.edc
+   M /branches/e17/main.edc
+
+Add syscon.edc, update textblock styles.
+
+------------------------------------------------------------------------
+r642 | alberto.castro.leiva | 2009-01-12 01:33:02 -0600 (Mon, 12 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/Makefile
+   M /branches/e17/TODO
+   M /branches/e17/bits/background.edc
+   M /branches/e17/macros/about_buttons.edc
+   D /branches/e17/macros/background.edc
+   M /branches/e17/macros/border_programs.edc
+   M /branches/e17/main.edc
+
+Update these too.
+
+------------------------------------------------------------------------
+r641 | alberto.castro.leiva | 2009-01-12 00:34:27 -0600 (Mon, 12 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/gadman.edc
+   M /branches/e17/bits/move.edc
+   M /branches/e17/bits/resize.edc
+   M /branches/e17/bits/start.edc
+   M /branches/e17/bits/sys.edc
+   D /branches/e17/bits/wizzard.edc
+   A /branches/e17/images/decoration_im2.png
+   D /branches/e17/images/e17_logo_small.png
+   D /branches/e17/images/e17_logo_small_p1.png
+   D /branches/e17/images/e17_logo_small_p2.png
+   D /branches/e17/images/e17_logo_small_p21.png
+   D /branches/e17/images/e17_logo_small_p22.png
+   D /branches/e17/images/e17_logo_small_p23.png
+   D /branches/e17/images/e17_logo_small_p24.png
+   D /branches/e17/images/e17_logo_small_p25.png
+   D /branches/e17/images/e17_logo_small_p26.png
+   D /branches/e17/images/e17_logo_small_p27.png
+   D /branches/e17/images/e17_logo_small_p28.png
+   D /branches/e17/images/e17_logo_small_p29.png
+   D /branches/e17/images/e17_logo_small_p3.png
+   D /branches/e17/images/e17_logo_small_p4.png
+   D /branches/e17/images/e17_logo_small_p5.png
+   D /branches/e17/images/e17_logo_small_p6.png
+   D /branches/e17/images/e17_logo_small_p7.png
+   D /branches/e17/images/e17_logo_small_p8.png
+   D /branches/e17/images/e17_logo_small_p9.png
+   M /branches/e17/images.edc
+   M /branches/e17/macros/sys.edc
+   M /branches/e17/macros/win_geometry.edc
+   M /branches/e17/main.edc
+
+Update these files.
+
+------------------------------------------------------------------------
+r640 | alberto.castro.leiva | 2009-01-12 00:08:37 -0600 (Mon, 12 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/error.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/resize.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/slider.edc
+   D /branches/e17/images/error-dialog_bg.png
+   A /branches/e17/images/runner_im0.png
+   A /branches/e17/images/runner_im1.png
+   A /branches/e17/images/runner_im10.png
+   A /branches/e17/images/runner_im11.png
+   A /branches/e17/images/runner_im2.png
+   A /branches/e17/images/runner_im3.png
+   A /branches/e17/images/runner_im4.png
+   A /branches/e17/images/runner_im5.png
+   A /branches/e17/images/runner_im6.png
+   A /branches/e17/images/runner_im7.png
+   A /branches/e17/images/runner_im8.png
+   A /branches/e17/images/runner_im9.png
+   D /branches/e17/images/sb_bl1.png
+   D /branches/e17/images/sb_br1.png
+   D /branches/e17/images/sb_btd1.png
+   D /branches/e17/images/sb_btu1.png
+   D /branches/e17/images/sb_hdrag.png
+   D /branches/e17/images/sb_runnerh.png
+   D /branches/e17/images/sb_runnerh_disabled.png
+   D /branches/e17/images/sb_runnerh_left.png
+   D /branches/e17/images/sb_runnerh_left_disabled.png
+   D /branches/e17/images/sb_runnerh_right.png
+   D /branches/e17/images/sb_runnerh_right_disabled.png
+   D /branches/e17/images/sb_runnerv.png
+   D /branches/e17/images/sb_runnerv_bot.png
+   D /branches/e17/images/sb_runnerv_bot_disabled.png
+   D /branches/e17/images/sb_runnerv_disabled.png
+   D /branches/e17/images/sb_runnerv_top.png
+   D /branches/e17/images/sb_runnerv_top_disabled.png
+   D /branches/e17/images/sb_vdrag.png
+   A /branches/e17/images/scrollbar_im0.png
+   A /branches/e17/images/scrollbar_im1.png
+   A /branches/e17/images/scrollbar_im2.png
+   A /branches/e17/images/scrollbar_im3.png
+   A /branches/e17/images/scrollbar_im4.png
+   A /branches/e17/images/scrollbar_im5.png
+   A /branches/e17/images/scrollbar_im6.png
+   A /branches/e17/images/scrollbar_im7.png
+   A /branches/e17/images/scrollbar_im8.png
+   A /branches/e17/images/scrollbar_im9.png
+   A /branches/e17/images/scrollframe-bar_im0.png
+   A /branches/e17/images/scrollframe-bar_im1.png
+   A /branches/e17/images/scrollframe-bar_im2.png
+   A /branches/e17/images/scrollframe-bar_im3.png
+   A /branches/e17/images/scrollframe_im3.png
+   A /branches/e17/images/scrollframe_im4.png
+   A /branches/e17/images/scrollframe_im5.png
+   A /branches/e17/images/scrollframe_im6.png
+   D /branches/e17/images/separator.png
+   D /branches/e17/images/sf_barh1.png
+   D /branches/e17/images/sf_barh_thumb.png
+   D /branches/e17/images/sf_barv1.png
+   D /branches/e17/images/sf_barv_thumb.png
+   D /branches/e17/images/sf_bl1.png
+   D /branches/e17/images/sf_bl1_over.png
+   D /branches/e17/images/sf_br1.png
+   D /branches/e17/images/sf_br1_over.png
+   D /branches/e17/images/sf_btd1.png
+   D /branches/e17/images/sf_btd1_over.png
+   D /branches/e17/images/sf_btu1.png
+   D /branches/e17/images/sf_btu1_over.png
+   D /branches/e17/images/sf_hb_runner.png
+   D /branches/e17/images/sf_vb_runner.png
+   D /branches/e17/images/slider_h.png
+   D /branches/e17/images/slider_hshadow.png
+   A /branches/e17/images/slider_im0.png
+   A /branches/e17/images/slider_im1.png
+   A /branches/e17/images/slider_im2.png
+   A /branches/e17/images/slider_im3.png
+   D /branches/e17/images/slider_v.png
+   D /branches/e17/images/slider_vshadow.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Update: slider, scrollbar, scrollframe name convention.
+
+------------------------------------------------------------------------
 r639 | alberto.castro.leiva | 2009-01-11 20:38:25 -0600 (Sun, 11 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/bits/pointer.edc
