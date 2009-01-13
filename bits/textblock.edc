@@ -2,6 +2,17 @@
 group {
 	name: "e/widgets/textblock";
 
+	styles {
+		style {
+			name: "textblock";
+			base: "font=DejaVuSans font_size=11 align=left color=#070707";
+			tag:  "br" "\n";
+			tag:  "hilight" "+ font=DejaVuSans-Bold color=#3c3c3c";
+			tag:  "b" "+ font=DejaVuSans-Bold";
+			tag:  "/title" "- \n \n";
+		}
+	}
+
 	parts {
 		part {
 			name: "e.textblock.text";
@@ -21,7 +32,7 @@ group {
 				}
 
 				text {
-					style: "textblock_style";
+					style: "textblock";
 					min: 1 1;
 				}
 	    		}

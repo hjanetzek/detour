@@ -112,6 +112,22 @@ group {
 group {
 	name: "e/widgets/dialog/text";
 
+	styles {
+		style {
+			name: "dialog";
+			#if ENABLE_TEXT_CLASS == 0
+				base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word"; 
+				tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d";
+			#else
+			#if ENABLE_TEXT_CLASS == 1
+				base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word text_class=tb_plain";
+				tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d text_class=tb_light"; 
+			#endif
+			#endif
+			tag:  "br" "\n";
+		}
+	}
+
 	parts {
 		part {
 			name: "e.textblock.message";
@@ -131,7 +147,7 @@ group {
 				}
 
 				text {
-					style: "dialog_style";
+					style: "dialog";
 					min: 1 1;
 				}
 			}
