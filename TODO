@@ -18,6 +18,7 @@ init.edc: check button
 == Redo ==
 
 == Improve ==
+about_e.edc: use TABS
 syscon.edc: "e/widgets/syscon/item/button"
 transitions: where the graphics?
 entry: focus
