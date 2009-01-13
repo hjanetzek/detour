@@ -19,6 +19,7 @@ init.edc: check button
 
 == Improve ==
 dialog.edc: text/buttons positioning
+syscon.edc: "e/widgets/syscon/item/button"
 transitions: where the graphics?
 entry: focus
 about_e.edc: ugly design
