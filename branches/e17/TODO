@@ -16,14 +16,13 @@ battery.edc: text
 init.edc: check button
 
 == Redo ==
+-about_e.edc: ugly design, use [TABS]
 
 == Improve ==
-about_e.edc: use TABS
-syscon.edc: "e/widgets/syscon/item/button"
-transitions: where the graphics?
-entry: focus
-about_e.edc: ugly design
-bits/icons.edc: e/icons/enlightenment/e 
+-syscon.edc: "e/widgets/syscon/item/button"
+-transitions: where the graphics?
+-entry: focus
+-bits/icons.edc: e/icons/enlightenment/e 
 -temperature.edc: graphics
 -clock graphics(hands)
 -battery: text/graphics --transition
@@ -34,7 +33,7 @@ bits/icons.edc: e/icons/enlightenment/e
 == Global ==
 
 == Ideas ==
--improve pointer group:
+-pointer group:
 	signal: "e,action,mouse,wheel";
 	signal: "e,action,mouse,move";
 
