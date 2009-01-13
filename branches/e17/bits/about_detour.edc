@@ -236,7 +236,7 @@ group {
 				}
 
 				text {
-					text: "Exit";
+					text: "Close";
 					font: "Sans:style=Bold,DejaVuSans-Bold";
 					size: 11;
 					min: 1 1;

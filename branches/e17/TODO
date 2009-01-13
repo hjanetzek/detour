@@ -18,7 +18,6 @@ init.edc: check button
 == Redo ==
 
 == Improve ==
-dialog.edc: text/buttons positioning
 syscon.edc: "e/widgets/syscon/item/button"
 transitions: where the graphics?
 entry: focus
