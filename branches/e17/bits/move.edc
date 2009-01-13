@@ -8,25 +8,23 @@ group {
 		part {
 			name: "e.text.label";
 			type: TEXT;
-			effect: SHADOW;
+			effect: NONE;
 			mouse_events: 0;
 			scale: 1;
 
 			description {
 				state: "default" 0.0;
-				color: 255 255 255 255;
-				color3: 60 60 60 32;
+				color: 148 148 148 255;
+				align: 0.5 0.5;
 
 				rel1 { 
-					to: "icon";
-					relative: 1.0 0.0; 
-					offset: 0 4; 
+					relative: 0.0 0.0; 
+					offset: 20 0; 
 				}
 
 				rel2 { 
-					to: "background";
 					relative: 1.0 1.0; 
-					offset: -10 -5; 
+					offset: -1 -1; 
 				}
 
 				text {

@@ -46,7 +46,7 @@ group {
 				max: 29 24;
 				min: 29 24;
 				fixed: 1 1;
-				color: 255 255 255 128;
+				color: 255 255 255 255;
 
 				image {
 					normal: "images/efmnav_bt0.png";
@@ -63,14 +63,11 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 29 21;
-				min: 29 21;
-				fixed: 1 1;
 
 				rel1 { 
 					to: "base";
 					relative: 0.0 0.0; 
-					offset: 1 0; 
+					offset: 2 1; 
 				} 
 
 				rel2 { 
@@ -109,12 +106,12 @@ group {
 				min: 11 8;
 				fixed: 1 1;
 				align: 0.5 0.5;
-				color: 255 255 255 192;
+				color: 158 158 158 255;
 
 				rel1 { 
 					to: "button";
 					relative: 0.0 0.0; 
-					offset: 0 2; 
+					offset: 0 0; 
 				} 
 
 				rel2 { 
@@ -131,13 +128,13 @@ group {
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 128;
+				color: 158 158 158 192;
 			}
 
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 64;
+				color: 158 158 158 128;
 			}
 		}
 	}
@@ -161,7 +158,7 @@ group {
 				max: 29 24;
 				min: 29 24;
 				fixed: 1 1;
-				color: 255 255 255 128;
+				color: 255 255 255 255;
 
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -183,20 +180,17 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 29 21;
-				min: 29 21;
-				fixed: 1 1;
 
 				rel1 { 
 					to: "base";
 					relative: 0.0 0.0; 
-					offset: -2 0; 
+					offset: -2 1; 
 				} 
 
 				rel2 { 
 					to: "base";
 					relative: 1.0 1.0; 
-					offset: -1 -2; 
+					offset: -3 -2; 
 				}
 
 				image {
@@ -229,12 +223,12 @@ group {
 				min: 11 8;
 				fixed: 1 1;
 				align: 0.5 0.5;
-				color: 255 255 255 192;
+				color: 158 158 158 255;
 
 				rel1 { 
 					to: "button";
 					relative: 0.0 0.0; 
-					offset: 0 2; 
+					offset: 0 0; 
 				} 
 
 				rel2 { 
@@ -251,13 +245,13 @@ group {
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 128;
+				color: 158 158 158 192;
 			}
 
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 64;
+				color: 158 158 158 128;
 			}
 		}
 
@@ -282,11 +276,11 @@ group {
 				max: 29 24;
 				min: 29 24;
 				fixed: 1 1;
-				color: 255 255 255 128;
+				color: 255 255 255 255;
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 54 0; 
+					offset: 50 0; 
 				}
 
 				image {
@@ -304,20 +298,17 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 25 21;
-				min: 25 21;
-				fixed: 1 1;
 
 				rel1 { 
 					to: "base";
 					relative: 0.0 0.0; 
-					offset: 0 0; 
+					offset: 2 1; 
 				} 
 
 				rel2 { 
 					to: "base";
 					relative: 1.0 1.0; 
-					offset: -1 -2; 
+					offset: -3 -2; 
 				}
 
 				image {
@@ -351,7 +342,7 @@ group {
 				min: 8 11;
 				fixed: 1 1;
 				align: 0.5 0.5;
-				color: 255 255 255 192;
+				color: 158 158 158 255;
 
 				rel1 { 
 					to: "button";
@@ -373,13 +364,13 @@ group {
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 128;
+				color: 158 158 158 192;
 			}
 
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 64;
+				color: 158 158 158 128;
 			}
 		}
 	}
@@ -403,11 +394,11 @@ group {
 				max: 29 24;
 				min: 29 24;
 				fixed: 1 1;
-				color: 255 255 255 128;
+				color: 255 255 255 255;
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 84 0; 
+					offset: 76 0; 
 				}
 
 				image {
@@ -425,20 +416,17 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 25 21;
-				min: 25 21;
-				fixed: 1 1;
 
 				rel1 { 
 					to: "base";
 					relative: 0.0 0.0; 
-					offset: 0 0; 
+					offset: 2 1; 
 				} 
 
 				rel2 { 
 					to: "base";
 					relative: 1.0 1.0; 
-					offset: -1 -2; 
+					offset: -3 -2; 
 				}
 
 				image {
@@ -471,7 +459,7 @@ group {
 				min: 10 11;
 				fixed: 1 1;
 				align: 0.5 0.5;
-				color: 255 255 255 192;
+				color: 158 158 158 255;
 
 				rel1 { 
 					to: "button";
@@ -493,13 +481,13 @@ group {
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 128;
+				color: 158 158 158 192;
 			}
 
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 64;
+				color: 158 158 158 128;
 			}
 		}
 	}
@@ -523,11 +511,11 @@ group {
 				max: 29 24;
 				min: 29 24;
 				fixed: 1 1;
-				color: 255 255 255 128;
+				color: 255 255 255 255;
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 114 0; 
+					offset: 102 0; 
 				}
 
 				image {
@@ -545,20 +533,17 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 25 21;
-				min: 25 21;
-				fixed: 1 1;
 
 				rel1 { 
 					to: "base";
 					relative: 0.0 0.0; 
-					offset: 0 0; 
+					offset: 2 1; 
 				} 
 
 				rel2 { 
 					to: "base";
 					relative: 1.0 1.0; 
-					offset: -1 -2; 
+					offset: -3 -2; 
 				}
 
 				image {
@@ -591,12 +576,12 @@ group {
 				min: 14 15;
 				fixed: 1 1;
 				align: 0.5 0.5;
-				color: 255 255 255 192;
+				color: 158 158 158 255;
 
 				rel1 { 
 					to: "button";
 					relative: 0.0 0.0; 
-					offset: 1 1; 
+					offset: 1 0; 
 				} 
 
 				rel2 { 
@@ -613,13 +598,13 @@ group {
 			description {
 				state: "pressed" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 128;
+				color: 158 158 158 192;
 			}
 
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 64;
+				color: 158 158 158 128;
 			}
 		}
 	}
