@@ -86,6 +86,13 @@ ICON("e/icons/enlightenment/pager", "icons/workspace-switcher.png")
 ICON("e/icons/enlightenment/mixer", "icons/audio-card.png")
 ICON("e/icons/enlightenment/scale", "icons/font-x-generic.png")
 
+//ICON("e/icons/enlightenment/engine","")
+//ICON("e/icons/enlightenment/profiles","")
+//ICON("e/icons/enlightenment/autoscroll","")
+//ICON("e/icons/enlightenment/showhide","")
+//ICON("e/icons/enlightenment/toolbar","")
+//ICON("e/icons/enlightenment/settings","")
+
 /*
  * Enlightenment wallpaper options icons.
  */

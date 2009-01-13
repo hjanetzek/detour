@@ -18,6 +18,7 @@ init.edc: check button
 == Redo ==
 
 == Improve ==
+dialog.edc: text/buttons positioning
 transitions: where the graphics?
 entry: focus
 about_e.edc: ugly design
