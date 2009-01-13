@@ -16,11 +16,11 @@ group {
 		style {
 			name: "sys_style";
 			#if ENABLE_TEXT_CLASS == 0
-				base: "font=DejaVuSans-Bold font_size=12 align=center color=#070707 wrap=word";
+				base: "font=DejaVuSans-Bold font_size=12 align=center color=#3c3c3c wrap=word";
 				tag: "hilight" "+ font=DejaVuSans-Bold color=#8aabe1 style=shadow shadow_color=#07070730";
 			#else
 			#if ENABLE_TEXT_CLASS == 1
-				base: "font=DejaVuSans-Bold font_size=12 align=center color=#070707 wrap=word text_class=tb_large";
+				base: "font=DejaVuSans-Bold font_size=12 align=center color=#3c3c3c wrap=word text_class=tb_large";
 				tag: "hilight" "+ font=DejaVuSans-Bold color=#8aabe1 style=soft_shadow shadow_color=#07070730 text_class=tb_large_light";
 			#endif
 			#endif

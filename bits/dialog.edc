@@ -26,13 +26,13 @@ group {
 		
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 5 7; 
+					offset: 24 9; 
 				}
 
 				rel2 { 
 					to_y: "e.swallow.buttons"; 
 					relative: 0.0 0.0; 
-					offset: 6 -15; 
+					offset: -1 -9; 
 				}
 			}
 		}
@@ -116,12 +116,12 @@ group {
 		style {
 			name: "dialog";
 			#if ENABLE_TEXT_CLASS == 0
-				base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word"; 
-				tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d";
+				base: "font=DejaVuSans-Bold font_size=12 align=center color=#3c3c3c wrap=word"; 
+				tag:  "hilight" "+ font=DejaVuSans-Bold font_size=11 color=#8aabe1 style=shadow shadow_color=#07070730";
 			#else
 			#if ENABLE_TEXT_CLASS == 1
 				base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word text_class=tb_plain";
-				tag:  "hilight" "+ font=DejaVuSans font_size=11 color=#2d2d2d text_class=tb_light"; 
+				tag:  "hilight" "+ font=DejaVuSans-Bold font_size=11 color=#070707 style=shadow shadow_color=#07070730 text_class=tb_light"; 
 			#endif
 			#endif
 			tag:  "br" "\n";
