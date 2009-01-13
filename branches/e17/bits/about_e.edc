@@ -8,6 +8,25 @@ group {
 		item: "borderless" "1";
 	}
 
+	styles {
+		style {
+			name: "about_enlightenment";
+			#if ENABLE_TEXT_CLASS == 0
+				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
+				tag: "hilight" "+ font=DejaVuSans-Bold";
+				tag: "title" "+ font_size=11 font=DejaVuSans-Bold";
+			#else
+			#if ENABLE_TEXT_CLASS == 1
+				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
+				tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
+				tag: "title" "+ font_size=11 font=DejaVuSans-Bold text_class=tb_big";
+			#endif
+			#endif
+			tag:  "br" "\n"; 
+			tag:  "/title" "- \n \n";
+		}
+	}
+
 	parts {
 		part {
 			name: "base";
@@ -356,7 +375,7 @@ group {
 				}
 
 				text {
-					style: "about_style";
+					style: "about_enlightenment";
 					min: 0 1;
 				}
 			}
@@ -405,7 +424,7 @@ group {
 				}
 
 				text {
-					style: "about_style";
+					style: "about_enlightenment";
 					min: 0 1;
 				}
 			}
@@ -631,10 +650,9 @@ group {
 				color: 255 255 255 255;
 			}
 		}
+	}
 
-
-      }
-      programs {
+	programs {
 		about_dialog_buttons()
 
 		program { 

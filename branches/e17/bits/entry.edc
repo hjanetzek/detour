@@ -211,7 +211,7 @@ group {
 	name: "e/widgets/entry/selection";
 
 	data {
-		item: "on_foreground" "0";
+		item: "on_foreground" "1";
 	}
 
 	parts {

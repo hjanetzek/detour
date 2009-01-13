@@ -24,6 +24,17 @@ program { \
 	target: "e.text.label"; \
 }
 
+styles {
+	style {
+		name: "tlist";
+		base: "font=DejaVuSans font_size=11 align=left color=#3c3c3c wrap=word";
+		tag:  "br" "\n";
+		tag:  "hilight" "+ font=DejaVuSans-Bold";
+		tag:  "title" "+ font_size=12 font=DejaVuSans-Bold style=shadow color=#3c3c3c shadow_color=#aaa8a9";
+		tag:  "/title" "- \n \n";
+	}
+}
+
 group {
 	name: "e/widgets/tlist";
 	
@@ -112,7 +123,7 @@ group {
 				}
 
 				text {
-					style: "tlist_style";
+					style: "tlist";
 					min: 1 1;
 				}
     			}
@@ -225,7 +236,7 @@ group {
 				}
 
 				text {
-					style: "tlist_style";
+					style: "tlist";
 					min: 1 1;
 				}
 			}

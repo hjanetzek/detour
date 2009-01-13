@@ -20,7 +20,7 @@
 
 data {
 	item: "theme/name" 		"detour (symetrika)";
-	item: "theme/description" 	"NO $random colours.";
+	item: "theme/description" 	"Say NO to $random colours()";
 	item: "theme/version"		"0.7.5";
 	item: "theme/author"		"Alberto Castro, Hannes Janetzek, et al.";
 	item: "theme/license"		"BSD Artistic License";
@@ -97,10 +97,6 @@ spectra {
 	}
 }
 
-styles {
-	#include "bits/styles.edc"
-}
-
 collections {
 	#include "bits/about_detour.edc"	/* about this edje */
 	#include "bits/about_e.edc"		/* about enlightenment */
@@ -113,8 +109,8 @@ collections {
 	#include "bits/color_well.edc"		/* color well */
 	#include "bits/configure.edc"		/* configure group */
 	#include "bits/configure_toolbar.edc"	/* configuration toolbar */
-	//~ #include "bits/connman.edc"		/* connection manager */
-	//~ #include "bits/cpufreq.edc"		/* cpu frequency */
+	//~ #include "bits/connman.edc"		/* connection manager module*/
+	//~ #include "bits/cpufreq.edc"		/* cpu frequency module */
 	#include "bits/cslider.edc"		/* cslider group */
 	#include "bits/desklock.edc"		/* desklock group */
 	#include "bits/deskpreview.edc"		/* deskpreview */
@@ -122,7 +118,6 @@ collections {
 	#include "bits/efm_nav.edc"		/* extra: efm navigation module */
 	#include "bits/efm_toolbar.edc"		/* efm toolbar */
 	#include "bits/entry.edc"		/* entry group */
-	#include "bits/error.edc"		/* error dialog */
 	#include "bits/exebuf.edc"		/* executable buffer popup */
 	#include "bits/font_preview.edc"	/* hidden */
 	#include "bits/gadman.edc"		/* gadget manager */
@@ -131,7 +126,7 @@ collections {
 	#include "bits/icons.edc" 		/* icons definitions */
 	#include "bits/ilist.edc"		/* icon list */
 	#include "bits/init.edc"		/* init screen */
-	#include "bits/itask.edc"		/* itask-ng */
+	#include "bits/itask.edc"		/* itask-ng module */
 	#include "bits/label.edc"		/* label definiton group */
 	#include "bits/fileman.edc" 		/* file manager groups */
 	#include "bits/menu.edc" 		/* menu and context menu groups */
@@ -147,9 +142,10 @@ collections {
 	#include "bits/slider.edc"		/* slider group */
 	//~ #include "bits/slidesel.edc"	/* slidesel */
 	#include "bits/spectrum.edc"		/* spectrum */
-	#include "bits/start.edc"		/* start menu */
+	#include "bits/start.edc"		/* start menu module */
 	#include "bits/sys.edc"			/* system actions */
-	#include "bits/tclock.edc"		/* extra: tclock */
+	#include "bits/syscon.edc"		/* system connection group */
+	#include "bits/tclock.edc"		/* extra: tclock module */
 	//~ #include "bits/temperature.edc"	/* temperature module */
 	#include "bits/textblock.edc"		/* textblock definitions group */
 	#include "bits/tlist.edc"		/* tlist groups */
