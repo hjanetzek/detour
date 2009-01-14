@@ -9,6 +9,16 @@
 /bits: 53 items, total: 431.5kb
 /root: 9 items, total: 338.8kb
 
+== Edje recalc ==
+e/widgets/menu/default/icon: e.swallow.content (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/configure/main: e.swallow.button (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/entry: e.swallow.text (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/cslider: e.dragable.cursor (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/border/default/resize: icon (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/slider_vertical: e.text.label (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/border/default/move: icon (has a non-fixed part, add: fixed: 1 1;)
+e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
+
 == Bugfix ==
 tclock: use mono fonts where possible
 desklock: center dialog
