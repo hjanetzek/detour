@@ -26,8 +26,8 @@ part { \
 	description { \
 		state: "default" 0.0; \
 		min: 24 24; \
-		aspect: 1.0 1.0; \
-		aspect_preference: BOTH; \
+		max: 24 24; \
+		fixed: 1 1; \
 		rel1 { \
 			to: "background"; \
 			relative: 0.0 0.5; \

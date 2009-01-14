@@ -236,7 +236,7 @@ group {
 				state: "default" 0.0;
 				min: 11 9;
 				max: 11 9;
-				visible: 1;
+				fixed: 1 1;
 
 				rel1 { 
 					to: "e.swallow.content"; 
@@ -260,7 +260,6 @@ group {
 				inherit: "default" 0.0;
 				min: 9 1;
 				max: 9 1;
-				visible: 1;
 
 				image {
 					normal: "images/spectrum_im3.png";
