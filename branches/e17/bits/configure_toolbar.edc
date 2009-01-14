@@ -224,7 +224,7 @@ group {
 
 				image {
 					normal: "images/fileman_im4.png";
-					border: 5 5 5 7;
+					border: 9 9 8 9;
 				} 
 			}
 
