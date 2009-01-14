@@ -200,7 +200,7 @@ group {
 	
 			description {
 				state: "default" 0.0;
-				color: 62 98 170 255;
+				color: 123 155 203 255;
 			}
 		}
 
@@ -289,7 +289,7 @@ group {
 	
 			description {
 				state: "default" 0.0;
-				color: 186 205 237 255;
+				color: 255 148 0 255;
 			}
 		}
 
