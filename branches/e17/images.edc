@@ -55,7 +55,6 @@ image: "images/deskpreview_im0.png" COMP; /* background */
 //~ decoration
 image: "images/decoration_im0.png" COMP; /* regular dot */
 image: "images/decoration_im1.png" COMP; /* wide dot */
-image: "images/decoration_im2.png" COMP; /* window geometry */
 
 //~ e17 logo
 image: "images/e17_logo.png" COMP; /* e17 logo */
