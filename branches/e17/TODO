@@ -23,9 +23,8 @@ init.edc: check button
 -about_e.edc: ugly design, use [TABS]
 
 == Improve ==
-desktop/efm window overlay: typebuffer
+desktop/efm window overlay: typebuffer could use a "cursor" decoration
 Configure panel: icons / Windows
--macros/win_geometry.edc: bg
 -syscon.edc: "e/widgets/syscon/item/button"
 -transitions: where the graphics?
 -entry: focus
@@ -46,6 +45,7 @@ Configure panel: icons / Windows
 == Compile ==
 make two versions of detour:
 -one that includes DejaVu family and the other Bistream Vera
+-use system wide fonts?
 
 == yell about ==
 Gradient dialog and Online dialog not inheriting "button" icon.
