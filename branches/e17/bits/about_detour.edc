@@ -18,7 +18,8 @@ group {
 			tag: "center" "+ align=middle";
 			tag: "subliminal" "+ color=#07070710";
 			tag: "underline" "+ underline=on underline_color=#3c3c3c60 font_size=10 color=#3c3c3c60";
-			tag: "lighter" "+ color=#c4c4b6";
+			tag: "lighter" "+ color=#07070780";
+			tag:  "br" "\n"; 
 		}
 	}
 
@@ -295,8 +296,8 @@ group {
 
 			description {
 				state: "default" 0.0;
-				min: 172 108;
-				max: 172 108;
+				min: 168 69;
+				max: 168 69;
 				fixed: 1 1;
 				align: 0.5 0.5;
 
@@ -338,7 +339,7 @@ group {
 				rel2 { 
 					to: "logo"; 
 					relative: 0.5 1.0; 
-					offset: -1 16; 
+					offset: -1 32; 
 				}
 
 				text {
@@ -379,7 +380,7 @@ group {
 				rel2 { 
 					to: "project_name"; 
 					relative: 0.5 1.0; 
-					offset: -1 10; 
+					offset: -1 -1; 
 				}
 
 				text {
@@ -471,7 +472,7 @@ group {
 
 				text {
 					style: "about_detour";
-text: "Detour is designed and developed by Alberto Castro (<lighter>boykot tokyo</lighter>) with help from Hannes Janetzek (<lighter>jeffdameth</lighter>), et al.<\n><\n><mono>Detour</mono> is licensed under the BSD Artistic License.<-><subliminal>Tricks of the Guild. [2003-2009]</subliminal>";
+					text: "Detour is designed and developed by Alberto Castro -<lighter>boykot tokyo</lighter>- with help from Hannes Janetzek -<lighter>jeffdameth</lighter>-, et al.<\n><\n>Detour is licensed under the BSD Artistic License.<br><br>Enjoy! <-><subliminal>Tricks of the Guild. [2003-2009]</subliminal>";
 				}
     			}
 		}

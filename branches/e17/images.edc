@@ -55,6 +55,7 @@ image: "images/deskpreview_im0.png" COMP; /* background */
 //~ decoration
 image: "images/decoration_im0.png" COMP; /* regular dot */
 image: "images/decoration_im1.png" COMP; /* wide dot */
+image: "images/decoration_im2.png" COMP; /* wallpaper decoration */
 
 //~ e17 logo
 image: "images/e17_logo.png" COMP; /* e17 logo */
@@ -66,14 +67,15 @@ image: "images/exebuf_im0.png" COMP; /* hilite */
 image: "images/ibar_im0.png" COMP; /* label */
 image: "images/ibar_im1.png" COMP; /* drop */
 image: "images/ibar_im2.png" COMP; /* alternate label */
+image: "images/ibar_im3.png" COMP; /* typebuffer */
 
 //~ itask
 image: "images/itask_im0.png" COMP; /* bottom orientation */
 image: "images/itask_im1.png" COMP; /* top orientation */
 image: "images/itask_im2.png" COMP; /* left orientation */
 image: "images/itask_im3.png" COMP; /* right orientation */
-image: "images/itask_im4.png" COMP;  /* label overlay */
-image: "images/itask_im5.png" COMP;  /* label overlay decoration */
+image: "images/itask_im4.png" COMP; /* label overlay */
+image: "images/itask_im5.png" COMP; /* label overlay decoration */
 
 //~ gadman
 image: "images/gadman_im0.png" COMP; /* background */
@@ -121,31 +123,6 @@ image: "images/cslider_im0.png" COMP; /* base */
 image: "images/cslider_im1.png" COMP; /* left */
 image: "images/cslider_im2.png" COMP; /* right */
 
-//~ window border menu (details)
-image: "images/button_detail_basic.png" COMP; 			/* empty */
-image: "images/button_detail_borderless.png" COMP; 		/* empty */
-image: "images/button_detail_close.png" COMP;
-image: "images/button_detail_fullscreen.png" COMP;
-image: "images/button_detail_kill.png" COMP;
-image: "images/button_detail_locks.png" COMP; 			/* empty */
-image: "images/button_detail_locks_user.png" COMP; 		/* empty */
-image: "images/button_detail_locks_application.png" COMP; 	/* empty */
-image: "images/button_detail_maximize.png" COMP;
-image: "images/button_detail_minimize.png" COMP;
-image: "images/button_detail_properties.png" COMP;
-image: "images/button_detail_remember.png" COMP; 		/* empty */
-image: "images/button_detail_sendto.png" COMP; 			/* empty */
-image: "images/button_detail_shade.png" COMP;
-image: "images/button_detail_skip.png" COMP; 			/* empty */
-image: "images/button_detail_skip_pager.png" COMP; 		/* empty */
-image: "images/button_detail_skip_taskbar.png" COMP; 		/* empty */
-image: "images/button_detail_skip_winlist.png" COMP; 		/* empty */
-image: "images/button_detail_stack_below.png" COMP; 		/* empty */
-image: "images/button_detail_stacking.png" COMP; 		/* empty */
-image: "images/button_detail_stack_normal.png" COMP; 		/* empty */
-image: "images/button_detail_stack_on_top.png" COMP; 		/* empty */
-image: "images/button_detail_stick.png" COMP;
-
 //~ border: default border style
 image: "images/window-border_im0.png" COMP; 	/* top left corner */
 image: "images/window-border_im1.png" COMP; 	/* top center */
@@ -185,6 +162,31 @@ image: "images/window-border_bt3.png" COMP; /* maximize */
 image: "images/window-border_bt4.png" COMP; /* close */
 image: "images/window-border_bt5.png" COMP; /* base for border menu */
 
+//~ window border menu (details)
+image: "images/button_detail_basic.png" COMP; 			/* empty */
+image: "images/button_detail_borderless.png" COMP; 		/* empty */
+image: "images/button_detail_close.png" COMP;
+image: "images/button_detail_fullscreen.png" COMP;
+image: "images/button_detail_kill.png" COMP;
+image: "images/button_detail_locks.png" COMP; 			/* empty */
+image: "images/button_detail_locks_user.png" COMP; 		/* empty */
+image: "images/button_detail_locks_application.png" COMP; 	/* empty */
+image: "images/button_detail_maximize.png" COMP;
+image: "images/button_detail_minimize.png" COMP;
+image: "images/button_detail_properties.png" COMP;
+image: "images/button_detail_remember.png" COMP; 		/* empty */
+image: "images/button_detail_sendto.png" COMP; 			/* empty */
+image: "images/button_detail_shade.png" COMP;
+image: "images/button_detail_skip.png" COMP; 			/* empty */
+image: "images/button_detail_skip_pager.png" COMP; 		/* empty */
+image: "images/button_detail_skip_taskbar.png" COMP; 		/* empty */
+image: "images/button_detail_skip_winlist.png" COMP; 		/* empty */
+image: "images/button_detail_stack_below.png" COMP; 		/* empty */
+image: "images/button_detail_stacking.png" COMP; 		/* empty */
+image: "images/button_detail_stack_normal.png" COMP; 		/* empty */
+image: "images/button_detail_stack_on_top.png" COMP; 		/* empty */
+image: "images/button_detail_stick.png" COMP;
+
 //~ pager
 image: "images/pager_im0.png" COMP; /* focus */
 image: "images/pager_im1.png" COMP; /* icon also used by winlist */
@@ -193,7 +195,7 @@ image: "images/pager_im3.png" COMP; /* right lid */
 image: "images/pager_im4.png" COMP; /* icon minimized: used by winlist */
 image: "images/pager_im5.png" COMP; /* icon shaded: used by winlist */
 
-//~ about_theme
+//~ about_detour
 image: "images/logo.png" COMP; /* detour logo */
 
 //~ desklock
@@ -217,7 +219,6 @@ image: "images/fileman_im5.png" COMP; /* main window: top shadow */
 image: "images/fileman_im6.png" COMP; /* main window: bottom shadow */
 image: "images/fileman_im7.png" COMP; /* toolbar image top */
 image: "images/fileman_im8.png" COMP; /* toolbar image bottom */
-image: "images/fileman_im9.png" COMP; /* efm_window icon label */
 
 //~ module: efm_navigation
 image: "images/efmnav_bt0.png" COMP; 	/* back button base */
@@ -281,7 +282,7 @@ image: "images/scrollframe_im5.png" COMP; /* scrollframe: left box */
 image: "images/scrollframe_im6.png" COMP; /* scrollframe: right box */
 
 //~ clock
-image: "clock/clock_bg.png" COMP;
+image: "clock/clock_bg.png" COMP;		/* base image */
 image: "clock/hour.cursor.00.png" COMP;
 image: "clock/hour.cursor.01.png" COMP;
 image: "clock/hour.cursor.02.png" COMP;
@@ -471,8 +472,4 @@ image: "images/temperature-40.png" COMP;
 image: "images/temperature-60.png" COMP;
 image: "images/temperature-80.png" COMP;
 image: "images/temperature-100.png" COMP;
-
-//~ resize
-
-//~ error
 
