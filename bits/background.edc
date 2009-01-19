@@ -79,6 +79,34 @@ group {
 			}
 		}
 
+		part {
+			name: "decoration";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 36 25;
+				max: 36 25;
+				fixed: 1 1;
+				align: 1.0 1.0;
+
+				rel1 {
+					relative: 1.0 1.0;
+					offset: 0 0;
+				}		        
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: 19 -68;
+				}		       
+
+				image {
+					normal: "images/decoration_im2.png";
+				}
+			}
+		}
+
 		background()
 	}
 
