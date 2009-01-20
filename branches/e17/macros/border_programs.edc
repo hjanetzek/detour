@@ -6,8 +6,6 @@ program { \
 	source: "e"; \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 0.5; \
-	target: "inactive.shadow"; \
-	target: "e.text.title"; \
 	target: "button-min"; \
 	target: "button-max"; \
 	target: "button-close"; \
@@ -18,8 +16,6 @@ program { \
 	source: "e"; \
 	action: STATE_SET "default" 0.1; \
 	transition: DECELERATE 0.5; \
-	target: "inactive.shadow"; \
-	target: "e.text.title"; \
 	target: "button-min"; \
 	target: "button-max"; \
 	target: "button-close"; \
