@@ -39,7 +39,7 @@ group {
 		part {
 			name: "background";
 			type: RECT;
-			mouse_events: 0;
+			mouse_events: 1;
 
 			description {
 				state: "default" 0.0;
@@ -84,22 +84,18 @@ group {
 			type: IMAGE;
 			mouse_events: 0;
 
+			dragable {
+				x: 0 0 0;
+				y: -1 1 0;
+				confine: "confine";
+			}
+
 			description {
 				state: "default" 0.0;
-				min: 36 25;
-				max: 36 25;
+				min: 17 25;
+				max: 17 25;
 				fixed: 1 1;
-				align: 1.0 1.0;
-
-				rel1 {
-					relative: 1.0 1.0;
-					offset: 0 0;
-				}		        
-
-				rel2 {
-					relative: 1.0 1.0;
-					offset: 19 -68;
-				}		       
+				align: 1.0 1.0;	       
 
 				image {
 					normal: "images/decoration_im2.png";
@@ -108,6 +104,27 @@ group {
 		}
 
 		background()
+
+		part {
+			name: "confine";
+			type: RECT;
+			mouse_events: 1;
+
+			description {
+				state: "default" 0.0;
+				color: 0 0 0 0;
+
+				rel1 {
+					relative: 1.0 0.0;
+					offset: -17 0;
+				}		        
+
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -1 -1;
+				}
+			}
+		}
 	}
 
 	programs {
@@ -119,6 +136,14 @@ group {
 			transition: LINEAR 0.5; 
 			in: 1.25 0.0;
 			target:  "background(overlay)";
+		}
+
+		program {
+			name: "slide";
+			signal: "mouse,in";
+			source: "background";
+			action: DRAG_VAL_PAGE 0.0 1.0;
+			target: "decoration";
 		}
 	}
 }
