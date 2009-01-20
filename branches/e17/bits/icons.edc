@@ -4,7 +4,7 @@
 # endif
 #define ICON(GROUP_NAME,IMAGE_NAME) \
 group { \
-	name: GROUP_NAME; \
+	name: "e/icons/enlightenment/"GROUP_NAME; \
 	max: 256 256; \
 	parts { \
 		part { \
@@ -24,101 +24,126 @@ group { \
     	} \
 }
 
-/*
- * Enlightenment Settings icons.
- */
+/* Enlightenment Settings icons */
 
-ICON("e/icons/enlightenment/performance", "icons/preferences-system.png")
-ICON("e/icons/enlightenment/focus", "icons/window-new.png")
-ICON("e/icons/enlightenment/screen_resolution", "icons/display-size.png")
-ICON("e/icons/enlightenment/applications", "icons/applications-office.png")
-ICON("e/icons/enlightenment/directories", "icons/system-search.png")
-ICON("e/icons/enlightenment/reset", "icons/gnome-session-reboot.png")
-ICON("e/icons/enlightenment/exit", "icons/gnome-session-logout.png")
-ICON("e/icons/enlightenment/logout", "icons/gnome-session-logout.png")
-ICON("e/icons/enlightenment/halt", "icons/gnome-session-halt.png")
-ICON("e/icons/enlightenment/reboot", "icons/gnome-session-reboot.png")
-ICON("e/icons/enlightenment/suspend", "icons/gnome-session-suspend.png")
-ICON("e/icons/enlightenment/hibernate", "icons/gnome-session-hibernate.png")
-ICON("e/icons/enlightenment/window_manipulation", "icons/wmtweaks.png")
-ICON("e/icons/enlightenment/winlist", "icons/preferences-windows-list.png")
-ICON("e/icons/enlightenment/themes", "icons/preferences-desktop-theme.png")
-ICON("e/icons/enlightenment/windows", "icons/preferences-system-windows.png")
-ICON("e/icons/enlightenment/lost_windows", "icons/gnome-lost-window-menu.png")
-ICON("e/icons/enlightenment/modules", "icons/applications-other.png")
-ICON("e/icons/enlightenment/favorites", "icons/emblem-favorite.png")
-ICON("e/icons/enlightenment/desktops", "icons/workspace-switcher.png")
-ICON("e/icons/enlightenment/intl", "icons/preferences-desktop-locale.png")
-ICON("e/icons/enlightenment/colors", "icons/view-colors.png")
-ICON("e/icons/enlightenment/configuration", "icons/preferences-desktop.png")
-ICON("e/icons/enlightenment/fileman", "icons/system-file-manager.png")
-ICON("e/icons/enlightenment/unknown", "icons/gnome-lost-window-menu.png")
-ICON("e/icons/enlightenment/mouse", "icons/input-mouse.png")
-ICON("e/icons/enlightenment/keys", "icons/preferences-desktop-keyboard-shortcuts.png")
-ICON("e/icons/enlightenment/shelf", "icons/gnome-panel-window-list.png")
-ICON("e/icons/enlightenment/fonts", "icons/preferences-desktop-font.png")
-ICON("e/icons/enlightenment/background", "icons/preferences-desktop-wallpaper.png")
-ICON("e/icons/enlightenment/icon_theme", "icons/applications-accessories.png")
-ICON("e/icons/enlightenment/regenerate_menus", "icons/view-refresh.png")
-ICON("e/icons/enlightenment/mouse_clean", "icons/gnome-dev-mouse-optical.png")
-ICON("e/icons/enlightenment/screen_setup", "icons/video-display.png")
-ICON("e/icons/enlightenment/desklock_menu", "icons/system-lock-screen.png")
-ICON("e/icons/enlightenment/desklock", "icons/system-lock-screen.png")
-ICON("e/icons/enlightenment/appearance", "icons/applications-graphics.png")
-ICON("e/icons/enlightenment/file_icons", "icons/text-x-generic.png")
-ICON("e/icons/enlightenment/imc", "icons/preferences-desktop-peripherals.png")
-ICON("e/icons/enlightenment/screensaver", "icons/preferences-desktop-screensaver.png")
-ICON("e/icons/enlightenment/power_management", "icons/power-management.png")
-ICON("e/icons/enlightenment/menus", "icons/alacarte.png")
-ICON("e/icons/enlightenment/system", "icons/preferences-system-session.png")
-ICON("e/icons/enlightenment/menu_settings", "icons/alacarte.png")
-ICON("e/icons/enlightenment/advanced", "icons/gnome-devel.png")
-ICON("e/icons/enlightenment/transitions", "icons/image-loading.png")
-ICON("e/icons/enlightenment/ibar_applications", "icons/applications-other.png")
-ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
-ICON("e/icons/enlightenment/restart_applications", "icons/application-x-executable.png")
-ICON("e/icons/enlightenment/startup", "icons/system-shutdown.png")
-ICON("e/icons/enlightenment/behavior", "icons/gnome-dev-keyboard-mouse.png")
-ICON("e/icons/enlightenment/extensions", "icons/gnome-run.png")
-ICON("e/icons/enlightenment/run", "icons/applications-system.png")
-ICON("e/icons/enlightenment/window_remembers", "icons/window-new.png") /* big fat fixme */
-ICON("e/icons/enlightenment/pager", "icons/workspace-switcher.png")
-ICON("e/icons/enlightenment/mixer", "icons/audio-card.png")
-ICON("e/icons/enlightenment/scale", "icons/font-x-generic.png")
+ICON("advanced", "icons/gnome-devel.png")
+ICON("appearance", "icons/applications-graphics.png")
+ICON("applications", "icons/applications-office.png")
+ICON("background", "icons/preferences-desktop-wallpaper.png")
+ICON("behavior", "icons/input-gaming.png")
+ICON("colors", "icons/view-colors.png") /* improve */
+ICON("configuration", "icons/preferences-desktop.png")
+ICON("desklock", "icons/system-lock-screen.png")
+ICON("desklock_menu", "icons/system-lock-screen.png")
+ICON("desktops", "icons/workspace-switcher.png")
+ICON("directories", "icons/system-search.png")
+ICON("engine", "icons/emblem-system.png")
+ICON("exit", "icons/gnome-session-logout.png")
+ICON("extensions", "icons/gnome-run.png")
+ICON("favorites", "icons/emblem-favorite.png")
+ICON("file_icons", "icons/text-x-generic.png")
+ICON("fileman", "icons/system-file-manager.png")
+ICON("focus", "icons/window-new.png")
+ICON("fonts", "icons/preferences-desktop-font.png")
+ICON("halt", "icons/gnome-session-halt.png")
+ICON("hibernate", "icons/gnome-session-hibernate.png")
+ICON("ibar_applications", "icons/applications-other.png")
+ICON("icon_theme", "icons/applications-accessories.png")
+ICON("imc", "icons/preferences-desktop-locale.png")
+ICON("intl", "icons/preferences-desktop-language.png")
+ICON("keys", "icons/preferences-desktop-keyboard-shortcuts.png")
+ICON("logout", "icons/gnome-session-logout.png")
+ICON("lost_windows", "icons/gnome-lost-window-menu.png")
+ICON("menus", "icons/alacarte.png")
+ICON("menu_settings", "icons/alacarte.png")
+ICON("mixer", "icons/audio-card.png")
+ICON("modules", "icons/applications-other.png")
+ICON("mouse", "icons/input-mouse.png")
+ICON("mouse_clean", "icons/gnome-dev-mouse-optical.png")
+ICON("pager", "icons/workspace-switcher.png")
+ICON("performance", "icons/preferences-system.png")
+ICON("power_management", "icons/battery.png")
+ICON("profiles", "icons/system-users.png")
+ICON("reboot", "icons/gnome-session-reboot.png")
+ICON("regenerate_menus", "icons/view-refresh.png")
+ICON("reset", "icons/gnome-session-reboot.png")
+ICON("restart_applications", "icons/application-x-executable.png")
+ICON("run", "icons/applications-system.png")
+ICON("scale", "icons/font-x-generic.png")
+ICON("screensaver", "icons/preferences-desktop-screensaver.png")
+ICON("screen_resolution", "icons/display-size.png")
+ICON("screen_setup", "icons/video-display.png")
+ICON("settings", "icons/preferences-desktop.png")
+ICON("shelf", "icons/gnome-panel-window-list.png")
+ICON("suspend", "icons/gnome-session-suspend.png")
+ICON("startup", "icons/system-shutdown.png")
+ICON("startup_applications", "icons/applications-other2.png") /* improve */
+ICON("system", "icons/preferences-system-session.png")
+ICON("themes", "icons/preferences-desktop-theme.png")
+ICON("transitions", "icons/image-loading.png")
+ICON("unknown", "icons/gnome-lost-window-menu.png")
+ICON("windows", "icons/preferences-system-windows.png")
+ICON("window_geometry", "images/button_detail_basic.png") /* empty */
+ICON("window_manipulation", "icons/wmtweaks.png")
+ICON("window_maximize", "images/button_detail_basic.png") /* empty */
+ICON("window_remembers", "icons/window-remembers.png")
+ICON("window_stacking" ,"icons/window-stacking.png")
+ICON("winlist", "icons/preferences-windows-list.png")
 
-//ICON("e/icons/enlightenment/engine","")
-//ICON("e/icons/enlightenment/profiles","")
-//ICON("e/icons/enlightenment/autoscroll","")
-//ICON("e/icons/enlightenment/showhide","")
-//ICON("e/icons/enlightenment/toolbar","")
-//ICON("e/icons/enlightenment/settings","")
+/* missing icons */
 
-/*
- * Enlightenment wallpaper options icons.
- */
+ICON("autoscroll", "images/button_detail_basic.png") /* empty */
+ICON("showhide", "images/button_detail_basic.png") /* empty */
+ICON("toolbar", "images/button_detail_basic.png") /* empty */
 
-ICON("e/icons/enlightenment/website", "icons/internet-web-browser.png")
-ICON("e/icons/enlightenment/gradient", "icons/xfce4-workspaces.png")
-ICON("e/icons/enlightenment/picture", "icons/preferences-desktop-wallpaper-16.png")
-//ICON("e/icons/enlightenment/e", "logo_white_128.png")
-//ICON("enlightenment/e", "logo_white_128.png")
-//ICON("enlightenment/about", "logo_black_128.png")
-//ICON("enlightenment/check",".png")
+/* Enlightenment wallpaper options icons */
 
-/*
- * Enlightenment Desktop Icons.
- */
+ICON("gradient", "icons/xfce4-workspaces.png")
+ICON("picture", "icons/preferences-desktop-wallpaper-16.png")
+ICON("website", "icons/internet-web-browser.png")
 
-ICON("e/icons/drive-harddisk", "icons/drive-harddisk.png")
-ICON("e/icons/drive-optical", "icons/media-optical.png")
-ICON("e/icons/media-flash", "icons/media-flash.png")
+/* Enlightenment logo icons */
+
+ICON("about", "images/e17_logo.png")
+ICON("e", "images/e17_logo.png")
 
 # ifdef ICON
 #  undef ICON
 # endif
 #define ICON(GROUP_NAME,IMAGE_NAME) \
 group { \
-	name: GROUP_NAME; \
+	name: "e/icons/"GROUP_NAME; \
+	max: 256 256; \
+	parts { \
+		part { \
+			name: "icon"; \
+			type: IMAGE; \
+			mouse_events: 0; \
+			description { \
+				state: "default" 0.0; \
+				aspect: 1.0 1.0; \
+				aspect_preference: BOTH; \
+				max: 256 256; \
+				image { \
+					normal: IMAGE_NAME; \
+				} \
+	    		} \
+   		} \
+    	} \
+}
+
+/* Enlightenment Desktop Icons */
+
+ICON("media-flash", "icons/media-flash.png")
+ICON("drive-harddisk", "icons/drive-harddisk.png")
+ICON("drive-optical", "icons/media-optical.png")
+
+# ifdef ICON
+#  undef ICON
+# endif
+#define ICON(GROUP_NAME,IMAGE_NAME) \
+group { \
+	name: "e/icons/enlightenment/"GROUP_NAME; \
 	parts { \
 		part { \
 			name: "icon"; \
@@ -137,46 +162,42 @@ group { \
 	} \
 }
 
-/*
- * Shelf icons: orientation.
- */
+/* Shelf icons: orientation */
 
-ICON("e/icons/enlightenment/shelf_position_bottom", "icons/icon_shelf_bottom.png")
-ICON("e/icons/enlightenment/shelf_position_bottom_left", "icons/icon_shelf_bottom_left.png")
-ICON("e/icons/enlightenment/shelf_position_bottom_right", "icons/icon_shelf_bottom_right.png")
-ICON("e/icons/enlightenment/shelf_position_top", "icons/icon_shelf_top.png")
-ICON("e/icons/enlightenment/shelf_position_top_left", "icons/icon_shelf_top_left.png")
-ICON("e/icons/enlightenment/shelf_position_top_right", "icons/icon_shelf_top_right.png")
-ICON("e/icons/enlightenment/shelf_position_left", "icons/icon_shelf_left.png")
-ICON("e/icons/enlightenment/shelf_position_left_top", "icons/icon_shelf_left_top.png")
-ICON("e/icons/enlightenment/shelf_position_left_bottom", "icons/icon_shelf_left_bottom.png")
-ICON("e/icons/enlightenment/shelf_position_right", "icons/icon_shelf_right.png")
-ICON("e/icons/enlightenment/shelf_position_right_top", "icons/icon_shelf_right_top.png")
-ICON("e/icons/enlightenment/shelf_position_right_bottom", "icons/icon_shelf_right_bottom.png")
-ICON("e/icons/enlightenment/shelf_bottom_desk", "icons/icon_shelf_bottom_desk.png")
-ICON("e/icons/enlightenment/shelf_custom", "icons/icon_shelf_custom.png")
-ICON("e/icons/enlightenment/shelf_dock", "icons/icon_shelf_dock.png")
-ICON("e/icons/enlightenment/shelf_menu_bar", "icons/icon_shelf_menu_bar.png")
-ICON("e/icons/enlightenment/shelf_panel", "icons/icon_shelf_panel.png")
-ICON("e/icons/enlightenment/shelf_top_desk", "icons/icon_shelf_top_desk.png")
+ICON("shelf_bottom_desk", "icons/icon_shelf_bottom_desk.png")
+ICON("shelf_custom", "icons/icon_shelf_custom.png")
+ICON("shelf_dock", "icons/icon_shelf_dock.png")
+ICON("shelf_menu_bar", "icons/icon_shelf_menu_bar.png")
+ICON("shelf_panel", "icons/icon_shelf_panel.png")
+ICON("shelf_top_desk", "icons/icon_shelf_top_desk.png")
+ICON("shelf_position_bottom", "icons/icon_shelf_bottom.png")
+ICON("shelf_position_bottom_left", "icons/icon_shelf_bottom_left.png")
+ICON("shelf_position_bottom_right", "icons/icon_shelf_bottom_right.png")
+ICON("shelf_position_top", "icons/icon_shelf_top.png")
+ICON("shelf_position_top_left", "icons/icon_shelf_top_left.png")
+ICON("shelf_position_top_right", "icons/icon_shelf_top_right.png")
+ICON("shelf_position_left", "icons/icon_shelf_left.png")
+ICON("shelf_position_left_top", "icons/icon_shelf_left_top.png")
+ICON("shelf_position_left_bottom", "icons/icon_shelf_left_bottom.png")
+ICON("shelf_position_right", "icons/icon_shelf_right.png")
+ICON("shelf_position_right_top", "icons/icon_shelf_right_top.png")
+ICON("shelf_position_right_bottom", "icons/icon_shelf_right_bottom.png")
 
-/*
- * Screen rotation and mirroring icons.
- */
+/* Screen rotation and mirroring icons */
 
-ICON("e/icons/enlightenment/screen_around", "icons/screen_around.png")
-ICON("e/icons/enlightenment/screen_left", "icons/screen_left.png")
-ICON("e/icons/enlightenment/screen_right", "icons/screen_right.png")
-ICON("e/icons/enlightenment/screen_vflip", "icons/screen_vflip.png")
-ICON("e/icons/enlightenment/screen_hflip", "icons/screen_hflip.png")
-ICON("e/icons/enlightenment/screen_normal", "icons/screen_normal.png")
+ICON("screen_normal", "icons/screen_normal.png")
+ICON("screen_around", "icons/screen_around.png")
+ICON("screen_left", "icons/screen_left.png")
+ICON("screen_right", "icons/screen_right.png")
+ICON("screen_vflip", "icons/screen_vflip.png")
+ICON("screen_hflip", "icons/screen_hflip.png")
 
 # ifdef ICON
 #  undef ICON
 # endif
 #define ICON(GROUP_NAME,SIZE,IMAGE_NAME) \
 group { \
-	name: GROUP_NAME; \
+	name: "e/icons/widget/"GROUP_NAME; \
 	parts { \
 		part { \
 			name: "icon"; \
@@ -195,29 +216,30 @@ group { \
 	} \
 }
 
-/*
- * Widget icons: icons that go on top of widgets.
- */
+/* Widget icons: icons that go on top of widgets */
 
-ICON("e/icons/widget/new_dialog", 18 15, "icons/button-forward.png")
-ICON("e/icons/widget/up_arrow", 14 17, "icons/button-up.png")
-ICON("e/icons/widget/down_arrow", 14 17, "icons/button-down.png")
-ICON("e/icons/widget/up_dir", 14 17, "icons/button-up.png")
-ICON("e/icons/widget/del", 16 16, "icons/list-remove.png")
-ICON("e/icons/widget/new", 16 16, "icons/document-new.png")
-ICON("e/icons/widget/add", 16 16, "icons/list-add.png")
-ICON("e/icons/widget/add_fav", 16 16, "icons/emblem-favorite-16.png")
-ICON("e/icons/widget/config", 16 16, "icons/document-properties.png")
-ICON("e/icons/widget/swap", 16 16, "icons/mail-send-receive.png")
-ICON("e/icons/widget/resize", 16 16, "icons/go-first.png")
-//ICON("e/icons/enlightenment/about", 16 16, "icons/applications-system-16.png")
+ICON("add", 16 16, "icons/list-add.png")
+ICON("add_fav", 16 16, "icons/emblem-favorite-16.png")
+ICON("config", 16 16, "icons/document-properties.png")
+ICON("del", 16 16, "icons/list-remove.png")
+ICON("down_arrow", 14 17, "icons/button-down.png")
+ICON("new", 16 16, "icons/document-new.png")
+ICON("new_dialog", 18 15, "icons/button-forward.png")
+ICON("up_arrow", 14 17, "icons/button-up.png")
+ICON("up_dir", 14 17, "icons/button-up.png")
+ICON("resize", 16 16, "icons/go-first.png")
+ICON("swap", 16 16, "icons/mail-send-receive.png")
+
+/* ?? */
+
+ICON("check", 18 15, "images/button_detail_basic.png") /* done on purpose to see it */
 
 # ifdef ICON
 #  undef ICON
 # endif
 #define ICON(GROUP_NAME,IMAGE_NAME) \
 group { \
-	name: GROUP_NAME; \
+	name: "e/icons/enlightenment/"GROUP_NAME; \
 	min: 24 24; \
 	max: 24 24; \
 	parts { \
@@ -240,19 +262,15 @@ group { \
 	} \
 }
 
-/*
- * Wallpaper fill and stretch icons.
- */
+/* Wallpaper fill and stretch icons */
 
-ICON("e/icons/enlightenment/wallpaper_stretch", "icons/wallscreen_im1.png")
-ICON("e/icons/enlightenment/wallpaper_center", "icons/wallscreen_im2.png")
-ICON("e/icons/enlightenment/wallpaper_tile", "icons/wallscreen_im4.png")
-ICON("e/icons/enlightenment/wallpaper_scale_aspect_in", "icons/wallscreen_im5.png")
-ICON("e/icons/enlightenment/wallpaper_scale_aspect_out", "icons/wallscreen_im3.png")
+ICON("wallpaper_center", "icons/wallscreen_im2.png")
+ICON("wallpaper_scale_aspect_in", "icons/wallscreen_im5.png")
+ICON("wallpaper_scale_aspect_out", "icons/wallscreen_im3.png")
+ICON("wallpaper_stretch", "icons/wallscreen_im1.png")
+ICON("wallpaper_tile", "icons/wallscreen_im4.png")
 
-/*
- * Gradient background and definitions.
- */
+/* Gradient background and definitions*/
 
 group {
 	name: "e/icons/enlightenment/gradient_h";

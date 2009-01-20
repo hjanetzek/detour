@@ -4,14 +4,14 @@ image: "icons/document-new.png" COMP;
 image: "icons/document-open.png" COMP;
 image: "icons/document-properties.png" COMP;
 image: "icons/edit-copy.png" COMP;
+image: "icons/edit-cut.png" COMP;
+image: "icons/edit-delete.png" COMP;
+image: "icons/edit-find.png" COMP;
+image: "icons/edit-find-replace.png" COMP;
 image: "icons/edit-paste.png" COMP;
 image: "icons/filesaveas.png" COMP;
 image: "icons/folder-new.png" COMP;
-image: "icons/edit-cut.png" COMP;
-image: "icons/edit-delete.png" COMP;
 image: "icons/view-refresh.png" COMP;
-image: "icons/edit-find-replace.png" COMP;
-image: "icons/edit-find.png" COMP;
 
 //~ navigation buttons
 image: "icons/button-up.png" COMP;
@@ -27,13 +27,13 @@ image: "icons/wallscreen_im4.png" COMP; /* tile */
 image: "icons/wallscreen_im5.png" COMP; /* within */
 
 //~ battery
+image: "icons/battery-charge.png" COMP;
 image: "icons/battery-0.png" COMP;
 image: "icons/battery-20.png" COMP;
 image: "icons/battery-40.png" COMP;
 image: "icons/battery-60.png" COMP;
 image: "icons/battery-80.png" COMP;
 image: "icons/battery-100.png" COMP;
-image: "icons/battery-charge.png" COMP;
 
 //~ fileman mime-types
 image: "icons/gnome-mime-application-pdf.png" COMP; //~ pdf
@@ -46,7 +46,6 @@ image: "icons/folder_tar.png" COMP; //~ bz2, tar, gz, zip, deb
 image: "icons/font-x-generic.png" COMP; //~ pcf, ttf, bdf
 image: "icons/text-html.png" COMP; //~ html, css,
 image: "icons/video-x-generic.png" COMP; //~ mpeg, avi
-
 image: "icons/folder.png" COMP;
 image: "icons/folder-open.png" COMP;
 image: "icons/text-x-generic.png" COMP;
@@ -93,7 +92,8 @@ image: "icons/preferences-desktop-keyboard-shortcuts.png" COMP;
 image: "icons/preferences-desktop-font.png" COMP;
 image: "icons/preferences-desktop-wallpaper.png" COMP;
 image: "icons/preferences-desktop-theme.png" COMP;
-image: "icons/preferences-desktop-locale.png" COMP;
+image: "icons/preferences-desktop-locale.png" COMP; /* imc */
+image: "icons/preferences-desktop-language.png" COMP; /* intl */
 image: "icons/applications-system.png" COMP;
 image: "icons/applications-other.png" COMP;
 image: "icons/applications-accessories.png" COMP;
@@ -108,7 +108,6 @@ image: "icons/input-mouse.png" COMP;
 image: "icons/applications-graphics.png" COMP;
 image: "icons/application-x-executable.png" COMP;
 image: "icons/text-x-generic.png" COMP;
-image: "icons/preferences-desktop-peripherals.png" COMP;
 image: "icons/applications-office.png" COMP;
 image: "icons/gnome-devel.png" COMP;
 image: "icons/image-loading.png" COMP;
@@ -130,12 +129,14 @@ image: "icons/media-optical.png" COMP;
 image: "icons/gnome-dev-removable-usb.png" COMP;
 image: "icons/media-flash.png" COMP;
 image: "icons/audio-card.png" COMP;
-
-//~ e
-image: "icons/e17_icon_e_0.png" COMP;
-image: "icons/e17_icon_e_glow_0.png" COMP;
+image: "icons/system-users.png" COMP; /* profiles */
+image: "icons/input-gaming.png" COMP; /* behavior */
+image: "icons/emblem-system.png" COMP; /* engine */
+image: "icons/battery.png" COMP; /* power_management */
 
 //~ hybrids
+image: "icons/applications-other2.png" COMP; /* improve */
+image: "icons/display-size.png" COMP;
 image: "icons/screen_normal.png" COMP;
 image: "icons/screen_left.png" COMP;
 image: "icons/screen_right.png" COMP;
@@ -144,10 +145,8 @@ image: "icons/screen_hflip.png" COMP;
 image: "icons/screen_vflip.png" COMP;
 image: "icons/preferences-windows-list.png" COMP;
 image: "icons/preferences-desktop-screensaver.png" COMP;
-image: "icons/power-management.png" COMP;
-image: "icons/applications-other2.png" COMP;
-image: "icons/gnome-dev-keyboard-mouse.png" COMP;
-image: "icons/display-size.png" COMP;
+image: "icons/window-remembers.png" COMP; /* window_remembers */
+image: "icons/window-stacking.png" COMP; /* window_stacking */
 
 //~ gnome tango
 image: "icons/gnome-session-reboot.png" COMP;
