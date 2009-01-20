@@ -23,7 +23,8 @@ init.edc: check button
 -about_e.edc: ugly design, use [TABS]
 
 == Improve ==
-e/fileman/default/overlay/alias: the overlay image color is too similar to ilist
+ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
+ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
 desktop/efm window overlay: typebuffer could use a "cursor" decoration
 Configure panel: icons / Windows
 -syscon.edc: "e/widgets/syscon/item/button"
