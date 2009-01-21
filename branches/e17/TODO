@@ -45,7 +45,7 @@ Configure panel: icons / Windows
 	signal: "e,action,mouse,move";
 
 == Compile ==
-make two versions of detour:
+make two versions of detour?
 -one that includes DejaVu family and the other Bistream Vera
 -use system wide fonts?
 
