@@ -6,6 +6,7 @@ program { \
 	source: "e"; \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 0.5; \
+	target: "e.text.title"; \
 	target: "button-min"; \
 	target: "button-max"; \
 	target: "button-close"; \
@@ -16,6 +17,7 @@ program { \
 	source: "e"; \
 	action: STATE_SET "default" 0.1; \
 	transition: DECELERATE 0.5; \
+	target: "e.text.title"; \
 	target: "button-min"; \
 	target: "button-max"; \
 	target: "button-close"; \
@@ -96,22 +98,6 @@ program { \
 }
 
 #define BORDER_int_PROGRAMS() \
-program { \
-	name: "active"; \
-	signal: "e,state,focused"; \
-	source: "e"; \
-	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 0.5; \
-	target: "button-close"; \
-} \
-program { \
-	name: "inactive"; \
-	signal: "e,state,unfocused"; \
-	source: "e"; \
-	action: STATE_SET "default" 0.1; \
-	transition: DECELERATE 0.5; \
-	target: "button-close"; \
-} \
 program { \
 	name: "close_click"; \
 	signal: "mouse,down,1"; \
