@@ -11,12 +11,12 @@ group {
 	styles {
 		style {
 			name: "about_enlightenment";
-			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASS == 0
+			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASSES == 0
 				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
 				tag: "hilight" "+ font=DejaVuSans-Bold";
 				tag: "title" "+ font_size=11 font=DejaVuSans-Bold";
 			#else
-			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASS == 1
+			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASSES == 1
 				base: "font=Sans:style=Bold font_size=11 color=#070707 wrap=word text_class=tb_plain";
 				tag: "hilight" "+ font=Sans:style=Bold text_class=tb_light"; 
 				tag: "title" "+ font=Sans:style=Bold font_size=11 text_class=tb_big";
@@ -171,10 +171,10 @@ group {
 					size: 12;
 					min: 1 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "about_title";
 					#endif
 					#endif
@@ -218,10 +218,10 @@ group {
 					size: 11;
 					min: 1 1;
 					align: 1.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "about_version";
 					#endif
 					#endif
@@ -622,10 +622,10 @@ group {
 					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "button";
 					#endif
 					#endif  

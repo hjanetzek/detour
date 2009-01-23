@@ -156,10 +156,10 @@ group {
 					size: 13;
 					min: 1 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASSES == 0
+					#if ENABLE_TEXT_CLASSESES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASSES == 1
+					#if ENABLE_TEXT_CLASSESES == 1
 						text_class: "init_title";
 					#endif
 					#endif
@@ -204,10 +204,10 @@ group {
 					size: 12;
 					min:  1 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASSES == 0
+					#if ENABLE_TEXT_CLASSESES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASSES == 1
+					#if ENABLE_TEXT_CLASSESES == 1
 						text_class: "init_version";
 					#endif
 					#endif
@@ -252,10 +252,10 @@ group {
 					size: 11;
 					min: 1 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASSES == 0
+					#if ENABLE_TEXT_CLASSESES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASSES == 1
+					#if ENABLE_TEXT_CLASSESES == 1
 						text_class: "init_text"; 
 					#endif
 					#endif
@@ -511,10 +511,10 @@ group {
 					size: 10;
 					min: 1 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASSES == 0
+					#if ENABLE_TEXT_CLASSESES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASSES == 1
+					#if ENABLE_TEXT_CLASSESES == 1
 						text_class: "init_text";
 					#endif
 					#endif
