@@ -5,10 +5,18 @@ group {
 	styles {
 		style {
 			name: "textblock";
-			base: "font=DejaVuSans font_size=11 align=left color=#070707";
+			#if USE_FONTCONFIG == 0
+				base: "font=DejaVuSans font_size=11 align=left color=#070707";
+				tag:  "hilight" "+ font=DejaVuSans-Bold color=#3c3c3c";
+				tag:  "b" "+ font=DejaVuSans-Bold";
+			#else
+			#if USE_FONTCONFIG == 1
+				base: "font=Sans font_size=11 align=left color=#070707";
+				tag:  "hilight" "+ font=Sans:style=Bold color=#3c3c3c";
+				tag:  "b" "+ font=Sans:style=Bold";
+			#endif
+			#endif
 			tag:  "br" "\n";
-			tag:  "hilight" "+ font=DejaVuSans-Bold color=#3c3c3c";
-			tag:  "b" "+ font=DejaVuSans-Bold";
 			tag:  "/title" "- \n \n";
 		}
 	}

@@ -189,7 +189,13 @@ group {
 				color: 60 60 60 255;
 
 				text {
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					text_source: "e.text.label";
 					size: 11;
 					min: 1 1;
@@ -289,7 +295,13 @@ group {
 				}
 
 				text {
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;

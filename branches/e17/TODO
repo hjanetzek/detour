@@ -18,16 +18,20 @@ tclock: use mono fonts where possible
 desklock: center dialog
 battery.edc: text
 init.edc: check button
+exebuf.edc: Line:505,506 check and see if this is correct
+winlist.edc: Line:450,451 check and see if this is correct
 
 == Redo ==
+-syscon.edc
 -about_e.edc: ugly design, use [TABS]
+-init.edc: better design
 
 == Improve ==
+-syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
 ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
 desktop/efm window overlay: typebuffer could use a "cursor" decoration
 Configure panel: icons / Windows
--syscon.edc: "e/widgets/syscon/item/button"
 -transitions: where the graphics?
 -entry: focus
 -bits/icons.edc: e/icons/enlightenment/e 
@@ -43,6 +47,19 @@ Configure panel: icons / Windows
 -pointer group:
 	signal: "e,action,mouse,wheel";
 	signal: "e,action,mouse,move";
+e,state,shading
+e,state,unshading
+e,action,iconify
+e,action,uniconify
+e,action,maximize
+e,action,unmaximize
+e,state,hung
+e,state,unhung
+e,state,urgent
+e,state,not_urgent
+e,action,maximize,fullscreen
+e,action,unmaximize,fullscreen
+
 
 == Compile ==
 make two versions of detour?

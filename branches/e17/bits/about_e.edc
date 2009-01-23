@@ -11,15 +11,15 @@ group {
 	styles {
 		style {
 			name: "about_enlightenment";
-			#if ENABLE_TEXT_CLASS == 0
+			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASS == 0
 				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
 				tag: "hilight" "+ font=DejaVuSans-Bold";
 				tag: "title" "+ font_size=11 font=DejaVuSans-Bold";
 			#else
-			#if ENABLE_TEXT_CLASS == 1
-				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
-				tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light"; 
-				tag: "title" "+ font_size=11 font=DejaVuSans-Bold text_class=tb_big";
+			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASS == 1
+				base: "font=Sans:style=Bold font_size=11 color=#070707 wrap=word text_class=tb_plain";
+				tag: "hilight" "+ font=Sans:style=Bold text_class=tb_light"; 
+				tag: "title" "+ font=Sans:style=Bold font_size=11 text_class=tb_big";
 			#endif
 			#endif
 			tag:  "br" "\n"; 
@@ -161,7 +161,13 @@ group {
 				}
 
 				text {
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 12;
 					min: 1 1;
 					align: 0.0 0.5;
@@ -202,7 +208,13 @@ group {
 
 
 				text {
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 1.0 0.5;
@@ -600,7 +612,13 @@ group {
 
 				text {
 					text: "Close";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
