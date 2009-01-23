@@ -110,10 +110,10 @@ group {
 					min: 0 0;
 					align: 0.5 0.0;
 					elipsis: 0.0;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "menu_title";
 					#endif
 					#endif
@@ -630,10 +630,10 @@ group {
 					size: 11;
 					min: 1 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "menu_item";
 					#endif
 					#endif

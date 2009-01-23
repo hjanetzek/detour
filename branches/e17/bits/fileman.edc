@@ -406,10 +406,10 @@ group {
 					#endif
 					#endif
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "ilist_item";
 					#endif
 					#endif	       
@@ -799,10 +799,10 @@ group {
 					#endif
 					#endif
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "ilist_item";
 					#endif
 					#endif       
@@ -1192,10 +1192,10 @@ group {
 					#endif
 					#endif
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "ilist_item";
 					#endif
 					#endif	       
@@ -1584,10 +1584,10 @@ group {
 					#endif
 					#endif
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "ilist_item";
 					#endif
 					#endif       
@@ -1987,10 +1987,10 @@ group {
 					min: 0 1;
 					align: 0.5 1.0;
 					elipsis: 0.0;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "fileman_icon";
 					#endif
 					#endif  
@@ -2463,10 +2463,10 @@ group {
 					min: 0 1;
 					align: 0.5 1.0;
 					elipsis: 0.0;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "desktop_icon";
 					#endif
 					#endif  
@@ -2960,10 +2960,10 @@ group {
 					#endif
 					#endif
 					align: 0.5 1.0; 
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "fileman_icon";
 					#endif
 					#endif	
@@ -3456,10 +3456,10 @@ group {
 					#endif
 					#endif
 					align: 0.5 1.0; 
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "desktop_icon";
 					#endif
 					#endif	
@@ -3719,10 +3719,10 @@ group {
 					size: 12;
 					min: 0 0;
 					elipsis: 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "fileman_typebuf";
 					#endif
 					#endif
@@ -3839,10 +3839,10 @@ group {
 					size: 11;
 					min: 1 1;
 					align: 1.0 1.0;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "fileman_notice";
 					#endif
 					#endif  

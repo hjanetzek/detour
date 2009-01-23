@@ -15,11 +15,11 @@ group {
 	styles {
 		style {
 			name: "sys_style";
-			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASS == 0
+			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASSES == 0
 				base: "font=DejaVuSans-Bold font_size=12 align=center color=#3c3c3c wrap=word";
 				tag: "hilight" "+ font=DejaVuSans-Bold color=#8aabe1 style=shadow shadow_color=#07070730";
 			#else
-			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASS == 1
+			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASSES == 1
 				base: "font=Sans:style=Bold font_size=12 align=center color=#3c3c3c wrap=word text_class=tb_large";
 				tag: "hilight" "+ font=Sans:style=Bold color=#8aabe1 style=soft_shadow shadow_color=#07070730 text_class=tb_large_light";
 			#endif
