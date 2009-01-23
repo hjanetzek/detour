@@ -15,7 +15,7 @@ group {
 				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
 			#else
 			#if USE_FONTCONFIG == 1
-				base: "font=Sans:style=Oblique font_size=11 color=#070707 wrap=word";
+				base: "font=Sans font_size=11 color=#070707 wrap=word";
 			#endif
 			#endif
 			tag: "-" "+ font_size=10";
@@ -25,7 +25,7 @@ group {
 			#else
 			#if USE_FONTCONFIG == 1
 				tag: "bold" "+ font=Sans:style=Bold";
-				tag: "mono" "+ font=Sans:style=Oblique";
+				tag: "mono" "+ font=Mono";
 			#endif
 			#endif
 			tag: "center" "+ align=middle";
@@ -367,7 +367,7 @@ group {
 						font: "DejaVuSans-Bold";
 					#else
 					#if USE_FONTCONFIG == 1
-						font: "DejaVuSans Sans:style=Bold";
+						font: "Sans:style=Bold";
 					#endif
 					#endif
 					size: 12;
@@ -414,7 +414,7 @@ group {
 						font: "DejaVuSans";
 					#else
 					#if USE_FONTCONFIG == 1
-						font: "DejaVuSans Sans";
+						font: "Sans";
 					#endif
 					#endif
 					size: 11;
