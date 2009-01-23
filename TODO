@@ -15,7 +15,6 @@ e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 
 == Bugfix ==
 dialog.edc: textblock style= if i disabled text_classes the font style goes normal
-tclock: use mono fonts where possible
 desklock: center dialog
 battery.edc: text
 init.edc: check button
