@@ -27,10 +27,18 @@ program { \
 styles {
 	style {
 		name: "tlist";
-		base: "font=DejaVuSans font_size=11 align=left color=#3c3c3c wrap=word";
+		#if USE_FONTCONFIG == 0
+			base: "font=DejaVuSans font_size=11 align=left color=#3c3c3c wrap=word";
+			tag:  "hilight" "+ font=DejaVuSans-Bold";
+			tag:  "title" "+ font_size=12 font=DejaVuSans-Bold style=shadow color=#3c3c3c shadow_color=#aaa8a9";
+			#else
+			#if USE_FONTCONFIG == 1
+			base: "font=Sans font_size=11 align=left color=#3c3c3c wrap=word";
+			tag:  "hilight" "+ font=Sans:style=Bold";
+			tag:  "title" "+ font_size=12 font=Sans:style=Bold style=shadow color=#3c3c3c shadow_color=#aaa8a9";
+			#endif
+			#endif
 		tag:  "br" "\n";
-		tag:  "hilight" "+ font=DejaVuSans-Bold";
-		tag:  "title" "+ font_size=12 font=DejaVuSans-Bold style=shadow color=#3c3c3c shadow_color=#aaa8a9";
 		tag:  "/title" "- \n \n";
 	}
 }
@@ -78,7 +86,13 @@ group {
 				}
 
 				text {
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 0.0 0.5;
@@ -191,7 +205,13 @@ group {
 				}
 
 				text {
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 0.0 0.5;

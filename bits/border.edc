@@ -70,7 +70,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -171,7 +177,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -300,7 +312,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -393,7 +411,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -502,7 +526,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -684,7 +714,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -768,7 +804,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -1002,7 +1044,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -1105,7 +1153,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;

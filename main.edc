@@ -2,12 +2,9 @@
 #include "macros/border.edc"
 #include "macros/border_programs.edc"
 #include "macros/border_menu_buttons.edc"
-#include "macros/check.edc"
 #include "macros/efm_nav.edc"
 #include "macros/fileman_list.edc"
 #include "macros/init-bg.edc"
-#include "macros/list.edc"
-#include "macros/radio.edc"
 #include "macros/sys.edc"
 #include "macros/win_geometry.edc"
 
@@ -15,12 +12,11 @@
 
 /* 
  * detour version 0.7.5 (e17) for Enlightenment 0.16.999.050 or later.
- * cored.org et al (see AUTHORS).
+ * by cored.org et al (see AUTHORS).
  */
 
 data {
 	item: "theme/name" 		"detour (symetrika)";
-	item: "theme/description" 	"Say NO to $random colours()";
 	item: "theme/version"		"0.7.5";
 	item: "theme/author"		"Alberto Castro, Hannes Janetzek, et al.";
 	item: "theme/license"		"BSD Artistic License";
@@ -30,10 +26,10 @@ data {
 #define ANIMATED_CURSOR 1
 
 //Set the alternate (black) mouse pointer
-#define ALTERNATE_CURSOR 0
+#define ALTERNATE_CURSOR 1
 
 //Enable custom text classes
-#define ENABLE_TEXT_CLASS 1 	
+#define ENABLE_TEXT_CLASS 0 /* work in progress */
 
 //Display ibar & ibox label overlay
 #define ENABLE_IBAR_LABEL_OVERLAY 1
@@ -44,6 +40,9 @@ data {
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 /* work in progress */
 
+//Fontconfig: system-wide font configuration
+#define USE_FONTCONFIG 1
+
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
 
@@ -53,16 +52,8 @@ data {
 //Truncate efm icon list filename
 #define TRUNCATE_EFM_ICON_LIST_FILENAME 1
 
-fonts {
-	font: "fonts/DejaVuSans.ttf" "DejaVuSans";
-	font: "fonts/DejaVuSans-Bold.ttf" "DejaVuSans-Bold";
-	font: "fonts/DejaVuSansMono.ttf" "DejaVuSans-Mono";
-	font: "fonts/DejaVuSansMono-Bold.ttf" "DejaVuSans-Mono-Bold";
-}
-
 images {
-	#include "icons.edc"
-	#include "images.edc"
+	#include "images.edc" /* includes both icons and regular images */
 }
 
 spectra {
@@ -148,7 +139,7 @@ collections {
 	#include "bits/tclock.edc"		/* extra: tclock module */
 	//~ #include "bits/temperature.edc"	/* temperature module */
 	#include "bits/textblock.edc"		/* textblock definitions group */
-	#include "bits/tlist.edc"		/* tlist groups */
+	//~ #include "bits/tlist.edc"		/* tlist groups (deprecated) */
 	#include "bits/transitions.edc"		/* desktop wallpaper transitions */
 	#include "bits/winlist.edc"		/* window list (alt+tab) */
 }

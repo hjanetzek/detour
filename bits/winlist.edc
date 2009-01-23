@@ -180,7 +180,13 @@ group {
 
 				text {
 					text: "Title goes here";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 12;
 					min: 0 1;
 					align: 0.5 0.0;
@@ -302,7 +308,13 @@ group {
 
 				text {
 					text: "Title goes here";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
@@ -474,7 +486,13 @@ group {
 
 				text {
 					text: "Item Label";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					min: 0 0;
 					align: 0.0 0.5;
@@ -495,7 +513,13 @@ group {
 
 				text {
 					text: "Item Label";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;

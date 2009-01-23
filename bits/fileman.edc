@@ -388,7 +388,13 @@ group {
 
 				text {
 					text: "Item Label";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					#if TRUNCATE_EFM_ICON_LIST_FILENAME == 0
 						min: 1 1;
@@ -775,7 +781,13 @@ group {
 
 				text {
 					text: "Item Label";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					#if TRUNCATE_EFM_ICON_LIST_FILENAME == 0
 						min: 1 1;
@@ -1162,7 +1174,13 @@ group {
 
 				text {
 					text: "Item Label";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					#if TRUNCATE_EFM_ICON_LIST_FILENAME == 0
 						min: 1 1;
@@ -1548,7 +1566,13 @@ group {
 
 				text {
 					text: "Item Label";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 11;
 					#if TRUNCATE_EFM_ICON_LIST_FILENAME == 0
 						min: 1 1;
@@ -1953,7 +1977,13 @@ group {
 				text {
 					text: "No Title";
 					size: 11;
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					min: 0 1;
 					align: 0.5 1.0;
 					elipsis: 0.0;
@@ -2423,7 +2453,13 @@ group {
 				text {
 					text: "No Title";
 					size: 11;
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					min: 0 1;
 					align: 0.5 1.0;
 					elipsis: 0.0;
@@ -2907,7 +2943,13 @@ group {
 				text {
 					text: "No Title";
 					size: 11;
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					#if TRUNCATE_EFM_ICON_FILENAME == 0
 						min: 1 1;
 						elipsis: 1.0;
@@ -3396,7 +3438,13 @@ group {
 
 				text {
 					text: "No Title";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					#if TRUNCATE_DESKTOP_ICON_FILENAME == 0
 						min: 1 1;
@@ -3661,7 +3709,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 12;
 					min: 0 0;
 					elipsis: 0.5;
@@ -3775,7 +3829,13 @@ group {
 
 				text {
 					text: "";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 1.0 1.0;
