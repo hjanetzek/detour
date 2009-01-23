@@ -80,10 +80,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -187,10 +187,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -322,10 +322,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -421,10 +421,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -536,10 +536,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -724,10 +724,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -814,10 +814,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -1054,10 +1054,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif
@@ -1163,10 +1163,10 @@ group {
 					size: 11;
 					min: 0 1;
 					align: 0.0 0.5;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
-					#if ENABLE_TEXT_CLASS == 1
+					#if ENABLE_TEXT_CLASSES == 1
 						text_class: "title_bar";
 					#endif
 					#endif

@@ -22,26 +22,24 @@ data {
 	item: "theme/license"		"BSD Artistic License";
 }
 
-//Set the mouse pointer to pulsate
-#define ANIMATED_CURSOR 1
-
-//Set the alternate (black) mouse pointer
-#define ALTERNATE_CURSOR 1
-
-//Enable custom text classes
-#define ENABLE_TEXT_CLASS 0 /* work in progress */
-
-//Display ibar & ibox label overlay
-#define ENABLE_IBAR_LABEL_OVERLAY 1
-
-//Enable custom color classes
-#define ENABLE_COLOR_CLASS 0 /* work in progress */
-
-//Enable custom icons
-#define ENABLE_CUSTOM_ICONS 0 /* work in progress */
+//Mouse pointer options
+#define ANIMATED_CURSOR 1 	/* Set the mouse pointer to pulsate */
+#define ALTERNATE_CURSOR 1 	/* alternate (black) mouse pointer */
 
 //Fontconfig: system-wide font configuration
 #define USE_FONTCONFIG 1
+
+//Enable custom text classes
+#define ENABLE_TEXT_CLASSES 1
+
+//Enable custom color classes
+#define ENABLE_COLOR_CLASS 0 	/* work in progress */
+
+//Enable custom icons
+#define ENABLE_CUSTOM_ICONS 0 	/* work in progress */
+
+//Display ibar & ibox label overlay
+#define ENABLE_IBAR_LABEL_OVERLAY 1
 
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
@@ -53,7 +51,7 @@ data {
 #define TRUNCATE_EFM_ICON_LIST_FILENAME 1
 
 images {
-	#include "images.edc" /* includes both icons and regular images */
+	#include "images.edc" 	/* includes both icons and regular images */
 }
 
 spectra {

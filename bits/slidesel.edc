@@ -64,7 +64,7 @@ group {
 					size: 20;
 					min: 0 1;
 					align: 0.0 0.0;
-					#if ENABLE_TEXT_CLASS == 0
+					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
 						text_class: "slidesel_label";
