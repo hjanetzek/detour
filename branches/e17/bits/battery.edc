@@ -119,7 +119,13 @@ group {
 
 				text {
 					text: "100%";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 10;
 					min: 1 1;
 					align: 1.0 0.0;
@@ -161,7 +167,13 @@ group {
 
 				text {
 					text: "00:00";
-					font: "DejaVuSans";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans";
+					#endif
+					#endif
 					size: 9;
 					min: 1 1;
 					align: 1.0 0.0;
@@ -344,7 +356,13 @@ group {
 
 				text {
 					text: "Running on Battery!";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 11;
 					min: 1 1;
 					align: 0.5 1.0;

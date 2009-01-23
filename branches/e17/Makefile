@@ -1,13 +1,17 @@
 # Makefile for detour-e17
 
-CC		= edje_cc
-COMPILE		= $(CC) $(EDJE_CC_FLAGS)
-SRC		= main.edc
-OUT		= detour-e17.edj
-PATH_INSTALL    = $(HOME)/.e/e/themes
+CC = edje_cc
+CAT = /bin/cat
+CP = /bin/cp
+HEAD = /usr/bin/head
+RM = /bin/rm -f
+TAIL = /usr/bin/tail
+COMPILE = $(CC) $(EDJE_CC_FLAGS)
+SRC = main.edc
+OUT = detour-e17.edj
+PATH_INSTALL = $(HOME)/.e/e/themes
 
-EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
--id images \
+EDJE_CC_FLAGS = -id images \
 -id icons \
 -id custom \
 -id clock
@@ -16,8 +20,10 @@ EDJE_CC_FLAGS = -fd $(top_srcdir)/fonts \
 
 all: version clean build install
 
-verbose: main.edc
-	$(COMPILE) -v $(SRC) -o $(OUT)
+clean:
+	@echo
+	@echo "Checking..."
+	if [ -e $(OUT) ]; then $(RM) $(OUT); fi
 
 build: main.edc
 	@echo "Running make..."
@@ -25,7 +31,7 @@ build: main.edc
 
 install: detour-e17.edj
 	@echo "Running make install..."
-	if [ -e $(OUT) ]; then cp $? $(PATH_INSTALL)/; fi
+	if [ -e $(OUT) ]; then $(CP) $? $(PATH_INSTALL)/; fi
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was installed in your
@@ -36,18 +42,16 @@ install: detour-e17.edj
 
 version:
 	@echo
-	cat main.edc | head -17 | tail -1
-	cat main.edc | head -18 | tail -1
+	$(CAT) $(SRC) | $(HEAD) -14 | $(TAIL) -1
+	$(CAT) $(SRC) | $(HEAD) -15 | $(TAIL) -1
 
-clean:
-	@echo
-	@echo "Checking..."
-	if [ -e $(OUT) ]; then rm -rf $(OUT); fi
+verbose: main.edc
+	$(COMPILE) -v $(SRC) -o $(OUT)
 
 uninstall: detour-e17.edj
 	@echo
 	@echo "Removing" $(OUT)
-	rm -rf $(PATH_INSTALL)/$(OUT)
+	$(RM) $(PATH_INSTALL)/$(OUT)
 	@echo
 	@echo --------------------------------------------------
 	@echo $(OUT) was removed from your
