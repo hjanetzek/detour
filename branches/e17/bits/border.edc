@@ -93,8 +93,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -200,8 +200,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -335,8 +335,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -434,8 +434,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -549,8 +549,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -737,8 +737,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -827,8 +827,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -1067,8 +1067,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
@@ -1176,8 +1176,8 @@ group {
 			description { 
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
-				color: 95 95 93 255;
-				color3: 170 168 169 128;
+				color: 60 60 60 128;
+				color3: 170 168 169 64;
 			} 
 		}
 
