@@ -635,9 +635,9 @@ group {
 				state: "default" 0.0;
 				min: 16 16;
 				color: 60 60 60 255;
-				#if ENABLE_COLOR_CLASS == 0
+				#if ENABLE_COLOR_CLASSES == 0
 				#else
-				#if ENABLE_COLOR_CLASS == 1
+				#if ENABLE_COLOR_CLASSES == 1
 					color_class: "radio_text"; 
 				#endif
 				#endif
@@ -679,9 +679,9 @@ group {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				#if ENABLE_COLOR_CLASS == 0
+				#if ENABLE_COLOR_CLASSES == 0
 				#else
-				#if ENABLE_COLOR_CLASS == 1
+				#if ENABLE_COLOR_CLASSES == 1
 					color_class: "radio_text_disabled"; 
 				#endif
 				#endif

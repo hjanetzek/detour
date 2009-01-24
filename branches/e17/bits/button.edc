@@ -274,9 +274,9 @@ group {
 
 			description {
 				state: "default" 0.0;
-				#if ENABLE_COLOR_CLASS == 0
+				#if ENABLE_COLOR_CLASSES == 0
 				#else
-				#if ENABLE_COLOR_CLASS == 1
+				#if ENABLE_COLOR_CLASSES == 1
 					color_class: "button_text";
 				#endif
 				#endif
@@ -328,9 +328,9 @@ group {
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
-				#if ENABLE_COLOR_CLASS == 0
+				#if ENABLE_COLOR_CLASSES == 0
 				#else
-				#if ENABLE_COLOR_CLASS == 1
+				#if ENABLE_COLOR_CLASSES == 1
 					color_class: "button_text_disabled";
 				#endif
 				#endif
