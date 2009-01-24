@@ -59,9 +59,8 @@ image: "images/deskpreview_im0.png" COMP; /* background */
 //~ decoration
 image: "images/decoration_im0.png" COMP; /* regular dot */
 image: "images/decoration_im1.png" COMP; /* wide dot */
-image: "images/decoration_im2.png" COMP; /* wallpaper decoration */
 
-//~ e17 logo
+//~ about enlightenment
 image: "images/e17_logo.png" COMP; /* e17 logo */
 
 //~ exebuf
@@ -200,7 +199,7 @@ image: "images/pager_im4.png" COMP; /* icon minimized: used by winlist */
 image: "images/pager_im5.png" COMP; /* icon shaded: used by winlist */
 
 //~ about_detour
-image: "images/logo.png" COMP; /* detour logo */
+image: "images/logo_im0.png" COMP; /* wireframe design */
 
 //~ desklock
 image: "images/desklock_im0.png" COMP; /* dialog */

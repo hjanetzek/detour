@@ -315,8 +315,8 @@ group {
 
 			description {
 				state: "default" 0.0;
-				min: 168 69;
-				max: 168 69;
+				min: 83 83;
+				max: 83 83;
 				fixed: 1 1;
 				align: 0.5 0.5;
 
@@ -331,7 +331,7 @@ group {
 				}
 
 				image {
-					normal: "images/logo.png";
+					normal: "images/logo_im0.png";
 				}
 			}
 		}
@@ -503,7 +503,7 @@ group {
 
 				text {
 					style: "about_detour";
-					text: "Detour is designed and developed by Alberto Castro -<lighter>boykot tokyo</lighter>- with help from Hannes Janetzek -<lighter>jeffdameth</lighter>-, et al.<\n><\n>Detour is licensed under the BSD Artistic License.<br><br>Enjoy! <-><subliminal>Tricks of the Guild. [2003-2009]</subliminal>";
+					text: "Detour is designed and developed by Alberto Castro [<lighter>boykot tokyo</lighter>] with help from Hannes Janetzek [<lighter>jeffdameth</lighter>], et al.<\n><\n>Detour is licensed under the BSD Artistic License.<br><br>Enjoy! <-><subliminal>Tricks of the Guild. [2003-2009]</subliminal>";
 				}
     			}
 		}

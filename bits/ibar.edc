@@ -301,41 +301,36 @@ group {
 			}
 		}
 
-		#if ENABLE_IBAR_LABEL_OVERLAY == 0
-		#else
-		#if ENABLE_IBAR_LABEL_OVERLAY == 1
-			part {      
-				name: "label";
-				type: IMAGE;  
-				clip_to: "label.clip";               
-				mouse_events: 0;
+		part {      
+			name: "label";
+			type: IMAGE;  
+			clip_to: "label.clip";               
+			mouse_events: 0;
 
-				description {
-					state: "default" 0.0;
-					align: 0.5 0.5;
-					color: 0 0 0 128;
-					max: 999 21;
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				color: 0 0 0 128;
+				max: 999 21;
 
-					rel1 { 
-						to: "e.text.label"; 
-						relative: 0.0 0.0; 
-						offset: -8 -2; 
-					}
+				rel1 { 
+					to: "e.text.label"; 
+					relative: 0.0 0.0; 
+					offset: -8 -2; 
+				}
 
-					rel2 { 
-						to: "e.text.label"; 
-						relative: 1.0 1.0; 
-						offset: 4 -1; 
-					}
+				rel2 { 
+					to: "e.text.label"; 
+					relative: 1.0 1.0; 
+					offset: 4 -1; 
+				}
 
-					image {
-						normal: "images/ibar_im0.png";
-						border: 5 5 5 5;
-					}
+				image {
+					normal: "images/ibar_im0.png";
+					border: 5 5 5 5;
 				}
 			}
-		#endif
-		#endif
+		}
 
 		part {      
 			name: "e.text.label";
@@ -348,15 +343,8 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;
-				#if ENABLE_IBAR_LABEL_OVERLAY == 0
-					color: 7 7 7 255;
-					color3: 170 168 169 128;
-				#else
-				#if ENABLE_IBAR_LABEL_OVERLAY == 1
-					color: 255 255 255 255;
-					color3: 0 0 0 0;
-				#endif
-				#endif
+				color: 255 255 255 255;
+				color3: 7 7 7 0;
 		
 				rel1 { 
 					relative: 0.0 0.0; 
