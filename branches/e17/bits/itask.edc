@@ -22,10 +22,10 @@ group {
 
 /*
  * itask-ng: new generation taskbar
- * this group corresponds to the [image] bar itself and what
- * image to use depending on the orientation.
+ * this group corresponds to the [image] bar itself and describes
+ * what image to use depending on the bar's orientation.
  * 
- * four signals are emitted to position the [image] bar orientation.
+ * four signals are emitted to position the [image] bar's orientation.
  */
 
 	parts {
@@ -121,7 +121,7 @@ group {
 			target: "bg";
 		}
 
-		/* notice that you don't want any transitions at this stage */
+		/* notice that you might not want any transitions at this stage */
 		program {
 			name: "bg_top";
 			signal: "e,state,bg_top";
@@ -221,9 +221,7 @@ group {
 group {
 	name: "e/modules/itask-ng/label";
 
-/*
- * label: application name label group
- */
+/* label: application name label group */
 
 	parts {
 		part {      
@@ -300,15 +298,8 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;
-				#if ENABLE_IBAR_LABEL_OVERLAY == 0
-					color: 7 7 7 255;
-					color3: 170 168 169 128;
-				#else
-				#if ENABLE_IBAR_LABEL_OVERLAY == 1
-					color: 255 255 255 255;
-					color3: 0 0 0 0;
-				#endif
-				#endif
+				color: 255 255 255 255;
+				color3: 0 0 0 0;
 		
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -552,7 +543,7 @@ group {
 			name: "go_taskbar_focused";
 			signal: "e,state,taskbar_item_focused";
 			source: "e";
-			// when an application got focus 
+			/* when an application got focus */
 			action: STATE_SET "taskbar_focused" 0.0;
 			transition: SINUSOIDAL 0.3;
 			target: "icon_clip";

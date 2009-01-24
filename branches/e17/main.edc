@@ -24,22 +24,17 @@ data {
 
 //Mouse pointer options
 #define ANIMATED_CURSOR 1 	/* Set the mouse pointer to pulsate */
-#define ALTERNATE_CURSOR 1 	/* alternate (black) mouse pointer */
+#define ALTERNATE_CURSOR 0 	/* alternate (black) mouse pointer */
 
 //Fontconfig: system-wide font configuration
 #define USE_FONTCONFIG 1
 
-//Enable custom text classes
+//Color and Text classes
 #define ENABLE_TEXT_CLASSES 1
-
-//Enable custom color classes
-#define ENABLE_COLOR_CLASS 0 	/* work in progress */
+#define ENABLE_COLOR_CLASSES 0 	/* work in progress */
 
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 	/* work in progress */
-
-//Display ibar & ibox label overlay
-#define ENABLE_IBAR_LABEL_OVERLAY 1
 
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
