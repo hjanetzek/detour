@@ -266,8 +266,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 186 205 237 255;
-				//color: 132 165 220 255;
+				color: 132 165 220 255;
 				rel1.to: "background";
 				rel1.offset: 3 3;
 				rel2.to: "background";
