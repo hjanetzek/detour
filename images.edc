@@ -105,6 +105,7 @@ image: "images/spectrum_im9.png" COMP; /* y value inverted bottom */
 image: "images/wallpaper_pat0.png" COMP; /* background pattern */
 image: "images/wallpaper_pat1.png" COMP; /* overlay pattern 35x35 */
 image: "images/wallpaper_pat2.png" COMP; /* overlay pattern 24x24 */
+image: "images/wallpaper_pat3.png" COMP; /* overlay pattern 10x10 */
 
 //~ shelf
 image: "images/shelf_def_im0.png" COMP; /* regular orientation */
