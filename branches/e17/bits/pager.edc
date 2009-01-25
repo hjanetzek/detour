@@ -193,6 +193,55 @@ group {
 		}
 
 		part {
+			name: "gradient";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description { 
+				state: "default" 0.0; 
+				gradient.spectrum: "backdrop";
+
+				rel1 { 
+					offset: 4 4; 
+				}
+
+				rel2 { 
+					offset: -3 -5; 
+				}
+			}
+		}
+
+		part {
+			name: "pattern";
+			type: IMAGE;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 205 204 188 5;
+
+				image {
+					normal: "images/wallpaper_pat3.png";
+				}
+
+				fill {
+					size {
+						relative: 0 0;
+						offset: 4 4;
+					}
+				}
+
+				rel1 { 
+					offset: 4 4; 
+				}
+
+				rel2 { 
+					offset: -3 -5; 
+				}
+			}
+		}
+
+		part {
 			name: "e.swallow.content";
 			type: SWALLOW;
 			clip_to: "clip";
@@ -217,7 +266,8 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 186 205 237 255;
+				//color: 186 205 237 255;
+				color: 132 165 220 255;
 				rel1.to: "background";
 				rel1.offset: 3 3;
 				rel2.to: "background";
