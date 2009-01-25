@@ -155,6 +155,7 @@ group {
 		#endif
 		#endif
 
+/*
 		program {
 			name: "down";
 			signal: "e,action,mouse,down";
@@ -172,6 +173,7 @@ group {
 			transition: DECELERATE 0.25;
 			target: "e/pointer";
 		}
+*/
 	}
 }
 

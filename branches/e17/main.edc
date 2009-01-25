@@ -23,7 +23,7 @@ data {
 }
 
 //Mouse pointer options
-#define ANIMATED_CURSOR 1 	/* Set the mouse pointer to pulsate */
+#define ANIMATED_CURSOR 0	/* Set the mouse pointer to pulsate */
 #define ALTERNATE_CURSOR 0 	/* alternate (black) mouse pointer */
 
 //Fontconfig: system-wide font configuration
@@ -50,18 +50,6 @@ images {
 }
 
 spectra {
-	spectrum {
-		name: "radial_gradient";
-		color: 239 239 239 255 1;
-		color: 139 157 180 255 1;
-	}
-
-	spectrum {
-		name: "linear_gradient";
-		color: 139 157 180 128 1;
-		color: 239 239 239 255 1;
-	}
-
 	spectrum {
 		name: "backdrop";
 		color: 138 171 225 255 1;
