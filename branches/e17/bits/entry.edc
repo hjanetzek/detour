@@ -45,20 +45,19 @@ group {
 
 			description {
 				state: "default" 0.0;
-				max: 9999 24;
 				image.normal: "images/entry_im1.png";
 				image.border: 6 6 6 6;
 
 				rel1 { 
 					to: "entry"; 
 					relative: 0.0 0.0; 
-					offset: 0 0; 
+					offset: -1 -1; 
 				}
 
 				rel2 { 
 					to: "entry"; 
 					relative: 1.0 1.0; 
-					offset: -1 -1; 
+					offset: 0 0; 
 				}
 			}
 		}
@@ -230,7 +229,7 @@ group {
 				color: 138 171 225 128;
 
 				rel1 { 
-					offset: 0 0; 
+					offset: 0 1; 
 				}
 
 				rel2 { 
