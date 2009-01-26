@@ -209,7 +209,7 @@ group {
 			name: "e.swallow.icon";
 			type: SWALLOW;
 
-			description {
+			description { /* whether or not there is an icon?? */
 				state: "default" 0.0;
 				align: 0.0 0.5;
 		
@@ -226,7 +226,7 @@ group {
 				}
 			}
 
-			description {
+			description { /* icon only */
 				state: "icon" 0.0;
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
@@ -241,11 +241,11 @@ group {
 				rel2 {
 					to: "base";
 					relative: 1.0 1.0;
-					offset: -7 -7;
+					offset: -9 -7;
 				}
 			}
 
-			description {
+			description { /* text + icon */
 				state: "combo" 0.0;
 				aspect: 1.0 1.0;
 				aspect_preference: VERTICAL;
