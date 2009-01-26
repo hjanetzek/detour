@@ -46,9 +46,6 @@ image: "images/dialog_im0.png" COMP; /* background */
 image: "images/dialog_im1.png" COMP; /* separator */
 image: "images/dialog_im2.png" COMP; /* about detour dialog bg */
 
-//~ configure
-image: "images/configure_im0.png" COMP; /* background */
-
 //~ entry
 image: "images/entry_im0.png" COMP; /* base */
 image: "images/entry_im1.png" COMP; /* focus */
