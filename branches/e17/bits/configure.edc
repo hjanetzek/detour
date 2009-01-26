@@ -6,19 +6,43 @@ group {
 
 	parts {
 		part {
-			name: "dialog_bg";
+			name: "bg_border";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 104 108 111 255;
+			}
+		}
+
+		part {
+			name: "gradient";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				gradient.spectrum: "menu";
+				rel1.offset: 0 0;
+				rel2.offset: -1 -1;
+			}
+		}
+
+		part {
+			name: "bg_overlay";
 			type: IMAGE;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
-				min: 299 341;
-				//max: 299 341; // bad reaster
-				//fixed: 1 1;
+				rel1.offset: 0 0;
+				rel2.offset: -1 -1;
 
 				image {
-					normal: "images/configure_im0.png";
-					border: 2 2 3 3;
+					normal: "images/menu_im0.png";
+					border: 2 2 2 2;
+					middle: 1;
 				}
 			}
 		}
@@ -31,7 +55,7 @@ group {
 				state: "default" 0.0;
 
 				rel1 { 
-					to: "dialog_bg"; 
+					to: "gradient"; 
 					relative: 0.0 0.0; 
 					offset: 4 4; 
 				}
@@ -55,13 +79,13 @@ group {
 				color: 255 0 0 0;
 
 				rel1 { 
-					to: "dialog_bg"; 
+					to: "gradient"; 
 					relative: 0.0 1.0; 
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "dialog_bg"; 
+					to: "gradient"; 
 					relative: 1.0 1.0; 
 					offset: 0 -41; 
 				}

@@ -63,6 +63,12 @@ spectra {
 	}
 
 	spectrum {
+		name: "menu";
+		color: 237 237 237 255 1;
+		color: 206 207 206 255 1;
+	}
+
+	spectrum {
 		name: "example_gradient";
 		color: 252 98 170 255 1;
 		color: 62 98 170 255 1;
