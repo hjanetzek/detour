@@ -5114,7 +5114,6 @@ group {
 	}
 }
 
-
 group {
 	name: "e/fileman/default/rubberband";
 
