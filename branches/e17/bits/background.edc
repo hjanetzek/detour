@@ -50,6 +50,32 @@ group {
 				}
 			}
 		}
+
+		part {
+			name: "decoration";
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				min: 20 20;
+				max: 20 20;
+				fixed: 1 1;
+				image.normal: "images/logo_im1.png";
+				align: 0.0 0.0;
+
+				rel1 { 
+					to: "gradient"; 
+					relative: 0.0 0.0; 
+					offset: 26 26; 
+				}
+
+				rel2 { 
+					to: "gradient"; 
+					relative: 0.0 0.0; 
+					offset: -1 -1; 
+				}
+			}
+		}
 	}
 }
 
