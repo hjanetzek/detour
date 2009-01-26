@@ -30,8 +30,7 @@ ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.pn
 desktop/efm window overlay: overlay bg
 desktop/efm window overlay: typebuffer could use a "cursor" decoration
 Configure panel: icons / Windows
--transitions: where the graphics?
--entry: focus
+-transitions: where are the graphics?
 -bits/icons.edc: e/icons/enlightenment/e 
 -temperature.edc: graphics
 -clock graphics(hands)
