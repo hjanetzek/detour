@@ -11,15 +11,27 @@ group {
 	styles {
 		style {
 			name: "about_enlightenment";
-			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASSES == 0
-				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
-				tag: "hilight" "+ font=DejaVuSans-Bold";
-				tag: "title" "+ font_size=11 font=DejaVuSans-Bold";
-			#else
 			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASSES == 1
 				base: "font=Sans:style=Bold font_size=11 color=#070707 wrap=word text_class=tb_plain";
 				tag: "hilight" "+ font=Sans:style=Bold text_class=tb_light"; 
 				tag: "title" "+ font=Sans:style=Bold font_size=11 text_class=tb_big";
+			#else
+			#if USE_FONTCONFIG == 1 || ENABLE_TEXT_CLASSES == 0
+				base: "font=Sans:style=Bold font_size=11 color=#070707 wrap=word";
+				tag: "hilight" "+ font=Sans:style=Bold"; 
+				tag: "title" "+ font=Sans:style=Bold font_size=11";
+			#else
+			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASSES == 1
+				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word text_class=tb_plain";
+				tag: "hilight" "+ font=DejaVuSans-Bold text_class=tb_light";
+				tag: "title" "+ font_size=11 font=DejaVuSans-Bold text_class=tb_big";
+			#else
+			#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASSES == 0
+				base: "font=DejaVuSans font_size=11 color=#070707 wrap=word";
+				tag: "hilight" "+ font=DejaVuSans-Bold";
+				tag: "title" "+ font_size=11 font=DejaVuSans-Bold";
+			#endif
+			#endif
 			#endif
 			#endif
 			tag:  "br" "\n"; 
