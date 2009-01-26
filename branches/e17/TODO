@@ -31,12 +31,10 @@ desktop/efm window overlay: overlay bg
 desktop/efm window overlay: typebuffer could use a "cursor" decoration
 Configure panel: icons / Windows
 -transitions: where are the graphics?
--bits/icons.edc: e/icons/enlightenment/e 
 -temperature.edc: graphics
 -clock graphics(hands)
 -battery: text/graphics --transition
 -configure.edc: width seems to be hardcoded, bad!
--pointer.edc: "e,action,mouse,down";
 
 == Global ==
 
@@ -44,6 +42,7 @@ Configure panel: icons / Windows
 -pointer group:
 	signal: "e,action,mouse,wheel";
 	signal: "e,action,mouse,move";
+	signal: "e,action,mouse,down";
 e,state,shading
 e,state,unshading
 e,action,iconify
