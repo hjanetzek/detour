@@ -198,6 +198,7 @@ image: "images/pager_im6.png" COMP; /* overlay_bg */
 
 //~ about_detour
 image: "images/logo_im0.png" COMP; /* wireframe design */
+image: "images/logo_im1.png" COMP; /* label design */
 
 //~ desklock
 image: "images/desklock_im0.png" COMP; /* dialog */
