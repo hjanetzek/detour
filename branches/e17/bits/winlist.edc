@@ -276,19 +276,20 @@ group {
 
 			description {
 				state: "default" 0.0;
-				min: 22 22;
+				min: 10 24;
+				max: 9999 24;
 				align: 0.5 1.0;
 
 				rel1 { 
-					to_y: "e.text.label"; 
+					to_x: "e.text.label"; 
 					relative: 0.0 0.0; 
-					offset: 5 -3;
+					offset: -11 -2;
 				}
 
 				rel2 { 
 					to_y: "e.text.label"; 
 					relative: 1.0 1.0; 
-					offset: -6 3; 
+					offset: -4 2; 
 				}
 
 				image {
@@ -312,12 +313,12 @@ group {
 
 				rel1 { 
 					relative: 0.0 1.0; 
-					offset: 14 -23; 
+					offset: 14 -20; 
 				}
 
 				rel2 { 
 					relative: 1.0 1.0; 
-					offset: -15 -23; 
+					offset: -15 -20; 
 				}
 
 				text {
@@ -439,43 +440,6 @@ group {
 		}
 
 		part {
-			name: "title2";
-			type: TEXT;
-			mouse_events: 0;
-			scale: 1;
-
-			description {
-				state: "default" 0.0;
-				align: 1.0 0.0;
-				fixed: 1 1;
-				visible: 0;
-
-				rel1 { 
-					relative: 0.0 0.0; 
-					offset: 0 6; 
-				}
-
-				rel2 { 
-					relative: 0.0 0.0; 
-					offset: 0 6; 
-				}
-
-				text {
-					text_source: "e.text.label";
-					source: "e.text.label";
-					min: 0 1;
-					#if ENABLE_TEXT_CLASSES == 0
-						text_class: "";
-					#else
-					#if ENABLE_TEXT_CLASSES == 1
-						text_class: "title_bar";
-					#endif
-					#endif
-				}
-			}
-		}
-
-		part {
 			name: "e.text.label";
 			type: TEXT;
 			effect: NONE;
@@ -565,7 +529,7 @@ group {
 				}
 
 				rel2 { 
-					to_x: "title2"; 
+					to_x: "e.text.label"; 
 					relative: 0.0 1.0; 
 					offset: -1 -1; 
 				}
