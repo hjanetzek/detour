@@ -232,7 +232,29 @@ ICON("swap", 16 16, "icons/mail-send-receive.png")
 
 /* ?? */
 
-ICON("check", 18 15, "images/button_detail_basic.png") /* done on purpose to see it */
+# ifdef ICON
+#  undef ICON
+# endif
+#define ICON(GROUP_NAME,SIZE,IMAGE_NAME)			\
+group {								\
+	name: "e/icons/"GROUP_NAME;				\
+	parts {							\
+		part {						\
+			name: "icon";				\
+			type: IMAGE;				\
+			repeat_events: 1;			\
+			description {				\
+				state: "default" 0.0;		\
+				max: SIZE;			\
+				aspect: 1.0 1.0; 		\
+				aspect_preference: BOTH;	\
+				image.normal: IMAGE_NAME;	\
+			}					\
+		}						\
+	} 							\
+}
+
+ICON("enlightenment/check", 16 16, "images/screen_im0.png")
 
 # ifdef ICON
 #  undef ICON

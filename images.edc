@@ -190,12 +190,13 @@ image: "images/button_detail_stick.png" COMP;
 
 //~ pager
 image: "images/pager_im0.png" COMP; /* focus */
-image: "images/pager_im1.png" COMP; /* icon also used by winlist */
+image: "images/pager_im1.png" COMP; /* selected window: icon also used by winlist */
 image: "images/pager_im2.png" COMP; /* left lid */
 image: "images/pager_im3.png" COMP; /* right lid */
 image: "images/pager_im4.png" COMP; /* icon minimized: used by winlist */
 image: "images/pager_im5.png" COMP; /* icon shaded: used by winlist */
 image: "images/pager_im6.png" COMP; /* overlay_bg */
+image: "images/pager_im7.png" COMP; /* unselected window */
 
 //~ about_detour
 image: "images/logo_im0.png" COMP; /* wireframe design */
@@ -475,6 +476,9 @@ image: "images/temperature-40.png" COMP;
 image: "images/temperature-60.png" COMP;
 image: "images/temperature-80.png" COMP;
 image: "images/temperature-100.png" COMP;
+
+//~ misc images 
+image: "images/screen_im0.png" COMP;
 
 /*
  * Contains list of all used icons. 

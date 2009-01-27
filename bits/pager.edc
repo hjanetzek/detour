@@ -549,6 +549,16 @@ group {
 				}
 
 				image {
+					normal: "images/pager_im7.png";
+					border: 5 5 5 6;
+				}
+			}
+
+			description {
+				state: "focused" 0.0;
+				inherit: "default" 0.0;
+
+				image {
 					normal: "images/pager_im1.png";
 					border: 5 5 7 6;
 				}
@@ -572,6 +582,16 @@ group {
 					relative: 1.0 1.0; 
 					offset: 2 2; 
 				}
+
+				image {
+					normal: "images/pager_im7.png";
+					border: 5 5 7 6;
+				}
+			}
+
+			description {
+				state: "focused" 0.0;
+				inherit: "default" 0.0;
 
 				image {
 					normal: "images/pager_im1.png";
@@ -619,6 +639,24 @@ group {
 	}
 
 	programs {
+		program { 
+			name: "focused";
+			signal: "e,state,focused";
+			source: "e";
+			action: STATE_SET "focused" 0.0;
+			target: "pager_window";
+			target: "overlay";
+		}
+
+		program { 
+			name: "unfocused";
+			signal: "e,state,unfocused";
+			source: "e";
+			action: STATE_SET "default" 0.0;
+			target: "pager_window";
+			target: "overlay";
+		}
+
 		program {
 			name: "go";
 			signal: "e,state,urgent";
