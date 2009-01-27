@@ -15,6 +15,8 @@
  * by cored.org et al (see AUTHORS).
  */
 
+/* design means... be selective & objective, use only what you need. */
+
 data {
 	item: "theme/name" 		"detour (symetrika)";
 	item: "theme/version"		"0.7.5";
@@ -23,11 +25,11 @@ data {
 }
 
 //Mouse pointer options
-#define ANIMATED_CURSOR 0	/* Set the mouse pointer to pulsate */
+#define ANIMATED_CURSOR 0	/* mouse pointer will pulsate when inactive */
 #define ALTERNATE_CURSOR 0 	/* alternate (black) mouse pointer */
 
 //Fontconfig: system-wide font configuration
-#define USE_FONTCONFIG 1
+#define USE_FONTCONFIG 1 	/* fc-match --help for more information */
 
 //Color and Text classes
 #define ENABLE_TEXT_CLASSES 1
@@ -130,6 +132,4 @@ collections {
 	#include "bits/transitions.edc"		/* desktop wallpaper transitions */
 	#include "bits/winlist.edc"		/* window list (alt+tab) */
 }
-
-/* design means... be selective & objective, use only what you need. */
 

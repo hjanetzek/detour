@@ -1,24 +1,24 @@
 
-//~ "e/fileman/default/window/main" 		/* completed */
-//~ "e/fileman/default/list_odd/fixed"		/* completed */
-//~ "e/fileman/default/list/fixed"		/* completed */
-//~ "e/fileman/default/list/variable"		/* completed */
-//~ "e/fileman/default/list_odd/variable"	/* completed */
-//~ "e/fileman/default/icon/fixed"		/* completed */
-//~ "e/fileman/default/icon/variable"		/* completed */
-//~ "e/fileman/default/overlay"			/* completed */
-//~ "e/fileman/default/list/drop_between"	/* completed */
-//~ "e/fileman/default/list/drop_in"		/* completed */
-//~ "e/fileman/default/scrollframe"		/* completed */
-//~ "e/fileman/default/rubberband"		/* completed */
-//~ "e/fileman/desktop/scrollframe"		/* completed */
-//~ "e/fileman/desktop/list/fixed"		/* completed */
-//~ "e/fileman/desktop/list_odd/fixed"		/* completed */
-//~ "e/fileman/desktop/icon/fixed"		/* completed */
-//~ "e/fileman/desktop/icon/variable"		/* completed */
-//~ "e/fileman/desktop/overlay"			/* completed */
-//~ "e/fileman/desktop/list/drop_in"		/* completed */
-//~ "e/fileman/desktop/list/drop_between"	/* completed */
+//~ "e/fileman/default/window/main" 		/* available */
+//~ "e/fileman/default/list_odd/fixed"		/* available */
+//~ "e/fileman/default/list/fixed"		/* available */
+//~ "e/fileman/default/list/variable"		/* available */
+//~ "e/fileman/default/list_odd/variable"	/* available */
+//~ "e/fileman/default/icon/fixed"		/* available */
+//~ "e/fileman/default/icon/variable"		/* available */
+//~ "e/fileman/default/overlay"			/* available */
+//~ "e/fileman/default/list/drop_between"	/* available */
+//~ "e/fileman/default/list/drop_in"		/* available */
+//~ "e/fileman/default/scrollframe"		/* available */
+//~ "e/fileman/default/rubberband"		/* available */
+//~ "e/fileman/desktop/scrollframe"		/* available */
+//~ "e/fileman/desktop/list/fixed"		/* available */
+//~ "e/fileman/desktop/list_odd/fixed"		/* available */
+//~ "e/fileman/desktop/icon/fixed"		/* available */
+//~ "e/fileman/desktop/icon/variable"		/* available */
+//~ "e/fileman/desktop/overlay"			/* available */
+//~ "e/fileman/desktop/list/drop_in"		/* available */
+//~ "e/fileman/desktop/list/drop_between"	/* available */
 
 group {
 	name: "e/fileman/default/window/main";

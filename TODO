@@ -14,6 +14,7 @@ e/widgets/menu/default/icon: e.swallow.content (has a non-fixed part, add: fixed
 e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 
 == Bugfix ==
+pager: bg 1px left
 desklock: center dialog
 battery.edc: text
 init.edc: check button
@@ -27,10 +28,9 @@ Screen Resolution Settings icons.
 -init.edc: better design
 
 == Improve ==
-color_selector: cslider
+use = part; name: "event" to pickup icon/list mouse,in,out
 fileman: icon_box shadow
 ibar: e/modules/ibar[ibox]/drop images 
-ICON("enlightenment/check", 16 16, "images/screen_im0.png")
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
 ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
@@ -41,7 +41,6 @@ Configure panel: icons / Windows
 -temperature.edc: graphics
 -clock graphics(hands)
 -battery: text/graphics --transition
--configure.edc: width seems to be hardcoded, bad!
 
 == Global ==
 
@@ -63,12 +62,9 @@ e,state,not_urgent
 e,action,maximize,fullscreen
 e,action,unmaximize,fullscreen
 
-
 == Compile ==
-make two versions of detour?
--one that includes DejaVu family and the other Bistream Vera
--use system wide fonts?
 
-== yell about ==
+== e ==
 Gradient dialog and Online dialog not inheriting "button" icon.
+-configure.edc: width seems to be hardcoded, bad!
 
