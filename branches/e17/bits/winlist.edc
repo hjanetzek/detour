@@ -559,7 +559,7 @@ group {
 				}
 
 				image {
-					normal: "images/pager_im1.png";
+					normal: "images/pager_im7.png";
 				}
 			}
 
@@ -569,6 +569,15 @@ group {
 
 				image {
 					normal: "images/pager_im4.png";
+				}
+			}
+
+			description {
+				state: "active" 0.0;
+				inherit: "default" 0.0;
+
+				image {
+					normal: "images/pager_im1.png";
 				}
 			}
 
@@ -643,6 +652,7 @@ group {
 			source: "e";
 			action: STATE_SET "active" 0.0;
 			target: "e.text.label";
+			target: "type";
 			after: "pre_active";
 		}
 
@@ -652,6 +662,7 @@ group {
 			source: "e";
 			action: STATE_SET "default" 0.0;
 			target: "e.text.label";
+			target: "type";
 			after: "pre_passive";
 		}
 

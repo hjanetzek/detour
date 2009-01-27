@@ -131,3 +131,5 @@ collections {
 	#include "bits/winlist.edc"		/* window list (alt+tab) */
 }
 
+/* design means... be selective & objective, use only what you need. */
+

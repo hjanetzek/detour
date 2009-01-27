@@ -180,6 +180,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}     
@@ -192,7 +193,7 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;	
-				color: 0 0 0 255;
+				color: 7 7 7 255;
 				visible: 0;    
 
 				rel1 { 
@@ -211,6 +212,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 129;
 				visible: 1;
 			}
 		}   
@@ -241,10 +243,9 @@ group {
 				}	    	       
 
 				fill {	    
-					smooth: 0;
 					size { 
 						relative: 0 0; 
-						offset: 32 32; 
+						offset: 16 16; 
 					}
 				}	    
 			}
@@ -252,6 +253,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -573,6 +575,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}     
@@ -585,7 +588,7 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;
-				color: 0 0 0 255;
+				color: 7 7 7 255;
 				visible: 0;	    
 
 				rel1 { 
@@ -604,6 +607,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 129;
 				visible: 1;
 			}
 		}   
@@ -634,10 +638,9 @@ group {
 				}	    	       
 	
 				fill {	    
-					smooth: 0;
 					size { 
 						relative: 0 0; 
-						offset: 32 32; 
+						offset: 16 16; 
 					}
 				}	    
 			}
@@ -645,6 +648,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -966,6 +970,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}     
@@ -978,7 +983,7 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;	
-				color: 0 0 0 255;
+				color: 7 7 7 255;
 				visible: 0;    
 
 				rel1 { 
@@ -997,6 +1002,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 129;
 				visible: 1;
 			}
 		}   
@@ -1027,10 +1033,9 @@ group {
 				}	    	       
 
 				fill {	    
-					smooth: 0;
 					size { 
 						relative: 0 0; 
-						offset: 32 32; 
+						offset: 16 16; 
 					}
 				}	    
 			}
@@ -1038,6 +1043,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -1358,6 +1364,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}     
@@ -1370,7 +1377,7 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;
-				color: 0 0 0 255;
+				color: 7 7 7 255;
 				visible: 0;	    
 
 				rel1 { 
@@ -1389,6 +1396,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 129;
 				visible: 1;
 			}
 		}   
@@ -1419,10 +1427,9 @@ group {
 				}	    	       
 	
 				fill {	    
-					smooth: 0;
 					size { 
 						relative: 0 0; 
-						offset: 32 32; 
+						offset: 16 16; 
 					}
 				}	    
 			}
@@ -1430,6 +1437,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -1764,6 +1772,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}      
@@ -1795,6 +1804,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 129;
 				visible: 1;
 			}
 		} 
@@ -1822,14 +1832,12 @@ group {
 
 				image {
 					normal: "images/fileman_im2.png";
-
 				}	    	       
 		
-				fill {	    
-					smooth: 0;
+				fill {
 					size {
 						relative: 0 0;
-						offset: 32 32;
+						offset: 16 16;
 					}
 				}	    
 			}
@@ -1837,6 +1845,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -2182,6 +2191,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}      
@@ -2213,6 +2223,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 129;
 				visible: 1;
 			}
 		} 
@@ -2240,14 +2251,12 @@ group {
 
 				image {
 					normal: "images/fileman_im2.png";
-
 				}	    	       
 		
 				fill {	    
-					smooth: 0;
 					size {
 						relative: 0 0;
-						offset: 32 32;
+						offset: 16 16;
 					}
 				}	    
 			}
@@ -2255,6 +2264,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -2570,7 +2580,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 192;
+				color: 255 255 255 255;
 				visible: 1;
 			}
 		}      
@@ -2583,7 +2593,7 @@ group {
 			description {
 				state: "default" 0.0;
 				align: 0.5 0.5;	   
-				color: 0 0 0 255; 
+				color: 7 7 7 129; 
 				visible: 0;
 
 				rel1 {
@@ -2632,10 +2642,9 @@ group {
 				}	    	       
 		
 				fill {	    
-					smooth: 0;
 					size {
 						relative: 0 0;
-						offset: 32 32;
+						offset: 16 16;
 					}
 				}	    
 			}
@@ -2643,6 +2652,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -3030,7 +3040,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 192;
+				color: 255 255 255 225;
 				visible: 1;
 			}
 		}      
@@ -3044,7 +3054,7 @@ group {
 				state: "default" 0.0;
 				visible: 0;
 				align: 0.5 0.5;	   
-				color: 0 0 0 255; 
+				color: 7 7 7 129; 
 
 				rel1 {
 					to: "e.swallow.icon";
@@ -3089,14 +3099,12 @@ group {
 
 				image {
 					normal: "images/fileman_im2.png";
-
 				}	    	       
 		
 				fill {	    
-					smooth: 0;
 					size {
 						relative: 0 0;
-						offset: 32 32;
+						offset: 16 16;
 					}
 				}	    
 			}
@@ -3104,6 +3112,7 @@ group {
 			description {
 				state: "visible" 0.0;
 				inherit: "default" 0.0;
+				color: 255 255 255 221;
 				visible: 1;
 			}
 		}
@@ -4939,7 +4948,7 @@ group {
 
 			description {
 				state: "default" 0.0;
-				color: 138 171 225 32;
+				color: 255 255 255 48;
 				fill.size.relative: 0 0;
 				fill.size.offset: 24 24;
 

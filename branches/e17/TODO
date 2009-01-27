@@ -18,6 +18,7 @@ desklock: center dialog
 battery.edc: text
 init.edc: check button
 border: urgent/icon animation
+efm_list: selection broke!!
 
 == Redo ==
 Screen Resolution Settings icons.
@@ -27,6 +28,7 @@ Screen Resolution Settings icons.
 
 == Improve ==
 ibar: e/modules/ibar[ibox]/drop images 
+ICON("enlightenment/check", 16 16, "images/screen_im0.png")
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
 ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
