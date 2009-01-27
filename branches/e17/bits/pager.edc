@@ -161,7 +161,7 @@ group {
 				}
 
 				rel2 { 
-					offset: -3 -4; 
+					offset: -2 -5; 
 				}
 			}
 		}
@@ -191,7 +191,7 @@ group {
 				}
 
 				rel2 { 
-					offset: -3 -4; 
+					offset: -2 -5; 
 				}
 			}
 		}
@@ -222,6 +222,14 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 128;
+
+				rel1 { 
+					offset: 4 4; 
+				}
+
+				rel2 { 
+					offset: -2 -4; 
+				}
 			}
 
 			description {
@@ -246,9 +254,9 @@ group {
 				state: "default" 0.0;
 				color: 75 115 199 128;
 				rel1.to: "background";
-				rel1.offset: 3 3;
+				rel1.offset: 3 1;
 				rel2.to: "background";
-				rel2.offset: -4 -4;
+				rel2.offset: -4 -3;
 			}
 		}
 
@@ -345,11 +353,11 @@ group {
 				state: "default" 0.0;
 
 				rel1 { 
-					offset: 1 1; 
+					offset: 1 3; 
 				}
 
 				rel2 { 
-					offset: 0 -1; 
+					offset: 1 -3; 
 				}
 
 				image {
@@ -505,7 +513,6 @@ group {
 			signal: "e,state,selected";
 			source: "e";
 			action: STATE_SET "active" 0.0;
-			//transition: ACCELERATE 0.5;
 			target: "focus_clip";
 		}
 
