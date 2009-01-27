@@ -17,13 +17,16 @@ e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 desklock: center dialog
 battery.edc: text
 init.edc: check button
+border: urgent/icon animation
 
 == Redo ==
+Screen Resolution Settings icons.
 -syscon.edc
 -about_e.edc: ugly design, use [TABS]
 -init.edc: better design
 
 == Improve ==
+ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
 ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
