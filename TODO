@@ -14,7 +14,6 @@ e/widgets/menu/default/icon: e.swallow.content (has a non-fixed part, add: fixed
 e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 
 == Bugfix ==
-pager: bg 1px left
 desklock: center dialog
 battery.edc: text
 init.edc: check button
@@ -29,7 +28,6 @@ Screen Resolution Settings icons.
 
 == Improve ==
 use = part; name: "event" to pickup icon/list mouse,in,out
-fileman: icon_box shadow
 ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
@@ -49,18 +47,19 @@ Configure panel: icons / Windows
 	signal: "e,action,mouse,wheel";
 	signal: "e,action,mouse,move";
 	signal: "e,action,mouse,down";
-e,state,shading
-e,state,unshading
-e,action,iconify
-e,action,uniconify
-e,action,maximize
-e,action,unmaximize
-e,state,hung
-e,state,unhung
-e,state,urgent
-e,state,not_urgent
-e,action,maximize,fullscreen
-e,action,unmaximize,fullscreen
+-border group:
+	signal: "e,state,shading";
+	signal: "e,state,unshading";
+	signal: "e,action,iconify";
+	signal: "e,action,uniconify";
+	signal: "e,action,maximize";
+	signal: "e,action,unmaximize";
+	signal: "e,state,hung";
+	signal: "e,state,unhung";
+	signal: "e,state,urgent";
+	signal: "e,state,not_urgent";
+	signal: "e,action,maximize,fullscreen";
+	signal: "e,action,unmaximize,fullscreen";
 
 == Compile ==
 

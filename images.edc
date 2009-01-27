@@ -97,8 +97,8 @@ image: "images/spectrum_im6.png" COMP; 	/* y value bottom */
 image: "images/spectrum_im7.png" COMP; 	/* y value inverted top */
 image: "images/spectrum_im8.png" COMP; 	/* y value inverted middle */
 image: "images/spectrum_im9.png" COMP; 	/* y value inverted bottom */
-image: "images/spectrum_im10.png" COMP; /* y follower */
-image: "images/spectrum_im11.png" COMP; /* x follower */
+image: "images/spectrum_im10.png" COMP; /* x follower */
+image: "images/spectrum_im11.png" COMP; /* y follower */
 
 //~ background
 image: "images/wallpaper_pat0.png" COMP; /* background pattern */
