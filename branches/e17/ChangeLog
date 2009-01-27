@@ -1,4 +1,219 @@
 ------------------------------------------------------------------------
+r671 | alberto.castro.leiva | 2009-01-26 01:38:53 -0600 (Mon, 26 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/winlist.edc
+
+exebuf and winlist bugfixes
+
+------------------------------------------------------------------------
+r670 | alberto.castro.leiva | 2009-01-26 01:11:45 -0600 (Mon, 26 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_e.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/sys.edc
+
+Fix cpp conditional variables.
+
+------------------------------------------------------------------------
+r669 | alberto.castro.leiva | 2009-01-26 00:19:26 -0600 (Mon, 26 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/winlist.edc
+   D /branches/e17/images/configure_im0.png
+   M /branches/e17/images/menu_im0.png
+   M /branches/e17/images/pager_im2.png
+   M /branches/e17/images/pager_im3.png
+   M /branches/e17/images/pager_im6.png
+   A /branches/e17/images/pager_im7.png
+   D /branches/e17/images/preview_im0.png
+   D /branches/e17/images/preview_im1.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Use gradients in some scenarios instead of images.
+Fix pager img.
+
+------------------------------------------------------------------------
+r668 | alberto.castro.leiva | 2009-01-25 21:46:26 -0600 (Sun, 25 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/images/menu_im1.png
+   M /branches/e17/images/pager_im0.png
+   M /branches/e17/images/pager_im2.png
+   M /branches/e17/images/pager_im3.png
+   A /branches/e17/images/pager_im6.png
+   A /branches/e17/images/wallpaper_pat3.png
+   M /branches/e17/images.edc
+
+Update pager overlay_image.
+
+------------------------------------------------------------------------
+r667 | alberto.castro.leiva | 2009-01-25 01:58:29 -0600 (Sun, 25 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+
+Fix pager's "clip2" for now.
+
+------------------------------------------------------------------------
+r666 | alberto.castro.leiva | 2009-01-25 01:58:02 -0600 (Sun, 25 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+
+nope, middle: 0/1 won't work either, pager: "background" needs 
+an images/entry_im0.png for itself (modified) no inner pixels.
+
+------------------------------------------------------------------------
+r665 | alberto.castro.leiva | 2009-01-25 01:54:16 -0600 (Sun, 25 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+pager: overlay_image still not right / "part: background"
+images/entry_im0.png should use a middle: 1;
+
+------------------------------------------------------------------------
+r664 | alberto.castro.leiva | 2009-01-24 02:09:03 -0600 (Sat, 24 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/README
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/radio.edc
+   M /branches/e17/bits/syscon.edc
+   M /branches/e17/bits/tclock.edc
+   D /branches/e17/images/decoration_im2.png
+   D /branches/e17/images/logo.png
+   A /branches/e17/images/logo_im0.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Remove some cruft.
+
+------------------------------------------------------------------------
+r663 | alberto.castro.leiva | 2009-01-23 01:17:34 -0600 (Fri, 23 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/border.edc
+   M /branches/e17/macros/border_programs.edc
+
+Improve active/inactive border transition.
+
+------------------------------------------------------------------------
+r662 | alberto.castro.leiva | 2009-01-23 01:06:30 -0600 (Fri, 23 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/tclock.edc
+
+Fix TClock to use Mono font.
+
+------------------------------------------------------------------------
+r661 | alberto.castro.leiva | 2009-01-23 00:51:41 -0600 (Fri, 23 Jan 2009) | 5 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/about_e.edc
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/check.edc
+   M /branches/e17/bits/configure_toolbar.edc
+   M /branches/e17/bits/desklock.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/font_preview.edc
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/ilist.edc
+   M /branches/e17/bits/init.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/label.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/move.edc
+   M /branches/e17/bits/radio.edc
+   M /branches/e17/bits/resize.edc
+   M /branches/e17/bits/slider.edc
+   M /branches/e17/bits/slidesel.edc
+   M /branches/e17/bits/sys.edc
+   M /branches/e17/bits/syscon.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/temperature.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/bits/winlist.edc
+   M /branches/e17/main.edc
+
+Something is wrong when i try to use:
+#if USE_FONTCONFIG == 0 || ENABLE_TEXT_CLASSES == 0
+
+Will look into it.
+
+------------------------------------------------------------------------
+r660 | alberto.castro.leiva | 2009-01-23 00:34:10 -0600 (Fri, 23 Jan 2009) | 9 lines
+Changed paths:
+   M /branches/e17/Makefile
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/about_e.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/battery.edc
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/check.edc
+   M /branches/e17/bits/configure_toolbar.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/font_preview.edc
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/ilist.edc
+   M /branches/e17/bits/init.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/label.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/move.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/radio.edc
+   M /branches/e17/bits/resize.edc
+   M /branches/e17/bits/slider.edc
+   M /branches/e17/bits/sys.edc
+   M /branches/e17/bits/syscon.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/bits/textblock.edc
+   M /branches/e17/bits/tlist.edc
+   M /branches/e17/bits/winlist.edc
+   D /branches/e17/icons.edc
+   M /branches/e17/images.edc
+   D /branches/e17/macros/check.edc
+   D /branches/e17/macros/list.edc
+   D /branches/e17/macros/radio.edc
+   M /branches/e17/main.edc
+
+Make use of fontconfig: http://fontconfig.org/wiki/
+Might need some testing.
+
+Also testing "alternate" black mouse pointer.
+
+Since we remove the "DejaVu" fonts dependency detour now weighs 
+roughly 1mb.
+
+
+------------------------------------------------------------------------
 r659 | alberto.castro.leiva | 2009-01-21 16:12:00 -0600 (Wed, 21 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/TODO
