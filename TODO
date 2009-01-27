@@ -27,6 +27,8 @@ Screen Resolution Settings icons.
 -init.edc: better design
 
 == Improve ==
+color_selector: cslider
+fileman: icon_box shadow
 ibar: e/modules/ibar[ibox]/drop images 
 ICON("enlightenment/check", 16 16, "images/screen_im0.png")
 -syscon.edc: "e/widgets/syscon/item/button"
