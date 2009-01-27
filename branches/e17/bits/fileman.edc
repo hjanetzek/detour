@@ -2956,6 +2956,22 @@ group {
 
 	programs {
 		program {
+			name: "mouse,in"; 
+			signal: "mouse,in"; 
+			source: "event"; 
+			action: STATE_SET "selected" 0.0;
+			target: "e.swallow.icon_clip";
+		} 
+
+		program { 
+			name: "mouse,out";
+			signal: "mouse,out"; 
+			source: "event"; 
+			action: STATE_SET "default" 0.0;
+			target: "e.swallow.icon_clip";
+		}
+
+		program {
 			name: "selected"; 
 			signal: "e,state,selected"; 
 			source: "e"; 
@@ -3415,6 +3431,22 @@ group {
 	}
 
 	programs {
+		program {
+			name: "mouse,in"; 
+			signal: "mouse,in"; 
+			source: "event"; 
+			action: STATE_SET "selected" 0.0;
+			target: "e.swallow.icon_clip";
+		} 
+
+		program { 
+			name: "mouse,out";
+			signal: "mouse,out"; 
+			source: "event"; 
+			action: STATE_SET "default" 0.0;
+			target: "e.swallow.icon_clip";
+		}
+
 		program {
 			name: "selected"; 
 			signal: "e,state,selected"; 
