@@ -4,7 +4,7 @@ group {
 
 	data {
 		item: "shaped" "0";
-		item: "hidden_state_size" "9";
+		item: "hidden_state_size" "5";
 		// item: "instant_delay" "60.0";
 	}
 
@@ -643,7 +643,7 @@ group {
 
 	data {
 		item: "shaped" "1";
-		item: "hidden_state_size" "9";
+		item: "hidden_state_size" "5";
 		// item: "instant_delay" "60.0";
 	}
 

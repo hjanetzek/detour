@@ -209,7 +209,7 @@ group {
 				}
 
 				rel2 { 
-					offset: -4 -6; 
+					offset: -4 -7; 
 				}
 			}
 		}
@@ -228,7 +228,7 @@ group {
 				}
 
 				rel2 { 
-					offset: -2 -4; 
+					offset: -2 -5; 
 				}
 			}
 
@@ -540,12 +540,12 @@ group {
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: -1 -1; 
+					offset: -2 -2; 
 				}
 
 				rel2 { 
 					relative: 1.0 1.0; 
-					offset: 2 2; 
+					offset: 3 3; 
 				}
 
 				image {
@@ -575,12 +575,12 @@ group {
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: -1 -1; 
+					offset: -2 -2; 
 				}
 
 				rel2 { 
 					relative: 1.0 1.0; 
-					offset: 2 2; 
+					offset: 3 3; 
 				}
 
 				image {
