@@ -2870,8 +2870,8 @@ group {
 			description {
 				state: "selected" 0.0;
 				inherit: "default" 0.0;
-				color: 255 255 255 255;
-				color3: 7 7 7 32;
+				color: 7 7 7 255;
+				color3: 7 7 7 32;;
 			}
 		}
 
@@ -2944,6 +2944,7 @@ group {
 			source: "event"; 
 			action: STATE_SET "selected" 0.0;
 			target: "e.swallow.icon_clip";
+			target: "e.text.label";
 		} 
 
 		program { 
@@ -2952,6 +2953,7 @@ group {
 			source: "event"; 
 			action: STATE_SET "default" 0.0;
 			target: "e.swallow.icon_clip";
+			target: "e.text.label";
 		}
 
 		program {
@@ -3419,6 +3421,7 @@ group {
 			source: "event"; 
 			action: STATE_SET "selected" 0.0;
 			target: "e.swallow.icon_clip";
+			target: "e.text.label";
 		} 
 
 		program { 
@@ -3427,6 +3430,7 @@ group {
 			source: "event"; 
 			action: STATE_SET "default" 0.0;
 			target: "e.swallow.icon_clip";
+			target: "e.text.label";
 		}
 
 		program {
