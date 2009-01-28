@@ -14,6 +14,7 @@ e/widgets/menu/default/icon: e.swallow.content (has a non-fixed part, add: fixed
 e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 
 == Bugfix ==
+ilist: selection double click/continuous click
 desklock: center dialog
 battery.edc: text
 init.edc: check button
@@ -27,7 +28,6 @@ Screen Resolution Settings icons.
 -init.edc: better design
 
 == Improve ==
-use = part; name: "event" to pickup icon/list mouse,in,out
 ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
@@ -43,6 +43,7 @@ Configure panel: icons / Windows
 == Global ==
 
 == Ideas ==
+-find different uses for = part; name: "event" to pickup events
 -pointer group:
 	signal: "e,action,mouse,wheel";
 	signal: "e,action,mouse,move";
