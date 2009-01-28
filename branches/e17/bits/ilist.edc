@@ -56,7 +56,7 @@ group {
 				aspect_preference: VERTICAL;
 
 				rel1 { 
-					offset: 5 5; 
+					offset: 8 5; 
 				}
 
 				rel2 { 
@@ -156,7 +156,7 @@ group {
 				aspect_preference: VERTICAL;
 
 				rel1 { 
-					offset: 5 5; 
+					offset: 8 5; 
 				}
 
 				rel2 { 
@@ -253,7 +253,7 @@ group {
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 4 4; 
+					offset: 8 4; 
 				}
 
 				rel2 { 
@@ -348,7 +348,7 @@ group {
 
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 4 4; 
+					offset: 8 4; 
 				}
 
 				rel2 { 
