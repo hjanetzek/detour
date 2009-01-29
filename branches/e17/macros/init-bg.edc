@@ -24,6 +24,8 @@ part {								\
 		}						\
 								\
 		fill {						\
+			smooth: 0;				\
+								\
 			size {					\
 				relative: 0 0;			\
 				offset: 24 24;			\
