@@ -25,56 +25,56 @@ data {
 }
 
 //Mouse pointer options
-#define ANIMATED_CURSOR 0	/* Mouse pointer will pulsate when inactive */
-#define ALTERNATE_CURSOR 0 	/* Alternate (black) mouse pointer */
+#define ANIMATED_CURSOR 0			/* Mouse pointer will pulsate when inactive */
+#define ALTERNATE_CURSOR 0 			/* Alternate (black) mouse pointer */
 
 //Fontconfig: system-wide font configuration
-#define USE_FONTCONFIG 1 	/* fc-match --help for more information */
+#define USE_FONTCONFIG 1 			/* fc-match --help for more information */
 
 //Smooth images on scaling
-#define USE_SMOOTH_IMAGES 1 	/* The default (internal) value is 1 */
+#define USE_SMOOTH_IMAGES 1 			/* The default (internal) value is 1 */
 
 //Truncate desktop icons filename
-#define TRUNCATE_DESKTOP_ICON_FILENAME 1
+#define TRUNCATE_DESKTOP_ICON_FILENAME 1	/* Shorten desktop filenames */
 
 //Truncate efm icons filename
-#define TRUNCATE_EFM_ICON_FILENAME 1
+#define TRUNCATE_EFM_ICON_FILENAME 1		/* Shorten efm filenames */
 
 //Truncate efm icon list filename
-#define TRUNCATE_EFM_ICON_LIST_FILENAME 1
+#define TRUNCATE_EFM_ICON_LIST_FILENAME 1	/* Shorten list filenames */
 
 //Color and Text classes
-#define ENABLE_TEXT_CLASSES 1
-#define ENABLE_COLOR_CLASSES 0 	/* Work in progress */
+#define ENABLE_TEXT_CLASSES 1			/* Allow text/fonts to be interchangeable */
+#define ENABLE_COLOR_CLASSES 0 			/* Work in progress */
 
 //Enable custom icons
-#define ENABLE_CUSTOM_ICONS 0 	/* Work in progress */
+#define ENABLE_CUSTOM_ICONS 0 			/* Work in progress */
 
 images {
-	#include "images.edc" 	/* Includes both icons and regular images */
+	#include "images.edc" 			/* Includes both icons and regular images */
 }
 
 spectra {
 	spectrum {
-		name: "backdrop";
+		name: "backdrop";		/* desktop background */
 		color: 138 171 225 255 1;
 		color: 62 98 170 255 1;
 	}
 
 	spectrum {
-		name: "file_manager";
+		name: "file_manager";		/* main file manager background */
 		color: 230 229 211 255 1;
 		color: 196 196 182 255 1;
 	}
 
 	spectrum {
-		name: "menu";
+		name: "menu";			/* gradient used throughout various dialogs */
 		color: 237 237 237 255 1;
 		color: 206 207 206 255 1;
 	}
 
 	spectrum {
-		name: "example_gradient";
+		name: "example_gradient";	/* used internally */
 		color: 252 98 170 255 1;
 		color: 62 98 170 255 1;
 	}
