@@ -78,6 +78,16 @@ group {
 					border: 2 2 2 2;
 					middle: 1;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -197,6 +207,7 @@ group {
 				state: "default" 0.0;
 				min: 10 11;
 				max: 10 11;
+				//fixed: 1 1;
 				image.normal: "images/menu_im3.png";
 
 				rel2 { 
@@ -266,6 +277,16 @@ group {
 					normal: "images/menu_im1.png";
 					border: 2 2 1 1;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -331,6 +352,16 @@ group {
 					to: "check";
 					relative: 1.0 1.0; 
 					offset: -2 -2; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			} 
 		}
@@ -435,6 +466,16 @@ group {
 					relative: 1.0 1.0; 
 					offset: -1 -1; 
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			} 
 		}
 
@@ -447,6 +488,7 @@ group {
 				state: "default" 0.0;
 				min: 20 18;
 				max: 20 18;
+				//fixed: 1 1;
 
 				rel1 { 
 					relative: 0.0 0.0; 
@@ -502,6 +544,16 @@ group {
 				rel2 { 
 					relative: 1.0 1.0; 
 					offset: -1 2; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			} 
 
@@ -561,6 +613,16 @@ group {
 				rel2 { 
 					relative: 1.0 1.0; 
 					offset: -1 2; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			} 
 

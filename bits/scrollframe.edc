@@ -4,7 +4,7 @@ group {
 
 	parts {
 		part {
-			name: "bg";
+			name: "background";
 			type: IMAGE;
 			mouse_events: 0;
 
@@ -25,7 +25,13 @@ group {
 				}
 
 				fill {
-					smooth: 0;
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -60,12 +66,12 @@ group {
 				state: "default" 0.0;
 		
 				rel1 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					offset: 0 2; 
 				}
 		
 				rel2 { 
-					to_x: "sb_vbar"; 
+					to_x: "scrollframe_vbar_rect"; 
 					to_y: "sb_hbar"; 
 					relative: 0.0 0.0;
 					offset: 1 1; 
@@ -74,7 +80,7 @@ group {
 		}
 
 		part {
-			name: "border";
+			name: "background_overlay";
 			type: IMAGE;
 			mouse_events: 0;
 
@@ -93,29 +99,40 @@ group {
 					normal: "images/scrollframe_im1.png";
 					border: 5 5 5 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
 		/* vertical scrollframe */
 		part {
-			name: "sb_vbar";
+			/* rectangle for the runner */
+			name: "scrollframe_vbar_rect";
 			type: RECT;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
-				min: 19 19;
+				min: 19 17;
 				align: 1.0 0.0;
 				color: 255 255 255 255;
 
 				rel1 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					relative: 1.0 0.0; 
 					offset: 0 1; 
 				}
 
 				rel2 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					relative: 1.0 0.0; 
 					offset: 0 1; 
 					to_y: "sb_hbar"; 
@@ -128,13 +145,13 @@ group {
 				visible: 0;
 
 				rel1 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					relative: 1.0 0.0; 
 					offset: 0 1; 
 				}
 
 				rel2 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					relative: 1.0 0.0; 
 					offset: -4 0; 
 					to_y: "sb_hbar"; 
@@ -143,14 +160,14 @@ group {
 		}
 
 		part {
-			name: "sb_vbar_base";
+			name: "scrollbar_vbar_base";
 			type: RECT;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
-				color: 255 0 0 0;
+				color: 255 255 255 255;
 
 				rel1 { 
 					to: "sb_vbar_a1"; 
@@ -170,7 +187,7 @@ group {
 			name: "sb_vbar_p1";
 			type: RECT;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -194,7 +211,7 @@ group {
 			name: "sb_vbar_p2";
 			type: RECT;
 			mouse_events: 1;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -218,18 +235,18 @@ group {
 			name: "sb_vbar_runner";
 			type: IMAGE;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
 				max: 17 99999;
 
 				rel1 { 
-					to: "sb_vbar_base"; 
+					to: "scrollbar_vbar_base"; 
 				}
 
 				rel2 { 
-					to: "sb_vbar_base"; 
+					to: "scrollbar_vbar_base"; 
 				}
 
 				image { 
@@ -238,7 +255,13 @@ group {
 				}
 
 				fill {
-					smooth: 0;
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -247,7 +270,7 @@ group {
 			name: "sb_vbar_a1";
 			type: IMAGE;
 			mouse_events: 1;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -257,12 +280,12 @@ group {
 				align: 0.5 0.0;
 
 				rel1 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 0.0 0.0; 
 				}
 
 				rel2 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 1.0 0.0; 
 				}
 
@@ -276,7 +299,7 @@ group {
 			name: "sb_vbar_a2";
 			type: IMAGE;
 			mouse_events: 1;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -286,13 +309,13 @@ group {
 				align: 0.5 1.0;
 
 				rel1 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 0.0 1.0; 
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 1.0 1.0; 
 					offset: 0 -1; 
 				}
@@ -308,7 +331,7 @@ group {
 			name: "e.dragable.vbar.clip";
 			type: RECT;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -317,13 +340,13 @@ group {
 				color: 255 255 255 255;
 
 				rel1 { 
-					to: "sb_vbar_base"; 
+					to: "scrollbar_vbar_base"; 
 					relative: 0.0 0.0; 
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "sb_vbar_base"; 
+					to: "scrollbar_vbar_base"; 
 					relative: 1.0 1.0; 
 					offset: 0 0; 
 				}
@@ -340,13 +363,13 @@ group {
 			name: "e.dragable.vbar";
 			type: IMAGE;
 			mouse_events: 1;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 			clip_to: "e.dragable.vbar.clip";
 
 			dragable {
 				x: 0 0 0;
 				y: 1 1 0;
-				confine: "sb_vbar_base";
+				confine: "scrollbar_vbar_base";
 			}
 
 			description {
@@ -355,13 +378,13 @@ group {
 				max: 13 9999;
 
 				rel1 { 
-					to: "sb_vbar_base"; 
+					to: "scrollbar_vbar_base"; 
 					relative: 0.5 0.5; 
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "sb_vbar_base"; 
+					to: "scrollbar_vbar_base"; 
 					relative: 0.5 0.5; 
 					offset: 0 0; 
 				}
@@ -369,6 +392,16 @@ group {
 				image {
 					normal: "images/scrollframe-bar_im2.png";
 					border: 6 6 6 6;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -382,7 +415,7 @@ group {
 			name: "vbar_stipple";
 			type: IMAGE;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 			clip_to: "e.dragable.vbar.clip";
 
 			description {
@@ -418,7 +451,7 @@ group {
 			name: "a1_arrow";
 			type: IMAGE;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -428,12 +461,12 @@ group {
 				align: 0.5 0.0;
 
 				rel1 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 0.0 0.0; 
 				}
 
 				rel2 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 1.0 0.0; 
 				}
 
@@ -453,7 +486,7 @@ group {
 			name: "a2_arrow";
 			type: IMAGE;
 			mouse_events: 0;
-			clip_to: "sb_vbar";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -463,13 +496,13 @@ group {
 				align: 0.5 1.0;
 
 				rel1 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 0.0 1.0; 
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "sb_vbar"; 
+					to: "scrollframe_vbar_rect"; 
 					relative: 1.0 1.0; 
 					offset: 0 -1; 
 				}
@@ -499,16 +532,16 @@ group {
 				color: 255 255 255 255;
 
 				rel1 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					relative: 0.0 1.0; 	
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "border"; 
+					to: "background_overlay"; 
+					to_x: "scrollframe_vbar_rect"; 
 					relative: 0.0 1.0; 
 					offset: 1 -1; 
-					to_x: "sb_vbar"; 
 				}
 			}
 
@@ -517,16 +550,16 @@ group {
 				visible: 0;
 
 				rel1 { 
-					to: "border"; 
+					to: "background_overlay"; 
 					relative: 0.0 1.0; 
 					offset: 0 0; 
 				}
 
 				rel2 { 
-					to: "border"; 
+					to: "background_overlay"; 
+					to_x: "scrollframe_vbar_rect"; 
 					relative: 0.0 1.0; 
 					offset: 1 -6; 
-					to_x: "sb_vbar"; 
 				}
 			}
 		}
@@ -646,6 +679,16 @@ group {
 					normal: "images/scrollbar_im4.png";
 					border: 6 6 8 8;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -760,7 +803,6 @@ group {
 				state: "default" 0.0;
 				min: 36 13;
 				max: 72 13;
-				fixed: 1 1;
 
 				rel1 { 
 					to: "sb_hbar_base"; 
@@ -775,6 +817,16 @@ group {
 				image {
 					normal: "images/scrollframe-bar_im0.png";
 					border: 7 7 7 7;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -922,6 +974,16 @@ group {
 				rel2.offset: -2 -3;
 				image.normal: "images/scrollframe_im2.png";
 				image.border: 7 7 7 7;
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -929,19 +991,19 @@ group {
 /* vertical programs */
 	programs {
 		program {
-			name: "sb_vbar_show";
+			name: "scrollframe_vbar_rect_show";
 			signal: "e,action,show,vbar";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			target: "sb_vbar";
+			target: "scrollframe_vbar_rect";
 		}
 
 		program {
-			name: "sb_vbar_hide";
+			name: "scrollframe_vbar_rect_hide";
 			signal: "e,action,hide,vbar";
 			source: "e";
 			action: STATE_SET "hidden" 0.0;
-			target: "sb_vbar";
+			target: "scrollframe_vbar_rect";
 		}
 
 		program {

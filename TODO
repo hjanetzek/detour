@@ -27,6 +27,9 @@ Screen Resolution Settings icons.
 -init.edc: better design
 
 == Improve ==
+scrollframe.edc: arrows to repeat_events ??
+scrollframe.edc: go over "part" names. Its hard to follow the code.
+Buttons with icons: like arrows should be on the right side of the text?
 ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
@@ -66,4 +69,5 @@ Configure panel: icons / Windows
 == e ==
 Gradient dialog and Online dialog not inheriting "button" icon.
 -configure.edc: width seems to be hardcoded, bad!
+e/widgets/menu/default/submenu: if set to fixed: 1 1; eek!
 
