@@ -42,6 +42,16 @@ group {
 					border: 2 2 2 2;
 					middle: 1;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -179,19 +189,27 @@ group {
 					normal: "images/wallpaper_pat3.png";
 				}
 
-				fill {
-					size {
-						relative: 0 0;
-						offset: 4 4;
-					}
-				}
-
 				rel1 { 
 					offset: 3 4; 
 				}
 
 				rel2 { 
 					offset: -2 -5; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+
+					size {
+						relative: 0 0;
+						offset: 4 4;
+					}
 				}
 			}
 		}
@@ -282,6 +300,16 @@ group {
 					relative: 0.5 1.0; 
 					offset: 0 -1; 
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -324,6 +352,16 @@ group {
 					relative: 1.0 1.0; 
 					offset: 0 -1; 
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -364,6 +402,16 @@ group {
 					normal: "images/pager_im6.png";
 					border: 7 7 7 8;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -388,6 +436,16 @@ group {
 				image {
 					normal: "images/pager_im0.png";
 					border: 7 7 7 7;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -552,6 +610,16 @@ group {
 					normal: "images/pager_im7.png";
 					border: 5 5 5 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -586,6 +654,16 @@ group {
 				image {
 					normal: "images/pager_im7.png";
 					border: 5 5 7 6;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 

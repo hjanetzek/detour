@@ -50,6 +50,16 @@ group {
 				image {
 					normal: "images/itask_im0.png";
 					border: 18 18 20 0;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}		
 			}
 
@@ -70,6 +80,16 @@ group {
 					normal: "images/itask_im1.png";
 					border: 18 18 0 28;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -89,6 +109,16 @@ group {
 					normal: "images/itask_im2.png";
 					border: 0 20 32 18;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 	
 			description {
@@ -107,6 +137,16 @@ group {
 				image {
 					normal: "images/itask_im3.png";
 					border: 20 0 32 18;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}

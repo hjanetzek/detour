@@ -25,18 +25,14 @@ data {
 }
 
 //Mouse pointer options
-#define ANIMATED_CURSOR 0	/* mouse pointer will pulsate when inactive */
-#define ALTERNATE_CURSOR 0 	/* alternate (black) mouse pointer */
+#define ANIMATED_CURSOR 0	/* Mouse pointer will pulsate when inactive */
+#define ALTERNATE_CURSOR 0 	/* Alternate (black) mouse pointer */
 
 //Fontconfig: system-wide font configuration
 #define USE_FONTCONFIG 1 	/* fc-match --help for more information */
 
-//Color and Text classes
-#define ENABLE_TEXT_CLASSES 1
-#define ENABLE_COLOR_CLASSES 0 	/* work in progress */
-
-//Enable custom icons
-#define ENABLE_CUSTOM_ICONS 0 	/* work in progress */
+//Smooth images on scaling
+#define USE_SMOOTH_IMAGES 1 	/* The default (internal) value is 1 */
 
 //Truncate desktop icons filename
 #define TRUNCATE_DESKTOP_ICON_FILENAME 1
@@ -47,8 +43,15 @@ data {
 //Truncate efm icon list filename
 #define TRUNCATE_EFM_ICON_LIST_FILENAME 1
 
+//Color and Text classes
+#define ENABLE_TEXT_CLASSES 1
+#define ENABLE_COLOR_CLASSES 0 	/* Work in progress */
+
+//Enable custom icons
+#define ENABLE_CUSTOM_ICONS 0 	/* Work in progress */
+
 images {
-	#include "images.edc" 	/* includes both icons and regular images */
+	#include "images.edc" 	/* Includes both icons and regular images */
 }
 
 spectra {

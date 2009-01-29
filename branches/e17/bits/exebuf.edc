@@ -42,6 +42,16 @@ group {
 					border: 2 2 2 2;
 					middle: 1;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -68,6 +78,16 @@ group {
 				image {
 					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -138,6 +158,16 @@ group {
 					normal: "images/dialog_im1.png";
 					border: 0 0 3 0;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -164,6 +194,16 @@ group {
 				image {
 					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -482,6 +522,16 @@ group {
 				rel2 { 
 					relative: 1.0 1.0; 
 					offset: 3 -1; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 

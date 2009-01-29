@@ -48,6 +48,14 @@ group {
 				}
 
 				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+
 					size {
 						relative: 0 0;
 						offset: 35 35;
@@ -83,6 +91,16 @@ group {
 					normal: "images/fileman_im5.png";
 					border: 1 1 1 1;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -112,6 +130,16 @@ group {
 				image {
 					normal: "images/fileman_im6.png";
 					border: 1 1 1 1;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -175,6 +203,16 @@ group {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -209,7 +247,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+  
 					size { 
 						relative: 0 0; 
 						offset: 16 16; 
@@ -568,6 +614,16 @@ group {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -602,7 +658,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 	
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+  
 					size { 
 						relative: 0 0; 
 						offset: 16 16; 
@@ -961,6 +1025,16 @@ group {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -995,7 +1069,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+ 
 					size { 
 						relative: 0 0; 
 						offset: 16 16; 
@@ -1353,6 +1435,16 @@ group {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -1387,7 +1479,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 	
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+   
 					size { 
 						relative: 0 0; 
 						offset: 16 16; 
@@ -1724,7 +1824,17 @@ group {
 				image {
 					normal: "images/button_im3.png";
 					border: 8 8 8 8;
-				}       
+				}  
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}     
 			}
 
 			description {
@@ -1757,6 +1867,16 @@ group {
 				image {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -1793,6 +1913,14 @@ group {
 				}	    	       
 		
 				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+
 					size {
 						relative: 0 0;
 						offset: 16 16;
@@ -2139,7 +2267,17 @@ group {
 				image {
 					normal: "images/button_im3.png";
 					border: 8 8 8 8;
-				}       
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}     
 			}
 
 			description {
@@ -2173,6 +2311,16 @@ group {
 				image {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -2239,7 +2387,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 		
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+  
 					size {
 						relative: 0 0;
 						offset: 16 16;
@@ -2560,6 +2716,16 @@ group {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -2594,7 +2760,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 		
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+   
 					size {
 						relative: 0 0;
 						offset: 16 16;
@@ -2809,7 +2983,17 @@ group {
 				image {
 					normal: "images/fileman_im4.png";
 					border: 8 8 9 8;
-				}     
+				}  
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}   
 			}
 		}
 
@@ -3036,6 +3220,16 @@ group {
 					normal: "images/fileman_im1.png";
 					border: 6 6 6 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -3071,7 +3265,15 @@ group {
 					normal: "images/fileman_im2.png";
 				}	    	       
 		
-				fill {	    
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+   
 					size {
 						relative: 0 0;
 						offset: 16 16;
@@ -3286,7 +3488,17 @@ group {
 				image {
 					normal: "images/fileman_im4.png";
 					border: 8 8 9 8;
-				}       
+				}    
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}   
 			}
 		}
 
@@ -3514,6 +3726,16 @@ group {
 					normal: "images/ibar_im3.png";
 					border: 7 7 10 8;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -3632,6 +3854,16 @@ group {
 				image {
 					normal: "images/ibar_im0.png";
 					border: 5 5 5 5;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -3841,6 +4073,16 @@ group {
 					normal: "images/fileman_im0.png";
 					border: 26 26 26 26;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -3858,6 +4100,16 @@ group {
 				image {
 					normal: "images/fileman_im0.png";
 					border: 26 26 26 26;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -4077,6 +4329,16 @@ group {
 				image {
 					normal: "images/scrollbar_im4.png";
 					border: 6 6 8 8;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -4459,6 +4721,16 @@ group {
 					normal: "images/scrollbar_im5.png"; 
 					border: 8 8 6 6; 
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -4588,6 +4860,16 @@ group {
 				image {
 					normal: "images/scrollframe-bar_im2.png";
 					border: 6 6 6 6;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -4967,8 +5249,6 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 255 255 48;
-				fill.size.relative: 0 0;
-				fill.size.offset: 24 24;
 
 				rel1 {
 					to: "base";
@@ -4985,6 +5265,21 @@ group {
 				image {
 					normal: "images/wallpaper_pat0.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+
+					size {
+						relative: 0 0;
+						offset: 24 24;
+					}
+				}
 			}
 		}
 
@@ -5000,6 +5295,16 @@ group {
 					normal: "images/fileman_im3.png";
 					border: 10 10 10 10;
 					middle: 0;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5032,6 +5337,16 @@ group {
 				image {
 					normal: "icons/document-open.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5062,6 +5377,16 @@ group {
 
 				image {
 					normal: "icons/edit-copy.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5094,6 +5419,16 @@ group {
 				image {
 					normal: "icons/edit-cut.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5124,6 +5459,16 @@ group {
 
 				image {
 					normal: "icons/edit-paste.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5156,6 +5501,16 @@ group {
 				image {
 					normal: "icons/edit-delete.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5186,6 +5541,16 @@ group {
 
 				image {
 					normal: "icons/document-properties.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5218,6 +5583,16 @@ group {
 				image {
 					normal: "icons/document-new.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5248,6 +5623,16 @@ group {
 
 				image {
 					normal: "icons/folder-new.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5280,6 +5665,16 @@ group {
 				image {
 					normal: "icons/view-refresh.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5310,6 +5705,16 @@ group {
 
 				image {
 					normal: "icons/filesaveas.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5342,6 +5747,16 @@ group {
 				image {
 					normal: "icons/stock_select-all.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5372,6 +5787,16 @@ group {
 
 				image {
 					normal: "icons/edit-find-replace.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5404,6 +5829,16 @@ group {
 				image {
 					normal: "icons/edit-find-replace.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5434,6 +5869,16 @@ group {
 
 				image {
 					normal: "icons/edit-find.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -5466,6 +5911,16 @@ group {
 				image {
 					normal: "icons/applications-system-16.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5487,6 +5942,16 @@ group {
 
 				image {
 					normal: "icons/user-home.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -5535,6 +6000,16 @@ group {
 
 				image {
 					normal: "icons/user-desktop.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -5585,6 +6060,16 @@ group {
 				image {
 					normal: "icons/drive-harddisk.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -5632,6 +6117,16 @@ group {
 
 				image {
 					normal: "icons/computer.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -5735,17 +6230,25 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 /* TODO: create open folder icon */
@@ -5756,17 +6259,25 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -5832,17 +6343,25 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 /* TODO: create open file icon */
@@ -5853,17 +6372,25 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -5951,6 +6478,16 @@ group {
 				image {
 					normal: "icons/gnome-dev-removable-usb.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5974,6 +6511,16 @@ group {
 				image {
 					normal: "icons/computer.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 	}
@@ -5993,17 +6540,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
 				image {
-					normal: "icons/gnome-mime-application-pdf.png";
+					#if ENABLE_CUSTOM_ICONS == 0
+						normal: "icons/gnome-mime-application-pdf.png";
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
+						normal: "custom/cd_gnome-mime-application-pdf.png";
+					#endif
+					#endif
 				}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-				image {
-					normal: "custom/cd_gnome-mime-application-pdf.png";
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
-				#endif
-				#endif
 			}
 
 			description {
@@ -6035,6 +6590,16 @@ group {
 
 				image {
 					normal: "icons/shellscript.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -6068,6 +6633,16 @@ group {
 				image {
 					normal: "icons/shellscript.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6099,6 +6674,16 @@ group {
 
 				image {
 					normal: "icons/shellscript.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -6132,6 +6717,16 @@ group {
 				image {
 					normal: "icons/shellscript.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6161,17 +6756,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
 				image {
-					normal: "icons/image-x-generic.png";
+					#if ENABLE_CUSTOM_ICONS == 0
+						normal: "icons/image-x-generic.png";
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
+						normal: "custom/cd_image-x-generic.png";
+					#endif
+					#endif
 				}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-				image {
-					normal: "custom/cd_image-x-generic.png";
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
-				#endif
-				#endif
 			}
 
 			description {
@@ -6201,17 +6804,15 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
 				image {
-					normal: "icons/image-x-generic.png";
+					#if ENABLE_CUSTOM_ICONS == 0
+						normal: "icons/image-x-generic.png";
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
+						normal: "custom/cd_image-x-generic.png";
+					#endif
+					#endif
 				}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-				image {
-					normal: "custom/cd_image-x-generic.png";
-				}
-				#endif
-				#endif
 			}
 
 			description {
@@ -6243,6 +6844,16 @@ group {
 
 				image {
 					normal: "icons/video-x-generic.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -6276,6 +6887,16 @@ group {
 				image {
 					normal: "icons/audio-x-generic.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6305,17 +6926,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
 				image {
-					normal: "icons/image-x-generic.png";
+					#if ENABLE_CUSTOM_ICONS == 0
+						normal: "icons/image-x-generic.png";
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
+						normal: "custom/cd_image-x-generic.png";
+					#endif
+					#endif
 				}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-				image {
-					normal: "custom/cd_image-x-generic.png";
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
-				#endif
-				#endif
 			}
 
 			description {
@@ -6347,6 +6976,16 @@ group {
 
 				image {
 					normal: "icons/shellscript.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -6380,6 +7019,16 @@ group {
 				image {
 					normal: "icons/shellscript.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6412,6 +7061,16 @@ group {
 				image {
 					normal: "icons/shellscript.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6441,17 +7100,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/document.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_document.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6484,6 +7151,16 @@ group {
 				image {
 					normal: "icons/audio-x-generic.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6513,17 +7190,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6553,17 +7238,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6593,17 +7286,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6633,17 +7334,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/font-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_font-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6673,17 +7382,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/font-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_font-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6713,17 +7430,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/font-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_font-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6753,17 +7478,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-html.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-html.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6793,17 +7526,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-html.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-html.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6833,17 +7574,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-html.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-html.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6873,17 +7622,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6913,17 +7670,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6953,17 +7718,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -6993,17 +7766,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7033,17 +7814,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7073,17 +7862,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7115,6 +7912,16 @@ group {
 
 				image {
 					normal: "icons/video-x-generic.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -7148,6 +7955,16 @@ group {
 				image {
 					normal: "icons/video-x-generic.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7177,17 +7994,15 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/text-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_text-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7217,17 +8032,15 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/image-x-generic.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_image-x-generic.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7260,6 +8073,16 @@ group {
 				image {
 					normal: "icons/audio-x-generic.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -7289,17 +8112,25 @@ group {
 				aspect_preference: BOTH;
 				align: 0.5 0.0;
 
-				#if ENABLE_CUSTOM_ICONS == 0
-					image {
+				image {
+					#if ENABLE_CUSTOM_ICONS == 0
 						normal: "icons/folder_tar.png";
-					}
-				#else
-				#if ENABLE_CUSTOM_ICONS == 1
-					image {
+					#else
+					#if ENABLE_CUSTOM_ICONS == 1
 						normal: "custom/cd_folder_tar.png";
-					}
-				#endif
-				#endif
+					#endif
+					#endif
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {

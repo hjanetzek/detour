@@ -19,6 +19,16 @@ group {
 					normal: "images/fileman_im7.png";
 					border: 2 2 1 6;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {

@@ -16,7 +16,13 @@ group {
 				image.border: 9 8 8 8;
 
 				fill {
-					smooth: 0;
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}

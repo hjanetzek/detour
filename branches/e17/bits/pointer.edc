@@ -16,17 +16,15 @@ group {
 			description {
 				state: "default" 0.0;
 
+				image {
 				#if ALTERNATE_CURSOR == 0
-					image {
-						normal: "images/pointer_im1.png";
-					}
+					normal: "images/pointer_im1.png";
 				#else
 				#if ALTERNATE_CURSOR == 1
-					image {
-						normal: "images/pointer_im4.png";
-					}
+					normal: "images/pointer_im4.png";
 				#endif
 				#endif
+				}
 			}
 
 			description {
@@ -47,17 +45,16 @@ group {
 				description {
 					state: "default" 0.0;
 					color: 255 255 255 0;
+
+					image {
 					#if ALTERNATE_CURSOR == 0
-						image {
-							normal: "images/pointer_im1.png";
-						}
+						normal: "images/pointer_im1.png";
 					#else
 					#if ALTERNATE_CURSOR == 1
-						image {
-							normal: "images/pointer_im4.png";
-						}
+						normal: "images/pointer_im4.png";
 					#endif
 					#endif
+					}
 				}
 
 				description {
