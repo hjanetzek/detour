@@ -29,6 +29,16 @@ group {
 					normal: "images/dialog_im2.png";
 					border: 3 3 3 3;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -175,6 +185,16 @@ group {
 					relative: 1.0 1.0; 
 					offset: -1 -1; 
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -197,6 +217,16 @@ group {
 
 				rel2 { 
 					to: "button_clip"; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -272,6 +302,16 @@ group {
 				rel2 { 
 					to: "button_clip"; 
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description {
@@ -301,6 +341,16 @@ group {
 				min: 32 16;
 				image.normal: "images/entry_im0.png";
 				image.border: 6 6 8 7;
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description { 
@@ -347,6 +397,16 @@ group {
 					to: "entry"; 
 					relative: 1.0 1.0; 
 					offset: -1 -1; 
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}

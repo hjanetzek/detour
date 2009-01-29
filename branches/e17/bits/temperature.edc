@@ -51,6 +51,16 @@ group {
 					normal: "temperature-base.png";
 					border: 3 3 5 3;
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -80,6 +90,16 @@ group {
 				image {
 					normal: "temperature-0.png";
 					border: 6 3 61 4;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 
@@ -125,7 +145,13 @@ group {
 
 				text {
 					text: "99^C";
-					font: "Sans:style=Bold,DejaVuSans-Bold";
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
 					size: 9;
 					min: 1 1;
 					align: 0.0 0.0;

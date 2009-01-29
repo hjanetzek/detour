@@ -13,6 +13,16 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 				image.normal: "images/e17_logo.png";
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description { 
@@ -36,6 +46,16 @@ group {
 				aspect: 1.0 1.0;
 				aspect_preference: BOTH;
 				image.normal: "images/e17_logo.png";
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 
 			description { 

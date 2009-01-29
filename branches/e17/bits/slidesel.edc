@@ -60,8 +60,14 @@ group {
 				}
 
 				text {
-					font: "Sans:style=Bold,DejaVuSans-Bold";
-					size: 20;
+					#if USE_FONTCONFIG == 0
+						font: "DejaVuSans-Bold";
+					#else
+					#if USE_FONTCONFIG == 1
+						font: "Sans:style=Bold";
+					#endif
+					#endif
+					size: 11;
 					min: 0 1;
 					align: 0.0 0.0;
 					#if ENABLE_TEXT_CLASSES == 0
@@ -89,6 +95,16 @@ group {
 					border: 7 7 7 7;
 					/* FIXME: */
 					middle: 0;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 

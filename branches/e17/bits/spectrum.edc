@@ -56,6 +56,16 @@ group {
 				image {
 					normal: "images/spectrum_im4.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -82,6 +92,16 @@ group {
 				image {
 					normal: "images/spectrum_im11.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -107,6 +127,16 @@ group {
 
 				image {
 					normal: "images/spectrum_im11.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -135,6 +165,16 @@ group {
 				image {
 					normal: "images/spectrum_im10.png";
 				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
 			}
 		}
 
@@ -161,6 +201,16 @@ group {
 
 				image {
 					normal: "images/spectrum_im10.png";
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
@@ -224,6 +274,16 @@ group {
 					normal: "images/spectrum_im0.png";
 					border: 7 7 7 7;
 					middle: 0;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
 				}
 			}
 		}
