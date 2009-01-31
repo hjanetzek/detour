@@ -111,8 +111,8 @@ group {
 			signal: "show";
 			source: "";
 			action: STATE_SET "hidden" 0.0;
-			transition: LINEAR 0.5;
-			target: "logo_clip"; in: 10.0 0.0;
+			transition: LINEAR 0.25;
+			target: "logo_clip"; in: 5.0 0.0;
 		}
 	}
 }
