@@ -14,6 +14,7 @@ e/widgets/menu/default/icon: e.swallow.content (has a non-fixed part, add: fixed
 e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 
 == Bugfix ==
+fileman.edc: revise selected state over content_menu popup
 ilist: selection double click/continuous click
 desklock: center dialog
 battery.edc: text
