@@ -1,3 +1,18 @@
+
+detour v. 0.7.5 for a release to happen:
+fix: 
+	-battery module
+	-temperature module
+	-syscon.edc
+	-about_e.edc
+	-init.edc
+	-screen resolution icons
+	-border: urgent/icon animation
+	-ibar: drop image
+	-efm: overlay bg
+	-transitions: images
+	
+
 /* detour stats: */
 
 /images: 209 items, total: 201.0kb
@@ -27,7 +42,6 @@ Screen Resolution Settings icons.
 -init.edc: better design
 
 == Improve ==
-scrollframe.edc: arrows to repeat_events ??
 scrollframe.edc: go over "part" names. Its hard to follow the code.
 ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"

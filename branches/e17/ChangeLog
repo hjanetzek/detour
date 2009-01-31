@@ -1,4 +1,242 @@
 ------------------------------------------------------------------------
+r691 | alberto.castro.leiva | 2009-01-31 00:20:51 -0600 (Sat, 31 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/pager.edc
+
+hilite logic() work in progress
+scrollrame = work in progress
+
+------------------------------------------------------------------------
+r690 | alberto.castro.leiva | 2009-01-29 13:11:42 -0600 (Thu, 29 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+
+pager: add some padding
+
+------------------------------------------------------------------------
+r689 | alberto.castro.leiva | 2009-01-29 13:06:51 -0600 (Thu, 29 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/macros/init-bg.edc
+   M /branches/e17/main.edc
+
+fileman: this is more like it.
+
+------------------------------------------------------------------------
+r688 | alberto.castro.leiva | 2009-01-29 02:32:33 -0600 (Thu, 29 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/color_well.edc
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/configure_toolbar.edc
+   M /branches/e17/bits/cslider.edc
+   M /branches/e17/bits/deskpreview.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/bits/efm_nav.edc
+   M /branches/e17/bits/efm_toolbar.edc
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/exebuf.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/gadman.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/bits/itask.edc
+   M /branches/e17/bits/menu.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/pointer.edc
+   M /branches/e17/bits/preview.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/bits/slider.edc
+   M /branches/e17/bits/slidesel.edc
+   M /branches/e17/bits/spectrum.edc
+   M /branches/e17/bits/start.edc
+   M /branches/e17/bits/syscon.edc
+   M /branches/e17/bits/temperature.edc
+   M /branches/e17/bits/transitions.edc
+   M /branches/e17/bits/winlist.edc
+   M /branches/e17/main.edc
+
+Use SMOOTH_IMAGES as a BOOLEAN
+
+------------------------------------------------------------------------
+r687 | alberto.castro.leiva | 2009-01-27 19:23:52 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/shelf.edc
+   M /branches/e17/images/pager_im1.png
+   M /branches/e17/images/pager_im7.png
+   M /branches/e17/images/shelf_def_im0.png
+   M /branches/e17/images/shelf_def_im02.png
+   M /branches/e17/images/shelf_def_im1.png
+   M /branches/e17/images/shelf_def_im2.png
+
+Fix pager's e.swallowed.content: window/shaded
+
+------------------------------------------------------------------------
+r686 | alberto.castro.leiva | 2009-01-27 18:18:54 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+
+Oops! forgot to hilight icon labels.
+
+------------------------------------------------------------------------
+r685 | alberto.castro.leiva | 2009-01-27 18:13:36 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/ilist.edc
+   M /branches/e17/macros/fileman_list.edc
+
+ilist/efm_list icon_swallow padding [left]
+
+------------------------------------------------------------------------
+r684 | alberto.castro.leiva | 2009-01-27 17:47:57 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/images/fileman_im1.png
+   M /branches/e17/images.edc
+
+Improvements to the icon_box_shadow.
+
+------------------------------------------------------------------------
+r683 | alberto.castro.leiva | 2009-01-27 17:11:32 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/spectrum.edc
+   M /branches/e17/images/spectrum_im1.png
+   A /branches/e17/images/spectrum_im10.png
+   A /branches/e17/images/spectrum_im11.png
+   M /branches/e17/images/spectrum_im4.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Improved spectrum dragable_cursor.
+
+------------------------------------------------------------------------
+r682 | alberto.castro.leiva | 2009-01-27 04:31:09 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+
+Pickup mouse_events for icon_hilite!
+
+------------------------------------------------------------------------
+r681 | alberto.castro.leiva | 2009-01-27 04:27:21 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+
+It never ends.
+
+------------------------------------------------------------------------
+r680 | alberto.castro.leiva | 2009-01-27 04:25:01 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/configure.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/icons.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/bits/winlist.edc
+   M /branches/e17/images/fileman_im1.png
+   M /branches/e17/images/fileman_im2.png
+   A /branches/e17/images/ibar_im1.png
+   R /branches/e17/images/pager_im7.png
+   A /branches/e17/images/screen_im0.png
+   M /branches/e17/images/wallpaper_pat0.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Improvements.
+
+------------------------------------------------------------------------
+r679 | alberto.castro.leiva | 2009-01-27 02:44:09 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/TODO
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/images/wallpaper_pat0.png
+   M /branches/e17/images.edc
+
+Update
+
+------------------------------------------------------------------------
+r678 | alberto.castro.leiva | 2009-01-27 00:20:04 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/images/pager_im0.png
+   M /branches/e17/images/pager_im6.png
+
+improve pager focus_clip
+
+------------------------------------------------------------------------
+r677 | alberto.castro.leiva | 2009-01-27 00:03:42 -0600 (Tue, 27 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/pager.edc
+
+Pager focus oops.
+
+------------------------------------------------------------------------
+r676 | alberto.castro.leiva | 2009-01-27 00:00:23 -0600 (Tue, 27 Jan 2009) | 9 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/pager.edc
+   M /branches/e17/images/pager_im6.png
+
+Improvements to the pager.
+
+EFM/Desktop and EFM_WIN icons opacity, upon selection icons 
+light up.
+
+unselected: 255 255 255 221;
+selected: 255 255 255 255;
+
+
+------------------------------------------------------------------------
+r675 | alberto.castro.leiva | 2009-01-26 02:55:46 -0600 (Mon, 26 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   A /branches/e17/images/logo_im1.png
+   M /branches/e17/images.edc
+
+Add background_decoration.
+
+------------------------------------------------------------------------
+r674 | alberto.castro.leiva | 2009-01-26 02:25:04 -0600 (Mon, 26 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/button.edc
+
+Center e.swalow.icon: icon
+
+------------------------------------------------------------------------
+r673 | alberto.castro.leiva | 2009-01-26 02:20:12 -0600 (Mon, 26 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+
+Update TODO
+
+------------------------------------------------------------------------
+r672 | alberto.castro.leiva | 2009-01-26 02:17:03 -0600 (Mon, 26 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/entry.edc
+   M /branches/e17/bits/ibar.edc
+   M /branches/e17/images/entry_im1.png
+   D /branches/e17/images/ibar_im1.png
+   M /branches/e17/images.edc
+
+Improve entry_focus.
+
+------------------------------------------------------------------------
 r671 | alberto.castro.leiva | 2009-01-26 01:38:53 -0600 (Mon, 26 Jan 2009) | 2 lines
 Changed paths:
    M /branches/e17/TODO
