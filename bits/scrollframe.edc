@@ -187,7 +187,7 @@ group {
 			name: "sb_vbar_p1";
 			type: RECT;
 			mouse_events: 0;
-			//clip_to: "scrollframe_vbar_rect";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -211,7 +211,7 @@ group {
 			name: "sb_vbar_p2";
 			type: RECT;
 			mouse_events: 1;
-			//clip_to: "scrollframe_vbar_rect";
+			clip_to: "scrollframe_vbar_rect";
 
 			description {
 				state: "default" 0.0;
@@ -591,7 +591,6 @@ group {
 
 		part {
 			name: "sb_hbar_p1";
-			//type: GRADIENT
 			type: RECT;
 			mouse_events: 0;
 			clip_to: "sb_hbar";
@@ -599,16 +598,6 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 255 0 0 0;
-
-/*
- * rephorm says this is a work around for the fill { angle: 90; }
- *
- * gradient {
- * 	spectrum: "scrollbar_left";
- * 	rel1.relative: 0.0 0.5;
- * 	rel2.relative: 1.0 0.5;
- * }
- */
 
 				rel1 { 
 					to: "sb_hbar_a1"; 
@@ -626,7 +615,6 @@ group {
 
 		part {
 			name: "sb_hbar_p2";
-			//type: GRADIENT
 			type: RECT;
 			mouse_events: 0;
 			clip_to: "sb_hbar";
@@ -635,14 +623,6 @@ group {
 				state: "default" 0.0;
 				color: 255 0 0 128;
 
-/*
- * rephorm says this is a work around for the fill { angle: 90; }
- * 	gradient {
- * 		spectrum: "scrollbar_right";
- *		rel1.relative: 0.0 0.5;
- *		rel2.relative: 1.0 0.5;
- *	}
- */
 				rel1 { 
 					to: "e.dragable.hbar"; 
 					relative: 1.0 0.0; 
