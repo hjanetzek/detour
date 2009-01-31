@@ -14,7 +14,6 @@ e/widgets/menu/default/icon: e.swallow.content (has a non-fixed part, add: fixed
 e/widgets/syscon/main: e.swallow.main (has a non-fixed part, add: fixed: 1 1;)
 
 == Bugfix ==
-fileman.edc: revise selected state over content_menu popup
 ilist: selection double click/continuous click
 desklock: center dialog
 battery.edc: text
@@ -30,7 +29,6 @@ Screen Resolution Settings icons.
 == Improve ==
 scrollframe.edc: arrows to repeat_events ??
 scrollframe.edc: go over "part" names. Its hard to follow the code.
-Buttons with icons: like arrows should be on the right side of the text?
 ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
@@ -71,4 +69,5 @@ Configure panel: icons / Windows
 Gradient dialog and Online dialog not inheriting "button" icon.
 -configure.edc: width seems to be hardcoded, bad!
 e/widgets/menu/default/submenu: if set to fixed: 1 1; eek!
+icons: such as arrows should be aligned to the right, it depends on the icon's function
 

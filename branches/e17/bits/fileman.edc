@@ -3220,21 +3220,21 @@ group {
 					set_int(hilited, 1);
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 
 				if(get_int(hilited) == 1)
 				{
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 
 				if(get_int(selected) == 1)
 				{
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 			}
 		}
@@ -3249,30 +3249,30 @@ group {
 					set_int(hilited, 0);
 					set_state(PART:"e.swallow.icon_clip", "default", 0.0);
 					set_state(PART:"e.text.label", "default", 0.0);
-					set_state(PART:"filename_overlay_clip", "default", 0.0);
+					//set_state(PART:"filename_overlay_clip", "default", 0.0);
 				}
 
 				if(get_int(hilited) == 0)
 				{
 					set_state(PART:"e.swallow.icon_clip", "default", 0.0);
 					set_state(PART:"e.text.label", "default", 0.0);
-					set_state(PART:"filename_overlay_clip", "default", 0.0);
+					//set_state(PART:"filename_overlay_clip", "default", 0.0);
 				}
 
 				if(get_int(selected) == 1)
 				{
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 
 				else {
 					set_state(PART:"e.swallow.icon_clip", "default", 0.0);
 					set_state(PART:"e.text.label", "default", 0.0);
-					set_state(PART:"filename_overlay_clip", "default", 0.0);
+					//set_state(PART:"filename_overlay_clip", "default", 0.0);
 				}
 			}
-		} 
+		}
 
 		program { 
 			name: "ask";
@@ -3839,21 +3839,21 @@ group {
 					set_int(hilited, 1);
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 
 				if(get_int(hilited) == 1)
 				{
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 
 				if(get_int(selected) == 1)
 				{
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 			}
 		}
@@ -3868,27 +3868,27 @@ group {
 					set_int(hilited, 0);
 					set_state(PART:"e.swallow.icon_clip", "default", 0.0);
 					set_state(PART:"e.text.label", "default", 0.0);
-					set_state(PART:"filename_overlay_clip", "default", 0.0);
+					//set_state(PART:"filename_overlay_clip", "default", 0.0);
 				}
 
 				if(get_int(hilited) == 0)
 				{
 					set_state(PART:"e.swallow.icon_clip", "default", 0.0);
 					set_state(PART:"e.text.label", "default", 0.0);
-					set_state(PART:"filename_overlay_clip", "default", 0.0);
+					//set_state(PART:"filename_overlay_clip", "default", 0.0);
 				}
 
 				if(get_int(selected) == 1)
 				{
 					set_state(PART:"e.swallow.icon_clip", "hover", 0.0);
 					set_state(PART:"e.text.label", "hover", 0.0);
-					set_state(PART:"filename_overlay_clip", "hover", 0.0);
+					//set_state(PART:"filename_overlay_clip", "hover", 0.0);
 				}
 
 				else {
 					set_state(PART:"e.swallow.icon_clip", "default", 0.0);
 					set_state(PART:"e.text.label", "default", 0.0);
-					set_state(PART:"filename_overlay_clip", "default", 0.0);
+					//set_state(PART:"filename_overlay_clip", "default", 0.0);
 				}
 			}
 		}
