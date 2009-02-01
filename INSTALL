@@ -4,7 +4,7 @@ main.edc: build time options
 There are various options inside the main.edc file, example:
 
 This options disables or enables mouse pointer pulsating animation
-	#define USE_ANIMATED_CURSOR (0/1)
+	#define ANIMATED_CURSOR (0/1)
 
 COMPILING and INSTALLING:
 
