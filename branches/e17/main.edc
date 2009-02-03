@@ -15,8 +15,6 @@
  * by cored.org et al (see AUTHORS).
  */
 
-/* design means... be selective & objective, use only what you need. */
-
 data {
 	item: "theme/name" 		"detour (symetrika)";
 	item: "theme/version"		"0.7.5";
