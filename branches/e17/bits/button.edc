@@ -180,7 +180,7 @@ group {
 				min: 44 24;
 				color: 255 255 255 0;
 				image.normal: "images/button_im4.png";
-				image.border: 6 6 0 6;
+				image.border: 6 6 13 0;
 
 				rel1 { 
 					to: "button_clip"; 

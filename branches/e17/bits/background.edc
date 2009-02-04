@@ -75,7 +75,7 @@ group {
 				rel1 { 
 					to: "gradient"; 
 					relative: 0.0 0.5; 
-					offset: -40 0; 
+					offset: -40 -22; 
 				}
 
 				rel2 { 
@@ -92,7 +92,7 @@ group {
 				rel1 { 
 					to: "gradient"; 
 					relative: 0.0 0.5; 
-					offset: 0 0; 
+					offset: 0 -22; 
 				}
 
 				rel2 { 
