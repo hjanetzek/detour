@@ -42,6 +42,7 @@ Screen Resolution Settings icons.
 -init.edc: better design
 
 == Improve ==
+pager: states/anim for urgent windows on a desktop
 scrollframe.edc: go over "part" names. Its hard to follow the code.
 ibar: e/modules/ibar[ibox]/drop images 
 -syscon.edc: "e/widgets/syscon/item/button"

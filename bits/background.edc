@@ -1,4 +1,6 @@
 
+#define ALTERNATE 0
+
 group {
 	name: "e/desktop/background";
 
@@ -25,7 +27,13 @@ group {
 	
 			description { 
 				state: "default" 0.0; 
-				gradient.spectrum: "backdrop";
+				#if ALTERNATE == 0
+					gradient.spectrum: "backdrop";
+				#else
+				#if ALTERNATE == 1
+					gradient.spectrum: "alternate";
+				#endif
+				#endif
     			}
 		}
 
@@ -38,8 +46,15 @@ group {
 				state: "default" 0.0;
 				color: 205 204 188 5;
 
+
 				image {
-					normal: "images/wallpaper_pat2.png";
+					#if ALTERNATE == 0
+						normal: "images/wallpaper_pat2.png";
+					#else
+					#if ALTERNATE == 1
+						normal: "images/wallpaper_pat4.png";
+					#endif
+					#endif
 				}
 
 				fill {
@@ -53,7 +68,13 @@ group {
 
 					size {
 						relative: 0 0;
-						offset: 24 24;
+						#if ALTERNATE == 0
+							offset: 24 24;
+						#else
+						#if ALTERNATE == 1
+							offset: 10 10;
+						#endif
+						#endif
 					}
 				}
 			}

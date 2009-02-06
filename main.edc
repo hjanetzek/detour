@@ -63,6 +63,12 @@ spectra {
 	}
 
 	spectrum {
+		name: "alternate";		/* alternate gradient */
+		color: 207 213 223 255 1;
+		color: 128 142 170 255 1;
+	}
+
+	spectrum {
 		name: "file_manager";		/* main file manager background */
 		color: 230 229 211 255 1;
 		color: 196 196 182 255 1;

@@ -3018,7 +3018,7 @@ group {
 				state: "default" 0.0;
 				align: 0.5 1.0;
 				fixed: 0 1;
-				color: 7 7 7 255;
+				color: 7 7 7 221;
 				color3: 7 7 7 0;
 
 				rel1 { 
@@ -3064,11 +3064,8 @@ group {
 			description {
 				state: "selected" 0.0;
 				inherit: "default" 0.0;
-			}
-
-			description {
-				state: "hover" 0.0;
-				inherit: "selected" 0.0;
+				color: 255 255 255 255;
+				color3: 7 7 7 0;
 			}
 		}
 
@@ -3141,7 +3138,6 @@ group {
 			source: "event";
 			action: STATE_SET "hover" 0.0;
 			target: "e.swallow.icon_clip";
-			target: "e.text.label";
 		}
 
 		program {
@@ -3149,9 +3145,7 @@ group {
 			signal: "mouse,out";
 			source: "event";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.25;
 			target: "e.swallow.icon_clip";
-			target: "e.text.label";
 		}
 
 		program {
@@ -3169,7 +3163,6 @@ group {
 			signal: "e,state,unselected";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.25;
 			target: "e.swallow.icon_clip";
 			target: "e.text.label";
 			target: "filename_overlay_clip";
@@ -3671,7 +3664,6 @@ group {
 			signal: "mouse,out";
 			source: "event";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.25;
 			target: "e.swallow.icon_clip";
 			target: "e.text.label";
 		}
@@ -3691,7 +3683,6 @@ group {
 			signal: "e,state,unselected";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.25;
 			target: "e.swallow.icon_clip";
 			target: "e.text.label";
 			target: "filename_overlay_clip";
