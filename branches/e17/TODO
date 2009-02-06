@@ -37,7 +37,6 @@ border: urgent/icon animation
 
 == Redo ==
 Screen Resolution Settings icons.
--syscon.edc
 -about_e.edc: ugly design, use [TABS]
 -init.edc: better design
 
@@ -45,7 +44,6 @@ Screen Resolution Settings icons.
 pager: states/anim for urgent windows on a desktop
 scrollframe.edc: go over "part" names. Its hard to follow the code.
 ibar: e/modules/ibar[ibox]/drop images 
--syscon.edc: "e/widgets/syscon/item/button"
 ICON("e/icons/enlightenment/colors", "icons/view-colors.png") 
 ICON("e/icons/enlightenment/startup_applications", "icons/applications-other2.png")
 desktop/efm window overlay: overlay bg
