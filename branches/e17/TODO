@@ -34,7 +34,6 @@ desklock: center dialog
 battery.edc: text
 init.edc: check button
 border: urgent/icon animation
-efm/icon: bg/drop/shadow non-standard size images
 
 == Redo ==
 Screen Resolution Settings icons including the "Check" mark.
@@ -59,6 +58,7 @@ Configure panel: icons / Windows
 == Global ==
 
 == Ideas ==
+-efm/win/desktop icon: icon "selection"
 -find different uses for = part; name: "event" to pickup events
 -pointer group:
 	signal: "e,action,mouse,wheel";

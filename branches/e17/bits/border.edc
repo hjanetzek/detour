@@ -54,7 +54,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -94,7 +94,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -161,7 +161,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 225;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -201,7 +201,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -296,7 +296,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 200;
 
 				rel1 {
 					to: "title.area.clip";
@@ -336,7 +336,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 200;
 			} 
 		}
 
@@ -395,7 +395,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -435,7 +435,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -510,7 +510,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -550,7 +550,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -698,7 +698,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -738,7 +738,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -788,7 +788,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -828,7 +828,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -1028,7 +1028,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -1068,7 +1068,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
@@ -1137,7 +1137,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 {
 					to: "title.area.clip";
@@ -1177,7 +1177,7 @@ group {
 				state: "default" 0.1; 
 				inherit: "default" 0.0;
 				color: 60 60 60 128;
-				color3: 170 168 169 64;
+				color3: 255 255 255 128;
 			} 
 		}
 
