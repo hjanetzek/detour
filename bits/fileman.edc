@@ -3063,7 +3063,7 @@ group {
 				}
 			}
 		}
- 
+
 		part {
 			name: "e.swallow.icon";
 			type: SWALLOW;
@@ -3107,27 +3107,6 @@ group {
 			}
 		}
 
-		part {
-			name: "filename_overlay_clip";
-			type: RECT;
-			mouse_events: 0;
-
-			description {
-				state: "default" 0.0;
-				color: 255 255 255 0;
-			}
-
-			description {
-				state: "selected" 0.0;
-				color: 255 255 255 255;
-			}
-
-			description {
-				state: "hover" 0.0;
-				inherit: "selected" 0.0;
-			}
-		}
-
 		part {      
 			name: "filename_overlay";
 			type: IMAGE;
@@ -3164,6 +3143,27 @@ group {
 					#endif
 					#endif
 				}   
+			}
+		}
+
+		part {
+			name: "filename_overlay_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 0;
+			}
+
+			description {
+				state: "selected" 0.0;
+				color: 255 255 255 255;
+			}
+
+			description {
+				state: "hover" 0.0;
+				inherit: "selected" 0.0;
 			}
 		}
 
@@ -3577,7 +3577,108 @@ group {
 				}
 			}
 		}
- 
+
+		part {
+			name: "e.swallow.icon.overlay-middle";
+			type: IMAGE;
+			mouse_events: 0;
+			clip_to: "e.swallow.icon.overlay_clip";
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 221;
+
+				rel1 {
+					to: "e.swallow.icon.overlay";
+					relative: 0.0 0.0;
+					offset: -2 -2;
+				}
+
+				rel2 {
+					to: "e.swallow.icon.overlay";
+					relative: 1.0 1.0;
+					offset: 1 2;
+				}
+
+				image {
+					normal: "images/gadman_im0.png";
+					border: 16 16 16 16;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
+			}
+		}
+
+		part {
+			name: "e.swallow.icon.overlay";
+			type: IMAGE;
+			mouse_events: 0;
+			clip_to: "e.swallow.icon.overlay_clip";
+
+			description {
+				state: "default" 0.0;
+				align: 0.5 0.5;
+				color: 255 255 255 221;
+
+				rel1 {
+					to_y: "e.swallow.icon";
+					to_x: "e.text.label";
+					relative: 0.0 0.0; 
+					offset: 0 -8; 
+				}
+
+				rel2 {
+					to: "e.text.label";
+					relative: 1.0 0.0; 
+					offset: -1 5; 
+				}
+
+				image {
+					normal: "images/gadman_im1.png";
+					border: 12 12 12 12;
+				}
+
+				fill {
+					#if USE_SMOOTH_IMAGES == 0
+						smooth: 0;
+					#else
+					#if USE_SMOOTH_IMAGES == 1
+						smooth: 1;
+					#endif
+					#endif
+				}
+			}
+		}
+
+		part {
+			name: "e.swallow.icon.overlay_clip";
+			type: RECT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				color: 255 255 255 0;
+			}
+
+			description {
+				state: "selected" 0.0;
+				color: 255 255 255 255;
+			}
+
+			description {
+				state: "hover" 0.0;
+				color: 255 255 255 0;
+			}
+		}
+
 		part {
 			name: "e.swallow.icon";
 			type: SWALLOW;
@@ -3834,6 +3935,7 @@ group {
 			source: "e";
 			action: STATE_SET "selected" 0.0;
 			target: "e.swallow.icon_clip";
+			target: "e.swallow.icon.overlay_clip";
 			target: "e.text.label";
 			target: "filename_overlay_clip";
 		}
@@ -3844,6 +3946,7 @@ group {
 			source: "e";
 			action: STATE_SET "default" 0.0;
 			target: "e.swallow.icon_clip";
+			target: "e.swallow.icon.overlay_clip";
 			target: "e.text.label";
 			target: "filename_overlay_clip";
 		}
