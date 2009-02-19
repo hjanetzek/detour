@@ -94,7 +94,7 @@ group {
 		part {
 			name: "e.text.title";
 			type: TEXT;
-			effect: SOFT_SHADOW;
+			/* effect: SOFT_SHADOW; */
 			mouse_events: 0;
 			scale: 1;
 
@@ -108,7 +108,7 @@ group {
 				#endif
 				#endif
 				color: 30 30 30 255;
-				color3: 255 255 255 64;
+				color3: 255 255 255 128;
 				visible: 0;
 
 				rel1 { 
@@ -667,6 +667,7 @@ group {
 		part {
 			name: "e.text.label";
 			type: TEXT;
+			effect: SHADOW;
 			mouse_events: 0;
 			scale: 1;
       
@@ -680,15 +681,16 @@ group {
 				#endif
 				#endif
 				color: 60 60 60 255;
-
+			        color3: 255 255 255 128;
+			  
 				rel1 { 
 					relative: 0.0 0.0; 
-					offset: 5 3; 
+					offset: 3 3; 
 				}
 
 				rel2 { 
 					relative: 1.0 1.0; 
-					offset: -6 -4; 
+					offset: -4 -2; 
 				}
 
 				text {
@@ -702,7 +704,7 @@ group {
 					#endif
 					size: 11;
 					min: 1 1;
-					align: 0.0 0.5;
+					align: 0.0 0.0;
 					#if ENABLE_TEXT_CLASSES == 0
 						text_class: "";
 					#else
@@ -717,6 +719,7 @@ group {
 				state: "active" 0.0;
 				inherit: "default" 0.0;
 				color: 255 255 255 255;
+			        color3: 255 255 255 0;
 			}
 		}
 	}

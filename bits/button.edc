@@ -332,7 +332,7 @@ group {
 					#endif
 					#endif
 					color: 60 60 60 255;
-					color3: 170 168 169 128;
+					color3: 255 255 255 128;
 
 					rel1 {
 						to_x: "e.swallow.icon";
