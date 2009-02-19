@@ -3,7 +3,7 @@ detour v. 0.7.5 for a release to happen:
 fix: 
 	-battery module
 	-temperature module
-	-syscon.edc
+	-syscon.edc [done]
 	-about_e.edc
 	-init.edc
 	-screen resolution icons
@@ -34,13 +34,15 @@ desklock: center dialog
 battery.edc: text
 init.edc: check button
 border: urgent/icon animation
+efm/icon: bg/drop/shadow non-standard size images
 
 == Redo ==
-Screen Resolution Settings icons.
+Screen Resolution Settings icons including the "Check" mark.
 -about_e.edc: ugly design, use [TABS]
 -init.edc: better design
 
 == Improve ==
+pager: popup
 pager: states/anim for urgent windows on a desktop
 scrollframe.edc: go over "part" names. Its hard to follow the code.
 ibar: e/modules/ibar[ibox]/drop images 
