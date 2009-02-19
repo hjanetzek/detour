@@ -5,7 +5,7 @@ group {
 	name: "e/desktop/background";
 
 	data { 
-		item: "style" "0"; 
+		//item: "style" "0"; 
 	}
 
 	parts { 
