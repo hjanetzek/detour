@@ -278,7 +278,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+			        color3: 255 255 255 128;
 
 				rel1 { 
 					to: "button_clip";
@@ -396,7 +396,7 @@ group {
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
-				color3: 170 168 169 32;
+			        color3: 255 255 255 128;
 				fixed: 1 1;
 
 				rel1 { 
