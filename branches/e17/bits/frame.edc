@@ -61,7 +61,7 @@ group {
 				align: 0.0 0.0;
 				fixed: 0 1;
 				color: 60 60 60 255;
-				color3: 170 168 169 128;
+				color3: 255 255 255 128;
 
 				rel1 { 
 					relative: 0.0 0.0;
