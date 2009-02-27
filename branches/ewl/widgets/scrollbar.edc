@@ -22,7 +22,7 @@ group {
 
 
 group {
-        name: "ewl/scrollbar/hbutton";
+        name: "ewl/scrollbar/horizontal/button";
 
         min: 36 17;
 	max: 99999 17;
@@ -59,7 +59,7 @@ group {
 }
 
 group {
-        name: "ewl/scrollbar/vbutton";
+        name: "ewl/scrollbar/vertical/button";
 
         min: 17 36;
 	max: 17 99999;
