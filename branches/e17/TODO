@@ -36,12 +36,12 @@ init.edc: check button
 border: urgent/icon animation
 
 == Redo ==
+about_edje: logo, "dare frame thy perfect symmetry" ?
 Screen Resolution Settings icons including the "Check" mark.
 -about_e.edc: ugly design, use [TABS]
 -init.edc: better design
 
 == Improve ==
-pager: popup
 pager: states/anim for urgent windows on a desktop
 scrollframe.edc: go over "part" names. Its hard to follow the code.
 ibar: e/modules/ibar[ibox]/drop images 
