@@ -48,9 +48,6 @@ data {
 //Enable custom icons
 #define ENABLE_CUSTOM_ICONS 0 			/* Work in progress */
 
-//Align icons on the right
-#define ICONS_ON_THE_RIGHT 0			/* it should really depend upon the icon's function */
-
 images {
 	#include "images.edc" 			/* Includes both icons and regular images */
 }
