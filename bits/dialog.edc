@@ -100,19 +100,19 @@ group {
 			name: "dialog";
 			#if USE_FONTCONFIG == 1 && ENABLE_TEXT_CLASSES == 1
 				base: "font=Sans:style=Bold font_size=11 align=center color=#3c3c3c wrap=word text_class=tb_plain";
-				tag:  "hilight" "+ font=Sans:style=Bold font_size=11 color=#070707 style=shadow shadow_color=#07070730 text_class=tb_light"; 
+				tag:  "hilight" "+ font=Sans:style=Bold font_size=11 color=#252525 style=shadow shadow_color=#ffffff90 text_class=tb_light"; 
 			#else
 			#if USE_FONTCONFIG == 0 && ENABLE_TEXT_CLASSES == 1
 				base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word text_class=tb_plain"; 
-				tag:  "hilight" "+ font=DejaVuSans-Bold font_size=11 color=#070707 style=shadow shadow_color=#07070730 text_class=tb_light";
+				tag:  "hilight" "+ font=DejaVuSans-Bold font_size=11 color=#252525 style=shadow shadow_color=#ffffff90 text_class=tb_light";
 			#else
 			#if USE_FONTCONFIG == 1 && ENABLE_TEXT_CLASSES == 0
 				base: "font=Sans:style=Bold font_size=11 align=center color=#3c3c3c wrap=word";
-				tag:  "hilight" "+ font=Sans:style=Bold font_size=11 color=#070707 style=shadow shadow_color=#07070730";
+				tag:  "hilight" "+ font=Sans:style=Bold font_size=11 color=#252525 style=shadow shadow_color=#ffffff90";
 			#else
 			#if USE_FONTCONFIG == 0 && ENABLE_TEXT_CLASSES == 0
 				base: "font=DejaVuSans-Bold font_size=11 align=center color=#3c3c3c wrap=word";
-				tag:  "hilight" "+ font=DejaVuSans-Bold font_size=11 color=#070707 style=shadow shadow_color=#07070730";
+				tag:  "hilight" "+ font=DejaVuSans-Bold font_size=11 color=#252525 style=shadow shadow_color=#ffffff90";
 			#endif
 			#endif
 			#endif
