@@ -1,4 +1,155 @@
 ------------------------------------------------------------------------
+r708 | alberto.castro.leiva | 2009-03-03 03:18:58 -0600 (Tue, 03 Mar 2009) | 3 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/dialog.edc
+   M /branches/e17/main.edc
+
+Small update.
+Delete/confirmation dialog: text
+
+------------------------------------------------------------------------
+r707 | alberto.castro.leiva | 2009-03-01 20:29:36 -0600 (Sun, 01 Mar 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/main.edc
+
+update
+
+------------------------------------------------------------------------
+r706 | hannes.janetzek | 2009-02-27 05:43:16 -0600 (Fri, 27 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/clock.edc
+
+was there a reason to make the clock that tiny? 
+
+------------------------------------------------------------------------
+r704 | alberto.castro.leiva | 2009-02-19 15:01:31 -0600 (Thu, 19 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/fileman.edc
+
+Add this. [testing]
+
+------------------------------------------------------------------------
+r703 | alberto.castro.leiva | 2009-02-19 13:58:49 -0600 (Thu, 19 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/about_detour.edc
+   M /branches/e17/bits/about_e.edc
+   M /branches/e17/bits/tclock.edc
+   M /branches/e17/images/menu_im3.png
+   M /branches/e17/images/menu_im4.png
+
+Update these too, so that it reflects Hannes' changes.
+
+------------------------------------------------------------------------
+r702 | alberto.castro.leiva | 2009-02-19 13:35:32 -0600 (Thu, 19 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/border.edc
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/frame.edc
+   M /branches/e17/bits/menu.edc
+
+Patch from Hannes Janetzek
+
+------------------------------------------------------------------------
+r701 | alberto.castro.leiva | 2009-02-19 00:54:48 -0600 (Thu, 19 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/fileman.edc
+
+Hmm what is this.
+
+------------------------------------------------------------------------
+r700 | alberto.castro.leiva | 2009-02-06 17:31:58 -0600 (Fri, 06 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/syscon.edc
+
+Fix syscon
+
+------------------------------------------------------------------------
+r699 | alberto.castro.leiva | 2009-02-05 21:02:01 -0600 (Thu, 05 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/pager.edc
+   A /branches/e17/images/wallpaper_pat4.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Fixes
+
+------------------------------------------------------------------------
+r698 | alberto.castro.leiva | 2009-02-04 02:31:33 -0600 (Wed, 04 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/button.edc
+
+Fix edge:scaling for button 'shadow'
+
+------------------------------------------------------------------------
+r697 | alberto.castro.leiva | 2009-02-03 17:43:34 -0600 (Tue, 03 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/pager.edc
+   A /branches/e17/images/pager_im8.png
+   M /branches/e17/images.edc
+   M /branches/e17/main.edc
+
+Improve pager active/inactive window.
+
+------------------------------------------------------------------------
+r696 | alberto.castro.leiva | 2009-02-01 03:02:18 -0600 (Sun, 01 Feb 2009) | 2 lines
+Changed paths:
+   M /branches/e17/INSTALL
+   M /branches/e17/bits/background.edc
+   M /branches/e17/images/pager_im0.png
+
+much better
+
+------------------------------------------------------------------------
+r695 | alberto.castro.leiva | 2009-01-31 23:40:37 -0600 (Sat, 31 Jan 2009) | 3 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/images/logo_im1.png
+
+No need for all this embryo scripts if we can't get the desired 
+effect. Maybe my logic was just way way off.
+
+------------------------------------------------------------------------
+r694 | alberto.castro.leiva | 2009-01-31 02:26:04 -0600 (Sat, 31 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/bits/background.edc
+   M /branches/e17/images/logo_im0.png
+
+Speed this up.
+
+------------------------------------------------------------------------
+r693 | alberto.castro.leiva | 2009-01-31 02:01:37 -0600 (Sat, 31 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/ChangeLog
+   M /branches/e17/TODO
+
+Requirements for a 0.7.5 release
+
+------------------------------------------------------------------------
+r692 | alberto.castro.leiva | 2009-01-31 01:58:01 -0600 (Sat, 31 Jan 2009) | 2 lines
+Changed paths:
+   M /branches/e17/TODO
+   M /branches/e17/bits/button.edc
+   M /branches/e17/bits/fileman.edc
+   M /branches/e17/bits/scrollframe.edc
+   M /branches/e17/main.edc
+
+bah
+
+------------------------------------------------------------------------
 r691 | alberto.castro.leiva | 2009-01-31 00:20:51 -0600 (Sat, 31 Jan 2009) | 3 lines
 Changed paths:
    M /branches/e17/TODO
