@@ -7,9 +7,6 @@ program { \
 	action: STATE_SET "default" 0.0; \
 	transition: DECELERATE 0.5; \
 	target: "e.text.title"; \
-	target: "button-min"; \
-	target: "button-max"; \
-	target: "button-close"; \
 } \
 program { \
 	name: "inactive"; \
@@ -18,57 +15,54 @@ program { \
 	action: STATE_SET "default" 0.1; \
 	transition: DECELERATE 0.5; \
 	target: "e.text.title"; \
-	target: "button-min"; \
-	target: "button-max"; \
-	target: "button-close"; \
 } \
 program { \
 	name: "close_click"; \
 	signal: "mouse,down,1"; \
 	source: "button-close"; \
 	action: STATE_SET "clicked" 0.0; \
-	transition: DECELERATE 0.15; \
-	target: "close-clip"; \
+	target: "button-close_shadow"; \
+	target: "button-close_shadow_overlay"; \
 } \
 program { \
 	name: "close_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-close"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 1.0; \
-	target: "close-clip"; \
+	target: "button-close_shadow"; \
+	target: "button-close_shadow_overlay"; \
 } \
 program { \
 	name: "max_click"; \
 	signal: "mouse,down,1"; \
 	source: "button-max"; \
 	action: STATE_SET "clicked" 0.0; \
-	transition: DECELERATE 0.15; \
-	target: "max-clip"; \
+	target: "button-max_shadow"; \
+	target: "button-max_shadow_overlay"; \
 } \
 program { \
 	name: "max_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-max"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 1.0; \
-	target: "max-clip"; \
+	target: "button-max_shadow"; \
+	target: "button-max_shadow_overlay"; \
 } \
 program { \
 	name: "min_click"; \
 	signal: "mouse,down,1"; \
 	source: "button-min"; \
 	action: STATE_SET "clicked" 0.0; \
-	transition: DECELERATE 0.15; \
-	target: "min-clip"; \
+	target: "button-min_shadow"; \
+	target: "button-min_shadow_overlay"; \
 } \
 program { \
 	name: "min_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-min"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 1.0; \
-	target: "min-clip"; \
+	target: "button-min_shadow"; \
+	target: "button-min_shadow_overlay"; \
 } \
 program { \
 	name: "urgent"; \
@@ -103,16 +97,16 @@ program { \
 	signal: "mouse,down,1"; \
 	source: "button-close"; \
 	action: STATE_SET "clicked" 0.0; \
-	transition: DECELERATE 0.15; \
-	target: "close-clip"; \
+	target: "button-close_shadow"; \
+	target: "button-close_shadow_overlay"; \
 } \
 program { \
 	name: "close_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-close"; \
 	action: STATE_SET "default" 0.0; \
-	transition: DECELERATE 1.0; \
-	target: "close-clip"; \
+	target: "button-close_shadow"; \
+	target: "button-close_shadow_overlay"; \
 } \
 program { \
 	name: "urgent"; \
