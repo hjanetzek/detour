@@ -117,6 +117,12 @@ group {
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 		BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
 		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 18 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-max_shadow", "max-clip", 18 17, "max-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-min_shadow", "min-clip", 18 17, "min-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-max_shadow_overlay", "max-clip", 20 18, "max-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-min_shadow_overlay", "min-clip", 20 18, "min-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -224,6 +230,12 @@ group {
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 		BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
 		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 18 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-max_shadow", "max-clip", 18 17, "max-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-min_shadow", "min-clip", 18 17, "min-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-max_shadow_overlay", "max-clip", 20 18, "max-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-min_shadow_overlay", "min-clip", 20 18, "min-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -353,6 +365,8 @@ group {
 		CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 		HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 17 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
@@ -452,6 +466,8 @@ group {
 		CLIPS("close-clip", 20 18, 20 18, "top-right", 0.0 0.0, 0 0, 0.0 1.0, -23 0)
 		HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 17 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
@@ -466,7 +482,8 @@ group {
 			source: "button-close";
 			action: STATE_SET "clicked" 0.0;
 			transition: DECELERATE 0.15;
-			target: "close-clip";
+			target: "button-close_shadow";
+			target: "button-close_shadow_overlay";
 		}
 
 		program {
@@ -475,7 +492,8 @@ group {
 			source: "button-close";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "close-clip";
+			target: "button-close_shadow";
+			target: "button-close_shadow_overlay";
 		}
 	}
 }
@@ -570,6 +588,10 @@ group {
 		HOLDER("_close", 20 18, "close-clip", "images/window-border_bt0.png")
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 17 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-min_shadow", "min-clip", 17 17, "min-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-min_shadow_overlay", "min-clip", 20 18, "min-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
@@ -585,7 +607,8 @@ group {
 			source: "button-close";
 			action: STATE_SET "clicked" 0.0;
 			transition: DECELERATE 0.15;
-			target: "close-clip";
+			target: "button-close_shadow";
+			target: "button-close_shadow_overlay";
 		}
 
 		program {
@@ -594,7 +617,8 @@ group {
 			source: "button-close";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "close-clip";
+			target: "button-close_shadow";
+			target: "button-close_shadow_overlay";
 		}
 
 		program {
@@ -603,7 +627,8 @@ group {
 			source: "button-min";
 			action: STATE_SET "clicked" 0.0;
 			transition: DECELERATE 0.15;
-			target: "min-clip";
+			target: "button-min_shadow";
+			target: "button-min_shadow_overlay";
 		}
 
 		program {
@@ -612,7 +637,8 @@ group {
 			source: "button-min";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "min-clip";
+			target: "button-min_shadow";
+			target: "button-min_shadow_overlay";
 		}
 	}
 }
@@ -851,6 +877,12 @@ group {
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 		BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
 		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 17 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-max_shadow", "max-clip", 17 17, "max-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-min_shadow", "min-clip", 17 17, "min-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-max_shadow_overlay", "max-clip", 20 18, "max-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-min_shadow_overlay", "min-clip", 20 18, "min-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -868,6 +900,7 @@ group {
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
 			target: "inactive.shadow";
+			target: "e.text.title";
 		} 
 
 		program {
@@ -877,25 +910,8 @@ group {
 			action: STATE_SET "default" 0.1;
 			transition: DECELERATE 0.5;
 			target: "inactive.shadow";
-		} 
-
-		program {
-			name: "active.text"; 
-			signal: "e,state,focused"; 
-			source: "e";
-			action: STATE_SET "default" 0.0;
-			transition: DECELERATE 0.5;
 			target: "e.text.title";
 		} 
-
-		program {
-			name: "inactive.text"; 
-			signal: "e,state,unfocused"; 
-			source: "e";
-			action: STATE_SET "default" 0.1;
-			transition: DECELERATE 0.5;
-			target: "e.text.title";
-		}
 
 		program {
 			name: "close_click";
@@ -903,7 +919,8 @@ group {
 			source: "button-close";
 			action: STATE_SET "clicked" 0.0;
 			transition: DECELERATE 0.15;
-			target: "close-clip";
+			target: "button-close_shadow";
+			target: "button-close_shadow_overlay";
 		}
 
 		program {
@@ -912,7 +929,8 @@ group {
 			source: "button-close";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "close-clip";
+			target: "button-close_shadow";
+			target: "button-close_shadow_overlay";
 		}
 
 		program {
@@ -921,7 +939,8 @@ group {
 			source: "button-max";
 			action: STATE_SET "clicked" 0.0;
 			transition: DECELERATE 0.15;
-			target: "max-clip";
+			target: "button-max_shadow";
+			target: "button-max_shadow_overlay";
 		}
 
 		program {
@@ -930,7 +949,8 @@ group {
 			source: "button-max";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "max-clip";
+			target: "button-max_shadow";
+			target: "button-max_shadow_overlay";
 		}
 
 		program {
@@ -939,7 +959,8 @@ group {
 			source: "button-min";
 			action: STATE_SET "clicked" 0.0;
 			transition: DECELERATE 0.15;
-			target: "min-clip";
+			target: "button-min_shadow";
+			target: "button-min_shadow_overlay";
 		}
 
 		program {
@@ -948,7 +969,8 @@ group {
 			source: "button-min";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "min-clip";
+			target: "button-min_shadow";
+			target: "button-min_shadow_overlay";
 		}
 	}
 }
@@ -1093,6 +1115,12 @@ group {
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 		BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
 		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 17 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-max_shadow", "max-clip", 17 17, "max-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-min_shadow", "min-clip", 17 17, "min-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-max_shadow_overlay", "max-clip", 20 18, "max-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-min_shadow_overlay", "min-clip", 20 18, "min-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
@@ -1200,6 +1228,12 @@ group {
 		BUTTONS("button-close", "close-clip", 17 17, "close-clip", "images/window-border_bt4.png")
 		BUTTONS("button-max", "max-clip", 17 17, "max-clip", "images/window-border_bt3.png")
 		BUTTONS("button-min", "min-clip", 17 17, "min-clip", "images/window-border_bt2.png")
+		BUTTON_SHADOW("button-close_shadow", "close-clip", 17 17, "close-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-max_shadow", "max-clip", 17 17, "max-clip", "images/button_im4.png")
+		BUTTON_SHADOW("button-min_shadow", "min-clip", 17 17, "min-clip", "images/button_im4.png")
+		BUTTON_SHADOW_OVERLAY("button-close_shadow_overlay", "close-clip", 20 18, "close-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-max_shadow_overlay", "max-clip", 20 18, "max-clip", "images/button_im5.png")
+		BUTTON_SHADOW_OVERLAY("button-min_shadow_overlay", "min-clip", 20 18, "min-clip", "images/button_im5.png")
 		PART_EVENT_MAP("e.event.close", 1, "button-close")
 		PART_EVENT_MAP("e.event.maximize", 1, "button-max")
 		PART_EVENT_MAP("e.event.minimize", 1, "button-min")
