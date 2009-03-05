@@ -36,7 +36,6 @@ init.edc: check button
 border: urgent/icon animation
 
 == Redo ==
-about_edje: logo, "dare frame thy perfect symmetry" ?
 Screen Resolution Settings icons including the "Check" mark.
 -about_e.edc: ugly design, use [TABS]
 -init.edc: better design
@@ -54,6 +53,7 @@ Configure panel: icons / Windows
 -temperature.edc: graphics
 -clock graphics(hands)
 -battery: text/graphics --transition
+border: buttons, they are too conservative.
 
 == Global ==
 
