@@ -645,7 +645,7 @@ group {
 
 			description {
 				state: "visible" 0.0;
-				color: 0 0 0 128;
+				color: 0 0 0 192;
 			}
 		}
 
@@ -693,7 +693,7 @@ group {
 			signal: "e,state,visibility,show";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
-			transition: LINEAR 0.4;
+			transition: LINEAR 0.2; /* 0.4 */
 			target: "bg";
 		}
 
@@ -702,7 +702,7 @@ group {
 			signal: "e,state,visibility,show,now";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
-			transition: LINEAR 0.4;
+			transition: LINEAR 0.2; /* 0.4 */
 			target: "bg";
 		}
 
@@ -711,7 +711,7 @@ group {
 			signal: "e,state,visibility,hide";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.4;
+			transition: LINEAR 0.2; /* 0.4 */
 			target: "bg";
 			after: "hide_stop";
 		}
@@ -731,7 +731,7 @@ group {
 			signal: "e,state,visibility,show,custom";
 			source: "e";
 			action: STATE_SET "visible" 0.0;
-			transition: LINEAR 0.4;
+			transition: LINEAR 0.2;
 			target: "custom_bg";
 		}
 
@@ -749,7 +749,7 @@ group {
 			signal: "e,state,visibility,hide,custom";
 			source: "e";
 			action: STATE_SET "default" 0.0;
-			transition: LINEAR 0.4;
+			transition: LINEAR 0.2; /* 0.4 */
 			target: "custom_bg";
 			after: "hide_stop";
 		}
