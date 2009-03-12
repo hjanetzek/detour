@@ -141,47 +141,47 @@ ICON("drive-optical", "icons/media-optical.png")
 # ifdef ICON
 #  undef ICON
 # endif
-#define ICON(GROUP_NAME,IMAGE_NAME) \
-group { \
-	name: "e/icons/enlightenment/"GROUP_NAME; \
-	parts { \
-		part { \
-			name: "icon"; \
-			type: IMAGE; \
-			mouse_events: 0; \
-			description { \
-				state: "default" 0.0; \
-				max: 24 24; \
-				aspect: 1.0 1.0; \
-				aspect_preference: BOTH; \
-				image { \
-					normal: IMAGE_NAME; \
-				} \
-	    		} \
-		} \
-	} \
+#define ICON(NAME, IMAGE_NAME)					\
+group { name: "e/icons/"NAME ;					\
+	parts {							\
+		part { 						\
+			name: "icon";				\
+			repeat_events: 1;			\
+			description { 				\
+				state: "default" 0.0;		\
+				max: 24 24;			\
+				aspect: 1.0 1.0;		\
+				aspect_preference: BOTH;	\
+				image { 			\
+					normal: IMAGE_NAME ; 	\
+				} 				\
+			}					\
+		}						\
+	}							\
 }
+
+#define ICONMIME(NAME, IMAGE_NAME) ICON("mimetypes/"NAME, IMAGE_NAME)
 
 /* Shelf icons: orientation */
 
-ICON("shelf_bottom_desk", "icons/icon_shelf_bottom_desk.png")
-ICON("shelf_custom", "icons/icon_shelf_custom.png")
-ICON("shelf_dock", "icons/icon_shelf_dock.png")
-ICON("shelf_menu_bar", "icons/icon_shelf_menu_bar.png")
-ICON("shelf_panel", "icons/icon_shelf_panel.png")
-ICON("shelf_top_desk", "icons/icon_shelf_top_desk.png")
-ICON("shelf_position_bottom", "icons/icon_shelf_bottom.png")
-ICON("shelf_position_bottom_left", "icons/icon_shelf_bottom_left.png")
-ICON("shelf_position_bottom_right", "icons/icon_shelf_bottom_right.png")
-ICON("shelf_position_top", "icons/icon_shelf_top.png")
-ICON("shelf_position_top_left", "icons/icon_shelf_top_left.png")
-ICON("shelf_position_top_right", "icons/icon_shelf_top_right.png")
-ICON("shelf_position_left", "icons/icon_shelf_left.png")
-ICON("shelf_position_left_top", "icons/icon_shelf_left_top.png")
-ICON("shelf_position_left_bottom", "icons/icon_shelf_left_bottom.png")
-ICON("shelf_position_right", "icons/icon_shelf_right.png")
-ICON("shelf_position_right_top", "icons/icon_shelf_right_top.png")
-ICON("shelf_position_right_bottom", "icons/icon_shelf_right_bottom.png")
+ICON("preferences-desktop-shelf-bottom-desk", "icons/icon_shelf_bottom_desk.png")
+ICON("preferences-desktop-shelf-custom", "icons/icon_shelf_custom.png")
+ICON("preferences-desktop-shelf-dock", "icons/icon_shelf_dock.png")
+ICON("preferences-desktop-shelf-menu-bar", "icons/icon_shelf_menu_bar.png")
+ICON("preferences-desktop-shelf-panel", "icons/icon_shelf_panel.png")
+ICON("preferences-desktop-shelf-top-desk", "icons/icon_shelf_top_desk.png")
+ICON("preferences-position-bottom", "icons/icon_shelf_bottom.png")
+ICON("preferences-position-bottom-left", "icons/icon_shelf_bottom_left.png")
+ICON("preferences-position-bottom-right", "icons/icon_shelf_bottom_right.png")
+ICON("preferences-position-top", "icons/icon_shelf_top.png")
+ICON("preferences-position-top-left", "icons/icon_shelf_top_left.png")
+ICON("preferences-position-top-right", "icons/icon_shelf_top_right.png")
+ICON("preferences-position-left", "icons/icon_shelf_left.png")
+ICON("preferences-position-left-top", "icons/icon_shelf_left_top.png")
+ICON("preferences-position-left-bottom", "icons/icon_shelf_left_bottom.png")
+ICON("preferences-position-right", "icons/icon_shelf_right.png")
+ICON("preferences-position-right-top", "icons/icon_shelf_right_top.png")
+ICON("preferences-position-right-bottom", "icons/icon_shelf_right_bottom.png")
 
 /* Screen rotation and mirroring icons */
 
