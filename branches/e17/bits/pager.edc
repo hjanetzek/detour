@@ -87,7 +87,7 @@ group {
 						font: "Sans:style=Bold";
 					#endif
 					#endif
-					size: 11;
+					size: 13;
 					align: 0.5 0.0;
 					min: 1 1;
 				}
