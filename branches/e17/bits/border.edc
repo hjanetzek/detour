@@ -132,7 +132,7 @@ group {
 }
 
 group {
-	name: "e/widgets/border/default/border";
+	name: "e/widgets/border/default_square/border";
 
 	data {
 		item: "shaped" "0";
@@ -759,7 +759,7 @@ group {
 }
 
 group {
-	name: "e/widgets/border/shaped/border";
+	name: "e/widgets/border/default/border";
 
 	data {
 		item: "shaped" "1";
