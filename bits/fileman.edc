@@ -3506,13 +3506,13 @@ group {
 
 				rel1 {
 					relative: 0.0 0.0;
-					offset: 4 4;
+					offset: 8 8;
 				}
 
 				rel2 {
 					to_y: "e.text.label";
 					relative: 1.0 0.0;
-					offset: -5 2;
+					offset: -9 -2;
 				}
 			}
 		}
@@ -3593,13 +3593,13 @@ group {
 				rel1 {
 					to: "icon";
 					relative: 0.0 0.0;
-					offset: -8 -8;
+					offset: -9 -9;
 				}
 
 				rel2 {
 					to: "icon";
 					relative: 1.0 1.0;
-					offset: 7 4;
+					offset: 8 8;
 				}
 
 				image {
