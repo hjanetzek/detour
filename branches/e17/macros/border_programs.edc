@@ -21,48 +21,42 @@ program { \
 	signal: "mouse,down,1"; \
 	source: "button-close"; \
 	action: STATE_SET "clicked" 0.0; \
-	target: "button-close_shadow"; \
-	target: "button-close_shadow_overlay"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "close_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-close"; \
 	action: STATE_SET "default" 0.0; \
-	target: "button-close_shadow"; \
-	target: "button-close_shadow_overlay"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "max_click"; \
 	signal: "mouse,down,1"; \
 	source: "button-max"; \
 	action: STATE_SET "clicked" 0.0; \
-	target: "button-max_shadow"; \
-	target: "button-max_shadow_overlay"; \
+	target: "button-max"; \
 } \
 program { \
 	name: "max_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-max"; \
 	action: STATE_SET "default" 0.0; \
-	target: "button-max_shadow"; \
-	target: "button-max_shadow_overlay"; \
+	target: "button-max"; \
 } \
 program { \
 	name: "min_click"; \
 	signal: "mouse,down,1"; \
 	source: "button-min"; \
 	action: STATE_SET "clicked" 0.0; \
-	target: "button-min_shadow"; \
-	target: "button-min_shadow_overlay"; \
+	target: "button-min"; \
 } \
 program { \
 	name: "min_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-min"; \
 	action: STATE_SET "default" 0.0; \
-	target: "button-min_shadow"; \
-	target: "button-min_shadow_overlay"; \
+	target: "button-min"; \
 } \
 program { \
 	name: "urgent"; \
@@ -97,16 +91,14 @@ program { \
 	signal: "mouse,down,1"; \
 	source: "button-close"; \
 	action: STATE_SET "clicked" 0.0; \
-	target: "button-close_shadow"; \
-	target: "button-close_shadow_overlay"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "close_unclick"; \
 	signal: "mouse,up,1"; \
 	source: "button-close"; \
 	action: STATE_SET "default" 0.0; \
-	target: "button-close_shadow"; \
-	target: "button-close_shadow_overlay"; \
+	target: "button-close"; \
 } \
 program { \
 	name: "urgent"; \
