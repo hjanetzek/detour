@@ -244,6 +244,7 @@ group {
 
 				rel1 { 
 					to: "button_clip"; 
+					offset: 0 -1;
 				}
 
 				rel2 { 
