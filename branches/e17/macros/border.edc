@@ -286,6 +286,12 @@ part { 							\
 			normal: IMG; 			\
 		} 					\
 	} 						\
+							\
+	description { 					\
+		state: "clicked" 0.0; 			\
+		inherit: "default" 0.0; 		\
+		color: 215 215 215 255;			\
+	} 						\
 }
 
 #define RESIZE_TOP(NAME, MIN, MAX, TO1, REL1, OFF1, TO2, REL2, OFF2, COLOR) 	\
