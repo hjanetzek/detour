@@ -740,9 +740,9 @@ group {
 
 			description {
 				state: "default" 0.0;
-				aspect: 1.0 1.0;
+				//aspect: 1.0 1.0;
 
-/*
+
 				rel1 {
 					relative: 0.0 0.0;
 					offset: 2 2;
@@ -752,8 +752,8 @@ group {
 					relative: 1.0 1.0;
 					offset: -3 -3;
 				}
-*/
 
+/*
 				rel1 {
 					relative: 0.0 0.0;
 					offset: 1 1;
@@ -763,6 +763,7 @@ group {
 					relative: 1.0 1.0;
 					offset: -2 -2;
 				}
+*/
 			}
 		}
 	}
