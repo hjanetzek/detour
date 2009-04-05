@@ -55,6 +55,7 @@ group {
 
 				image {
 					normal: "images/spectrum_im4.png";
+					border: 4 4 4 5;
 				}
 
 				fill {

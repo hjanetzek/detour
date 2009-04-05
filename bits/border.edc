@@ -123,7 +123,7 @@ group {
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
 		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")	
-		TOP_BORDER_SHADOW()
+		//TOP_BORDER_SHADOW()
 	}
 
 	programs { 
@@ -132,7 +132,7 @@ group {
 }
 
 group {
-	name: "e/widgets/border/default_square/border";
+	name: "e/widgets/border/default/border";
 
 	data {
 		item: "shaped" "0";
@@ -230,7 +230,7 @@ group {
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
 		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")
-		TOP_BORDER_SHADOW()
+		//TOP_BORDER_SHADOW()
 	}
 
 	programs {
@@ -759,7 +759,7 @@ group {
 }
 
 group {
-	name: "e/widgets/border/default/border";
+	name: "e/widgets/border/shaped/border";
 
 	data {
 		item: "shaped" "1";
@@ -857,7 +857,7 @@ group {
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
 		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")
-		TOP_BORDER_SHADOW()
+		//TOP_BORDER_SHADOW()
 	}
 
 	programs {
@@ -867,7 +867,7 @@ group {
 			source: "e";
 			action: STATE_SET "default" 0.0;
 			transition: DECELERATE 0.5;
-			target: "inactive.shadow";
+			//target: "inactive.shadow";
 			target: "e.text.title";
 		} 
 
@@ -877,7 +877,7 @@ group {
 			source: "e"; 
 			action: STATE_SET "default" 0.1;
 			transition: DECELERATE 0.5;
-			target: "inactive.shadow";
+			//target: "inactive.shadow";
 			target: "e.text.title";
 		} 
 
@@ -1083,7 +1083,7 @@ group {
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
 		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")
-		TOP_BORDER_SHADOW()
+		//TOP_BORDER_SHADOW()
 	}
 
 	programs {
@@ -1190,7 +1190,7 @@ group {
 		RESIZE_TOP("resize_t", 1 2, 9999 2, "top-left", 0.0 0.0, 0 0, "top-right", 0.0 0.0, -1 0, 255 0 0 0)
 		E_SWALLOW_ICON("e.swallow.icon", "e.event.icon") 
 		E_EVENT_ICON("e.event.icon", "top-left", "title.area.clip")
-		TOP_BORDER_SHADOW()
+		//TOP_BORDER_SHADOW()
 
 	}
 
