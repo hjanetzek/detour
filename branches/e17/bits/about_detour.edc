@@ -438,13 +438,14 @@ group {
 		part {
 			name: "project_version";
 			type: TEXT;
-			effect: NONE;
+			effect: SHADOW;
 			mouse_events: 0;
 			scale: 1;
 
 			description {
 				state: "default" 0.0;
 				color: 60 60 60 255;
+			        color3: 255 255 255 192;
 				fixed: 1 1;
 
 				rel1 { 

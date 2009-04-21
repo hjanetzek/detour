@@ -186,7 +186,7 @@ group {
 				color: 205 204 188 5;
 
 				image {
-					normal: "images/wallpaper_pat3.png";
+					normal: "images/wallpaper_pat2.png";
 				}
 
 				rel1 { 
@@ -208,7 +208,7 @@ group {
 
 					size {
 						relative: 0 0;
-						offset: 4 4;
+						offset: 24 24;
 					}
 				}
 			}
