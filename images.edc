@@ -488,24 +488,61 @@ image: "images/screen_im0.png" COMP;
  * Contains list of all used icons. 
  */
 
-//~ efm actions
-image: "icons/document-new.png" COMP;
-image: "icons/document-open.png" COMP;
-image: "icons/document-properties.png" COMP;
-image: "icons/edit-copy.png" COMP;
-image: "icons/edit-cut.png" COMP;
-image: "icons/edit-delete.png" COMP;
-image: "icons/edit-find.png" COMP;
-image: "icons/edit-find-replace.png" COMP;
-image: "icons/edit-paste.png" COMP;
-image: "icons/filesaveas.png" COMP;
-image: "icons/folder-new.png" COMP;
-image: "icons/view-refresh.png" COMP;
+image: "icon_colors.png" COMP;
+image: "icon_desklock_menu.png" COMP;
+image: "icon_desktops.png" COMP;
+image: "icon_efm_cd.png" COMP;
+image: "icon_efm_copy.png" COMP;
+image: "icon_efm_cut.png" COMP;
+image: "icon_efm_delete.png" COMP;
+image: "icon_efm_desktop.png" COMP;
+image: "icon_efm_file.png" COMP;
+image: "icon_efm_flash.png" COMP;
+image: "icon_efm_folder.png" COMP;
+image: "icon_efm_hdd.png" COMP;
+image: "icon_efm_home.png" COMP;
+image: "icon_efm_open.png" COMP;
+image: "icon_efm_paste.png" COMP;
+image: "icon_efm_properties.png" COMP;
+image: "icon_efm_refresh.png" COMP;
+image: "icon_efm_rename.png" COMP;
+image: "icon_efm_root.png" COMP;
+image: "icon_efm_tmp.png" COMP;
+image: "icon_fonts.png" COMP;
+image: "icon_globe.png" COMP;
+image: "icon_halt.png" COMP;
+image: "icon_hibernate.png" COMP;
+image: "icon_intl.png" COMP;
+image: "icon_keys.png" COMP;
+image: "icon_logout.png" COMP;
+image: "icon_lost_windows.png" COMP;
+image: "icon_mime_audio_generic.png" COMP;
+image: "icon_mime_font_generic.png" COMP;
+image: "icon_mime_image_generic.png" COMP;
+image: "icon_mime_pdf.png" COMP;
+image: "icon_mime_text_generic.png" COMP;
+image: "icon_mime_text_html.png" COMP;
+image: "icon_mime_video_generic.png" COMP;
+image: "icon_mixer.png" COMP;
+image: "icon_mouse_clean.png" COMP;
+image: "icon_mouse.png" COMP;
+image: "icon_new.png" COMP;
+image: "icon_reboot.png" COMP;
+image: "icon_reset.png" COMP;
+image: "icon_run.png" COMP;
+image: "icon_screensaver.png" COMP;
+image: "icon_screen_setup.png" COMP;
+image: "icon_suspend.png" COMP;
+image: "icon_theme.png" COMP;
+image: "icon_wallpaper.png" COMP;
+image: "icon_warning.png" COMP;
+image: "icon_window_manipulation.png" COMP;
+image: "icon_window_remembers.png" COMP;
+image: "icon_winlist.png" COMP;
 
-//~ navigation buttons
-image: "icons/button-up.png" COMP;
-image: "icons/button-down.png" COMP;
-image: "icons/button-forward.png" COMP;
+//~ unconverted
+image: "icons/system-lock-screen.png" COMP;
+image: "icons/dialog-information.png" COMP;
 
 //~ fill and stretch options (screen)
 image: "icons/wallscreen_im0.png" COMP; /* gradient box */
@@ -514,35 +551,6 @@ image: "icons/wallscreen_im2.png" COMP; /* center */
 image: "icons/wallscreen_im3.png" COMP; /* fill */
 image: "icons/wallscreen_im4.png" COMP; /* tile */
 image: "icons/wallscreen_im5.png" COMP; /* within */
-
-//~ battery
-image: "icons/battery-charge.png" COMP;
-image: "icons/battery-0.png" COMP;
-image: "icons/battery-20.png" COMP;
-image: "icons/battery-40.png" COMP;
-image: "icons/battery-60.png" COMP;
-image: "icons/battery-80.png" COMP;
-image: "icons/battery-100.png" COMP;
-
-//~ fileman mime-types
-image: "icons/gnome-mime-application-pdf.png" COMP; //~ pdf
-image: "icons/shellscript.png" COMP; //~ sh, .c, .o, .h, .cpp, .patch, .cs
-image: "icons/image-x-generic.png" COMP; //~ png, jpeg, xcf
-image: "icons/document.png" COMP; //~ doc
-image: "icons/audio-x-generic.png" COMP; //~ ogg, mp3
-image: "icons/text-x-generic.png" COMP; //~ txt, doc
-image: "icons/folder_tar.png" COMP; //~ bz2, tar, gz, zip, deb
-image: "icons/font-x-generic.png" COMP; //~ pcf, ttf, bdf
-image: "icons/text-html.png" COMP; //~ html, css,
-image: "icons/video-x-generic.png" COMP; //~ mpeg, avi
-image: "icons/folder.png" COMP;
-image: "icons/folder-open.png" COMP;
-image: "icons/text-x-generic.png" COMP;
-image: "icons/document-open.png" COMP;
-image: "icons/user-home.png" COMP;
-image: "icons/user-desktop.png" COMP;
-image: "icons/drive-harddisk.png" COMP;
-image: "icons/computer.png" COMP; 
 
 //~ shelf
 image: "icons/icon_shelf_bottom_left.png" COMP;
@@ -563,89 +571,6 @@ image: "icons/icon_shelf_dock.png" COMP;
 image: "icons/icon_shelf_menu_bar.png" COMP;
 image: "icons/icon_shelf_panel.png" COMP;
 image: "icons/icon_shelf_top_desk.png" COMP;
-
-//~ Tango Icons http://tango.freedesktop.org
-image: "icons/video-display.png" COMP;
-image: "icons/dialog-error.png" COMP;
-image: "icons/dialog-warning.png" COMP;
-image: "icons/system-shutdown.png" COMP;
-image: "icons/system-file-manager.png" COMP;
-image: "icons/system-lock-screen.png" COMP;
-image: "icons/preferences-system-session.png" COMP;
-image: "icons/system-search.png" COMP;
-image: "icons/alacarte.png" COMP;
-image: "icons/preferences-system.png" COMP;
-image: "icons/preferences-system-windows.png" COMP;
-image: "icons/preferences-desktop.png" COMP;
-image: "icons/preferences-desktop-keyboard-shortcuts.png" COMP;
-image: "icons/preferences-desktop-font.png" COMP;
-image: "icons/preferences-desktop-wallpaper.png" COMP;
-image: "icons/preferences-desktop-theme.png" COMP;
-image: "icons/preferences-desktop-locale.png" COMP; /* imc */
-image: "icons/preferences-desktop-language.png" COMP; /* intl */
-image: "icons/applications-system.png" COMP;
-image: "icons/applications-other.png" COMP;
-image: "icons/applications-accessories.png" COMP;
-image: "icons/window-new.png" COMP;
-image: "icons/wmtweaks.png" COMP;
-image: "icons/view-colors.png" COMP;
-image: "icons/workspace-switcher.png" COMP;
-image: "icons/view-refresh.png" COMP;
-image: "icons/gnome-dev-mouse-optical.png" COMP;
-image: "icons/emblem-favorite.png" COMP;
-image: "icons/input-mouse.png" COMP;
-image: "icons/applications-graphics.png" COMP;
-image: "icons/application-x-executable.png" COMP;
-image: "icons/text-x-generic.png" COMP;
-image: "icons/applications-office.png" COMP;
-image: "icons/gnome-devel.png" COMP;
-image: "icons/image-loading.png" COMP;
-image: "icons/stock_select-all.png" COMP;
-image: "icons/dialog-information.png" COMP;
-image: "icons/xfce4-taskbar.png" COMP;
-image: "icons/gnome-window-manager.png" COMP;
-image: "icons/list-add.png" COMP;
-image: "icons/list-remove.png" COMP;
-image: "icons/document-properties.png" COMP;
-image: "icons/applications-system-16.png" COMP;
-image: "icons/internet-web-browser.png" COMP;
-image: "icons/preferences-desktop-wallpaper-16.png" COMP;
-image: "icons/xfce4-workspaces.png" COMP;
-image: "icons/emblem-favorite-16.png" COMP;
-image: "icons/mail-send-receive.png" COMP;
-image: "icons/go-first.png" COMP;
-image: "icons/media-optical.png" COMP;
-image: "icons/gnome-dev-removable-usb.png" COMP;
-image: "icons/media-flash.png" COMP;
-image: "icons/audio-card.png" COMP;
-image: "icons/system-users.png" COMP; /* profiles */
-image: "icons/input-gaming.png" COMP; /* behavior */
-image: "icons/emblem-system.png" COMP; /* engine */
-image: "icons/battery.png" COMP; /* power_management */
-
-//~ hybrids
-image: "icons/applications-other2.png" COMP; /* improve */
-image: "icons/display-size.png" COMP;
-image: "icons/screen_normal.png" COMP;
-image: "icons/screen_left.png" COMP;
-image: "icons/screen_right.png" COMP;
-image: "icons/screen_around.png" COMP;
-image: "icons/screen_hflip.png" COMP;
-image: "icons/screen_vflip.png" COMP;
-image: "icons/preferences-windows-list.png" COMP;
-image: "icons/preferences-desktop-screensaver.png" COMP;
-image: "icons/window-remembers.png" COMP; /* window_remembers */
-image: "icons/window-stacking.png" COMP; /* window_stacking */
-
-//~ gnome tango
-image: "icons/gnome-session-reboot.png" COMP;
-image: "icons/gnome-panel-window-list.png" COMP;
-image: "icons/gnome-session-halt.png" COMP;
-image: "icons/gnome-session-hibernate.png" COMP;
-image: "icons/gnome-session-logout.png" COMP;
-image: "icons/gnome-session-suspend.png" COMP;
-image: "icons/gnome-lost-window-menu.png" COMP;
-image: "icons/gnome-run.png" COMP;
 
 //~ custom
 image: "custom/cd_document.png" COMP;
