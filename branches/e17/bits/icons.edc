@@ -149,9 +149,8 @@ group { name: "e/icons/"NAME ;					\
 			repeat_events: 1;			\
 			description { 				\
 				state: "default" 0.0;		\
+				min: 24 24;			\
 				max: 24 24;			\
-				aspect: 1.0 1.0;		\
-				aspect_preference: BOTH;	\
 				image { 			\
 					normal: IMAGE_NAME ; 	\
 				} 				\

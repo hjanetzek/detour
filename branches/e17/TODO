@@ -39,6 +39,13 @@ border: urgent/icon animation
 Screen Resolution Settings icons including the "Check" mark.
 -about_e.edc: ugly design, use [TABS]
 -init.edc: better design
+border: shade / images
+
+== ? ==
+
+icon_efm_vol_mounted.png
+icon_efm_vol_unmounted.pnrg
+icon_efm_usbmedia.png
 
 == Improve ==
 pager: states/anim for urgent windows on a desktop
