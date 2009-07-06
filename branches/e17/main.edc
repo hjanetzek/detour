@@ -46,7 +46,7 @@ data {
 #define ENABLE_COLOR_CLASSES 0 			/* Work in progress */
 
 //Enable custom icons
-#define ENABLE_CUSTOM_ICONS 0 			/* Work in progress */
+//~ #define ENABLE_CUSTOM_ICONS 0 		/* Work in progress */
 
 images {
 	#include "images.edc" 			/* Includes both icons and regular images */
@@ -86,31 +86,31 @@ spectra {
 
 collections {
 	#include "bits/about_detour.edc"	/* about this edje */
-	#include "bits/about_e.edc"		/* about enlightenment */
+	//#include "bits/about_e.edc"		/* about enlightenment */
 	#include "bits/background.edc" 		/* background group */
 	//~ #include "bits/battery.edc"		/* battery module */
 	#include "bits/border.edc"		/* border group */
 	#include "bits/button.edc"		/* button widget group */
 	#include "bits/check.edc"		/* check widget group */
-	#include "bits/clock.edc"		/* clock module */
+	//#include "bits/clock.edc"		/* clock module */
 	#include "bits/color_well.edc"		/* color well */
 	#include "bits/configure.edc"		/* configure group */
-	//~ #include "bits/configure_toolbar.edc"	/* configuration toolbar */
+	//#include "bits/configure_toolbar.edc"	/* configuration toolbar */
+	//~ #include "bits/conf_edgebindings.edc"   /* configure edge bindings */
 	//~ #include "bits/connman.edc"		/* connection manager module*/
 	//~ #include "bits/cpufreq.edc"		/* cpu frequency module */
 	#include "bits/cslider.edc"		/* cslider group */
-	#include "bits/desklock.edc"		/* desklock group */
+	//#include "bits/desklock.edc"		/* desklock group */
 	#include "bits/deskpreview.edc"		/* deskpreview */
 	#include "bits/dialog.edc"		/* dialog group */
-	#include "bits/efm_nav.edc"		/* extra: efm navigation module */
-	#include "bits/efm_toolbar.edc"		/* efm toolbar */
+	//#include "bits/efm_nav.edc"		/* extra: efm navigation module */
+	//#include "bits/efm_toolbar.edc"		/* efm toolbar */
 	#include "bits/entry.edc"		/* entry group */
-	#include "bits/exebuf.edc"		/* executable buffer popup */
+	//#include "bits/exebuf.edc"		/* executable buffer popup */
 	#include "bits/font_preview.edc"	/* hidden */
 	#include "bits/gadman.edc"		/* gadget manager */
 	#include "bits/frame.edc"		/* frame widget group */
 	#include "bits/ibar.edc" 		/* ibar & ibox group */
-	//~ #include "bits/icons.edc" 		/* icons definitions */
 	#include "bits/iconmime.edc"		/* icon mime */
 	#include "bits/ilist.edc"		/* icon list */
 	#include "bits/init.edc"		/* init screen */
@@ -132,7 +132,7 @@ collections {
 	#include "bits/spectrum.edc"		/* spectrum */
 	#include "bits/start.edc"		/* start menu module */
 	#include "bits/sys.edc"			/* system actions */
-	//~ #include "bits/syscon.edc"		/* system connection group */
+	#include "bits/syscon.edc"		/* system connection group */
 	#include "bits/tclock.edc"		/* extra: tclock module */
 	//~ #include "bits/temperature.edc"	/* temperature module */
 	#include "bits/textblock.edc"		/* textblock definitions group */

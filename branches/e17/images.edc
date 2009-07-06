@@ -488,70 +488,6 @@ image: "images/screen_im0.png" COMP;
  * Contains list of all used icons. 
  */
 
-image: "icon_colors.png" COMP;
-image: "icon_desklock_menu.png" COMP;
-image: "icon_desktops.png" COMP;
-image: "icon_efm_cd.png" COMP;
-image: "icon_efm_copy.png" COMP;
-image: "icon_efm_cut.png" COMP;
-image: "icon_efm_delete.png" COMP;
-image: "icon_efm_desktop.png" COMP;
-image: "icon_efm_file.png" COMP;
-image: "icon_efm_flash.png" COMP;
-image: "icon_efm_folder.png" COMP;
-image: "icon_efm_hdd.png" COMP;
-image: "icon_efm_home.png" COMP;
-image: "icon_efm_open.png" COMP;
-image: "icon_efm_paste.png" COMP;
-image: "icon_efm_properties.png" COMP;
-image: "icon_efm_refresh.png" COMP;
-image: "icon_efm_rename.png" COMP;
-image: "icon_efm_root.png" COMP;
-image: "icon_efm_tmp.png" COMP;
-image: "icon_fonts.png" COMP;
-image: "icon_globe.png" COMP;
-image: "icon_halt.png" COMP;
-image: "icon_hibernate.png" COMP;
-image: "icon_intl.png" COMP;
-image: "icon_keys.png" COMP;
-image: "icon_logout.png" COMP;
-image: "icon_lost_windows.png" COMP;
-image: "icon_mime_audio_generic.png" COMP;
-image: "icon_mime_font_generic.png" COMP;
-image: "icon_mime_image_generic.png" COMP;
-image: "icon_mime_pdf.png" COMP;
-image: "icon_mime_text_generic.png" COMP;
-image: "icon_mime_text_html.png" COMP;
-image: "icon_mime_video_generic.png" COMP;
-image: "icon_mixer.png" COMP;
-image: "icon_mouse_clean.png" COMP;
-image: "icon_mouse.png" COMP;
-image: "icon_new.png" COMP;
-image: "icon_reboot.png" COMP;
-image: "icon_reset.png" COMP;
-image: "icon_run.png" COMP;
-image: "icon_screensaver.png" COMP;
-image: "icon_screen_setup.png" COMP;
-image: "icon_suspend.png" COMP;
-image: "icon_theme.png" COMP;
-image: "icon_wallpaper.png" COMP;
-image: "icon_warning.png" COMP;
-image: "icon_window_manipulation.png" COMP;
-image: "icon_window_remembers.png" COMP;
-image: "icon_winlist.png" COMP;
-
-//~ unconverted
-image: "icons/system-lock-screen.png" COMP;
-image: "icons/dialog-information.png" COMP;
-
-//~ fill and stretch options (screen)
-image: "icons/wallscreen_im0.png" COMP; /* gradient box */
-image: "icons/wallscreen_im1.png" COMP; /* stretch */
-image: "icons/wallscreen_im2.png" COMP; /* center */
-image: "icons/wallscreen_im3.png" COMP; /* fill */
-image: "icons/wallscreen_im4.png" COMP; /* tile */
-image: "icons/wallscreen_im5.png" COMP; /* within */
-
 //~ shelf
 image: "icons/icon_shelf_bottom_left.png" COMP;
 image: "icons/icon_shelf_bottom.png" COMP;
@@ -572,16 +508,6 @@ image: "icons/icon_shelf_menu_bar.png" COMP;
 image: "icons/icon_shelf_panel.png" COMP;
 image: "icons/icon_shelf_top_desk.png" COMP;
 
-//~ custom
-image: "custom/cd_document.png" COMP;
-image: "custom/cd_folder.png" COMP;
-image: "custom/cd_folder_tar.png" COMP;
-image: "custom/cd_font-x-generic.png" COMP;
-image: "custom/cd_gnome-mime-application-pdf.png" COMP;
-image: "custom/cd_image-x-generic.png" COMP;
-image: "custom/cd_text-html.png" COMP;
-image: "custom/cd_text-x-generic.png" COMP;
-
 //~ init
 image: "icons/preferences-desktop-16.png" COMP;
 image: "icons/user-desktop-16.png" COMP;
@@ -590,4 +516,24 @@ image: "icons/user-desktop-16.png" COMP;
 image: "icons/icon_efm_dnd_copy.png" COMP;
 image: "icons/icon_efm_dnd_ask.png" COMP;
 image: "icons/icon_efm_dnd_move.png" COMP;
+image: "icons/icon_efm_cd.png" COMP;
+image: "icons/icon_efm_copy.png" COMP;
+image: "icons/icon_efm_cut.png" COMP;
+image: "icons/icon_efm_delete.png" COMP;
+image: "icons/icon_efm_desktop.png" COMP;
+image: "icons/icon_efm_file.png" COMP;
+image: "icons/icon_efm_flash.png" COMP;
+image: "icons/icon_efm_folder.png" COMP;
+image: "icons/icon_efm_hdd.png" COMP;
+image: "icons/icon_efm_home.png" COMP;
+image: "icons/icon_efm_open.png" COMP;
+image: "icons/icon_efm_paste.png" COMP;
+image: "icons/icon_efm_properties.png" COMP;
+image: "icons/icon_efm_refresh.png" COMP;
+image: "icons/icon_efm_rename.png" COMP;
+image: "icons/icon_efm_root.png" COMP;
+image: "icons/icon_efm_tmp.png" COMP;
+
+//~
+image: "icons/dialog-information.png" COMP;
 
