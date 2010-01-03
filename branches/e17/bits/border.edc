@@ -1,3 +1,14 @@
+#define BORDER_GEOMETRY \
+  BORDER("top-left",  5 24, 5 24, 0.0 0.0, 0 0,  0.0 0.0, 5 24, "images/window-border_im0.png") \
+  BORDER("top-right", 5 24, 5 24, 1.0 0.0, -5 0, 1.0 0.0, -1 24, "images/window-border_im2.png") \
+  BORDER("bottom-left",  6 6, 6 6, 0.0 1.0, 0 -6, 0.0 1.0, 6 0, "images/window-border_im10.png") \
+  BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, -6 -6, 1.0 1.0, -1 -1, "images/window-border_im11.png") \
+  BORDER2("left-border",  "top-left",  0.0 1.0, 0 0,  "bottom-left", 0.0 0.0, 0 0) \
+  BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0) \
+  BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.0, 0 0, "top-right", 0.0 1.0, -1 -1, "images/window-border_im1.png") \
+  BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png") \
+  E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+
 
 group {
 	name: "e/widgets/border/classic/border";
@@ -139,16 +150,8 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 5 24, 5 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
-		BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 24, 1.0 0.0, -5 0, "images/window-border_im2.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
-		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
-		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
+	        BORDER_GEOMETRY
+	        TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part {
 			name: "e.text.title";
@@ -247,42 +250,43 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "images/window-border_im18.png")
-		BORDER("top-right", 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/window-border_im20.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im15.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im17.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-
-		#define BORDER6(NAME,MIN,MAX,TO1,REL1,OFF1,TO2,REL2,OFF2,IMG1) \
-		part { \
-			name: NAME; \
-			type: IMAGE; \
-			mouse_events: 0; \
-			description { \
-				state: "default" 0.0; \
-				min: MIN; \
-				max: MAX; \
-				rel1 { \
-					to: TO1; \
-					relative: REL1; \
-					offset: OFF1; \
-				} \
-				rel2 { \
-					to: TO2; \
-					relative: REL2; \
-					offset: OFF2; \
-				} \
-				image { \
-					normal: IMG1; \
-				} \
-			} \
-		}
-
-		BORDER6("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im19.png")
-		BORDER6("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im16.png")
-
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+	        BORDER_GEOMETRY
+	    /* BORDER("top-left", 4 24, 4 24, 0.0 0.0, 2 24, 0.0 0.0, 0 0, "images/window-border_im18.png")
+	     * 	BORDER("top-right", 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/window-border_im20.png")
+	     * 	BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im15.png")
+	     * 	BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im17.png")
+	     * 	BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+	     * 	BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+	     * 
+	     * 	#define BORDER6(NAME,MIN,MAX,TO1,REL1,OFF1,TO2,REL2,OFF2,IMG1) \
+	     * 	part { \
+	     * 		name: NAME; \
+	     * 		type: IMAGE; \
+	     * 		mouse_events: 0; \
+	     * 		description { \
+	     * 			state: "default" 0.0; \
+	     * 			min: MIN; \
+	     * 			max: MAX; \
+	     * 			rel1 { \
+	     * 				to: TO1; \
+	     * 				relative: REL1; \
+	     * 				offset: OFF1; \
+	     * 			} \
+	     * 			rel2 { \
+	     * 				to: TO2; \
+	     * 				relative: REL2; \
+	     * 				offset: OFF2; \
+	     * 			} \
+	     * 			image { \
+	     * 				normal: IMG1; \
+	     * 			} \
+	     * 		} \
+	     * 	}
+	     * 
+	     * 	BORDER6("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im19.png")
+	     * 	BORDER6("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im16.png")
+	     * 
+	     * 	E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7) */
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-close", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part {											
@@ -373,15 +377,16 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 5 24, 5 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
-		BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 24, 1.0 0.0, -5 0, "images/window-border_im2.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
-		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+	        BORDER_GEOMETRY
+	    /* BORDER("top-left", 5 24, 5 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
+	     * 	BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 24, 1.0 0.0, -5 0, "images/window-border_im2.png")
+	     * 	BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
+	     * 	BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
+	     * 	BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+	     * 	BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+	     * 	BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+	     * 	BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
+	     * 	E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7) */
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-close", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part {											
@@ -488,15 +493,16 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 5 24, 5 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
-		BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 24, 1.0 0.0, -5 0, "images/window-border_im2.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
-		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+	        BORDER_GEOMETRY
+	    /* BORDER("top-left", 5 24, 5 24, 0.0 0.0, 4 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
+	     * 	BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 24, 1.0 0.0, -5 0, "images/window-border_im2.png")
+	     * 	BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
+	     * 	BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
+	     * 	BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+	     * 	BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+	     * 	BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+	     * 	BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
+	     * 	E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7) */
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part {											
@@ -676,15 +682,16 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
-		BORDER("top-right", 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/window-border_im2.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
-		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+	        BORDER_GEOMETRY
+	    /* BORDER("top-left", 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
+	     * 	BORDER("top-right", 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/window-border_im2.png")
+	     * 	BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
+	     * 	BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
+	     * 	BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+	     * 	BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+	     * 	BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+	     * 	BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
+	     * 	E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7) */
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "top-right", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part {
@@ -766,15 +773,16 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 5 24, 5 24, 0.0 0.0, 3 22, 0.0 0.0, 0 0, "images/window-border_im13.png")
-		BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 22, 1.0 0.0, -5 0, "images/window-border_im14.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
-		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+	        BORDER_GEOMETRY
+	    /* BORDER("top-left", 5 24, 5 24, 0.0 0.0, 3 22, 0.0 0.0, 0 0, "images/window-border_im13.png")
+	     * 	BORDER("top-right", 5 24, 5 24, 1.0 0.0, 0 22, 1.0 0.0, -5 0, "images/window-border_im14.png")
+	     * 	BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im10.png")
+	     * 	BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im11.png")
+	     * 	BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+	     * 	BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+	     * 	BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+	     * 	BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im9.png")
+	     * 	E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7) */
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part { 														
@@ -1099,15 +1107,16 @@ group {
 	}
 
 	parts {
-		BORDER("top-left", 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
-		BORDER("top-right", 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/window-border_im2.png")
-		BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im15.png")
-		BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im17.png")
-		BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
-		BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
-		BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
-		BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im16.png")
-		E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7)
+	        BORDER_GEOMETRY
+	    /* BORDER("top-left", 4 24, 4 24, 0.0 0.0, 2 22, 0.0 0.0, 0 0, "images/window-border_im0.png")
+	     * 	BORDER("top-right", 4 24, 4 24, 1.0 0.0, 0 24, 1.0 0.0, -4 0, "images/window-border_im2.png")
+	     * 	BORDER("bottom-left", 6 6, 6 6, 0.0 1.0, 6 -6, 0.0 1.0, 0 0, "images/window-border_im15.png")
+	     * 	BORDER("bottom-right", 6 6, 6 6, 1.0 1.0, 0 -6, 1.0 1.0, -6 0, "images/window-border_im17.png")
+	     * 	BORDER2("left-border", "top-left", 0.0 1.0, 1 0, "bottom-left", 0.0 0.0, 0 0)
+	     * 	BORDER2("right-border", "top-right", 1.0 0.0, 0 23, "bottom-right", 1.0 0.0, -2 0)
+	     * 	BORDER3("top-center", 5 24, 9999 24, "top-left", 1.0 0.5, 0 0, "top-right", 0.0 0.5, -1 -2, "images/window-border_im1.png")
+	     * 	BORDER3("bottom-center", 6 6, 9999 6, "bottom-left", 1.0 1.0, 0 -6, "bottom-right", 0.0 1.0, -1 0, "images/window-border_im16.png")
+	     * 	E_SWALLOW_CLIENT("e.swallow.client", "top-left", 0.0 1.0, 1 0, "bottom-right", 0.0 1.0, 4 -7) */
 		TITLE_CLIP("title.area.clip", 1 20, "top-left", 0.0 0.5, 5 0, "button-min", 0.0 0.5, -5 0, 255 255 255 255)
 
 		part {
