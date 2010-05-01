@@ -578,9 +578,11 @@ group {
 	name: "e/gadman/popup";
 
 	parts {
+
 		part {
-			name: "border";
+			name: "bg_border";
 			type: RECT;
+			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
@@ -589,7 +591,20 @@ group {
 		}
 
 		part {
-			name: "base";
+			name: "gradient";
+			type: GRADIENT;
+			mouse_events: 0;
+
+			description {
+				state: "default" 0.0;
+				gradient.spectrum: "menu";
+				rel1.offset: 1 1;
+				rel2.offset: -2 -2;
+			}
+		}
+
+		part {
+			name: "bg_overlay";
 			type: IMAGE;
 			mouse_events: 0;
 
@@ -601,6 +616,7 @@ group {
 				image {
 					normal: "images/menu_im0.png";
 					border: 2 2 2 2;
+					middle: 1;
 				}
 
 				fill {

@@ -1,7 +1,7 @@
 
 group {
 	name: "modules/efm_nav/main";
-
+        min: 126 24;
 	parts {
 		part {
 			name: "base";
