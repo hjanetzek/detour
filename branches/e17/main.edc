@@ -103,8 +103,8 @@ collections {
 	//#include "bits/desklock.edc"		/* desklock group */
 	#include "bits/deskpreview.edc"		/* deskpreview */
 	#include "bits/dialog.edc"		/* dialog group */
-	//#include "bits/efm_nav.edc"		/* extra: efm navigation module */
-	//#include "bits/efm_toolbar.edc"		/* efm toolbar */
+	#include "bits/efm_nav.edc"		/* extra: efm navigation module */
+	#include "bits/efm_toolbar.edc"		/* efm toolbar */
 	#include "bits/entry.edc"		/* entry group */
 	//#include "bits/exebuf.edc"		/* executable buffer popup */
 	#include "bits/font_preview.edc"	/* hidden */
