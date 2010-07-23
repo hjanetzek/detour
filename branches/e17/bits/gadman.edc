@@ -592,12 +592,11 @@ group {
 
 		part {
 			name: "gradient";
-			type: GRADIENT;
 			mouse_events: 0;
 
 			description {
 				state: "default" 0.0;
-				gradient.spectrum: "menu";
+                                image.normal: "images/menu_grad.png";
 				rel1.offset: 1 1;
 				rel2.offset: -2 -2;
 			}

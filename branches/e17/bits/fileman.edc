@@ -25,15 +25,15 @@ group {
 	name: "e/fileman/default/window/main";
 
 	parts {
-		part { 
-			name: "background_gradient";
-			type: GRADIENT;
-	
-			description { 
-				state: "default" 0.0; 
-				gradient.spectrum: "file_manager";
-    			}
-		}
+		/* part { 
+		 * 	name: "background_gradient";
+		 * 	type: GRADIENT;
+	         * 
+		 * 	description { 
+		 * 		state: "default" 0.0; 
+		 * 		gradient.spectrum: "file_manager";
+    		 * 	}
+		 * } */
 
 		part {
 			name: "base";
