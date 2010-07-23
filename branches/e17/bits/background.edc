@@ -22,18 +22,18 @@ group {
 
 		part { 
 			name: "gradient";
-			type: GRADIENT;
 			mouse_events: 0;
 	
 			description { 
 				state: "default" 0.0; 
-				#if ALTERNATE == 0
-					gradient.spectrum: "backdrop";
-				#else
-				#if ALTERNATE == 1
-					gradient.spectrum: "alternate";
-				#endif
-				#endif
+                                image.normal: "images/backdrop_grad.png";
+                           /* #if ALTERNATE == 0
+				 * 	gradient.spectrum: "backdrop";
+				 * #else
+				 * #if ALTERNATE == 1
+				 * 	gradient.spectrum: "alternate";
+				 * #endif
+				 * #endif */
     			}
 		}
 

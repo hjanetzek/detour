@@ -1,3 +1,4 @@
+#include "macros/gradient.edc"
 #include "macros/about_buttons.edc"
 #include "macros/border.edc"
 #include "macros/border_programs.edc"
@@ -52,37 +53,37 @@ images {
 	#include "images.edc" 			/* Includes both icons and regular images */
 }
 
-spectra {
-	spectrum {
-		name: "backdrop";		/* desktop background */
-		color: 138 171 225 255 1;
-		color: 62 98 170 255 1;
-	}
-
-	spectrum {
-		name: "alternate";		/* alternate gradient */
-		color: 207 213 223 255 1;
-		color: 128 142 170 255 1;
-	}
-
-	spectrum {
-		name: "file_manager";		/* main file manager background */
-		color: 230 229 211 255 1;
-		color: 196 196 182 255 1;
-	}
-
-	spectrum {
-		name: "menu";			/* gradient used throughout various dialogs */
-		color: 237 237 237 255 1;
-		color: 206 207 206 255 1;
-	}
-
-	spectrum {
-		name: "example_gradient";	/* used internally */
-		color: 252 98 170 255 1;
-		color: 62 98 170 255 1;
-	}
-}
+/* spectra {
+ * 	spectrum {
+ * 		name: "backdrop";		/\* desktop background *\/
+ * 		color: 138 171 225 255 1;
+ * 		color: 62 98 170 255 1;
+ * 	}
+ * 
+ * 	spectrum {
+ * 		name: "alternate";		/\* alternate gradient *\/
+ * 		color: 207 213 223 255 1;
+ * 		color: 128 142 170 255 1;
+ * 	}
+ * 
+ * 	spectrum {
+ * 		name: "file_manager";		/\* main file manager background *\/
+ * 		color: 230 229 211 255 1;
+ * 		color: 196 196 182 255 1;
+ * 	}
+ * 
+ * 	spectrum {
+ * 		name: "menu";			/\* gradient used throughout various dialogs *\/
+ * 		color: 237 237 237 255 1;
+ * 		color: 206 207 206 255 1;
+ * 	}
+ * 
+ * 	spectrum {
+ * 		name: "example_gradient";	/\* used internally *\/
+ * 		color: 252 98 170 255 1;
+ * 		color: 62 98 170 255 1;
+ * 	}
+ * } */
 
 collections {
 	#include "bits/about_detour.edc"	/* about this edje */
@@ -129,7 +130,7 @@ collections {
 	#include "bits/shelf.edc"		/* shelf groups */
 	#include "bits/slider.edc"		/* slider group */
 	//~ #include "bits/slidesel.edc"	/* slidesel */
-	#include "bits/spectrum.edc"		/* spectrum */
+        //~ #include "bits/spectrum.edc"		/* spectrum */
 	#include "bits/start.edc"		/* start menu module */
 	#include "bits/sys.edc"			/* system actions */
 	#include "bits/syscon.edc"		/* system connection group */
