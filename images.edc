@@ -3,6 +3,9 @@
  * Contains list of all used images: images list first, icons second.
  */
 
+image: "images/menu_grad.png" COMP; /* gradient */
+image: "images/backdrop_grad.png" COMP; /* gradient */
+
 //~ check widget
 image: "images/check_bt0.png" COMP; /* base */
 image: "images/check_bt1.png" COMP; /* unchecked */
