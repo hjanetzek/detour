@@ -540,3 +540,10 @@ image: "icons/icon_efm_tmp.png" COMP;
 //~
 image: "icons/dialog-information.png" COMP;
 
+// everything images
+image: "images/bevel_over.png" COMP; /* gradient */
+image: "images/bevel_under.png" COMP; /* gradient */
+image: "images/bevel_tab_shadow.png" COMP; /* gradient */
+image: "images/bevel_evry_fade.png" COMP; /* gradient */
+image: "icons/button-back.png" COMP;
+image: "images/menu_im5.png" COMP; /* left arrow */

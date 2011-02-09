@@ -140,5 +140,6 @@ collections {
 	//~ #include "bits/tlist.edc"		/* tlist groups (deprecated) */
 	#include "bits/transitions.edc"		/* desktop wallpaper transitions */
 	#include "bits/winlist.edc"		/* window list (alt+tab) */
+   	#include "bits/everything.edc"		/* everything launcher */
 }
 
