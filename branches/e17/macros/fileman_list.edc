@@ -30,7 +30,6 @@ program { 					\
 	 signal: "e,action,thumb,gen"; 		\
 	 source: "e"; 				\
 	 action: STATE_SET "visible" 0.0; 	\
-	 target: "icon_box_shadow";		\
 	 target: "icon_box"; 			\
 	 target: "icon_box_bg"; 		\
 	 after: "thumb_gen2"; 			\
@@ -40,7 +39,6 @@ program { 					\
 	 signal: "e,action,thumb,gen,alpha"; 	\
 	 source: "e"; 				\
 	 action: STATE_SET "default" 0.0; 	\
-	 target: "icon_box_shadow"; 		\
 	 target: "icon_box"; 			\
 	 target: "icon_box_bg"; 		\
 	 after: "thumb_gen2"; 			\
