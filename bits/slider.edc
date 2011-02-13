@@ -12,12 +12,12 @@ group {
 				state: "default" 0.0;
 				color: 157 57 11 0;
 
-				rel1 { 
-					offset: 2 2; 
+				rel1 {
+					offset: 2 2;
 				}
 
-				rel2 { 
-					offset: -7 -3; 
+				rel2 {
+					offset: -7 -3;
 				}
 			}
 
@@ -25,16 +25,16 @@ group {
 				state: "active" 0.0;
 				color: 157 57 11 0;
 
-				rel1 { 
-					offset: 2 -1; 
+				rel1 {
+					offset: 2 -1;
 				}
 
-				rel2 { 
-					to_x: "label_under"; 
-					relative: 0.0 1.0; 
-					offset: -6 -3; 
+				rel2 {
+					to_x: "label_under";
+					relative: 0.0 1.0;
+					offset: -6 -3;
 				}
-    			}
+			}
 		}
 
 		part {
@@ -47,16 +47,16 @@ group {
 				state: "default" 0.0;
 				max: 99999 11;
 
-				rel1 { 
-					to: "runner_left"; 
-					relative: 1.0 0.0; 
-					offset: 0 -1; 
+				rel1 {
+					to: "runner_left";
+					relative: 1.0 0.0;
+					offset: 0 -1;
 				}
 
-				rel2 { 
-					to: "runner_right"; 
-					relative: 0.0 1.0; 
-					offset: 0 0; 
+				rel2 {
+					to: "runner_right";
+					relative: 0.0 1.0;
+					offset: 0 0;
 				}
 
 				image {
@@ -65,13 +65,7 @@ group {
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 
@@ -94,20 +88,15 @@ group {
 				state: "default" 0.0;
 				min: 22 24;
 				visible: 0;
-	
+				fixed: 1 0;
+
 				image {
 					normal: "images/entry_im0.png";
 					border: 6 6 8 7;
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 
@@ -115,7 +104,7 @@ group {
 				state: "active" 0.0;
 				min: 22 24;
 				max: 9999 24;
-				align: 0.0 1.0; 
+				/* align: 0.0 1.0;  */
 				fixed: 1 0;
 
 				rel1 {
@@ -146,7 +135,7 @@ group {
 				state: "default" 0.0;
 				min: 22 24;
 				visible: 0;
-
+				align: 0.0 0.5;
 				rel1 {
 					to: "e.text.label";
 					relative: 0.0  0.0;
@@ -156,22 +145,16 @@ group {
 				rel2 {
 					to: "e.text.label";
 					relative: 1.0 1.0;
-					offset: 9 1;
+					offset: 9 5;
 				}
-	
+
 				image {
 					normal: "images/entry_im1.png";
 					border: 7 7 8 7;
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 
@@ -191,13 +174,14 @@ group {
 			description {
 				state: "default" 0.0;
 				visible: 0;
+				fixed: 1 0;
 			}
 
 			description {
 				state: "active" 0.0;
-				align: 1.0 0.5; 
+				align: 1.0 0.5;
 				fixed: 1 0;
-				color: 60 60 60 255;	 
+				color: 60 60 60 255;
 
 				rel1 {
 					relative: 1.0 0.0;
@@ -211,23 +195,12 @@ group {
 
 				text {
 					text: "00.00";
-					#if USE_FONTCONFIG == 0
-						font: "DejaVuSans";
-					#else
-					#if USE_FONTCONFIG == 1
-						font: "Sans";
-					#endif
-					#endif
+					font: "Sans";
 					size: 11;
 					min: 1 1;
+					/* max: 0 1; */
 					align: 0.5 0.5;
-					#if ENABLE_TEXT_CLASSES == 0
-						text_class: "";
-					#else
-					#if ENABLE_TEXT_CLASSES == 1
-						text_class: "slider";
-					#endif
-					#endif       
+					text_class: "slider";
 				}
 			}
 		}
@@ -241,10 +214,10 @@ group {
 				state: "default" 0.0;
 				color: 18 119 186 0;
 
-				rel2 { 
-					to: "e.dragable.slider"; 
-					relative: 0.0 1.0; 
-					offset: -1 -1; 
+				rel2 {
+					to: "e.dragable.slider";
+					relative: 0.0 1.0;
+					offset: -1 -1;
 				}
 			}
 		}
@@ -261,16 +234,16 @@ group {
 				max: 6 11;
 				fixed: 1 1;
 
-				rel1 { 
-					to: "base"; 
-					relative: 0.0 0.0; 
-					offset: 6 0; 
+				rel1 {
+					to: "base";
+					relative: 0.0 0.0;
+					offset: 6 0;
 				}
 
-				rel2 { 
-					to: "base"; 
-					relative: 0.0 1.0; 
-					offset: 0 0; 
+				rel2 {
+					to: "base";
+					relative: 0.0 1.0;
+					offset: 0 0;
 				}
 
 				image {
@@ -297,10 +270,10 @@ group {
 				state: "default" 0.0;
 				color: 231 93 7 0;
 
-				rel2 { 
-					to: "e.dragable.slider"; 
-					relative: 1.0 0.0; 
-					offset: 0 0; 
+				rel2 {
+					to: "e.dragable.slider";
+					relative: 1.0 0.0;
+					offset: 0 0;
 				}
 			}
 		}
@@ -317,16 +290,16 @@ group {
 				max: 6 11;
 				fixed: 1 1;
 
-				rel1 { 
-					to: "base"; 
-					relative: 1.0 0.0; 
-					offset: 0 0; 
+				rel1 {
+					to: "base";
+					relative: 1.0 0.0;
+					offset: 0 0;
 				}
 
-				rel2 { 
-					to: "base"; 
-					relative: 1.0 1.0; 
-					offset: -7 0; 
+				rel2 {
+					to: "base";
+					relative: 1.0 1.0;
+					offset: -7 0;
 				}
 
 				image {
@@ -355,16 +328,16 @@ group {
 				fixed: 1 1;
 				color: 255 0 0 0;
 
-				rel1 { 
-					to: "runner_left"; 
-					relative: 1.0 0.0; 
-					offset: -2 18; 
+				rel1 {
+					to: "runner_left";
+					relative: 1.0 0.0;
+					offset: -2 18;
 				}
 
-				rel2 { 
-					to: "runner_right"; 
-					relative: 0.0 1.0; 
-					offset: 2 0; 
+				rel2 {
+					to: "runner_right";
+					relative: 0.0 1.0;
+					offset: 2 0;
 				}
 			}
 		}
@@ -387,16 +360,16 @@ group {
 				fixed: 1 1;
 				color: 255 0 0 0;
 
-				rel1 { 
-					to: "base"; 
-					relative: 0.5 0.5; 
-					offset: 0 0; 
+				rel1 {
+					to: "base";
+					relative: 0.5 0.5;
+					offset: 0 0;
 				}
 
-				rel2 { 
-					to: "base"; 
-					relative: 0.5 0.5; 
-					offset: 0 0; 
+				rel2 {
+					to: "base";
+					relative: 0.5 0.5;
+					offset: 0 0;
 				}
 			}
 		}
@@ -432,14 +405,14 @@ group {
 			description {
 				state: "default" 0.0;
 
-				rel1 { 
-					to: "slider_image"; 
-					offset: 1 -1; 
+				rel1 {
+					to: "slider_image";
+					offset: 1 -1;
 				}
 
-				rel2 { 
-					to: "slider_image"; 
-					offset: -2 -1; 
+				rel2 {
+					to: "slider_image";
+					offset: -2 -1;
 				}
 
 				image {
@@ -448,13 +421,7 @@ group {
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 		}
@@ -471,12 +438,12 @@ group {
 				max: 29 17;
 				fixed: 1 1;
 
-				rel1 { 
-					to: "e.dragable.slider"; 
+				rel1 {
+					to: "e.dragable.slider";
 				}
 
-				rel2 { 
-					to: "e.dragable.slider"; 
+				rel2 {
+					to: "e.dragable.slider";
 				}
 
 				image {
@@ -518,10 +485,10 @@ group {
 
 			description {
 				state: "default" 0.0;
-                		visible: 0;
+				visible: 0;
 				color: 0 0 0 0;
 			}
-	
+
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
@@ -531,53 +498,54 @@ group {
 	}
 
 	programs {
-		# ifdef PROG
-		#  undef PROG
-		# endif
-		#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)\
-		program {\
-			name: NAME;\
-			signal: SIGNAL;\
-			source: SRC;\
-			action: ACT;\
-			target: TARGET;\
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)        \
+		program {			\
+			name: NAME;		\
+			signal: SIGNAL;		\
+			source: SRC;		\
+			action: ACT;		\
+			target: TARGET;		\
 		}
 
-		PROG("slider-", "mouse,down,1", "slider_p1", DRAG_VAL_PAGE -1.0 0.0, "e.dragable.slider")
-		PROG("slider+", "mouse,down,1", "slider_p2", DRAG_VAL_PAGE 1.0 0.0, "e.dragable.slider")
+		PROG("slider-", "mouse,down,1", "slider_p1", DRAG_VAL_PAGE -1.0 0.0, "e.dragable.slider");
+		PROG("slider+", "mouse,down,1", "slider_p2", DRAG_VAL_PAGE 1.0 0.0, "e.dragable.slider");
+		
 
-		# ifdef PROG
-		#  undef PROG
-		# endif
-		#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)\
-		program {\
-			name: NAME;\
-			signal: SIGNAL;\
-			source: SRC;\
-			action: STATE_SET ACT 0.0;\
-			transition: DECELERATE 0.25; \
-			target: TARGET;\
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)		\
+		program {				\
+			name: NAME;                     \
+			signal: SIGNAL;                 \
+			source: SRC;                    \
+			action: STATE_SET ACT 0.0;      \
+			transition: DECELERATE 0.25;    \
+			target: TARGET;                 \
 		}
 
-		PROG("up", "mouse,up,1", "e.dragable.slider", "default", "slider_image")
-		PROG("down", "mouse,down,1", "e.dragable.slider", "clicked", "slider_image")
+		PROG("up", "mouse,up,1", "e.dragable.slider", "default", "slider_image");
+		PROG("down", "mouse,down,1", "e.dragable.slider", "clicked", "slider_image");
 
-		# ifdef PROG
-		#  undef PROG
-		# endif
-		#define PROG(NAME,SIGNAL,SRC,ACT,TARGET1,TARGET2,TARGET3)\
-		program {\
-			name: NAME;\
-			signal: SIGNAL;\
-			source: SRC;\
-			action: STATE_SET ACT 0.0;\
-			target: TARGET1;\
-			target: TARGET2;\
-			target: TARGET3;\
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG(NAME,SIGNAL,SRC,ACT,TARGET1,TARGET2,TARGET3)	\
+		program {					\
+			name: NAME;				\
+			signal: SIGNAL;				\
+			source: SRC;				\
+			action: STATE_SET ACT 0.0;		\
+			target: TARGET1;			\
+			target: TARGET2;			\
+			target: TARGET3;			\
 		}
 
-		PROG("show_label", "e,action,show,label", "e", "active", "base", "label_under", "e.text.label")
-		PROG("hide_label", "e,action,hide,label", "e", "default", "base", "label_under", "e.text.label")
+		PROG("show_label", "e,action,show,label", "e", "active", "base", "label_under", "e.text.label");
+		PROG("hide_label", "e,action,hide,label", "e", "default", "base", "label_under", "e.text.label");
 
 		program {
 			name: "enable";
@@ -636,12 +604,12 @@ group {
 				state: "default" 0.0;
 				color: 255 0 0 0;
 
-				rel1 { 
-					offset: 0 0; 
+				rel1 {
+					offset: 0 0;
 				}
 
-				rel2 { 
-					offset: -1 -1; 
+				rel2 {
+					offset: -1 -1;
 				}
 			}
 
@@ -649,14 +617,14 @@ group {
 				state: "active" 0.0;
 				color: 255 0 0 0;
 
-				rel1 { 
-					offset: 2 2; 
+				rel1 {
+					offset: 2 2;
 				}
 
-				rel2 { 
-					to_y: "label_under"; 
-					relative: 1.0 0.0; 
-					offset: -3 -1; 
+				rel2 {
+					to_y: "label_under";
+					relative: 1.0 0.0;
+					offset: -3 -1;
 				}
 			}
 		}
@@ -671,16 +639,16 @@ group {
 				state: "default" 0.0;
 				max: 11 99999;
 
-				rel1 { 
-					to: "runner_top"; 
-					relative: 0.0 1.0; 
-					offset: -1 0; 
+				rel1 {
+					to: "runner_top";
+					relative: 0.0 1.0;
+					offset: -1 0;
 				}
 
-				rel2 { 
-					to: "runner_bot"; 
-					relative: 1.0 1.0; 
-					offset: 0 -7; 
+				rel2 {
+					to: "runner_bot";
+					relative: 1.0 1.0;
+					offset: 0 -7;
 				}
 
 				image {
@@ -689,13 +657,7 @@ group {
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 
@@ -726,13 +688,7 @@ group {
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 
@@ -742,16 +698,16 @@ group {
 				max: 9999 24;
 				visible: 1;
 
-				rel1 { 
-					to: "e.text.label"; 
-					relative: 0.0 0.0; 
-					offset: -7 -4; 
+				rel1 {
+					to: "e.text.label";
+					relative: 0.0 0.0;
+					offset: -7 -4;
 				}
 
-				rel2 { 
-					to: "e.text.label"; 
-					relative: 1.0 1.0; 
-					offset: 3 3; 
+				rel2 {
+					to: "e.text.label";
+					relative: 1.0 1.0;
+					offset: 3 3;
 				}
 
 				image {
@@ -772,16 +728,16 @@ group {
 				max: 9999 24;
 				visible: 0;
 
-				rel1 { 
-					to: "e.text.label"; 
-					relative: 0.0 0.0; 
-					offset: -7 -4; 
+				rel1 {
+					to: "e.text.label";
+					relative: 0.0 0.0;
+					offset: -7 -4;
 				}
 
-				rel2 { 
-					to: "e.text.label"; 
-					relative: 1.0 1.0; 
-					offset: 3 3; 
+				rel2 {
+					to: "e.text.label";
+					relative: 1.0 1.0;
+					offset: 3 3;
 				}
 
 				image {
@@ -790,13 +746,7 @@ group {
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 
@@ -824,35 +774,23 @@ group {
 				align: 0.5 1.0;
 				color: 60 60 60 255;
 
-				rel1 { 
-					relative: 0.0 1.0; 
-					offset: 7 -8; 
+				rel1 {
+					relative: 0.0 1.0;
+					offset: 7 -8;
 				}
 
-				rel2 { 
-					relative: 1.0 1.0; 
-					offset: -8 -8; 
+				rel2 {
+					relative: 1.0 1.0;
+					offset: -8 -8;
 				}
 
 				text {
 					text: "00.00";
-					#if USE_FONTCONFIG == 0
-						font: "DejaVuSans";
-					#else
-					#if USE_FONTCONFIG == 1
-						font: "Sans";
-					#endif
-					#endif
+					font: "Sans";
 					size: 11;
 					min: 1 1;
 					align: 0.5 0.5;
-					#if ENABLE_TEXT_CLASSES == 0
-						text_class: "";
-					#else
-					#if ENABLE_TEXT_CLASSES == 1
-						text_class: "slider";
-					#endif
-					#endif
+					text_class: "slider";
 				}
 			}
 		}
@@ -863,13 +801,13 @@ group {
 			mouse_events: 1;
 
 			description {
-					state: "default" 0.0;
+				state: "default" 0.0;
 				color: 18 119 186 0;
 
-				rel2 { 
-					to: "e.dragable.slider"; 
-					relative: 1.0 0.0; 
-					offset: -1 -1; 
+				rel2 {
+					to: "e.dragable.slider";
+					relative: 1.0 0.0;
+					offset: -1 -1;
 				}
 			}
 		}
@@ -886,16 +824,16 @@ group {
 				max: 11 6;
 				fixed: 1 1;
 
-				rel1 { 
-					to: "base"; 
-					relative: 0.5 0.0; 
-					offset: 0 14; 
+				rel1 {
+					to: "base";
+					relative: 0.5 0.0;
+					offset: 0 14;
 				}
 
-				rel2 { 
-					to: "base"; 
-					relative: 0.5 0.0; 
-					offset: -1 0; 
+				rel2 {
+					to: "base";
+					relative: 0.5 0.0;
+					offset: -1 0;
 				}
 
 				image {
@@ -922,10 +860,10 @@ group {
 				state: "default" 0.0;
 				color: 231 93 7 0;
 
-				rel1 { 
-					to: "e.dragable.slider"; 
-					relative: 0.0 1.0; 
-					offset: 0 0; 
+				rel1 {
+					to: "e.dragable.slider";
+					relative: 0.0 1.0;
+					offset: 0 0;
 				}
 			}
 		}
@@ -942,16 +880,16 @@ group {
 				max: 11 6;
 				fixed: 1 1;
 
-				rel1 { 
-					to: "base"; 
-					relative: 0.5 1.0; 
-					offset: 0 0; 
+				rel1 {
+					to: "base";
+					relative: 0.5 1.0;
+					offset: 0 0;
 				}
 
-				rel2 { 
-					to: "base"; 
-					relative: 0.5 1.0; 
-					offset: -1 -14; 
+				rel2 {
+					to: "base";
+					relative: 0.5 1.0;
+					offset: -1 -14;
 				}
 
 				image {
@@ -980,16 +918,16 @@ group {
 				fixed: 1 1;
 				color: 0 0 0 0;
 
-				rel1 { 
-					to: "runner_top"; 
-					relative: 0.0 1.0; 
-					offset: 17 -2; 
+				rel1 {
+					to: "runner_top";
+					relative: 0.0 1.0;
+					offset: 17 -2;
 				}
 
-				rel2 { 
-					to: "runner_bot"; 
-					relative: 1.0 0.0; 
-					offset: 0 2; 
+				rel2 {
+					to: "runner_bot";
+					relative: 1.0 0.0;
+					offset: 0 2;
 				}
 			}
 		}
@@ -1012,16 +950,16 @@ group {
 				fixed: 1 1;
 				color: 0 0 0 0;
 
-				rel1 { 
-					to: "base"; 
-					relative: 0.5 0.5; 
-					offset: 1 0; 
+				rel1 {
+					to: "base";
+					relative: 0.5 0.5;
+					offset: 1 0;
 				}
 
-				rel2 { 
-					to: "base"; 
-					relative: 0.5 0.5; 
-					offset: 1 0; 
+				rel2 {
+					to: "base";
+					relative: 0.5 0.5;
+					offset: 1 0;
 				}
 			}
 		}
@@ -1057,14 +995,14 @@ group {
 			description {
 				state: "default" 0.0;
 
-				rel1 { 
-					to: "slider_image"; 
-					offset: 0 1; 
+				rel1 {
+					to: "slider_image";
+					offset: 0 1;
 				}
 
-				rel2 { 
-					to: "slider_image"; 
-					offset: -1 0; 
+				rel2 {
+					to: "slider_image";
+					offset: -1 0;
 				}
 
 				image {
@@ -1073,17 +1011,11 @@ group {
 				}
 
 				fill {
-					#if USE_SMOOTH_IMAGES == 0
-						smooth: 0;
-					#else
-					#if USE_SMOOTH_IMAGES == 1
-						smooth: 1;
-					#endif
-					#endif
+					smooth: 1;
 				}
 			}
 		}
-    
+
 		part {
 			name: "slider_image";
 			type: IMAGE;
@@ -1096,12 +1028,12 @@ group {
 				max: 17 29;
 				fixed: 1 1;
 
-				rel1 { 
-					to: "e.dragable.slider"; 
+				rel1 {
+					to: "e.dragable.slider";
 				}
 
-				rel2 { 
-					to: "e.dragable.slider"; 
+				rel2 {
+					to: "e.dragable.slider";
 				}
 
 				image {
@@ -1146,7 +1078,7 @@ group {
 				color: 0 0 0 0;
 				visible: 0;
 			}
-	
+
 			description {
 				state: "disabled" 0.0;
 				inherit: "default" 0.0;
@@ -1155,54 +1087,54 @@ group {
 		}
 	}
 
-	programs {	 
-		# ifdef PROG
-		#  undef PROG
-		# endif
-		#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)\
-		program {\
-			name: NAME;\
-			signal: SIGNAL;\
-			source: SRC;\
-			action: ACT;\
-			target: TARGET;\
+	programs {
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)        \
+		program {			\
+			name: NAME;		\
+			signal: SIGNAL;		\
+			source: SRC;		\
+			action: ACT;		\
+			target: TARGET;		\
 		}
 
-		PROG("slider-", "mouse,down,1", "slider_p1", DRAG_VAL_PAGE 0.0 -1.0, "e.dragable.slider")
-		PROG("slider+", "mouse,down,1", "slider_p2", DRAG_VAL_PAGE 0.0 1.0, "e.dragable.slider")
+		PROG("slider-", "mouse,down,1", "slider_p1", DRAG_VAL_PAGE 0.0 -1.0, "e.dragable.slider");
+		PROG("slider+", "mouse,down,1", "slider_p2", DRAG_VAL_PAGE 0.0 1.0, "e.dragable.slider");
 
-		# ifdef PROG
-		#  undef PROG
-		# endif
-		#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)\
-		program {\
-			name: NAME;\
-			signal: SIGNAL;\
-			source: SRC;\
-			action: STATE_SET ACT 0.0;\
-			transition: DECELERATE 0.25; \
-			target: TARGET;\
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG(NAME,SIGNAL,SRC,ACT,TARGET)		\
+		program {				\
+			name: NAME;                     \
+			signal: SIGNAL;                 \
+			source: SRC;                    \
+			action: STATE_SET ACT 0.0;      \
+			transition: DECELERATE 0.25;    \
+			target: TARGET;                 \
 		}
 
-		PROG("up", "mouse,up,1", "e.dragable.slider", "default", "slider_image")
-		PROG("down", "mouse,down,1", "e.dragable.slider", "clicked", "slider_image")
+		PROG("up", "mouse,up,1", "e.dragable.slider", "default", "slider_image");
+		PROG("down", "mouse,down,1", "e.dragable.slider", "clicked", "slider_image");
 
-		# ifdef PROG
-		#  undef PROG
-		# endif
-		#define PROG(NAME,SIGNAL,SRC,ACT,TARGET1,TARGET2,TARGET3)\
-		program {\
-			name: NAME;\
-			signal: SIGNAL;\
-			source: SRC;\
-			action: STATE_SET ACT 0.0;\
-			target: TARGET1;\
-			target: TARGET2;\
-			target: TARGET3;\
+# ifdef PROG
+#  undef PROG
+# endif
+#define PROG(NAME,SIGNAL,SRC,ACT,TARGET1,TARGET2,TARGET3)	\
+		program {					\
+			name: NAME;				\
+			signal: SIGNAL;				\
+			source: SRC;				\
+			action: STATE_SET ACT 0.0;		\
+			target: TARGET1;			\
+			target: TARGET2;			\
+			target: TARGET3;			\
 		}
 
-		PROG("show_label", "e,action,show,label", "e", "active", "base", "label_under", "e.text.label")
-		PROG("hide_label", "e,action,hide,label", "e", "default", "base", "label_under", "e.text.label")
+		PROG("show_label", "e,action,show,label", "e", "active", "base", "label_under", "e.text.label");
+		PROG("hide_label", "e,action,hide,label", "e", "default", "base", "label_under", "e.text.label");
 
 		program {
 			name: "enable";
