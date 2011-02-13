@@ -547,3 +547,4 @@ image: "images/bevel_tab_shadow.png" COMP; /* gradient */
 image: "images/bevel_evry_fade.png" COMP; /* gradient */
 image: "icons/button-back.png" COMP;
 image: "images/menu_im5.png" COMP; /* left arrow */
+image: "images/menubar.png" COMP; /* left arrow */
