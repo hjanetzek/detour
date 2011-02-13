@@ -1227,10 +1227,10 @@ BORDER_MENU_BUTTON("stacking")
 BORDER_MENU_BUTTON("stack_on_top")
 BORDER_MENU_BUTTON("stack_normal")
 BORDER_MENU_BUTTON("stack_below")
-BORDER_MENU_BUTTON("properties")
 BORDER_MENU_BUTTON("skip")
 BORDER_MENU_BUTTON("skip_pager")
 BORDER_MENU_BUTTON("skip_taskbar")
 BORDER_MENU_BUTTON("skip_winlist")
 BORDER_MENU_BUTTON("properties")
+
 
